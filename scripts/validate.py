@@ -15,6 +15,9 @@ COUNCIL_REQUIRED_KEYS = {
     "id",
     "name",
     "type",
+    "prefecture",
+    "prefecture_name",
+    "lg_code",
     "minutes_system",
     "vote_granularity",
     "status",
@@ -108,6 +111,21 @@ def validate_councils() -> tuple[list[dict[str, Any]], list[str]]:
             ids.add(council_id)
         if council.get("type") not in COUNCIL_TYPES:
             errors.append(f"{label}: invalid type '{council.get('type')}'")
+        if not isinstance(council.get("prefecture"), str) or not council.get(
+            "prefecture"
+        ):
+            errors.append(f"{label}: prefecture must be a non-empty string")
+        if not isinstance(council.get("prefecture_name"), str) or not council.get(
+            "prefecture_name"
+        ):
+            errors.append(f"{label}: prefecture_name must be a non-empty string")
+        lg_code = council.get("lg_code")
+        if (
+            not isinstance(lg_code, str)
+            or len(lg_code) != 6
+            or not lg_code.isdigit()
+        ):
+            errors.append(f"{label}: lg_code must be a 6-digit string")
         if council.get("minutes_system") not in MINUTES_SYSTEMS:
             errors.append(
                 f"{label}: invalid minutes_system "

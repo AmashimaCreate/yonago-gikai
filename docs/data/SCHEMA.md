@@ -11,6 +11,9 @@
 - `id`: `yonago-city` のような一意なID
 - `name`: 表示名
 - `type`: `prefecture` または `city`
+- `prefecture`: URL階層用の都道府県slug。例: `tottori`
+- `prefecture_name`: 都道府県の表示名。例: `鳥取県`
+- `lg_code`: 総務省「全国地方公共団体コード」の6桁文字列
 - `minutes_system`: `dbsr` / `kensakusystem` / `kensakusystem_legacy` / `unknown`
 - `vote_granularity`: `member` / `faction` / `result_only` / `unknown`
 - `status`: `active` / `planned`
@@ -19,6 +22,12 @@
 
 - `minutes_base_url`: 会議録検索システムの議会別トップURL。
 - `notes`: 自動取得や公式導線に関する補足。
+
+ルール:
+
+- `lg_code` は議会固有のコードではなく、議会が属する自治体の全国地方公共団体コードを記録する。
+- `lg_code` は e-Stat、総務省決算カード、自治体基礎データとの機械的JOINキーとして使う。
+- コード確認元: 総務省「全国地方公共団体コード」 https://www.soumu.go.jp/denshijiti/code.html
 
 ## members.json
 
