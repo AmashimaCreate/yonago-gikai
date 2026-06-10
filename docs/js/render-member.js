@@ -17,7 +17,16 @@ export function renderMemberPage(root, state, memberId) {
 
   root.appendChild(
     el("p", { class: "back-link-wrap" }, [
-      el("a", { href: councilPath(state.currentCouncil.id) }, `← ${state.currentCouncil.name}へ戻る`),
+      el(
+        "a",
+        {
+          href: councilPath(
+            state.currentCouncil.prefecture || state.route.prefecture || "tottori",
+            state.currentCouncil.id,
+          ),
+        },
+        `← ${state.currentCouncil.name}へ戻る`,
+      ),
     ]),
   );
 

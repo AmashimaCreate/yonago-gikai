@@ -1,6 +1,7 @@
 import { loadCouncilBundle, loadCouncils } from "./data-loader.js";
 import { renderCouncilPage } from "./render-council.js";
 import { renderMemberPage } from "./render-member.js";
+import { renderPrefecturePage } from "./render-prefecture.js";
 import { renderProfile } from "./render-profile.js";
 import { renderTop } from "./render-top.js";
 import { parseRoute } from "./router.js";
@@ -25,9 +26,9 @@ function mainNode() {
 }
 
 function setHeader({ title, lead, meta = "" }) {
-  document.title = title === "鳥取県 議会見える化"
+  document.title = title.endsWith("議会見える化")
     ? title
-    : `${title} | 鳥取県 議会見える化`;
+    : `${title} | 議会見える化`;
   titleNode().textContent = title;
   leadNode().textContent = lead;
   metaNode().textContent = meta;
@@ -141,9 +142,15 @@ function renderNotFound() {
 async function applyRoute() {
   const route = parseRoute();
   state.route = route;
+
+  if (route.name === "redirect") {
+    window.location.replace(route.to);
+    return;
+  }
+
   state.councils = await loadCouncils();
 
-  if (route.name === "top") {
+  if (route.name === "national") {
     state.currentCouncil = null;
     state.members = [];
     state.membersMeta = null;
@@ -152,15 +159,40 @@ async function applyRoute() {
     state.speechesMeta = null;
     state.query = "";
     setHeader({
-      title: "鳥取県 議会見える化",
-      lead: "鳥取県内5議会の公開データを同じ形で見られるようにする非公式サイトです。",
+      title: "全国 議会見える化",
+      lead: "対応地域を地図と一覧から選び、議会ごとの公開データを確認できます。",
     });
     showCouncilNav(false);
-    renderTop(mainNode(), state.councils);
+    renderTop(mainNode());
+    return;
+  }
+
+  if (route.name === "prefecture") {
+    state.currentCouncil = null;
+    state.members = [];
+    state.membersMeta = null;
+    state.profile = null;
+    state.speeches = [];
+    state.speechesMeta = null;
+    state.query = "";
+    if (route.prefecture !== "tottori") {
+      renderNotFound();
+      return;
+    }
+    setHeader({
+      title: "鳥取県 議会見える化",
+      lead: "鳥取県内5議会の公開データを同じ形で確認できます。",
+    });
+    showCouncilNav(false);
+    renderPrefecturePage(mainNode(), state.councils, route.prefecture);
     return;
   }
 
   if (route.name === "council" || route.name === "member") {
+    if (route.prefecture !== "tottori") {
+      renderNotFound();
+      return;
+    }
     const bundle = await loadCouncilBundle(route.councilId, {
       includeSpeeches: true,
     });

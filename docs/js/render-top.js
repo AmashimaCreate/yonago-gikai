@@ -1,43 +1,24 @@
-import { councilPath } from "./router.js";
+import { prefPath } from "./router.js";
 import { el } from "./utils.js";
 
-export function renderTop(root, councils) {
+export function renderTop(root) {
   root.innerHTML = "";
   root.appendChild(
     el("section", { class: "intro-panel" }, [
-      el("h2", { class: "section-title" }, "鳥取県内5議会"),
+      el("h2", { class: "section-title" }, "全国トップ"),
       el(
         "p",
         {},
-        "公開されている議員名簿・基礎データ・会議録発言インデックスを、議会ごとに同じ形で確認できます。",
+        "全国の都道府県から、対応済みの議会ページへ進む入口です。",
       ),
+      el(
+        "p",
+        { class: "muted" },
+        "現在は鳥取県のみ対応しています。日本地図ナビゲーションは次の実装ステップで追加します。",
+      ),
+      el("p", {}, [
+        el("a", { class: "button-link", href: prefPath("tottori") }, "鳥取県ページを見る"),
+      ]),
     ]),
   );
-
-  root.appendChild(
-    el(
-      "div",
-      { class: "council-grid" },
-      councils.map((council) => renderCouncilCard(council)),
-    ),
-  );
-}
-
-function renderCouncilCard(council) {
-  return el("article", { class: `council-card ${council.type === "prefecture" ? "is-prefecture" : "is-city"}` }, [
-    el("div", { class: "card-eyebrow" }, councilTypeLabel(council)),
-    el("h3", {}, council.name),
-    el("p", { class: "muted" }, readableMinutesSystem(council.minutes_system)),
-    el("a", { class: "button-link", href: councilPath(council.id) }, "議会ページを見る"),
-  ]);
-}
-
-function readableMinutesSystem(value) {
-  if (value === "kensakusystem_legacy") return "会議録検索システムから発言インデックスを取得済み";
-  if (value === "dbsr") return "会議録は別システムのため発言インデックス未取得";
-  return "会議録の取得方式を調査中";
-}
-
-function councilTypeLabel(council) {
-  return council.type === "prefecture" ? "県議会" : "市議会";
 }

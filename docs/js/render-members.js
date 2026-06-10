@@ -189,7 +189,11 @@ function renderMemberCard(m) {
         "a",
         {
           class: "member-detail-link",
-          href: memberPath(state.currentCouncil.id, m.id),
+          href: memberPath(
+            state.currentCouncil.prefecture || state.route.prefecture || "tottori",
+            state.currentCouncil.id,
+            m.id,
+          ),
         },
         "議員ページを見る",
       ),
