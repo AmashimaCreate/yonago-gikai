@@ -226,6 +226,49 @@ a { color: #0969da; }
   background: #f1f3f5;
 }
 
+/* 地図ナビゲーション */
+.map-frame {
+  max-width: 720px;
+  margin: 18px auto;
+}
+.map-frame svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.map-frame [data-code],
+.municipality-map-frame .municipality {
+  fill: #e5e7eb;
+  stroke: #ffffff;
+  stroke-width: 1.2;
+  transition: fill 0.15s ease, stroke 0.15s ease;
+  pointer-events: none;
+}
+.map-frame .is-active,
+.municipality-map-frame .municipality.is-active {
+  fill: #64748b;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.map-frame .is-active:hover,
+.map-frame .is-active:focus,
+.municipality-map-frame .municipality.is-active:hover,
+.municipality-map-frame .municipality.is-active:focus {
+  fill: #475569;
+  outline: none;
+}
+.supported-region-list {
+  margin-top: 16px;
+}
+.supported-region-list h3 {
+  margin: 0 0 6px;
+  font-size: 15px;
+}
+.supported-region-list ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
 .quality-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
