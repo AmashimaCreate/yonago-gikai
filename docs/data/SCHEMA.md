@@ -227,6 +227,7 @@ robots.txt 等により自動取得しない議会の、人間転記用入力フ
     {
       "id": "yonago-city--2026-03-10--0001",
       "member_id": "yonago-city--adachi-takashi",
+      "speaker_label": "安達議員",
       "meeting_name": "令和8年3月定例会 本会議",
       "date": "2026-03-10",
       "kind": "一般質問",
@@ -241,11 +242,12 @@ robots.txt 等により自動取得しない議会の、人間転記用入力フ
 
 - ルート: `council_id`, `updated_at`, `coverage`, `speeches`
 - `coverage`: `scope`, `excluded`, `note`, `source_url_note`
-- 各発言: `id`, `member_id`, `meeting_name`, `date`, `kind`, `summary`, `source_url`
+- 各発言: `id`, `member_id`, `speaker_label`, `meeting_name`, `date`, `kind`, `summary`, `source_url`
 
 ルール:
 
 - `member_id` は `{council_id}--{slug}`、または議員特定不能時は `null`。
+- `speaker_label` は会議録検索システム上の発言者表記。`member_id` が `null` の場合も表記揺れや過去議員の検出に使うため保持する。
 - `summary` はAI要約が未生成の場合 `null`。
 - `coverage` は取得範囲と構造的な欠落を説明する。フロントエンドでは、議長や執行部の発言が対象外であることを表示に利用する。
 - `source_url` は永続性を優先し、会議録検索入口URLを保存する。旧系統の `Code` 付き検索URLや `ResultFrame.exe` URLは直接リンクとして永続利用しない。

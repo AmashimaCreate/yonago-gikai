@@ -386,6 +386,7 @@ class KensakuSystemLegacyMinutesAdapter(CouncilScraperBase):
                 {
                     "id": self.build_speech_id(row),
                     "member_id": row["member_id"],
+                    "speaker_label": row["speaker_label"],
                     "meeting_name": row["meeting_name"],
                     "date": row["date"],
                     "kind": "本会議",
@@ -394,6 +395,58 @@ class KensakuSystemLegacyMinutesAdapter(CouncilScraperBase):
                 }
             )
         return speeches
+
+    def rebind_speeches(self) -> dict[str, Any]:
+        path = DATA_DIR / self.council_id / "speeches.json"
+        if not path.exists():
+            raise SystemExit(f"{path}: speeches.json not found")
+
+        with path.open(encoding="utf-8") as f:
+            data = json.load(f)
+
+        speeches = data.get("speeches")
+        if not isinstance(speeches, list):
+            raise SystemExit(f"{path}: speeches must be a list")
+
+        matcher = NameMatcher(load_members(self.council_id))
+        missing_labels: set[str] = set()
+        unmatched_labels: set[str] = set()
+        linked = 0
+
+        for speech in speeches:
+            if not isinstance(speech, dict):
+                continue
+            speaker_label = speech.get("speaker_label")
+            if not isinstance(speaker_label, str) or not speaker_label:
+                missing_labels.add(str(speech.get("id", "<unknown>")))
+                speech["member_id"] = None
+                continue
+            match = matcher.match(
+                SpeakerOption(label=speaker_label, value=speaker_label.encode("utf-8"))
+            )
+            speech["member_id"] = match.member_id
+            if match.member_id is None:
+                unmatched_labels.add(speaker_label)
+            else:
+                linked += 1
+
+        if missing_labels:
+            print(
+                "speeches missing speaker_label: " + ", ".join(sorted(missing_labels))
+            )
+        if unmatched_labels:
+            print("unmatched speaker_label: " + ", ".join(sorted(unmatched_labels)))
+        else:
+            print("unmatched speaker_label: none")
+        print(
+            f"{self.council_id}: rebound {linked}/{len(speeches)} speeches "
+            f"({linked / len(speeches) * 100:.1f}%)"
+            if speeches
+            else f"{self.council_id}: rebound 0/0 speeches"
+        )
+
+        self.save_json(path, data)
+        return data
 
     def build_speech_id(self, row: dict[str, Any]) -> str:
         if row["member_id"]:
@@ -556,6 +609,7 @@ def main() -> int:
     parser.add_argument("--fiscal-start-year", type=int, default=2024)
     parser.add_argument("--fiscal-years", type=int, default=2)
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--rebind", action="store_true")
     args = parser.parse_args()
 
     adapter = KensakuSystemLegacyMinutesAdapter(
@@ -563,7 +617,10 @@ def main() -> int:
         fiscal_start_year=args.fiscal_start_year,
         fiscal_years=args.fiscal_years,
     )
-    adapter.save_speeches(dry_run=args.dry_run)
+    if args.rebind:
+        adapter.rebind_speeches()
+    else:
+        adapter.save_speeches(dry_run=args.dry_run)
     return 0
 
 

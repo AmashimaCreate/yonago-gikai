@@ -11,8 +11,9 @@
   },
   "speeches": [
     {
-      "id": "sakaiminato-city--2024-04-12--2baaa7f2e6--r060412a-6074-387",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-04-12--hiramatsu-kenji--r060412a-6074-387",
+      "member_id": "sakaiminato-city--hiramatsu-kenji",
+      "speaker_label": "平松謙治",
       "meeting_name": "令和 6年 4月臨時会（第1号 4月12日） 本会議",
       "date": "2024-04-12",
       "kind": "本会議",
@@ -22,6 +23,7 @@
     {
       "id": "sakaiminato-city--2024-04-12--19cdd0470f--r060412a-2079-387",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 6年 4月臨時会（第1号 4月12日） 本会議",
       "date": "2024-04-12",
       "kind": "本会議",
@@ -29,8 +31,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-06-03--9c88ec8a36--r060603a-7048-388",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-06-03--yoshii-takumi--r060603a-7048-388",
+      "member_id": "sakaiminato-city--yoshii-takumi",
+      "speaker_label": "吉井巧",
       "meeting_name": "令和 6年 6月定例会（第1号 6月 3日） 本会議",
       "date": "2024-06-03",
       "kind": "本会議",
@@ -38,8 +41,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-06-03--2baaa7f2e6--r060603a-18756-388",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-06-03--hiramatsu-kenji--r060603a-18756-388",
+      "member_id": "sakaiminato-city--hiramatsu-kenji",
+      "speaker_label": "平松謙治",
       "meeting_name": "令和 6年 6月定例会（第1号 6月 3日） 本会議",
       "date": "2024-06-03",
       "kind": "本会議",
@@ -47,8 +51,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-06-03--2baaa7f2e6--r060603a-5172-388",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-06-03--hiramatsu-kenji--r060603a-5172-388",
+      "member_id": "sakaiminato-city--hiramatsu-kenji",
+      "speaker_label": "平松謙治",
       "meeting_name": "令和 6年 6月定例会（第1号 6月 3日） 本会議",
       "date": "2024-06-03",
       "kind": "本会議",
@@ -58,6 +63,7 @@
     {
       "id": "sakaiminato-city--2024-06-03--19cdd0470f--r060603a-4385-388",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 6年 6月定例会（第1号 6月 3日） 本会議",
       "date": "2024-06-03",
       "kind": "本会議",
@@ -65,8 +71,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-06-17--fc7d35dba7--r060617a-2344-389",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-06-17--yasuda-tomoko--r060617a-2344-389",
+      "member_id": "sakaiminato-city--yasuda-tomoko",
+      "speaker_label": "安田共子",
       "meeting_name": "令和 6年 6月定例会（第2号 6月17日） 本会議",
       "date": "2024-06-17",
       "kind": "本会議",
@@ -74,8 +81,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-06-17--878064b81d--r060617a-38132-389",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-06-17--matsumoto-akihiko--r060617a-38132-389",
+      "member_id": "sakaiminato-city--matsumoto-akihiko",
+      "speaker_label": "松本晶彦",
       "meeting_name": "令和 6年 6月定例会（第2号 6月17日） 本会議",
       "date": "2024-06-17",
       "kind": "本会議",
@@ -85,6 +93,7 @@
     {
       "id": "sakaiminato-city--2024-06-17--19cdd0470f--r060617a-1891-389",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 6年 6月定例会（第2号 6月17日） 本会議",
       "date": "2024-06-17",
       "kind": "本会議",
@@ -92,8 +101,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-06-17--2d0f894644--r060617a-97086-389",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-06-17--taguchi-shunsuke--r060617a-97086-389",
+      "member_id": "sakaiminato-city--taguchi-shunsuke",
+      "speaker_label": "田口俊介",
       "meeting_name": "令和 6年 6月定例会（第2号 6月17日） 本会議",
       "date": "2024-06-17",
       "kind": "本会議",
@@ -101,8 +111,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-06-17--7ea212aac5--r060617a-65992-389",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-06-17--ashida-noriyuki--r060617a-65992-389",
+      "member_id": "sakaiminato-city--ashida-noriyuki",
+      "speaker_label": "足田法行",
       "meeting_name": "令和 6年 6月定例会（第2号 6月17日） 本会議",
       "date": "2024-06-17",
       "kind": "本会議",
@@ -112,6 +123,7 @@
     {
       "id": "sakaiminato-city--2024-06-18--e9bd7b0f85--r060618a-85660-390",
       "member_id": null,
+      "speaker_label": "伊藤康弘",
       "meeting_name": "令和 6年 6月定例会（第3号 6月18日） 本会議",
       "date": "2024-06-18",
       "kind": "本会議",
@@ -119,8 +131,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-06-18--2baaa7f2e6--r060618a-64938-390",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-06-18--hiramatsu-kenji--r060618a-64938-390",
+      "member_id": "sakaiminato-city--hiramatsu-kenji",
+      "speaker_label": "平松謙治",
       "meeting_name": "令和 6年 6月定例会（第3号 6月18日） 本会議",
       "date": "2024-06-18",
       "kind": "本会議",
@@ -130,6 +143,7 @@
     {
       "id": "sakaiminato-city--2024-06-18--a2919a82d8--r060618a-2386-390",
       "member_id": null,
+      "speaker_label": "景山憲",
       "meeting_name": "令和 6年 6月定例会（第3号 6月18日） 本会議",
       "date": "2024-06-18",
       "kind": "本会議",
@@ -139,6 +153,7 @@
     {
       "id": "sakaiminato-city--2024-06-18--19cdd0470f--r060618a-1944-390",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 6年 6月定例会（第3号 6月18日） 本会議",
       "date": "2024-06-18",
       "kind": "本会議",
@@ -148,6 +163,7 @@
     {
       "id": "sakaiminato-city--2024-06-18--aa614811b9--r060618a-41104-390",
       "member_id": null,
+      "speaker_label": "米村一三",
       "meeting_name": "令和 6年 6月定例会（第3号 6月18日） 本会議",
       "date": "2024-06-18",
       "kind": "本会議",
@@ -155,8 +171,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-06-19--ac2776b92a--r060619a-2882-391",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-06-19--kato-bunji--r060619a-2882-391",
+      "member_id": "sakaiminato-city--kato-bunji",
+      "speaker_label": "加藤文治",
       "meeting_name": "令和 6年 6月定例会（第4号 6月19日） 本会議",
       "date": "2024-06-19",
       "kind": "本会議",
@@ -164,8 +181,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-06-19--9c88ec8a36--r060619a-88886-391",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-06-19--yoshii-takumi--r060619a-88886-391",
+      "member_id": "sakaiminato-city--yoshii-takumi",
+      "speaker_label": "吉井巧",
       "meeting_name": "令和 6年 6月定例会（第4号 6月19日） 本会議",
       "date": "2024-06-19",
       "kind": "本会議",
@@ -173,8 +191,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-06-19--ac7f93e8bd--r060619a-68094-391",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-06-19--hiiragi-yasuhiro--r060619a-68094-391",
+      "member_id": "sakaiminato-city--hiiragi-yasuhiro",
+      "speaker_label": "柊康弘",
       "meeting_name": "令和 6年 6月定例会（第4号 6月19日） 本会議",
       "date": "2024-06-19",
       "kind": "本会議",
@@ -182,8 +201,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-06-19--23b500cb01--r060619a-36562-391",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-06-19--morioka-toshio--r060619a-36562-391",
+      "member_id": "sakaiminato-city--morioka-toshio",
+      "speaker_label": "森岡俊夫",
       "meeting_name": "令和 6年 6月定例会（第4号 6月19日） 本会議",
       "date": "2024-06-19",
       "kind": "本会議",
@@ -193,6 +213,7 @@
     {
       "id": "sakaiminato-city--2024-06-19--19cdd0470f--r060619a-2293-391",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 6年 6月定例会（第4号 6月19日） 本会議",
       "date": "2024-06-19",
       "kind": "本会議",
@@ -200,8 +221,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-06-25--ac2776b92a--r060625a-21965-392",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-06-25--kato-bunji--r060625a-21965-392",
+      "member_id": "sakaiminato-city--kato-bunji",
+      "speaker_label": "加藤文治",
       "meeting_name": "令和 6年 6月定例会（第5号 6月25日） 本会議",
       "date": "2024-06-25",
       "kind": "本会議",
@@ -209,8 +231,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-06-25--9c88ec8a36--r060625a-10387-392",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-06-25--yoshii-takumi--r060625a-10387-392",
+      "member_id": "sakaiminato-city--yoshii-takumi",
+      "speaker_label": "吉井巧",
       "meeting_name": "令和 6年 6月定例会（第5号 6月25日） 本会議",
       "date": "2024-06-25",
       "kind": "本会議",
@@ -218,8 +241,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-06-25--fc7d35dba7--r060625a-12973-392",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-06-25--yasuda-tomoko--r060625a-12973-392",
+      "member_id": "sakaiminato-city--yasuda-tomoko",
+      "speaker_label": "安田共子",
       "meeting_name": "令和 6年 6月定例会（第5号 6月25日） 本会議",
       "date": "2024-06-25",
       "kind": "本会議",
@@ -227,8 +251,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-06-25--2baaa7f2e6--r060625a-19191-392",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-06-25--hiramatsu-kenji--r060625a-19191-392",
+      "member_id": "sakaiminato-city--hiramatsu-kenji",
+      "speaker_label": "平松謙治",
       "meeting_name": "令和 6年 6月定例会（第5号 6月25日） 本会議",
       "date": "2024-06-25",
       "kind": "本会議",
@@ -236,8 +261,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-06-25--2baaa7f2e6--r060625a-3348-392",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-06-25--hiramatsu-kenji--r060625a-3348-392",
+      "member_id": "sakaiminato-city--hiramatsu-kenji",
+      "speaker_label": "平松謙治",
       "meeting_name": "令和 6年 6月定例会（第5号 6月25日） 本会議",
       "date": "2024-06-25",
       "kind": "本会議",
@@ -245,8 +271,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-06-25--2baaa7f2e6--r060625a-5634-392",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-06-25--hiramatsu-kenji--r060625a-5634-392",
+      "member_id": "sakaiminato-city--hiramatsu-kenji",
+      "speaker_label": "平松謙治",
       "meeting_name": "令和 6年 6月定例会（第5号 6月25日） 本会議",
       "date": "2024-06-25",
       "kind": "本会議",
@@ -254,8 +281,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-06-25--ac7f93e8bd--r060625a-18403-392",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-06-25--hiiragi-yasuhiro--r060625a-18403-392",
+      "member_id": "sakaiminato-city--hiiragi-yasuhiro",
+      "speaker_label": "柊康弘",
       "meeting_name": "令和 6年 6月定例会（第5号 6月25日） 本会議",
       "date": "2024-06-25",
       "kind": "本会議",
@@ -265,6 +293,7 @@
     {
       "id": "sakaiminato-city--2024-06-25--19cdd0470f--r060625a-2409-392",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 6年 6月定例会（第5号 6月25日） 本会議",
       "date": "2024-06-25",
       "kind": "本会議",
@@ -272,8 +301,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-08-06--2baaa7f2e6--r060806a-4730-393",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-08-06--hiramatsu-kenji--r060806a-4730-393",
+      "member_id": "sakaiminato-city--hiramatsu-kenji",
+      "speaker_label": "平松謙治",
       "meeting_name": "令和 6年 8月臨時会（第1号 8月 6日） 本会議",
       "date": "2024-08-06",
       "kind": "本会議",
@@ -283,6 +313,7 @@
     {
       "id": "sakaiminato-city--2024-08-06--19cdd0470f--r060806a-1925-393",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 6年 8月臨時会（第1号 8月 6日） 本会議",
       "date": "2024-08-06",
       "kind": "本会議",
@@ -290,8 +321,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-09-03--9c88ec8a36--r060903a-8814-394",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-09-03--yoshii-takumi--r060903a-8814-394",
+      "member_id": "sakaiminato-city--yoshii-takumi",
+      "speaker_label": "吉井巧",
       "meeting_name": "令和 6年 9月定例会（第1号 9月 3日） 本会議",
       "date": "2024-09-03",
       "kind": "本会議",
@@ -299,8 +331,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-09-03--2baaa7f2e6--r060903a-4164-394",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-09-03--hiramatsu-kenji--r060903a-4164-394",
+      "member_id": "sakaiminato-city--hiramatsu-kenji",
+      "speaker_label": "平松謙治",
       "meeting_name": "令和 6年 9月定例会（第1号 9月 3日） 本会議",
       "date": "2024-09-03",
       "kind": "本会議",
@@ -310,6 +343,7 @@
     {
       "id": "sakaiminato-city--2024-09-03--19cdd0470f--r060903a-3655-394",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 6年 9月定例会（第1号 9月 3日） 本会議",
       "date": "2024-09-03",
       "kind": "本会議",
@@ -317,8 +351,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-09-17--23b500cb01--r060917a-2374-395",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-09-17--morioka-toshio--r060917a-2374-395",
+      "member_id": "sakaiminato-city--morioka-toshio",
+      "speaker_label": "森岡俊夫",
       "meeting_name": "令和 6年 9月定例会（第2号 9月17日） 本会議",
       "date": "2024-09-17",
       "kind": "本会議",
@@ -328,6 +363,7 @@
     {
       "id": "sakaiminato-city--2024-09-17--19cdd0470f--r060917a-1891-395",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 6年 9月定例会（第2号 9月17日） 本会議",
       "date": "2024-09-17",
       "kind": "本会議",
@@ -335,8 +371,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-09-17--2d0f894644--r060917a-129020-395",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-09-17--taguchi-shunsuke--r060917a-129020-395",
+      "member_id": "sakaiminato-city--taguchi-shunsuke",
+      "speaker_label": "田口俊介",
       "meeting_name": "令和 6年 9月定例会（第2号 9月17日） 本会議",
       "date": "2024-09-17",
       "kind": "本会議",
@@ -346,6 +383,7 @@
     {
       "id": "sakaiminato-city--2024-09-17--aa614811b9--r060917a-106112-395",
       "member_id": null,
+      "speaker_label": "米村一三",
       "meeting_name": "令和 6年 9月定例会（第2号 9月17日） 本会議",
       "date": "2024-09-17",
       "kind": "本会議",
@@ -355,6 +393,7 @@
     {
       "id": "sakaiminato-city--2024-09-18--e9bd7b0f85--r060918a-95069-396",
       "member_id": null,
+      "speaker_label": "伊藤康弘",
       "meeting_name": "令和 6年 9月定例会（第3号 9月18日） 本会議",
       "date": "2024-09-18",
       "kind": "本会議",
@@ -362,8 +401,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-09-18--ac2776b92a--r060918a-2368-396",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-09-18--kato-bunji--r060918a-2368-396",
+      "member_id": "sakaiminato-city--kato-bunji",
+      "speaker_label": "加藤文治",
       "meeting_name": "令和 6年 9月定例会（第3号 9月18日） 本会議",
       "date": "2024-09-18",
       "kind": "本会議",
@@ -371,8 +411,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-09-18--9c88ec8a36--r060918a-61685-396",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-09-18--yoshii-takumi--r060918a-61685-396",
+      "member_id": "sakaiminato-city--yoshii-takumi",
+      "speaker_label": "吉井巧",
       "meeting_name": "令和 6年 9月定例会（第3号 9月18日） 本会議",
       "date": "2024-09-18",
       "kind": "本会議",
@@ -380,8 +421,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-09-18--fc7d35dba7--r060918a-30007-396",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-09-18--yasuda-tomoko--r060918a-30007-396",
+      "member_id": "sakaiminato-city--yasuda-tomoko",
+      "speaker_label": "安田共子",
       "meeting_name": "令和 6年 9月定例会（第3号 9月18日） 本会議",
       "date": "2024-09-18",
       "kind": "本会議",
@@ -391,6 +433,7 @@
     {
       "id": "sakaiminato-city--2024-09-18--19cdd0470f--r060918a-1891-396",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 6年 9月定例会（第3号 9月18日） 本会議",
       "date": "2024-09-18",
       "kind": "本会議",
@@ -400,6 +443,7 @@
     {
       "id": "sakaiminato-city--2024-09-19--a2919a82d8--r060919a-72188-397",
       "member_id": null,
+      "speaker_label": "景山憲",
       "meeting_name": "令和 6年 9月定例会（第4号 9月19日） 本会議",
       "date": "2024-09-19",
       "kind": "本会議",
@@ -407,8 +451,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-09-19--878064b81d--r060919a-45674-397",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-09-19--matsumoto-akihiko--r060919a-45674-397",
+      "member_id": "sakaiminato-city--matsumoto-akihiko",
+      "speaker_label": "松本晶彦",
       "meeting_name": "令和 6年 9月定例会（第4号 9月19日） 本会議",
       "date": "2024-09-19",
       "kind": "本会議",
@@ -418,6 +463,7 @@
     {
       "id": "sakaiminato-city--2024-09-19--19cdd0470f--r060919a-2045-397",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 6年 9月定例会（第4号 9月19日） 本会議",
       "date": "2024-09-19",
       "kind": "本会議",
@@ -425,8 +471,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-09-19--22a77435df--r060919a-2522-397",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-09-19--arai-hideyuki--r060919a-2522-397",
+      "member_id": "sakaiminato-city--arai-hideyuki",
+      "speaker_label": "荒井秀行",
       "meeting_name": "令和 6年 9月定例会（第4号 9月19日） 本会議",
       "date": "2024-09-19",
       "kind": "本会議",
@@ -434,8 +481,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-09-19--7ea212aac5--r060919a-106712-397",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-09-19--ashida-noriyuki--r060919a-106712-397",
+      "member_id": "sakaiminato-city--ashida-noriyuki",
+      "speaker_label": "足田法行",
       "meeting_name": "令和 6年 9月定例会（第4号 9月19日） 本会議",
       "date": "2024-09-19",
       "kind": "本会議",
@@ -443,8 +491,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-09-26--9c88ec8a36--r060926a-15888-398",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-09-26--yoshii-takumi--r060926a-15888-398",
+      "member_id": "sakaiminato-city--yoshii-takumi",
+      "speaker_label": "吉井巧",
       "meeting_name": "令和 6年 9月定例会（第5号 9月26日） 本会議",
       "date": "2024-09-26",
       "kind": "本会議",
@@ -452,8 +501,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-09-26--fc7d35dba7--r060926a-19582-398",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-09-26--yasuda-tomoko--r060926a-19582-398",
+      "member_id": "sakaiminato-city--yasuda-tomoko",
+      "speaker_label": "安田共子",
       "meeting_name": "令和 6年 9月定例会（第5号 9月26日） 本会議",
       "date": "2024-09-26",
       "kind": "本会議",
@@ -461,8 +511,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-09-26--2baaa7f2e6--r060926a-4396-398",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-09-26--hiramatsu-kenji--r060926a-4396-398",
+      "member_id": "sakaiminato-city--hiramatsu-kenji",
+      "speaker_label": "平松謙治",
       "meeting_name": "令和 6年 9月定例会（第5号 9月26日） 本会議",
       "date": "2024-09-26",
       "kind": "本会議",
@@ -470,8 +521,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-09-26--2baaa7f2e6--r060926a-7984-398",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-09-26--hiramatsu-kenji--r060926a-7984-398",
+      "member_id": "sakaiminato-city--hiramatsu-kenji",
+      "speaker_label": "平松謙治",
       "meeting_name": "令和 6年 9月定例会（第5号 9月26日） 本会議",
       "date": "2024-09-26",
       "kind": "本会議",
@@ -481,6 +533,7 @@
     {
       "id": "sakaiminato-city--2024-09-26--19cdd0470f--r060926a-3699-398",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 6年 9月定例会（第5号 9月26日） 本会議",
       "date": "2024-09-26",
       "kind": "本会議",
@@ -488,8 +541,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-09-26--7ea212aac5--r060926a-32534-398",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-09-26--ashida-noriyuki--r060926a-32534-398",
+      "member_id": "sakaiminato-city--ashida-noriyuki",
+      "speaker_label": "足田法行",
       "meeting_name": "令和 6年 9月定例会（第5号 9月26日） 本会議",
       "date": "2024-09-26",
       "kind": "本会議",
@@ -497,8 +551,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-11-11--ac2776b92a--r061111a-3538-399",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-11-11--kato-bunji--r061111a-3538-399",
+      "member_id": "sakaiminato-city--kato-bunji",
+      "speaker_label": "加藤文治",
       "meeting_name": "令和 6年11月臨時会（第1号11月11日） 本会議",
       "date": "2024-11-11",
       "kind": "本会議",
@@ -506,8 +561,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-11-11--9c88ec8a36--r061111a-12022-399",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-11-11--yoshii-takumi--r061111a-12022-399",
+      "member_id": "sakaiminato-city--yoshii-takumi",
+      "speaker_label": "吉井巧",
       "meeting_name": "令和 6年11月臨時会（第1号11月11日） 本会議",
       "date": "2024-11-11",
       "kind": "本会議",
@@ -515,8 +571,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-11-11--2baaa7f2e6--r061111a-11020-399",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-11-11--hiramatsu-kenji--r061111a-11020-399",
+      "member_id": "sakaiminato-city--hiramatsu-kenji",
+      "speaker_label": "平松謙治",
       "meeting_name": "令和 6年11月臨時会（第1号11月11日） 本会議",
       "date": "2024-11-11",
       "kind": "本会議",
@@ -526,6 +583,7 @@
     {
       "id": "sakaiminato-city--2024-11-11--19cdd0470f--r061111a-2353-399",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 6年11月臨時会（第1号11月11日） 本会議",
       "date": "2024-11-11",
       "kind": "本会議",
@@ -533,8 +591,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-12-03--23b500cb01--r061203a-3462-400",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-12-03--morioka-toshio--r061203a-3462-400",
+      "member_id": "sakaiminato-city--morioka-toshio",
+      "speaker_label": "森岡俊夫",
       "meeting_name": "令和 6年12月定例会（第1号12月 3日） 本会議",
       "date": "2024-12-03",
       "kind": "本会議",
@@ -544,6 +603,7 @@
     {
       "id": "sakaiminato-city--2024-12-03--19cdd0470f--r061203a-3173-400",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 6年12月定例会（第1号12月 3日） 本会議",
       "date": "2024-12-03",
       "kind": "本会議",
@@ -551,8 +611,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-12-16--ac2776b92a--r061216a-116326-401",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-12-16--kato-bunji--r061216a-116326-401",
+      "member_id": "sakaiminato-city--kato-bunji",
+      "speaker_label": "加藤文治",
       "meeting_name": "令和 6年12月定例会（第2号12月16日） 本会議",
       "date": "2024-12-16",
       "kind": "本会議",
@@ -560,8 +621,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-12-16--9c88ec8a36--r061216a-39902-401",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-12-16--yoshii-takumi--r061216a-39902-401",
+      "member_id": "sakaiminato-city--yoshii-takumi",
+      "speaker_label": "吉井巧",
       "meeting_name": "令和 6年12月定例会（第2号12月16日） 本会議",
       "date": "2024-12-16",
       "kind": "本会議",
@@ -571,6 +633,7 @@
     {
       "id": "sakaiminato-city--2024-12-16--a2919a82d8--r061216a-2350-401",
       "member_id": null,
+      "speaker_label": "景山憲",
       "meeting_name": "令和 6年12月定例会（第2号12月16日） 本会議",
       "date": "2024-12-16",
       "kind": "本会議",
@@ -578,8 +641,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-12-16--878064b81d--r061216a-63022-401",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-12-16--matsumoto-akihiko--r061216a-63022-401",
+      "member_id": "sakaiminato-city--matsumoto-akihiko",
+      "speaker_label": "松本晶彦",
       "meeting_name": "令和 6年12月定例会（第2号12月16日） 本会議",
       "date": "2024-12-16",
       "kind": "本会議",
@@ -589,6 +653,7 @@
     {
       "id": "sakaiminato-city--2024-12-16--19cdd0470f--r061216a-1889-401",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 6年12月定例会（第2号12月16日） 本会議",
       "date": "2024-12-16",
       "kind": "本会議",
@@ -596,8 +661,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-12-16--7ea212aac5--r061216a-86368-401",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-12-16--ashida-noriyuki--r061216a-86368-401",
+      "member_id": "sakaiminato-city--ashida-noriyuki",
+      "speaker_label": "足田法行",
       "meeting_name": "令和 6年12月定例会（第2号12月16日） 本会議",
       "date": "2024-12-16",
       "kind": "本会議",
@@ -605,8 +671,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-12-17--fc7d35dba7--r061217a-2366-402",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-12-17--yasuda-tomoko--r061217a-2366-402",
+      "member_id": "sakaiminato-city--yasuda-tomoko",
+      "speaker_label": "安田共子",
       "meeting_name": "令和 6年12月定例会（第3号12月17日） 本会議",
       "date": "2024-12-17",
       "kind": "本会議",
@@ -614,8 +681,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-12-17--ac7f93e8bd--r061217a-69582-402",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-12-17--hiiragi-yasuhiro--r061217a-69582-402",
+      "member_id": "sakaiminato-city--hiiragi-yasuhiro",
+      "speaker_label": "柊康弘",
       "meeting_name": "令和 6年12月定例会（第3号12月17日） 本会議",
       "date": "2024-12-17",
       "kind": "本会議",
@@ -625,6 +693,7 @@
     {
       "id": "sakaiminato-city--2024-12-17--19cdd0470f--r061217a-1889-402",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 6年12月定例会（第3号12月17日） 本会議",
       "date": "2024-12-17",
       "kind": "本会議",
@@ -632,8 +701,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-12-17--2d0f894644--r061217a-37164-402",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-12-17--taguchi-shunsuke--r061217a-37164-402",
+      "member_id": "sakaiminato-city--taguchi-shunsuke",
+      "speaker_label": "田口俊介",
       "meeting_name": "令和 6年12月定例会（第3号12月17日） 本会議",
       "date": "2024-12-17",
       "kind": "本会議",
@@ -643,6 +713,7 @@
     {
       "id": "sakaiminato-city--2024-12-17--aa614811b9--r061217a-79364-402",
       "member_id": null,
+      "speaker_label": "米村一三",
       "meeting_name": "令和 6年12月定例会（第3号12月17日） 本会議",
       "date": "2024-12-17",
       "kind": "本会議",
@@ -652,6 +723,7 @@
     {
       "id": "sakaiminato-city--2024-12-18--e9bd7b0f85--r061218a-76930-403",
       "member_id": null,
+      "speaker_label": "伊藤康弘",
       "meeting_name": "令和 6年12月定例会（第4号12月18日） 本会議",
       "date": "2024-12-18",
       "kind": "本会議",
@@ -659,8 +731,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-12-18--2baaa7f2e6--r061218a-28960-403",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-12-18--hiramatsu-kenji--r061218a-28960-403",
+      "member_id": "sakaiminato-city--hiramatsu-kenji",
+      "speaker_label": "平松謙治",
       "meeting_name": "令和 6年12月定例会（第4号12月18日） 本会議",
       "date": "2024-12-18",
       "kind": "本会議",
@@ -668,8 +741,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-12-18--23b500cb01--r061218a-2366-403",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-12-18--morioka-toshio--r061218a-2366-403",
+      "member_id": "sakaiminato-city--morioka-toshio",
+      "speaker_label": "森岡俊夫",
       "meeting_name": "令和 6年12月定例会（第4号12月18日） 本会議",
       "date": "2024-12-18",
       "kind": "本会議",
@@ -679,6 +753,7 @@
     {
       "id": "sakaiminato-city--2024-12-18--19cdd0470f--r061218a-1889-403",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 6年12月定例会（第4号12月18日） 本会議",
       "date": "2024-12-18",
       "kind": "本会議",
@@ -686,8 +761,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-12-18--22a77435df--r061218a-49458-403",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-12-18--arai-hideyuki--r061218a-49458-403",
+      "member_id": "sakaiminato-city--arai-hideyuki",
+      "speaker_label": "荒井秀行",
       "meeting_name": "令和 6年12月定例会（第4号12月18日） 本会議",
       "date": "2024-12-18",
       "kind": "本会議",
@@ -695,8 +771,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-12-24--9c88ec8a36--r061224a-11172-404",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-12-24--yoshii-takumi--r061224a-11172-404",
+      "member_id": "sakaiminato-city--yoshii-takumi",
+      "speaker_label": "吉井巧",
       "meeting_name": "令和 6年12月定例会（第5号12月24日） 本会議",
       "date": "2024-12-24",
       "kind": "本会議",
@@ -704,8 +781,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-12-24--fc7d35dba7--r061224a-14172-404",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-12-24--yasuda-tomoko--r061224a-14172-404",
+      "member_id": "sakaiminato-city--yasuda-tomoko",
+      "speaker_label": "安田共子",
       "meeting_name": "令和 6年12月定例会（第5号12月24日） 本会議",
       "date": "2024-12-24",
       "kind": "本会議",
@@ -713,8 +791,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-12-24--2baaa7f2e6--r061224a-3556-404",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-12-24--hiramatsu-kenji--r061224a-3556-404",
+      "member_id": "sakaiminato-city--hiramatsu-kenji",
+      "speaker_label": "平松謙治",
       "meeting_name": "令和 6年12月定例会（第5号12月24日） 本会議",
       "date": "2024-12-24",
       "kind": "本会議",
@@ -722,8 +801,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2024-12-24--2baaa7f2e6--r061224a-6208-404",
-      "member_id": null,
+      "id": "sakaiminato-city--2024-12-24--hiramatsu-kenji--r061224a-6208-404",
+      "member_id": "sakaiminato-city--hiramatsu-kenji",
+      "speaker_label": "平松謙治",
       "meeting_name": "令和 6年12月定例会（第5号12月24日） 本会議",
       "date": "2024-12-24",
       "kind": "本会議",
@@ -733,6 +813,7 @@
     {
       "id": "sakaiminato-city--2024-12-24--19cdd0470f--r061224a-2837-404",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 6年12月定例会（第5号12月24日） 本会議",
       "date": "2024-12-24",
       "kind": "本会議",
@@ -740,8 +821,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-01-24--2baaa7f2e6--r070124a-4210-405",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-01-24--hiramatsu-kenji--r070124a-4210-405",
+      "member_id": "sakaiminato-city--hiramatsu-kenji",
+      "speaker_label": "平松謙治",
       "meeting_name": "令和 7年 1月臨時会（第1号 1月24日） 本会議",
       "date": "2025-01-24",
       "kind": "本会議",
@@ -751,6 +833,7 @@
     {
       "id": "sakaiminato-city--2025-01-24--19cdd0470f--r070124a-1937-405",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 7年 1月臨時会（第1号 1月24日） 本会議",
       "date": "2025-01-24",
       "kind": "本会議",
@@ -758,8 +841,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-02-25--9c88ec8a36--r070225a-19542-406",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-02-25--yoshii-takumi--r070225a-19542-406",
+      "member_id": "sakaiminato-city--yoshii-takumi",
+      "speaker_label": "吉井巧",
       "meeting_name": "令和 7年 3月定例会（第1号 2月25日） 本会議",
       "date": "2025-02-25",
       "kind": "本会議",
@@ -767,8 +851,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-02-25--9c88ec8a36--r070225a-7894-406",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-02-25--yoshii-takumi--r070225a-7894-406",
+      "member_id": "sakaiminato-city--yoshii-takumi",
+      "speaker_label": "吉井巧",
       "meeting_name": "令和 7年 3月定例会（第1号 2月25日） 本会議",
       "date": "2025-02-25",
       "kind": "本会議",
@@ -776,8 +861,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-02-25--fc7d35dba7--r070225a-23970-406",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-02-25--yasuda-tomoko--r070225a-23970-406",
+      "member_id": "sakaiminato-city--yasuda-tomoko",
+      "speaker_label": "安田共子",
       "meeting_name": "令和 7年 3月定例会（第1号 2月25日） 本会議",
       "date": "2025-02-25",
       "kind": "本会議",
@@ -785,8 +871,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-02-25--2baaa7f2e6--r070225a-4808-406",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-02-25--hiramatsu-kenji--r070225a-4808-406",
+      "member_id": "sakaiminato-city--hiramatsu-kenji",
+      "speaker_label": "平松謙治",
       "meeting_name": "令和 7年 3月定例会（第1号 2月25日） 本会議",
       "date": "2025-02-25",
       "kind": "本会議",
@@ -796,6 +883,7 @@
     {
       "id": "sakaiminato-city--2025-02-25--19cdd0470f--r070225a-4507-406",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 7年 3月定例会（第1号 2月25日） 本会議",
       "date": "2025-02-25",
       "kind": "本会議",
@@ -805,6 +893,7 @@
     {
       "id": "sakaiminato-city--2025-03-12--e9bd7b0f85--r070312a-132346-407",
       "member_id": null,
+      "speaker_label": "伊藤康弘",
       "meeting_name": "令和 7年 3月定例会（第2号 3月12日） 本会議",
       "date": "2025-03-12",
       "kind": "本会議",
@@ -812,8 +901,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-03-12--ac2776b92a--r070312a-89132-407",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-03-12--kato-bunji--r070312a-89132-407",
+      "member_id": "sakaiminato-city--kato-bunji",
+      "speaker_label": "加藤文治",
       "meeting_name": "令和 7年 3月定例会（第2号 3月12日） 本会議",
       "date": "2025-03-12",
       "kind": "本会議",
@@ -821,8 +911,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-03-12--9c88ec8a36--r070312a-108112-407",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-03-12--yoshii-takumi--r070312a-108112-407",
+      "member_id": "sakaiminato-city--yoshii-takumi",
+      "speaker_label": "吉井巧",
       "meeting_name": "令和 7年 3月定例会（第2号 3月12日） 本会議",
       "date": "2025-03-12",
       "kind": "本会議",
@@ -830,8 +921,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-03-12--878064b81d--r070312a-2320-407",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-03-12--matsumoto-akihiko--r070312a-2320-407",
+      "member_id": "sakaiminato-city--matsumoto-akihiko",
+      "speaker_label": "松本晶彦",
       "meeting_name": "令和 7年 3月定例会（第2号 3月12日） 本会議",
       "date": "2025-03-12",
       "kind": "本会議",
@@ -841,6 +933,7 @@
     {
       "id": "sakaiminato-city--2025-03-12--19cdd0470f--r070312a-1843-407",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 7年 3月定例会（第2号 3月12日） 本会議",
       "date": "2025-03-12",
       "kind": "本会議",
@@ -848,8 +941,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-03-12--22a77435df--r070312a-59876-407",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-03-12--arai-hideyuki--r070312a-59876-407",
+      "member_id": "sakaiminato-city--arai-hideyuki",
+      "speaker_label": "荒井秀行",
       "meeting_name": "令和 7年 3月定例会（第2号 3月12日） 本会議",
       "date": "2025-03-12",
       "kind": "本会議",
@@ -857,8 +951,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-03-13--fc7d35dba7--r070313a-32040-408",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-03-13--yasuda-tomoko--r070313a-32040-408",
+      "member_id": "sakaiminato-city--yasuda-tomoko",
+      "speaker_label": "安田共子",
       "meeting_name": "令和 7年 3月定例会（第3号 3月13日） 本会議",
       "date": "2025-03-13",
       "kind": "本会議",
@@ -868,6 +963,7 @@
     {
       "id": "sakaiminato-city--2025-03-13--a2919a82d8--r070313a-65068-408",
       "member_id": null,
+      "speaker_label": "景山憲",
       "meeting_name": "令和 7年 3月定例会（第3号 3月13日） 本会議",
       "date": "2025-03-13",
       "kind": "本会議",
@@ -877,6 +973,7 @@
     {
       "id": "sakaiminato-city--2025-03-13--19cdd0470f--r070313a-1843-408",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 7年 3月定例会（第3号 3月13日） 本会議",
       "date": "2025-03-13",
       "kind": "本会議",
@@ -884,8 +981,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-03-13--2d0f894644--r070313a-2312-408",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-03-13--taguchi-shunsuke--r070313a-2312-408",
+      "member_id": "sakaiminato-city--taguchi-shunsuke",
+      "speaker_label": "田口俊介",
       "meeting_name": "令和 7年 3月定例会（第3号 3月13日） 本会議",
       "date": "2025-03-13",
       "kind": "本会議",
@@ -895,6 +993,7 @@
     {
       "id": "sakaiminato-city--2025-03-13--aa614811b9--r070313a-100494-408",
       "member_id": null,
+      "speaker_label": "米村一三",
       "meeting_name": "令和 7年 3月定例会（第3号 3月13日） 本会議",
       "date": "2025-03-13",
       "kind": "本会議",
@@ -902,8 +1001,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-03-14--2baaa7f2e6--r070314a-35912-409",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-03-14--hiramatsu-kenji--r070314a-35912-409",
+      "member_id": "sakaiminato-city--hiramatsu-kenji",
+      "speaker_label": "平松謙治",
       "meeting_name": "令和 7年 3月定例会（第4号 3月14日） 本会議",
       "date": "2025-03-14",
       "kind": "本会議",
@@ -911,8 +1011,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-03-14--23b500cb01--r070314a-54910-409",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-03-14--morioka-toshio--r070314a-54910-409",
+      "member_id": "sakaiminato-city--morioka-toshio",
+      "speaker_label": "森岡俊夫",
       "meeting_name": "令和 7年 3月定例会（第4号 3月14日） 本会議",
       "date": "2025-03-14",
       "kind": "本会議",
@@ -922,6 +1023,7 @@
     {
       "id": "sakaiminato-city--2025-03-14--19cdd0470f--r070314a-1985-409",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 7年 3月定例会（第4号 3月14日） 本会議",
       "date": "2025-03-14",
       "kind": "本会議",
@@ -929,8 +1031,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-03-14--7ea212aac5--r070314a-2448-409",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-03-14--ashida-noriyuki--r070314a-2448-409",
+      "member_id": "sakaiminato-city--ashida-noriyuki",
+      "speaker_label": "足田法行",
       "meeting_name": "令和 7年 3月定例会（第4号 3月14日） 本会議",
       "date": "2025-03-14",
       "kind": "本会議",
@@ -938,8 +1041,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-03-21--ac2776b92a--r070321a-38174-410",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-03-21--kato-bunji--r070321a-38174-410",
+      "member_id": "sakaiminato-city--kato-bunji",
+      "speaker_label": "加藤文治",
       "meeting_name": "令和 7年 3月定例会（第5号 3月21日） 本会議",
       "date": "2025-03-21",
       "kind": "本会議",
@@ -947,8 +1051,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-03-21--9c88ec8a36--r070321a-10478-410",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-03-21--yoshii-takumi--r070321a-10478-410",
+      "member_id": "sakaiminato-city--yoshii-takumi",
+      "speaker_label": "吉井巧",
       "meeting_name": "令和 7年 3月定例会（第5号 3月21日） 本会議",
       "date": "2025-03-21",
       "kind": "本会議",
@@ -956,8 +1061,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-03-21--9c88ec8a36--r070321a-3618-410",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-03-21--yoshii-takumi--r070321a-3618-410",
+      "member_id": "sakaiminato-city--yoshii-takumi",
+      "speaker_label": "吉井巧",
       "meeting_name": "令和 7年 3月定例会（第5号 3月21日） 本会議",
       "date": "2025-03-21",
       "kind": "本会議",
@@ -965,8 +1071,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-03-21--fc7d35dba7--r070321a-21672-410",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-03-21--yasuda-tomoko--r070321a-21672-410",
+      "member_id": "sakaiminato-city--yasuda-tomoko",
+      "speaker_label": "安田共子",
       "meeting_name": "令和 7年 3月定例会（第5号 3月21日） 本会議",
       "date": "2025-03-21",
       "kind": "本会議",
@@ -974,8 +1081,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-03-21--2baaa7f2e6--r070321a-13986-410",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-03-21--hiramatsu-kenji--r070321a-13986-410",
+      "member_id": "sakaiminato-city--hiramatsu-kenji",
+      "speaker_label": "平松謙治",
       "meeting_name": "令和 7年 3月定例会（第5号 3月21日） 本会議",
       "date": "2025-03-21",
       "kind": "本会議",
@@ -983,8 +1091,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-03-21--878064b81d--r070321a-37320-410",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-03-21--matsumoto-akihiko--r070321a-37320-410",
+      "member_id": "sakaiminato-city--matsumoto-akihiko",
+      "speaker_label": "松本晶彦",
       "meeting_name": "令和 7年 3月定例会（第5号 3月21日） 本会議",
       "date": "2025-03-21",
       "kind": "本会議",
@@ -994,6 +1103,7 @@
     {
       "id": "sakaiminato-city--2025-03-21--19cdd0470f--r070321a-2933-410",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 7年 3月定例会（第5号 3月21日） 本会議",
       "date": "2025-03-21",
       "kind": "本会議",
@@ -1001,8 +1111,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-05-15--fc7d35dba7--r070515a-7786-411",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-05-15--yasuda-tomoko--r070515a-7786-411",
+      "member_id": "sakaiminato-city--yasuda-tomoko",
+      "speaker_label": "安田共子",
       "meeting_name": "令和 7年 5月臨時会（第1号 5月15日） 本会議",
       "date": "2025-05-15",
       "kind": "本会議",
@@ -1010,8 +1121,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-05-15--2baaa7f2e6--r070515a-6232-411",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-05-15--hiramatsu-kenji--r070515a-6232-411",
+      "member_id": "sakaiminato-city--hiramatsu-kenji",
+      "speaker_label": "平松謙治",
       "meeting_name": "令和 7年 5月臨時会（第1号 5月15日） 本会議",
       "date": "2025-05-15",
       "kind": "本会議",
@@ -1021,6 +1133,7 @@
     {
       "id": "sakaiminato-city--2025-05-15--19cdd0470f--r070515a-2277-411",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 7年 5月臨時会（第1号 5月15日） 本会議",
       "date": "2025-05-15",
       "kind": "本会議",
@@ -1028,8 +1141,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-06-02--9c88ec8a36--r070602a-8068-412",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-06-02--yoshii-takumi--r070602a-8068-412",
+      "member_id": "sakaiminato-city--yoshii-takumi",
+      "speaker_label": "吉井巧",
       "meeting_name": "令和 7年 6月定例会（第1号 6月 2日） 本会議",
       "date": "2025-06-02",
       "kind": "本会議",
@@ -1037,8 +1151,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-06-02--2baaa7f2e6--r070602a-5052-412",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-06-02--hiramatsu-kenji--r070602a-5052-412",
+      "member_id": "sakaiminato-city--hiramatsu-kenji",
+      "speaker_label": "平松謙治",
       "meeting_name": "令和 7年 6月定例会（第1号 6月 2日） 本会議",
       "date": "2025-06-02",
       "kind": "本会議",
@@ -1046,8 +1161,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-06-02--23b500cb01--r070602a-13004-412",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-06-02--morioka-toshio--r070602a-13004-412",
+      "member_id": "sakaiminato-city--morioka-toshio",
+      "speaker_label": "森岡俊夫",
       "meeting_name": "令和 7年 6月定例会（第1号 6月 2日） 本会議",
       "date": "2025-06-02",
       "kind": "本会議",
@@ -1057,6 +1173,7 @@
     {
       "id": "sakaiminato-city--2025-06-02--19cdd0470f--r070602a-3945-412",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 7年 6月定例会（第1号 6月 2日） 本会議",
       "date": "2025-06-02",
       "kind": "本会議",
@@ -1064,8 +1181,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-06-16--ac2776b92a--r070616a-2372-413",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-06-16--kato-bunji--r070616a-2372-413",
+      "member_id": "sakaiminato-city--kato-bunji",
+      "speaker_label": "加藤文治",
       "meeting_name": "令和 7年 6月定例会（第2号 6月16日） 本会議",
       "date": "2025-06-16",
       "kind": "本会議",
@@ -1075,6 +1193,7 @@
     {
       "id": "sakaiminato-city--2025-06-16--a2919a82d8--r070616a-43916-413",
       "member_id": null,
+      "speaker_label": "景山憲",
       "meeting_name": "令和 7年 6月定例会（第2号 6月16日） 本会議",
       "date": "2025-06-16",
       "kind": "本会議",
@@ -1082,8 +1201,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-06-16--878064b81d--r070616a-19244-413",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-06-16--matsumoto-akihiko--r070616a-19244-413",
+      "member_id": "sakaiminato-city--matsumoto-akihiko",
+      "speaker_label": "松本晶彦",
       "meeting_name": "令和 7年 6月定例会（第2号 6月16日） 本会議",
       "date": "2025-06-16",
       "kind": "本会議",
@@ -1093,6 +1213,7 @@
     {
       "id": "sakaiminato-city--2025-06-16--19cdd0470f--r070616a-1911-413",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 7年 6月定例会（第2号 6月16日） 本会議",
       "date": "2025-06-16",
       "kind": "本会議",
@@ -1100,8 +1221,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-06-16--22a77435df--r070616a-82474-413",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-06-16--arai-hideyuki--r070616a-82474-413",
+      "member_id": "sakaiminato-city--arai-hideyuki",
+      "speaker_label": "荒井秀行",
       "meeting_name": "令和 7年 6月定例会（第2号 6月16日） 本会議",
       "date": "2025-06-16",
       "kind": "本会議",
@@ -1111,6 +1233,7 @@
     {
       "id": "sakaiminato-city--2025-06-17--e9bd7b0f85--r070617a-39100-414",
       "member_id": null,
+      "speaker_label": "伊藤康弘",
       "meeting_name": "令和 7年 6月定例会（第3号 6月17日） 本会議",
       "date": "2025-06-17",
       "kind": "本会議",
@@ -1118,8 +1241,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-06-17--9c88ec8a36--r070617a-2384-414",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-06-17--yoshii-takumi--r070617a-2384-414",
+      "member_id": "sakaiminato-city--yoshii-takumi",
+      "speaker_label": "吉井巧",
       "meeting_name": "令和 7年 6月定例会（第3号 6月17日） 本会議",
       "date": "2025-06-17",
       "kind": "本会議",
@@ -1127,8 +1251,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-06-17--ac7f93e8bd--r070617a-51928-414",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-06-17--hiiragi-yasuhiro--r070617a-51928-414",
+      "member_id": "sakaiminato-city--hiiragi-yasuhiro",
+      "speaker_label": "柊康弘",
       "meeting_name": "令和 7年 6月定例会（第3号 6月17日） 本会議",
       "date": "2025-06-17",
       "kind": "本会議",
@@ -1138,6 +1263,7 @@
     {
       "id": "sakaiminato-city--2025-06-17--19cdd0470f--r070617a-1911-414",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 7年 6月定例会（第3号 6月17日） 本会議",
       "date": "2025-06-17",
       "kind": "本会議",
@@ -1147,6 +1273,7 @@
     {
       "id": "sakaiminato-city--2025-06-17--aa614811b9--r070617a-24024-414",
       "member_id": null,
+      "speaker_label": "米村一三",
       "meeting_name": "令和 7年 6月定例会（第3号 6月17日） 本会議",
       "date": "2025-06-17",
       "kind": "本会議",
@@ -1154,8 +1281,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-06-18--fc7d35dba7--r070618a-65899-415",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-06-18--yasuda-tomoko--r070618a-65899-415",
+      "member_id": "sakaiminato-city--yasuda-tomoko",
+      "speaker_label": "安田共子",
       "meeting_name": "令和 7年 6月定例会（第4号 6月18日） 本会議",
       "date": "2025-06-18",
       "kind": "本会議",
@@ -1163,8 +1291,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-06-18--23b500cb01--r070618a-99231-415",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-06-18--morioka-toshio--r070618a-99231-415",
+      "member_id": "sakaiminato-city--morioka-toshio",
+      "speaker_label": "森岡俊夫",
       "meeting_name": "令和 7年 6月定例会（第4号 6月18日） 本会議",
       "date": "2025-06-18",
       "kind": "本会議",
@@ -1174,6 +1303,7 @@
     {
       "id": "sakaiminato-city--2025-06-18--19cdd0470f--r070618a-2249-415",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 7年 6月定例会（第4号 6月18日） 本会議",
       "date": "2025-06-18",
       "kind": "本会議",
@@ -1181,8 +1311,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-06-18--2d0f894644--r070618a-30989-415",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-06-18--taguchi-shunsuke--r070618a-30989-415",
+      "member_id": "sakaiminato-city--taguchi-shunsuke",
+      "speaker_label": "田口俊介",
       "meeting_name": "令和 7年 6月定例会（第4号 6月18日） 本会議",
       "date": "2025-06-18",
       "kind": "本会議",
@@ -1190,8 +1321,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-06-18--7ea212aac5--r070618a-3044-415",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-06-18--ashida-noriyuki--r070618a-3044-415",
+      "member_id": "sakaiminato-city--ashida-noriyuki",
+      "speaker_label": "足田法行",
       "meeting_name": "令和 7年 6月定例会（第4号 6月18日） 本会議",
       "date": "2025-06-18",
       "kind": "本会議",
@@ -1199,8 +1331,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-06-24--9c88ec8a36--r070624a-13692-416",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-06-24--yoshii-takumi--r070624a-13692-416",
+      "member_id": "sakaiminato-city--yoshii-takumi",
+      "speaker_label": "吉井巧",
       "meeting_name": "令和 7年 6月定例会（第5号 6月24日） 本会議",
       "date": "2025-06-24",
       "kind": "本会議",
@@ -1208,8 +1341,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-06-24--9c88ec8a36--r070624a-9510-416",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-06-24--yoshii-takumi--r070624a-9510-416",
+      "member_id": "sakaiminato-city--yoshii-takumi",
+      "speaker_label": "吉井巧",
       "meeting_name": "令和 7年 6月定例会（第5号 6月24日） 本会議",
       "date": "2025-06-24",
       "kind": "本会議",
@@ -1217,8 +1351,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-06-24--fc7d35dba7--r070624a-22724-416",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-06-24--yasuda-tomoko--r070624a-22724-416",
+      "member_id": "sakaiminato-city--yasuda-tomoko",
+      "speaker_label": "安田共子",
       "meeting_name": "令和 7年 6月定例会（第5号 6月24日） 本会議",
       "date": "2025-06-24",
       "kind": "本会議",
@@ -1226,8 +1361,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-06-24--2baaa7f2e6--r070624a-17902-416",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-06-24--hiramatsu-kenji--r070624a-17902-416",
+      "member_id": "sakaiminato-city--hiramatsu-kenji",
+      "speaker_label": "平松謙治",
       "meeting_name": "令和 7年 6月定例会（第5号 6月24日） 本会議",
       "date": "2025-06-24",
       "kind": "本会議",
@@ -1235,8 +1371,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-06-24--23b500cb01--r070624a-2764-416",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-06-24--morioka-toshio--r070624a-2764-416",
+      "member_id": "sakaiminato-city--morioka-toshio",
+      "speaker_label": "森岡俊夫",
       "meeting_name": "令和 7年 6月定例会（第5号 6月24日） 本会議",
       "date": "2025-06-24",
       "kind": "本会議",
@@ -1246,6 +1383,7 @@
     {
       "id": "sakaiminato-city--2025-06-24--19cdd0470f--r070624a-2495-416",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 7年 6月定例会（第5号 6月24日） 本会議",
       "date": "2025-06-24",
       "kind": "本会議",
@@ -1253,8 +1391,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-09-02--ac2776b92a--r070902a-41220-417",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-09-02--kato-bunji--r070902a-41220-417",
+      "member_id": "sakaiminato-city--kato-bunji",
+      "speaker_label": "加藤文治",
       "meeting_name": "令和 7年 9月定例会（第1号 9月 2日） 本会議",
       "date": "2025-09-02",
       "kind": "本会議",
@@ -1262,8 +1401,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-09-02--9c88ec8a36--r070902a-7944-417",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-09-02--yoshii-takumi--r070902a-7944-417",
+      "member_id": "sakaiminato-city--yoshii-takumi",
+      "speaker_label": "吉井巧",
       "meeting_name": "令和 7年 9月定例会（第1号 9月 2日） 本会議",
       "date": "2025-09-02",
       "kind": "本会議",
@@ -1271,8 +1411,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-09-02--2baaa7f2e6--r070902a-4578-417",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-09-02--hiramatsu-kenji--r070902a-4578-417",
+      "member_id": "sakaiminato-city--hiramatsu-kenji",
+      "speaker_label": "平松謙治",
       "meeting_name": "令和 7年 9月定例会（第1号 9月 2日） 本会議",
       "date": "2025-09-02",
       "kind": "本会議",
@@ -1282,6 +1423,7 @@
     {
       "id": "sakaiminato-city--2025-09-02--19cdd0470f--r070902a-4355-417",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 7年 9月定例会（第1号 9月 2日） 本会議",
       "date": "2025-09-02",
       "kind": "本会議",
@@ -1289,8 +1431,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-09-16--fc7d35dba7--r070916a-54714-418",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-09-16--yasuda-tomoko--r070916a-54714-418",
+      "member_id": "sakaiminato-city--yasuda-tomoko",
+      "speaker_label": "安田共子",
       "meeting_name": "令和 7年 9月定例会（第2号 9月16日） 本会議",
       "date": "2025-09-16",
       "kind": "本会議",
@@ -1298,8 +1441,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-09-16--2baaa7f2e6--r070916a-86510-418",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-09-16--hiramatsu-kenji--r070916a-86510-418",
+      "member_id": "sakaiminato-city--hiramatsu-kenji",
+      "speaker_label": "平松謙治",
       "meeting_name": "令和 7年 9月定例会（第2号 9月16日） 本会議",
       "date": "2025-09-16",
       "kind": "本会議",
@@ -1307,8 +1451,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-09-16--878064b81d--r070916a-2574-418",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-09-16--matsumoto-akihiko--r070916a-2574-418",
+      "member_id": "sakaiminato-city--matsumoto-akihiko",
+      "speaker_label": "松本晶彦",
       "meeting_name": "令和 7年 9月定例会（第2号 9月16日） 本会議",
       "date": "2025-09-16",
       "kind": "本会議",
@@ -1318,6 +1463,7 @@
     {
       "id": "sakaiminato-city--2025-09-16--19cdd0470f--r070916a-1979-418",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 7年 9月定例会（第2号 9月16日） 本会議",
       "date": "2025-09-16",
       "kind": "本会議",
@@ -1325,8 +1471,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-09-16--22a77435df--r070916a-26756-418",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-09-16--arai-hideyuki--r070916a-26756-418",
+      "member_id": "sakaiminato-city--arai-hideyuki",
+      "speaker_label": "荒井秀行",
       "meeting_name": "令和 7年 9月定例会（第2号 9月16日） 本会議",
       "date": "2025-09-16",
       "kind": "本会議",
@@ -1336,6 +1483,7 @@
     {
       "id": "sakaiminato-city--2025-09-17--e9bd7b0f85--r070917a-2454-419",
       "member_id": null,
+      "speaker_label": "伊藤康弘",
       "meeting_name": "令和 7年 9月定例会（第3号 9月17日） 本会議",
       "date": "2025-09-17",
       "kind": "本会議",
@@ -1343,8 +1491,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-09-17--23b500cb01--r070917a-14154-419",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-09-17--morioka-toshio--r070917a-14154-419",
+      "member_id": "sakaiminato-city--morioka-toshio",
+      "speaker_label": "森岡俊夫",
       "meeting_name": "令和 7年 9月定例会（第3号 9月17日） 本会議",
       "date": "2025-09-17",
       "kind": "本会議",
@@ -1354,6 +1503,7 @@
     {
       "id": "sakaiminato-city--2025-09-17--19cdd0470f--r070917a-1979-419",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 7年 9月定例会（第3号 9月17日） 本会議",
       "date": "2025-09-17",
       "kind": "本会議",
@@ -1361,8 +1511,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-09-17--2d0f894644--r070917a-42116-419",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-09-17--taguchi-shunsuke--r070917a-42116-419",
+      "member_id": "sakaiminato-city--taguchi-shunsuke",
+      "speaker_label": "田口俊介",
       "meeting_name": "令和 7年 9月定例会（第3号 9月17日） 本会議",
       "date": "2025-09-17",
       "kind": "本会議",
@@ -1370,8 +1521,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-09-17--7ea212aac5--r070917a-73990-419",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-09-17--ashida-noriyuki--r070917a-73990-419",
+      "member_id": "sakaiminato-city--ashida-noriyuki",
+      "speaker_label": "足田法行",
       "meeting_name": "令和 7年 9月定例会（第3号 9月17日） 本会議",
       "date": "2025-09-17",
       "kind": "本会議",
@@ -1379,8 +1531,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-09-18--ac2776b92a--r070918a-30606-420",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-09-18--kato-bunji--r070918a-30606-420",
+      "member_id": "sakaiminato-city--kato-bunji",
+      "speaker_label": "加藤文治",
       "meeting_name": "令和 7年 9月定例会（第4号 9月18日） 本会議",
       "date": "2025-09-18",
       "kind": "本会議",
@@ -1390,6 +1543,7 @@
     {
       "id": "sakaiminato-city--2025-09-18--a2919a82d8--r070918a-51554-420",
       "member_id": null,
+      "speaker_label": "景山憲",
       "meeting_name": "令和 7年 9月定例会（第4号 9月18日） 本会議",
       "date": "2025-09-18",
       "kind": "本会議",
@@ -1399,6 +1553,7 @@
     {
       "id": "sakaiminato-city--2025-09-18--19cdd0470f--r070918a-2025-420",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 7年 9月定例会（第4号 9月18日） 本会議",
       "date": "2025-09-18",
       "kind": "本会議",
@@ -1408,6 +1563,7 @@
     {
       "id": "sakaiminato-city--2025-09-18--aa614811b9--r070918a-2502-420",
       "member_id": null,
+      "speaker_label": "米村一三",
       "meeting_name": "令和 7年 9月定例会（第4号 9月18日） 本会議",
       "date": "2025-09-18",
       "kind": "本会議",
@@ -1415,8 +1571,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-09-25--9c88ec8a36--r070925a-4334-421",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-09-25--yoshii-takumi--r070925a-4334-421",
+      "member_id": "sakaiminato-city--yoshii-takumi",
+      "speaker_label": "吉井巧",
       "meeting_name": "令和 7年 9月定例会（第5号 9月25日） 本会議",
       "date": "2025-09-25",
       "kind": "本会議",
@@ -1424,8 +1581,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-09-25--9c88ec8a36--r070925a-6338-421",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-09-25--yoshii-takumi--r070925a-6338-421",
+      "member_id": "sakaiminato-city--yoshii-takumi",
+      "speaker_label": "吉井巧",
       "meeting_name": "令和 7年 9月定例会（第5号 9月25日） 本会議",
       "date": "2025-09-25",
       "kind": "本会議",
@@ -1433,8 +1591,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-09-25--fc7d35dba7--r070925a-14978-421",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-09-25--yasuda-tomoko--r070925a-14978-421",
+      "member_id": "sakaiminato-city--yasuda-tomoko",
+      "speaker_label": "安田共子",
       "meeting_name": "令和 7年 9月定例会（第5号 9月25日） 本会議",
       "date": "2025-09-25",
       "kind": "本会議",
@@ -1442,8 +1601,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-09-25--2baaa7f2e6--r070925a-8790-421",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-09-25--hiramatsu-kenji--r070925a-8790-421",
+      "member_id": "sakaiminato-city--hiramatsu-kenji",
+      "speaker_label": "平松謙治",
       "meeting_name": "令和 7年 9月定例会（第5号 9月25日） 本会議",
       "date": "2025-09-25",
       "kind": "本会議",
@@ -1453,6 +1613,7 @@
     {
       "id": "sakaiminato-city--2025-09-25--19cdd0470f--r070925a-3639-421",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 7年 9月定例会（第5号 9月25日） 本会議",
       "date": "2025-09-25",
       "kind": "本会議",
@@ -1460,8 +1621,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-09-25--7ea212aac5--r070925a-29904-421",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-09-25--ashida-noriyuki--r070925a-29904-421",
+      "member_id": "sakaiminato-city--ashida-noriyuki",
+      "speaker_label": "足田法行",
       "meeting_name": "令和 7年 9月定例会（第5号 9月25日） 本会議",
       "date": "2025-09-25",
       "kind": "本会議",
@@ -1469,8 +1631,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-11-11--fc7d35dba7--r071111a-8554-422",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-11-11--yasuda-tomoko--r071111a-8554-422",
+      "member_id": "sakaiminato-city--yasuda-tomoko",
+      "speaker_label": "安田共子",
       "meeting_name": "令和 7年11月臨時会（第1号11月11日） 本会議",
       "date": "2025-11-11",
       "kind": "本会議",
@@ -1480,6 +1643,7 @@
     {
       "id": "sakaiminato-city--2025-11-11--19cdd0470f--r071111a-2597-422",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 7年11月臨時会（第1号11月11日） 本会議",
       "date": "2025-11-11",
       "kind": "本会議",
@@ -1487,8 +1651,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-11-11--2d0f894644--r071111a-3664-422",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-11-11--taguchi-shunsuke--r071111a-3664-422",
+      "member_id": "sakaiminato-city--taguchi-shunsuke",
+      "speaker_label": "田口俊介",
       "meeting_name": "令和 7年11月臨時会（第1号11月11日） 本会議",
       "date": "2025-11-11",
       "kind": "本会議",
@@ -1496,8 +1661,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-12-02--ac2776b92a--r071202a-4142-423",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-12-02--kato-bunji--r071202a-4142-423",
+      "member_id": "sakaiminato-city--kato-bunji",
+      "speaker_label": "加藤文治",
       "meeting_name": "令和 7年12月定例会（第1号12月 2日） 本会議",
       "date": "2025-12-02",
       "kind": "本会議",
@@ -1505,8 +1671,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-12-02--9c88ec8a36--r071202a-5786-423",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-12-02--yoshii-takumi--r071202a-5786-423",
+      "member_id": "sakaiminato-city--yoshii-takumi",
+      "speaker_label": "吉井巧",
       "meeting_name": "令和 7年12月定例会（第1号12月 2日） 本会議",
       "date": "2025-12-02",
       "kind": "本会議",
@@ -1516,6 +1683,7 @@
     {
       "id": "sakaiminato-city--2025-12-02--19cdd0470f--r071202a-3713-423",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 7年12月定例会（第1号12月 2日） 本会議",
       "date": "2025-12-02",
       "kind": "本会議",
@@ -1523,8 +1691,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-12-15--fc7d35dba7--r071215a-58824-424",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-12-15--yasuda-tomoko--r071215a-58824-424",
+      "member_id": "sakaiminato-city--yasuda-tomoko",
+      "speaker_label": "安田共子",
       "meeting_name": "令和 7年12月定例会（第2号12月15日） 本会議",
       "date": "2025-12-15",
       "kind": "本会議",
@@ -1534,6 +1703,7 @@
     {
       "id": "sakaiminato-city--2025-12-15--a2919a82d8--r071215a-2436-424",
       "member_id": null,
+      "speaker_label": "景山憲",
       "meeting_name": "令和 7年12月定例会（第2号12月15日） 本会議",
       "date": "2025-12-15",
       "kind": "本会議",
@@ -1541,8 +1711,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-12-15--23b500cb01--r071215a-89556-424",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-12-15--morioka-toshio--r071215a-89556-424",
+      "member_id": "sakaiminato-city--morioka-toshio",
+      "speaker_label": "森岡俊夫",
       "meeting_name": "令和 7年12月定例会（第2号12月15日） 本会議",
       "date": "2025-12-15",
       "kind": "本会議",
@@ -1552,6 +1723,7 @@
     {
       "id": "sakaiminato-city--2025-12-15--19cdd0470f--r071215a-1859-424",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 7年12月定例会（第2号12月15日） 本会議",
       "date": "2025-12-15",
       "kind": "本会議",
@@ -1559,8 +1731,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-12-15--7ea212aac5--r071215a-33500-424",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-12-15--ashida-noriyuki--r071215a-33500-424",
+      "member_id": "sakaiminato-city--ashida-noriyuki",
+      "speaker_label": "足田法行",
       "meeting_name": "令和 7年12月定例会（第2号12月15日） 本会議",
       "date": "2025-12-15",
       "kind": "本会議",
@@ -1568,8 +1741,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-12-16--ac2776b92a--r071216a-36138-425",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-12-16--kato-bunji--r071216a-36138-425",
+      "member_id": "sakaiminato-city--kato-bunji",
+      "speaker_label": "加藤文治",
       "meeting_name": "令和 7年12月定例会（第3号12月16日） 本会議",
       "date": "2025-12-16",
       "kind": "本会議",
@@ -1577,8 +1751,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-12-16--9c88ec8a36--r071216a-64418-425",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-12-16--yoshii-takumi--r071216a-64418-425",
+      "member_id": "sakaiminato-city--yoshii-takumi",
+      "speaker_label": "吉井巧",
       "meeting_name": "令和 7年12月定例会（第3号12月16日） 本会議",
       "date": "2025-12-16",
       "kind": "本会議",
@@ -1588,6 +1763,7 @@
     {
       "id": "sakaiminato-city--2025-12-16--19cdd0470f--r071216a-1911-425",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 7年12月定例会（第3号12月16日） 本会議",
       "date": "2025-12-16",
       "kind": "本会議",
@@ -1595,8 +1771,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-12-16--2d0f894644--r071216a-84370-425",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-12-16--taguchi-shunsuke--r071216a-84370-425",
+      "member_id": "sakaiminato-city--taguchi-shunsuke",
+      "speaker_label": "田口俊介",
       "meeting_name": "令和 7年12月定例会（第3号12月16日） 本会議",
       "date": "2025-12-16",
       "kind": "本会議",
@@ -1604,8 +1781,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-12-16--22a77435df--r071216a-2386-425",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-12-16--arai-hideyuki--r071216a-2386-425",
+      "member_id": "sakaiminato-city--arai-hideyuki",
+      "speaker_label": "荒井秀行",
       "meeting_name": "令和 7年12月定例会（第3号12月16日） 本会議",
       "date": "2025-12-16",
       "kind": "本会議",
@@ -1613,8 +1791,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-12-17--2baaa7f2e6--r071217a-31786-426",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-12-17--hiramatsu-kenji--r071217a-31786-426",
+      "member_id": "sakaiminato-city--hiramatsu-kenji",
+      "speaker_label": "平松謙治",
       "meeting_name": "令和 7年12月定例会（第4号12月17日） 本会議",
       "date": "2025-12-17",
       "kind": "本会議",
@@ -1622,8 +1801,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-12-17--878064b81d--r071217a-2706-426",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-12-17--matsumoto-akihiko--r071217a-2706-426",
+      "member_id": "sakaiminato-city--matsumoto-akihiko",
+      "speaker_label": "松本晶彦",
       "meeting_name": "令和 7年12月定例会（第4号12月17日） 本会議",
       "date": "2025-12-17",
       "kind": "本会議",
@@ -1633,6 +1813,7 @@
     {
       "id": "sakaiminato-city--2025-12-17--19cdd0470f--r071217a-2231-426",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 7年12月定例会（第4号12月17日） 本会議",
       "date": "2025-12-17",
       "kind": "本会議",
@@ -1640,8 +1821,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-12-23--9c88ec8a36--r071223a-3732-427",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-12-23--yoshii-takumi--r071223a-3732-427",
+      "member_id": "sakaiminato-city--yoshii-takumi",
+      "speaker_label": "吉井巧",
       "meeting_name": "令和 7年12月定例会（第5号12月23日） 本会議",
       "date": "2025-12-23",
       "kind": "本会議",
@@ -1649,8 +1831,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-12-23--9c88ec8a36--r071223a-9410-427",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-12-23--yoshii-takumi--r071223a-9410-427",
+      "member_id": "sakaiminato-city--yoshii-takumi",
+      "speaker_label": "吉井巧",
       "meeting_name": "令和 7年12月定例会（第5号12月23日） 本会議",
       "date": "2025-12-23",
       "kind": "本会議",
@@ -1658,8 +1841,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-12-23--fc7d35dba7--r071223a-19858-427",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-12-23--yasuda-tomoko--r071223a-19858-427",
+      "member_id": "sakaiminato-city--yasuda-tomoko",
+      "speaker_label": "安田共子",
       "meeting_name": "令和 7年12月定例会（第5号12月23日） 本会議",
       "date": "2025-12-23",
       "kind": "本会議",
@@ -1667,8 +1851,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-12-23--2baaa7f2e6--r071223a-12216-427",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-12-23--hiramatsu-kenji--r071223a-12216-427",
+      "member_id": "sakaiminato-city--hiramatsu-kenji",
+      "speaker_label": "平松謙治",
       "meeting_name": "令和 7年12月定例会（第5号12月23日） 本会議",
       "date": "2025-12-23",
       "kind": "本会議",
@@ -1676,8 +1861,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-12-23--878064b81d--r071223a-19196-427",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-12-23--matsumoto-akihiko--r071223a-19196-427",
+      "member_id": "sakaiminato-city--matsumoto-akihiko",
+      "speaker_label": "松本晶彦",
       "meeting_name": "令和 7年12月定例会（第5号12月23日） 本会議",
       "date": "2025-12-23",
       "kind": "本会議",
@@ -1685,8 +1871,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-12-23--23b500cb01--r071223a-33636-427",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-12-23--morioka-toshio--r071223a-33636-427",
+      "member_id": "sakaiminato-city--morioka-toshio",
+      "speaker_label": "森岡俊夫",
       "meeting_name": "令和 7年12月定例会（第5号12月23日） 本会議",
       "date": "2025-12-23",
       "kind": "本会議",
@@ -1696,6 +1883,7 @@
     {
       "id": "sakaiminato-city--2025-12-23--19cdd0470f--r071223a-2889-427",
       "member_id": null,
+      "speaker_label": "永井章",
       "meeting_name": "令和 7年12月定例会（第5号12月23日） 本会議",
       "date": "2025-12-23",
       "kind": "本会議",
@@ -1703,8 +1891,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-12-23--2d0f894644--r071223a-37072-427",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-12-23--taguchi-shunsuke--r071223a-37072-427",
+      "member_id": "sakaiminato-city--taguchi-shunsuke",
+      "speaker_label": "田口俊介",
       "meeting_name": "令和 7年12月定例会（第5号12月23日） 本会議",
       "date": "2025-12-23",
       "kind": "本会議",
@@ -1712,8 +1901,9 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     },
     {
-      "id": "sakaiminato-city--2025-12-23--22a77435df--r071223a-34736-427",
-      "member_id": null,
+      "id": "sakaiminato-city--2025-12-23--arai-hideyuki--r071223a-34736-427",
+      "member_id": "sakaiminato-city--arai-hideyuki",
+      "speaker_label": "荒井秀行",
       "meeting_name": "令和 7年12月定例会（第5号12月23日） 本会議",
       "date": "2025-12-23",
       "kind": "本会議",
@@ -1721,5 +1911,5 @@
       "source_url": "https://www.kensakusystem.jp/sakaiminato/index.html"
     }
   ],
-  "updated_at": "2026-06-10T18:25:50+00:00"
+  "updated_at": "2026-06-10T19:11:17+00:00"
 }

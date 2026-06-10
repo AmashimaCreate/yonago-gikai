@@ -1,0 +1,257 @@
+{
+  "council_id": "sakaiminato-city",
+  "source_url": "https://www.city.sakaiminato.lg.jp/index.php?view=119842",
+  "acquisition": "manual_transcription",
+  "members": [
+    {
+      "id": "sakaiminato-city--ashida-noriyuki",
+      "council_id": "sakaiminato-city",
+      "name": "足田 法行",
+      "name_kana": "あしだ のりゆき",
+      "faction": "境港市議会公明党議員団",
+      "elected_count": 4,
+      "positions": [],
+      "committees": [
+        "経済厚生委員会",
+        "予算決算委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "sakaiminato-city--arai-hideyuki",
+      "council_id": "sakaiminato-city",
+      "name": "荒井 秀行",
+      "name_kana": "あらい ひでゆき",
+      "faction": "自由未来",
+      "elected_count": 7,
+      "positions": [
+        "総務民教委員会 委員長",
+        "予算決算委員会 副委員長"
+      ],
+      "committees": [
+        "総務民教委員会",
+        "予算決算委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "sakaiminato-city--iwamoto-kazutaka",
+      "council_id": "sakaiminato-city",
+      "name": "岩本 和貴",
+      "name_kana": "いわもと かずたか",
+      "faction": "笑顔つなぐ",
+      "elected_count": 1,
+      "positions": [
+        "総務民教委員会 副委員長"
+      ],
+      "committees": [
+        "議会運営委員会",
+        "総務民教委員会",
+        "予算決算委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "sakaiminato-city--kato-bunji",
+      "council_id": "sakaiminato-city",
+      "name": "加藤 文治",
+      "name_kana": "かとう ぶんじ",
+      "faction": "自由未来",
+      "elected_count": 3,
+      "positions": [
+        "副議長"
+      ],
+      "committees": [
+        "議会運営委員会",
+        "総務民教委員会",
+        "予算決算委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "sakaiminato-city--shibata-hideki",
+      "council_id": "sakaiminato-city",
+      "name": "柴田 秀樹",
+      "name_kana": "しばた ひでき",
+      "faction": "笑顔つなぐ",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "経済厚生委員会",
+        "予算決算委員会",
+        "議会改革推進特別委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "sakaiminato-city--sogo-jun",
+      "council_id": "sakaiminato-city",
+      "name": "十河 淳",
+      "name_kana": "そごう じゅん",
+      "faction": "自由未来",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "総務民教委員会",
+        "予算決算委員会",
+        "議会改革推進特別委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "sakaiminato-city--takanashi-kensaku",
+      "council_id": "sakaiminato-city",
+      "name": "高梨 健作",
+      "name_kana": "たかなし けんさく",
+      "faction": "自由未来",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "議会運営委員会",
+        "経済厚生委員会",
+        "予算決算委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "sakaiminato-city--taguchi-shunsuke",
+      "council_id": "sakaiminato-city",
+      "name": "田口 俊介",
+      "name_kana": "たぐち しゅんすけ",
+      "faction": "境港市議会公明党議員団",
+      "elected_count": 6,
+      "positions": [
+        "議会運営委員会 委員長"
+      ],
+      "committees": [
+        "議会運営委員会",
+        "総務民教委員会",
+        "予算決算委員会",
+        "議会改革推進特別委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "sakaiminato-city--hiiragi-yasuhiro",
+      "council_id": "sakaiminato-city",
+      "name": "柊 康弘",
+      "name_kana": "ひいらぎ やすひろ",
+      "faction": "きょうどう",
+      "elected_count": 6,
+      "positions": [
+        "予算決算委員会 委員長"
+      ],
+      "committees": [
+        "経済厚生委員会",
+        "予算決算委員会",
+        "議会改革推進特別委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "sakaiminato-city--hiramatsu-kenji",
+      "council_id": "sakaiminato-city",
+      "name": "平松 謙治",
+      "name_kana": "ひらまつ けんじ",
+      "faction": "きょうどう",
+      "elected_count": 7,
+      "positions": [
+        "議会運営委員会 副委員長"
+      ],
+      "committees": [
+        "議会運営委員会",
+        "総務民教委員会",
+        "予算決算委員会",
+        "議会改革推進特別委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "sakaiminato-city--matsumoto-akihiko",
+      "council_id": "sakaiminato-city",
+      "name": "松本 晶彦",
+      "name_kana": "まつもと あきひこ",
+      "faction": "自由未来",
+      "elected_count": 2,
+      "positions": [
+        "経済厚生委員会 副委員長"
+      ],
+      "committees": [
+        "議会運営委員会",
+        "経済厚生委員会",
+        "予算決算委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "sakaiminato-city--murata-takuto",
+      "council_id": "sakaiminato-city",
+      "name": "邨田 拓斗",
+      "name_kana": "むらた たくと",
+      "faction": "自由未来",
+      "elected_count": 1,
+      "positions": [
+        "議会改革推進特別委員会 副委員長"
+      ],
+      "committees": [
+        "総務民教委員会",
+        "予算決算委員会",
+        "議会改革推進特別委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "sakaiminato-city--morioka-toshio",
+      "council_id": "sakaiminato-city",
+      "name": "森岡 俊夫",
+      "name_kana": "もりおか としお",
+      "faction": "きょうどう",
+      "elected_count": 6,
+      "positions": [
+        "経済厚生委員会 委員長"
+      ],
+      "committees": [
+        "議会運営委員会",
+        "経済厚生委員会",
+        "予算決算委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "sakaiminato-city--yasuda-tomoko",
+      "council_id": "sakaiminato-city",
+      "name": "安田 共子",
+      "name_kana": "やすだ ともこ",
+      "faction": "無所属",
+      "elected_count": 4,
+      "positions": [
+        "議会改革推進特別委員会 委員長"
+      ],
+      "committees": [
+        "議会運営委員会",
+        "総務民教委員会",
+        "予算決算委員会",
+        "議会改革推進特別委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "sakaiminato-city--yoshii-takumi",
+      "council_id": "sakaiminato-city",
+      "name": "吉井 巧",
+      "name_kana": "よしい たくみ",
+      "faction": "自由未来",
+      "elected_count": 3,
+      "positions": [
+        "議長"
+      ],
+      "committees": [
+        "経済厚生委員会",
+        "予算決算委員会",
+        "議会改革推進特別委員会"
+      ],
+      "photo_url": null
+    }
+  ],
+  "updated_at": "2026-06-10T19:09:18+00:00"
+}

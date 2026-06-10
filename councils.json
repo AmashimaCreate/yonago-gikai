@@ -41,7 +41,7 @@
       "minutes_system": "kensakusystem_legacy",
       "minutes_base_url": "https://www.kensakusystem.jp/sakaiminato/",
       "vote_granularity": "member",
-      "status": "planned",
+      "status": "active",
       "notes": "公式議会ページが2026-06-11確認時点でHTTP 500のため、公式リンク再確認待ち。"
     }
   ]
