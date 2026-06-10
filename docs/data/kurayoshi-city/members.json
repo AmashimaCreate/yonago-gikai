@@ -1,0 +1,346 @@
+{
+  "council_id": "kurayoshi-city",
+  "source_url": "https://www.city.kurayoshi.lg.jp/4253.htm",
+  "members": [
+    {
+      "id": "kurayoshi-city--nakayama-akio",
+      "council_id": "kurayoshi-city",
+      "name": "中山 晶雄",
+      "name_kana": "なかやま あきお",
+      "faction": "そうせい会",
+      "elected_count": 1,
+      "positions": [
+        "鳥取中部ふるさと広域連合議会議員"
+      ],
+      "committees": [
+        "総務産業常任委員会",
+        "予算決算常任委員会",
+        "地域の賑わい創出対策特別委員会"
+      ],
+      "photo_url": "https://www.city.kurayoshi.lg.jp/secure/4251/0001_%E4%B8%AD%E5%B1%B1%E8%AD%B0%E5%93%A1.png"
+    },
+    {
+      "id": "kurayoshi-city--fujii-yousuke",
+      "council_id": "kurayoshi-city",
+      "name": "藤井 陽介",
+      "name_kana": "ふじい ようすけ",
+      "faction": "そうせい会",
+      "elected_count": 1,
+      "positions": [
+        "鳥取中部ふるさと広域連合議会議員"
+      ],
+      "committees": [
+        "総務産業常任委員会",
+        "予算決算常任委員会",
+        "地域の賑わい創出対策特別委員会"
+      ],
+      "photo_url": "https://www.city.kurayoshi.lg.jp/secure/4251/0002_%E8%97%A4%E4%BA%95%E8%AD%B0%E5%93%A1.png"
+    },
+    {
+      "id": "kurayoshi-city--yamashita-tatsuya",
+      "council_id": "kurayoshi-city",
+      "name": "山下 達也",
+      "name_kana": "やました たつや",
+      "faction": "そうせい会",
+      "elected_count": 1,
+      "positions": [
+        "厚生文教常任委員会副委員長"
+      ],
+      "committees": [
+        "厚生文教常任委員会",
+        "予算決算常任委員会",
+        "広報広聴常任委員会",
+        "地域の賑わい創出対策特別委員会"
+      ],
+      "photo_url": "https://www.city.kurayoshi.lg.jp/secure/4251/0003_%E5%B1%B1%E4%B8%8B%E8%AD%B0%E5%93%A1.png"
+    },
+    {
+      "id": "kurayoshi-city--takahashi-yoshihiro",
+      "council_id": "kurayoshi-city",
+      "name": "髙橋 義博",
+      "name_kana": "たかはし よしひろ",
+      "faction": "そうせい会",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "厚生文教常任委員会",
+        "予算決算常任委員会",
+        "広報広聴常任委員会",
+        "第3次議会改革推進特別委員会"
+      ],
+      "photo_url": "https://www.city.kurayoshi.lg.jp/secure/4251/0004_%E9%AB%98%E6%A9%8B%E8%AD%B0%E5%93%A1.png"
+    },
+    {
+      "id": "kurayoshi-city--manba-eri",
+      "council_id": "kurayoshi-city",
+      "name": "萬場 恵理",
+      "name_kana": "まんば えり",
+      "faction": "新政会",
+      "elected_count": 1,
+      "positions": [
+        "地域の賑わい創出対策特別委員会副委員長",
+        "鳥取中部ふるさと広域連合議会議員"
+      ],
+      "committees": [
+        "総務産業常任委員会",
+        "予算決算常任委員会",
+        "広報広聴常任委員会",
+        "地域の賑わい創出対策特別委員会"
+      ],
+      "photo_url": "https://www.city.kurayoshi.lg.jp/secure/4251/0005_%E8%90%AC%E5%A0%B4%E8%AD%B0%E5%93%A1.png"
+    },
+    {
+      "id": "kurayoshi-city--yoneda-katsuhiko",
+      "council_id": "kurayoshi-city",
+      "name": "米田 勝彦",
+      "name_kana": "よねだ かつひこ",
+      "faction": "新政会",
+      "elected_count": 4,
+      "positions": [
+        "地域の賑わい創出対策特別委員会委員長"
+      ],
+      "committees": [
+        "総務産業常任委員会",
+        "予算決算常任委員会",
+        "地域の賑わい創出対策特別委員会"
+      ],
+      "photo_url": "https://www.city.kurayoshi.lg.jp/secure/4251/0006_%E7%B1%B3%E7%94%B0%E8%AD%B0%E5%93%A1.png"
+    },
+    {
+      "id": "kurayoshi-city--yamane-kenshi",
+      "council_id": "kurayoshi-city",
+      "name": "山根 健資",
+      "name_kana": "やまね けんし",
+      "faction": "そうせい会",
+      "elected_count": 2,
+      "positions": [
+        "議会運営委員会委員長"
+      ],
+      "committees": [
+        "議会運営委員会",
+        "厚生文教常任委員会",
+        "予算決算常任委員会",
+        "広報広聴常任委員会",
+        "第3次議会改革推進特別委員会"
+      ],
+      "photo_url": "https://www.city.kurayoshi.lg.jp/secure/4251/0007_%E5%B1%B1%E6%A0%B9%E8%AD%B0%E5%93%A1.png"
+    },
+    {
+      "id": "kurayoshi-city--masuda-kouji",
+      "council_id": "kurayoshi-city",
+      "name": "増田 孝二",
+      "name_kana": "ますだ こうじ",
+      "faction": "やらいや",
+      "elected_count": 1,
+      "positions": [
+        "厚生文教常任委員会委員長",
+        "鳥取中部ふるさと広域連合議会議員"
+      ],
+      "committees": [
+        "厚生文教常任委員会",
+        "予算決算常任委員会",
+        "広報広聴常任委員会",
+        "第3次議会改革推進特別委員会"
+      ],
+      "photo_url": "https://www.city.kurayoshi.lg.jp/secure/4251/0008_%E5%A2%97%E7%94%B0%E8%AD%B0%E5%93%A1.png"
+    },
+    {
+      "id": "kurayoshi-city--fukuda-jun",
+      "council_id": "kurayoshi-city",
+      "name": "福田 淳",
+      "name_kana": "ふくだ じゅん",
+      "faction": "やらいや",
+      "elected_count": 1,
+      "positions": [
+        "総務産業常任委員会副委員長"
+      ],
+      "committees": [
+        "議会運営委員会",
+        "総務産業常任委員会",
+        "予算決算常任委員会",
+        "広報広聴常任委員会",
+        "地域の賑わい創出対策特別委員会"
+      ],
+      "photo_url": "https://www.city.kurayoshi.lg.jp/secure/4251/0009_%E7%A6%8F%E7%94%B0%E8%AD%B0%E5%93%A1.png"
+    },
+    {
+      "id": "kurayoshi-city--fukui-noriko",
+      "council_id": "kurayoshi-city",
+      "name": "福井 典子",
+      "name_kana": "ふくい のりこ",
+      "faction": "やらいや",
+      "elected_count": 2,
+      "positions": [
+        "鳥取中部ふるさと広域連合議会議員",
+        "倉吉市監査委員"
+      ],
+      "committees": [
+        "厚生文教常任委員会",
+        "予算決算常任委員会",
+        "広報広聴常任委員会",
+        "地域の賑わい創出対策特別委員会"
+      ],
+      "photo_url": "https://www.city.kurayoshi.lg.jp/secure/4251/0010_%E7%A6%8F%E4%BA%95%E5%85%B8%E5%AD%90.png"
+    },
+    {
+      "id": "kurayoshi-city--toba-masaaki",
+      "council_id": "kurayoshi-city",
+      "name": "鳥羽 昌明",
+      "name_kana": "とば まさあき",
+      "faction": "新政会",
+      "elected_count": 3,
+      "positions": [
+        "広報広聴常任委員会委員長"
+      ],
+      "committees": [
+        "議会運営委員会",
+        "厚生文教常任委員会",
+        "予算決算常任委員会",
+        "広報広聴常任委員会",
+        "第3次議会改革推進特別委員会"
+      ],
+      "photo_url": "https://www.city.kurayoshi.lg.jp/secure/4251/0011_%E9%B3%A5%E7%BE%BD%E8%AD%B0%E5%93%A1.png"
+    },
+    {
+      "id": "kurayoshi-city--jikuhara-shouko",
+      "council_id": "kurayoshi-city",
+      "name": "竺原 晶子",
+      "name_kana": "じくはら しょうこ",
+      "faction": "新政会",
+      "elected_count": 3,
+      "positions": [
+        "広報広聴常任委員会副委員長",
+        "第3次議会改革推進特別委員会委員長"
+      ],
+      "committees": [
+        "総務産業常任委員会",
+        "予算決算常任委員会",
+        "広報広聴常任委員会",
+        "第3次議会改革推進特別委員会"
+      ],
+      "photo_url": "https://www.city.kurayoshi.lg.jp/secure/4251/0012_%E7%AB%BA%E5%8E%9F%E8%AD%B0%E5%93%A1.png"
+    },
+    {
+      "id": "kurayoshi-city--tamura-shizumi",
+      "council_id": "kurayoshi-city",
+      "name": "田村 閑美",
+      "name_kana": "たむら しずみ",
+      "faction": "やらいや",
+      "elected_count": 2,
+      "positions": [
+        "総務産業常任委員会委員長"
+      ],
+      "committees": [
+        "議会運営委員会",
+        "総務産業常任委員会",
+        "予算決算常任委員会",
+        "地域の賑わい創出対策特別委員会"
+      ],
+      "photo_url": "https://www.city.kurayoshi.lg.jp/secure/4251/0013_%E7%94%B0%E6%9D%91%E8%AD%B0%E5%93%A1.png"
+    },
+    {
+      "id": "kurayoshi-city--ootsu-masakatsu",
+      "council_id": "kurayoshi-city",
+      "name": "大津 昌克",
+      "name_kana": "おおつ まさかつ",
+      "faction": "やらいや",
+      "elected_count": 4,
+      "positions": [
+        "議会運営委員会副委員長",
+        "予算決算常任委員会委員長"
+      ],
+      "committees": [
+        "議会運営委員会",
+        "厚生文教常任委員会",
+        "予算決算常任委員会",
+        "第3次議会改革推進特別委員会"
+      ],
+      "photo_url": "https://www.city.kurayoshi.lg.jp/secure/4251/0014_%E5%A4%A7%E6%B4%A5%E8%AD%B0%E5%93%A1%20.png"
+    },
+    {
+      "id": "kurayoshi-city--asahi-touji",
+      "council_id": "kurayoshi-city",
+      "name": "朝日 等治",
+      "name_kana": "あさひ とうじ",
+      "faction": "やらいや",
+      "elected_count": 7,
+      "positions": [
+        "副議長",
+        "鳥取中部ふるさと広域連合議会議員"
+      ],
+      "committees": [
+        "総務産業常任委員会",
+        "予算決算常任委員会",
+        "第3次議会改革推進特別委員会"
+      ],
+      "photo_url": "https://www.city.kurayoshi.lg.jp/secure/4251/0015_%E6%9C%9D%E6%97%A5%E8%AD%B0%E5%93%A1.png"
+    },
+    {
+      "id": "kurayoshi-city--fukutani-naomi",
+      "council_id": "kurayoshi-city",
+      "name": "福谷 直美",
+      "name_kana": "ふくたに なおみ",
+      "faction": "やらいや",
+      "elected_count": 6,
+      "positions": [
+        "議長",
+        "鳥取中部ふるさと広域連合議会議員",
+        "鳥取県後期高齢者医療広域連合議会議員"
+      ],
+      "committees": [
+        "総務産業常任委員会",
+        "予算決算常任委員会",
+        "地域の賑わい創出対策特別委員会"
+      ],
+      "photo_url": "https://www.city.kurayoshi.lg.jp/secure/4251/0016_%E7%A6%8F%E8%B0%B7%E8%AD%B0%E5%93%A1.png"
+    },
+    {
+      "id": "kurayoshi-city--fukui-yasuo",
+      "council_id": "kurayoshi-city",
+      "name": "福井 康夫",
+      "name_kana": "ふくい やすお",
+      "faction": "新政会",
+      "elected_count": 11,
+      "positions": [
+        "第3次議会改革推進特別委員会副委員長",
+        "議会事務局",
+        "〒682-8611",
+        "鳥取県倉吉市葵町722",
+        "電話番号:0858-22-8145",
+        "ファックス:0858-22-8146",
+        "場所:本庁舎2階",
+        "gikai@city.kurayoshi.lg.jp",
+        "添付資料を見るためにはビューワソフトが必要な場合があります。詳しくはこちらをご覧ください。",
+        "スマートフォンでご利用されている場合、Microsoft Office用ファイルを閲覧できるアプリケーションが端末にインストールされていないことがございます。その場合、Microsoft Officeまたは無償のMicrosoft社製ビューアーアプリケーションの入っているPC端末などをご利用し閲覧をお願い致します。",
+        "ページの",
+        "先頭へ戻る",
+        "サイトマップ",
+        "プライバシーポリシー",
+        "このサイトの考えかた",
+        "リンク・著作権",
+        "このサイトの使い方",
+        "倉吉市役所",
+        "法人番号：8000020312037",
+        "〒682-8611 鳥取県倉吉市葵町722",
+        "窓口ご案内",
+        "開庁時間：平日午前8時30分～午後5時15分（祝日および年末年始を除く）",
+        "TEL:",
+        "0858-22-8111",
+        "FAX:0858-22-1087",
+        "市役所へのアクセス",
+        "市役所電話帳",
+        "庁舎案内",
+        "統計情報・人口情報",
+        "Copyright(C) Kurayoshi City All Rights Reserved.",
+        "スマートフォン表示"
+      ],
+      "committees": [
+        "厚生文教常任委員会",
+        "予算決算常任委員会",
+        "第3次議会改革推進特別委員会"
+      ],
+      "photo_url": "https://www.city.kurayoshi.lg.jp/secure/4251/0017_%E7%A6%8F%E4%BA%95%E8%AD%B0%E5%93%A1.png"
+    }
+  ],
+  "updated_at": "2026-06-10T16:37:41+00:00"
+}
