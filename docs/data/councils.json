@@ -1,0 +1,48 @@
+{
+  "councils": [
+    {
+      "id": "tottori-pref",
+      "name": "鳥取県議会",
+      "type": "prefecture",
+      "minutes_system": "dbsr",
+      "vote_granularity": "member",
+      "status": "active"
+    },
+    {
+      "id": "tottori-city",
+      "name": "鳥取市議会",
+      "type": "city",
+      "minutes_system": "dbsr",
+      "vote_granularity": "member",
+      "status": "active"
+    },
+    {
+      "id": "yonago-city",
+      "name": "米子市議会",
+      "type": "city",
+      "minutes_system": "kensakusystem_legacy",
+      "minutes_base_url": "https://www.kensakusystem.jp/yonago-s/",
+      "vote_granularity": "result_only",
+      "status": "active"
+    },
+    {
+      "id": "kurayoshi-city",
+      "name": "倉吉市議会",
+      "type": "city",
+      "minutes_system": "kensakusystem_legacy",
+      "minutes_base_url": "https://www.kensakusystem.jp/kurayoshi/",
+      "vote_granularity": "unknown",
+      "status": "active"
+    },
+    {
+      "id": "sakaiminato-city",
+      "name": "境港市議会",
+      "type": "city",
+      "minutes_system": "kensakusystem_legacy",
+      "minutes_base_url": "https://www.kensakusystem.jp/sakaiminato/",
+      "vote_granularity": "member",
+      "status": "active",
+      "notes": "公式議会ページが2026-06-11確認時点でHTTP 500のため、公式リンク再確認待ち。"
+    }
+  ]
+}

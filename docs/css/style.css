@@ -5,23 +5,14 @@
   --text-muted: #57606a;
   --border: #d0d7de;
 
-  /* 会派カラー */
-  --kaiha-jiyusosei: #1f6feb;        /* 自由創政: 青 */
-  --kaiha-shinpu:    #2da44e;        /* 信風: 緑 */
-  --kaiha-yonagomirai: #d97706;      /* よなご・未来: 橙 */
-  --kaiha-komei:     #0ea5e9;        /* 公明党議員団: 水色 */
-  --kaiha-mushozoku: #6b7280;        /* 無所属: 灰 */
-  --kaiha-kyosanto:  #cf222e;        /* 日本共産党米子市議団: 赤 */
-  --kaiha-familia:   #8957e5;        /* 新ファミリア: 紫 */
-  --kaiha-default:   #57606a;        /* fallback */
+  /* 識別用の中立カラー */
+  --kaiha-default:   #64748b;
+  --committee-jonin:     #64748b;
+  --committee-tokubetsu: #708090;
+  --committee-giun:      #6b7280;
 
-  /* 委員会種別カラー */
-  --committee-jonin:     #1f6feb;    /* 常任: 青 */
-  --committee-tokubetsu: #d97706;    /* 特別: 橙 */
-  --committee-giun:      #2da44e;    /* 議会運営: 緑 */
-
-  /* 議長・副議長アクセント */
-  --position-gold:       #bf8700;    /* 金 */
+  /* 役職アクセント */
+  --position-accent:     #64748b;
 
   /* 当選回数ビュー */
   --term-color:          #0a3069;    /* 濃紺 */
@@ -53,6 +44,14 @@ a { color: #0969da; }
   border-bottom: 1px solid var(--border);
   padding: 24px 0;
 }
+.home-link {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+.home-link:hover { text-decoration: underline; }
 .site-header h1 { margin: 0 0 4px; font-size: 22px; }
 .site-header .lead { margin: 0 0 8px; color: var(--text-muted); }
 .site-header .meta { margin: 0; font-size: 12px; color: var(--text-muted); }
@@ -168,6 +167,104 @@ a { color: #0969da; }
   text-align: center;
   color: var(--text-muted);
 }
+.muted {
+  color: var(--text-muted);
+}
+
+.section-title {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.intro-panel,
+.disclaimer-panel,
+.quality-panel,
+.former-speeches,
+.member-detail,
+.speech-section {
+  margin-bottom: 24px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.council-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.council-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 14px;
+}
+.council-card h3 {
+  margin: 4px 0 8px;
+  font-size: 18px;
+}
+.card-eyebrow {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.button-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 5px 10px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--surface);
+  text-decoration: none;
+  font-size: 13px;
+}
+.button-link.is-disabled {
+  color: var(--text-muted);
+  background: #f1f3f5;
+}
+
+.quality-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+.quality-row {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px;
+}
+.quality-label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.quality-text {
+  display: block;
+  font-size: 14px;
+}
+.quality-link {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+.former-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.former-list li {
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  font-size: 12px;
+}
 
 /* メイン */
 main { padding: 24px 0 48px; }
@@ -278,6 +375,90 @@ main { padding: 24px 0 48px; }
   flex-direction: column;
   gap: 8px;
 }
+.member-detail-link-wrap {
+  margin: 0;
+  padding-top: 6px;
+  border-top: 1px solid var(--border);
+  font-size: 12px;
+}
+.member-detail-link {
+  text-decoration: none;
+}
+.member-detail-link:hover {
+  text-decoration: underline;
+}
+
+.back-link-wrap {
+  margin: 0 0 16px;
+}
+.member-detail-main {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  align-items: start;
+}
+.member-detail-main h2 {
+  margin: 0 0 4px;
+}
+.member-detail-photo,
+.member-photo-placeholder {
+  width: 120px;
+  height: 150px;
+  border-radius: 6px;
+  object-fit: cover;
+  background: #eef1f4;
+}
+.member-photo-placeholder {
+  display: grid;
+  place-items: center;
+  color: var(--text-muted);
+  font-size: 12px;
+}
+.detail-row {
+  margin: 6px 0;
+}
+.detail-label {
+  display: inline-block;
+  min-width: 5em;
+  color: var(--text-muted);
+}
+.quality-inline {
+  margin: 10px 0 4px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+.caution-note {
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #f6f8fa;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+.speech-list {
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.speech-item {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 12px;
+  padding: 10px 0;
+  border-top: 1px solid var(--border);
+}
+.speech-date {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+.speech-meeting {
+  font-weight: 600;
+}
+.speech-speaker {
+  color: var(--text-muted);
+  font-size: 12px;
+}
 .member-head {
   display: flex;
   gap: 12px;
@@ -322,7 +503,7 @@ main { padding: 24px 0 48px; }
   color: var(--text);
   border: 1px solid var(--border);
 }
-.badge.is-position { background: #fff7d6; border-color: #d4ac0d; }
+.badge.is-position { background: #eef2f6; border-color: #cbd5e1; }
 .badge.is-chair    { background: #ddf4ff; border-color: #54aeff; }
 .badge.is-vice     { background: #f1f8ff; border-color: #bbd6ff; }
 

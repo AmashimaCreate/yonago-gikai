@@ -2,9 +2,14 @@
 // ES Modules のインポート束縛はライブ参照のため、複数モジュール間で
 // 同一オブジェクトを共有できる。
 export const state = {
+  route: { name: "top" },
+  councils: [],
+  currentCouncil: null,
   members: [],
   membersMeta: null,
   profile: null,
+  speeches: [],
+  speechesMeta: null,
   view: "kaiha",
   query: "",
 };

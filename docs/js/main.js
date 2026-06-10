@@ -1,27 +1,62 @@
+import { loadCouncilBundle, loadCouncils } from "./data-loader.js";
+import { renderCouncilPage } from "./render-council.js";
+import { renderMemberPage } from "./render-member.js";
+import { renderProfile } from "./render-profile.js";
+import { renderTop } from "./render-top.js";
+import { parseRoute } from "./router.js";
+import { filteredMembers } from "./search.js";
 import { state } from "./state.js";
 import { el } from "./utils.js";
-import { filteredMembers } from "./search.js";
-import { renderProfile } from "./render-profile.js";
-import {
-  renderKaihaView,
-  renderCommitteeView,
-  renderRoleView,
-  renderTermView,
-} from "./render-members.js";
+
+const ENABLED_COUNCILS = new Set(["yonago-city"]);
+
+function titleNode() {
+  return document.getElementById("page-title");
+}
+
+function leadNode() {
+  return document.getElementById("page-lead");
+}
+
+function metaNode() {
+  return document.getElementById("meta");
+}
+
+function mainNode() {
+  return document.getElementById("main");
+}
+
+function setHeader({ title, lead, meta = "" }) {
+  document.title = title === "鳥取県 議会見える化"
+    ? title
+    : `${title} | 鳥取県 議会見える化`;
+  titleNode().textContent = title;
+  leadNode().textContent = lead;
+  metaNode().textContent = meta;
+}
+
+function showCouncilNav(show) {
+  const nav = document.getElementById("view-nav");
+  if (nav) nav.hidden = !show;
+  const profile = document.getElementById("profile");
+  if (profile && !show) {
+    profile.hidden = true;
+    profile.innerHTML = "";
+  }
+}
 
 function renderMeta() {
-  const node = document.getElementById("meta");
-  if (!node) return;
+  const node = metaNode();
   const meta = state.membersMeta;
   const members = state.members;
   if (!meta) {
-    node.textContent = `現在 ${members.length} 人を表示`;
+    node.textContent = "";
     return;
   }
   const fetched = meta.updated_at
     ? new Date(meta.updated_at).toLocaleString("ja-JP")
     : "?";
-  node.textContent = `現在 ${members.length} 人 / 最終取得 ${fetched}`;
+  node.textContent = `現在 ${members.length}人 / 最終更新 ${fetched}`;
 }
 
 function updateMatchCount(filteredCount) {
@@ -38,35 +73,151 @@ function updateMatchCount(filteredCount) {
 function updateSearchPlaceholder() {
   const input = document.getElementById("search");
   if (!input) return;
-  input.placeholder = "氏名 / ふりがな / 会派 / 委員会 で検索";
+  input.placeholder = `${state.currentCouncil?.name || "議員"}を検索`;
 }
 
-function render() {
-  const main = document.getElementById("main");
+function syncSearchInput() {
+  const input = document.getElementById("search");
+  const clearBtn = document.getElementById("search-clear");
+  if (!input) return;
+  input.value = state.query;
+  if (clearBtn) clearBtn.hidden = state.query.length === 0;
+}
+
+function updateActiveTab() {
+  const tabs = document.querySelectorAll(".view-tab");
+  tabs.forEach((tab) => {
+    tab.classList.toggle("is-active", tab.dataset.view === state.view);
+  });
+}
+
+function renderCouncilRoute() {
+  setHeader({
+    title: state.currentCouncil.name,
+    lead: "議員名簿、自治体基礎データ、発言インデックスを同じ画面で確認します。",
+  });
+  showCouncilNav(true);
+  updateActiveTab();
+  updateSearchPlaceholder();
+  syncSearchInput();
   renderProfile(
     document.getElementById("profile"),
     state.profile,
     state.members.length,
     state.membersMeta,
   );
-  updateSearchPlaceholder();
   renderMeta();
 
   const filtered = filteredMembers();
   updateMatchCount(filtered.length);
+  renderCouncilPage(mainNode(), state, filtered);
+}
 
-  if (state.query.trim() && filtered.length === 0) {
-    main.innerHTML = "";
-    main.appendChild(
-      el("p", { class: "empty-message" }, "該当する議員はいません。"),
-    );
+function renderMemberRoute(memberId) {
+  const member = state.members.find((item) => item.id === memberId);
+  setHeader({
+    title: member ? member.name : "議員ページ",
+    lead: state.currentCouncil.name,
+  });
+  showCouncilNav(false);
+  renderMeta();
+  renderMemberPage(mainNode(), state, memberId);
+}
+
+function renderComingSoon(councilId) {
+  const council = state.councils.find((item) => item.id === councilId);
+  setHeader({
+    title: council?.name || "準備中",
+    lead: "この議会ページは次段階で展開します。",
+  });
+  showCouncilNav(false);
+  mainNode().innerHTML = "";
+  mainNode().appendChild(
+    el("section", { class: "intro-panel" }, [
+      el("h2", { class: "section-title" }, "準備中"),
+      el("p", {}, "まず米子市議会で画面構成を確認しています。承認後に残り4議会へ展開します。"),
+      el("p", {}, [el("a", { href: "#/" }, "トップへ戻る")]),
+    ]),
+  );
+}
+
+function renderNotFound() {
+  setHeader({
+    title: "ページが見つかりません",
+    lead: "URLを確認してください。",
+  });
+  showCouncilNav(false);
+  mainNode().innerHTML = "";
+  mainNode().appendChild(
+    el("p", { class: "empty-message" }, [
+      "ページが見つかりません。 ",
+      el("a", { href: "#/" }, "トップへ戻る"),
+    ]),
+  );
+}
+
+async function applyRoute() {
+  const route = parseRoute();
+  state.route = route;
+  state.councils = await loadCouncils();
+
+  if (route.name === "top") {
+    state.currentCouncil = null;
+    state.members = [];
+    state.membersMeta = null;
+    state.profile = null;
+    state.speeches = [];
+    state.speechesMeta = null;
+    state.query = "";
+    setHeader({
+      title: "鳥取県 議会見える化",
+      lead: "鳥取県内5議会の公開データを同じ形で見られるようにする非公式サイトです。",
+      meta: "Phase 4: 多議会対応の確認中",
+    });
+    showCouncilNav(false);
+    renderTop(mainNode(), state.councils);
     return;
   }
 
-  if (state.view === "kaiha") renderKaihaView(main, filtered);
-  else if (state.view === "committee") renderCommitteeView(main, filtered);
-  else if (state.view === "role") renderRoleView(main, filtered);
-  else if (state.view === "term") renderTermView(main, filtered);
+  if (route.name === "council" || route.name === "member") {
+    if (!ENABLED_COUNCILS.has(route.councilId)) {
+      renderComingSoon(route.councilId);
+      return;
+    }
+    const bundle = await loadCouncilBundle(route.councilId, {
+      includeSpeeches: true,
+    });
+    state.currentCouncil = bundle.council;
+    state.members = bundle.members;
+    state.membersMeta = bundle.membersMeta;
+    state.profile = bundle.profile;
+    state.speeches = bundle.speeches;
+    state.speechesMeta = bundle.speechesMeta;
+
+    if (route.name === "member") {
+      renderMemberRoute(route.memberId);
+    } else {
+      renderCouncilRoute();
+    }
+    return;
+  }
+
+  renderNotFound();
+}
+
+function renderWithErrorBoundary() {
+  applyRoute().catch((err) => {
+    console.error(err);
+    showCouncilNav(false);
+    setHeader({
+      title: "読み込みエラー",
+      lead: "データの読み込みに失敗しました。",
+    });
+    mainNode().innerHTML = "";
+    mainNode().appendChild(
+      el("p", { class: "empty-message" }, `読み込みに失敗しました: ${err.message}`),
+    );
+  });
 }
 
 function setupTabs() {
@@ -75,9 +226,8 @@ function setupTabs() {
     tab.addEventListener("click", () => {
       const view = tab.dataset.view;
       if (!view || view === state.view) return;
-      tabs.forEach((t) => t.classList.toggle("is-active", t === tab));
       state.view = view;
-      render();
+      renderCouncilRoute();
     });
   });
 }
@@ -90,7 +240,7 @@ function setupSearch() {
   input.addEventListener("input", () => {
     state.query = input.value;
     if (clearBtn) clearBtn.hidden = state.query.length === 0;
-    render();
+    renderCouncilRoute();
   });
 
   if (clearBtn) {
@@ -99,42 +249,12 @@ function setupSearch() {
       state.query = "";
       clearBtn.hidden = true;
       input.focus();
-      render();
+      renderCouncilRoute();
     });
   }
 }
 
-async function load() {
-  const status = document.getElementById("status");
-  try {
-    const membersRes = await fetch(
-      "./data/yonago-city/members.json",
-      { cache: "no-cache" },
-    );
-    if (!membersRes.ok) throw new Error(`members.json: ${membersRes.status}`);
-    const data = await membersRes.json();
-    state.members = Array.isArray(data.members) ? data.members : [];
-    state.membersMeta = data;
-
-    const profileRes = await fetch(
-      "./data/yonago-city/profile.json",
-      { cache: "no-cache" },
-    );
-    if (profileRes.ok) {
-      state.profile = await profileRes.json();
-    } else {
-      console.warn(`profile.json: ${profileRes.status}`);
-    }
-
-    render();
-  } catch (err) {
-    console.error(err);
-    if (status) status.textContent = `読み込みに失敗しました: ${err.message}`;
-  }
-}
-
-// 起動: type="module" は defer 同等で DOM 構築後に実行されるため、
-// DOMContentLoaded を待たずに直接呼び出して問題なし。
 setupTabs();
 setupSearch();
-load();
+window.addEventListener("hashchange", renderWithErrorBoundary);
+renderWithErrorBoundary();

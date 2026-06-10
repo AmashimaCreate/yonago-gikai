@@ -1,46 +1,17 @@
 import { state } from "./state.js";
 import { el } from "./utils.js";
+import { memberPath } from "./router.js";
 
-// 会派名 → CSS変数名(--kaiha-*) のマッピング
-// 一致しないものは default 色になる
-const KAIHA_COLOR_VAR = {
-  "自由創政": "--kaiha-jiyusosei",
-  "信風": "--kaiha-shinpu",
-  "よなご・未来": "--kaiha-yonagomirai",
-  "公明党議員団": "--kaiha-komei",
-  "無所属": "--kaiha-mushozoku",
-  "日本共産党米子市議団": "--kaiha-kyosanto",
-  "新ファミリア": "--kaiha-familia",
-};
-
-// 会派カードを並べる順番(人数の多い順 + 末尾に無所属/新ファミリア)
-const KAIHA_ORDER = [
-  "自由創政",
-  "信風",
-  "よなご・未来",
-  "公明党議員団",
-  "日本共産党米子市議団",
-  "新ファミリア",
-  "無所属",
+const NEUTRAL_COLORS = [
+  "#64748b",
+  "#708090",
+  "#6b7280",
+  "#5f6f7a",
+  "#737373",
+  "#6d6f85",
+  "#68756d",
+  "#756f68",
 ];
-
-// 委員会ビューの並び順
-const COMMITTEE_ORDER = [
-  "議会運営",
-  "総務政策",
-  "民生教育",
-  "都市経済",
-  "予算決算",
-  "基地問題等調査特別",
-  "原子力発電・エネルギー問題等調査特別",
-];
-
-// 委員会種別 → CSS変数
-const COMMITTEE_TYPE_COLOR_VAR = {
-  "議会運営": "--committee-giun",
-  "常任": "--committee-jonin",
-  "特別": "--committee-tokubetsu",
-};
 
 // 役職の並び順(同役職内は kana 五十音順)
 const ROLE_ORDER = { "委員長": 0, "副委員長": 1, "委員": 2 };
@@ -49,13 +20,17 @@ const ROLE_ORDER = { "委員長": 0, "副委員長": 1, "委員": 2 };
 const TERM_RANGE = [1, 2, 3, 4, 5, 6];
 
 function kaihaColor(kaiha) {
-  const v = KAIHA_COLOR_VAR[kaiha] || "--kaiha-default";
-  return `var(${v})`;
+  return neutralColor(kaiha || "");
 }
 
 function committeeColor(type) {
-  const v = COMMITTEE_TYPE_COLOR_VAR[type] || "--kaiha-default";
-  return `var(${v})`;
+  return neutralColor(type || "");
+}
+
+function neutralColor(value) {
+  let hash = 0;
+  for (const ch of value) hash = (hash * 31 + ch.charCodeAt(0)) >>> 0;
+  return NEUTRAL_COLORS[hash % NEUTRAL_COLORS.length];
 }
 
 function memberKana(member) {
@@ -107,15 +82,11 @@ function groupByKaiha(members) {
     if (!map.has(key)) map.set(key, []);
     map.get(key).push(m);
   }
-  // ソート: KAIHA_ORDER に沿って並べ、未指定は末尾にABC順
   const ordered = [];
-  for (const k of KAIHA_ORDER) {
-    if (map.has(k)) ordered.push([k, map.get(k)]);
-  }
   for (const [k, v] of map.entries()) {
-    if (!KAIHA_ORDER.includes(k)) ordered.push([k, v]);
+    ordered.push([k, v]);
   }
-  return ordered;
+  return ordered.sort((a, b) => a[0].localeCompare(b[0], "ja"));
 }
 
 function groupByCommittee(members) {
@@ -137,13 +108,10 @@ function groupByCommittee(members) {
     });
   }
   const ordered = [];
-  for (const name of COMMITTEE_ORDER) {
-    if (map.has(name)) ordered.push([name, map.get(name)]);
-  }
   for (const [name, group] of map.entries()) {
-    if (!COMMITTEE_ORDER.includes(name)) ordered.push([name, group]);
+    ordered.push([name, group]);
   }
-  return ordered;
+  return ordered.sort((a, b) => a[0].localeCompare(b[0], "ja"));
 }
 
 function groupByTermCount(members) {
@@ -199,7 +167,9 @@ function renderMemberCard(m) {
         el(
           "p",
           { class: "member-term" },
-          `当選 ${memberElectedCount(m) ?? "?"} 回`,
+          memberElectedCount(m) === null
+            ? "当選回数: データなし"
+            : `当選 ${memberElectedCount(m)} 回`,
         ),
       ]),
     ]),
@@ -209,6 +179,16 @@ function renderMemberCard(m) {
     committeeItems.length
       ? el("ul", { class: "member-committees" }, committeeItems)
       : null,
+    el("p", { class: "member-detail-link-wrap" }, [
+      el(
+        "a",
+        {
+          class: "member-detail-link",
+          href: memberPath(state.currentCouncil.id, m.id),
+        },
+        "議員ページを見る",
+      ),
+    ]),
   ]);
 }
 
@@ -264,7 +244,7 @@ export function renderCommitteeView(root, members) {
 export function renderRoleView(root, members) {
   root.innerHTML = "";
 
-  // 第1セクション: 議長・副議長(金色アクセント)
+  // 第1セクション: 議長・副議長
   const heads = members
     .filter((m) =>
       (m.positions || []).some((p) => p === "議長" || p === "副議長"),
@@ -276,7 +256,7 @@ export function renderRoleView(root, members) {
     });
 
   if (heads.length > 0) {
-    const headerStyle = "--committee-color: var(--position-gold);";
+    const headerStyle = "--committee-color: var(--position-accent);";
     const section = el("section", { class: "committee-group" }, [
       el("div", { class: "committee-header", style: headerStyle }, [
         el("h2", { class: "committee-name" }, "議長・副議長"),
