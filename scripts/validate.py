@@ -198,6 +198,17 @@ def validate_members_file(council_id: str, path: Path) -> list[str]:
         elected_count = member.get("elected_count")
         if elected_count is not None and not isinstance(elected_count, int):
             errors.append(f"{label}: elected_count must be int or null")
+        profile_url = member.get("official_profile_url")
+        if "official_profile_url" in member and (
+            profile_url is not None
+            and (
+                not isinstance(profile_url, str)
+                or not profile_url.startswith("https://")
+            )
+        ):
+            errors.append(
+                f"{label}: official_profile_url must be https URL or null"
+            )
 
     return errors
 

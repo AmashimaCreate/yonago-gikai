@@ -45,6 +45,11 @@ function renderMemberProfile(member, membersMeta) {
         detailRow("当選回数", typeof member.elected_count === "number" ? `${member.elected_count}回` : "データなし"),
         detailRow("役職", listText(member.positions)),
         detailRow("委員会", listText(member.committees)),
+        member.official_profile_url
+          ? el("p", { class: "official-profile-link" }, [
+              sourceLink(member.official_profile_url, "公式プロフィールを見る"),
+            ])
+          : null,
         el("p", { class: "quality-inline", title: membersMeta?.acquisition || "" }, acquisitionText(membersMeta)),
         sourceLink(membersMeta?.source_url, "議員名簿の出典"),
       ]),

@@ -49,7 +49,8 @@
       "elected_count": 3,
       "positions": ["総務政策副委員長"],
       "committees": ["総務政策", "基地問題等調査特別"],
-      "photo_url": "https://... or null"
+      "photo_url": "https://... or null",
+      "official_profile_url": "https://... or null"
     }
   ]
 }
@@ -68,6 +69,10 @@
 - `photo_url` はURL文字列または `null`。
 - 議員個別ページのパースは許可リスト方式とし、取得する項目を明示列挙する。
 - 許可リスト外の項目は読まない。特に電話番号、メールアドレス、自宅住所、生年月日等の個人情報は、公式サイトに掲載されていても公開データへ取り込まない。
+
+任意キー:
+
+- `official_profile_url`: 議員本人の公式プロフィールページURL。URL文字列または `null`。値がある場合は、利用者が公式情報を自分で確認する動線としてフロントに表示する。
 
 ## manual members source
 

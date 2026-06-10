@@ -518,6 +518,10 @@ main { padding: 24px 0 48px; }
   color: var(--text-muted);
   font-size: 13px;
 }
+.official-profile-link {
+  margin: 10px 0 4px;
+  font-size: 13px;
+}
 .caution-note {
   margin: 8px 0;
   padding: 10px;
