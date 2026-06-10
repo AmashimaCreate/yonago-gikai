@@ -9,12 +9,13 @@
       "name": "市谷 知子",
       "name_kana": "いちたに ともこ",
       "faction": "無所属",
-      "elected_count": null,
+      "elected_count": 5,
       "positions": [],
       "committees": [
         "農林水産商工常任委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/1165907/01ichitani_thumb.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/1165907.htm#itemid1165907"
     },
     {
       "id": "tottori-pref--itou-tamotsu",
@@ -22,13 +23,14 @@
       "name": "伊藤 保",
       "name_kana": "いとう たもつ",
       "faction": "民主とっとり",
-      "elected_count": null,
+      "elected_count": 7,
       "positions": [],
       "committees": [
         "農林水産商工常任委員会",
         "人口減少社会問題調査特別委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/1125474/02itou.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/1125474.htm#itemid1125474"
     },
     {
       "id": "tottori-pref--irie-makoto",
@@ -36,13 +38,16 @@
       "name": "入江 誠",
       "name_kana": "いりえ まこと",
       "faction": "自由民主党",
-      "elected_count": null,
-      "positions": [],
+      "elected_count": 1,
+      "positions": [
+        "農林水産商工常任委員会 委員長"
+      ],
       "committees": [
         "農林水産商工常任委員会",
         "人口減少社会問題調査特別委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/967688/03irie.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/967688.htm#itemid967688"
     },
     {
       "id": "tottori-pref--uchida-hiromichi",
@@ -50,14 +55,15 @@
       "name": "内田 博長",
       "name_kana": "うちだ ひろみち",
       "faction": "自由民主党",
-      "elected_count": null,
+      "elected_count": 6,
       "positions": [],
       "committees": [
         "議会運営委員会",
         "人口減少社会問題調査特別委員会",
         "地域県土警察常任委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/1165909/05uchidah.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/1165909.htm#itemid1165909"
     },
     {
       "id": "tottori-pref--okiharu-hideo",
@@ -65,13 +71,14 @@
       "name": "興治 英夫",
       "name_kana": "おきはる ひでお",
       "faction": "民主とっとり",
-      "elected_count": null,
+      "elected_count": 6,
       "positions": [],
       "committees": [
         "総務教育常任委員会",
         "議会運営委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/1165910/06okiharu.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/1165910.htm#itemid1165910"
     },
     {
       "id": "tottori-pref--ozaki-kaoru",
@@ -79,13 +86,17 @@
       "name": "尾崎 薫",
       "name_kana": "おざき かおる",
       "faction": "民主とっとり",
-      "elected_count": null,
-      "positions": [],
+      "elected_count": 4,
+      "positions": [
+        "福祉生活病院常任委員会 委員長",
+        "議会運営委員会 副委員長"
+      ],
       "committees": [
         "福祉生活病院常任委員会",
         "議会運営委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/1025137/07ozaki.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/1025137.htm#itemid1025137"
     },
     {
       "id": "tottori-pref--kashima-isao",
@@ -93,14 +104,17 @@
       "name": "鹿島 功",
       "name_kana": "かしま いさお",
       "faction": "自由民主党",
-      "elected_count": null,
-      "positions": [],
+      "elected_count": 2,
+      "positions": [
+        "人口減少社会問題調査特別委員会 副委員長"
+      ],
       "committees": [
         "農林水産商工常任委員会",
         "議会運営委員会",
         "人口減少社会問題調査特別委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/1025136/08kashima.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/1025136.htm#itemid1025136"
     },
     {
       "id": "tottori-pref--kawakami-sadahiro",
@@ -108,12 +122,15 @@
       "name": "河上 定弘",
       "name_kana": "かわかみ さだひろ",
       "faction": "自由民主党",
-      "elected_count": null,
-      "positions": [],
+      "elected_count": 1,
+      "positions": [
+        "地域県土警察常任委員会 委員長"
+      ],
       "committees": [
         "地域県土警察常任委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/967685/09kawakami.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/967685.htm#itemid967685"
     },
     {
       "id": "tottori-pref--kawabe-hiroshi",
@@ -121,14 +138,17 @@
       "name": "川部 洋",
       "name_kana": "かわべ ひろし",
       "faction": "自由民主党",
-      "elected_count": null,
-      "positions": [],
+      "elected_count": 3,
+      "positions": [
+        "人口減少社会問題調査特別委員会 委員長"
+      ],
       "committees": [
         "福祉生活病院常任委員会",
         "議会運営委員会",
         "人口減少社会問題調査特別委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/1165993/10kawabe.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/1165993.htm#itemid1165993"
     },
     {
       "id": "tottori-pref--ginnan-yasutoshi",
@@ -136,13 +156,14 @@
       "name": "銀杏 泰利",
       "name_kana": "ぎんなん やすとし",
       "faction": "公明党",
-      "elected_count": null,
+      "elected_count": 6,
       "positions": [],
       "committees": [
         "総務教育常任委員会",
         "議会運営委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/1165911/11ginnan.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/1165911.htm#itemid1165911"
     },
     {
       "id": "tottori-pref--godou-masanori",
@@ -150,13 +171,14 @@
       "name": "語堂 正範",
       "name_kana": "ごどう まさのり",
       "faction": "自由民主党",
-      "elected_count": null,
+      "elected_count": 2,
       "positions": [],
       "committees": [
         "農林水産商工常任委員会",
         "議会運営委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/1165912/12godou.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/1165912.htm#itemid1165912"
     },
     {
       "id": "tottori-pref--saiki-shouichi",
@@ -164,13 +186,14 @@
       "name": "斉木 正一",
       "name_kana": "さいき しょういち",
       "faction": "自由民主党",
-      "elected_count": null,
+      "elected_count": 7,
       "positions": [],
       "committees": [
         "農林水産商工常任委員会",
         "議会運営委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/1165913/13saiki.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/1165913.htm#itemid1165913"
     },
     {
       "id": "tottori-pref--sakano-keisaburou",
@@ -178,13 +201,14 @@
       "name": "坂野 経三郎",
       "name_kana": "さかの けいさぶろう",
       "faction": "民主とっとり",
-      "elected_count": null,
+      "elected_count": 4,
       "positions": [],
       "committees": [
         "人口減少社会問題調査特別委員会",
         "地域県土警察常任委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/1165915/14sakano.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/1165915.htm#itemid1165915"
     },
     {
       "id": "tottori-pref--shimatani-ryuuji",
@@ -192,12 +216,13 @@
       "name": "島谷 龍司",
       "name_kana": "しまたに りゅうじ",
       "faction": "自由民主党",
-      "elected_count": null,
+      "elected_count": 3,
       "positions": [],
       "committees": [
         "総務教育常任委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/1165916/15shimatani.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/1165916.htm#itemid1165916"
     },
     {
       "id": "tottori-pref--tamaki-yuuichi",
@@ -205,12 +230,13 @@
       "name": "玉木 裕一",
       "name_kana": "たまき ゆういち",
       "faction": "無所属",
-      "elected_count": null,
+      "elected_count": 1,
       "positions": [],
       "committees": [
         "福祉生活病院常任委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/967689/HPtamaki.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/967689.htm#itemid967689"
     },
     {
       "id": "tottori-pref--toba-kiichi",
@@ -218,12 +244,15 @@
       "name": "鳥羽 喜一",
       "name_kana": "とば きいち",
       "faction": "自由民主党",
-      "elected_count": null,
-      "positions": [],
+      "elected_count": 1,
+      "positions": [
+        "総務教育常任委員会 副委員長"
+      ],
       "committees": [
         "総務教育常任委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/967684/16toba.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/967684.htm#itemid967684"
     },
     {
       "id": "tottori-pref--nakashima-norio",
@@ -231,13 +260,16 @@
       "name": "中島 規夫",
       "name_kana": "なかしま のりお",
       "faction": "自由民主党",
-      "elected_count": null,
-      "positions": [],
+      "elected_count": 3,
+      "positions": [
+        "議会運営委員会 委員長"
+      ],
       "committees": [
         "福祉生活病院常任委員会",
         "議会運営委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/1165917/17nakashima.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/1165917.htm#itemid1165917"
     },
     {
       "id": "tottori-pref--nishimura-mitsuko",
@@ -245,13 +277,14 @@
       "name": "西村 弥子",
       "name_kana": "にしむら みつこ",
       "faction": "無所属",
-      "elected_count": null,
+      "elected_count": 2,
       "positions": [],
       "committees": [
         "総務教育常任委員会",
         "人口減少社会問題調査特別委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/1165919/18nishimura.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/1165919.htm#itemid1165919"
     },
     {
       "id": "tottori-pref--nozaka-michiaki",
@@ -259,13 +292,14 @@
       "name": "野坂 道明",
       "name_kana": "のざか みちあき",
       "faction": "自由民主党",
-      "elected_count": null,
+      "elected_count": 3,
       "positions": [],
       "committees": [
         "農林水産商工常任委員会",
         "議会運営委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/1165921/19nosaka.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/1165921.htm#itemid1165921"
     },
     {
       "id": "tottori-pref--hamasaki-shinichi",
@@ -273,13 +307,14 @@
       "name": "浜崎 晋一",
       "name_kana": "はまさき しんいち",
       "faction": "自由民主党",
-      "elected_count": null,
+      "elected_count": 5,
       "positions": [],
       "committees": [
         "議会運営委員会",
         "地域県土警察常任委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/1165922/20hamasaki.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/1165922.htm#itemid1165922"
     },
     {
       "id": "tottori-pref--hamada-kazuya",
@@ -287,12 +322,15 @@
       "name": "浜田 一哉",
       "name_kana": "はまだ かずや",
       "faction": "自由民主党",
-      "elected_count": null,
-      "positions": [],
+      "elected_count": 3,
+      "positions": [
+        "副議長"
+      ],
       "committees": [
         "地域県土警察常任委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/1165923/21hamadak.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/1165923.htm#itemid1165923"
     },
     {
       "id": "tottori-pref--hamada-taeko",
@@ -300,12 +338,13 @@
       "name": "浜田 妙子",
       "name_kana": "はまだ たえこ",
       "faction": "民主とっとり",
-      "elected_count": null,
+      "elected_count": 6,
       "positions": [],
       "committees": [
         "福祉生活病院常任委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/1165924/22hamadat.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/1165924.htm#itemid1165924"
     },
     {
       "id": "tottori-pref--higashida-yoshihiro",
@@ -313,13 +352,16 @@
       "name": "東田 義博",
       "name_kana": "ひがしだ よしひろ",
       "faction": "自由民主党",
-      "elected_count": null,
-      "positions": [],
+      "elected_count": 1,
+      "positions": [
+        "総務教育常任委員会 委員長"
+      ],
       "committees": [
         "総務教育常任委員会",
         "人口減少社会問題調査特別委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/967680/23higashida.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/967680.htm#itemid967680"
     },
     {
       "id": "tottori-pref--hirotani-naoki",
@@ -327,13 +369,14 @@
       "name": "広谷 直樹",
       "name_kana": "ひろたに なおき",
       "faction": "自由民主党",
-      "elected_count": null,
+      "elected_count": 4,
       "positions": [],
       "committees": [
         "福祉生活病院常任委員会",
         "人口減少社会問題調査特別委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/1165937/25hirotani.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/1165937.htm#itemid1165937"
     },
     {
       "id": "tottori-pref--fukuta-shunji",
@@ -341,13 +384,16 @@
       "name": "福田 俊史",
       "name_kana": "ふくた しゅんじ",
       "faction": "自由民主党",
-      "elected_count": null,
-      "positions": [],
+      "elected_count": 4,
+      "positions": [
+        "議長"
+      ],
       "committees": [
         "総務教育常任委員会",
         "人口減少社会問題調査特別委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/1165930/26fukuta.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/1165930.htm#itemid1165930"
     },
     {
       "id": "tottori-pref--fukuhama-takahiro",
@@ -355,13 +401,14 @@
       "name": "福浜 隆宏",
       "name_kana": "ふくはま たかひろ",
       "faction": "無所属",
-      "elected_count": null,
+      "elected_count": 3,
       "positions": [],
       "committees": [
         "福祉生活病院常任委員会",
         "人口減少社会問題調査特別委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/1165926/27fukuhama.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/1165926.htm#itemid1165926"
     },
     {
       "id": "tottori-pref--maezumi-takayuki",
@@ -369,13 +416,14 @@
       "name": "前住 孝行",
       "name_kana": "まえずみ たかゆき",
       "faction": "無所属",
-      "elected_count": null,
+      "elected_count": 1,
       "positions": [],
       "committees": [
         "福祉生活病院常任委員会",
         "人口減少社会問題調査特別委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/967683/29maezumi.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/967683.htm#itemid967683"
     },
     {
       "id": "tottori-pref--maeta-shinichi",
@@ -383,13 +431,16 @@
       "name": "前田 伸一",
       "name_kana": "まえた しんいち",
       "faction": "公明党",
-      "elected_count": null,
-      "positions": [],
+      "elected_count": 1,
+      "positions": [
+        "農林水産商工常任委員会 副委員長"
+      ],
       "committees": [
         "農林水産商工常任委員会",
         "人口減少社会問題調査特別委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/967682/30maeta.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/967682.htm#itemid967682"
     },
     {
       "id": "tottori-pref--maehara-shigeru",
@@ -397,12 +448,13 @@
       "name": "前原 茂",
       "name_kana": "まえはら しげる",
       "faction": "公明党",
-      "elected_count": null,
+      "elected_count": 1,
       "positions": [],
       "committees": [
         "地域県土警察常任委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/967687/31maehara.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/967687.htm#itemid967687"
     },
     {
       "id": "tottori-pref--matsuda-tadashi",
@@ -410,12 +462,13 @@
       "name": "松田 正",
       "name_kana": "まつだ ただし",
       "faction": "無所属",
-      "elected_count": null,
+      "elected_count": 3,
       "positions": [],
       "committees": [
         "地域県土警察常任委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/1165931/32matsuda_2.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/1165931.htm#itemid1165931"
     },
     {
       "id": "tottori-pref--murakami-taijirou",
@@ -423,12 +476,13 @@
       "name": "村上 泰二朗",
       "name_kana": "むらかみ たいじろう",
       "faction": "民主とっとり",
-      "elected_count": null,
+      "elected_count": 1,
       "positions": [],
       "committees": [
         "農林水産商工常任委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/967686/33murakami.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/967686.htm#itemid967686"
     },
     {
       "id": "tottori-pref--mori-yumiko",
@@ -436,12 +490,15 @@
       "name": "森 由美子",
       "name_kana": "もり ゆみこ",
       "faction": "自由民主党",
-      "elected_count": null,
-      "positions": [],
+      "elected_count": 1,
+      "positions": [
+        "地域県土警察常任委員会 副委員長"
+      ],
       "committees": [
         "地域県土警察常任委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/1165908/R6.7_mori.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/1165908.htm#itemid1165908"
     },
     {
       "id": "tottori-pref--yasuda-yoshiki",
@@ -449,12 +506,13 @@
       "name": "安田 由毅",
       "name_kana": "やすだ よしき",
       "faction": "自由民主党",
-      "elected_count": null,
+      "elected_count": 2,
       "positions": [],
       "committees": [
         "総務教育常任委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/1165934/34yasuda.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/1165934.htm#itemid1165934"
     },
     {
       "id": "tottori-pref--yamakawa-chiho",
@@ -462,12 +520,13 @@
       "name": "山川 智帆",
       "name_kana": "やまかわ ちほ",
       "faction": "無所属",
-      "elected_count": null,
+      "elected_count": 2,
       "positions": [],
       "committees": [
         "総務教育常任委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/1165935/35yamakawa.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/1165935.htm#itemid1165935"
     },
     {
       "id": "tottori-pref--yamamoto-akiko",
@@ -475,13 +534,16 @@
       "name": "山本 暁子",
       "name_kana": "やまもと あきこ",
       "faction": "自由民主党",
-      "elected_count": null,
-      "positions": [],
+      "elected_count": 1,
+      "positions": [
+        "福祉生活病院常任委員会 副委員長"
+      ],
       "committees": [
         "福祉生活病院常任委員会"
       ],
-      "photo_url": null
+      "photo_url": "https://www.pref.tottori.lg.jp/secure/1165936/HPyamamoto.jpg",
+      "official_profile_url": "https://www.pref.tottori.lg.jp/item/1165936.htm#itemid1165936"
     }
   ],
-  "updated_at": "2026-06-10T16:58:51+00:00"
+  "updated_at": "2026-06-10T23:54:59+00:00"
 }

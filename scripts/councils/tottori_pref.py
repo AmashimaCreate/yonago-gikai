@@ -9,6 +9,7 @@ from __future__ import annotations
 import re
 import sys
 from pathlib import Path
+from urllib.parse import urljoin
 
 from bs4 import Tag
 
@@ -21,6 +22,9 @@ from scripts.base import CouncilScraperBase  # noqa: E402
 COUNCIL_ID = "tottori-pref"
 SOURCE_URL = "https://www.pref.tottori.lg.jp/75928.htm"
 OUT_PATH = REPO_ROOT / "docs" / "data" / COUNCIL_ID / "members.json"
+CHAIR_URL = "https://www.pref.tottori.lg.jp/75926.htm"
+VICE_CHAIR_URL = "https://www.pref.tottori.lg.jp/75927.htm"
+COMMITTEE_ROSTER_URL = "https://www.pref.tottori.lg.jp/322790.htm"
 
 FACTIONS = {"自由民主党", "民主とっとり", "公明党", "無所属"}
 
@@ -97,9 +101,28 @@ def append_unique(values: list[str], value: str) -> None:
         values.append(value)
 
 
+def name_key(name: str) -> str:
+    return re.sub(r"\s+", "", normalize_text(name))
+
+
+def parse_int_like(text: str) -> int | None:
+    normalized = normalize_text(text).translate(
+        str.maketrans("０１２３４５６７８９", "0123456789")
+    )
+    m = re.search(r"\d+", normalized)
+    return int(m.group(0)) if m else None
+
+
+def normalize_committee_title(text: str) -> str:
+    title = normalize_text(text)
+    title = re.sub(r"[（(]\d+名[）)]", "", title)
+    return normalize_text(title)
+
+
 def parse_member(title: Tag, status: Tag | None) -> dict:
     link = title.find("a")
     name, name_kana = split_name_kana(link.get_text(" ", strip=True) if link else "")
+    profile_url = urljoin(SOURCE_URL, link["href"]) if link and link.get("href") else None
     faction = ""
     committees: list[str] = []
 
@@ -125,7 +148,86 @@ def parse_member(title: Tag, status: Tag | None) -> dict:
         "positions": [],
         "committees": committees,
         "photo_url": None,
+        "official_profile_url": profile_url,
     }
+
+
+def parse_profile_allowed_fields(soup, profile_url: str) -> tuple[int | None, str | None]:
+    """Return only allowlisted fields from a member profile page."""
+    elected_count: int | None = None
+    photo_url: str | None = None
+
+    contents = soup.find("div", class_="Contents")
+    if not contents:
+        return elected_count, photo_url
+
+    table = contents.find("table")
+    if not table:
+        return elected_count, photo_url
+
+    img = table.find("img")
+    if img and img.get("src"):
+        photo_url = urljoin(profile_url, img["src"])
+
+    for row in table.find_all("tr"):
+        header = row.find("th")
+        cells = row.find_all("td")
+        label_cell = header or (cells[-2] if len(cells) >= 2 else None)
+        if not label_cell:
+            continue
+        label = normalize_text(label_cell.get_text(" ", strip=True))
+        if label != "期数":
+            continue
+        if cells:
+            elected_count = parse_int_like(cells[-1].get_text(" ", strip=True))
+        break
+
+    return elected_count, photo_url
+
+
+def chair_name_from_page(soup, role: str) -> str | None:
+    text = normalize_text(soup.get_text(" ", strip=True))
+    match = re.search(rf"第[0-9０-９]+代鳥取県議会{role}\s+(\S+)\s+(\S+)", text)
+    if not match:
+        return None
+    return normalize_text(f"{match.group(1)} {match.group(2)}")
+
+
+def committee_positions_from_page(soup) -> dict[str, list[str]]:
+    positions: dict[str, list[str]] = {}
+    for title in soup.find_all("h2", class_="Title"):
+        committee_name = normalize_committee_title(title.get_text(" ", strip=True))
+        if not committee_name or "委員会" not in committee_name:
+            continue
+
+        contents = title.find_parent("div", class_="h2frame")
+        if contents:
+            contents = contents.find_next_sibling("div", class_="Contents")
+        if not contents:
+            contents = title.find_next("div", class_="Contents")
+        table = contents.find("table") if contents else None
+        if not table:
+            continue
+
+        for row in table.find_all("tr"):
+            cells = row.find_all(["td", "th"])
+            if len(cells) < 2:
+                continue
+            role = normalize_text(cells[0].get_text(" ", strip=True))
+            person = normalize_text(cells[1].get_text(" ", strip=True))
+            if not person:
+                continue
+            if role.startswith("副委員長"):
+                append_unique(
+                    positions.setdefault(name_key(person), []),
+                    f"{committee_name} 副委員長",
+                )
+            elif role.startswith("委員長"):
+                append_unique(
+                    positions.setdefault(name_key(person), []),
+                    f"{committee_name} 委員長",
+                )
+    return positions
 
 
 def assign_unique_ids(members: list[dict]) -> None:
@@ -154,7 +256,52 @@ class TottoriPrefScraper(CouncilScraperBase):
                 members.append(member)
 
         assign_unique_ids(members)
+        self.enrich_member_profiles(members)
+        self.enrich_positions(members)
         return members
+
+    def enrich_member_profiles(self, members: list[dict]) -> None:
+        for member in members:
+            profile_url = member.get("official_profile_url")
+            if not profile_url:
+                continue
+            print(f"fetching profile {member['name']} ...")
+            soup = self.fetch(profile_url)
+            elected_count, photo = parse_profile_allowed_fields(soup, profile_url)
+            if elected_count is not None:
+                member["elected_count"] = elected_count
+            if photo:
+                member["photo_url"] = photo
+
+    def enrich_positions(self, members: list[dict]) -> None:
+        by_name = {name_key(member["name"]): member for member in members}
+
+        print(f"fetching {CHAIR_URL} ...")
+        chair_soup = self.fetch(CHAIR_URL)
+        chair_name = chair_name_from_page(chair_soup, "議長")
+        if chair_name and name_key(chair_name) in by_name:
+            append_unique(by_name[name_key(chair_name)]["positions"], "議長")
+        else:
+            print(f"WARNING: could not match chair name: {chair_name}", file=sys.stderr)
+
+        print(f"fetching {VICE_CHAIR_URL} ...")
+        vice_soup = self.fetch(VICE_CHAIR_URL)
+        vice_name = chair_name_from_page(vice_soup, "副議長")
+        if vice_name and name_key(vice_name) in by_name:
+            append_unique(by_name[name_key(vice_name)]["positions"], "副議長")
+        else:
+            print(f"WARNING: could not match vice chair name: {vice_name}", file=sys.stderr)
+
+        print(f"fetching {COMMITTEE_ROSTER_URL} ...")
+        committee_soup = self.fetch(COMMITTEE_ROSTER_URL)
+        committee_positions = committee_positions_from_page(committee_soup)
+        for key, positions in committee_positions.items():
+            member = by_name.get(key)
+            if not member:
+                print(f"WARNING: could not match committee role name: {key}", file=sys.stderr)
+                continue
+            for position in positions:
+                append_unique(member["positions"], position)
 
 
 def main() -> int:
