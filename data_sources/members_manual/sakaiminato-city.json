@@ -1,0 +1,6 @@
+{
+  "council_id": "sakaiminato-city",
+  "source_url": null,
+  "source_note": "robots.txt により Codex は境港市公式サイトを取得しない。KT が公式サイトの議員名簿ページをブラウザで確認し、この source_url と members を手動転記する。",
+  "members": []
+}

@@ -24,6 +24,7 @@
   "council_id": "yonago-city",
   "updated_at": "2026-06-11T00:00:00+00:00",
   "source_url": "https://www.city.yonago.lg.jp/2919.htm",
+  "acquisition": "scraping",
   "members": [
     {
       "id": "yonago-city--adachi-takashi",
@@ -42,14 +43,49 @@
 
 必須キー:
 
-- ルート: `council_id`, `updated_at`, `source_url`, `members`
+- ルート: `council_id`, `updated_at`, `source_url`, `acquisition`, `members`
 - 各議員: `id`, `council_id`, `name`, `name_kana`, `faction`, `elected_count`, `positions`, `committees`, `photo_url`
 
 ルール:
 
+- `acquisition` は `scraping` / `manual_transcription`。
 - `id` は `{council_id}--{slug}` 形式。
 - `positions` と `committees` は文字列配列。
 - `photo_url` はURL文字列または `null`。
+
+## manual members source
+
+配置: `data_sources/members_manual/{council_id}.json`
+
+robots.txt 等により自動取得しない議会の、人間転記用入力ファイル。
+
+```json
+{
+  "council_id": "sakaiminato-city",
+  "source_url": "https://...",
+  "source_note": "KT が公式サイトの議員名簿ページを確認して転記",
+  "members": [
+    {
+      "id": "sakaiminato-city--sample-taro",
+      "council_id": "sakaiminato-city",
+      "name": "境港 太郎",
+      "name_kana": "さかいみなと たろう",
+      "faction": null,
+      "elected_count": null,
+      "positions": [],
+      "committees": [],
+      "photo_url": null,
+      "source_url": "https://..."
+    }
+  ]
+}
+```
+
+ルール:
+
+- ルートの `source_url` は転記元の議員名簿ページ。
+- 各議員にも `source_url` を持たせる。個別ページがない場合はルートと同じ議員名簿ページURLを入れる。
+- 生成される `docs/data/{council_id}/members.json` では、ルートに `acquisition: "manual_transcription"` を付与し、各議員の `source_url` は公開スキーマからは落とす。
 
 ## votes.json
 

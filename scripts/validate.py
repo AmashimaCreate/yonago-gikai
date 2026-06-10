@@ -24,7 +24,14 @@ MINUTES_SYSTEMS = {"dbsr", "kensakusystem", "unknown"}
 VOTE_GRANULARITIES = {"member", "faction", "result_only", "unknown"}
 STATUSES = {"active", "planned"}
 
-MEMBERS_ROOT_KEYS = {"council_id", "updated_at", "source_url", "members"}
+MEMBERS_ROOT_KEYS = {
+    "council_id",
+    "updated_at",
+    "source_url",
+    "acquisition",
+    "members",
+}
+MEMBER_ACQUISITIONS = {"scraping", "manual_transcription"}
 MEMBER_KEYS = {
     "id",
     "council_id",
@@ -131,6 +138,10 @@ def validate_members_file(council_id: str, path: Path) -> list[str]:
         errors.append(
             f"{path}: council_id '{data.get('council_id')}' "
             f"does not match '{council_id}'"
+        )
+    if data.get("acquisition") not in MEMBER_ACQUISITIONS:
+        errors.append(
+            f"{path}: invalid acquisition '{data.get('acquisition')}'"
         )
 
     members = data.get("members")

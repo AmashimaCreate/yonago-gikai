@@ -173,6 +173,7 @@ def main() -> int:
         {
             "council_id": COUNCIL_ID,
             "source_url": SOURCE_URL,
+            "acquisition": "scraping",
             "members": members,
         },
     )

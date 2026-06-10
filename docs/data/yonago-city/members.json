@@ -1,6 +1,7 @@
 {
   "council_id": "yonago-city",
   "source_url": "https://www.city.yonago.lg.jp/2919.htm",
+  "acquisition": "scraping",
   "members": [
     {
       "id": "yonago-city--adachi-takashi",
@@ -398,5 +399,5 @@
       "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407watanabe26.jpg"
     }
   ],
-  "updated_at": "2026-06-10T15:37:51+00:00"
+  "updated_at": "2026-06-10T16:58:37+00:00"
 }
