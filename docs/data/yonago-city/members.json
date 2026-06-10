@@ -1,0 +1,402 @@
+{
+  "council_id": "yonago-city",
+  "source_url": "https://www.city.yonago.lg.jp/2919.htm",
+  "members": [
+    {
+      "id": "yonago-city--adachi-takashi",
+      "council_id": "yonago-city",
+      "name": "安達 卓是",
+      "name_kana": "あだち たかし",
+      "faction": "信風",
+      "elected_count": 3,
+      "positions": [
+        "総務政策副委員長",
+        "基地問題等調査特別副委員長"
+      ],
+      "committees": [
+        "総務政策",
+        "基地問題等調査特別"
+      ],
+      "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407adati1.jpg"
+    },
+    {
+      "id": "yonago-city--itou-hiroe",
+      "council_id": "yonago-city",
+      "name": "伊藤 ひろえ",
+      "name_kana": "いとう ひろえ",
+      "faction": "信風",
+      "elected_count": 6,
+      "positions": [],
+      "committees": [
+        "民生教育"
+      ],
+      "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407itou2.jpg"
+    },
+    {
+      "id": "yonago-city--inata-kiyoshi",
+      "council_id": "yonago-city",
+      "name": "稲田 清",
+      "name_kana": "いなた きよし",
+      "faction": "無所属",
+      "elected_count": 4,
+      "positions": [
+        "原子力発電・エネルギー問題等調査特別委員長"
+      ],
+      "committees": [
+        "都市経済",
+        "原子力発電・エネルギー問題等調査特別"
+      ],
+      "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407inata3.jpg"
+    },
+    {
+      "id": "yonago-city--imashiro-masako",
+      "council_id": "yonago-city",
+      "name": "今城 雅子",
+      "name_kana": "いましろ まさこ",
+      "faction": "公明党議員団",
+      "elected_count": 3,
+      "positions": [
+        "議会運営副委員長"
+      ],
+      "committees": [
+        "議会運営",
+        "都市経済"
+      ],
+      "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407imasiro4.jpg"
+    },
+    {
+      "id": "yonago-city--iwasaki-yasurou",
+      "council_id": "yonago-city",
+      "name": "岩﨑 康朗",
+      "name_kana": "いわさき やすろう",
+      "faction": "自由創政",
+      "elected_count": 6,
+      "positions": [
+        "基地問題等調査特別委員長"
+      ],
+      "committees": [
+        "議会運営",
+        "総務政策",
+        "基地問題等調査特別"
+      ],
+      "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407iwasaki5.jpg"
+    },
+    {
+      "id": "yonago-city--ooshita-tetsuji",
+      "council_id": "yonago-city",
+      "name": "大下 哲治",
+      "name_kana": "おおした てつじ",
+      "faction": "信風",
+      "elected_count": 1,
+      "positions": [
+        "予算決算副委員長"
+      ],
+      "committees": [
+        "総務政策",
+        "予算決算"
+      ],
+      "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407oshita6.jpg"
+    },
+    {
+      "id": "yonago-city--okada-keisuke",
+      "council_id": "yonago-city",
+      "name": "岡田 啓介",
+      "name_kana": "おかだ けいすけ",
+      "faction": "自由創政",
+      "elected_count": 3,
+      "positions": [
+        "議長"
+      ],
+      "committees": [
+        "民生教育",
+        "原子力発電・エネルギー問題等調査特別"
+      ],
+      "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407okada7.jpg"
+    },
+    {
+      "id": "yonago-city--okuiwa-hiroki",
+      "council_id": "yonago-city",
+      "name": "奥岩 浩基",
+      "name_kana": "おくいわ ひろき",
+      "faction": "無所属",
+      "elected_count": 2,
+      "positions": [],
+      "committees": [
+        "議会運営",
+        "総務政策"
+      ],
+      "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407okuiwa8.jpg"
+    },
+    {
+      "id": "yonago-city--kadowaki-kazuo",
+      "council_id": "yonago-city",
+      "name": "門脇 一男",
+      "name_kana": "かどわき かずお",
+      "faction": "無所属",
+      "elected_count": 3,
+      "positions": [
+        "民生教育副委員長"
+      ],
+      "committees": [
+        "民生教育",
+        "基地問題等調査特別"
+      ],
+      "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407kadowaki9.jpg"
+    },
+    {
+      "id": "yonago-city--kunitou-yasushi",
+      "council_id": "yonago-city",
+      "name": "国頭 靖",
+      "name_kana": "くにとう やすし",
+      "faction": "よなご・未来",
+      "elected_count": 4,
+      "positions": [],
+      "committees": [
+        "議会運営",
+        "都市経済",
+        "基地問題等調査特別"
+      ],
+      "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0630kunito2.jpg"
+    },
+    {
+      "id": "yonago-city--tamura-kensuke",
+      "council_id": "yonago-city",
+      "name": "田村 謙介",
+      "name_kana": "たむら けんすけ",
+      "faction": "自由創政",
+      "elected_count": 3,
+      "positions": [
+        "副議長"
+      ],
+      "committees": [
+        "都市経済",
+        "基地問題等調査特別"
+      ],
+      "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407tamura11.jpg"
+    },
+    {
+      "id": "yonago-city--tsukada-yoshimitsu",
+      "council_id": "yonago-city",
+      "name": "塚田 佳充",
+      "name_kana": "つかだ よしみつ",
+      "faction": "無所属",
+      "elected_count": 1,
+      "positions": [
+        "総務政策委員長"
+      ],
+      "committees": [
+        "議会運営",
+        "総務政策"
+      ],
+      "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407tsukada12.jpg"
+    },
+    {
+      "id": "yonago-city--tsuda-kouichi",
+      "council_id": "yonago-city",
+      "name": "津田 幸一",
+      "name_kana": "つだ こういち",
+      "faction": "公明党議員団",
+      "elected_count": 1,
+      "positions": [
+        "都市経済副委員長"
+      ],
+      "committees": [
+        "都市経済"
+      ],
+      "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407tsuda13.jpg"
+    },
+    {
+      "id": "yonago-city--tokuda-hirofumi",
+      "council_id": "yonago-city",
+      "name": "徳田 博文",
+      "name_kana": "とくだ ひろふみ",
+      "faction": "公明党議員団",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "総務政策",
+        "基地問題等調査特別"
+      ],
+      "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407tokuda14.jpg"
+    },
+    {
+      "id": "yonago-city--dokou-hitoshi",
+      "council_id": "yonago-city",
+      "name": "土光 均",
+      "name_kana": "どこう ひとし",
+      "faction": "よなご・未来",
+      "elected_count": 3,
+      "positions": [],
+      "committees": [
+        "総務政策",
+        "原子力発電・エネルギー問題等調査特別"
+      ],
+      "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407doko15.jpg"
+    },
+    {
+      "id": "yonago-city--toda-ryuuji",
+      "council_id": "yonago-city",
+      "name": "戸田 隆次",
+      "name_kana": "とだ りゅうじ",
+      "faction": "自由創政",
+      "elected_count": 3,
+      "positions": [
+        "議会運営委員長"
+      ],
+      "committees": [
+        "議会運営",
+        "総務政策"
+      ],
+      "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407toda16.jpg"
+    },
+    {
+      "id": "yonago-city--nakada-toshiyuki",
+      "council_id": "yonago-city",
+      "name": "中田 利幸",
+      "name_kana": "なかだ としゆき",
+      "faction": "信風",
+      "elected_count": 6,
+      "positions": [],
+      "committees": [
+        "議会運営",
+        "都市経済",
+        "原子力発電・エネルギー問題等調査特別"
+      ],
+      "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407nakada17.jpg"
+    },
+    {
+      "id": "yonago-city--nishikoori-youko",
+      "council_id": "yonago-city",
+      "name": "錦織 陽子",
+      "name_kana": "にしこおり ようこ",
+      "faction": "日本共産党米子市議団",
+      "elected_count": 2,
+      "positions": [],
+      "committees": [
+        "議会運営",
+        "都市経済",
+        "基地問題等調査特別"
+      ],
+      "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407nishikori18.jpg"
+    },
+    {
+      "id": "yonago-city--nishino-taichi",
+      "council_id": "yonago-city",
+      "name": "西野 太一",
+      "name_kana": "にしの たいち",
+      "faction": "自由創政",
+      "elected_count": 1,
+      "positions": [
+        "都市経済委員長"
+      ],
+      "committees": [
+        "都市経済",
+        "原子力発電・エネルギー問題等調査特別"
+      ],
+      "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407nishino19.jpg"
+    },
+    {
+      "id": "yonago-city--matano-shirou",
+      "council_id": "yonago-city",
+      "name": "又野 史朗",
+      "name_kana": "またの しろう",
+      "faction": "日本共産党米子市議団",
+      "elected_count": 2,
+      "positions": [],
+      "committees": [
+        "民生教育",
+        "原子力発電・エネルギー問題等調査特別"
+      ],
+      "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407matano20.jpg"
+    },
+    {
+      "id": "yonago-city--matsuda-shinya",
+      "council_id": "yonago-city",
+      "name": "松田 真哉",
+      "name_kana": "まつだ しんや",
+      "faction": "よなご・未来",
+      "elected_count": 1,
+      "positions": [
+        "民生教育委員長"
+      ],
+      "committees": [
+        "民生教育"
+      ],
+      "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407matsuda21.jpg"
+    },
+    {
+      "id": "yonago-city--morita-satoshi",
+      "council_id": "yonago-city",
+      "name": "森田 悟史",
+      "name_kana": "もりた さとし",
+      "faction": "無所属",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "総務政策"
+      ],
+      "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407morita22.jpg"
+    },
+    {
+      "id": "yonago-city--moritani-tsukasa",
+      "council_id": "yonago-city",
+      "name": "森谷 司",
+      "name_kana": "もりたに つかさ",
+      "faction": "新ファミリア",
+      "elected_count": 2,
+      "positions": [],
+      "committees": [
+        "都市経済",
+        "原子力発電・エネルギー問題等調査特別"
+      ],
+      "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407moritani23.jpg"
+    },
+    {
+      "id": "yonago-city--yatagai-kaori",
+      "council_id": "yonago-city",
+      "name": "矢田貝 香織",
+      "name_kana": "やたがい かおり",
+      "faction": "公明党議員団",
+      "elected_count": 3,
+      "positions": [
+        "原子力発電・エネルギー問題等調査特別副委員長"
+      ],
+      "committees": [
+        "民生教育",
+        "原子力発電・エネルギー問題等調査特別"
+      ],
+      "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407yatagai24.jpg"
+    },
+    {
+      "id": "yonago-city--yoshioka-koto",
+      "council_id": "yonago-city",
+      "name": "𠮷岡 古都",
+      "name_kana": "よしおか こと",
+      "faction": "よなご・未来",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "民生教育"
+      ],
+      "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407yosuoka25.jpg"
+    },
+    {
+      "id": "yonago-city--watanabe-jouji",
+      "council_id": "yonago-city",
+      "name": "渡辺 穣爾",
+      "name_kana": "わたなべ じょうじ",
+      "faction": "無所属",
+      "elected_count": 6,
+      "positions": [
+        "予算決算委員長"
+      ],
+      "committees": [
+        "民生教育",
+        "予算決算",
+        "基地問題等調査特別"
+      ],
+      "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407watanabe26.jpg"
+    }
+  ],
+  "updated_at": "2026-06-10T15:37:51+00:00"
+}
