@@ -6,7 +6,7 @@
       "type": "prefecture",
       "minutes_system": "dbsr",
       "vote_granularity": "member",
-      "status": "planned"
+      "status": "active"
     },
     {
       "id": "tottori-city",

@@ -1,0 +1,486 @@
+{
+  "council_id": "tottori-pref",
+  "source_url": "https://www.pref.tottori.lg.jp/75928.htm",
+  "members": [
+    {
+      "id": "tottori-pref--ichitani-tomoko",
+      "council_id": "tottori-pref",
+      "name": "市谷 知子",
+      "name_kana": "いちたに ともこ",
+      "faction": "無所属",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "農林水産商工常任委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--itou-tamotsu",
+      "council_id": "tottori-pref",
+      "name": "伊藤 保",
+      "name_kana": "いとう たもつ",
+      "faction": "民主とっとり",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "農林水産商工常任委員会",
+        "人口減少社会問題調査特別委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--irie-makoto",
+      "council_id": "tottori-pref",
+      "name": "入江 誠",
+      "name_kana": "いりえ まこと",
+      "faction": "自由民主党",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "農林水産商工常任委員会",
+        "人口減少社会問題調査特別委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--uchida-hiromichi",
+      "council_id": "tottori-pref",
+      "name": "内田 博長",
+      "name_kana": "うちだ ひろみち",
+      "faction": "自由民主党",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "議会運営委員会",
+        "人口減少社会問題調査特別委員会",
+        "地域県土警察常任委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--okiharu-hideo",
+      "council_id": "tottori-pref",
+      "name": "興治 英夫",
+      "name_kana": "おきはる ひでお",
+      "faction": "民主とっとり",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "総務教育常任委員会",
+        "議会運営委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--ozaki-kaoru",
+      "council_id": "tottori-pref",
+      "name": "尾崎 薫",
+      "name_kana": "おざき かおる",
+      "faction": "民主とっとり",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "福祉生活病院常任委員会",
+        "議会運営委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--kashima-isao",
+      "council_id": "tottori-pref",
+      "name": "鹿島 功",
+      "name_kana": "かしま いさお",
+      "faction": "自由民主党",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "農林水産商工常任委員会",
+        "議会運営委員会",
+        "人口減少社会問題調査特別委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--kawakami-sadahiro",
+      "council_id": "tottori-pref",
+      "name": "河上 定弘",
+      "name_kana": "かわかみ さだひろ",
+      "faction": "自由民主党",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "地域県土警察常任委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--kawabe-hiroshi",
+      "council_id": "tottori-pref",
+      "name": "川部 洋",
+      "name_kana": "かわべ ひろし",
+      "faction": "自由民主党",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "福祉生活病院常任委員会",
+        "議会運営委員会",
+        "人口減少社会問題調査特別委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--ginnan-yasutoshi",
+      "council_id": "tottori-pref",
+      "name": "銀杏 泰利",
+      "name_kana": "ぎんなん やすとし",
+      "faction": "公明党",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "総務教育常任委員会",
+        "議会運営委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--godou-masanori",
+      "council_id": "tottori-pref",
+      "name": "語堂 正範",
+      "name_kana": "ごどう まさのり",
+      "faction": "自由民主党",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "農林水産商工常任委員会",
+        "議会運営委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--saiki-shouichi",
+      "council_id": "tottori-pref",
+      "name": "斉木 正一",
+      "name_kana": "さいき しょういち",
+      "faction": "自由民主党",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "農林水産商工常任委員会",
+        "議会運営委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--sakano-keisaburou",
+      "council_id": "tottori-pref",
+      "name": "坂野 経三郎",
+      "name_kana": "さかの けいさぶろう",
+      "faction": "民主とっとり",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "人口減少社会問題調査特別委員会",
+        "地域県土警察常任委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--shimatani-ryuuji",
+      "council_id": "tottori-pref",
+      "name": "島谷 龍司",
+      "name_kana": "しまたに りゅうじ",
+      "faction": "自由民主党",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "総務教育常任委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--tamaki-yuuichi",
+      "council_id": "tottori-pref",
+      "name": "玉木 裕一",
+      "name_kana": "たまき ゆういち",
+      "faction": "無所属",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "福祉生活病院常任委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--toba-kiichi",
+      "council_id": "tottori-pref",
+      "name": "鳥羽 喜一",
+      "name_kana": "とば きいち",
+      "faction": "自由民主党",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "総務教育常任委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--nakashima-norio",
+      "council_id": "tottori-pref",
+      "name": "中島 規夫",
+      "name_kana": "なかしま のりお",
+      "faction": "自由民主党",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "福祉生活病院常任委員会",
+        "議会運営委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--nishimura-mitsuko",
+      "council_id": "tottori-pref",
+      "name": "西村 弥子",
+      "name_kana": "にしむら みつこ",
+      "faction": "無所属",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "総務教育常任委員会",
+        "人口減少社会問題調査特別委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--nozaka-michiaki",
+      "council_id": "tottori-pref",
+      "name": "野坂 道明",
+      "name_kana": "のざか みちあき",
+      "faction": "自由民主党",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "農林水産商工常任委員会",
+        "議会運営委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--hamasaki-shinichi",
+      "council_id": "tottori-pref",
+      "name": "浜崎 晋一",
+      "name_kana": "はまさき しんいち",
+      "faction": "自由民主党",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "議会運営委員会",
+        "地域県土警察常任委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--hamada-kazuya",
+      "council_id": "tottori-pref",
+      "name": "浜田 一哉",
+      "name_kana": "はまだ かずや",
+      "faction": "自由民主党",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "地域県土警察常任委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--hamada-taeko",
+      "council_id": "tottori-pref",
+      "name": "浜田 妙子",
+      "name_kana": "はまだ たえこ",
+      "faction": "民主とっとり",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "福祉生活病院常任委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--higashida-yoshihiro",
+      "council_id": "tottori-pref",
+      "name": "東田 義博",
+      "name_kana": "ひがしだ よしひろ",
+      "faction": "自由民主党",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "総務教育常任委員会",
+        "人口減少社会問題調査特別委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--hirotani-naoki",
+      "council_id": "tottori-pref",
+      "name": "広谷 直樹",
+      "name_kana": "ひろたに なおき",
+      "faction": "自由民主党",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "福祉生活病院常任委員会",
+        "人口減少社会問題調査特別委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--fukuta-shunji",
+      "council_id": "tottori-pref",
+      "name": "福田 俊史",
+      "name_kana": "ふくた しゅんじ",
+      "faction": "自由民主党",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "総務教育常任委員会",
+        "人口減少社会問題調査特別委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--fukuhama-takahiro",
+      "council_id": "tottori-pref",
+      "name": "福浜 隆宏",
+      "name_kana": "ふくはま たかひろ",
+      "faction": "無所属",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "福祉生活病院常任委員会",
+        "人口減少社会問題調査特別委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--maezumi-takayuki",
+      "council_id": "tottori-pref",
+      "name": "前住 孝行",
+      "name_kana": "まえずみ たかゆき",
+      "faction": "無所属",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "福祉生活病院常任委員会",
+        "人口減少社会問題調査特別委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--maeta-shinichi",
+      "council_id": "tottori-pref",
+      "name": "前田 伸一",
+      "name_kana": "まえた しんいち",
+      "faction": "公明党",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "農林水産商工常任委員会",
+        "人口減少社会問題調査特別委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--maehara-shigeru",
+      "council_id": "tottori-pref",
+      "name": "前原 茂",
+      "name_kana": "まえはら しげる",
+      "faction": "公明党",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "地域県土警察常任委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--matsuda-tadashi",
+      "council_id": "tottori-pref",
+      "name": "松田 正",
+      "name_kana": "まつだ ただし",
+      "faction": "無所属",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "地域県土警察常任委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--murakami-taijirou",
+      "council_id": "tottori-pref",
+      "name": "村上 泰二朗",
+      "name_kana": "むらかみ たいじろう",
+      "faction": "民主とっとり",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "農林水産商工常任委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--mori-yumiko",
+      "council_id": "tottori-pref",
+      "name": "森 由美子",
+      "name_kana": "もり ゆみこ",
+      "faction": "自由民主党",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "地域県土警察常任委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--yasuda-yoshiki",
+      "council_id": "tottori-pref",
+      "name": "安田 由毅",
+      "name_kana": "やすだ よしき",
+      "faction": "自由民主党",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "総務教育常任委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--yamakawa-chiho",
+      "council_id": "tottori-pref",
+      "name": "山川 智帆",
+      "name_kana": "やまかわ ちほ",
+      "faction": "無所属",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "総務教育常任委員会"
+      ],
+      "photo_url": null
+    },
+    {
+      "id": "tottori-pref--yamamoto-akiko",
+      "council_id": "tottori-pref",
+      "name": "山本 暁子",
+      "name_kana": "やまもと あきこ",
+      "faction": "自由民主党",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "福祉生活病院常任委員会"
+      ],
+      "photo_url": null
+    }
+  ],
+  "updated_at": "2026-06-10T16:32:53+00:00"
+}
