@@ -32,16 +32,16 @@ jobs:
         run: pip install -r scripts/requirements.txt
 
       - name: Scrape members
-        run: python scripts/scrape.py
+        run: python scripts/councils/yonago.py
 
-      - name: Sync member_links.json
-        run: python scripts/sync_links.py --write
+      - name: Validate data
+        run: python scripts/validate.py
 
       - name: Commit changes (if any)
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data/members.json docs/data/meta.json docs/data/member_links.json
+          git add docs/data/yonago-city/members.json
           if git diff --cached --quiet; then
             echo "No data changes; skipping commit."
           else
@@ -71,7 +71,7 @@ jobs:
                 '- ネットワーク障害',
                 '- パース結果の異常(議員数が10人未満)',
                 '',
-                'ログを確認のうえ `scripts/scrape.py` を修正してください。',
+                'ログを確認のうえ `scripts/councils/yonago.py` を修正してください。',
                 '',
                 '_このIssueはGitHub Actionsにより自動作成されました。_',
               ].join('\n'),
