@@ -17,7 +17,7 @@ from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
 from typing import Any
-from urllib.parse import quote, urlencode, urljoin
+from urllib.parse import quote_from_bytes, urljoin
 
 import requests
 from bs4 import BeautifulSoup
@@ -38,6 +38,7 @@ COVERAGE = {
         "市長・執行部の発言(member_id: null扱い)",
     ],
     "note": "議長は慣例により一般質問を行わないため発言数が少なく/ゼロに見える場合がある",
+    "source_url_note": "個別発言への直接リンクは本システムの仕様上提供不可。source_url は会議録検索入口。",
 }
 
 NAME_VARIANTS = str.maketrans(
@@ -56,8 +57,15 @@ NAME_VARIANTS = str.maketrans(
 
 
 @dataclass(frozen=True)
+class SpeakerOption:
+    label: str
+    value: bytes
+
+
+@dataclass(frozen=True)
 class MemberMatch:
     speaker_label: str
+    speaker_value: bytes
     member_id: str | None
     mode: str
 
@@ -94,15 +102,20 @@ class NameMatcher:
             family: ids[0] for family, ids in family_to_ids.items() if len(ids) == 1
         }
 
-    def match(self, speaker_label: str) -> MemberMatch:
-        normalized = normalize_name(speaker_label)
+    def match(self, speaker: SpeakerOption) -> MemberMatch:
+        normalized = normalize_name(speaker.label)
         if normalized in self.full_name_to_id:
-            return MemberMatch(speaker_label, self.full_name_to_id[normalized], "full")
+            return MemberMatch(
+                speaker.label, speaker.value, self.full_name_to_id[normalized], "full"
+            )
         if normalized in self.unique_family_to_id:
             return MemberMatch(
-                speaker_label, self.unique_family_to_id[normalized], "family_unique"
+                speaker.label,
+                speaker.value,
+                self.unique_family_to_id[normalized],
+                "family_unique",
             )
-        return MemberMatch(speaker_label, None, "unmatched")
+        return MemberMatch(speaker.label, speaker.value, None, "unmatched")
 
 
 class KensakuSystemLegacyMinutesAdapter(CouncilScraperBase):
@@ -120,10 +133,9 @@ class KensakuSystemLegacyMinutesAdapter(CouncilScraperBase):
         self.fiscal_years = fiscal_years
         self.council = self.load_council(council_id)
         self.base_url = self.council["minutes_base_url"].rstrip("/") + "/"
+        self.entry_url = urljoin(self.base_url, "index.html")
         self.search_url = urljoin(self.base_url, "cgi-bin3/Search2.exe")
-        self.search_top_url: str | None = None
         self.code: str | None = None
-        self.resultframe_is_durable: bool | None = None
 
     def load_council(self, council_id: str) -> dict[str, Any]:
         with COUNCILS_PATH.open(encoding="utf-8") as f:
@@ -135,13 +147,13 @@ class KensakuSystemLegacyMinutesAdapter(CouncilScraperBase):
                 return council
         raise SystemExit(f"{council_id}: not found in councils.json")
 
-    def fetch_legacy_text(
-        self, url: str, data: list[tuple[str, str]] | None = None
-    ) -> str:
+    def fetch_legacy_content(
+        self, url: str, data: list[tuple[str, str | bytes]] | None = None
+    ) -> bytes:
         if data is None:
             resp = self.session.get(url, timeout=self.request_timeout)
         else:
-            body = urlencode(data, encoding="cp932").encode("ascii")
+            body = encode_legacy_form(data)
             resp = self.session.post(
                 url,
                 data=body,
@@ -150,7 +162,12 @@ class KensakuSystemLegacyMinutesAdapter(CouncilScraperBase):
             )
         resp.raise_for_status()
         time.sleep(self.sleep_seconds)
-        return resp.content.decode("cp932", errors="replace")
+        return resp.content
+
+    def fetch_legacy_text(
+        self, url: str, data: list[tuple[str, str | bytes]] | None = None
+    ) -> str:
+        return self.fetch_legacy_content(url, data).decode("cp932", errors="replace")
 
     def extract_code(self) -> str:
         top_html = self.fetch_legacy_text(urljoin(self.base_url, "index.html"))
@@ -158,12 +175,11 @@ class KensakuSystemLegacyMinutesAdapter(CouncilScraperBase):
         if not matches:
             raise SystemExit(f"{self.council_id}: could not extract Code")
         self.code = matches[0]
-        self.search_top_url = f"{self.search_url}?Code={quote(self.code)}&sTarget=2"
         return self.code
 
-    def fetch_search_form(self, from_year: str, till_year: str) -> str:
+    def fetch_search_form(self, from_year: str, till_year: str) -> tuple[bytes, str]:
         code = self.require_code()
-        return self.fetch_legacy_text(
+        content = self.fetch_legacy_content(
             self.search_url,
             [
                 ("Code", code),
@@ -173,13 +189,14 @@ class KensakuSystemLegacyMinutesAdapter(CouncilScraperBase):
                 ("eTarget", "1"),
             ],
         )
+        return content, content.decode("cp932", errors="replace")
 
-    def build_scope(self) -> tuple[SearchScope, str]:
+    def build_scope(self) -> tuple[SearchScope, bytes, str]:
         start = date(self.fiscal_start_year, 4, 1)
         end = date(self.fiscal_start_year + self.fiscal_years, 3, 31)
         from_year = to_reiwa_label(start.year)
         till_year = to_reiwa_label(end.year)
-        form_html = self.fetch_search_form(from_year, till_year)
+        form_content, form_html = self.fetch_search_form(from_year, till_year)
 
         from_dates = extract_select_options(form_html, "fromDate")
         till_dates = extract_select_options(form_html, "tillDate")
@@ -200,13 +217,14 @@ class KensakuSystemLegacyMinutesAdapter(CouncilScraperBase):
                 start_date=start,
                 end_date=end,
             ),
+            form_content,
             form_html,
         )
 
     def scrape_speeches(self) -> dict[str, Any]:
         self.extract_code()
-        scope, form_html = self.build_scope()
-        speakers = extract_speaker1_options(form_html)
+        scope, form_content, _form_html = self.build_scope()
+        speakers = extract_speaker1_options(form_content)
         matcher = NameMatcher(load_members(self.council_id))
         matches = [matcher.match(speaker) for speaker in speakers]
 
@@ -217,17 +235,23 @@ class KensakuSystemLegacyMinutesAdapter(CouncilScraperBase):
         ]
 
         for match in matches:
-            result_html = self.search_speaker(match.speaker_label, scope)
+            result_html = self.search_speaker(match, scope)
             rows.extend(self.parse_result_rows(result_html, match, scope))
             year_tabs = extract_result_years(result_html)
             for year_label in year_tabs[1:]:
                 year_html = self.search_speaker_year(
-                    match.speaker_label, year_label, scope
+                    match, year_label, scope
                 )
                 rows.extend(self.parse_result_rows(year_html, match, scope))
 
         source_url = self.choose_source_url(rows)
         speeches = self.build_speeches(rows, source_url)
+        speakers_with_rows = {row["speaker_label"] for row in rows}
+        zero_speakers = [
+            match.speaker_label
+            for match in matches
+            if match.speaker_label not in speakers_with_rows
+        ]
 
         print(
             f"{self.council_id}: speaker1={len(speakers)}, "
@@ -242,10 +266,11 @@ class KensakuSystemLegacyMinutesAdapter(CouncilScraperBase):
             print("unmatched speaker1 names: " + ", ".join(sorted(unmatched)))
         else:
             print("unmatched speaker1 names: none")
-        if self.resultframe_is_durable:
-            print("source_url mode: ResultFrame.exe direct URL")
+        if zero_speakers:
+            print("zero-result speaker1 names: " + ", ".join(sorted(zero_speakers)))
         else:
-            print("source_url mode: search top fallback")
+            print("zero-result speaker1 names: none")
+        print("source_url mode: static minutes entry")
 
         return {
             "council_id": self.council_id,
@@ -253,7 +278,7 @@ class KensakuSystemLegacyMinutesAdapter(CouncilScraperBase):
             "speeches": speeches,
         }
 
-    def search_speaker(self, speaker_label: str, scope: SearchScope) -> str:
+    def search_speaker(self, match: MemberMatch, scope: SearchScope) -> str:
         code = self.require_code()
         return self.fetch_legacy_text(
             self.search_url,
@@ -267,8 +292,8 @@ class KensakuSystemLegacyMinutesAdapter(CouncilScraperBase):
                 ("fromDate", scope.from_date),
                 ("tillYear", scope.till_year),
                 ("tillDate", scope.till_date),
-                ("speaker", speaker_label),
-                ("speaker1", speaker_label),
+                ("speaker", match.speaker_value),
+                ("speaker1", match.speaker_value),
                 ("speaker2", ""),
                 ("speaker3", ""),
                 ("eTarget", "1"),
@@ -277,7 +302,7 @@ class KensakuSystemLegacyMinutesAdapter(CouncilScraperBase):
         )
 
     def search_speaker_year(
-        self, speaker_label: str, year_label: str, scope: SearchScope
+        self, match: MemberMatch, year_label: str, scope: SearchScope
     ) -> str:
         code = self.require_code()
         return self.fetch_legacy_text(
@@ -290,7 +315,7 @@ class KensakuSystemLegacyMinutesAdapter(CouncilScraperBase):
                 ("sTarget", "2:0"),
                 ("searchMode", "1"),
                 ("keyMode", "10"),
-                ("speaker", speaker_label),
+                ("speaker", match.speaker_value),
                 ("treedepth", year_label),
                 ("FUNC", ""),
                 ("sort", ""),
@@ -331,20 +356,7 @@ class KensakuSystemLegacyMinutesAdapter(CouncilScraperBase):
         return rows
 
     def choose_source_url(self, rows: list[dict[str, Any]]) -> str:
-        if not rows:
-            self.resultframe_is_durable = False
-            return self.require_search_top_url()
-
-        sample = rows[0]
-        resultframe_url = self.build_resultframe_url(
-            sample["speaker_label"], sample["context"]
-        )
-        html = self.fetch_legacy_text(resultframe_url)
-        body_is_direct = "<FRAMESET" not in html.upper() and sample["speaker_label"] in html
-        self.resultframe_is_durable = body_is_direct
-        if body_is_direct:
-            return "{resultframe}"
-        return self.require_search_top_url()
+        return self.entry_url
 
     def build_speeches(
         self, rows: list[dict[str, Any]], source_url: str
@@ -370,11 +382,6 @@ class KensakuSystemLegacyMinutesAdapter(CouncilScraperBase):
             ),
         )
         for row in sorted_rows:
-            row_source_url = (
-                self.build_resultframe_url(row["speaker_label"], row["context"])
-                if source_url == "{resultframe}"
-                else source_url
-            )
             speeches.append(
                 {
                     "id": self.build_speech_id(row),
@@ -383,7 +390,7 @@ class KensakuSystemLegacyMinutesAdapter(CouncilScraperBase):
                     "date": row["date"],
                     "kind": "本会議",
                     "summary": None,
-                    "source_url": row_source_url,
+                    "source_url": source_url,
                 }
             )
         return speeches
@@ -398,33 +405,10 @@ class KensakuSystemLegacyMinutesAdapter(CouncilScraperBase):
         context_slug = re.sub(r"[^0-9A-Za-z]+", "-", row["context"]).strip("-").lower()
         return f"{self.council_id}--{row['date']}--{speaker_slug}--{context_slug}"
 
-    def build_resultframe_url(self, speaker_label: str, context: str) -> str:
-        code = self.require_code()
-        query = urlencode(
-            [
-                ("Code", code),
-                ("dMode", "0"),
-                ("searchMode", "1"),
-                ("keyMode", "10"),
-                ("speaker", speaker_label),
-                ("speaker1", speaker_label),
-                ("eTarget", "1"),
-                ("speakerMode", "1"),
-                ("context", context),
-            ],
-            encoding="cp932",
-        )
-        return f"{urljoin(self.base_url, 'cgi-bin3/ResultFrame.exe')}?{query}"
-
     def require_code(self) -> str:
         if self.code is None:
             raise RuntimeError("Code has not been extracted")
         return self.code
-
-    def require_search_top_url(self) -> str:
-        if self.search_top_url is None:
-            raise RuntimeError("search_top_url has not been built")
-        return self.search_top_url
 
     def save_speeches(self, dry_run: bool = False) -> dict[str, Any]:
         data = self.scrape_speeches()
@@ -438,6 +422,24 @@ def normalize_name(value: str) -> str:
     value = re.sub(r"[\s\u3000]", "", value)
     value = re.sub(r"(議員|君|氏|さん)$", "", value)
     return value
+
+
+def encode_legacy_form(data: list[tuple[str, str | bytes]]) -> bytes:
+    parts: list[str] = []
+    for key, value in data:
+        key_bytes = key.encode("ascii")
+        if isinstance(value, bytes):
+            value_bytes = value
+        else:
+            value_bytes = value.encode("cp932")
+        parts.append(
+            f"{quote_legacy_component(key_bytes)}={quote_legacy_component(value_bytes)}"
+        )
+    return "&".join(parts).encode("ascii")
+
+
+def quote_legacy_component(value: bytes) -> str:
+    return quote_from_bytes(value).replace("%20", "+")
 
 
 def load_members(council_id: str) -> list[dict[str, Any]]:
@@ -465,8 +467,26 @@ def extract_select_options(html: str, name: str) -> list[str]:
     return options
 
 
-def extract_speaker1_options(html: str) -> list[str]:
-    return extract_select_options(html, "speaker1")
+def extract_speaker1_options(content: bytes) -> list[SpeakerOption]:
+    match = re.search(
+        br"<!-- Begin FORM_SPEAKER -->(.*?)<!-- End FORM_SPEAKER -->",
+        content,
+        re.S,
+    )
+    if match is None:
+        return []
+    block = match.group(1)
+    options: list[SpeakerOption] = []
+    for value in re.findall(br'<OPTION\s+value="([^"]*)"', block, re.I):
+        if not value:
+            continue
+        options.append(
+            SpeakerOption(
+                label=value.decode("cp932", errors="replace"),
+                value=value,
+            )
+        )
+    return options
 
 
 def extract_go_context(href: str) -> str | None:

@@ -6,7 +6,8 @@
       "議長の議事進行発言",
       "市長・執行部の発言(member_id: null扱い)"
     ],
-    "note": "議長は慣例により一般質問を行わないため発言数が少なく/ゼロに見える場合がある"
+    "note": "議長は慣例により一般質問を行わないため発言数が少なく/ゼロに見える場合がある",
+    "source_url_note": "個別発言への直接リンクは本システムの仕様上提供不可。source_url は会議録検索入口。"
   },
   "speeches": [
     {
@@ -16,7 +17,7 @@
       "date": "2024-06-14",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-06-14--matsuda-shinya--r060614a-24380-833",
@@ -25,7 +26,7 @@
       "date": "2024-06-14",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-06-14--tamura-kensuke--r060614a-8990-833",
@@ -34,7 +35,7 @@
       "date": "2024-06-14",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-06-14--nishino-taichi--r060614a-8572-833",
@@ -43,7 +44,7 @@
       "date": "2024-06-14",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-06-18--itou-hiroe--r060618a-206088-834",
@@ -52,7 +53,7 @@
       "date": "2024-06-18",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-06-18--yoshioka-koto--r060618a-175548-834",
@@ -61,7 +62,16 @@
       "date": "2024-06-18",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
+    },
+    {
+      "id": "yonago-city--2024-06-18--iwasaki-yasurou--r060618a-2578-834",
+      "member_id": "yonago-city--iwasaki-yasurou",
+      "meeting_name": "令和 6年 6月定例会（第2号 6月18日） 本会議",
+      "date": "2024-06-18",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-06-18--toda-ryuuji--r060618a-41526-834",
@@ -70,7 +80,7 @@
       "date": "2024-06-18",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-06-18--yatagai-kaori--r060618a-92764-834",
@@ -79,7 +89,7 @@
       "date": "2024-06-18",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-06-18--kadowaki-kazuo--r060618a-129252-834",
@@ -88,7 +98,7 @@
       "date": "2024-06-18",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-06-19--okuiwa-hiroki--r060619a-72580-835",
@@ -97,7 +107,7 @@
       "date": "2024-06-19",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-06-19--adachi-takashi--r060619a-166636-835",
@@ -106,7 +116,7 @@
       "date": "2024-06-19",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-06-19--okada-keisuke--r060619a-106656-835",
@@ -115,7 +125,7 @@
       "date": "2024-06-19",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-06-19--moritani-tsukasa--r060619a-143782-835",
@@ -124,7 +134,7 @@
       "date": "2024-06-19",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-06-19--tsuda-kouichi--r060619a-2544-835",
@@ -133,7 +143,7 @@
       "date": "2024-06-19",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-06-19--nishikoori-youko--r060619a-43496-835",
@@ -142,7 +152,7 @@
       "date": "2024-06-19",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-06-21--imashiro-masako--r060621a-196503-836",
@@ -151,7 +161,7 @@
       "date": "2024-06-21",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-06-21--tsukada-yoshimitsu--r060621a-43613-836",
@@ -160,7 +170,7 @@
       "date": "2024-06-21",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-06-21--tokuda-hirofumi--r060621a-160047-836",
@@ -169,7 +179,7 @@
       "date": "2024-06-21",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-06-21--matsuda-shinya--r060621a-2219-836",
@@ -178,7 +188,7 @@
       "date": "2024-06-21",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-06-21--morita-satoshi--r060621a-122013-836",
@@ -187,7 +197,7 @@
       "date": "2024-06-21",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-06-21--tamura-kensuke--r060621a-79193-836",
@@ -196,7 +206,7 @@
       "date": "2024-06-21",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-06-24--matano-shirou--r060624a-86346-837",
@@ -205,7 +215,7 @@
       "date": "2024-06-24",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-06-24--kunitou-yasushi--r060624a-153326-837",
@@ -214,7 +224,7 @@
       "date": "2024-06-24",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-06-24--dokou-hitoshi--r060624a-117752-837",
@@ -223,7 +233,7 @@
       "date": "2024-06-24",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-06-24--watanabe-jouji--r060624a-48672-837",
@@ -232,7 +242,7 @@
       "date": "2024-06-24",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-06-24--nishino-taichi--r060624a-4064-837",
@@ -241,7 +251,7 @@
       "date": "2024-06-24",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-07-04--matano-shirou--r060704a-24804-838",
@@ -250,7 +260,7 @@
       "date": "2024-07-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-07-04--dokou-hitoshi--r060704a-29664-838",
@@ -259,7 +269,7 @@
       "date": "2024-07-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-07-04--tsukada-yoshimitsu--r060704a-4476-838",
@@ -268,7 +278,7 @@
       "date": "2024-07-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-07-04--ooshita-tetsuji--r060704a-46782-838",
@@ -277,7 +287,7 @@
       "date": "2024-07-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-07-04--adachi-takashi--r060704a-9036-838",
@@ -286,7 +296,7 @@
       "date": "2024-07-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-07-04--okada-keisuke--r060704a-59956-838",
@@ -295,7 +305,7 @@
       "date": "2024-07-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-07-04--toda-ryuuji--r060704a-15090-838",
@@ -304,7 +314,7 @@
       "date": "2024-07-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-07-04--tsuda-kouichi--r060704a-49368-838",
@@ -313,7 +323,7 @@
       "date": "2024-07-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-07-04--tamura-kensuke--r060704a-14470-838",
@@ -322,7 +332,7 @@
       "date": "2024-07-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-07-04--inata-kiyoshi--r060704a-60438-838",
@@ -331,7 +341,7 @@
       "date": "2024-07-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-07-04--nishino-taichi--r060704a-14036-838",
@@ -340,7 +350,7 @@
       "date": "2024-07-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-07-04--nishikoori-youko--r060704a-19262-838",
@@ -349,7 +359,7 @@
       "date": "2024-07-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-07-04--kadowaki-kazuo--r060704a-64854-838",
@@ -358,7 +368,7 @@
       "date": "2024-07-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-09-03--matsuda-shinya--r060903a-23810-839",
@@ -367,7 +377,7 @@
       "date": "2024-09-03",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-09-05--yoshioka-koto--r060905a-33342-840",
@@ -376,7 +386,7 @@
       "date": "2024-09-05",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-09-05--ooshita-tetsuji--r060905a-85018-840",
@@ -385,7 +395,16 @@
       "date": "2024-09-05",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
+    },
+    {
+      "id": "yonago-city--2024-09-05--iwasaki-yasurou--r060905a-68820-840",
+      "member_id": "yonago-city--iwasaki-yasurou",
+      "meeting_name": "令和 6年 9月定例会（第2号 9月 5日） 本会議",
+      "date": "2024-09-05",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-09-05--toda-ryuuji--r060905a-115160-840",
@@ -394,7 +413,7 @@
       "date": "2024-09-05",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-09-05--yatagai-kaori--r060905a-146106-840",
@@ -403,7 +422,7 @@
       "date": "2024-09-05",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-09-05--kadowaki-kazuo--r060905a-3572-840",
@@ -412,7 +431,7 @@
       "date": "2024-09-05",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-09-06--itou-hiroe--r060906a-2232-841",
@@ -421,7 +440,7 @@
       "date": "2024-09-06",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-09-06--adachi-takashi--r060906a-131256-841",
@@ -430,7 +449,7 @@
       "date": "2024-09-06",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-09-06--tokuda-hirofumi--r060906a-60918-841",
@@ -439,7 +458,7 @@
       "date": "2024-09-06",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-09-06--moritani-tsukasa--r060906a-32376-841",
@@ -448,7 +467,7 @@
       "date": "2024-09-06",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-09-06--tsuda-kouichi--r060906a-92254-841",
@@ -457,7 +476,7 @@
       "date": "2024-09-06",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-09-06--nishikoori-youko--r060906a-162386-841",
@@ -466,7 +485,7 @@
       "date": "2024-09-06",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-09-10--matano-shirou--r060910a-162118-842",
@@ -475,7 +494,7 @@
       "date": "2024-09-10",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-09-10--dokou-hitoshi--r060910a-190912-842",
@@ -484,7 +503,7 @@
       "date": "2024-09-10",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-09-10--okuiwa-hiroki--r060910a-47824-842",
@@ -493,7 +512,7 @@
       "date": "2024-09-10",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-09-10--matsuda-shinya--r060910a-2422-842",
@@ -502,7 +521,7 @@
       "date": "2024-09-10",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-09-10--morita-satoshi--r060910a-126812-842",
@@ -511,7 +530,7 @@
       "date": "2024-09-10",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-09-10--tamura-kensuke--r060910a-80826-842",
@@ -520,7 +539,7 @@
       "date": "2024-09-10",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-09-11--nakada-toshiyuki--r060911a-105378-843",
@@ -529,7 +548,7 @@
       "date": "2024-09-11",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-09-11--imashiro-masako--r060911a-43498-843",
@@ -538,7 +557,7 @@
       "date": "2024-09-11",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-09-11--kunitou-yasushi--r060911a-77300-843",
@@ -547,7 +566,7 @@
       "date": "2024-09-11",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-09-11--tsukada-yoshimitsu--r060911a-138648-843",
@@ -556,7 +575,7 @@
       "date": "2024-09-11",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-09-11--watanabe-jouji--r060911a-178398-843",
@@ -565,7 +584,7 @@
       "date": "2024-09-11",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-09-11--inata-kiyoshi--r060911a-3966-843",
@@ -574,7 +593,7 @@
       "date": "2024-09-11",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-09-11--nishino-taichi--r060911a-219978-843",
@@ -583,7 +602,7 @@
       "date": "2024-09-11",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-10-02--matano-shirou--r061002a-26160-844",
@@ -592,7 +611,7 @@
       "date": "2024-10-02",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-10-02--dokou-hitoshi--r061002a-34536-844",
@@ -601,7 +620,7 @@
       "date": "2024-10-02",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-10-02--tsukada-yoshimitsu--r061002a-6226-844",
@@ -610,7 +629,7 @@
       "date": "2024-10-02",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-10-02--adachi-takashi--r061002a-6754-844",
@@ -619,7 +638,7 @@
       "date": "2024-10-02",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-10-02--toda-ryuuji--r061002a-61452-844",
@@ -628,7 +647,7 @@
       "date": "2024-10-02",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-10-02--inata-kiyoshi--r061002a-16754-844",
@@ -637,7 +656,7 @@
       "date": "2024-10-02",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-10-02--nishino-taichi--r061002a-15094-844",
@@ -646,7 +665,7 @@
       "date": "2024-10-02",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-10-02--nishikoori-youko--r061002a-24168-844",
@@ -655,7 +674,7 @@
       "date": "2024-10-02",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-10-02--kadowaki-kazuo--r061002a-16118-844",
@@ -664,7 +683,7 @@
       "date": "2024-10-02",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-03--yoshioka-koto--r061203a-8510-845",
@@ -673,7 +692,7 @@
       "date": "2024-12-03",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-03--kadowaki-kazuo--r061203a-7688-845",
@@ -682,7 +701,7 @@
       "date": "2024-12-03",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-05--yoshioka-koto--r061205a-182540-846",
@@ -691,7 +710,7 @@
       "date": "2024-12-05",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-05--ooshita-tetsuji--r061205a-2460-846",
@@ -700,7 +719,7 @@
       "date": "2024-12-05",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-05--okuiwa-hiroki--r061205a-36142-846",
@@ -709,7 +728,7 @@
       "date": "2024-12-05",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-05--moritani-tsukasa--r061205a-114250-846",
@@ -718,7 +737,7 @@
       "date": "2024-12-05",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-05--yatagai-kaori--r061205a-142034-846",
@@ -727,7 +746,7 @@
       "date": "2024-12-05",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-05--inata-kiyoshi--r061205a-70570-846",
@@ -736,7 +755,7 @@
       "date": "2024-12-05",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-06--itou-hiroe--r061206a-140034-847",
@@ -745,7 +764,7 @@
       "date": "2024-12-06",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-06--adachi-takashi--r061206a-171130-847",
@@ -754,7 +773,16 @@
       "date": "2024-12-06",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
+    },
+    {
+      "id": "yonago-city--2024-12-06--iwasaki-yasurou--r061206a-112572-847",
+      "member_id": "yonago-city--iwasaki-yasurou",
+      "meeting_name": "令和 6年12月定例会（第3号12月 6日） 本会議",
+      "date": "2024-12-06",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-06--toda-ryuuji--r061206a-2240-847",
@@ -763,7 +791,7 @@
       "date": "2024-12-06",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-06--tamura-kensuke--r061206a-36054-847",
@@ -772,7 +800,7 @@
       "date": "2024-12-06",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-06--nishino-taichi--r061206a-79854-847",
@@ -781,7 +809,7 @@
       "date": "2024-12-06",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-10--matano-shirou--r061210a-146446-848",
@@ -790,7 +818,7 @@
       "date": "2024-12-10",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-10--dokou-hitoshi--r061210a-112476-848",
@@ -799,7 +827,7 @@
       "date": "2024-12-10",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-10--tokuda-hirofumi--r061210a-2474-848",
@@ -808,7 +836,7 @@
       "date": "2024-12-10",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-10--morita-satoshi--r061210a-75060-848",
@@ -817,7 +845,7 @@
       "date": "2024-12-10",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-10--tsuda-kouichi--r061210a-33100-848",
@@ -826,7 +854,7 @@
       "date": "2024-12-10",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-10--nishikoori-youko--r061210a-183456-848",
@@ -835,7 +863,7 @@
       "date": "2024-12-10",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-11--nakada-toshiyuki--r061211a-41584-849",
@@ -844,7 +872,7 @@
       "date": "2024-12-11",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-11--imashiro-masako--r061211a-75442-849",
@@ -853,7 +881,7 @@
       "date": "2024-12-11",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-11--tsukada-yoshimitsu--r061211a-105548-849",
@@ -862,7 +890,7 @@
       "date": "2024-12-11",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-11--matsuda-shinya--r061211a-2472-849",
@@ -871,7 +899,7 @@
       "date": "2024-12-11",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-11--watanabe-jouji--r061211a-128656-849",
@@ -880,7 +908,7 @@
       "date": "2024-12-11",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-23--matano-shirou--r061223a-12068-850",
@@ -889,7 +917,7 @@
       "date": "2024-12-23",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-23--dokou-hitoshi--r061223a-17232-850",
@@ -898,7 +926,7 @@
       "date": "2024-12-23",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-23--tsukada-yoshimitsu--r061223a-4882-850",
@@ -907,7 +935,7 @@
       "date": "2024-12-23",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-23--adachi-takashi--r061223a-7414-850",
@@ -916,7 +944,7 @@
       "date": "2024-12-23",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-23--inata-kiyoshi--r061223a-9552-850",
@@ -925,7 +953,7 @@
       "date": "2024-12-23",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-23--nishino-taichi--r061223a-8272-850",
@@ -934,7 +962,7 @@
       "date": "2024-12-23",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-23--nishikoori-youko--r061223a-13622-850",
@@ -943,7 +971,7 @@
       "date": "2024-12-23",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2024-12-23--kadowaki-kazuo--r061223a-8744-850",
@@ -952,7 +980,7 @@
       "date": "2024-12-23",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-01-22--itou-hiroe--r070122a-7450-851",
@@ -961,7 +989,7 @@
       "date": "2025-01-22",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-02-27--tsukada-yoshimitsu--r070227a-10396-852",
@@ -970,7 +998,7 @@
       "date": "2025-02-27",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-02-27--nishino-taichi--r070227a-10814-852",
@@ -979,7 +1007,7 @@
       "date": "2025-02-27",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-03--itou-hiroe--r070303a-152128-853",
@@ -988,7 +1016,7 @@
       "date": "2025-03-03",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-03--yoshioka-koto--r070303a-86216-853",
@@ -997,7 +1025,7 @@
       "date": "2025-03-03",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-03--ooshita-tetsuji--r070303a-123256-853",
@@ -1006,7 +1034,16 @@
       "date": "2025-03-03",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
+    },
+    {
+      "id": "yonago-city--2025-03-03--iwasaki-yasurou--r070303a-60298-853",
+      "member_id": "yonago-city--iwasaki-yasurou",
+      "meeting_name": "令和 7年 3月定例会（第2号 3月 3日） 本会議",
+      "date": "2025-03-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-03--toda-ryuuji--r070303a-21840-853",
@@ -1015,7 +1052,7 @@
       "date": "2025-03-03",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-03--moritani-tsukasa--r070303a-2374-853",
@@ -1024,7 +1061,7 @@
       "date": "2025-03-03",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-04--adachi-takashi--r070304a-156834-854",
@@ -1033,7 +1070,7 @@
       "date": "2025-03-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-04--tokuda-hirofumi--r070304a-128986-854",
@@ -1042,7 +1079,7 @@
       "date": "2025-03-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-04--matsuda-shinya--r070304a-2166-854",
@@ -1051,7 +1088,7 @@
       "date": "2025-03-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-04--morita-satoshi--r070304a-183802-854",
@@ -1060,7 +1097,7 @@
       "date": "2025-03-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-04--tsuda-kouichi--r070304a-83600-854",
@@ -1069,7 +1106,7 @@
       "date": "2025-03-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-04--yatagai-kaori--r070304a-43736-854",
@@ -1078,7 +1115,7 @@
       "date": "2025-03-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-06--imashiro-masako--r070306a-116980-855",
@@ -1087,7 +1124,7 @@
       "date": "2025-03-06",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-06--matano-shirou--r070306a-52110-855",
@@ -1096,7 +1133,7 @@
       "date": "2025-03-06",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-06--kunitou-yasushi--r070306a-150870-855",
@@ -1105,7 +1142,7 @@
       "date": "2025-03-06",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-06--okuiwa-hiroki--r070306a-178114-855",
@@ -1114,7 +1151,7 @@
       "date": "2025-03-06",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-06--inata-kiyoshi--r070306a-2246-855",
@@ -1123,7 +1160,7 @@
       "date": "2025-03-06",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-06--nishikoori-youko--r070306a-87438-855",
@@ -1132,7 +1169,7 @@
       "date": "2025-03-06",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-07--nakada-toshiyuki--r070307a-2794-856",
@@ -1141,7 +1178,7 @@
       "date": "2025-03-07",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-07--matano-shirou--r070307a-118026-856",
@@ -1150,7 +1187,7 @@
       "date": "2025-03-07",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-07--dokou-hitoshi--r070307a-122978-856",
@@ -1159,7 +1196,7 @@
       "date": "2025-03-07",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-07--tsukada-yoshimitsu--r070307a-36936-856",
@@ -1168,7 +1205,7 @@
       "date": "2025-03-07",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-07--tamura-kensuke--r070307a-77464-856",
@@ -1177,7 +1214,7 @@
       "date": "2025-03-07",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-07--inata-kiyoshi--r070307a-132162-856",
@@ -1186,7 +1223,7 @@
       "date": "2025-03-07",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-21--matano-shirou--r070321a-27342-857",
@@ -1195,7 +1232,7 @@
       "date": "2025-03-21",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-21--yoshioka-koto--r070321a-38702-857",
@@ -1204,7 +1241,7 @@
       "date": "2025-03-21",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-21--dokou-hitoshi--r070321a-43918-857",
@@ -1213,7 +1250,7 @@
       "date": "2025-03-21",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-21--tsukada-yoshimitsu--r070321a-6542-857",
@@ -1222,7 +1259,7 @@
       "date": "2025-03-21",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-21--adachi-takashi--r070321a-9708-857",
@@ -1231,7 +1268,7 @@
       "date": "2025-03-21",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-21--toda-ryuuji--r070321a-58302-857",
@@ -1240,7 +1277,7 @@
       "date": "2025-03-21",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-21--matsuda-shinya--r070321a-19430-857",
@@ -1249,7 +1286,7 @@
       "date": "2025-03-21",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-21--inata-kiyoshi--r070321a-15994-857",
@@ -1258,7 +1295,7 @@
       "date": "2025-03-21",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-21--nishino-taichi--r070321a-10570-857",
@@ -1267,7 +1304,7 @@
       "date": "2025-03-21",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-21--nishikoori-youko--r070321a-21130-857",
@@ -1276,7 +1313,7 @@
       "date": "2025-03-21",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-03-21--kadowaki-kazuo--r070321a-14210-857",
@@ -1285,7 +1322,7 @@
       "date": "2025-03-21",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-05-16--dokou-hitoshi--r070516a-7626-858",
@@ -1294,7 +1331,7 @@
       "date": "2025-05-16",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-05-16--adachi-takashi--r070516a-5990-858",
@@ -1303,7 +1340,7 @@
       "date": "2025-05-16",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-05-16--matsuda-shinya--r070516a-9988-858",
@@ -1312,7 +1349,7 @@
       "date": "2025-05-16",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-06-16--matsuda-shinya--r070616a-26066-859",
@@ -1321,7 +1358,7 @@
       "date": "2025-06-16",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-06-18--imashiro-masako--r070618a-135342-860",
@@ -1330,7 +1367,7 @@
       "date": "2025-06-18",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-06-18--tokuda-hirofumi--r070618a-85046-860",
@@ -1339,7 +1376,7 @@
       "date": "2025-06-18",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-06-18--tsuda-kouichi--r070618a-104056-860",
@@ -1348,7 +1385,7 @@
       "date": "2025-06-18",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-06-18--yatagai-kaori--r070618a-2408-860",
@@ -1357,7 +1394,7 @@
       "date": "2025-06-18",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-06-19--yoshioka-koto--r070619a-109912-861",
@@ -1366,7 +1403,7 @@
       "date": "2025-06-19",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-06-19--kunitou-yasushi--r070619a-101318-861",
@@ -1375,7 +1412,7 @@
       "date": "2025-06-19",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-06-19--dokou-hitoshi--r070619a-3310-861",
@@ -1384,7 +1421,7 @@
       "date": "2025-06-19",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-06-19--matsuda-shinya--r070619a-70964-861",
@@ -1393,7 +1430,16 @@
       "date": "2025-06-19",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
+    },
+    {
+      "id": "yonago-city--2025-06-20--iwasaki-yasurou--r070620a-2532-862",
+      "member_id": "yonago-city--iwasaki-yasurou",
+      "meeting_name": "令和 7年 6月定例会（第4号 6月20日） 本会議",
+      "date": "2025-06-20",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-06-20--toda-ryuuji--r070620a-189450-862",
@@ -1402,7 +1448,7 @@
       "date": "2025-06-20",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-06-20--nishino-taichi--r070620a-131346-862",
@@ -1411,7 +1457,7 @@
       "date": "2025-06-20",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-06-24--tsukada-yoshimitsu--r070624a-103530-863",
@@ -1420,7 +1466,7 @@
       "date": "2025-06-24",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-06-24--okuiwa-hiroki--r070624a-133298-863",
@@ -1429,7 +1475,7 @@
       "date": "2025-06-24",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-06-24--watanabe-jouji--r070624a-183166-863",
@@ -1438,7 +1484,7 @@
       "date": "2025-06-24",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-06-24--inata-kiyoshi--r070624a-3386-863",
@@ -1447,7 +1493,7 @@
       "date": "2025-06-24",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-06-24--kadowaki-kazuo--r070624a-152634-863",
@@ -1456,7 +1502,7 @@
       "date": "2025-06-24",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-06-25--nakada-toshiyuki--r070625a-107062-864",
@@ -1465,7 +1511,7 @@
       "date": "2025-06-25",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-06-25--itou-hiroe--r070625a-76814-864",
@@ -1474,7 +1520,7 @@
       "date": "2025-06-25",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-06-25--ooshita-tetsuji--r070625a-1656-864",
@@ -1483,7 +1529,7 @@
       "date": "2025-06-25",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-06-25--adachi-takashi--r070625a-57832-864",
@@ -1492,7 +1538,7 @@
       "date": "2025-06-25",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-06-26--matano-shirou--r070626a-68558-865",
@@ -1501,7 +1547,7 @@
       "date": "2025-06-26",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-06-26--morita-satoshi--r070626a-102702-865",
@@ -1510,7 +1556,7 @@
       "date": "2025-06-26",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-06-26--moritani-tsukasa--r070626a-3744-865",
@@ -1519,7 +1565,7 @@
       "date": "2025-06-26",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-06-26--nishikoori-youko--r070626a-32890-865",
@@ -1528,7 +1574,7 @@
       "date": "2025-06-26",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-07-08--nakada-toshiyuki--r070708a-35646-866",
@@ -1537,7 +1583,7 @@
       "date": "2025-07-08",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-07-08--dokou-hitoshi--r070708a-17402-866",
@@ -1546,7 +1592,7 @@
       "date": "2025-07-08",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-07-08--tsukada-yoshimitsu--r070708a-4054-866",
@@ -1555,7 +1601,7 @@
       "date": "2025-07-08",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-07-08--toda-ryuuji--r070708a-8770-866",
@@ -1564,7 +1610,7 @@
       "date": "2025-07-08",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-07-08--matsuda-shinya--r070708a-6788-866",
@@ -1573,7 +1619,7 @@
       "date": "2025-07-08",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-07-08--watanabe-jouji--r070708a-7866-866",
@@ -1582,7 +1628,7 @@
       "date": "2025-07-08",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-07-08--inata-kiyoshi--r070708a-28894-866",
@@ -1591,7 +1637,7 @@
       "date": "2025-07-08",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-07-08--nishino-taichi--r070708a-7470-866",
@@ -1600,7 +1646,7 @@
       "date": "2025-07-08",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-07-08--nishikoori-youko--r070708a-11744-866",
@@ -1609,7 +1655,7 @@
       "date": "2025-07-08",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-09-04--yoshioka-koto--r070904a-165026-868",
@@ -1618,7 +1664,7 @@
       "date": "2025-09-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-09-04--toda-ryuuji--r070904a-78120-868",
@@ -1627,7 +1673,7 @@
       "date": "2025-09-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-09-04--morita-satoshi--r070904a-37600-868",
@@ -1636,7 +1682,7 @@
       "date": "2025-09-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-09-04--moritani-tsukasa--r070904a-138942-868",
@@ -1645,7 +1691,7 @@
       "date": "2025-09-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-09-04--yatagai-kaori--r070904a-109646-868",
@@ -1654,7 +1700,7 @@
       "date": "2025-09-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-09-04--kadowaki-kazuo--r070904a-2666-868",
@@ -1663,7 +1709,7 @@
       "date": "2025-09-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-09-05--itou-hiroe--r070905a-2398-869",
@@ -1672,7 +1718,7 @@
       "date": "2025-09-05",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-09-05--matano-shirou--r070905a-149332-869",
@@ -1681,7 +1727,7 @@
       "date": "2025-09-05",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-09-05--ooshita-tetsuji--r070905a-31618-869",
@@ -1690,7 +1736,7 @@
       "date": "2025-09-05",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-09-05--okuiwa-hiroki--r070905a-116794-869",
@@ -1699,7 +1745,7 @@
       "date": "2025-09-05",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-09-05--adachi-takashi--r070905a-61192-869",
@@ -1708,7 +1754,7 @@
       "date": "2025-09-05",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-09-05--nishikoori-youko--r070905a-85240-869",
@@ -1717,7 +1763,7 @@
       "date": "2025-09-05",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-09-09--imashiro-masako--r070909a-101926-870",
@@ -1726,7 +1772,7 @@
       "date": "2025-09-09",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-09-09--dokou-hitoshi--r070909a-139970-870",
@@ -1735,7 +1781,7 @@
       "date": "2025-09-09",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-09-09--tsukada-yoshimitsu--r070909a-176054-870",
@@ -1744,7 +1790,7 @@
       "date": "2025-09-09",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-09-09--tokuda-hirofumi--r070909a-40080-870",
@@ -1753,7 +1799,7 @@
       "date": "2025-09-09",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-09-09--matsuda-shinya--r070909a-2404-870",
@@ -1762,7 +1808,7 @@
       "date": "2025-09-09",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-09-09--tsuda-kouichi--r070909a-66154-870",
@@ -1771,7 +1817,7 @@
       "date": "2025-09-09",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-09-10--tamura-kensuke--r070910a-82266-871",
@@ -1780,7 +1826,7 @@
       "date": "2025-09-10",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-09-10--inata-kiyoshi--r070910a-2758-871",
@@ -1789,7 +1835,7 @@
       "date": "2025-09-10",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-09-10--nishino-taichi--r070910a-50704-871",
@@ -1798,7 +1844,7 @@
       "date": "2025-09-10",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-10-01--itou-hiroe--r071001a-15110-872",
@@ -1807,7 +1853,7 @@
       "date": "2025-10-01",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-10-01--matano-shirou--r071001a-10374-872",
@@ -1816,7 +1862,7 @@
       "date": "2025-10-01",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-10-01--matsuda-shinya--r071001a-4012-872",
@@ -1825,7 +1871,7 @@
       "date": "2025-10-01",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-10-01--watanabe-jouji--r071001a-9424-872",
@@ -1834,7 +1880,7 @@
       "date": "2025-10-01",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-10-01--nishino-taichi--r071001a-6962-872",
@@ -1843,7 +1889,7 @@
       "date": "2025-10-01",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-10-01--nishikoori-youko--r071001a-25078-872",
@@ -1852,7 +1898,7 @@
       "date": "2025-10-01",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-04--yoshioka-koto--r071204a-173500-874",
@@ -1861,7 +1907,7 @@
       "date": "2025-12-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-04--toda-ryuuji--r071204a-145698-874",
@@ -1870,7 +1916,7 @@
       "date": "2025-12-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-04--morita-satoshi--r071204a-21688-874",
@@ -1879,7 +1925,7 @@
       "date": "2025-12-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-04--moritani-tsukasa--r071204a-2462-874",
@@ -1888,7 +1934,7 @@
       "date": "2025-12-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-04--yatagai-kaori--r071204a-104682-874",
@@ -1897,7 +1943,7 @@
       "date": "2025-12-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-04--inata-kiyoshi--r071204a-57126-874",
@@ -1906,7 +1952,7 @@
       "date": "2025-12-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-05--itou-hiroe--r071205a-41772-875",
@@ -1915,7 +1961,7 @@
       "date": "2025-12-05",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-05--dokou-hitoshi--r071205a-172576-875",
@@ -1924,7 +1970,7 @@
       "date": "2025-12-05",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-05--ooshita-tetsuji--r071205a-144174-875",
@@ -1933,7 +1979,7 @@
       "date": "2025-12-05",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-05--okuiwa-hiroki--r071205a-104266-875",
@@ -1942,7 +1988,7 @@
       "date": "2025-12-05",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-05--adachi-takashi--r071205a-76930-875",
@@ -1951,7 +1997,7 @@
       "date": "2025-12-05",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-05--kadowaki-kazuo--r071205a-2448-875",
@@ -1960,7 +2006,7 @@
       "date": "2025-12-05",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-09--matano-shirou--r071209a-104106-876",
@@ -1969,7 +2015,7 @@
       "date": "2025-12-09",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-09--dokou-hitoshi--r071209a-2328-876",
@@ -1978,7 +2024,7 @@
       "date": "2025-12-09",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-09--tsukada-yoshimitsu--r071209a-76936-876",
@@ -1987,7 +2033,7 @@
       "date": "2025-12-09",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-09--tokuda-hirofumi--r071209a-43600-876",
@@ -1996,7 +2042,7 @@
       "date": "2025-12-09",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-09--matsuda-shinya--r071209a-3052-876",
@@ -2005,7 +2051,7 @@
       "date": "2025-12-09",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-09--watanabe-jouji--r071209a-170894-876",
@@ -2014,7 +2060,7 @@
       "date": "2025-12-09",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-09--nishikoori-youko--r071209a-136046-876",
@@ -2023,7 +2069,7 @@
       "date": "2025-12-09",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-10--nakada-toshiyuki--r071210a-36514-877",
@@ -2032,7 +2078,7 @@
       "date": "2025-12-10",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-10--imashiro-masako--r071210a-120706-877",
@@ -2041,7 +2087,7 @@
       "date": "2025-12-10",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-10--kunitou-yasushi--r071210a-202012-877",
@@ -2050,7 +2096,7 @@
       "date": "2025-12-10",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-10--tsuda-kouichi--r071210a-72672-877",
@@ -2059,7 +2105,7 @@
       "date": "2025-12-10",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-10--tamura-kensuke--r071210a-155756-877",
@@ -2068,7 +2114,7 @@
       "date": "2025-12-10",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-10--nishino-taichi--r071210a-7052-877",
@@ -2077,7 +2123,7 @@
       "date": "2025-12-10",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-10--nishikoori-youko--r071210a-231724-877",
@@ -2086,7 +2132,7 @@
       "date": "2025-12-10",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-23--matano-shirou--r071223a-27970-878",
@@ -2095,7 +2141,7 @@
       "date": "2025-12-23",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-23--yoshioka-koto--r071223a-22464-878",
@@ -2104,7 +2150,7 @@
       "date": "2025-12-23",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-23--dokou-hitoshi--r071223a-31714-878",
@@ -2113,7 +2159,7 @@
       "date": "2025-12-23",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-23--tsukada-yoshimitsu--r071223a-8084-878",
@@ -2122,7 +2168,7 @@
       "date": "2025-12-23",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-23--toda-ryuuji--r071223a-57414-878",
@@ -2131,7 +2177,7 @@
       "date": "2025-12-23",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-23--matsuda-shinya--r071223a-9834-878",
@@ -2140,7 +2186,7 @@
       "date": "2025-12-23",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-23--watanabe-jouji--r071223a-18860-878",
@@ -2149,7 +2195,7 @@
       "date": "2025-12-23",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-23--inata-kiyoshi--r071223a-19834-878",
@@ -2158,7 +2204,7 @@
       "date": "2025-12-23",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-23--nishino-taichi--r071223a-16976-878",
@@ -2167,7 +2213,7 @@
       "date": "2025-12-23",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2025-12-23--nishikoori-youko--r071223a-25236-878",
@@ -2176,7 +2222,7 @@
       "date": "2025-12-23",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-01-19--yoshioka-koto--r080119a-13970-879",
@@ -2185,7 +2231,7 @@
       "date": "2026-01-19",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-01-19--tsukada-yoshimitsu--r080119a-7364-879",
@@ -2194,7 +2240,7 @@
       "date": "2026-01-19",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-01-19--watanabe-jouji--r080119a-8310-879",
@@ -2203,7 +2249,7 @@
       "date": "2026-01-19",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-01-19--nishino-taichi--r080119a-7924-879",
@@ -2212,7 +2258,7 @@
       "date": "2026-01-19",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-01-19--nishikoori-youko--r080119a-9162-879",
@@ -2221,7 +2267,7 @@
       "date": "2026-01-19",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-02-16--matsuda-shinya--r080216a-6324-880",
@@ -2230,7 +2276,7 @@
       "date": "2026-02-16",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-02-16--watanabe-jouji--r080216a-7144-880",
@@ -2239,7 +2285,7 @@
       "date": "2026-02-16",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-02-26--watanabe-jouji--r080226a-9052-881",
@@ -2248,7 +2294,7 @@
       "date": "2026-02-26",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-02--yoshioka-koto--r080302a-83845-882",
@@ -2257,7 +2303,7 @@
       "date": "2026-03-02",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-02--kunitou-yasushi--r080302a-2410-882",
@@ -2266,7 +2312,7 @@
       "date": "2026-03-02",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-02--dokou-hitoshi--r080302a-98381-882",
@@ -2275,7 +2321,7 @@
       "date": "2026-03-02",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-02--matsuda-shinya--r080302a-56911-882",
@@ -2284,7 +2330,16 @@
       "date": "2026-03-02",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
+    },
+    {
+      "id": "yonago-city--2026-03-03--iwasaki-yasurou--r080303a-175022-883",
+      "member_id": "yonago-city--iwasaki-yasurou",
+      "meeting_name": "令和 8年 3月定例会（第3号 3月 3日） 本会議",
+      "date": "2026-03-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-03--toda-ryuuji--r080303a-2556-883",
@@ -2293,7 +2348,7 @@
       "date": "2026-03-03",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-03--tamura-kensuke--r080303a-136630-883",
@@ -2302,7 +2357,7 @@
       "date": "2026-03-03",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-03--nishino-taichi--r080303a-106848-883",
@@ -2311,7 +2366,7 @@
       "date": "2026-03-03",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-04--tsukada-yoshimitsu--r080304a-105396-884",
@@ -2320,7 +2375,7 @@
       "date": "2026-03-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-04--okuiwa-hiroki--r080304a-123218-884",
@@ -2329,7 +2384,7 @@
       "date": "2026-03-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-04--watanabe-jouji--r080304a-154626-884",
@@ -2338,7 +2393,7 @@
       "date": "2026-03-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-04--inata-kiyoshi--r080304a-177190-884",
@@ -2347,7 +2402,7 @@
       "date": "2026-03-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-04--kadowaki-kazuo--r080304a-2400-884",
@@ -2356,7 +2411,7 @@
       "date": "2026-03-04",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-06--nakada-toshiyuki--r080306a-61172-885",
@@ -2365,7 +2420,7 @@
       "date": "2026-03-06",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-06--itou-hiroe--r080306a-1664-885",
@@ -2374,7 +2429,7 @@
       "date": "2026-03-06",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-06--ooshita-tetsuji--r080306a-62716-885",
@@ -2383,7 +2438,7 @@
       "date": "2026-03-06",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-06--adachi-takashi--r080306a-80974-885",
@@ -2392,7 +2447,7 @@
       "date": "2026-03-06",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-09--imashiro-masako--r080309a-112712-886",
@@ -2401,7 +2456,7 @@
       "date": "2026-03-09",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-09--tokuda-hirofumi--r080309a-60954-886",
@@ -2410,7 +2465,7 @@
       "date": "2026-03-09",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-09--tsuda-kouichi--r080309a-1706-886",
@@ -2419,7 +2474,7 @@
       "date": "2026-03-09",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-09--yatagai-kaori--r080309a-83922-886",
@@ -2428,7 +2483,7 @@
       "date": "2026-03-09",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-11--matano-shirou--r080311a-68831-887",
@@ -2437,7 +2492,7 @@
       "date": "2026-03-11",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-11--morita-satoshi--r080311a-102943-887",
@@ -2446,7 +2501,7 @@
       "date": "2026-03-11",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-11--moritani-tsukasa--r080311a-5560-887",
@@ -2455,7 +2510,7 @@
       "date": "2026-03-11",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-11--nishikoori-youko--r080311a-31525-887",
@@ -2464,7 +2519,7 @@
       "date": "2026-03-11",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-25--matano-shirou--r080325a-16440-888",
@@ -2473,7 +2528,7 @@
       "date": "2026-03-25",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-25--tsukada-yoshimitsu--r080325a-5634-888",
@@ -2482,7 +2537,7 @@
       "date": "2026-03-25",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-25--toda-ryuuji--r080325a-31216-888",
@@ -2491,7 +2546,7 @@
       "date": "2026-03-25",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-25--matsuda-shinya--r080325a-6280-888",
@@ -2500,7 +2555,7 @@
       "date": "2026-03-25",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-25--watanabe-jouji--r080325a-11876-888",
@@ -2509,7 +2564,7 @@
       "date": "2026-03-25",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-25--nishino-taichi--r080325a-9102-888",
@@ -2518,7 +2573,7 @@
       "date": "2026-03-25",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     },
     {
       "id": "yonago-city--2026-03-25--nishikoori-youko--r080325a-13870-888",
@@ -2527,8 +2582,8 @@
       "date": "2026-03-25",
       "kind": "本会議",
       "summary": null,
-      "source_url": "https://www.kensakusystem.jp/yonago-s/cgi-bin3/Search2.exe?Code=xjc2fmz5ekagt4nugl&sTarget=2"
+      "source_url": "https://www.kensakusystem.jp/yonago-s/index.html"
     }
   ],
-  "updated_at": "2026-06-10T18:07:40+00:00"
+  "updated_at": "2026-06-10T18:21:15+00:00"
 }

@@ -18,6 +18,8 @@ Phase 0時点では鳥取3市を `ssp.kaigiroku.net` 系としていたが、公
 - したがって Phase 3 の鳥取3市会議録アダプタは `kensakusystem_legacy` として扱うのが妥当。
 - `www.kensakusystem.jp` 旧系統は、トップHTMLから `cgi-bin3/See.exe?Code=...` と `cgi-bin3/Search2.exe?Code=...&sTarget=2` を抽出する方式になる。
 - `www.kensakusystem.jp` 旧系統はHTMLレスポンスだけでなく検索POST本文もCP932でURLエンコードする必要がある。UTF-8で送信すると日本語の発言者名がCGI側で文字化けし、検索結果が0件になる。全国のlegacy系展開時も、検索語・発言者・会議日ラベルなど日本語パラメータはCP932送信を前提にする。
+- `www.kensakusystem.jp` 旧系統の発言者プルダウンには、CP932の拡張領域で複数の符号化候補を持つ異体字が含まれる場合がある。米子市の `岩﨑議員` はHTML raw value上の `﨑` が `fa b1` だが、Unicode文字列として再エンコードすると `ed 95` になり、CGI検索が0件になる。発言者検索ではプルダウン `value` のraw bytesを保持し、そのままフォーム送信する必要がある。
+- `ResultFrame.exe` の復元URLは素のGETでframesetまでは返るが、個別発言への永続的な直接リンクとしては扱いにくい。`speeches.json` の `source_url` は `Code` を焼き込まず、各tenantの静的検索入口 `index.html` にフォールバックする。
 
 ### 議員別賛否データの所在
 

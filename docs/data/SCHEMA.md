@@ -220,7 +220,8 @@ robots.txt 等により自動取得しない議会の、人間転記用入力フ
   "coverage": {
     "scope": "本会議・議員発言者(speaker1)のみ",
     "excluded": ["議長の議事進行発言", "市長・執行部の発言(member_id: null扱い)"],
-    "note": "議長は慣例により一般質問を行わないため発言数が少なく/ゼロに見える場合がある"
+    "note": "議長は慣例により一般質問を行わないため発言数が少なく/ゼロに見える場合がある",
+    "source_url_note": "個別発言への直接リンクは本システムの仕様上提供不可。source_url は会議録検索入口。"
   },
   "speeches": [
     {
@@ -239,7 +240,7 @@ robots.txt 等により自動取得しない議会の、人間転記用入力フ
 必須キー:
 
 - ルート: `council_id`, `updated_at`, `coverage`, `speeches`
-- `coverage`: `scope`, `excluded`, `note`
+- `coverage`: `scope`, `excluded`, `note`, `source_url_note`
 - 各発言: `id`, `member_id`, `meeting_name`, `date`, `kind`, `summary`, `source_url`
 
 ルール:
@@ -247,3 +248,4 @@ robots.txt 等により自動取得しない議会の、人間転記用入力フ
 - `member_id` は `{council_id}--{slug}`、または議員特定不能時は `null`。
 - `summary` はAI要約が未生成の場合 `null`。
 - `coverage` は取得範囲と構造的な欠落を説明する。フロントエンドでは、議長や執行部の発言が対象外であることを表示に利用する。
+- `source_url` は永続性を優先し、会議録検索入口URLを保存する。旧系統の `Code` 付き検索URLや `ResultFrame.exe` URLは直接リンクとして永続利用しない。
