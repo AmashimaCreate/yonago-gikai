@@ -1,0 +1,41 @@
+{
+  "council_id": "yonago-city",
+  "population": {
+    "value": 142472,
+    "as_of": "2026-05-31",
+    "source_name": "米子市 人口と世帯数（住民基本台帳）",
+    "source_url": "https://www.city.yonago.lg.jp/9498.htm"
+  },
+  "households": {
+    "value": 69493,
+    "as_of": "2026-05-31",
+    "source_name": "米子市 人口と世帯数（住民基本台帳）",
+    "source_url": "https://www.city.yonago.lg.jp/9498.htm"
+  },
+  "budget_general_yen": {
+    "value": 88460000000,
+    "fiscal_year": 2026,
+    "source_name": "令和8年度予算案の概要",
+    "source_url": "https://www.city.yonago.lg.jp/47857.htm"
+  },
+  "fiscal_index": {
+    "value": 0.65,
+    "fiscal_year": 2024,
+    "source_name": "令和6年度 米子市の決算",
+    "source_url": "https://www.city.yonago.lg.jp/46775.htm"
+  },
+  "aging_rate_pct": null,
+  "local_debt_yen": {
+    "value": 57600000000,
+    "fiscal_year": 2024,
+    "source_name": "令和6年度 米子市の決算(約576億円・概算)",
+    "source_url": "https://www.city.yonago.lg.jp/46775.htm"
+  },
+  "member_salary_monthly_yen": null,
+  "per_capita": {
+    "population_per_member": 5479.7,
+    "budget_per_capita_yen": 620894,
+    "debt_per_capita_yen": 404290
+  },
+  "updated_at": "2026-06-10T16:14:59+00:00"
+}

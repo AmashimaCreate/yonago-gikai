@@ -1,0 +1,16 @@
+{
+  "council_id": "sakaiminato-city",
+  "population": null,
+  "households": null,
+  "budget_general_yen": null,
+  "fiscal_index": null,
+  "aging_rate_pct": null,
+  "local_debt_yen": null,
+  "member_salary_monthly_yen": null,
+  "per_capita": {
+    "population_per_member": null,
+    "budget_per_capita_yen": null,
+    "debt_per_capita_yen": null
+  },
+  "updated_at": "2026-06-10T16:14:59+00:00"
+}

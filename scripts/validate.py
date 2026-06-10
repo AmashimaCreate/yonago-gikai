@@ -36,6 +36,32 @@ MEMBER_KEYS = {
     "committees",
     "photo_url",
 }
+PROFILE_ROOT_KEYS = {
+    "council_id",
+    "population",
+    "households",
+    "budget_general_yen",
+    "fiscal_index",
+    "aging_rate_pct",
+    "local_debt_yen",
+    "member_salary_monthly_yen",
+    "per_capita",
+    "updated_at",
+}
+PROFILE_INPUT_FIELDS = {
+    "population",
+    "households",
+    "budget_general_yen",
+    "fiscal_index",
+    "aging_rate_pct",
+    "local_debt_yen",
+    "member_salary_monthly_yen",
+}
+PER_CAPITA_KEYS = {
+    "population_per_member",
+    "budget_per_capita_yen",
+    "debt_per_capita_yen",
+}
 
 
 def load_json(path: Path) -> Any:
@@ -147,8 +173,56 @@ def validate_members_file(council_id: str, path: Path) -> list[str]:
     return errors
 
 
+def validate_profile_item(path: Path, field: str, item: Any) -> list[str]:
+    errors: list[str] = []
+    label = f"{path}: {field}"
+    if item is None:
+        return errors
+    if not isinstance(item, dict):
+        return [f"{label}: must be an object or null"]
+    if "value" not in item:
+        errors.append(f"{label}: missing key 'value'")
+    source_url = item.get("source_url")
+    if source_url is None:
+        errors.append(f"{label}: missing key 'source_url'")
+    elif not isinstance(source_url, str) or not source_url.startswith("https://"):
+        errors.append(f"{label}: source_url must start with 'https://'")
+    return errors
+
+
+def validate_profile_file(council_id: str, path: Path) -> list[str]:
+    errors: list[str] = []
+    if not path.exists():
+        return [f"{path}: file not found for council '{council_id}'"]
+
+    data = load_json(path)
+    if not isinstance(data, dict):
+        return [f"{path}: root must be an object"]
+    add_missing_key_errors(errors, data, PROFILE_ROOT_KEYS, str(path))
+
+    if data.get("council_id") != council_id:
+        errors.append(
+            f"{path}: council_id '{data.get('council_id')}' "
+            f"does not match '{council_id}'"
+        )
+
+    for field in PROFILE_INPUT_FIELDS:
+        errors.extend(validate_profile_item(path, field, data.get(field)))
+
+    per_capita = data.get("per_capita")
+    if not isinstance(per_capita, dict):
+        errors.append(f"{path}: per_capita must be an object")
+    else:
+        add_missing_key_errors(
+            errors, per_capita, PER_CAPITA_KEYS, f"{path}: per_capita"
+        )
+
+    return errors
+
+
 def main() -> int:
     councils, errors = validate_councils()
+    warnings: list[str] = []
 
     for council in councils:
         if council.get("status") != "active":
@@ -158,12 +232,25 @@ def main() -> int:
             continue
         members_path = DATA_DIR / council_id / "members.json"
         errors.extend(validate_members_file(council_id, members_path))
+        profile_path = DATA_DIR / council_id / "profile.json"
+        if profile_path.exists():
+            errors.extend(validate_profile_file(council_id, profile_path))
+        else:
+            warnings.append(
+                f"{profile_path}: profile.json is recommended for active "
+                f"council '{council_id}'"
+            )
 
     if errors:
         print("Validation failed:", file=sys.stderr)
         for error in errors:
             print(f"- {error}", file=sys.stderr)
         return 1
+
+    if warnings:
+        print("Validation warnings:", file=sys.stderr)
+        for warning in warnings:
+            print(f"- {warning}", file=sys.stderr)
 
     print("OK")
     return 0
