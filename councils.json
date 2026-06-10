@@ -1,0 +1,44 @@
+{
+  "councils": [
+    {
+      "id": "tottori-pref",
+      "name": "鳥取県議会",
+      "type": "prefecture",
+      "minutes_system": "dbsr",
+      "vote_granularity": "member",
+      "status": "planned"
+    },
+    {
+      "id": "tottori-city",
+      "name": "鳥取市議会",
+      "type": "city",
+      "minutes_system": "dbsr",
+      "vote_granularity": "member",
+      "status": "planned"
+    },
+    {
+      "id": "yonago-city",
+      "name": "米子市議会",
+      "type": "city",
+      "minutes_system": "kensakusystem",
+      "vote_granularity": "result_only",
+      "status": "active"
+    },
+    {
+      "id": "kurayoshi-city",
+      "name": "倉吉市議会",
+      "type": "city",
+      "minutes_system": "kensakusystem",
+      "vote_granularity": "unknown",
+      "status": "planned"
+    },
+    {
+      "id": "sakaiminato-city",
+      "name": "境港市議会",
+      "type": "city",
+      "minutes_system": "kensakusystem",
+      "vote_granularity": "member",
+      "status": "planned"
+    }
+  ]
+}
