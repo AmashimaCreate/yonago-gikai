@@ -14,7 +14,7 @@
       "type": "city",
       "minutes_system": "dbsr",
       "vote_granularity": "member",
-      "status": "planned"
+      "status": "active"
     },
     {
       "id": "yonago-city",
