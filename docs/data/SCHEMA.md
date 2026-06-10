@@ -11,9 +11,14 @@
 - `id`: `yonago-city` のような一意なID
 - `name`: 表示名
 - `type`: `prefecture` または `city`
-- `minutes_system`: `dbsr` / `kensakusystem` / `unknown`
+- `minutes_system`: `dbsr` / `kensakusystem` / `kensakusystem_legacy` / `unknown`
 - `vote_granularity`: `member` / `faction` / `result_only` / `unknown`
 - `status`: `active` / `planned`
+
+任意キー:
+
+- `minutes_base_url`: 会議録検索システムの議会別トップURL。
+- `notes`: 自動取得や公式導線に関する補足。
 
 ## members.json
 
@@ -212,6 +217,11 @@ robots.txt 等により自動取得しない議会の、人間転記用入力フ
 {
   "council_id": "yonago-city",
   "updated_at": "2026-06-11T00:00:00+00:00",
+  "coverage": {
+    "scope": "本会議・議員発言者(speaker1)のみ",
+    "excluded": ["議長の議事進行発言", "市長・執行部の発言(member_id: null扱い)"],
+    "note": "議長は慣例により一般質問を行わないため発言数が少なく/ゼロに見える場合がある"
+  },
   "speeches": [
     {
       "id": "yonago-city--2026-03-10--0001",
@@ -228,10 +238,12 @@ robots.txt 等により自動取得しない議会の、人間転記用入力フ
 
 必須キー:
 
-- ルート: `council_id`, `updated_at`, `speeches`
+- ルート: `council_id`, `updated_at`, `coverage`, `speeches`
+- `coverage`: `scope`, `excluded`, `note`
 - 各発言: `id`, `member_id`, `meeting_name`, `date`, `kind`, `summary`, `source_url`
 
 ルール:
 
 - `member_id` は `{council_id}--{slug}`、または議員特定不能時は `null`。
 - `summary` はAI要約が未生成の場合 `null`。
+- `coverage` は取得範囲と構造的な欠落を説明する。フロントエンドでは、議長や執行部の発言が対象外であることを表示に利用する。

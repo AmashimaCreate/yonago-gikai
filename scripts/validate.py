@@ -20,7 +20,7 @@ COUNCIL_REQUIRED_KEYS = {
     "status",
 }
 COUNCIL_TYPES = {"prefecture", "city"}
-MINUTES_SYSTEMS = {"dbsr", "kensakusystem", "unknown"}
+MINUTES_SYSTEMS = {"dbsr", "kensakusystem", "kensakusystem_legacy", "unknown"}
 VOTE_GRANULARITIES = {"member", "faction", "result_only", "unknown"}
 STATUSES = {"active", "planned"}
 

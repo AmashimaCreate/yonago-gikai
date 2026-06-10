@@ -17,6 +17,7 @@ Phase 0時点では鳥取3市を `ssp.kaigiroku.net` 系としていたが、公
 - `ssp.kaigiroku.net/tenant/yonago/`, `yonago-s/`, `kurayoshi/`, `sakaiminato/` は軽いHEAD確認でタイムアウトし、鳥取3市の新系統併設は確認できなかった。
 - したがって Phase 3 の鳥取3市会議録アダプタは `kensakusystem_legacy` として扱うのが妥当。
 - `www.kensakusystem.jp` 旧系統は、トップHTMLから `cgi-bin3/See.exe?Code=...` と `cgi-bin3/Search2.exe?Code=...&sTarget=2` を抽出する方式になる。
+- `www.kensakusystem.jp` 旧系統はHTMLレスポンスだけでなく検索POST本文もCP932でURLエンコードする必要がある。UTF-8で送信すると日本語の発言者名がCGI側で文字化けし、検索結果が0件になる。全国のlegacy系展開時も、検索語・発言者・会議日ラベルなど日本語パラメータはCP932送信を前提にする。
 
 ### 議員別賛否データの所在
 
