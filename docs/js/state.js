@@ -3,10 +3,7 @@
 // 同一オブジェクトを共有できる。
 export const state = {
   members: [],
-  meta: null,
-  links: {},
-  news: null,
-  activeSources: new Set(),
+  membersMeta: null,
   view: "kaiha",
   query: "",
 };

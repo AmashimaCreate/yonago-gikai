@@ -48,20 +48,6 @@ const ROLE_ORDER = { "委員長": 0, "副委員長": 1, "委員": 2 };
 // 当選回数ビューの表示範囲(空のバケットも表示する)
 const TERM_RANGE = [1, 2, 3, 4, 5, 6];
 
-// リンク種別の表示順とラベル/アイコン。
-// アイコンは現状 emoji。将来 SVG に差し替える場合は icon の値を
-// <svg> の HTML 文字列にし、renderMemberCard 側を innerHTML 対応に
-// 切り替える(CSS の .member-link-icon は wrapper のみを担当)。
-const LINK_TYPES = [
-  { key: "official_site",    icon: "🌐", label: "公式サイト" },
-  { key: "blog",             icon: "📝", label: "ブログ" },
-  { key: "twitter",          icon: "𝕏",  label: "X (旧 Twitter)" },
-  { key: "facebook",         icon: "Ⓕ", label: "Facebook" },
-  { key: "instagram",        icon: "📷", label: "Instagram" },
-  { key: "youtube",          icon: "▶",  label: "YouTube" },
-  { key: "election_dot_com", icon: "🗳", label: "選挙ドットコム" },
-];
-
 function kaihaColor(kaiha) {
   const v = KAIHA_COLOR_VAR[kaiha] || "--kaiha-default";
   return `var(${v})`;
@@ -72,10 +58,52 @@ function committeeColor(type) {
   return `var(${v})`;
 }
 
+function memberKana(member) {
+  return member.name_kana || member.kana || "";
+}
+
+function memberFaction(member) {
+  return member.faction || member.kaiha || "(未分類)";
+}
+
+function memberElectedCount(member) {
+  return member.elected_count ?? member.term_count ?? null;
+}
+
+function committeeType(name) {
+  if (name === "議会運営") return "議会運営";
+  if (name && name.includes("特別")) return "特別";
+  return "常任";
+}
+
+function committeeRole(member, name) {
+  const positions = member.positions || [];
+  if (positions.includes(`${name}委員長`)) return "委員長";
+  if (positions.includes(`${name}副委員長`)) return "副委員長";
+  return "委員";
+}
+
+function committeeEntries(member) {
+  return (member.committees || []).map((c) => {
+    if (typeof c === "string") {
+      return {
+        name: c,
+        role: committeeRole(member, c),
+        type: committeeType(c),
+      };
+    }
+    return {
+      name: c.name,
+      role: c.role || committeeRole(member, c.name),
+      type: c.type || committeeType(c.name),
+    };
+  });
+}
+
 function groupByKaiha(members) {
   const map = new Map();
   for (const m of members) {
-    const key = m.kaiha || "(未分類)";
+    const key = memberFaction(m);
     if (!map.has(key)) map.set(key, []);
     map.get(key).push(m);
   }
@@ -93,7 +121,7 @@ function groupByKaiha(members) {
 function groupByCommittee(members) {
   const map = new Map();
   for (const m of members) {
-    for (const c of m.committees || []) {
+    for (const c of committeeEntries(m)) {
       if (!map.has(c.name)) {
         map.set(c.name, { type: c.type, entries: [] });
       }
@@ -105,7 +133,7 @@ function groupByCommittee(members) {
       const ra = ROLE_ORDER[a.role] ?? 99;
       const rb = ROLE_ORDER[b.role] ?? 99;
       if (ra !== rb) return ra - rb;
-      return (a.member.kana || "").localeCompare(b.member.kana || "", "ja");
+      return memberKana(a.member).localeCompare(memberKana(b.member), "ja");
     });
   }
   const ordered = [];
@@ -122,21 +150,22 @@ function groupByTermCount(members) {
   const map = new Map();
   for (const t of TERM_RANGE) map.set(t, []);
   for (const m of members) {
-    const t = m.term_count;
+    const t = memberElectedCount(m);
     if (typeof t !== "number") continue;
     if (!map.has(t)) map.set(t, []);
     map.get(t).push(m);
   }
   for (const list of map.values()) {
     list.sort((a, b) =>
-      (a.kana || "").localeCompare(b.kana || "", "ja"),
+      memberKana(a).localeCompare(memberKana(b), "ja"),
     );
   }
   return [...map.entries()].sort((a, b) => a[0] - b[0]);
 }
 
 function renderMemberCard(m) {
-  const colorStyle = `--kaiha-color: ${kaihaColor(m.kaiha)};`;
+  const faction = memberFaction(m);
+  const colorStyle = `--kaiha-color: ${kaihaColor(faction)};`;
 
   // 写真
   const photo = el("img", {
@@ -155,56 +184,22 @@ function renderMemberCard(m) {
   for (const p of m.positions || []) {
     positionBadges.push(el("span", { class: "badge is-position" }, p));
   }
-  for (const c of m.committees || []) {
-    if (c.role === "委員長") {
-      positionBadges.push(
-        el("span", { class: "badge is-chair" }, `${c.name}委員長`),
-      );
-    } else if (c.role === "副委員長") {
-      positionBadges.push(
-        el("span", { class: "badge is-vice" }, `${c.name}副委員長`),
-      );
-    }
-  }
 
   // 委員会リスト(委員のみ。委員長/副委員長はバッジ側に出している)
-  const committeeItems = (m.committees || [])
+  const committeeItems = committeeEntries(m)
     .filter((c) => c.role === "委員")
     .map((c) => el("li", {}, `${c.name}委員（${c.type}）`));
-
-  // リンク群(member_links.json から)
-  const linkData = (state.links[m.id] && state.links[m.id].links) || {};
-  const linkNodes = LINK_TYPES.filter((t) => linkData[t.key]).map((t) =>
-    el(
-      "a",
-      {
-        class: `member-link member-link--${t.key}`,
-        href: linkData[t.key],
-        target: "_blank",
-        rel: "noopener",
-        title: t.label,
-        "aria-label": t.label,
-      },
-      [
-        el(
-          "span",
-          { class: "member-link-icon", "aria-hidden": "true" },
-          t.icon,
-        ),
-      ],
-    ),
-  );
 
   return el("article", { class: "member-card", style: colorStyle }, [
     el("div", { class: "member-head" }, [
       photo,
       el("div", { class: "member-name-block" }, [
         el("p", { class: "member-name" }, m.name),
-        el("p", { class: "member-kana" }, m.kana || ""),
+        el("p", { class: "member-kana" }, memberKana(m)),
         el(
           "p",
           { class: "member-term" },
-          `当選 ${m.term_count ?? "?"} 回`,
+          `当選 ${memberElectedCount(m) ?? "?"} 回`,
         ),
       ]),
     ]),
@@ -213,9 +208,6 @@ function renderMemberCard(m) {
       : null,
     committeeItems.length
       ? el("ul", { class: "member-committees" }, committeeItems)
-      : null,
-    linkNodes.length
-      ? el("div", { class: "member-links" }, linkNodes)
       : null,
   ]);
 }
