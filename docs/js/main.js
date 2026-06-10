@@ -8,8 +8,6 @@ import { filteredMembers } from "./search.js";
 import { state } from "./state.js";
 import { el } from "./utils.js";
 
-const ENABLED_COUNCILS = new Set(["yonago-city"]);
-
 function titleNode() {
   return document.getElementById("page-title");
 }
@@ -56,7 +54,8 @@ function renderMeta() {
   const fetched = meta.updated_at
     ? new Date(meta.updated_at).toLocaleString("ja-JP")
     : "?";
-  node.textContent = `現在 ${members.length}人 / 最終更新 ${fetched}`;
+  const type = councilTypeLabel(state.currentCouncil);
+  node.textContent = `${type} / 現在 ${members.length}人 / 最終更新 ${fetched}`;
 }
 
 function updateMatchCount(filteredCount) {
@@ -124,23 +123,6 @@ function renderMemberRoute(memberId) {
   renderMemberPage(mainNode(), state, memberId);
 }
 
-function renderComingSoon(councilId) {
-  const council = state.councils.find((item) => item.id === councilId);
-  setHeader({
-    title: council?.name || "準備中",
-    lead: "この議会ページは次段階で展開します。",
-  });
-  showCouncilNav(false);
-  mainNode().innerHTML = "";
-  mainNode().appendChild(
-    el("section", { class: "intro-panel" }, [
-      el("h2", { class: "section-title" }, "準備中"),
-      el("p", {}, "まず米子市議会で画面構成を確認しています。承認後に残り4議会へ展開します。"),
-      el("p", {}, [el("a", { href: "#/" }, "トップへ戻る")]),
-    ]),
-  );
-}
-
 function renderNotFound() {
   setHeader({
     title: "ページが見つかりません",
@@ -172,7 +154,6 @@ async function applyRoute() {
     setHeader({
       title: "鳥取県 議会見える化",
       lead: "鳥取県内5議会の公開データを同じ形で見られるようにする非公式サイトです。",
-      meta: "Phase 4: 多議会対応の確認中",
     });
     showCouncilNav(false);
     renderTop(mainNode(), state.councils);
@@ -180,10 +161,6 @@ async function applyRoute() {
   }
 
   if (route.name === "council" || route.name === "member") {
-    if (!ENABLED_COUNCILS.has(route.councilId)) {
-      renderComingSoon(route.councilId);
-      return;
-    }
     const bundle = await loadCouncilBundle(route.councilId, {
       includeSpeeches: true,
     });
@@ -252,6 +229,10 @@ function setupSearch() {
       renderCouncilRoute();
     });
   }
+}
+
+function councilTypeLabel(council) {
+  return council?.type === "prefecture" ? "県議会" : "市議会";
 }
 
 setupTabs();

@@ -12,6 +12,7 @@ export function renderCouncilPage(root, state, filteredMembers) {
   root.appendChild(dataQualityPanel({
     membersMeta: state.membersMeta,
     speechesMeta: state.speechesMeta,
+    council: state.currentCouncil,
   }));
 
   const former = groupFormerSpeeches(state.speeches);

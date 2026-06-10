@@ -46,16 +46,21 @@ function memberElectedCount(member) {
 }
 
 function committeeType(name) {
-  if (name === "議会運営") return "議会運営";
+  if (name && name.includes("議会運営")) return "議会運営";
   if (name && name.includes("特別")) return "特別";
   return "常任";
 }
 
 function committeeRole(member, name) {
-  const positions = member.positions || [];
-  if (positions.includes(`${name}委員長`)) return "委員長";
-  if (positions.includes(`${name}副委員長`)) return "副委員長";
+  const positions = (member.positions || []).map(normalizeRoleText);
+  const normalizedName = normalizeRoleText(name);
+  if (positions.includes(`${normalizedName}委員長`)) return "委員長";
+  if (positions.includes(`${normalizedName}副委員長`)) return "副委員長";
   return "委員";
+}
+
+function normalizeRoleText(value) {
+  return String(value || "").replace(/\s+/g, "");
 }
 
 function committeeEntries(member) {
@@ -243,6 +248,7 @@ export function renderCommitteeView(root, members) {
 
 export function renderRoleView(root, members) {
   root.innerHTML = "";
+  let renderedSections = 0;
 
   // 第1セクション: 議長・副議長
   const heads = members
@@ -269,6 +275,7 @@ export function renderRoleView(root, members) {
       ),
     ]);
     root.appendChild(section);
+    renderedSections += 1;
   }
 
   // 第2〜N セクション: 各委員会の委員長/副委員長(委員会ビューと同じ並び)
@@ -292,11 +299,28 @@ export function renderRoleView(root, members) {
       ),
     ]);
     root.appendChild(section);
+    renderedSections += 1;
+  }
+
+  if (renderedSections === 0) {
+    root.appendChild(
+      el("p", { class: "empty-message" }, "この議会の役職データはまだ取得できていません。"),
+    );
   }
 }
 
 export function renderTermView(root, members) {
   root.innerHTML = "";
+  const knownMembers = members.filter((member) =>
+    typeof memberElectedCount(member) === "number",
+  );
+  if (knownMembers.length === 0) {
+    root.appendChild(
+      el("p", { class: "empty-message" }, "この議会の当選回数データはまだ取得できていません。"),
+    );
+    return;
+  }
+
   const grouped = groupByTermCount(members);
   const total = members.length;
   const isFiltered = state.query.trim().length > 0;

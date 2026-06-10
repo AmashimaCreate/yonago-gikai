@@ -12,8 +12,13 @@ export function acquisitionText(membersMeta) {
   return "取得方法の記録がありません";
 }
 
-export function coverageText(speechesMeta) {
-  if (!speechesMeta) return "発言インデックスはまだ取得していません。";
+export function coverageText(speechesMeta, council = null) {
+  if (!speechesMeta) {
+    if (council?.minutes_system === "dbsr") {
+      return "発言インデックス未取得（会議録が別システムのため）。";
+    }
+    return "発言インデックスはまだ取得していません。";
+  }
   return "本会議での議員の発言のみ。委員会・議長の進行・市長や職員の答弁は含みません。";
 }
 
@@ -30,7 +35,7 @@ export function sourceLink(url, label = "公式情報を確認") {
   );
 }
 
-export function dataQualityPanel({ membersMeta, speechesMeta }) {
+export function dataQualityPanel({ membersMeta, speechesMeta, council }) {
   const rows = [
     qualityRow(
       "議員名簿",
@@ -40,7 +45,7 @@ export function dataQualityPanel({ membersMeta, speechesMeta }) {
     ),
     qualityRow(
       "発言インデックス",
-      coverageText(speechesMeta),
+      coverageText(speechesMeta, council),
       sourceLink(firstSpeechSourceUrl(speechesMeta), "発言の確認はこちら"),
       speechesMeta ? "speaker1_only" : "not_collected",
     ),

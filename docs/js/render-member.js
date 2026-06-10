@@ -22,7 +22,7 @@ export function renderMemberPage(root, state, memberId) {
   );
 
   root.appendChild(renderMemberProfile(member, state.membersMeta));
-  root.appendChild(renderSpeechSection(speeches, state.speechesMeta));
+  root.appendChild(renderSpeechSection(speeches, state.speechesMeta, state.currentCouncil));
 }
 
 function renderMemberProfile(member, membersMeta) {
@@ -43,11 +43,18 @@ function renderMemberProfile(member, membersMeta) {
   ]);
 }
 
-function renderSpeechSection(speeches, speechesMeta) {
+function renderSpeechSection(speeches, speechesMeta, council) {
+  if (!speechesMeta) {
+    return el("section", { class: "speech-section" }, [
+      el("h2", { class: "section-title" }, "発言インデックス未取得"),
+      el("p", { class: "muted" }, coverageText(speechesMeta, council)),
+    ]);
+  }
+
   return el("section", { class: "speech-section" }, [
     el("h2", { class: "section-title" }, `発言インデックス（${speeches.length}件）`),
     cautionNote(),
-    el("p", { class: "muted" }, coverageText(speechesMeta)),
+    el("p", { class: "muted" }, coverageText(speechesMeta, council)),
     speeches.length
       ? el("ul", { class: "speech-list" }, speeches.map(renderSpeechItem))
       : el("p", { class: "empty-message" }, "この取得範囲では、この議員に紐付いた発言インデックスはありません。"),

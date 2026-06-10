@@ -189,7 +189,7 @@ a { color: #0969da; }
 
 .council-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 12px;
   margin-bottom: 24px;
 }
@@ -202,6 +202,9 @@ a { color: #0969da; }
 .council-card h3 {
   margin: 4px 0 8px;
   font-size: 18px;
+}
+.council-card.is-prefecture {
+  border-left: 4px solid var(--kaiha-default);
 }
 .card-eyebrow {
   font-size: 12px;
