@@ -3,6 +3,11 @@ import { el } from "./utils.js";
 
 export function renderPrefecturePage(root, councils, prefecture = "tottori") {
   root.innerHTML = "";
+  const prefectureCouncil = councils.find((council) => council.type === "prefecture");
+  const mapFrame = el("div", { class: "map-frame municipality-map-frame" }, [
+    el("p", { class: "muted" }, "鳥取県の市町村地図を読み込み中..."),
+  ]);
+
   root.appendChild(
     el("section", { class: "intro-panel" }, [
       el("h2", { class: "section-title" }, "鳥取県内5議会"),
@@ -15,12 +20,46 @@ export function renderPrefecturePage(root, councils, prefecture = "tottori") {
   );
 
   root.appendChild(
+    el("section", { class: "prefecture-map-panel" }, [
+      el("h2", { class: "section-title" }, "地図から選ぶ"),
+      el("div", { class: "prefecture-map-layout" }, [
+        prefectureCouncil
+          ? el("div", { class: "prefecture-assembly-wrap" }, [
+              el("p", { class: "map-caption" }, "県議会"),
+              renderCouncilCard(prefectureCouncil, prefecture),
+            ])
+          : null,
+        el("div", {}, [
+          mapFrame,
+          el("div", { class: "map-legend", "aria-label": "地図の凡例" }, [
+            el("span", {}, [
+              el("span", { class: "legend-swatch is-supported" }),
+              "対応済み",
+            ]),
+            el("span", {}, [
+              el("span", { class: "legend-swatch is-unsupported" }),
+              "未対応",
+            ]),
+          ]),
+          el(
+            "p",
+            { class: "muted" },
+            "色付きの市は議会ページへ進めます。グレーの町村は未対応です。",
+          ),
+        ]),
+      ]),
+    ]),
+  );
+
+  root.appendChild(
     el(
       "div",
       { class: "council-grid" },
       councils.map((council) => renderCouncilCard(council, prefecture)),
     ),
   );
+
+  hydrateMunicipalityMap(mapFrame, prefecture);
 }
 
 function renderCouncilCard(council, prefecture) {
@@ -40,4 +79,48 @@ function readableMinutesSystem(value) {
 
 function councilTypeLabel(council) {
   return council.type === "prefecture" ? "県議会" : "市議会";
+}
+
+async function hydrateMunicipalityMap(container, prefecture) {
+  try {
+    const response = await fetch("assets/maps/tottori-municipalities.svg");
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    container.innerHTML = await response.text();
+
+    const svg = container.querySelector("svg");
+    if (!svg) throw new Error("SVG root not found");
+    svg.removeAttribute("width");
+    svg.removeAttribute("height");
+
+    container.querySelectorAll(".municipality").forEach((region) => {
+      const name = region.dataset.name || "市町村";
+      const councilId = region.dataset.councilId;
+      if (!councilId) {
+        region.setAttribute("aria-label", `${name}（未対応）`);
+        region.setAttribute("aria-disabled", "true");
+        return;
+      }
+      region.setAttribute("role", "link");
+      region.setAttribute("tabindex", "0");
+      region.setAttribute("aria-label", `${name}議会ページへ`);
+      region.addEventListener("click", () => {
+        window.location.href = councilPath(prefecture, councilId);
+      });
+      region.addEventListener("keydown", (event) => {
+        if (event.key !== "Enter" && event.key !== " ") return;
+        event.preventDefault();
+        window.location.href = councilPath(prefecture, councilId);
+      });
+    });
+  } catch (error) {
+    console.warn("Failed to load Tottori municipality map", error);
+    container.innerHTML = "";
+    container.appendChild(
+      el(
+        "p",
+        { class: "caution-note" },
+        "市町村地図を読み込めませんでした。議会カード一覧から選択してください。",
+      ),
+    );
+  }
 }
