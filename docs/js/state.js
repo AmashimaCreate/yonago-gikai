@@ -4,6 +4,7 @@
 export const state = {
   members: [],
   membersMeta: null,
+  profile: null,
   view: "kaiha",
   query: "",
 };

@@ -1,6 +1,7 @@
 import { state } from "./state.js";
 import { el } from "./utils.js";
 import { filteredMembers } from "./search.js";
+import { renderProfile } from "./render-profile.js";
 import {
   renderKaihaView,
   renderCommitteeView,
@@ -42,6 +43,12 @@ function updateSearchPlaceholder() {
 
 function render() {
   const main = document.getElementById("main");
+  renderProfile(
+    document.getElementById("profile"),
+    state.profile,
+    state.members.length,
+    state.membersMeta,
+  );
   updateSearchPlaceholder();
   renderMeta();
 
@@ -108,6 +115,17 @@ async function load() {
     const data = await membersRes.json();
     state.members = Array.isArray(data.members) ? data.members : [];
     state.membersMeta = data;
+
+    const profileRes = await fetch(
+      "./data/yonago-city/profile.json",
+      { cache: "no-cache" },
+    );
+    if (profileRes.ok) {
+      state.profile = await profileRes.json();
+    } else {
+      console.warn(`profile.json: ${profileRes.status}`);
+    }
+
     render();
   } catch (err) {
     console.error(err);
