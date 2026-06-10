@@ -91,6 +91,81 @@
 - `granularity` が `member` 以外の場合、`votes_by_member` は `null`。
 - `date` は `YYYY-MM-DD` または `null`。
 
+## profile source input
+
+配置: `data_sources/profiles/{council_id}.json`
+
+自治体基礎データの一次入力ファイル。人間が公式サイト、e-Stat、総務省決算カード等の一次ソースから確認・転記した値を正とし、ビルダーが検証と派生値計算を行う。
+
+```json
+{
+  "council_id": "yonago-city",
+  "population": {
+    "value": 142472,
+    "as_of": "2026-05-31",
+    "source_name": "米子市 人口と世帯数（住民基本台帳）",
+    "source_url": "https://www.city.yonago.lg.jp/9498.htm"
+  },
+  "households": null,
+  "budget_general_yen": null,
+  "fiscal_index": null,
+  "aging_rate_pct": null,
+  "local_debt_yen": null,
+  "member_salary_monthly_yen": null
+}
+```
+
+必須キー:
+
+- ルート: `council_id`, `population`, `households`, `budget_general_yen`, `fiscal_index`, `aging_rate_pct`, `local_debt_yen`, `member_salary_monthly_yen`
+
+ルール:
+
+- 未調査・取得不能の項目は `null`。
+- 値がある項目はオブジェクトとし、`value` と `source_url` を必須とする。
+- `source_url` は `https://` で始まるURL。
+- `population`, `households`, `budget_general_yen`, `local_debt_yen`, `member_salary_monthly_yen` は整数値。
+- `fiscal_index`, `aging_rate_pct` は数値。
+- `population` は `0` より大きい値。
+- 時点を持つ項目は `as_of`、会計年度を持つ項目は `fiscal_year` を付ける。
+
+## profile.json
+
+配置: `docs/data/{council_id}/profile.json`
+
+`data_sources/profiles/{council_id}.json` から生成される公開用データ。入力ファイルの内容に `per_capita` と `updated_at` を加える。
+
+```json
+{
+  "council_id": "yonago-city",
+  "population": {"value": 142472, "as_of": "2026-05-31", "source_url": "https://..."},
+  "households": null,
+  "budget_general_yen": null,
+  "fiscal_index": null,
+  "aging_rate_pct": null,
+  "local_debt_yen": null,
+  "member_salary_monthly_yen": null,
+  "per_capita": {
+    "population_per_member": 5479.7,
+    "budget_per_capita_yen": 620894,
+    "debt_per_capita_yen": 404290
+  },
+  "updated_at": "2026-06-11T00:00:00+00:00"
+}
+```
+
+必須キー:
+
+- ルート: `council_id`, `population`, `households`, `budget_general_yen`, `fiscal_index`, `aging_rate_pct`, `local_debt_yen`, `member_salary_monthly_yen`, `per_capita`, `updated_at`
+- `per_capita`: `population_per_member`, `budget_per_capita_yen`, `debt_per_capita_yen`
+
+派生値:
+
+- `population_per_member`: 人口 ÷ 議員数。議員数は `docs/data/{council_id}/members.json` の `members` 件数から算出し、ファイルがない場合は `null`。
+- `budget_per_capita_yen`: 一般会計予算 ÷ 人口。
+- `debt_per_capita_yen`: 地方債残高 ÷ 人口。
+- 必要な入力が `null` の場合、派生値は `null`。
+
 ## speeches.json
 
 配置: `docs/data/{council_id}/speeches.json`
