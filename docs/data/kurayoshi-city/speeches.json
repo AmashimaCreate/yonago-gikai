@@ -1,0 +1,2625 @@
+{
+  "council_id": "kurayoshi-city",
+  "coverage": {
+    "scope": "本会議・議員発言者(speaker1)のみ",
+    "excluded": [
+      "議長の議事進行発言",
+      "市長・執行部の発言(member_id: null扱い)"
+    ],
+    "note": "議長は慣例により一般質問を行わないため発言数が少なく/ゼロに見える場合がある",
+    "source_url_note": "個別発言への直接リンクは本システムの仕様上提供不可。source_url は会議録検索入口。"
+  },
+  "speeches": [
+    {
+      "id": "kurayoshi-city--2024-05-20--ootsu-masakatsu--r060520a-5646-819",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 6年第 3回臨時会（第1号 5月20日） 本会議",
+      "date": "2024-05-20",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-05-20--fukutani-naomi--r060520a-514-819",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 6年第 3回臨時会（第1号 5月20日） 本会議",
+      "date": "2024-05-20",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-17--1f95f27cff--r060617a-17458-820",
+      "member_id": null,
+      "meeting_name": "令和 6年第 4回定例会（第1号 6月17日） 本会議",
+      "date": "2024-06-17",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-17--8cbc107637--r060617a-19848-820",
+      "member_id": null,
+      "meeting_name": "令和 6年第 4回定例会（第1号 6月17日） 本会議",
+      "date": "2024-06-17",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-17--yamane-kenshi--r060617a-14532-820",
+      "member_id": "kurayoshi-city--yamane-kenshi",
+      "meeting_name": "令和 6年第 4回定例会（第1号 6月17日） 本会議",
+      "date": "2024-06-17",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-17--asahi-touji--r060617a-3646-820",
+      "member_id": "kurayoshi-city--asahi-touji",
+      "meeting_name": "令和 6年第 4回定例会（第1号 6月17日） 本会議",
+      "date": "2024-06-17",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-17--asahi-touji--r060617a-3874-820",
+      "member_id": "kurayoshi-city--asahi-touji",
+      "meeting_name": "令和 6年第 4回定例会（第1号 6月17日） 本会議",
+      "date": "2024-06-17",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-17--fukui-yasuo--r060617a-10508-820",
+      "member_id": "kurayoshi-city--fukui-yasuo",
+      "meeting_name": "令和 6年第 4回定例会（第1号 6月17日） 本会議",
+      "date": "2024-06-17",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-17--fukutani-naomi--r060617a-528-820",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 6年第 4回定例会（第1号 6月17日） 本会議",
+      "date": "2024-06-17",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-17--yoneda-katsuhiko--r060617a-3094-820",
+      "member_id": "kurayoshi-city--yoneda-katsuhiko",
+      "meeting_name": "令和 6年第 4回定例会（第1号 6月17日） 本会議",
+      "date": "2024-06-17",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-17--5f3d8ebb16--r060617a-2570-820",
+      "member_id": null,
+      "meeting_name": "令和 6年第 4回定例会（第1号 6月17日） 本会議",
+      "date": "2024-06-17",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-17--toba-masaaki--r060617a-15498-820",
+      "member_id": "kurayoshi-city--toba-masaaki",
+      "meeting_name": "令和 6年第 4回定例会（第1号 6月17日） 本会議",
+      "date": "2024-06-17",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-18--e9440f7c2d--r060618a-173074-821",
+      "member_id": null,
+      "meeting_name": "令和 6年第 4回定例会（第2号 6月18日） 本会議",
+      "date": "2024-06-18",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-18--yamane-kenshi--r060618a-130794-821",
+      "member_id": "kurayoshi-city--yamane-kenshi",
+      "meeting_name": "令和 6年第 4回定例会（第2号 6月18日） 本会議",
+      "date": "2024-06-18",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-18--tamura-shizumi--r060618a-1056-821",
+      "member_id": "kurayoshi-city--tamura-shizumi",
+      "meeting_name": "令和 6年第 4回定例会（第2号 6月18日） 本会議",
+      "date": "2024-06-18",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-18--fukui-noriko--r060618a-91430-821",
+      "member_id": "kurayoshi-city--fukui-noriko",
+      "meeting_name": "令和 6年第 4回定例会（第2号 6月18日） 本会議",
+      "date": "2024-06-18",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-18--fukutani-naomi--r060618a-244-821",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 6年第 4回定例会（第2号 6月18日） 本会議",
+      "date": "2024-06-18",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-18--5f3d8ebb16--r060618a-46242-821",
+      "member_id": null,
+      "meeting_name": "令和 6年第 4回定例会（第2号 6月18日） 本会議",
+      "date": "2024-06-18",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-19--672fcfe3f9--r060619a-60479-822",
+      "member_id": null,
+      "meeting_name": "令和 6年第 4回定例会（第3号 6月19日） 本会議",
+      "date": "2024-06-19",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-19--1f95f27cff--r060619a-122702-822",
+      "member_id": null,
+      "meeting_name": "令和 6年第 4回定例会（第3号 6月19日） 本会議",
+      "date": "2024-06-19",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-19--ootsu-masakatsu--r060619a-700-822",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 6年第 4回定例会（第3号 6月19日） 本会議",
+      "date": "2024-06-19",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-19--asahi-touji--r060619a-39923-822",
+      "member_id": "kurayoshi-city--asahi-touji",
+      "meeting_name": "令和 6年第 4回定例会（第3号 6月19日） 本会議",
+      "date": "2024-06-19",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-19--fukutani-naomi--r060619a-244-822",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 6年第 4回定例会（第3号 6月19日） 本会議",
+      "date": "2024-06-19",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-19--jikuhara-shouko--r060619a-87218-822",
+      "member_id": "kurayoshi-city--jikuhara-shouko",
+      "meeting_name": "令和 6年第 4回定例会（第3号 6月19日） 本会議",
+      "date": "2024-06-19",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-20--8cbc107637--r060620a-124528-823",
+      "member_id": null,
+      "meeting_name": "令和 6年第 4回定例会（第4号 6月20日） 本会議",
+      "date": "2024-06-20",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-20--fukui-yasuo--r060620a-97988-823",
+      "member_id": "kurayoshi-city--fukui-yasuo",
+      "meeting_name": "令和 6年第 4回定例会（第4号 6月20日） 本会議",
+      "date": "2024-06-20",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-20--fukutani-naomi--r060620a-244-823",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 6年第 4回定例会（第4号 6月20日） 本会議",
+      "date": "2024-06-20",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-20--yoneda-katsuhiko--r060620a-790-823",
+      "member_id": "kurayoshi-city--yoneda-katsuhiko",
+      "meeting_name": "令和 6年第 4回定例会（第4号 6月20日） 本会議",
+      "date": "2024-06-20",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-20--toba-masaaki--r060620a-65319-823",
+      "member_id": "kurayoshi-city--toba-masaaki",
+      "meeting_name": "令和 6年第 4回定例会（第4号 6月20日） 本会議",
+      "date": "2024-06-20",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-20--a945391aa5--r060620a-39188-823",
+      "member_id": null,
+      "meeting_name": "令和 6年第 4回定例会（第4号 6月20日） 本会議",
+      "date": "2024-06-20",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-24--e9440f7c2d--r060624a-21717-824",
+      "member_id": null,
+      "meeting_name": "令和 6年第 4回定例会（第5号 6月24日） 本会議",
+      "date": "2024-06-24",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-24--asahi-touji--r060624a-2357-824",
+      "member_id": "kurayoshi-city--asahi-touji",
+      "meeting_name": "令和 6年第 4回定例会（第5号 6月24日） 本会議",
+      "date": "2024-06-24",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-24--fukutani-naomi--r060624a-376-824",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 6年第 4回定例会（第5号 6月24日） 本会議",
+      "date": "2024-06-24",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-24--jikuhara-shouko--r060624a-6667-824",
+      "member_id": "kurayoshi-city--jikuhara-shouko",
+      "meeting_name": "令和 6年第 4回定例会（第5号 6月24日） 本会議",
+      "date": "2024-06-24",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-06-24--a945391aa5--r060624a-11816-824",
+      "member_id": null,
+      "meeting_name": "令和 6年第 4回定例会（第5号 6月24日） 本会議",
+      "date": "2024-06-24",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-07-03--8cbc107637--r060703a-5760-825",
+      "member_id": null,
+      "meeting_name": "令和 6年第 4回定例会（第6号 7月 3日） 本会議",
+      "date": "2024-07-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-07-03--ootsu-masakatsu--r060703a-3246-825",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 6年第 4回定例会（第6号 7月 3日） 本会議",
+      "date": "2024-07-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-07-03--yamane-kenshi--r060703a-1996-825",
+      "member_id": "kurayoshi-city--yamane-kenshi",
+      "meeting_name": "令和 6年第 4回定例会（第6号 7月 3日） 本会議",
+      "date": "2024-07-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-07-03--fukui-yasuo--r060703a-13562-825",
+      "member_id": "kurayoshi-city--fukui-yasuo",
+      "meeting_name": "令和 6年第 4回定例会（第6号 7月 3日） 本会議",
+      "date": "2024-07-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-07-03--fukutani-naomi--r060703a-424-825",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 6年第 4回定例会（第6号 7月 3日） 本会議",
+      "date": "2024-07-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-07-03--yoneda-katsuhiko--r060703a-924-825",
+      "member_id": "kurayoshi-city--yoneda-katsuhiko",
+      "meeting_name": "令和 6年第 4回定例会（第6号 7月 3日） 本会議",
+      "date": "2024-07-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-07-03--a945391aa5--r060703a-3966-825",
+      "member_id": null,
+      "meeting_name": "令和 6年第 4回定例会（第6号 7月 3日） 本会議",
+      "date": "2024-07-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-08-23--8cbc107637--r060823a-4701-826",
+      "member_id": null,
+      "meeting_name": "令和 6年第 5回臨時会（第1号 8月23日） 本会議",
+      "date": "2024-08-23",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-08-23--ootsu-masakatsu--r060823a-3813-826",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 6年第 5回臨時会（第1号 8月23日） 本会議",
+      "date": "2024-08-23",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-08-23--fukutani-naomi--r060823a-514-826",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 6年第 5回臨時会（第1号 8月23日） 本会議",
+      "date": "2024-08-23",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-02--fukutani-naomi--r060902a-374-827",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 6年第 6回定例会（第1号 9月 2日） 本会議",
+      "date": "2024-09-02",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-03--e9440f7c2d--r060903a-112622-828",
+      "member_id": null,
+      "meeting_name": "令和 6年第 6回定例会（第2号 9月 3日） 本会議",
+      "date": "2024-09-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-03--ootsu-masakatsu--r060903a-142309-828",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 6年第 6回定例会（第2号 9月 3日） 本会議",
+      "date": "2024-09-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-03--yamane-kenshi--r060903a-76541-828",
+      "member_id": "kurayoshi-city--yamane-kenshi",
+      "meeting_name": "令和 6年第 6回定例会（第2号 9月 3日） 本会議",
+      "date": "2024-09-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-03--fukui-noriko--r060903a-41219-828",
+      "member_id": "kurayoshi-city--fukui-noriko",
+      "meeting_name": "令和 6年第 6回定例会（第2号 9月 3日） 本会議",
+      "date": "2024-09-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-03--fukutani-naomi--r060903a-242-828",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 6年第 6回定例会（第2号 9月 3日） 本会議",
+      "date": "2024-09-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-03--5f3d8ebb16--r060903a-1060-828",
+      "member_id": null,
+      "meeting_name": "令和 6年第 6回定例会（第2号 9月 3日） 本会議",
+      "date": "2024-09-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-04--672fcfe3f9--r060904a-18870-829",
+      "member_id": null,
+      "meeting_name": "令和 6年第 6回定例会（第3号 9月 4日） 本会議",
+      "date": "2024-09-04",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-04--asahi-touji--r060904a-700-829",
+      "member_id": "kurayoshi-city--asahi-touji",
+      "meeting_name": "令和 6年第 6回定例会（第3号 9月 4日） 本会議",
+      "date": "2024-09-04",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-04--tamura-shizumi--r060904a-42256-829",
+      "member_id": "kurayoshi-city--tamura-shizumi",
+      "meeting_name": "令和 6年第 6回定例会（第3号 9月 4日） 本会議",
+      "date": "2024-09-04",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-04--fukui-yasuo--r060904a-76575-829",
+      "member_id": "kurayoshi-city--fukui-yasuo",
+      "meeting_name": "令和 6年第 6回定例会（第3号 9月 4日） 本会議",
+      "date": "2024-09-04",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-04--fukutani-naomi--r060904a-242-829",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 6年第 6回定例会（第3号 9月 4日） 本会議",
+      "date": "2024-09-04",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-04--jikuhara-shouko--r060904a-114605-829",
+      "member_id": "kurayoshi-city--jikuhara-shouko",
+      "meeting_name": "令和 6年第 6回定例会（第3号 9月 4日） 本会議",
+      "date": "2024-09-04",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-05--8cbc107637--r060905a-102719-830",
+      "member_id": null,
+      "meeting_name": "令和 6年第 6回定例会（第4号 9月 5日） 本会議",
+      "date": "2024-09-05",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-05--fukutani-naomi--r060905a-242-830",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 6年第 6回定例会（第4号 9月 5日） 本会議",
+      "date": "2024-09-05",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-05--yoneda-katsuhiko--r060905a-668-830",
+      "member_id": "kurayoshi-city--yoneda-katsuhiko",
+      "meeting_name": "令和 6年第 6回定例会（第4号 9月 5日） 本会議",
+      "date": "2024-09-05",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-05--toba-masaaki--r060905a-68245-830",
+      "member_id": "kurayoshi-city--toba-masaaki",
+      "meeting_name": "令和 6年第 6回定例会（第4号 9月 5日） 本会議",
+      "date": "2024-09-05",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-05--a945391aa5--r060905a-39113-830",
+      "member_id": null,
+      "meeting_name": "令和 6年第 6回定例会（第4号 9月 5日） 本会議",
+      "date": "2024-09-05",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-09--8cbc107637--r060909a-894-831",
+      "member_id": null,
+      "meeting_name": "令和 6年第 6回定例会（第5号 9月 9日） 本会議",
+      "date": "2024-09-09",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-09--ootsu-masakatsu--r060909a-9022-831",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 6年第 6回定例会（第5号 9月 9日） 本会議",
+      "date": "2024-09-09",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-09--fukui-yasuo--r060909a-17814-831",
+      "member_id": "kurayoshi-city--fukui-yasuo",
+      "meeting_name": "令和 6年第 6回定例会（第5号 9月 9日） 本会議",
+      "date": "2024-09-09",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-09--fukutani-naomi--r060909a-312-831",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 6年第 6回定例会（第5号 9月 9日） 本会議",
+      "date": "2024-09-09",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-09--a945391aa5--r060909a-26914-831",
+      "member_id": null,
+      "meeting_name": "令和 6年第 6回定例会（第5号 9月 9日） 本会議",
+      "date": "2024-09-09",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-25--8cbc107637--r060925a-11388-832",
+      "member_id": null,
+      "meeting_name": "令和 6年第 6回定例会（第6号 9月25日） 本会議",
+      "date": "2024-09-25",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-25--e9440f7c2d--r060925a-5660-832",
+      "member_id": null,
+      "meeting_name": "令和 6年第 6回定例会（第6号 9月25日） 本会議",
+      "date": "2024-09-25",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-25--ootsu-masakatsu--r060925a-3646-832",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 6年第 6回定例会（第6号 9月25日） 本会議",
+      "date": "2024-09-25",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-25--yamane-kenshi--r060925a-1878-832",
+      "member_id": "kurayoshi-city--yamane-kenshi",
+      "meeting_name": "令和 6年第 6回定例会（第6号 9月25日） 本会議",
+      "date": "2024-09-25",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-25--fukui-yasuo--r060925a-6680-832",
+      "member_id": "kurayoshi-city--fukui-yasuo",
+      "meeting_name": "令和 6年第 6回定例会（第6号 9月25日） 本会議",
+      "date": "2024-09-25",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-25--fukutani-naomi--r060925a-426-832",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 6年第 6回定例会（第6号 9月25日） 本会議",
+      "date": "2024-09-25",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-09-25--yoneda-katsuhiko--r060925a-892-832",
+      "member_id": "kurayoshi-city--yoneda-katsuhiko",
+      "meeting_name": "令和 6年第 6回定例会（第6号 9月25日） 本会議",
+      "date": "2024-09-25",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-02--fukutani-naomi--r061202a-354-833",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 6年第 7回定例会（第1号12月 2日） 本会議",
+      "date": "2024-12-02",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-03--e9440f7c2d--r061203a-84698-834",
+      "member_id": null,
+      "meeting_name": "令和 6年第 7回定例会（第2号12月 3日） 本会議",
+      "date": "2024-12-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-03--ootsu-masakatsu--r061203a-116642-834",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 6年第 7回定例会（第2号12月 3日） 本会議",
+      "date": "2024-12-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-03--yamane-kenshi--r061203a-42736-834",
+      "member_id": "kurayoshi-city--yamane-kenshi",
+      "meeting_name": "令和 6年第 7回定例会（第2号12月 3日） 本会議",
+      "date": "2024-12-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-03--asahi-touji--r061203a-154511-834",
+      "member_id": "kurayoshi-city--asahi-touji",
+      "meeting_name": "令和 6年第 7回定例会（第2号12月 3日） 本会議",
+      "date": "2024-12-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-03--fukui-noriko--r061203a-798-834",
+      "member_id": "kurayoshi-city--fukui-noriko",
+      "meeting_name": "令和 6年第 7回定例会（第2号12月 3日） 本会議",
+      "date": "2024-12-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-03--fukutani-naomi--r061203a-244-834",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 6年第 7回定例会（第2号12月 3日） 本会議",
+      "date": "2024-12-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-04--672fcfe3f9--r061204a-702-835",
+      "member_id": null,
+      "meeting_name": "令和 6年第 7回定例会（第3号12月 4日） 本会議",
+      "date": "2024-12-04",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-04--tamura-shizumi--r061204a-26402-835",
+      "member_id": "kurayoshi-city--tamura-shizumi",
+      "meeting_name": "令和 6年第 7回定例会（第3号12月 4日） 本会議",
+      "date": "2024-12-04",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-04--fukui-yasuo--r061204a-143871-835",
+      "member_id": "kurayoshi-city--fukui-yasuo",
+      "meeting_name": "令和 6年第 7回定例会（第3号12月 4日） 本会議",
+      "date": "2024-12-04",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-04--fukutani-naomi--r061204a-244-835",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 6年第 7回定例会（第3号12月 4日） 本会議",
+      "date": "2024-12-04",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-04--5f3d8ebb16--r061204a-67980-835",
+      "member_id": null,
+      "meeting_name": "令和 6年第 7回定例会（第3号12月 4日） 本会議",
+      "date": "2024-12-04",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-04--toba-masaaki--r061204a-109135-835",
+      "member_id": "kurayoshi-city--toba-masaaki",
+      "meeting_name": "令和 6年第 7回定例会（第3号12月 4日） 本会議",
+      "date": "2024-12-04",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-05--1f95f27cff--r061205a-31108-836",
+      "member_id": null,
+      "meeting_name": "令和 6年第 7回定例会（第4号12月 5日） 本会議",
+      "date": "2024-12-05",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-05--8cbc107637--r061205a-111669-836",
+      "member_id": null,
+      "meeting_name": "令和 6年第 7回定例会（第4号12月 5日） 本会議",
+      "date": "2024-12-05",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-05--fukutani-naomi--r061205a-244-836",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 6年第 7回定例会（第4号12月 5日） 本会議",
+      "date": "2024-12-05",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-05--jikuhara-shouko--r061205a-676-836",
+      "member_id": "kurayoshi-city--jikuhara-shouko",
+      "meeting_name": "令和 6年第 7回定例会（第4号12月 5日） 本会議",
+      "date": "2024-12-05",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-05--yoneda-katsuhiko--r061205a-56084-836",
+      "member_id": "kurayoshi-city--yoneda-katsuhiko",
+      "meeting_name": "令和 6年第 7回定例会（第4号12月 5日） 本会議",
+      "date": "2024-12-05",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-05--a945391aa5--r061205a-78494-836",
+      "member_id": null,
+      "meeting_name": "令和 6年第 7回定例会（第4号12月 5日） 本会議",
+      "date": "2024-12-05",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-09--1f95f27cff--r061209a-58563-837",
+      "member_id": null,
+      "meeting_name": "令和 6年第 7回定例会（第5号12月 9日） 本会議",
+      "date": "2024-12-09",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-09--e9440f7c2d--r061209a-18175-837",
+      "member_id": null,
+      "meeting_name": "令和 6年第 7回定例会（第5号12月 9日） 本会議",
+      "date": "2024-12-09",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-09--ootsu-masakatsu--r061209a-12290-837",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 6年第 7回定例会（第5号12月 9日） 本会議",
+      "date": "2024-12-09",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-09--yamane-kenshi--r061209a-54271-837",
+      "member_id": "kurayoshi-city--yamane-kenshi",
+      "meeting_name": "令和 6年第 7回定例会（第5号12月 9日） 本会議",
+      "date": "2024-12-09",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-09--fukui-yasuo--r061209a-52205-837",
+      "member_id": "kurayoshi-city--fukui-yasuo",
+      "meeting_name": "令和 6年第 7回定例会（第5号12月 9日） 本会議",
+      "date": "2024-12-09",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-09--fukutani-naomi--r061209a-330-837",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 6年第 7回定例会（第5号12月 9日） 本会議",
+      "date": "2024-12-09",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-09--jikuhara-shouko--r061209a-2758-837",
+      "member_id": "kurayoshi-city--jikuhara-shouko",
+      "meeting_name": "令和 6年第 7回定例会（第5号12月 9日） 本会議",
+      "date": "2024-12-09",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-09--a945391aa5--r061209a-7652-837",
+      "member_id": null,
+      "meeting_name": "令和 6年第 7回定例会（第5号12月 9日） 本会議",
+      "date": "2024-12-09",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-18--8cbc107637--r061218a-12577-838",
+      "member_id": null,
+      "meeting_name": "令和 6年第 7回定例会（第6号12月18日） 本会議",
+      "date": "2024-12-18",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-18--e9440f7c2d--r061218a-14081-838",
+      "member_id": null,
+      "meeting_name": "令和 6年第 7回定例会（第6号12月18日） 本会議",
+      "date": "2024-12-18",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-18--ootsu-masakatsu--r061218a-5697-838",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 6年第 7回定例会（第6号12月18日） 本会議",
+      "date": "2024-12-18",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-18--yamane-kenshi--r061218a-18357-838",
+      "member_id": "kurayoshi-city--yamane-kenshi",
+      "meeting_name": "令和 6年第 7回定例会（第6号12月18日） 本会議",
+      "date": "2024-12-18",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-18--asahi-touji--r061218a-1356-838",
+      "member_id": "kurayoshi-city--asahi-touji",
+      "meeting_name": "令和 6年第 7回定例会（第6号12月18日） 本会議",
+      "date": "2024-12-18",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-18--tamura-shizumi--r061218a-36521-838",
+      "member_id": "kurayoshi-city--tamura-shizumi",
+      "meeting_name": "令和 6年第 7回定例会（第6号12月18日） 本会議",
+      "date": "2024-12-18",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-18--fukui-yasuo--r061218a-50439-838",
+      "member_id": "kurayoshi-city--fukui-yasuo",
+      "meeting_name": "令和 6年第 7回定例会（第6号12月18日） 本会議",
+      "date": "2024-12-18",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-18--fukutani-naomi--r061218a-500-838",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 6年第 7回定例会（第6号12月18日） 本会議",
+      "date": "2024-12-18",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-18--jikuhara-shouko--r061218a-22615-838",
+      "member_id": "kurayoshi-city--jikuhara-shouko",
+      "meeting_name": "令和 6年第 7回定例会（第6号12月18日） 本会議",
+      "date": "2024-12-18",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-18--yoneda-katsuhiko--r061218a-16641-838",
+      "member_id": "kurayoshi-city--yoneda-katsuhiko",
+      "meeting_name": "令和 6年第 7回定例会（第6号12月18日） 本会議",
+      "date": "2024-12-18",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-18--toba-masaaki--r061218a-27915-838",
+      "member_id": "kurayoshi-city--toba-masaaki",
+      "meeting_name": "令和 6年第 7回定例会（第6号12月18日） 本会議",
+      "date": "2024-12-18",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2024-12-18--a945391aa5--r061218a-33251-838",
+      "member_id": null,
+      "meeting_name": "令和 6年第 7回定例会（第6号12月18日） 本会議",
+      "date": "2024-12-18",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-01-08--ootsu-masakatsu--r070108a-13449-839",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 7年第 1回臨時会（第1号 1月 8日） 本会議",
+      "date": "2025-01-08",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-01-08--fukutani-naomi--r070108a-586-839",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 1回臨時会（第1号 1月 8日） 本会議",
+      "date": "2025-01-08",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-01-08--yoneda-katsuhiko--r070108a-12193-839",
+      "member_id": "kurayoshi-city--yoneda-katsuhiko",
+      "meeting_name": "令和 7年第 1回臨時会（第1号 1月 8日） 本会議",
+      "date": "2025-01-08",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-02-19--ootsu-masakatsu--r070219a-4934-840",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 7年第 2回臨時会（第1号 2月19日） 本会議",
+      "date": "2025-02-19",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-02-19--fukutani-naomi--r070219a-514-840",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 2回臨時会（第1号 2月19日） 本会議",
+      "date": "2025-02-19",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-03--fukutani-naomi--r070303a-352-841",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 3回定例会（第1号 3月 3日） 本会議",
+      "date": "2025-03-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-04--672fcfe3f9--r070304a-119687-842",
+      "member_id": null,
+      "meeting_name": "令和 7年第 3回定例会（第2号 3月 4日） 本会議",
+      "date": "2025-03-04",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-04--e9440f7c2d--r070304a-37981-842",
+      "member_id": null,
+      "meeting_name": "令和 7年第 3回定例会（第2号 3月 4日） 本会議",
+      "date": "2025-03-04",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-04--ootsu-masakatsu--r070304a-67670-842",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 7年第 3回定例会（第2号 3月 4日） 本会議",
+      "date": "2025-03-04",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-04--yamane-kenshi--r070304a-930-842",
+      "member_id": "kurayoshi-city--yamane-kenshi",
+      "meeting_name": "令和 7年第 3回定例会（第2号 3月 4日） 本会議",
+      "date": "2025-03-04",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-04--tamura-shizumi--r070304a-143736-842",
+      "member_id": "kurayoshi-city--tamura-shizumi",
+      "meeting_name": "令和 7年第 3回定例会（第2号 3月 4日） 本会議",
+      "date": "2025-03-04",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-04--fukutani-naomi--r070304a-242-842",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 3回定例会（第2号 3月 4日） 本会議",
+      "date": "2025-03-04",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-05--asahi-touji--r070305a-127648-843",
+      "member_id": "kurayoshi-city--asahi-touji",
+      "meeting_name": "令和 7年第 3回定例会（第3号 3月 5日） 本会議",
+      "date": "2025-03-05",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-05--fukui-noriko--r070305a-39672-843",
+      "member_id": "kurayoshi-city--fukui-noriko",
+      "meeting_name": "令和 7年第 3回定例会（第3号 3月 5日） 本会議",
+      "date": "2025-03-05",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-05--fukui-yasuo--r070305a-129740-843",
+      "member_id": "kurayoshi-city--fukui-yasuo",
+      "meeting_name": "令和 7年第 3回定例会（第3号 3月 5日） 本会議",
+      "date": "2025-03-05",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-05--fukutani-naomi--r070305a-242-843",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 3回定例会（第3号 3月 5日） 本会議",
+      "date": "2025-03-05",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-05--5f3d8ebb16--r070305a-698-843",
+      "member_id": null,
+      "meeting_name": "令和 7年第 3回定例会（第3号 3月 5日） 本会議",
+      "date": "2025-03-05",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-05--toba-masaaki--r070305a-99915-843",
+      "member_id": "kurayoshi-city--toba-masaaki",
+      "meeting_name": "令和 7年第 3回定例会（第3号 3月 5日） 本会議",
+      "date": "2025-03-05",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-05--a945391aa5--r070305a-70436-843",
+      "member_id": null,
+      "meeting_name": "令和 7年第 3回定例会（第3号 3月 5日） 本会議",
+      "date": "2025-03-05",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-06--1f95f27cff--r070306a-64366-844",
+      "member_id": null,
+      "meeting_name": "令和 7年第 3回定例会（第4号 3月 6日） 本会議",
+      "date": "2025-03-06",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-06--8cbc107637--r070306a-111493-844",
+      "member_id": null,
+      "meeting_name": "令和 7年第 3回定例会（第4号 3月 6日） 本会議",
+      "date": "2025-03-06",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-06--fukui-yasuo--r070306a-696-844",
+      "member_id": "kurayoshi-city--fukui-yasuo",
+      "meeting_name": "令和 7年第 3回定例会（第4号 3月 6日） 本会議",
+      "date": "2025-03-06",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-06--fukutani-naomi--r070306a-242-844",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 3回定例会（第4号 3月 6日） 本会議",
+      "date": "2025-03-06",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-06--jikuhara-shouko--r070306a-38552-844",
+      "member_id": "kurayoshi-city--jikuhara-shouko",
+      "meeting_name": "令和 7年第 3回定例会（第4号 3月 6日） 本会議",
+      "date": "2025-03-06",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-06--yoneda-katsuhiko--r070306a-89585-844",
+      "member_id": "kurayoshi-city--yoneda-katsuhiko",
+      "meeting_name": "令和 7年第 3回定例会（第4号 3月 6日） 本会議",
+      "date": "2025-03-06",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-10--ootsu-masakatsu--r070310a-3264-845",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 7年第 3回定例会（第5号 3月10日） 本会議",
+      "date": "2025-03-10",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-10--fukutani-naomi--r070310a-330-845",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 3回定例会（第5号 3月10日） 本会議",
+      "date": "2025-03-10",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-10--jikuhara-shouko--r070310a-16430-845",
+      "member_id": "kurayoshi-city--jikuhara-shouko",
+      "meeting_name": "令和 7年第 3回定例会（第5号 3月10日） 本会議",
+      "date": "2025-03-10",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-10--a945391aa5--r070310a-34681-845",
+      "member_id": null,
+      "meeting_name": "令和 7年第 3回定例会（第5号 3月10日） 本会議",
+      "date": "2025-03-10",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-25--e9440f7c2d--r070325a-25192-846",
+      "member_id": null,
+      "meeting_name": "令和 7年第 3回定例会（第6号 3月25日） 本会議",
+      "date": "2025-03-25",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-25--ootsu-masakatsu--r070325a-9642-846",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 7年第 3回定例会（第6号 3月25日） 本会議",
+      "date": "2025-03-25",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-25--yamane-kenshi--r070325a-7712-846",
+      "member_id": "kurayoshi-city--yamane-kenshi",
+      "meeting_name": "令和 7年第 3回定例会（第6号 3月25日） 本会議",
+      "date": "2025-03-25",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-25--asahi-touji--r070325a-2570-846",
+      "member_id": "kurayoshi-city--asahi-touji",
+      "meeting_name": "令和 7年第 3回定例会（第6号 3月25日） 本会議",
+      "date": "2025-03-25",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-25--fukutani-naomi--r070325a-472-846",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 3回定例会（第6号 3月25日） 本会議",
+      "date": "2025-03-25",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-25--yoneda-katsuhiko--r070325a-5744-846",
+      "member_id": "kurayoshi-city--yoneda-katsuhiko",
+      "meeting_name": "令和 7年第 3回定例会（第6号 3月25日） 本会議",
+      "date": "2025-03-25",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-03-25--toba-masaaki--r070325a-1120-846",
+      "member_id": "kurayoshi-city--toba-masaaki",
+      "meeting_name": "令和 7年第 3回定例会（第6号 3月25日） 本会議",
+      "date": "2025-03-25",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-11--e9440f7c2d--r070611a-16993-847",
+      "member_id": null,
+      "meeting_name": "令和 7年第 4回定例会（第1号 6月11日） 本会議",
+      "date": "2025-06-11",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-11--ootsu-masakatsu--r070611a-10621-847",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 7年第 4回定例会（第1号 6月11日） 本会議",
+      "date": "2025-06-11",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-11--fukui-yasuo--r070611a-1446-847",
+      "member_id": "kurayoshi-city--fukui-yasuo",
+      "meeting_name": "令和 7年第 4回定例会（第1号 6月11日） 本会議",
+      "date": "2025-06-11",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-11--fukutani-naomi--r070611a-402-847",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 4回定例会（第1号 6月11日） 本会議",
+      "date": "2025-06-11",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-12--672fcfe3f9--r070612a-101766-848",
+      "member_id": null,
+      "meeting_name": "令和 7年第 4回定例会（第2号 6月12日） 本会議",
+      "date": "2025-06-12",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-12--e9440f7c2d--r070612a-818-848",
+      "member_id": null,
+      "meeting_name": "令和 7年第 4回定例会（第2号 6月12日） 本会議",
+      "date": "2025-06-12",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-12--ootsu-masakatsu--r070612a-35613-848",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 7年第 4回定例会（第2号 6月12日） 本会議",
+      "date": "2025-06-12",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-12--asahi-touji--r070612a-75012-848",
+      "member_id": "kurayoshi-city--asahi-touji",
+      "meeting_name": "令和 7年第 4回定例会（第2号 6月12日） 本会議",
+      "date": "2025-06-12",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-12--tamura-shizumi--r070612a-121017-848",
+      "member_id": "kurayoshi-city--tamura-shizumi",
+      "meeting_name": "令和 7年第 4回定例会（第2号 6月12日） 本会議",
+      "date": "2025-06-12",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-12--fukutani-naomi--r070612a-244-848",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 4回定例会（第2号 6月12日） 本会議",
+      "date": "2025-06-12",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-13--yamane-kenshi--r070613a-71687-849",
+      "member_id": "kurayoshi-city--yamane-kenshi",
+      "meeting_name": "令和 7年第 4回定例会（第3号 6月13日） 本会議",
+      "date": "2025-06-13",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-13--fukui-noriko--r070613a-40101-849",
+      "member_id": "kurayoshi-city--fukui-noriko",
+      "meeting_name": "令和 7年第 4回定例会（第3号 6月13日） 本会議",
+      "date": "2025-06-13",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-13--fukutani-naomi--r070613a-244-849",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 4回定例会（第3号 6月13日） 本会議",
+      "date": "2025-06-13",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-13--yoneda-katsuhiko--r070613a-99551-849",
+      "member_id": "kurayoshi-city--yoneda-katsuhiko",
+      "meeting_name": "令和 7年第 4回定例会（第3号 6月13日） 本会議",
+      "date": "2025-06-13",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-13--5f3d8ebb16--r070613a-678-849",
+      "member_id": null,
+      "meeting_name": "令和 7年第 4回定例会（第3号 6月13日） 本会議",
+      "date": "2025-06-13",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-13--a945391aa5--r070613a-129197-849",
+      "member_id": null,
+      "meeting_name": "令和 7年第 4回定例会（第3号 6月13日） 本会議",
+      "date": "2025-06-13",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-16--1f95f27cff--r070616a-97693-850",
+      "member_id": null,
+      "meeting_name": "令和 7年第 4回定例会（第4号 6月16日） 本会議",
+      "date": "2025-06-16",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-16--8cbc107637--r070616a-118216-850",
+      "member_id": null,
+      "meeting_name": "令和 7年第 4回定例会（第4号 6月16日） 本会議",
+      "date": "2025-06-16",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-16--fukui-yasuo--r070616a-36604-850",
+      "member_id": "kurayoshi-city--fukui-yasuo",
+      "meeting_name": "令和 7年第 4回定例会（第4号 6月16日） 本会議",
+      "date": "2025-06-16",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-16--fukutani-naomi--r070616a-244-850",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 4回定例会（第4号 6月16日） 本会議",
+      "date": "2025-06-16",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-16--jikuhara-shouko--r070616a-60342-850",
+      "member_id": "kurayoshi-city--jikuhara-shouko",
+      "meeting_name": "令和 7年第 4回定例会（第4号 6月16日） 本会議",
+      "date": "2025-06-16",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-16--toba-masaaki--r070616a-658-850",
+      "member_id": "kurayoshi-city--toba-masaaki",
+      "meeting_name": "令和 7年第 4回定例会（第4号 6月16日） 本会議",
+      "date": "2025-06-16",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-19--ootsu-masakatsu--r070619a-1918-851",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 7年第 4回定例会（第5号 6月19日） 本会議",
+      "date": "2025-06-19",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-19--fukutani-naomi--r070619a-330-851",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 4回定例会（第5号 6月19日） 本会議",
+      "date": "2025-06-19",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-19--a945391aa5--r070619a-28061-851",
+      "member_id": null,
+      "meeting_name": "令和 7年第 4回定例会（第5号 6月19日） 本会議",
+      "date": "2025-06-19",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-30--8cbc107637--r070630a-5864-852",
+      "member_id": null,
+      "meeting_name": "令和 7年第 4回定例会（第6号 6月30日） 本会議",
+      "date": "2025-06-30",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-30--ootsu-masakatsu--r070630a-4906-852",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 7年第 4回定例会（第6号 6月30日） 本会議",
+      "date": "2025-06-30",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-30--yamane-kenshi--r070630a-1730-852",
+      "member_id": "kurayoshi-city--yamane-kenshi",
+      "meeting_name": "令和 7年第 4回定例会（第6号 6月30日） 本会議",
+      "date": "2025-06-30",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-30--fukui-yasuo--r070630a-19539-852",
+      "member_id": "kurayoshi-city--fukui-yasuo",
+      "meeting_name": "令和 7年第 4回定例会（第6号 6月30日） 本会議",
+      "date": "2025-06-30",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-30--fukutani-naomi--r070630a-426-852",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 4回定例会（第6号 6月30日） 本会議",
+      "date": "2025-06-30",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-30--yoneda-katsuhiko--r070630a-868-852",
+      "member_id": "kurayoshi-city--yoneda-katsuhiko",
+      "meeting_name": "令和 7年第 4回定例会（第6号 6月30日） 本会議",
+      "date": "2025-06-30",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-06-30--a945391aa5--r070630a-15338-852",
+      "member_id": null,
+      "meeting_name": "令和 7年第 4回定例会（第6号 6月30日） 本会議",
+      "date": "2025-06-30",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-08-25--fukutani-naomi--r070825a-376-853",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 5回定例会（第1号 8月25日） 本会議",
+      "date": "2025-08-25",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-08-26--672fcfe3f9--r070826a-92662-854",
+      "member_id": null,
+      "meeting_name": "令和 7年第 5回定例会（第2号 8月26日） 本会議",
+      "date": "2025-08-26",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-08-26--ootsu-masakatsu--r070826a-842-854",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 7年第 5回定例会（第2号 8月26日） 本会議",
+      "date": "2025-08-26",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-08-26--asahi-touji--r070826a-66400-854",
+      "member_id": "kurayoshi-city--asahi-touji",
+      "meeting_name": "令和 7年第 5回定例会（第2号 8月26日） 本会議",
+      "date": "2025-08-26",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-08-26--tamura-shizumi--r070826a-120559-854",
+      "member_id": "kurayoshi-city--tamura-shizumi",
+      "meeting_name": "令和 7年第 5回定例会（第2号 8月26日） 本会議",
+      "date": "2025-08-26",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-08-26--fukui-noriko--r070826a-150475-854",
+      "member_id": "kurayoshi-city--fukui-noriko",
+      "meeting_name": "令和 7年第 5回定例会（第2号 8月26日） 本会議",
+      "date": "2025-08-26",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-08-26--fukutani-naomi--r070826a-244-854",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 5回定例会（第2号 8月26日） 本会議",
+      "date": "2025-08-26",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-08-27--1f95f27cff--r070827a-71327-855",
+      "member_id": null,
+      "meeting_name": "令和 7年第 5回定例会（第3号 8月27日） 本会議",
+      "date": "2025-08-27",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-08-27--e9440f7c2d--r070827a-33938-855",
+      "member_id": null,
+      "meeting_name": "令和 7年第 5回定例会（第3号 8月27日） 本会議",
+      "date": "2025-08-27",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-08-27--yamane-kenshi--r070827a-700-855",
+      "member_id": "kurayoshi-city--yamane-kenshi",
+      "meeting_name": "令和 7年第 5回定例会（第3号 8月27日） 本会議",
+      "date": "2025-08-27",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-08-27--fukutani-naomi--r070827a-244-855",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 5回定例会（第3号 8月27日） 本会議",
+      "date": "2025-08-27",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-08-27--yoneda-katsuhiko--r070827a-94650-855",
+      "member_id": "kurayoshi-city--yoneda-katsuhiko",
+      "meeting_name": "令和 7年第 5回定例会（第3号 8月27日） 本会議",
+      "date": "2025-08-27",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-08-28--8cbc107637--r070828a-125260-856",
+      "member_id": null,
+      "meeting_name": "令和 7年第 5回定例会（第4号 8月28日） 本会議",
+      "date": "2025-08-28",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-08-28--fukui-yasuo--r070828a-63945-856",
+      "member_id": "kurayoshi-city--fukui-yasuo",
+      "meeting_name": "令和 7年第 5回定例会（第4号 8月28日） 本会議",
+      "date": "2025-08-28",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-08-28--fukutani-naomi--r070828a-244-856",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 5回定例会（第4号 8月28日） 本会議",
+      "date": "2025-08-28",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-08-28--jikuhara-shouko--r070828a-93786-856",
+      "member_id": "kurayoshi-city--jikuhara-shouko",
+      "meeting_name": "令和 7年第 5回定例会（第4号 8月28日） 本会議",
+      "date": "2025-08-28",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-08-28--toba-masaaki--r070828a-26343-856",
+      "member_id": "kurayoshi-city--toba-masaaki",
+      "meeting_name": "令和 7年第 5回定例会（第4号 8月28日） 本会議",
+      "date": "2025-08-28",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-08-28--a945391aa5--r070828a-700-856",
+      "member_id": null,
+      "meeting_name": "令和 7年第 5回定例会（第4号 8月28日） 本会議",
+      "date": "2025-08-28",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-09-01--ootsu-masakatsu--r070901a-3772-857",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 7年第 5回定例会（第5号 9月 1日） 本会議",
+      "date": "2025-09-01",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-09-01--fukutani-naomi--r070901a-328-857",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 5回定例会（第5号 9月 1日） 本会議",
+      "date": "2025-09-01",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-09-01--toba-masaaki--r070901a-33493-857",
+      "member_id": "kurayoshi-city--toba-masaaki",
+      "meeting_name": "令和 7年第 5回定例会（第5号 9月 1日） 本会議",
+      "date": "2025-09-01",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-09-01--a945391aa5--r070901a-9732-857",
+      "member_id": null,
+      "meeting_name": "令和 7年第 5回定例会（第5号 9月 1日） 本会議",
+      "date": "2025-09-01",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-09-16--ootsu-masakatsu--r070916a-4214-858",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 7年第 5回定例会（第6号 9月16日） 本会議",
+      "date": "2025-09-16",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-09-16--yamane-kenshi--r070916a-2562-858",
+      "member_id": "kurayoshi-city--yamane-kenshi",
+      "meeting_name": "令和 7年第 5回定例会（第6号 9月16日） 本会議",
+      "date": "2025-09-16",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-09-16--asahi-touji--r070916a-28897-858",
+      "member_id": "kurayoshi-city--asahi-touji",
+      "meeting_name": "令和 7年第 5回定例会（第6号 9月16日） 本会議",
+      "date": "2025-09-16",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-09-16--tamura-shizumi--r070916a-26053-858",
+      "member_id": "kurayoshi-city--tamura-shizumi",
+      "meeting_name": "令和 7年第 5回定例会（第6号 9月16日） 本会議",
+      "date": "2025-09-16",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-09-16--fukui-noriko--r070916a-23877-858",
+      "member_id": "kurayoshi-city--fukui-noriko",
+      "meeting_name": "令和 7年第 5回定例会（第6号 9月16日） 本会議",
+      "date": "2025-09-16",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-09-16--fukutani-naomi--r070916a-712-858",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 5回定例会（第6号 9月16日） 本会議",
+      "date": "2025-09-16",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-09-16--yoneda-katsuhiko--r070916a-1178-858",
+      "member_id": "kurayoshi-city--yoneda-katsuhiko",
+      "meeting_name": "令和 7年第 5回定例会（第6号 9月16日） 本会議",
+      "date": "2025-09-16",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-10-23--ootsu-masakatsu--r071023a-3566-859",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 7年第 6回臨時会（第1号10月23日） 本会議",
+      "date": "2025-10-23",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-10-23--asahi-touji--r071023a-11802-859",
+      "member_id": "kurayoshi-city--asahi-touji",
+      "meeting_name": "令和 7年第 6回臨時会（第1号10月23日） 本会議",
+      "date": "2025-10-23",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-10-23--fukutani-naomi--r071023a-6994-859",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 6回臨時会（第1号10月23日） 本会議",
+      "date": "2025-10-23",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-10-23--fukutani-naomi--r071023a-7748-859",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 6回臨時会（第1号10月23日） 本会議",
+      "date": "2025-10-23",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-10-23--yoneda-katsuhiko--r071023a-854-859",
+      "member_id": "kurayoshi-city--yoneda-katsuhiko",
+      "meeting_name": "令和 7年第 6回臨時会（第1号10月23日） 本会議",
+      "date": "2025-10-23",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-10-27--ootsu-masakatsu--r071027a-7592-860",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 7年第 6回臨時会（第2号10月27日） 本会議",
+      "date": "2025-10-27",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-10-27--fukutani-naomi--r071027a-732-860",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 6回臨時会（第2号10月27日） 本会議",
+      "date": "2025-10-27",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-01--fukutani-naomi--r071201a-354-861",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 7回定例会（第1号12月 1日） 本会議",
+      "date": "2025-12-01",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-02--masuda-kouji--r071202a-33109-862",
+      "member_id": "kurayoshi-city--masuda-kouji",
+      "meeting_name": "令和 7年第 7回定例会（第2号12月 2日） 本会議",
+      "date": "2025-12-02",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-02--ootsu-masakatsu--r071202a-151697-862",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 7年第 7回定例会（第2号12月 2日） 本会議",
+      "date": "2025-12-02",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-02--asahi-touji--r071202a-824-862",
+      "member_id": "kurayoshi-city--asahi-touji",
+      "meeting_name": "令和 7年第 7回定例会（第2号12月 2日） 本会議",
+      "date": "2025-12-02",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-02--tamura-shizumi--r071202a-73330-862",
+      "member_id": "kurayoshi-city--tamura-shizumi",
+      "meeting_name": "令和 7年第 7回定例会（第2号12月 2日） 本会議",
+      "date": "2025-12-02",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-02--fukui-noriko--r071202a-117800-862",
+      "member_id": "kurayoshi-city--fukui-noriko",
+      "meeting_name": "令和 7年第 7回定例会（第2号12月 2日） 本会議",
+      "date": "2025-12-02",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-02--fukui-yasuo--r071202a-200399-862",
+      "member_id": "kurayoshi-city--fukui-yasuo",
+      "meeting_name": "令和 7年第 7回定例会（第2号12月 2日） 本会議",
+      "date": "2025-12-02",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-02--fukuda-jun--r071202a-54830-862",
+      "member_id": "kurayoshi-city--fukuda-jun",
+      "meeting_name": "令和 7年第 7回定例会（第2号12月 2日） 本会議",
+      "date": "2025-12-02",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-02--fukutani-naomi--r071202a-244-862",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 7回定例会（第2号12月 2日） 本会議",
+      "date": "2025-12-02",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-03--nakayama-akio--r071203a-30892-863",
+      "member_id": "kurayoshi-city--nakayama-akio",
+      "meeting_name": "令和 7年第 7回定例会（第3号12月 3日） 本会議",
+      "date": "2025-12-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-03--yamashita-tatsuya--r071203a-92472-863",
+      "member_id": "kurayoshi-city--yamashita-tatsuya",
+      "meeting_name": "令和 7年第 7回定例会（第3号12月 3日） 本会議",
+      "date": "2025-12-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-03--yamane-kenshi--r071203a-702-863",
+      "member_id": "kurayoshi-city--yamane-kenshi",
+      "meeting_name": "令和 7年第 7回定例会（第3号12月 3日） 本会議",
+      "date": "2025-12-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-03--fukutani-naomi--r071203a-244-863",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 7回定例会（第3号12月 3日） 本会議",
+      "date": "2025-12-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-03--fujii-yousuke--r071203a-126480-863",
+      "member_id": "kurayoshi-city--fujii-yousuke",
+      "meeting_name": "令和 7年第 7回定例会（第3号12月 3日） 本会議",
+      "date": "2025-12-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-03--takahashi-yoshihiro--r071203a-61491-863",
+      "member_id": "kurayoshi-city--takahashi-yoshihiro",
+      "meeting_name": "令和 7年第 7回定例会（第3号12月 3日） 本会議",
+      "date": "2025-12-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-04--fukui-yasuo--r071204a-69574-864",
+      "member_id": "kurayoshi-city--fukui-yasuo",
+      "meeting_name": "令和 7年第 7回定例会（第4号12月 4日） 本会議",
+      "date": "2025-12-04",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-04--fukutani-naomi--r071204a-244-864",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 7回定例会（第4号12月 4日） 本会議",
+      "date": "2025-12-04",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-04--jikuhara-shouko--r071204a-676-864",
+      "member_id": "kurayoshi-city--jikuhara-shouko",
+      "meeting_name": "令和 7年第 7回定例会（第4号12月 4日） 本会議",
+      "date": "2025-12-04",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-04--yoneda-katsuhiko--r071204a-112802-864",
+      "member_id": "kurayoshi-city--yoneda-katsuhiko",
+      "meeting_name": "令和 7年第 7回定例会（第4号12月 4日） 本会議",
+      "date": "2025-12-04",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-04--manba-eri--r071204a-93492-864",
+      "member_id": "kurayoshi-city--manba-eri",
+      "meeting_name": "令和 7年第 7回定例会（第4号12月 4日） 本会議",
+      "date": "2025-12-04",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-04--toba-masaaki--r071204a-31250-864",
+      "member_id": "kurayoshi-city--toba-masaaki",
+      "meeting_name": "令和 7年第 7回定例会（第4号12月 4日） 本会議",
+      "date": "2025-12-04",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-08--ootsu-masakatsu--r071208a-1518-865",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 7年第 7回定例会（第5号12月 8日） 本会議",
+      "date": "2025-12-08",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-08--yamane-kenshi--r071208a-34530-865",
+      "member_id": "kurayoshi-city--yamane-kenshi",
+      "meeting_name": "令和 7年第 7回定例会（第5号12月 8日） 本会議",
+      "date": "2025-12-08",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-08--tamura-shizumi--r071208a-8368-865",
+      "member_id": "kurayoshi-city--tamura-shizumi",
+      "meeting_name": "令和 7年第 7回定例会（第5号12月 8日） 本会議",
+      "date": "2025-12-08",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-08--fukutani-naomi--r071208a-582-865",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 7回定例会（第5号12月 8日） 本会議",
+      "date": "2025-12-08",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-08--yoneda-katsuhiko--r071208a-17038-865",
+      "member_id": "kurayoshi-city--yoneda-katsuhiko",
+      "meeting_name": "令和 7年第 7回定例会（第5号12月 8日） 本会議",
+      "date": "2025-12-08",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-08--toba-masaaki--r071208a-21806-865",
+      "member_id": "kurayoshi-city--toba-masaaki",
+      "meeting_name": "令和 7年第 7回定例会（第5号12月 8日） 本会議",
+      "date": "2025-12-08",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-17--nakayama-akio--r071217a-28062-866",
+      "member_id": "kurayoshi-city--nakayama-akio",
+      "meeting_name": "令和 7年第 7回定例会（第6号12月17日） 本会議",
+      "date": "2025-12-17",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-17--masuda-kouji--r071217a-2766-866",
+      "member_id": "kurayoshi-city--masuda-kouji",
+      "meeting_name": "令和 7年第 7回定例会（第6号12月17日） 本会議",
+      "date": "2025-12-17",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-17--ootsu-masakatsu--r071217a-4204-866",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 7年第 7回定例会（第6号12月17日） 本会議",
+      "date": "2025-12-17",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-17--yamane-kenshi--r071217a-30092-866",
+      "member_id": "kurayoshi-city--yamane-kenshi",
+      "meeting_name": "令和 7年第 7回定例会（第6号12月17日） 本会議",
+      "date": "2025-12-17",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-17--tamura-shizumi--r071217a-894-866",
+      "member_id": "kurayoshi-city--tamura-shizumi",
+      "meeting_name": "令和 7年第 7回定例会（第6号12月17日） 本会議",
+      "date": "2025-12-17",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-17--fukui-yasuo--r071217a-8638-866",
+      "member_id": "kurayoshi-city--fukui-yasuo",
+      "meeting_name": "令和 7年第 7回定例会（第6号12月17日） 本会議",
+      "date": "2025-12-17",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-17--fukutani-naomi--r071217a-428-866",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 7年第 7回定例会（第6号12月17日） 本会議",
+      "date": "2025-12-17",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-17--fujii-yousuke--r071217a-18880-866",
+      "member_id": "kurayoshi-city--fujii-yousuke",
+      "meeting_name": "令和 7年第 7回定例会（第6号12月17日） 本会議",
+      "date": "2025-12-17",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2025-12-17--toba-masaaki--r071217a-9142-866",
+      "member_id": "kurayoshi-city--toba-masaaki",
+      "meeting_name": "令和 7年第 7回定例会（第6号12月17日） 本会議",
+      "date": "2025-12-17",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-01-14--ootsu-masakatsu--r080114a-15020-867",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 8年第 1回臨時会（第1号 1月14日） 本会議",
+      "date": "2026-01-14",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-01-14--tamura-shizumi--r080114a-14202-867",
+      "member_id": "kurayoshi-city--tamura-shizumi",
+      "meeting_name": "令和 8年第 1回臨時会（第1号 1月14日） 本会議",
+      "date": "2026-01-14",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-01-14--fukutani-naomi--r080114a-548-867",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 8年第 1回臨時会（第1号 1月14日） 本会議",
+      "date": "2026-01-14",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-02-24--fukutani-naomi--r080224a-354-868",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 8年第 2回定例会（第1号 2月24日） 本会議",
+      "date": "2026-02-24",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-02-25--masuda-kouji--r080225a-802-869",
+      "member_id": "kurayoshi-city--masuda-kouji",
+      "meeting_name": "令和 8年第 2回定例会（第2号 2月25日） 本会議",
+      "date": "2026-02-25",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-02-25--ootsu-masakatsu--r080225a-111875-869",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 8年第 2回定例会（第2号 2月25日） 本会議",
+      "date": "2026-02-25",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-02-25--asahi-touji--r080225a-174197-869",
+      "member_id": "kurayoshi-city--asahi-touji",
+      "meeting_name": "令和 8年第 2回定例会（第2号 2月25日） 本会議",
+      "date": "2026-02-25",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-02-25--tamura-shizumi--r080225a-42620-869",
+      "member_id": "kurayoshi-city--tamura-shizumi",
+      "meeting_name": "令和 8年第 2回定例会（第2号 2月25日） 本会議",
+      "date": "2026-02-25",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-02-25--fukui-noriko--r080225a-81802-869",
+      "member_id": "kurayoshi-city--fukui-noriko",
+      "meeting_name": "令和 8年第 2回定例会（第2号 2月25日） 本会議",
+      "date": "2026-02-25",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-02-25--fukuda-jun--r080225a-23561-869",
+      "member_id": "kurayoshi-city--fukuda-jun",
+      "meeting_name": "令和 8年第 2回定例会（第2号 2月25日） 本会議",
+      "date": "2026-02-25",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-02-25--fukutani-naomi--r080225a-244-869",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 8年第 2回定例会（第2号 2月25日） 本会議",
+      "date": "2026-02-25",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-02-26--fukui-yasuo--r080226a-72864-870",
+      "member_id": "kurayoshi-city--fukui-yasuo",
+      "meeting_name": "令和 8年第 2回定例会（第3号 2月26日） 本会議",
+      "date": "2026-02-26",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-02-26--fukutani-naomi--r080226a-244-870",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 8年第 2回定例会（第3号 2月26日） 本会議",
+      "date": "2026-02-26",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-02-26--jikuhara-shouko--r080226a-127747-870",
+      "member_id": "kurayoshi-city--jikuhara-shouko",
+      "meeting_name": "令和 8年第 2回定例会（第3号 2月26日） 本会議",
+      "date": "2026-02-26",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-02-26--yoneda-katsuhiko--r080226a-111557-870",
+      "member_id": "kurayoshi-city--yoneda-katsuhiko",
+      "meeting_name": "令和 8年第 2回定例会（第3号 2月26日） 本会議",
+      "date": "2026-02-26",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-02-26--manba-eri--r080226a-51903-870",
+      "member_id": "kurayoshi-city--manba-eri",
+      "meeting_name": "令和 8年第 2回定例会（第3号 2月26日） 本会議",
+      "date": "2026-02-26",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-02-26--toba-masaaki--r080226a-696-870",
+      "member_id": "kurayoshi-city--toba-masaaki",
+      "meeting_name": "令和 8年第 2回定例会（第3号 2月26日） 本会議",
+      "date": "2026-02-26",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-02-27--nakayama-akio--r080227a-109099-871",
+      "member_id": "kurayoshi-city--nakayama-akio",
+      "meeting_name": "令和 8年第 2回定例会（第4号 2月27日） 本会議",
+      "date": "2026-02-27",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-02-27--yamashita-tatsuya--r080227a-698-871",
+      "member_id": "kurayoshi-city--yamashita-tatsuya",
+      "meeting_name": "令和 8年第 2回定例会（第4号 2月27日） 本会議",
+      "date": "2026-02-27",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-02-27--yamane-kenshi--r080227a-46209-871",
+      "member_id": "kurayoshi-city--yamane-kenshi",
+      "meeting_name": "令和 8年第 2回定例会（第4号 2月27日） 本会議",
+      "date": "2026-02-27",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-02-27--fukutani-naomi--r080227a-244-871",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 8年第 2回定例会（第4号 2月27日） 本会議",
+      "date": "2026-02-27",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-02-27--fujii-yousuke--r080227a-31347-871",
+      "member_id": "kurayoshi-city--fujii-yousuke",
+      "meeting_name": "令和 8年第 2回定例会（第4号 2月27日） 本会議",
+      "date": "2026-02-27",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-02-27--takahashi-yoshihiro--r080227a-82392-871",
+      "member_id": "kurayoshi-city--takahashi-yoshihiro",
+      "meeting_name": "令和 8年第 2回定例会（第4号 2月27日） 本会議",
+      "date": "2026-02-27",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-03-03--masuda-kouji--r080303a-40624-872",
+      "member_id": "kurayoshi-city--masuda-kouji",
+      "meeting_name": "令和 8年第 2回定例会（第5号 3月 3日） 本会議",
+      "date": "2026-03-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-03-03--ootsu-masakatsu--r080303a-3013-872",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 8年第 2回定例会（第5号 3月 3日） 本会議",
+      "date": "2026-03-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-03-03--asahi-touji--r080303a-19427-872",
+      "member_id": "kurayoshi-city--asahi-touji",
+      "meeting_name": "令和 8年第 2回定例会（第5号 3月 3日） 本会議",
+      "date": "2026-03-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-03-03--tamura-shizumi--r080303a-47448-872",
+      "member_id": "kurayoshi-city--tamura-shizumi",
+      "meeting_name": "令和 8年第 2回定例会（第5号 3月 3日） 本会議",
+      "date": "2026-03-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-03-03--fukutani-naomi--r080303a-380-872",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 8年第 2回定例会（第5号 3月 3日） 本会議",
+      "date": "2026-03-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-03-03--jikuhara-shouko--r080303a-14931-872",
+      "member_id": "kurayoshi-city--jikuhara-shouko",
+      "meeting_name": "令和 8年第 2回定例会（第5号 3月 3日） 本会議",
+      "date": "2026-03-03",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-03-17--nakayama-akio--r080317a-11210-873",
+      "member_id": "kurayoshi-city--nakayama-akio",
+      "meeting_name": "令和 8年第 2回定例会（第6号 3月17日） 本会議",
+      "date": "2026-03-17",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-03-17--masuda-kouji--r080317a-2646-873",
+      "member_id": "kurayoshi-city--masuda-kouji",
+      "meeting_name": "令和 8年第 2回定例会（第6号 3月17日） 本会議",
+      "date": "2026-03-17",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-03-17--ootsu-masakatsu--r080317a-3496-873",
+      "member_id": "kurayoshi-city--ootsu-masakatsu",
+      "meeting_name": "令和 8年第 2回定例会（第6号 3月17日） 本会議",
+      "date": "2026-03-17",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-03-17--yamane-kenshi--r080317a-6358-873",
+      "member_id": "kurayoshi-city--yamane-kenshi",
+      "meeting_name": "令和 8年第 2回定例会（第6号 3月17日） 本会議",
+      "date": "2026-03-17",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-03-17--tamura-shizumi--r080317a-892-873",
+      "member_id": "kurayoshi-city--tamura-shizumi",
+      "meeting_name": "令和 8年第 2回定例会（第6号 3月17日） 本会議",
+      "date": "2026-03-17",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-03-17--fukutani-naomi--r080317a-426-873",
+      "member_id": "kurayoshi-city--fukutani-naomi",
+      "meeting_name": "令和 8年第 2回定例会（第6号 3月17日） 本会議",
+      "date": "2026-03-17",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    },
+    {
+      "id": "kurayoshi-city--2026-03-17--toba-masaaki--r080317a-5546-873",
+      "member_id": "kurayoshi-city--toba-masaaki",
+      "meeting_name": "令和 8年第 2回定例会（第6号 3月17日） 本会議",
+      "date": "2026-03-17",
+      "kind": "本会議",
+      "summary": null,
+      "source_url": "https://www.kensakusystem.jp/kurayoshi/index.html"
+    }
+  ],
+  "updated_at": "2026-06-10T18:24:25+00:00"
+}

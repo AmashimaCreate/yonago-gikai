@@ -21,6 +21,22 @@ Phase 0時点では鳥取3市を `ssp.kaigiroku.net` 系としていたが、公
 - `www.kensakusystem.jp` 旧系統の発言者プルダウンには、CP932の拡張領域で複数の符号化候補を持つ異体字が含まれる場合がある。米子市の `岩﨑議員` はHTML raw value上の `﨑` が `fa b1` だが、Unicode文字列として再エンコードすると `ed 95` になり、CGI検索が0件になる。発言者検索ではプルダウン `value` のraw bytesを保持し、そのままフォーム送信する必要がある。
 - `ResultFrame.exe` の復元URLは素のGETでframesetまでは返るが、個別発言への永続的な直接リンクとしては扱いにくい。`speeches.json` の `source_url` は `Code` を焼き込まず、各tenantの静的検索入口 `index.html` にフォールバックする。
 
+### Phase 3 kensakusystem legacy 実測
+
+米子・倉吉・境港の3市は、`minutes_base_url` のtenant差し替えのみで同一アダプタを実行できた。自治体固有の分岐・個別コードは不要だった。
+
+| 議会 | tenant | speaker1候補 | speeches件数 | member_id紐付け | 0件speaker | 補足 |
+|---|---|---:|---:|---:|---|---|
+| 米子市議会 | `yonago-s` | 26 | 286 | 286/286（100.0%） | なし | `岩﨑議員` はraw value送信により6件取得。 |
+| 倉吉市議会 | `kurayoshi` | 23 | 290 | 231/290（79.7%） | なし | 未照合6名は現行 `members.json` にいない過去議員。現職17名は全員紐付けあり。 |
+| 境港市議会 | `sakaiminato` | 14 | 190 | 0/190（0.0%） | なし | `members.json` 未生成のため全件 `member_id: null`。議員名簿の手動転記後に再照合可能。 |
+
+共通化所見:
+
+- `index.html` から `Search2.exe?Code=...` を抽出する構造、`speaker1` プルダウン、年タブ `changeyear(...)`、検索結果の `Javascript:go('context')` は3市で共通。
+- 差があったのは発言者valueの表記だけ。米子は「姓+議員」、倉吉・境港はフルネームだが、プルダウンvalueを正として扱えば自治体固有対応なしで吸収できる。
+- `source_url` は3市とも `https://www.kensakusystem.jp/{tenant}/index.html` の静的入口を保存する。
+
 ### 議員別賛否データの所在
 
 | 議会 | 所在 | 形式 | 判断 |
