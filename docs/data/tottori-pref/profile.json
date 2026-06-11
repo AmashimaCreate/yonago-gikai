@@ -1,16 +1,41 @@
 {
   "council_id": "tottori-pref",
-  "population": null,
-  "households": null,
-  "budget_general_yen": null,
-  "fiscal_index": null,
+  "population": {
+    "value": 519094,
+    "as_of": "2026-05-01",
+    "source_name": "鳥取県の推計人口（令和8年5月1日現在、報告書全文）",
+    "source_url": "https://www.pref.tottori.lg.jp/secure/1427832/tottorijinko_R0805.pdf"
+  },
+  "households": {
+    "value": 220147,
+    "as_of": "2026-05-01",
+    "source_name": "鳥取県の推計人口（令和8年5月1日現在、報告書全文）",
+    "source_url": "https://www.pref.tottori.lg.jp/secure/1427832/tottorijinko_R0805.pdf"
+  },
+  "budget_general_yen": {
+    "value": 396087279000,
+    "fiscal_year": 2026,
+    "source_name": "令和8年度当初予算案の概要・分析（一般会計396,087,279千円）",
+    "source_url": "https://www.pref.tottori.lg.jp/secure/1417694/R8tousyogaiyoubunseki.pdf"
+  },
+  "fiscal_index": {
+    "value": 0.27,
+    "fiscal_year": 2023,
+    "source_name": "鳥取県の財政状況（財政力指数・令和5年度決算ベース）",
+    "source_url": "https://www.pref.tottori.lg.jp/317256.htm"
+  },
   "aging_rate_pct": null,
-  "local_debt_yen": null,
+  "local_debt_yen": {
+    "value": 600400000000,
+    "fiscal_year": 2023,
+    "source_name": "鳥取県の財政状況について（鳥取県IR資料抜粋、県債残高の推移（一般会計）・令和5年度末6,004億円）",
+    "source_url": "https://www.pref.tottori.lg.jp/secure/1355566/R6IRbassui.pdf"
+  },
   "member_salary_monthly_yen": null,
   "per_capita": {
-    "population_per_member": null,
-    "budget_per_capita_yen": null,
-    "debt_per_capita_yen": null
+    "population_per_member": 14831.3,
+    "budget_per_capita_yen": 763036,
+    "debt_per_capita_yen": 1156631
   },
-  "updated_at": "2026-06-11T00:31:50+00:00"
+  "updated_at": "2026-06-11T18:40:18+00:00"
 }
