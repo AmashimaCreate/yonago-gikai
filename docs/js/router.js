@@ -4,6 +4,10 @@ export function parseRoute(hash = window.location.hash) {
 
   if (parts.length === 0) return { name: "national" };
 
+  if (parts[0] === "about" && parts.length === 1) {
+    return { name: "about" };
+  }
+
   if (parts[0] === "councils" && parts[1]) {
     const to = parts[2] === "members" && parts[3]
       ? memberPath("tottori", parts[1], parts[3])
@@ -35,6 +39,10 @@ export function topPath() {
 
 export function prefPath(prefecture) {
   return `#/pref/${encodeURIComponent(prefecture)}`;
+}
+
+export function aboutPath() {
+  return "#/about";
 }
 
 export function councilPath(prefecture, councilId) {

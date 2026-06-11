@@ -2,15 +2,15 @@ import { state } from "./state.js";
 import { el } from "./utils.js";
 import { memberPath } from "./router.js";
 
-const NEUTRAL_COLORS = [
-  "#64748b",
-  "#708090",
-  "#6b7280",
-  "#5f6f7a",
-  "#737373",
-  "#6d6f85",
-  "#68756d",
-  "#756f68",
+const IDENTIFICATION_COLORS = [
+  "#0072b2", // blue
+  "#e69f00", // orange
+  "#009e73", // bluish green
+  "#cc79a7", // reddish purple
+  "#56b4e9", // sky blue
+  "#d55e00", // vermillion
+  "#f0e442", // yellow
+  "#6b5b95", // purple
 ];
 
 // 役職の並び順(同役職内は kana 五十音順)
@@ -20,17 +20,17 @@ const ROLE_ORDER = { "委員長": 0, "副委員長": 1, "委員": 2 };
 const TERM_RANGE = [1, 2, 3, 4, 5, 6];
 
 export function kaihaColor(kaiha) {
-  return neutralColor(kaiha || "");
+  return identificationColor(kaiha || "");
 }
 
 function committeeColor(type) {
-  return neutralColor(type || "");
+  return identificationColor(type || "");
 }
 
-function neutralColor(value) {
+function identificationColor(value) {
   let hash = 0;
   for (const ch of value) hash = (hash * 31 + ch.charCodeAt(0)) >>> 0;
-  return NEUTRAL_COLORS[hash % NEUTRAL_COLORS.length];
+  return IDENTIFICATION_COLORS[hash % IDENTIFICATION_COLORS.length];
 }
 
 function memberKana(member) {
