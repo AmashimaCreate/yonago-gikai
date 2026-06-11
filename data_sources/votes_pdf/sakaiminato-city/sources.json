@@ -1,0 +1,76 @@
+{
+  "council_id": "sakaiminato-city",
+  "acquisition": "manual_download",
+  "downloaded_at": "2026-06-11",
+  "downloaded_by": "KT(手動・ブラウザ)",
+  "source_url": "https://www.city.sakaiminato.lg.jp/index.php?view=2189",
+  "note": "個別PDFのURLは境港市サイトの年別フォルダ内。robots制約により機械検証不可",
+  "files": [
+    {
+      "filename": "00107930-WtYEYX.pdf",
+      "session": "令和6年1月臨時会",
+      "title": "令和６年１月臨時会 議決結果一覧表【議案】",
+      "source_url": "https://www.city.sakaiminato.lg.jp/index.php?view=2189"
+    },
+    {
+      "filename": "00107930-lOKUAN.pdf",
+      "session": "令和6年3月定例会",
+      "title": "令和６年３月定例会 議決結果一覧表【議案】",
+      "source_url": "https://www.city.sakaiminato.lg.jp/index.php?view=2189"
+    },
+    {
+      "filename": "00113650-IgRfhR.pdf",
+      "session": "令和7年1月臨時会",
+      "title": "令和７年１月臨時会 議決結果一覧表【議案】",
+      "source_url": "https://www.city.sakaiminato.lg.jp/index.php?view=2189"
+    },
+    {
+      "filename": "00113650-qx0b98.pdf",
+      "session": "令和7年3月定例会",
+      "title": "令和７年３月定例会 議決結果一覧表【議案】",
+      "source_url": "https://www.city.sakaiminato.lg.jp/index.php?view=2189"
+    },
+    {
+      "filename": "00113650-IlWeZB.pdf",
+      "session": "令和7年5月臨時会",
+      "title": "令和７年５月臨時会 議決結果一覧表【議案】",
+      "source_url": "https://www.city.sakaiminato.lg.jp/index.php?view=2189"
+    },
+    {
+      "filename": "00113650-X4iQBm.pdf",
+      "session": "令和7年6月定例会",
+      "title": "令和７年６月定例会 議決結果一覧表【議案】",
+      "source_url": "https://www.city.sakaiminato.lg.jp/index.php?view=2189"
+    },
+    {
+      "filename": "00113650-mqg7FO.pdf",
+      "session": "令和7年9月定例会",
+      "title": "令和７年９月定例会 議決結果一覧表【議案】",
+      "source_url": "https://www.city.sakaiminato.lg.jp/index.php?view=2189"
+    },
+    {
+      "filename": "00113650-wC65lL.pdf",
+      "session": "令和7年11月臨時会",
+      "title": "令和７年１１月臨時会 議決結果一覧表【議案】",
+      "source_url": "https://www.city.sakaiminato.lg.jp/index.php?view=2189"
+    },
+    {
+      "filename": "00113650-vwmF47.pdf",
+      "session": "令和7年12月定例会",
+      "title": "令和７年１２月定例会 議決結果一覧表【議案】",
+      "source_url": "https://www.city.sakaiminato.lg.jp/index.php?view=2189"
+    },
+    {
+      "filename": "00114697-uCnuyn.pdf",
+      "session": "令和8年3月定例会",
+      "title": "令和８年３月定例会 議決結果一覧表【議案】",
+      "source_url": "https://www.city.sakaiminato.lg.jp/index.php?view=2189"
+    },
+    {
+      "filename": "00115145-YBMHSi.pdf",
+      "session": "令和8年6月定例会",
+      "title": "令和８年６月定例会 議決結果一覧表【議案】",
+      "source_url": "https://www.city.sakaiminato.lg.jp/index.php?view=2189"
+    }
+  ]
+}
