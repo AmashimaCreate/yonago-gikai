@@ -1,16 +1,41 @@
 {
   "council_id": "tottori-city",
-  "population": null,
-  "households": null,
-  "budget_general_yen": null,
-  "fiscal_index": null,
+  "population": {
+    "value": 175911,
+    "as_of": "2026-04-30",
+    "source_name": "鳥取市の人口・世帯数（令和8年4月30日現在）",
+    "source_url": "https://www.city.tottori.lg.jp/page/1013.html"
+  },
+  "households": {
+    "value": 82178,
+    "as_of": "2026-04-30",
+    "source_name": "鳥取市の人口・世帯数（令和8年4月30日現在）",
+    "source_url": "https://www.city.tottori.lg.jp/page/1013.html"
+  },
+  "budget_general_yen": {
+    "value": 108700000000,
+    "fiscal_year": 2026,
+    "source_name": "令和8年度当初予算資料",
+    "source_url": "https://www.city.tottori.lg.jp/uploaded/attachment/43202.pdf"
+  },
+  "fiscal_index": {
+    "value": 0.51,
+    "fiscal_year": 2024,
+    "source_name": "総務省 令和6年度市町村決算カード（鳥取県・鳥取市）",
+    "source_url": "https://www.soumu.go.jp/main_content/001064007.xlsx"
+  },
   "aging_rate_pct": null,
-  "local_debt_yen": null,
+  "local_debt_yen": {
+    "value": 108438000000,
+    "fiscal_year": 2024,
+    "source_name": "令和6年度 鳥取市の決算推移（市債残高1,084.4億円）",
+    "source_url": "https://www.city.tottori.lg.jp/uploaded/attachment/40016.pdf"
+  },
   "member_salary_monthly_yen": null,
   "per_capita": {
-    "population_per_member": null,
-    "budget_per_capita_yen": null,
-    "debt_per_capita_yen": null
+    "population_per_member": 5497.2,
+    "budget_per_capita_yen": 617926,
+    "debt_per_capita_yen": 616437
   },
-  "updated_at": "2026-06-11T00:31:50+00:00"
+  "updated_at": "2026-06-11T01:38:30+00:00"
 }

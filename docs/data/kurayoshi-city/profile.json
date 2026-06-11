@@ -1,16 +1,41 @@
 {
   "council_id": "kurayoshi-city",
-  "population": null,
-  "households": null,
-  "budget_general_yen": null,
-  "fiscal_index": null,
+  "population": {
+    "value": 43663,
+    "as_of": "2025-01-01",
+    "source_name": "2025年版倉吉市勢要覧（住民記録、各年1月1日現在）",
+    "source_url": "https://www.city.kurayoshi.lg.jp/secure/2164/2025%E5%B9%B4%E7%89%88%E5%B8%82%E5%8B%A2%E8%A6%81%E8%A6%A7.pdf"
+  },
+  "households": {
+    "value": 20525,
+    "as_of": "2025-01-01",
+    "source_name": "2025年版倉吉市勢要覧（住民記録、各年1月1日現在）",
+    "source_url": "https://www.city.kurayoshi.lg.jp/secure/2164/2025%E5%B9%B4%E7%89%88%E5%B8%82%E5%8B%A2%E8%A6%81%E8%A6%A7.pdf"
+  },
+  "budget_general_yen": {
+    "value": 32128531000,
+    "fiscal_year": 2026,
+    "source_name": "令和8年度予算編成資料",
+    "source_url": "https://www.city.kurayoshi.lg.jp/secure/11633/R8henseishiryo.pdf"
+  },
+  "fiscal_index": {
+    "value": 0.438,
+    "fiscal_year": 2024,
+    "source_name": "倉吉市 財政指標（令和2年度～令和6年度）",
+    "source_url": "https://www.city.kurayoshi.lg.jp/8331.htm"
+  },
   "aging_rate_pct": null,
-  "local_debt_yen": null,
+  "local_debt_yen": {
+    "value": 29589705000,
+    "fiscal_year": 2024,
+    "source_name": "倉吉市 財政指標（地方債現在高・令和6年度）",
+    "source_url": "https://www.city.kurayoshi.lg.jp/8331.htm"
+  },
   "member_salary_monthly_yen": null,
   "per_capita": {
-    "population_per_member": null,
-    "budget_per_capita_yen": null,
-    "debt_per_capita_yen": null
+    "population_per_member": 2568.4,
+    "budget_per_capita_yen": 735830,
+    "debt_per_capita_yen": 677684
   },
-  "updated_at": "2026-06-11T00:31:50+00:00"
+  "updated_at": "2026-06-11T01:38:30+00:00"
 }

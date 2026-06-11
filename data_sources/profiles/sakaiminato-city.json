@@ -1,10 +1,35 @@
 {
   "council_id": "sakaiminato-city",
-  "population": null,
-  "households": null,
-  "budget_general_yen": null,
-  "fiscal_index": null,
+  "population": {
+    "value": 31714,
+    "as_of": "2026-05-31",
+    "source_name": "境港市 令和8年度月別住民基本台帳登録数（外国人住民を含む）",
+    "source_url": "https://www.city.sakaiminato.lg.jp/index.php?view=120108"
+  },
+  "households": {
+    "value": 15456,
+    "as_of": "2026-05-31",
+    "source_name": "境港市 令和8年度月別住民基本台帳登録数（外国人住民を含む）",
+    "source_url": "https://www.city.sakaiminato.lg.jp/index.php?view=120108"
+  },
+  "budget_general_yen": {
+    "value": 21230000000,
+    "fiscal_year": 2026,
+    "source_name": "令和8年度予算について（一般会計当初予算額案 212億3千万円）",
+    "source_url": "https://www.city.sakaiminato.lg.jp/index.php?view=119290"
+  },
+  "fiscal_index": {
+    "value": 0.55,
+    "fiscal_year": 2024,
+    "source_name": "境港市 財政力指数の推移（令和6年度）",
+    "source_url": "https://www.city.sakaiminato.lg.jp/userfiles/files/%E8%B2%A1%E6%94%BF%E5%8A%9B%E6%8C%87%E6%95%B0%E3%81%AE%E6%8E%A8%E7%A7%BB.pdf"
+  },
   "aging_rate_pct": null,
-  "local_debt_yen": null,
+  "local_debt_yen": {
+    "value": 12945000000,
+    "fiscal_year": 2024,
+    "source_name": "境港市 市債残高の推移（令和6年度・12,945百万円）",
+    "source_url": "https://www.city.sakaiminato.lg.jp/userfiles/files/%E5%B8%82%E5%82%B5%E6%8E%A8%E7%A7%BB.pdf"
+  },
   "member_salary_monthly_yen": null
 }
