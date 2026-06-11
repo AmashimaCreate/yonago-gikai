@@ -1,21 +1,21 @@
 import { el } from "./utils.js";
 
-function formatNumber(value) {
+export function formatNumber(value) {
   if (typeof value !== "number") return null;
   return value.toLocaleString("ja-JP");
 }
 
-function formatPeople(value) {
+export function formatPeople(value) {
   const formatted = formatNumber(value);
   return formatted ? `${formatted}人` : null;
 }
 
-function formatHouseholds(value) {
+export function formatHouseholds(value) {
   const formatted = formatNumber(value);
   return formatted ? `${formatted}世帯` : null;
 }
 
-function formatYen(value) {
+export function formatYen(value) {
   if (typeof value !== "number") return null;
   if (value >= 100000000) {
     const oku = value / 100000000;
@@ -34,12 +34,12 @@ function formatYen(value) {
   return `${value.toLocaleString("ja-JP")}円`;
 }
 
-function formatDecimal(value) {
+export function formatDecimal(value) {
   if (typeof value !== "number") return null;
   return value.toLocaleString("ja-JP", { maximumFractionDigits: 2 });
 }
 
-function sourceLink(url, label = "出典") {
+export function sourceLink(url, label = "出典") {
   if (!url) return null;
   return el(
     "a",

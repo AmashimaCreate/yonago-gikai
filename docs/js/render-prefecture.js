@@ -1,7 +1,8 @@
 import { councilPath } from "./router.js";
+import { renderPrefectureComparison } from "./render-prefecture-comparison.js";
 import { el } from "./utils.js";
 
-export function renderPrefecturePage(root, councils, prefecture = "tottori") {
+export function renderPrefecturePage(root, councils, prefecture = "tottori", summaries = []) {
   root.innerHTML = "";
   const prefectureCouncil = councils.find((council) => council.type === "prefecture");
   const mapFrame = el("div", { class: "map-frame municipality-map-frame" }, [
@@ -50,6 +51,9 @@ export function renderPrefecturePage(root, councils, prefecture = "tottori") {
       ]),
     ]),
   );
+
+  const comparison = renderPrefectureComparison(summaries, prefecture);
+  if (comparison) root.appendChild(comparison);
 
   root.appendChild(
     el(

@@ -1,5 +1,6 @@
 import { dataQualityPanel } from "./data-quality.js";
 import { renderFactionCompositionChart } from "./render-faction-chart.js";
+import { renderProfileVisualization } from "./render-profile-viz.js";
 import {
   renderCommitteeView,
   renderKaihaView,
@@ -18,6 +19,9 @@ export function renderCouncilPage(root, state, filteredMembers) {
 
   const factionChart = renderFactionCompositionChart(state.members, state.membersMeta);
   if (factionChart) root.appendChild(factionChart);
+
+  const profileViz = renderProfileVisualization(state.profile, state.councilSummaries);
+  if (profileViz) root.appendChild(profileViz);
 
   const former = groupFormerSpeeches(state.speeches);
   if (former.length) {

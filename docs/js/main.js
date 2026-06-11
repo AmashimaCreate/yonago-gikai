@@ -1,4 +1,4 @@
-import { loadCouncilBundle, loadCouncils } from "./data-loader.js";
+import { loadCouncilBundle, loadCouncils, loadCouncilSummaries } from "./data-loader.js";
 import { renderCouncilPage } from "./render-council.js";
 import { renderMemberPage } from "./render-member.js";
 import { renderPrefecturePage } from "./render-prefecture.js";
@@ -155,6 +155,7 @@ async function applyRoute() {
     state.members = [];
     state.membersMeta = null;
     state.profile = null;
+    state.councilSummaries = [];
     state.speeches = [];
     state.speechesMeta = null;
     state.query = "";
@@ -172,6 +173,7 @@ async function applyRoute() {
     state.members = [];
     state.membersMeta = null;
     state.profile = null;
+    state.councilSummaries = [];
     state.speeches = [];
     state.speechesMeta = null;
     state.query = "";
@@ -184,7 +186,15 @@ async function applyRoute() {
       lead: "鳥取県内5議会の公開データを同じ形で確認できます。",
     });
     showCouncilNav(false);
-    renderPrefecturePage(mainNode(), state.councils, route.prefecture);
+    state.councilSummaries = await loadCouncilSummaries(
+      state.councils.filter((council) => council.prefecture === route.prefecture),
+    );
+    renderPrefecturePage(
+      mainNode(),
+      state.councils,
+      route.prefecture,
+      state.councilSummaries,
+    );
     return;
   }
 
@@ -200,6 +210,9 @@ async function applyRoute() {
     state.members = bundle.members;
     state.membersMeta = bundle.membersMeta;
     state.profile = bundle.profile;
+    state.councilSummaries = await loadCouncilSummaries(
+      state.councils.filter((council) => council.prefecture === route.prefecture),
+    );
     state.speeches = bundle.speeches;
     state.speechesMeta = bundle.speechesMeta;
 

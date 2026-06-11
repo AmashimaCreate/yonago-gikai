@@ -44,3 +44,24 @@ export async function loadCouncilBundle(councilId, { includeSpeeches = false } =
       : [],
   };
 }
+
+export async function loadCouncilSummaries(councils) {
+  return Promise.all(
+    councils.map(async (council) => {
+      const [membersMeta, profile] = await Promise.all([
+        loadJson(`./data/${council.id}/members.json`, { optional: true }),
+        loadJson(`./data/${council.id}/profile.json`, { optional: true }),
+      ]);
+      const members = membersMeta && Array.isArray(membersMeta.members)
+        ? membersMeta.members
+        : [];
+      return {
+        council,
+        membersMeta,
+        members,
+        memberCount: members.length,
+        profile,
+      };
+    }),
+  );
+}
