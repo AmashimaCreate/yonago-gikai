@@ -118,6 +118,7 @@ robots.txt 等により自動取得しない議会の、人間転記用入力フ
 {
   "council_id": "yonago-city",
   "updated_at": "2026-06-11T00:00:00+00:00",
+  "acquisition": "scraping",
   "votes": [
     {
       "id": "yonago-city--令和8年3月定例会--bill-slug",
@@ -144,11 +145,14 @@ robots.txt 等により自動取得しない議会の、人間転記用入力フ
 
 ルール:
 
+- `acquisition` は `scraping` / `manual_transcription` / `manual_download`。未付与の既存データも当面は許容するが、新規生成では来歴を明示する。
 - `granularity` は `member` / `faction` / `result_only`。
 - `granularity` が `member` 以外の場合、`votes_by_member` は `null`。
 - `date` は `YYYY-MM-DD` または `null`。
-- `votes_by_member[].vote` は `賛成` / `反対` / `退席` / `欠席` / `議長` のいずれか。
+- `votes_by_member[].vote` は `賛成` / `反対` / `退席` / `欠席` / `議長` / `除斥` / `継続審査` のいずれか。
 - `議長` は慣例により採決に加わらない議長席を表す。賛否の意思表示として扱わない。
+- `除斥` は地方自治法上の利害関係等により議事から除かれた状態を表す。
+- `継続審査` はPDF上の `△` 等、採決結果として継続審査扱いになったセルを表す。
 - `votes_by_member[].member_name` は、`member_id` が `null` の場合もPDF上の投票者名を保持するためのフィールド。`speeches.json` の `speaker_label` と同じく、現名簿外の人物や表記揺れを後から確認できるように残す。
 
 ## profile source input

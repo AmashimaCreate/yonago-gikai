@@ -77,6 +77,7 @@ VOTES_ROOT_KEYS = {
     "updated_at",
     "votes",
 }
+VOTE_ACQUISITIONS = {"scraping", "manual_transcription", "manual_download"}
 VOTE_KEYS = {
     "id",
     "council_id",
@@ -90,7 +91,7 @@ VOTE_KEYS = {
     "source_url",
 }
 VOTE_GRANULARITY_VALUES = {"member", "faction", "result_only"}
-VOTE_VALUES = {"賛成", "反対", "退席", "欠席", "議長"}
+VOTE_VALUES = {"賛成", "反対", "退席", "欠席", "議長", "除斥", "継続審査"}
 
 
 def load_json(path: Path) -> Any:
@@ -294,6 +295,8 @@ def validate_votes_file(council_id: str, path: Path) -> list[str]:
             f"{path}: council_id '{data.get('council_id')}' "
             f"does not match '{council_id}'"
         )
+    if "acquisition" in data and data.get("acquisition") not in VOTE_ACQUISITIONS:
+        errors.append(f"{path}: invalid acquisition '{data.get('acquisition')}'")
 
     known_member_ids = load_member_ids(council_id)
     votes = data.get("votes")
