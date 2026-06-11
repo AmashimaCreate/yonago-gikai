@@ -19,7 +19,7 @@ const ROLE_ORDER = { "委員長": 0, "副委員長": 1, "委員": 2 };
 // 当選回数ビューの表示範囲(空のバケットも表示する)
 const TERM_RANGE = [1, 2, 3, 4, 5, 6];
 
-function kaihaColor(kaiha) {
+export function kaihaColor(kaiha) {
   return neutralColor(kaiha || "");
 }
 
@@ -37,7 +37,7 @@ function memberKana(member) {
   return member.name_kana || member.kana || "";
 }
 
-function memberFaction(member) {
+export function memberFaction(member) {
   return member.faction || member.kaiha || "(未分類)";
 }
 
@@ -206,7 +206,11 @@ export function renderKaihaView(root, members) {
   const grouped = groupByKaiha(members);
   for (const [kaiha, list] of grouped) {
     const headerStyle = `--kaiha-color: ${kaihaColor(kaiha)};`;
-    const group = el("section", { class: "kaiha-group" }, [
+    const group = el("section", {
+      class: "kaiha-group",
+      "data-faction": kaiha,
+      tabindex: "-1",
+    }, [
       el("div", { class: "kaiha-header", style: headerStyle }, [
         el("h2", { class: "kaiha-name" }, kaiha),
         el("span", { class: "kaiha-count" }, `${list.length}人`),

@@ -263,11 +263,32 @@ function setupSearch() {
   }
 }
 
+function setupCouncilVizEvents() {
+  window.addEventListener("council:faction-focus", (event) => {
+    const faction = event.detail?.faction;
+    if (!faction || !state.currentCouncil) return;
+
+    state.view = "kaiha";
+    state.query = "";
+    renderCouncilRoute();
+
+    window.requestAnimationFrame(() => {
+      const target = [...document.querySelectorAll(".kaiha-group")]
+        .find((node) => node.dataset.faction === faction);
+      if (!target) return;
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+      target.classList.add("is-highlighted");
+      window.setTimeout(() => target.classList.remove("is-highlighted"), 1200);
+    });
+  });
+}
+
 function councilTypeLabel(council) {
   return council?.type === "prefecture" ? "県議会" : "市議会";
 }
 
 setupTabs();
 setupSearch();
+setupCouncilVizEvents();
 window.addEventListener("hashchange", renderWithErrorBoundary);
 renderWithErrorBoundary();
