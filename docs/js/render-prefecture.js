@@ -44,7 +44,7 @@ export function renderPrefecturePage(root, councils, prefecture = "tottori") {
           el(
             "p",
             { class: "muted" },
-            "色付きの市は議会ページへ進めます。グレーの町村は未対応です。",
+            "鳥取県内19市町村(4市+15町村、14町1村)のうち、色付きの4市は議会ページへ進めます。グレーの15町村は未対応です。",
           ),
         ]),
       ]),

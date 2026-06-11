@@ -18,4 +18,5 @@
 - Source format used: the GeoJSON bundled in the N03 GML zip.
 - Simplification: Ramer-Douglas-Peucker tolerance `0.0015` degrees, minimum projected ring area `0.04`.
 - Grouping: polygons are grouped by `N03_007`; each municipality is emitted as one SVG `<g>` click region.
-- Use in this site: Tottori prefecture page navigation. Four cities are active; other municipalities are shown as unsupported.
+- Municipality count: 19 total, consisting of four cities and 15 towns/villages (14 towns and Hiezu Village).
+- Use in this site: Tottori prefecture page navigation. Four cities are active; the remaining 15 towns/villages are shown as unsupported.
