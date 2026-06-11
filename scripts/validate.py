@@ -72,6 +72,24 @@ PER_CAPITA_KEYS = {
     "budget_per_capita_yen",
     "debt_per_capita_yen",
 }
+VOTES_ROOT_KEYS = {
+    "council_id",
+    "updated_at",
+    "votes",
+}
+VOTE_KEYS = {
+    "id",
+    "council_id",
+    "session",
+    "bill_title",
+    "date",
+    "result",
+    "granularity",
+    "votes_by_member",
+    "votes_by_faction",
+    "source_url",
+}
+VOTE_GRANULARITY_VALUES = {"member", "faction", "result_only"}
 
 
 def load_json(path: Path) -> Any:
@@ -260,6 +278,143 @@ def validate_profile_file(council_id: str, path: Path) -> list[str]:
     return errors
 
 
+def validate_votes_file(council_id: str, path: Path) -> list[str]:
+    errors: list[str] = []
+    if not path.exists():
+        return errors
+
+    data = load_json(path)
+    if not isinstance(data, dict):
+        return [f"{path}: root must be an object"]
+    add_missing_key_errors(errors, data, VOTES_ROOT_KEYS, str(path))
+
+    if data.get("council_id") != council_id:
+        errors.append(
+            f"{path}: council_id '{data.get('council_id')}' "
+            f"does not match '{council_id}'"
+        )
+
+    known_member_ids = load_member_ids(council_id)
+    votes = data.get("votes")
+    if not isinstance(votes, list):
+        errors.append(f"{path}: votes must be a list")
+        return errors
+
+    seen: set[str] = set()
+    prefix = f"{council_id}--"
+    for i, vote in enumerate(votes):
+        label = f"{path}: votes[{i}]"
+        if not isinstance(vote, dict):
+            errors.append(f"{label}: must be an object")
+            continue
+        add_missing_key_errors(errors, vote, VOTE_KEYS, label)
+
+        vote_id = vote.get("id")
+        if not isinstance(vote_id, str) or not vote_id.startswith(prefix):
+            errors.append(f"{label}: id '{vote_id}' must start with '{prefix}'")
+        elif vote_id in seen:
+            errors.append(f"{label}: duplicate vote id '{vote_id}'")
+        else:
+            seen.add(vote_id)
+
+        if vote.get("council_id") != council_id:
+            errors.append(
+                f"{label}: council_id '{vote.get('council_id')}' "
+                f"does not match '{council_id}'"
+            )
+        for key in ("session", "bill_title", "source_url"):
+            if not isinstance(vote.get(key), str) or not vote.get(key):
+                errors.append(f"{label}: {key} must be a non-empty string")
+        source_url = vote.get("source_url")
+        if isinstance(source_url, str) and not source_url.startswith("https://"):
+            errors.append(f"{label}: source_url must start with 'https://'")
+        date_value = vote.get("date")
+        if date_value is not None and (
+            not isinstance(date_value, str) or not is_iso_date(date_value)
+        ):
+            errors.append(f"{label}: date must be YYYY-MM-DD or null")
+        if vote.get("granularity") not in VOTE_GRANULARITY_VALUES:
+            errors.append(
+                f"{label}: invalid granularity '{vote.get('granularity')}'"
+            )
+
+        granularity = vote.get("granularity")
+        votes_by_member = vote.get("votes_by_member")
+        if granularity == "member":
+            errors.extend(
+                validate_votes_by_member(
+                    label, votes_by_member, known_member_ids, council_id
+                )
+            )
+        elif votes_by_member is not None:
+            errors.append(f"{label}: votes_by_member must be null unless member")
+
+        votes_by_faction = vote.get("votes_by_faction")
+        if votes_by_faction is not None and not isinstance(votes_by_faction, list):
+            errors.append(f"{label}: votes_by_faction must be a list or null")
+
+    return errors
+
+
+def validate_votes_by_member(
+    label: str, value: Any, known_member_ids: set[str], council_id: str
+) -> list[str]:
+    errors: list[str] = []
+    if not isinstance(value, list):
+        return [f"{label}: votes_by_member must be a list for member granularity"]
+    if not value:
+        errors.append(f"{label}: votes_by_member must not be empty")
+
+    prefix = f"{council_id}--"
+    for j, item in enumerate(value):
+        item_label = f"{label}: votes_by_member[{j}]"
+        if not isinstance(item, dict):
+            errors.append(f"{item_label}: must be an object")
+            continue
+        member_id = item.get("member_id")
+        member_name = item.get("member_name")
+        if member_id is not None:
+            if not isinstance(member_id, str) or not member_id.startswith(prefix):
+                errors.append(
+                    f"{item_label}: member_id must start with '{prefix}' or be null"
+                )
+            elif known_member_ids and member_id not in known_member_ids:
+                errors.append(f"{item_label}: unknown member_id '{member_id}'")
+        elif not isinstance(member_name, str) or not member_name:
+            errors.append(
+                f"{item_label}: member_name must be kept when member_id is null"
+            )
+        if not isinstance(item.get("vote"), str) or not item.get("vote"):
+            errors.append(f"{item_label}: vote must be a non-empty string")
+    return errors
+
+
+def load_member_ids(council_id: str) -> set[str]:
+    path = DATA_DIR / council_id / "members.json"
+    if not path.exists():
+        return set()
+    data = load_json(path)
+    members = data.get("members", []) if isinstance(data, dict) else []
+    if not isinstance(members, list):
+        return set()
+    return {m["id"] for m in members if isinstance(m, dict) and isinstance(m.get("id"), str)}
+
+
+def is_iso_date(value: str) -> bool:
+    parts = value.split("-")
+    if len(parts) != 3:
+        return False
+    year, month, day = parts
+    return (
+        len(year) == 4
+        and len(month) == 2
+        and len(day) == 2
+        and year.isdigit()
+        and month.isdigit()
+        and day.isdigit()
+    )
+
+
 def main() -> int:
     councils, errors = validate_councils()
     warnings: list[str] = []
@@ -280,6 +435,8 @@ def main() -> int:
                 f"{profile_path}: profile.json is recommended for active "
                 f"council '{council_id}'"
             )
+        votes_path = DATA_DIR / council_id / "votes.json"
+        errors.extend(validate_votes_file(council_id, votes_path))
 
     if errors:
         print("Validation failed:", file=sys.stderr)
