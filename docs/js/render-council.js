@@ -91,6 +91,7 @@ function renderCouncilHero(state) {
   const fiscalIndex = profile.fiscal_index;
   const perCapita = profile.per_capita || {};
   const areaName = areaNameForCouncil(state.currentCouncil);
+  const areaType = areaTypeLabel(state.currentCouncil);
 
   return el("section", { class: "council-hero page-card" }, [
     el("div", { class: "hero-copy" }, [
@@ -99,7 +100,7 @@ function renderCouncilHero(state) {
       el("p", {}, `${areaName}の規模と議会の形を見ます。`),
     ]),
     el("div", { class: "hero-metrics" }, [
-      heroMetric("人口", formatPeople(population?.value), "市の規模"),
+      heroMetric("人口", formatPeople(population?.value), `${areaType}の規模`),
       heroMetric("一般会計予算", formatYen(budget?.value), "年間のお金の大きさ"),
       heroMetric("議員数", formatPeople(state.members.length), "現在の名簿"),
     ]),
@@ -109,7 +110,7 @@ function renderCouncilHero(state) {
         detailPair("世帯数", formatPeople(profile.households?.value)?.replace("人", "世帯")),
         detailPair("財政力指数", formatDecimal(fiscalIndex?.value), "1.0以上なら国からの仕送りなしでやっていける目安"),
         detailPair("議員1人あたり住民数", formatPeople(perCapita.population_per_member)),
-        detailPair("市債残高(1人あたり)", formatYen(perCapita.debt_per_capita_yen)),
+        detailPair(`${areaType}債残高(1人あたり)`, formatYen(perCapita.debt_per_capita_yen)),
       ].filter(Boolean).flat()),
       sourceLine("基礎データ", [
         profileSource(population, "人口"),
@@ -539,6 +540,14 @@ function areaNameForCouncil(council) {
     .replace(/議会$/, "")
     .replace(/市$/, "市")
     .replace(/県$/, "県");
+}
+
+function areaTypeLabel(council) {
+  if (council?.type === "prefecture") return "県";
+  const name = council?.name || "";
+  if (name.includes("町議会")) return "町";
+  if (name.includes("村議会")) return "村";
+  return "市";
 }
 
 function voteMissingMessage(council) {

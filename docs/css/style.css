@@ -792,9 +792,9 @@ main { padding: 24px 0 48px; }
   display: block;
   margin: 2px 0;
   color: var(--brand-dark);
-  font-size: clamp(20px, 2.3vw, 34px);
+  font-size: clamp(16px, 1.45vw, 24px);
   line-height: 1.1;
-  overflow-wrap: anywhere;
+  white-space: nowrap;
 }
 .profile-details {
   grid-column: 1 / -1;
