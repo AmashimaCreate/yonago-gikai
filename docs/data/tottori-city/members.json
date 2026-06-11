@@ -14,7 +14,8 @@
       "committees": [
         "文教経済委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/12361.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/12361.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--katou-takayuki",
@@ -27,7 +28,8 @@
       "committees": [
         "建設水道委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/12360.JPG"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/12360.JPG",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--okada-minori",
@@ -40,7 +42,8 @@
       "committees": [
         "福祉保健委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5418.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5418.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--sakane-masayo",
@@ -53,7 +56,8 @@
       "committees": [
         "総務企画委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5419.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5419.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--mizuguchi-makoto",
@@ -66,7 +70,8 @@
       "committees": [
         "文教経済委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5420.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5420.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--taniguchi-meiko",
@@ -75,11 +80,14 @@
       "name_kana": "たにぐち めいこ",
       "faction": "公明党",
       "elected_count": 1,
-      "positions": [],
+      "positions": [
+        "建設水道委員会 副委員長"
+      ],
       "committees": [
         "建設水道委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5421.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5421.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--nishio-akihito",
@@ -92,7 +100,8 @@
       "committees": [
         "福祉保健委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5422.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5422.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--nakayama-akiyasu",
@@ -101,11 +110,14 @@
       "name_kana": "なかやま あきやす",
       "faction": "新生",
       "elected_count": 1,
-      "positions": [],
+      "positions": [
+        "文教経済委員会 副委員長"
+      ],
       "committees": [
         "文教経済委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5423.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5423.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--kumosaka-mamoru",
@@ -118,7 +130,8 @@
       "committees": [
         "総務企画委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5424.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5424.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--kashima-tatsufumi",
@@ -127,11 +140,14 @@
       "name_kana": "かしま たつふみ",
       "faction": "開政",
       "elected_count": 2,
-      "positions": [],
+      "positions": [
+        "福祉保健委員会 副委員長"
+      ],
       "committees": [
         "福祉保健委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5425.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5425.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--kaneda-nobusuke",
@@ -144,7 +160,8 @@
       "committees": [
         "文教経済委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5426.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5426.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--iwanaga-yasuko",
@@ -153,11 +170,14 @@
       "name_kana": "いわなが やすこ",
       "faction": "共産党",
       "elected_count": 3,
-      "positions": [],
+      "positions": [
+        "議会広報広聴委員会 副委員長"
+      ],
       "committees": [
         "福祉保健委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5427.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5427.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--katsuta-senji",
@@ -166,11 +186,14 @@
       "name_kana": "かつた せんじ",
       "faction": "未来ネット",
       "elected_count": 3,
-      "positions": [],
+      "positions": [
+        "福祉保健委員会 委員長"
+      ],
       "committees": [
         "福祉保健委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5428.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5428.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--yonemura-kyouko",
@@ -183,7 +206,8 @@
       "committees": [
         "総務企画委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5429.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5429.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--asano-hirofumi",
@@ -192,11 +216,15 @@
       "name_kana": "あさの ひろふみ",
       "faction": "公明党",
       "elected_count": 2,
-      "positions": [],
+      "positions": [
+        "議会運営委員会 副委員長",
+        "議会改革検討委員会（令和7年6月27日～ ） 副委員長"
+      ],
       "committees": [
         "総務企画委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5430.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5430.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--katou-shigeki",
@@ -205,11 +233,15 @@
       "name_kana": "かとう しげき",
       "faction": "新生",
       "elected_count": 2,
-      "positions": [],
+      "positions": [
+        "建設水道委員会 委員長",
+        "議会広報広聴委員会 委員長"
+      ],
       "committees": [
         "建設水道委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5431.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5431.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--yoshino-kyousuke",
@@ -218,11 +250,14 @@
       "name_kana": "よしの きょうすけ",
       "faction": "新生",
       "elected_count": 3,
-      "positions": [],
+      "positions": [
+        "総務企画委員会 委員長"
+      ],
       "committees": [
         "総務企画委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5432.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5432.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--hoshimi-kenzou",
@@ -231,11 +266,14 @@
       "name_kana": "ほしみ けんぞう",
       "faction": "新生",
       "elected_count": 3,
-      "positions": [],
+      "positions": [
+        "議長"
+      ],
       "committees": [
         "総務企画委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5433.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5433.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--uosaki-isamu",
@@ -248,7 +286,8 @@
       "committees": [
         "福祉保健委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5434.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5434.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--nishimura-shinichirou",
@@ -257,11 +296,14 @@
       "name_kana": "にしむら しんいちろう",
       "faction": "新生",
       "elected_count": 3,
-      "positions": [],
+      "positions": [
+        "議会改革検討委員会（令和7年6月27日～ ） 委員長"
+      ],
       "committees": [
         "文教経済委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5435.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5435.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--adachi-takashi",
@@ -274,7 +316,8 @@
       "committees": [
         "建設水道委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5436.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5436.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--oota-yukari",
@@ -287,7 +330,8 @@
       "committees": [
         "建設水道委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5437.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5437.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--yoshida-hiroyuki",
@@ -300,7 +344,8 @@
       "committees": [
         "建設水道委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5438.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5438.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--itou-ikuko",
@@ -309,11 +354,14 @@
       "name_kana": "いとう いくこ",
       "faction": "共産党",
       "elected_count": 5,
-      "positions": [],
+      "positions": [
+        "総務企画委員会 副委員長"
+      ],
       "committees": [
         "総務企画委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5439.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5439.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--akiyama-tomohiro",
@@ -326,7 +374,8 @@
       "committees": [
         "建設水道委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5440.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5440.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--nagasaka-noriou",
@@ -335,11 +384,14 @@
       "name_kana": "ながさか のりおう",
       "faction": "未来ネット",
       "elected_count": 5,
-      "positions": [],
+      "positions": [
+        "副議長"
+      ],
       "committees": [
         "文教経済委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5441.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5441.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--ishida-kentarou",
@@ -348,11 +400,14 @@
       "name_kana": "いしだ けんたろう",
       "faction": "公明党",
       "elected_count": 4,
-      "positions": [],
+      "positions": [
+        "文教経済委員会 委員長"
+      ],
       "committees": [
         "文教経済委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5442.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5442.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--hirano-mariko",
@@ -365,7 +420,8 @@
       "committees": [
         "福祉保健委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5443.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5443.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--okada-nobutoshi",
@@ -378,7 +434,8 @@
       "committees": [
         "福祉保健委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5444.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5444.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--terasaka-hiroo",
@@ -387,11 +444,14 @@
       "name_kana": "てらさか ひろお",
       "faction": "新生",
       "elected_count": 4,
-      "positions": [],
+      "positions": [
+        "議会運営委員会 委員長"
+      ],
       "committees": [
         "建設水道委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5445.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5445.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--sunada-norio",
@@ -404,7 +464,8 @@
       "committees": [
         "文教経済委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5446.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5446.jpg",
+      "official_profile_url": null
     },
     {
       "id": "tottori-city--uesugi-eiichi",
@@ -417,8 +478,9 @@
       "committees": [
         "総務企画委員会"
       ],
-      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5447.jpg"
+      "photo_url": "https://www.city.tottori.lg.jp/uploaded/image/5447.jpg",
+      "official_profile_url": null
     }
   ],
-  "updated_at": "2026-06-10T16:59:05+00:00"
+  "updated_at": "2026-06-11T00:01:18+00:00"
 }
