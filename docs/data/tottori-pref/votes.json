@@ -1,6 +1,6 @@
 {
   "council_id": "tottori-pref",
-  "updated_at": "2026-06-11T02:41:16+00:00",
+  "updated_at": "2026-06-11T20:16:06+00:00",
   "acquisition": "scraping",
   "coverage": {
     "source": "鳥取県議会 定例会・臨時会の概要",
@@ -248,10 +248,10 @@
   },
   "votes": [
     {
-      "id": "tottori-pref--2024-07-03--9a4e028f865c",
+      "id": "tottori-pref--2024-07-03--c1fd7e96ccac",
       "council_id": "tottori-pref",
       "session": "令和6年6月定例会",
-      "bill_title": "06年－06 機能性表示食品に係る安全性審査の厳格化について不採択",
+      "bill_title": "06年－06 機能性表示食品に係る安全性審査の厳格化について",
       "date": "2024-07-03",
       "result": "不採択",
       "granularity": "member",
@@ -433,13 +433,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-07-03--cdd4f0a9157e",
+      "id": "tottori-pref--2024-07-03--5becc302b0b9",
       "council_id": "tottori-pref",
       "session": "令和6年6月定例会",
-      "bill_title": "06年－07 「防衛装備移転三原則」の運用指針改定に反対する意見書の提出について不採択",
+      "bill_title": "06年－07 「防衛装備移転三原則」の運用指針改定に反対する意見書の提出について",
       "date": "2024-07-03",
       "result": "不採択",
       "granularity": "member",
@@ -621,13 +622,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-07-03--e7922ed62f7a",
+      "id": "tottori-pref--2024-07-03--3e51c67c66f4",
       "council_id": "tottori-pref",
       "session": "令和6年6月定例会",
-      "bill_title": "06年－09 地方自治法改正案に反対する意見書の提出について不採択",
+      "bill_title": "06年－09 地方自治法改正案に反対する意見書の提出について",
       "date": "2024-07-03",
       "result": "不採択",
       "granularity": "member",
@@ -809,13 +811,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-07-03--074242fb291c",
+      "id": "tottori-pref--2024-07-03--acd9e5ec2473",
       "council_id": "tottori-pref",
       "session": "令和6年6月定例会",
-      "bill_title": "06年－10 電子会議室を使った簡易決裁における決裁記録の透明化について不採択",
+      "bill_title": "06年－10 電子会議室を使った簡易決裁における決裁記録の透明化について",
       "date": "2024-07-03",
       "result": "不採択",
       "granularity": "member",
@@ -997,13 +1000,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-07-03--2bb2a30b8c49",
+      "id": "tottori-pref--2024-07-03--329e59529d5d",
       "council_id": "tottori-pref",
       "session": "令和6年6月定例会",
-      "bill_title": "06年－11 ゆたかな学びの実現・教職員定数改善をはかるための、2025 年度政府予算に係る意見書採択について不採択",
+      "bill_title": "06年－11 ゆたかな学びの実現・教職員定数改善をはかるための、2025 年度政府予算に係る意見書採択について",
       "date": "2024-07-03",
       "result": "不採択",
       "granularity": "member",
@@ -1185,13 +1189,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-07-03--c312e1847cd5",
+      "id": "tottori-pref--2024-07-03--87faea6a424b",
       "council_id": "tottori-pref",
       "session": "令和6年6月定例会",
-      "bill_title": "06年－12 大臣に対し、すみやかに、消費税減税など、消費者支援施不採択",
+      "bill_title": "06年－12 消費税減税等の検討を求める意見書の提出について",
       "date": "2024-07-03",
       "result": "不採択",
       "granularity": "member",
@@ -1373,13 +1378,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-07-03--4a454741b992",
+      "id": "tottori-pref--2024-07-03--943b20126b69",
       "council_id": "tottori-pref",
       "session": "令和6年6月定例会",
-      "bill_title": "06年－13 「キャッシュレス限定バス」に係る意見書の提出について不採択",
+      "bill_title": "06年－13 「キャッシュレス限定バス」に係る意見書の提出について",
       "date": "2024-07-03",
       "result": "不採択",
       "granularity": "member",
@@ -1561,13 +1567,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-07-03--e234138f0115",
+      "id": "tottori-pref--2024-07-03--eaf5a50310ae",
       "council_id": "tottori-pref",
       "session": "令和6年6月定例会",
-      "bill_title": "06年－14 新型コロナウイルスワクチン接種の範囲拡充と費用負担軽減に関する陳情不採択",
+      "bill_title": "06年－14 新型コロナウイルスワクチン接種の範囲拡充と費用負担軽減に関する陳情",
       "date": "2024-07-03",
       "result": "不採択",
       "granularity": "member",
@@ -1749,13 +1756,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-07-03--72c7fec5d6b5",
+      "id": "tottori-pref--2024-07-03--e12ecee3b7b8",
       "council_id": "tottori-pref",
       "session": "令和6年6月定例会",
-      "bill_title": "06年－15 議会運営委員会委員の決定について不採択",
+      "bill_title": "06年－15 議会運営委員会委員の決定について",
       "date": "2024-07-03",
       "result": "不採択",
       "granularity": "member",
@@ -1937,13 +1945,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-07-03--e3bae789dc36",
+      "id": "tottori-pref--2024-07-03--c595ccfec5f0",
       "council_id": "tottori-pref",
       "session": "令和6年6月定例会",
-      "bill_title": "06年－16 議員の発言の議事録からの削除について不採択",
+      "bill_title": "06年－16 議員の発言の議事録からの削除について",
       "date": "2024-07-03",
       "result": "不採択",
       "granularity": "member",
@@ -2125,13 +2134,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-07-03--7b274b11fbfb",
+      "id": "tottori-pref--2024-07-03--9033f97bb05e",
       "council_id": "tottori-pref",
       "session": "令和6年6月定例会",
-      "bill_title": "06年－17 島根原子力発電所に関して中国電力に説明を求める陳情不採択",
+      "bill_title": "06年－17 島根原子力発電所に関して中国電力に説明を求める陳情",
       "date": "2024-07-03",
       "result": "不採択",
       "granularity": "member",
@@ -2313,13 +2323,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-07-03--c91b90ce5f4e",
+      "id": "tottori-pref--2024-07-03--1cf00d9dd65e",
       "council_id": "tottori-pref",
       "session": "令和6年6月定例会",
-      "bill_title": "06年－18 複合災害に対応した原子力災害対策指針の見直しを国に求める陳情不採択",
+      "bill_title": "06年－18 複合災害に対応した原子力災害対策指針の見直しを国に求める陳情",
       "date": "2024-07-03",
       "result": "不採択",
       "granularity": "member",
@@ -2501,13 +2512,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-07-03--4306f8ebe769",
+      "id": "tottori-pref--2024-07-03--b2c9fcfbc7bf",
       "council_id": "tottori-pref",
       "session": "令和6年6月定例会",
-      "bill_title": "06年－19 複合災害時に対応した「原子力防災ハンドブック」の改訂を求める陳情不採択",
+      "bill_title": "06年－19 複合災害時に対応した「原子力防災ハンドブック」の改訂を求める陳情",
       "date": "2024-07-03",
       "result": "不採択",
       "granularity": "member",
@@ -2689,13 +2701,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-07-03--2936116b7d0b",
+      "id": "tottori-pref--2024-07-03--70b023d86836",
       "council_id": "tottori-pref",
       "session": "令和6年6月定例会",
-      "bill_title": "06年－20 鳥取県ソーシャルメディア利用指針の遵守徹底及び各種指針の点検について不採択",
+      "bill_title": "06年－20 鳥取県ソーシャルメディア利用指針の遵守徹底及び各種指針の点検について",
       "date": "2024-07-03",
       "result": "不採択",
       "granularity": "member",
@@ -2877,13 +2890,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-07-03--b596568be99e",
+      "id": "tottori-pref--2024-07-03--0472fd11294e",
       "council_id": "tottori-pref",
       "session": "令和6年6月定例会",
-      "bill_title": "06年－21 現行健康保険証の存続について不採択",
+      "bill_title": "06年－21 現行健康保険証の存続について",
       "date": "2024-07-03",
       "result": "不採択",
       "granularity": "member",
@@ -3065,13 +3079,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-07-03--60811805c03e",
+      "id": "tottori-pref--2024-07-03--49e3b7e3d02e",
       "council_id": "tottori-pref",
       "session": "令和6年6月定例会",
-      "bill_title": "06年－22 県民の声に係る回答の基準について不採択",
+      "bill_title": "06年－22 県民の声に係る回答の基準について",
       "date": "2024-07-03",
       "result": "不採択",
       "granularity": "member",
@@ -3253,7 +3268,8 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
       "id": "tottori-pref--2024-07-03--5dddaccb3ee4",
@@ -7392,10 +7408,10 @@
       "source_url": "https://www.pref.tottori.lg.jp/secure/1353173/R6.6giketsukekka.pdf"
     },
     {
-      "id": "tottori-pref--2024-10-10--7fadf233d72f",
+      "id": "tottori-pref--2024-10-10--a4ea2b0a930f",
       "council_id": "tottori-pref",
       "session": "令和6年9月定例会",
-      "bill_title": "06年－24 公文書施行に係るチェック体制の強化について不採択",
+      "bill_title": "06年－24 公文書施行に係るチェック体制の強化について",
       "date": "2024-10-10",
       "result": "不採択",
       "granularity": "member",
@@ -7572,13 +7588,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-10-10--c699e715c456",
+      "id": "tottori-pref--2024-10-10--763e3ea579d3",
       "council_id": "tottori-pref",
       "session": "令和6年9月定例会",
-      "bill_title": "06年－25 書類受付時のチェック体制の強化について不採択",
+      "bill_title": "06年－25 書類受付時のチェック体制の強化について",
       "date": "2024-10-10",
       "result": "不採択",
       "granularity": "member",
@@ -7755,13 +7772,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-10-10--41475157f994",
+      "id": "tottori-pref--2024-10-10--dd503967cf53",
       "council_id": "tottori-pref",
       "session": "令和6年9月定例会",
-      "bill_title": "06年－26 き、適切に対応することを、執行部に求めること。 不採択",
+      "bill_title": "06年－26 県民の声や照会等への適切な対応について",
       "date": "2024-10-10",
       "result": "不採択",
       "granularity": "member",
@@ -7938,13 +7956,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-10-10--e88c6e4f8f77",
+      "id": "tottori-pref--2024-10-10--884df8d58f0f",
       "council_id": "tottori-pref",
       "session": "令和6年9月定例会",
-      "bill_title": "06年－27 その管理の厳格化を求める。 不採択",
+      "bill_title": "06年－27 公文書の適切な管理について",
       "date": "2024-10-10",
       "result": "不採択",
       "granularity": "member",
@@ -8121,13 +8140,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-10-10--a404e62886f1",
+      "id": "tottori-pref--2024-10-10--f2c2c0611ef5",
       "council_id": "tottori-pref",
       "session": "令和6年9月定例会",
-      "bill_title": "06年－28 県民参画基本条例の趣旨を踏まえた県政の運営について不採択",
+      "bill_title": "06年－28 県民参画基本条例の趣旨を踏まえた県政の運営について",
       "date": "2024-10-10",
       "result": "不採択",
       "granularity": "member",
@@ -8304,13 +8324,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-10-10--c1071aa3b7d2",
+      "id": "tottori-pref--2024-10-10--0b01a2da1121",
       "council_id": "tottori-pref",
       "session": "令和6年9月定例会",
-      "bill_title": "06年－29 「手話言語による国歌」策定を求める意見書提出について採択",
+      "bill_title": "06年－29 「手話言語による国歌」策定を求める意見書提出について",
       "date": "2024-10-10",
       "result": "採択",
       "granularity": "member",
@@ -8487,13 +8508,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf",
+      "committee_report": "採択"
     },
     {
-      "id": "tottori-pref--2024-10-10--ebdf8e76b11d",
+      "id": "tottori-pref--2024-10-10--8f31dac97448",
       "council_id": "tottori-pref",
       "session": "令和6年9月定例会",
-      "bill_title": "06年－30 訪問介護費の引き下げ撤回と、介護報酬の引き上げの再改定を早急に行うことを求める請願不採択",
+      "bill_title": "06年－30 訪問介護費の引き下げ撤回と、介護報酬の引き上げの再改定を早急に行うことを求める請願",
       "date": "2024-10-10",
       "result": "不採択",
       "granularity": "member",
@@ -8670,13 +8692,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-10-10--4cb126b8cec5",
+      "id": "tottori-pref--2024-10-10--8f2007571de9",
       "council_id": "tottori-pref",
       "session": "令和6年9月定例会",
-      "bill_title": "06年－31 現行の保険証とマイナ保険証の選択制を堅持し、現行の保険証を廃止しないよう国に意見書を提出することを求める請願不採択",
+      "bill_title": "06年－31 現行の保険証とマイナ保険証の選択制を堅持し、現行の保険証を廃止しないよう国に意見書を提出することを求める請願",
       "date": "2024-10-10",
       "result": "不採択",
       "granularity": "member",
@@ -8853,13 +8876,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-10-10--dfb2ee854746",
+      "id": "tottori-pref--2024-10-10--c9108570153a",
       "council_id": "tottori-pref",
       "session": "令和6年9月定例会",
-      "bill_title": "06年－32 請願者・陳情者の求めに応じた意見陳述制度の創設について不採択",
+      "bill_title": "06年－32 請願者・陳情者の求めに応じた意見陳述制度の創設について",
       "date": "2024-10-10",
       "result": "不採択",
       "granularity": "member",
@@ -9036,13 +9060,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-10-10--6a91e0a2ea15",
+      "id": "tottori-pref--2024-10-10--f6ac1616339b",
       "council_id": "tottori-pref",
       "session": "令和6年9月定例会",
-      "bill_title": "06年－33 るよう、安全に配慮しつつ、整備促進を図ること。 採択",
+      "bill_title": "06年－33 産業廃棄物管理型最終処分場の設置促進について",
       "date": "2024-10-10",
       "result": "採択",
       "granularity": "member",
@@ -9219,13 +9244,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf",
+      "committee_report": "採択"
     },
     {
-      "id": "tottori-pref--2024-10-10--11d9c76131aa",
+      "id": "tottori-pref--2024-10-10--e209efb07a4a",
       "council_id": "tottori-pref",
       "session": "令和6年9月定例会",
-      "bill_title": "06年－34 ＵＰＺ圏内の避難計画の重要な対策である屋内退避の運用に関する検証結果が明らかになるまで再稼働の延期を中国電力に求める陳情不採択",
+      "bill_title": "06年－34 ＵＰＺ圏内の避難計画の重要な対策である屋内退避の運用に関する検証結果が明らかになるまで再稼働の延期を中国電力に求める陳情",
       "date": "2024-10-10",
       "result": "不採択",
       "granularity": "member",
@@ -9402,13 +9428,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-10-10--8aabe47923f8",
+      "id": "tottori-pref--2024-10-10--67c1e8227204",
       "council_id": "tottori-pref",
       "session": "令和6年9月定例会",
-      "bill_title": "06年－35 能登半島地震の状況を受けて、安定ヨウ素剤の積極的な事前配布を求める陳情不採択",
+      "bill_title": "06年－35 能登半島地震の状況を受けて、安定ヨウ素剤の積極的な事前配布を求める陳情",
       "date": "2024-10-10",
       "result": "不採択",
       "granularity": "member",
@@ -9585,13 +9612,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-10-10--819371ed5107",
+      "id": "tottori-pref--2024-10-10--9501b0163109",
       "council_id": "tottori-pref",
       "session": "令和6年9月定例会",
-      "bill_title": "06年－36 住民の安全な避難を確保するため、屋内退避に関する対策及び災害対策が実行されるまで、島根原発２号機再稼働の中止を中国電力に求める陳情不採択",
+      "bill_title": "06年－36 住民の安全な避難を確保するため、屋内退避に関する対策及び災害対策が実行されるまで、島根原発２号機再稼働の中止を中国電力に求める陳情",
       "date": "2024-10-10",
       "result": "不採択",
       "granularity": "member",
@@ -9768,13 +9796,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-10-10--e95b29e4c791",
+      "id": "tottori-pref--2024-10-10--089ed0ad4b2a",
       "council_id": "tottori-pref",
       "session": "令和6年9月定例会",
-      "bill_title": "06年－37 中国電力に対して島根原発２号機の再稼働中止を求める陳情不採択",
+      "bill_title": "06年－37 中国電力に対して島根原発２号機の再稼働中止を求める陳情",
       "date": "2024-10-10",
       "result": "不採択",
       "granularity": "member",
@@ -9951,13 +9980,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-10-10--ce292ba4177b",
+      "id": "tottori-pref--2024-10-10--ee0e353e6401",
       "council_id": "tottori-pref",
       "session": "令和6年9月定例会",
-      "bill_title": "06年－38 主食用米の安定供給に係る意見書の提出について不採択",
+      "bill_title": "06年－38 主食用米の安定供給に係る意見書の提出について",
       "date": "2024-10-10",
       "result": "不採択",
       "granularity": "member",
@@ -10134,13 +10164,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-10-10--30db3cfed294",
+      "id": "tottori-pref--2024-10-10--649ac102b10d",
       "council_id": "tottori-pref",
       "session": "令和6年9月定例会",
-      "bill_title": "06年－39 郵送時の特殊取り扱いに係るガイドラインの策定等について不採択",
+      "bill_title": "06年－39 郵送時の特殊取り扱いに係るガイドラインの策定等について",
       "date": "2024-10-10",
       "result": "不採択",
       "granularity": "member",
@@ -10317,13 +10348,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-10-10--c8c5ff47dde8",
+      "id": "tottori-pref--2024-10-10--13d13bcc4464",
       "council_id": "tottori-pref",
       "session": "令和6年9月定例会",
-      "bill_title": "06年－40 能登半島地震を踏まえた島根原発の安全対策に関して、鳥取県内における住民の納得と了解が得られるまで島根原発２号機の再稼働を見合わせることを求める陳情不採択",
+      "bill_title": "06年－40 能登半島地震を踏まえた島根原発の安全対策に関して、鳥取県内における住民の納得と了解が得られるまで島根原発２号機の再稼働を見合わせることを求める陳情",
       "date": "2024-10-10",
       "result": "不採択",
       "granularity": "member",
@@ -10500,13 +10532,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-10-10--938f58a54d51",
+      "id": "tottori-pref--2024-10-10--5157ace7b834",
       "council_id": "tottori-pref",
       "session": "令和6年9月定例会",
-      "bill_title": "06年－41 能登半島地震を受けた島根原発に係る国及び中国電力への申入れに対する回答に対して、国と中国電力への再度の照会と、中国電力に対して島根原発２号機の「再稼働の了解」を一旦撤回することを求める陳情不採択",
+      "bill_title": "06年－41 能登半島地震を受けた島根原発に係る国及び中国電力への申入れに対する回答に対して、国と中国電力への再度の照会と、中国電力に対して島根原発２号機の「再稼働の了解」を一旦撤回することを求める陳情",
       "date": "2024-10-10",
       "result": "不採択",
       "granularity": "member",
@@ -10683,13 +10716,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-10-10--646c3350bf5e",
+      "id": "tottori-pref--2024-10-10--672c2e258810",
       "council_id": "tottori-pref",
       "session": "令和6年9月定例会",
-      "bill_title": "06年－42 能登半島地震を受けた島根原発に係る国及び中国電力への申入れに対する回答に関して住民説明会の開催を求める陳情不採択",
+      "bill_title": "06年－42 能登半島地震を受けた島根原発に係る国及び中国電力への申入れに対する回答に関して住民説明会の開催を求める陳情",
       "date": "2024-10-10",
       "result": "不採択",
       "granularity": "member",
@@ -10866,13 +10900,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-10-10--d6d392120a40",
+      "id": "tottori-pref--2024-10-10--0539b2a283cc",
       "council_id": "tottori-pref",
       "session": "令和6年9月定例会",
-      "bill_title": "06年－43 島根原発の「安全性、安定供給、経済性、環境適合（Ｓ＋３Ｅ）」 の現状と課題を県民に説明するまで、２号機再稼働の中止を中国電力に求める陳情不採択",
+      "bill_title": "06年－43 島根原発の「安全性、安定供給、経済性、環境適合（Ｓ＋３Ｅ）」 の現状と課題を県民に説明するまで、２号機再稼働の中止を中国電力に求める陳情",
       "date": "2024-10-10",
       "result": "不採択",
       "granularity": "member",
@@ -11049,13 +11084,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-10-10--677dfb6a61c2",
+      "id": "tottori-pref--2024-10-10--4bb5b8cfea93",
       "council_id": "tottori-pref",
       "session": "令和6年9月定例会",
-      "bill_title": "06年－44 中国電力による県内の「太陽光発電等の出力制御」の現状と島根原発２号機再稼働後の影響、および地域経済への影響を検証することを求める陳情不採択",
+      "bill_title": "06年－44 中国電力による県内の「太陽光発電等の出力制御」の現状と島根原発２号機再稼働後の影響、および地域経済への影響を検証することを求める陳情",
       "date": "2024-10-10",
       "result": "不採択",
       "granularity": "member",
@@ -11232,7 +11268,8 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf",
+      "committee_report": "不採択"
     },
     {
       "id": "tottori-pref--2024-10-10--7b78684753ed",
@@ -13980,10 +14017,10 @@
       "source_url": "https://www.pref.tottori.lg.jp/secure/1362544/R0609gikeysukekka.pdf"
     },
     {
-      "id": "tottori-pref--2024-12-19--bd740a8865a8",
+      "id": "tottori-pref--2024-12-19--a3bb2c87a3e3",
       "council_id": "tottori-pref",
       "session": "令和6年11月定例会",
-      "bill_title": "06年－45 公文書発送時の封書封入物に係るチェックの厳格化について不採択",
+      "bill_title": "06年－45 公文書発送時の封書封入物に係るチェックの厳格化について",
       "date": "2024-12-19",
       "result": "不採択",
       "granularity": "member",
@@ -14160,13 +14197,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1369849/R6.11giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1369849/R6.11giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-12-19--7b8c8e2d3ca3",
+      "id": "tottori-pref--2024-12-19--ca4dcb958ae6",
       "council_id": "tottori-pref",
       "session": "令和6年11月定例会",
-      "bill_title": "06年－46 総合事務所の所掌業務とユニバーサルサービスの維持について不採択",
+      "bill_title": "06年－46 総合事務所の所掌業務とユニバーサルサービスの維持について",
       "date": "2024-12-19",
       "result": "不採択",
       "granularity": "member",
@@ -14343,13 +14381,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1369849/R6.11giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1369849/R6.11giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-12-19--2a0695775f77",
+      "id": "tottori-pref--2024-12-19--1d4594a012fa",
       "council_id": "tottori-pref",
       "session": "令和6年11月定例会",
-      "bill_title": "06年－47 マイナ保険証の強制はせず、従来の保険証を残すよう国に求める意見書の提出について不採択",
+      "bill_title": "06年－47 マイナ保険証の強制はせず、従来の保険証を残すよう国に求める意見書の提出について",
       "date": "2024-12-19",
       "result": "不採択",
       "granularity": "member",
@@ -14526,13 +14565,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1369849/R6.11giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1369849/R6.11giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-12-19--068b2eb819ce",
+      "id": "tottori-pref--2024-12-19--9fe0bdd2e6ec",
       "council_id": "tottori-pref",
       "session": "令和6年11月定例会",
-      "bill_title": "06年－48 選択的夫婦別姓制度をただちに導入することを国に求める意見書の提出について不採択",
+      "bill_title": "06年－48 選択的夫婦別姓制度をただちに導入することを国に求める意見書の提出について",
       "date": "2024-12-19",
       "result": "不採択",
       "granularity": "member",
@@ -14709,13 +14749,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1369849/R6.11giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1369849/R6.11giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-12-19--1273ebc46584",
+      "id": "tottori-pref--2024-12-19--1e845c2fd580",
       "council_id": "tottori-pref",
       "session": "令和6年11月定例会",
-      "bill_title": "06年－49 「持続可能な学校の実現をめざす」実効性ある学校の働き方改革、長時間労働是正を求める意見書採択について不採択",
+      "bill_title": "06年－49 「持続可能な学校の実現をめざす」実効性ある学校の働き方改革、長時間労働是正を求める意見書採択について",
       "date": "2024-12-19",
       "result": "不採択",
       "granularity": "member",
@@ -14892,13 +14933,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1369849/R6.11giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1369849/R6.11giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2024-12-19--e906ee3c2c49",
+      "id": "tottori-pref--2024-12-19--642002d05e0b",
       "council_id": "tottori-pref",
       "session": "令和6年11月定例会",
-      "bill_title": "06年－50 安定ヨウ素剤の事前配布率を上げるために新潟方式の導入の検討を求める陳情不採択",
+      "bill_title": "06年－50 安定ヨウ素剤の事前配布率を上げるために新潟方式の導入の検討を求める陳情",
       "date": "2024-12-19",
       "result": "不採択",
       "granularity": "member",
@@ -15075,7 +15117,8 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1369849/R6.11giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1369849/R6.11giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
       "id": "tottori-pref--2024-12-19--c3f388449e23",
@@ -20019,10 +20062,10 @@
       "source_url": "https://www.pref.tottori.lg.jp/secure/1369849/R6.11giketsukekka.pdf"
     },
     {
-      "id": "tottori-pref--2025-03-24--326c93f676d1",
+      "id": "tottori-pref--2025-03-24--494a670866a1",
       "council_id": "tottori-pref",
       "session": "令和7年2月定例会",
-      "bill_title": "7年－１ 「最低賃金法の改正と中小企業支援の拡充を求める意見書」 の採択を求める陳情不採択",
+      "bill_title": "7年－１ 「最低賃金法の改正と中小企業支援の拡充を求める意見書」 の採択を求める陳情",
       "date": "2025-03-24",
       "result": "不採択",
       "granularity": "member",
@@ -20199,7 +20242,8 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1376358/R7.2giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1376358/R7.2giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
       "id": "tottori-pref--2025-03-24--5630ef6ab1ae",
@@ -35940,10 +35984,10 @@
       "source_url": "https://www.pref.tottori.lg.jp/secure/1376358/R7.2giketsukekka.pdf"
     },
     {
-      "id": "tottori-pref--2025-03-24--b449275c0f34",
+      "id": "tottori-pref--2025-03-24--e6d7f2c71755",
       "council_id": "tottori-pref",
       "session": "令和7年2月定例会",
-      "bill_title": "７年－２ 国に対し「原発依存度の低減」を求める意見書を提出することを求める陳情不採択",
+      "bill_title": "７年－２ 国に対し「原発依存度の低減」を求める意見書を提出することを求める陳情",
       "date": "2025-03-24",
       "result": "不採択",
       "granularity": "member",
@@ -36120,13 +36164,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1376358/R7.2giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1376358/R7.2giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2025-03-24--5218a4352953",
+      "id": "tottori-pref--2025-03-24--e4be38e9bbf5",
       "council_id": "tottori-pref",
       "session": "令和7年2月定例会",
-      "bill_title": "７年－３ 操縦士の飲酒防止など航空安全の推進を求める意見書の提出について不採択",
+      "bill_title": "７年－３ 操縦士の飲酒防止など航空安全の推進を求める意見書の提出について",
       "date": "2025-03-24",
       "result": "不採択",
       "granularity": "member",
@@ -36303,13 +36348,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1376358/R7.2giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1376358/R7.2giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2025-06-30--545797c5fcaf",
+      "id": "tottori-pref--2025-06-30--07a9f2980330",
       "council_id": "tottori-pref",
       "session": "令和7年6月定例会",
-      "bill_title": "7年－４ 裏金問題の徹底解明とパーティー券購入を含む企業・団体献金の禁止を求める陳情不採択",
+      "bill_title": "7年－４ 裏金問題の徹底解明とパーティー券購入を含む企業・団体献金の禁止を求める陳情",
       "date": "2025-06-30",
       "result": "不採択",
       "granularity": "member",
@@ -36491,7 +36537,8 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1385958/R7.6giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1385958/R7.6giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
       "id": "tottori-pref--2025-06-30--f1ce10ab92f0",
@@ -41006,10 +41053,10 @@
       "source_url": "https://www.pref.tottori.lg.jp/secure/1385958/R7.6giketsukekka.pdf"
     },
     {
-      "id": "tottori-pref--2025-06-30--cc1a32dccbf8",
+      "id": "tottori-pref--2025-06-30--0e8625dbc093",
       "council_id": "tottori-pref",
       "session": "令和7年6月定例会",
-      "bill_title": "７年－10 消費税率５％への引き下げとインボイス制度の廃止を求める陳不採択",
+      "bill_title": "７年－10 消費税率５％への引き下げとインボイス制度の廃止を求める陳情",
       "date": "2025-06-30",
       "result": "不採択",
       "granularity": "member",
@@ -41191,13 +41238,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1385958/R7.6giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1385958/R7.6giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2025-06-30--760ec4a49d32",
+      "id": "tottori-pref--2025-06-30--4d03e4e97604",
       "council_id": "tottori-pref",
       "session": "令和7年6月定例会",
-      "bill_title": "７年－11 旧姓の通称使用の法制化を求める陳情研究留保",
+      "bill_title": "７年－11 旧姓の通称使用の法制化を求める陳情",
       "date": "2025-06-30",
       "result": "研究留保",
       "granularity": "member",
@@ -41379,13 +41427,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1385958/R7.6giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1385958/R7.6giketsukekka.pdf",
+      "committee_report": "研究留保"
     },
     {
-      "id": "tottori-pref--2025-06-30--35ffac7e4256",
+      "id": "tottori-pref--2025-06-30--5590ed0f6f0f",
       "council_id": "tottori-pref",
       "session": "令和7年6月定例会",
-      "bill_title": "７年－５ のため、その利用率を向上する施策を講じるよう、執行部不採択",
+      "bill_title": "７年－５ 消費生活センターのメール相談の利用率向上について",
       "date": "2025-06-30",
       "result": "不採択",
       "granularity": "member",
@@ -41567,13 +41616,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1385958/R7.6giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1385958/R7.6giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2025-06-30--4a3f930b55b7",
+      "id": "tottori-pref--2025-06-30--d36a9956f457",
       "council_id": "tottori-pref",
       "session": "令和7年6月定例会",
-      "bill_title": "７年－６ 消費生活センターの相談に付随するメールの受領方法について不採択",
+      "bill_title": "７年－６ 消費生活センターの相談に付随するメールの受領方法について",
       "date": "2025-06-30",
       "result": "不採択",
       "granularity": "member",
@@ -41755,13 +41805,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1385958/R7.6giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1385958/R7.6giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2025-06-30--b45de556622a",
+      "id": "tottori-pref--2025-06-30--3f36db172dca",
       "council_id": "tottori-pref",
       "session": "令和7年6月定例会",
-      "bill_title": "７年－７ 消費生活センターの職員確保策の検討について不採択",
+      "bill_title": "７年－７ 消費生活センターの職員確保策の検討について",
       "date": "2025-06-30",
       "result": "不採択",
       "granularity": "member",
@@ -41943,13 +41994,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1385958/R7.6giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1385958/R7.6giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2025-06-30--21a4b2a24a7d",
+      "id": "tottori-pref--2025-06-30--1a27b42a38ca",
       "council_id": "tottori-pref",
       "session": "令和7年6月定例会",
-      "bill_title": "７年－８ 「カリキュラム・オーバーロード」の改善を求める意見書採択について不採択",
+      "bill_title": "７年－８ 「カリキュラム・オーバーロード」の改善を求める意見書採択について",
       "date": "2025-06-30",
       "result": "不採択",
       "granularity": "member",
@@ -42131,13 +42183,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1385958/R7.6giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1385958/R7.6giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2025-06-30--d93e812e625d",
+      "id": "tottori-pref--2025-06-30--bc49d5f17312",
       "council_id": "tottori-pref",
       "session": "令和7年6月定例会",
-      "bill_title": "７年－９ 所得税法第56条の廃止を求める請願不採択",
+      "bill_title": "７年－９ 所得税法第56条の廃止を求める請願",
       "date": "2025-06-30",
       "result": "不採択",
       "granularity": "member",
@@ -42319,13 +42372,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1385958/R7.6giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1385958/R7.6giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2025-10-08--b2b6e0886e41",
+      "id": "tottori-pref--2025-10-08--cc4ea942741b",
       "council_id": "tottori-pref",
       "session": "令和7年9月定例会",
-      "bill_title": "7年－11 旧姓の通称使用の法制化を求める陳情研究留保",
+      "bill_title": "7年－11 旧姓の通称使用の法制化を求める陳情",
       "date": "2025-10-08",
       "result": "研究留保",
       "granularity": "member",
@@ -42507,7 +42561,8 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1396548/R7.9giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1396548/R7.9giketsukekka.pdf",
+      "committee_report": "研究留保"
     },
     {
       "id": "tottori-pref--2025-10-08--166acf5def6f",
@@ -47022,10 +47077,10 @@
       "source_url": "https://www.pref.tottori.lg.jp/secure/1396548/R7.9giketsukekka.pdf"
     },
     {
-      "id": "tottori-pref--2025-10-08--0aba6993b222",
+      "id": "tottori-pref--2025-10-08--0d7d59ffd1be",
       "council_id": "tottori-pref",
       "session": "令和7年9月定例会",
-      "bill_title": "７年－12 鳥取西部風力発電事業に関する陳情不採択",
+      "bill_title": "７年－12 鳥取西部風力発電事業に関する陳情",
       "date": "2025-10-08",
       "result": "不採択",
       "granularity": "member",
@@ -47207,13 +47262,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1396548/R7.9giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1396548/R7.9giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2025-10-08--b6176dd7e69c",
+      "id": "tottori-pref--2025-10-08--9ded910b7cb7",
       "council_id": "tottori-pref",
       "session": "令和7年9月定例会",
-      "bill_title": "７年－13 鳥取県の選挙公営制度利用状況の情報公開等について不採択",
+      "bill_title": "７年－13 鳥取県の選挙公営制度利用状況の情報公開等について",
       "date": "2025-10-08",
       "result": "不採択",
       "granularity": "member",
@@ -47395,13 +47451,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1396548/R7.9giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1396548/R7.9giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2025-10-08--19760fbd9dd1",
+      "id": "tottori-pref--2025-10-08--2f2e4f30eba5",
       "council_id": "tottori-pref",
       "session": "令和7年9月定例会",
-      "bill_title": "７年－14 ゆたかな学びの実現・教職員定数改善をはかるための、2026 年度政府予算に係る意見書採択について不採択",
+      "bill_title": "７年－14 ゆたかな学びの実現・教職員定数改善をはかるための、2026 年度政府予算に係る意見書採択について",
       "date": "2025-10-08",
       "result": "不採択",
       "granularity": "member",
@@ -47583,13 +47640,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1396548/R7.9giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1396548/R7.9giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2025-10-08--23b9a86d67dc",
+      "id": "tottori-pref--2025-10-08--5966e600b953",
       "council_id": "tottori-pref",
       "session": "令和7年9月定例会",
-      "bill_title": "７年－15 保育士配置基準の引上げの早期完全実施とさらなる改善を求める意見書提出を求める陳情不採択",
+      "bill_title": "７年－15 保育士配置基準の引上げの早期完全実施とさらなる改善を求める意見書提出を求める陳情",
       "date": "2025-10-08",
       "result": "不採択",
       "granularity": "member",
@@ -47771,13 +47829,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1396548/R7.9giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1396548/R7.9giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2025-10-08--e6a72197e411",
+      "id": "tottori-pref--2025-10-08--329a65493ae2",
       "council_id": "tottori-pref",
       "session": "令和7年9月定例会",
-      "bill_title": "７年－16 保育所等に対する社会福祉施設職員等退職手当共済制度の公費助成の継続を求める意見書の提出を求める陳情不採択",
+      "bill_title": "７年－16 保育所等に対する社会福祉施設職員等退職手当共済制度の公費助成の継続を求める意見書の提出を求める陳情",
       "date": "2025-10-08",
       "result": "不採択",
       "granularity": "member",
@@ -47959,13 +48018,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1396548/R7.9giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1396548/R7.9giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2025-10-08--16650f2c15e1",
+      "id": "tottori-pref--2025-10-08--df1a8a5652ff",
       "council_id": "tottori-pref",
       "session": "令和7年9月定例会",
-      "bill_title": "７年－17 国による小学校給食無償化実施に当たり、対象を中学校まで広げるよう求める意見書の提出を求める請願不採択",
+      "bill_title": "７年－17 国による小学校給食無償化実施に当たり、対象を中学校まで広げるよう求める意見書の提出を求める請願",
       "date": "2025-10-08",
       "result": "不採択",
       "granularity": "member",
@@ -48147,13 +48207,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1396548/R7.9giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1396548/R7.9giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2025-10-08--bea8319a4075",
+      "id": "tottori-pref--2025-10-08--bfbf68798c58",
       "council_id": "tottori-pref",
       "session": "令和7年9月定例会",
-      "bill_title": "７年－18 国に対し、訪問介護基本報酬引下げ撤回と基盤充実の意見書提出を求めることについて不採択",
+      "bill_title": "７年－18 国に対し、訪問介護基本報酬引下げ撤回と基盤充実の意見書提出を求めることについて",
       "date": "2025-10-08",
       "result": "不採択",
       "granularity": "member",
@@ -48335,13 +48396,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1396548/R7.9giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1396548/R7.9giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2025-10-08--1be826790a40",
+      "id": "tottori-pref--2025-10-08--1b119e6a0ee6",
       "council_id": "tottori-pref",
       "session": "令和7年9月定例会",
-      "bill_title": "７年－19 私学助成に関する意見書の提出について趣旨採択",
+      "bill_title": "７年－19 私学助成に関する意見書の提出について",
       "date": "2025-10-08",
       "result": "趣旨採択",
       "granularity": "member",
@@ -48523,13 +48585,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1396548/R7.9giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1396548/R7.9giketsukekka.pdf",
+      "committee_report": "趣旨採択"
     },
     {
-      "id": "tottori-pref--2025-10-08--2493e97886d9",
+      "id": "tottori-pref--2025-10-08--21b01b7bd6c0",
       "council_id": "tottori-pref",
       "session": "令和7年9月定例会",
-      "bill_title": "７年－20 消費税減税を求める陳情不採択",
+      "bill_title": "７年－20 消費税減税を求める陳情",
       "date": "2025-10-08",
       "result": "不採択",
       "granularity": "member",
@@ -48711,13 +48774,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1396548/R7.9giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1396548/R7.9giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2025-10-08--eb7a7490646b",
+      "id": "tottori-pref--2025-10-08--8cc9ab890dfd",
       "council_id": "tottori-pref",
       "session": "令和7年9月定例会",
-      "bill_title": "７年－21 物価高対策の速やかな実施について不採択",
+      "bill_title": "７年－21 物価高対策の速やかな実施について",
       "date": "2025-10-08",
       "result": "不採択",
       "granularity": "member",
@@ -48899,7 +48963,8 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1396548/R7.9giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1396548/R7.9giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
       "id": "tottori-pref--2025-12-22--628f04e46de6",
@@ -53602,10 +53667,10 @@
       "source_url": "https://www.pref.tottori.lg.jp/secure/1404909/R7.12.22giketsukekka.pdf"
     },
     {
-      "id": "tottori-pref--2025-12-22--4d23294e1274",
+      "id": "tottori-pref--2025-12-22--66842924cb55",
       "council_id": "tottori-pref",
       "session": "令和7年12月定例会",
-      "bill_title": "７年－11 「婚姻に伴う改姓後の不便さや不利益を」完全に解消する研究留保",
+      "bill_title": "７年－11 旧姓の通称使用の法制化を求める陳情",
       "date": "2025-12-22",
       "result": "研究留保",
       "granularity": "member",
@@ -53787,13 +53852,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1404909/R7.12.22giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1404909/R7.12.22giketsukekka.pdf",
+      "committee_report": "研究留保"
     },
     {
-      "id": "tottori-pref--2025-12-22--3829ed310fdf",
+      "id": "tottori-pref--2025-12-22--4d4f107d3af1",
       "council_id": "tottori-pref",
       "session": "令和7年12月定例会",
-      "bill_title": "７年－22 について、その適切な運用のルールを定め、使途を公開不採択",
+      "bill_title": "７年－22 政務活動費の公開のあり方について",
       "date": "2025-12-22",
       "result": "不採択",
       "granularity": "member",
@@ -53975,13 +54041,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1404909/R7.12.22giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1404909/R7.12.22giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2025-12-22--e24880f9d2c2",
+      "id": "tottori-pref--2025-12-22--540d75794ebd",
       "council_id": "tottori-pref",
       "session": "令和7年12月定例会",
-      "bill_title": "７年－23 脳神経関連権保護の条例制定についての陳情不採択",
+      "bill_title": "７年－23 脳神経関連権保護の条例制定についての陳情",
       "date": "2025-12-22",
       "result": "不採択",
       "granularity": "member",
@@ -54163,13 +54230,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1404909/R7.12.22giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1404909/R7.12.22giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2025-12-22--ae0520a14e50",
+      "id": "tottori-pref--2025-12-22--bc39bb4a6d86",
       "council_id": "tottori-pref",
       "session": "令和7年12月定例会",
-      "bill_title": "７年－24 議会から衆参両院議長に対し、意見書を提出すること。 不採択",
+      "bill_title": "７年－24 衆議院議員の定数削減に反対する請願",
       "date": "2025-12-22",
       "result": "不採択",
       "granularity": "member",
@@ -54351,13 +54419,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1404909/R7.12.22giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1404909/R7.12.22giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2025-12-22--c952927d6b47",
+      "id": "tottori-pref--2025-12-22--5ba716d6adf8",
       "council_id": "tottori-pref",
       "session": "令和7年12月定例会",
-      "bill_title": "７年－25 被ばくの影響を受けやすい乳幼児・子ども・妊産婦などが屋内退避する場合の被ばく低減対策を鳥取県地域防災計画及び広域住民避難計画に記載することを求める陳情不採択",
+      "bill_title": "７年－25 被ばくの影響を受けやすい乳幼児・子ども・妊産婦などが屋内退避する場合の被ばく低減対策を鳥取県地域防災計画及び広域住民避難計画に記載することを求める陳情",
       "date": "2025-12-22",
       "result": "不採択",
       "granularity": "member",
@@ -54539,13 +54608,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1404909/R7.12.22giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1404909/R7.12.22giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2025-12-22--4e0aaf7c246a",
+      "id": "tottori-pref--2025-12-22--9c178688f92d",
       "council_id": "tottori-pref",
       "session": "令和7年12月定例会",
-      "bill_title": "７年－26 生活保護基準引下げ違法の最高裁判決を踏まえ速やかな対応を求める陳情不採択",
+      "bill_title": "７年－26 生活保護基準引下げ違法の最高裁判決を踏まえ速やかな対応を求める陳情",
       "date": "2025-12-22",
       "result": "不採択",
       "granularity": "member",
@@ -54727,13 +54797,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1404909/R7.12.22giketsukekka.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1404909/R7.12.22giketsukekka.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2026-03-25--55c74e5794bb",
+      "id": "tottori-pref--2026-03-25--3930132ebda4",
       "council_id": "tottori-pref",
       "session": "令和8年2月定例会",
-      "bill_title": "7年－11 「婚姻に伴う改姓後の不便さや不利益を」完全に解消する研究留保",
+      "bill_title": "7年－11 旧姓の通称使用の法制化を求める陳情",
       "date": "2026-03-25",
       "result": "研究留保",
       "granularity": "member",
@@ -54915,7 +54986,8 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1412310/R8.2giketsukekka0325.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1412310/R8.2giketsukekka0325.pdf",
+      "committee_report": "研究留保"
     },
     {
       "id": "tottori-pref--2026-03-25--a871a3b798cf",
@@ -68078,10 +68150,10 @@
       "source_url": "https://www.pref.tottori.lg.jp/secure/1412310/R8.2giketsukekka0325.pdf"
     },
     {
-      "id": "tottori-pref--2026-03-25--0afd3086ba74",
+      "id": "tottori-pref--2026-03-25--61a8b093b8c5",
       "council_id": "tottori-pref",
       "session": "令和8年2月定例会",
-      "bill_title": "８年－2 政府に所得補償（直接支払い）制度の実現を求める請願不採択",
+      "bill_title": "８年－2 政府に所得補償（直接支払い）制度の実現を求める請願",
       "date": "2026-03-25",
       "result": "不採択",
       "granularity": "member",
@@ -68263,13 +68335,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1412310/R8.2giketsukekka0325.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1412310/R8.2giketsukekka0325.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2026-03-25--f9bd736c68b5",
+      "id": "tottori-pref--2026-03-25--cf2f89d7e9ae",
       "council_id": "tottori-pref",
       "session": "令和8年2月定例会",
-      "bill_title": "８年－１ 非核三原則の堅持を求める意見書の提出について不採択",
+      "bill_title": "８年－１ 非核三原則の堅持を求める意見書の提出について",
       "date": "2026-03-25",
       "result": "不採択",
       "granularity": "member",
@@ -68451,13 +68524,14 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1412310/R8.2giketsukekka0325.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1412310/R8.2giketsukekka0325.pdf",
+      "committee_report": "不採択"
     },
     {
-      "id": "tottori-pref--2026-03-25--1b769e13c5a1",
+      "id": "tottori-pref--2026-03-25--66dbb1b5c718",
       "council_id": "tottori-pref",
       "session": "令和8年2月定例会",
-      "bill_title": "８年－３ 子どもの成長を保障し、保育士が働く喜びにあふれる保育の実現に向けた調査・検討の着手に関する陳情趣旨採択 （措置済）",
+      "bill_title": "８年－３ 子どもの成長を保障し、保育士が働く喜びにあふれる保育の実現に向けた調査・検討の着手に関する陳情",
       "date": "2026-03-25",
       "result": "趣旨採択",
       "granularity": "member",
@@ -68639,7 +68713,8 @@
         }
       ],
       "votes_by_faction": null,
-      "source_url": "https://www.pref.tottori.lg.jp/secure/1412310/R8.2giketsukekka0325.pdf"
+      "source_url": "https://www.pref.tottori.lg.jp/secure/1412310/R8.2giketsukekka0325.pdf",
+      "committee_report": "趣旨採択"
     }
   ]
 }

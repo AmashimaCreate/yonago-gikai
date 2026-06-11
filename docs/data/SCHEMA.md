@@ -127,6 +127,7 @@ robots.txt 等により自動取得しない議会の、人間転記用入力フ
       "bill_title": "議案第1号 ...",
       "date": "2026-03-25",
       "result": "可決",
+      "committee_report": null,
       "granularity": "member",
       "votes_by_member": [
         {"member_id": "yonago-city--adachi-takashi", "vote": "賛成"}
@@ -149,6 +150,7 @@ robots.txt 等により自動取得しない議会の、人間転記用入力フ
 - `granularity` は `member` / `faction` / `result_only`。
 - `granularity` が `member` 以外の場合、`votes_by_member` は `null`。
 - `date` は `YYYY-MM-DD` または `null`。
+- `committee_report` は任意。請願・陳情で委員長報告（採択 / 不採択 / 研究留保 等）がPDFにある場合のみ文字列で保持する。`bill_title` は件名セルのみとし、陳情事項本文や委員長報告を連結しない。
 - `votes_by_member[].vote` は `賛成` / `反対` / `退席` / `欠席` / `議長` / `除斥` / `継続審査` のいずれか。
 - `議長` は慣例により採決に加わらない議長席を表す。賛否の意思表示として扱わない。
 - `除斥` は地方自治法上の利害関係等により議事から除かれた状態を表す。フロントでは「利害関係があるため採決から外れた状態」のように平易な注記を添える。

@@ -37,6 +37,9 @@ MIN_MEMBER_COLUMNS = 30
 PDF_TEXT_MIN_CHARS = 200
 
 SYMBOL_CHARS = "○〇×✕議副棄除欠－-△※"
+COMMITTEE_REPORT_RE = re.compile(
+    r"\s*(?:趣旨採択\s*[（(]措置済[）)]|趣旨採択|不採択|研究留保|審議未了|採択)\s*$"
+)
 VOTE_MAP = {
     "○": "賛成",
     "〇": "賛成",
@@ -400,7 +403,9 @@ class TottoriPrefVotesPdfAdapter:
                 f"表決者数 {yes + no} がPDF記載 {record['total']} と不一致"
             )
 
-        bill_title = record["title"] or f"{link.session} page {record['page']}"
+        bill_title = clean_bill_title(record["title"], record.get("result")) or (
+            f"{link.session} page {record['page']}"
+        )
         if problems:
             self.stats.bills_rejected += 1
             self.rejected_bills.append(
@@ -431,7 +436,7 @@ class TottoriPrefVotesPdfAdapter:
                 "calculated_no": no,
                 "note": "割れた議決で賛成・反対数がPDF記載と一致することを確認",
             }
-        return {
+        vote = {
             "id": build_vote_id(link.session, vote_date, bill_title, result),
             "council_id": COUNCIL_ID,
             "session": link.session,
@@ -443,6 +448,9 @@ class TottoriPrefVotesPdfAdapter:
             "votes_by_faction": None,
             "source_url": link.url,
         }
+        if is_petition_or_request_title(record["title"]):
+            vote["committee_report"] = result
+        return vote
 
     def mark_unreadable(self, link: VotePdfLink, reason: str) -> None:
         self.stats.unreadable_pdfs += 1
@@ -616,6 +624,10 @@ def merge_layout_titles(
     raw_records: list[dict[str, Any]], layout_records: list[dict[str, Any]]
 ) -> None:
     for raw, layout in zip(raw_records, layout_records, strict=False):
+        # 請願・陳情ブロックは「件名」の下に「陳情事項」「委員長報告」が横並びで続く。
+        # layout抽出は事項本文を件名より長い文字列として拾う場合があるため、件名補完から除外する。
+        if is_petition_or_request_title(raw["title"]):
+            continue
         if (
             raw["yes"] == layout["yes"]
             and raw["no"] == layout["no"]
@@ -623,6 +635,32 @@ def merge_layout_titles(
             and len(layout["title"]) > len(raw["title"])
         ):
             raw["title"] = layout["title"]
+
+
+def is_petition_or_request_title(title: str) -> bool:
+    return bool(
+        re.match(
+            r"^[0-9０-９]{1,2}年[－-]\s*[0-9０-９]+",
+            normalize_japanese_spacing(title),
+        )
+    )
+
+
+def clean_bill_title(title: str, committee_report: str | None = None) -> str:
+    cleaned = normalize_japanese_spacing(title)
+    if not is_petition_or_request_title(cleaned):
+        return cleaned
+
+    cleaned = COMMITTEE_REPORT_RE.sub("", cleaned).strip()
+    if committee_report:
+        cleaned = re.sub(rf"\s*{re.escape(committee_report)}\s*$", "", cleaned).strip()
+
+    # PDF抽出で行末の「陳情」「請願」が1字欠けるケースを補う。
+    if cleaned.endswith("陳"):
+        cleaned += "情"
+    elif cleaned.endswith("請"):
+        cleaned += "願"
+    return cleaned
 
 
 def find_data_start(lines: list[str]) -> int | None:

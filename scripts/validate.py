@@ -332,6 +332,9 @@ def validate_votes_file(council_id: str, path: Path) -> list[str]:
         source_url = vote.get("source_url")
         if isinstance(source_url, str) and not source_url.startswith("https://"):
             errors.append(f"{label}: source_url must start with 'https://'")
+        committee_report = vote.get("committee_report")
+        if committee_report is not None and not isinstance(committee_report, str):
+            errors.append(f"{label}: committee_report must be a string or null")
         date_value = vote.get("date")
         if date_value is not None and (
             not isinstance(date_value, str) or not is_iso_date(date_value)
