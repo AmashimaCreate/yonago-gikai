@@ -118,7 +118,7 @@ function renderVoteHighlightBlock(title, votes, emptyText) {
   return el("section", { class: "divided-vote-block" }, [
     el("h3", {}, `${title}（${votes.length}件）`),
     overflowVotes.length
-      ? el("p", { class: "muted" }, `最新${cardVotes.length}件をカードで表示し、残り${overflowVotes.length}件は定例会ごとの折りたたみに残しています。`)
+      ? el("p", { class: "muted" }, `最新${cardVotes.length}件をカードで表示しています。ほか${overflowVotes.length}件は定例会ごとに開いて確認できます。`)
       : null,
     cardVotes.length
       ? el("div", { class: "member-divided-vote-grid" },

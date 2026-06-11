@@ -26,7 +26,7 @@ export function renderTop(root) {
           el("ul", {}, [
             el("li", {}, [
               el("a", { href: prefPath("tottori") }, "鳥取県"),
-              el("span", { class: "muted" }, " 鳥取県内5議会に対応"),
+              el("span", { class: "muted" }, " 5議会の基本情報を掲載"),
             ]),
           ]),
         ]),

@@ -6,6 +6,9 @@ export function renderPrefecturePage(root, councils, prefecture = "tottori", sum
   root.innerHTML = "";
   const prefectureCouncils = councils.filter((council) => council.prefecture === prefecture);
   const prefectureCouncil = prefectureCouncils.find((council) => council.type === "prefecture");
+  const summaryByCouncilId = new Map(
+    summaries.map((summary) => [summary.council.id, summary]),
+  );
   const mapFrame = el("div", { class: "map-frame municipality-map-frame" }, [
     el("p", { class: "muted" }, "鳥取県の市町村地図を読み込み中..."),
   ]);
@@ -15,8 +18,13 @@ export function renderPrefecturePage(root, councils, prefecture = "tottori", sum
       el("div", { class: "prefecture-map-layout" }, [
         prefectureCouncil
           ? el("div", { class: "prefecture-assembly-wrap" }, [
-              el("p", { class: "map-caption" }, "県議会"),
-              renderCouncilCard(prefectureCouncil, prefecture),
+              el("p", { class: "map-caption" }, "県全体を扱う議会"),
+              renderCouncilCard(
+                prefectureCouncil,
+                prefecture,
+                summaryByCouncilId.get(prefectureCouncil.id),
+                { hideTypeLabel: true },
+              ),
             ])
           : null,
         el("div", {}, [
@@ -49,7 +57,9 @@ export function renderPrefecturePage(root, councils, prefecture = "tottori", sum
       el(
         "div",
         { class: "council-grid" },
-        prefectureCouncils.map((council) => renderCouncilCard(council, prefecture)),
+        prefectureCouncils.map((council) =>
+          renderCouncilCard(council, prefecture, summaryByCouncilId.get(council.id)),
+        ),
       ),
     ]),
   ]);
@@ -118,19 +128,17 @@ function setupPrefectureTabs(root) {
   });
 }
 
-function renderCouncilCard(council, prefecture) {
+function renderCouncilCard(council, prefecture, summary = null, options = {}) {
+  const memberText = typeof summary?.memberCount === "number"
+    ? `議員${summary.memberCount}人`
+    : "議員数を確認中";
+  const hideTypeLabel = options.hideTypeLabel || council.type === "prefecture";
   return el("article", { class: `council-card ${council.type === "prefecture" ? "is-prefecture" : "is-city"}` }, [
-    el("div", { class: "card-eyebrow" }, councilTypeLabel(council)),
+    hideTypeLabel ? null : el("div", { class: "card-eyebrow" }, councilTypeLabel(council)),
     el("h3", {}, council.name),
-    el("p", { class: "muted" }, readableMinutesSystem(council.minutes_system)),
+    el("p", { class: "muted" }, memberText),
     el("a", { class: "button-link", href: councilPath(prefecture, council.id) }, "議会ページを見る"),
   ]);
-}
-
-function readableMinutesSystem(value) {
-  if (value === "kensakusystem_legacy") return "会議録検索システムから発言インデックスを取得済み";
-  if (value === "dbsr") return "会議録は別システムのため発言インデックス未取得";
-  return "会議録の取得方式を調査中";
 }
 
 function councilTypeLabel(council) {
