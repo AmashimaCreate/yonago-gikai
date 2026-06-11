@@ -78,6 +78,8 @@ def parse_affiliations(lines: list[str]) -> tuple[list[str], list[str]]:
 
     for raw in lines[start:]:
         line = normalize_text(raw)
+        if is_footer_or_contact_line(line):
+            break
         role_match = re.search(r"（(委員長|副委員長)）", line)
         name = re.sub(r"（(委員長|副委員長)）", "", line).strip()
         if "委員会" in name:
@@ -87,6 +89,41 @@ def parse_affiliations(lines: list[str]) -> tuple[list[str], list[str]]:
         else:
             append_unique(positions, name)
     return committees, positions
+
+
+def is_footer_or_contact_line(line: str) -> bool:
+    return bool(
+        line
+        and (
+            line == "議会事務局"
+            or line.startswith(
+                (
+                    "〒",
+                    "電話番号:",
+                    "ファックス:",
+                    "FAX:",
+                    "TEL:",
+                    "場所:",
+                    "添付資料",
+                    "スマートフォン",
+                    "ページの",
+                    "先頭へ戻る",
+                    "サイトマップ",
+                    "プライバシーポリシー",
+                    "このサイト",
+                    "リンク・著作権",
+                    "倉吉市役所",
+                    "法人番号",
+                    "窓口ご案内",
+                    "開庁時間",
+                    "市役所",
+                    "庁舎案内",
+                    "統計情報",
+                    "Copyright",
+                )
+            )
+        )
+    )
 
 
 def parse_block(header: str, lines: list[str], photos: dict[int, str]) -> dict | None:
