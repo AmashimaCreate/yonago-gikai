@@ -74,12 +74,26 @@ function renderSpeechSection(speeches, speechesMeta, council) {
   }
 
   return el("section", { class: "speech-section" }, [
-    el("h2", { class: "section-title" }, `発言インデックス（${speeches.length}件）`),
-    cautionNote(),
-    el("p", { class: "muted" }, coverageText(speechesMeta, council)),
+    el("div", { class: "section-heading-row" }, [
+      el("div", {}, [
+        el("p", { class: "eyebrow" }, "本会議での発言"),
+        el("h2", { class: "section-title" }, "発言インデックス"),
+      ]),
+      el("p", { class: "section-count" }, `${speeches.length}件`),
+    ]),
+    el("p", { class: "member-speech-summary" }, [
+      el("strong", {}, `${speeches.length}件`),
+      el("span", {}, " — 本会議での議員発言者として取得した記録"),
+    ]),
+    el("details", { class: "speech-coverage-note" }, [
+      el("summary", {}, "取得範囲と注意を見る"),
+      cautionNote(),
+      el("p", { class: "muted" }, coverageText(speechesMeta, council)),
+    ]),
     speeches.length
       ? el("ul", { class: "speech-list" }, speeches.map(renderSpeechItem))
       : el("p", { class: "empty-message" }, "この取得範囲では、この議員に紐付いた発言インデックスはありません。"),
+    renderSpeechSourceSummary(speeches),
   ]);
 }
 
@@ -89,8 +103,16 @@ function renderSpeechItem(speech) {
     el("div", { class: "speech-main" }, [
       el("div", { class: "speech-meeting" }, speech.meeting_name || "会議名なし"),
       el("div", { class: "speech-speaker" }, `発言者表記: ${speech.speaker_label || "データなし"}`),
-      sourceLink(speech.source_url, "発言の確認はこちら"),
     ]),
+  ]);
+}
+
+function renderSpeechSourceSummary(speeches) {
+  const first = (speeches || []).find((speech) => speech.source_url)?.source_url;
+  if (!first) return null;
+  return el("p", { class: "section-source" }, [
+    "出典: ",
+    el("a", { href: first, target: "_blank", rel: "noopener" }, "会議録検索入口"),
   ]);
 }
 

@@ -8,20 +8,26 @@ export function renderTop(root) {
   ]);
 
   root.appendChild(
-    el("section", { class: "intro-panel" }, [
-      el("h2", { class: "section-title" }, "全国トップ"),
-      el(
-        "p",
-        {},
-        "全国の都道府県から、対応済みの議会ページへ進む入口です。現在は鳥取県のみ対応しています。順次拡大予定です。",
-      ),
-      mapFrame,
-      el("section", { class: "supported-region-list", "aria-labelledby": "supported-regions-title" }, [
-        el("h3", { id: "supported-regions-title" }, "対応地域一覧"),
-        el("ul", {}, [
-          el("li", {}, [
-            el("a", { href: prefPath("tottori") }, "鳥取県"),
-            el("span", { class: "muted" }, " 鳥取県内5議会に対応"),
+    el("section", { class: "national-hero page-card" }, [
+      el("div", { class: "national-copy" }, [
+        el("p", { class: "eyebrow" }, "全国トップ"),
+        el("h2", { class: "section-title" }, "対応地域から議会を見る"),
+        el(
+          "p",
+          {},
+          "現在は鳥取県のみ対応しています。順次拡大予定です。",
+        ),
+        el("a", { class: "button-link", href: prefPath("tottori") }, "鳥取県を見る"),
+      ]),
+      el("div", { class: "national-map-wrap" }, [
+        mapFrame,
+        el("section", { class: "supported-region-list", "aria-labelledby": "supported-regions-title" }, [
+          el("h3", { id: "supported-regions-title" }, "対応地域一覧"),
+          el("ul", {}, [
+            el("li", {}, [
+              el("a", { href: prefPath("tottori") }, "鳥取県"),
+              el("span", { class: "muted" }, " 鳥取県内5議会に対応"),
+            ]),
           ]),
         ]),
       ]),

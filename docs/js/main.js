@@ -10,6 +10,17 @@ import { filteredMembers } from "./search.js";
 import { state } from "./state.js";
 import { el } from "./utils.js";
 
+const COUNCILS_WITH_VOTES = new Set([
+  "kurayoshi-city",
+  "tottori-pref",
+  "sakaiminato-city",
+]);
+const COUNCILS_WITH_SPEECHES = new Set([
+  "yonago-city",
+  "kurayoshi-city",
+  "sakaiminato-city",
+]);
+
 function titleNode() {
   return document.getElementById("page-title");
 }
@@ -98,20 +109,20 @@ function updateActiveTab() {
 }
 
 function renderCouncilRoute() {
-  const isStageOneCouncil = state.currentCouncil?.id === "kurayoshi-city";
+  const isRedesignedCouncil = state.currentCouncil?.prefecture === "tottori";
   setHeader({
     title: state.currentCouncil.name,
-    lead: isStageOneCouncil
-      ? "この街の今と、最近決まったことを見ます。"
+    lead: isRedesignedCouncil
+      ? "この地域の今と、最近決まったことを見ます。"
       : "議員名簿、自治体基礎データ、発言インデックスを同じ画面で確認します。",
   });
-  showCouncilNav(!isStageOneCouncil);
+  showCouncilNav(!isRedesignedCouncil);
   updateActiveTab();
   updateSearchPlaceholder();
   syncSearchInput();
   syncSearchVisibility();
   const profileNode = document.getElementById("profile");
-  if (isStageOneCouncil) {
+  if (isRedesignedCouncil) {
     profileNode.hidden = true;
     profileNode.innerHTML = "";
   } else {
@@ -256,8 +267,8 @@ async function applyRoute() {
     }
 
     const bundle = await loadCouncilBundle(route.councilId, {
-      includeSpeeches: true,
-      includeVotes: route.councilId === "kurayoshi-city",
+      includeSpeeches: COUNCILS_WITH_SPEECHES.has(route.councilId),
+      includeVotes: COUNCILS_WITH_VOTES.has(route.councilId),
     });
     state.currentCouncil = bundle.council;
     state.members = bundle.members;

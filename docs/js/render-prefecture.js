@@ -4,25 +4,14 @@ import { el } from "./utils.js";
 
 export function renderPrefecturePage(root, councils, prefecture = "tottori", summaries = []) {
   root.innerHTML = "";
-  const prefectureCouncil = councils.find((council) => council.type === "prefecture");
+  const prefectureCouncils = councils.filter((council) => council.prefecture === prefecture);
+  const prefectureCouncil = prefectureCouncils.find((council) => council.type === "prefecture");
   const mapFrame = el("div", { class: "map-frame municipality-map-frame" }, [
     el("p", { class: "muted" }, "鳥取県の市町村地図を読み込み中..."),
   ]);
-
-  root.appendChild(
-    el("section", { class: "intro-panel" }, [
-      el("h2", { class: "section-title" }, "鳥取県内5議会"),
-      el(
-        "p",
-        {},
-        "公開されている議員名簿・基礎データ・会議録発言インデックスを、議会ごとに同じ形で確認できます。",
-      ),
-    ]),
-  );
-
-  root.appendChild(
+  const comparison = renderPrefectureComparison(summaries, prefecture);
+  const mapPanel = el("div", { class: "prefecture-tab-panel", "data-pref-panel": "browse" }, [
     el("section", { class: "prefecture-map-panel" }, [
-      el("h2", { class: "section-title" }, "地図から選ぶ"),
       el("div", { class: "prefecture-map-layout" }, [
         prefectureCouncil
           ? el("div", { class: "prefecture-assembly-wrap" }, [
@@ -50,20 +39,83 @@ export function renderPrefecturePage(root, councils, prefecture = "tottori", sum
         ]),
       ]),
     ]),
-  );
-
-  const comparison = renderPrefectureComparison(summaries, prefecture);
-  if (comparison) root.appendChild(comparison);
+    el("section", { class: "council-card-section" }, [
+      el("div", { class: "section-heading-row" }, [
+        el("div", {}, [
+          el("p", { class: "eyebrow" }, "対応中の議会"),
+          el("h2", { class: "section-title" }, "議会カードから選ぶ"),
+        ]),
+      ]),
+      el(
+        "div",
+        { class: "council-grid" },
+        prefectureCouncils.map((council) => renderCouncilCard(council, prefecture)),
+      ),
+    ]),
+  ]);
+  const comparisonPanel = el("div", {
+    class: "prefecture-tab-panel",
+    "data-pref-panel": "compare",
+    hidden: "",
+  }, comparison ? [comparison] : [
+    el("p", { class: "empty-message" }, "比較に使うデータを読み込めませんでした。"),
+  ]);
 
   root.appendChild(
-    el(
-      "div",
-      { class: "council-grid" },
-      councils.map((council) => renderCouncilCard(council, prefecture)),
-    ),
+    el("section", { class: "prefecture-hero page-card" }, [
+      el("p", { class: "eyebrow" }, "鳥取県"),
+      el("h2", { class: "section-title" }, "どの議会を見る？"),
+      el(
+        "p",
+        {},
+        "地図または議会カードから、鳥取県内5議会の公開データへ進めます。",
+      ),
+      renderPrefectureTabs(),
+    ]),
   );
 
+  root.appendChild(mapPanel);
+  root.appendChild(comparisonPanel);
+  setupPrefectureTabs(root);
+
   hydrateMunicipalityMap(mapFrame, prefecture);
+}
+
+function renderPrefectureTabs() {
+  return el("div", { class: "prefecture-tabs", role: "tablist", "aria-label": "鳥取県ページの表示切り替え" }, [
+    el("button", {
+      type: "button",
+      class: "prefecture-tab is-active",
+      "data-pref-tab": "browse",
+      role: "tab",
+      "aria-selected": "true",
+    }, "見る"),
+    el("button", {
+      type: "button",
+      class: "prefecture-tab",
+      "data-pref-tab": "compare",
+      role: "tab",
+      "aria-selected": "false",
+    }, "くらべる"),
+  ]);
+}
+
+function setupPrefectureTabs(root) {
+  const tabs = root.querySelectorAll("[data-pref-tab]");
+  const panels = root.querySelectorAll("[data-pref-panel]");
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const target = tab.dataset.prefTab;
+      tabs.forEach((item) => {
+        const active = item.dataset.prefTab === target;
+        item.classList.toggle("is-active", active);
+        item.setAttribute("aria-selected", active ? "true" : "false");
+      });
+      panels.forEach((panel) => {
+        panel.hidden = panel.dataset.prefPanel !== target;
+      });
+    });
+  });
 }
 
 function renderCouncilCard(council, prefecture) {
