@@ -90,6 +90,7 @@ VOTE_KEYS = {
     "source_url",
 }
 VOTE_GRANULARITY_VALUES = {"member", "faction", "result_only"}
+VOTE_VALUES = {"賛成", "反対", "退席", "欠席", "議長"}
 
 
 def load_json(path: Path) -> Any:
@@ -384,8 +385,14 @@ def validate_votes_by_member(
             errors.append(
                 f"{item_label}: member_name must be kept when member_id is null"
             )
-        if not isinstance(item.get("vote"), str) or not item.get("vote"):
+        vote_value = item.get("vote")
+        if not isinstance(vote_value, str) or not vote_value:
             errors.append(f"{item_label}: vote must be a non-empty string")
+        elif vote_value not in VOTE_VALUES:
+            errors.append(
+                f"{item_label}: invalid vote '{vote_value}' "
+                f"(expected one of {sorted(VOTE_VALUES)})"
+            )
     return errors
 
 

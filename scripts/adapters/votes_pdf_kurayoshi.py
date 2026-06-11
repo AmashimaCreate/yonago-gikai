@@ -41,7 +41,7 @@ VOTE_MAP = {
     "〇": "賛成",
     "×": "反対",
     "✕": "反対",
-    "※": "欠席等",
+    "※": "欠席",
     "議長": "議長",
 }
 
@@ -390,7 +390,7 @@ def normalize_vote(value: str) -> str:
     if compact in VOTE_MAP:
         return VOTE_MAP[compact]
     if not compact:
-        return "欠席等"
+        return "欠席"
     return compact
 
 

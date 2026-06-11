@@ -147,6 +147,9 @@ robots.txt 等により自動取得しない議会の、人間転記用入力フ
 - `granularity` は `member` / `faction` / `result_only`。
 - `granularity` が `member` 以外の場合、`votes_by_member` は `null`。
 - `date` は `YYYY-MM-DD` または `null`。
+- `votes_by_member[].vote` は `賛成` / `反対` / `退席` / `欠席` / `議長` のいずれか。
+- `議長` は慣例により採決に加わらない議長席を表す。賛否の意思表示として扱わない。
+- `votes_by_member[].member_name` は、`member_id` が `null` の場合もPDF上の投票者名を保持するためのフィールド。`speeches.json` の `speaker_label` と同じく、現名簿外の人物や表記揺れを後から確認できるように残す。
 
 ## profile source input
 
