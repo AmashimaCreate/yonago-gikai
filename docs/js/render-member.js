@@ -1,5 +1,6 @@
 import { acquisitionText, cautionNote, coverageText, sourceLink } from "./data-quality.js";
 import { councilPath } from "./router.js";
+import { renderMemberVoteSection } from "./render-votes.js";
 import { el } from "./utils.js";
 
 export function renderMemberPage(root, state, memberId) {
@@ -31,6 +32,13 @@ export function renderMemberPage(root, state, memberId) {
   );
 
   root.appendChild(renderMemberProfile(member, state.membersMeta));
+  const voteSection = renderMemberVoteSection(
+    state.votes,
+    member,
+    state.currentCouncil,
+    state.route,
+  );
+  if (voteSection) root.appendChild(voteSection);
   root.appendChild(renderSpeechSection(speeches, state.speechesMeta, state.currentCouncil));
 }
 

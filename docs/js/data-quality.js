@@ -22,6 +22,19 @@ export function coverageText(speechesMeta, council = null) {
   return "本会議での議員の発言のみ。委員会・議長の進行・市長や職員の答弁は含みません。";
 }
 
+export function voteCoverageText(votesMeta, council = null) {
+  if (votesMeta) {
+    return "議員別賛否PDFから取得。議案名・票・議決結果は公式PDFを確認できます。";
+  }
+  if (council?.id === "tottori-city") {
+    return "賛否PDFが機械可読でない形式のため未収録（対応検討中）。";
+  }
+  if (council?.id === "yonago-city") {
+    return "議員別の賛否は公式に公開されていません（議決結果のみ）。";
+  }
+  return "議員別賛否データはまだ表示していません。";
+}
+
 export function sourceLink(url, label = "公式情報を確認") {
   if (!url) return null;
   return el(
@@ -35,7 +48,7 @@ export function sourceLink(url, label = "公式情報を確認") {
   );
 }
 
-export function dataQualityPanel({ membersMeta, speechesMeta, council }) {
+export function dataQualityPanel({ membersMeta, speechesMeta, votesMeta, council }) {
   const rows = [
     qualityRow(
       "議員名簿",
@@ -51,9 +64,9 @@ export function dataQualityPanel({ membersMeta, speechesMeta, council }) {
     ),
     qualityRow(
       "議案への賛否",
-      "このフェーズではまだ表示していません。",
-      null,
-      "not_implemented",
+      voteCoverageText(votesMeta, council),
+      sourceLink(firstVoteSourceUrl(votesMeta), "賛否の出典"),
+      votesMeta ? "member_votes" : "not_collected",
     ),
   ];
 
@@ -81,6 +94,12 @@ function firstSpeechSourceUrl(speechesMeta) {
   const speeches = speechesMeta?.speeches;
   if (!Array.isArray(speeches) || speeches.length === 0) return null;
   return speeches.find((speech) => speech.source_url)?.source_url || null;
+}
+
+function firstVoteSourceUrl(votesMeta) {
+  const votes = votesMeta?.votes;
+  if (!Array.isArray(votes) || votes.length === 0) return null;
+  return votes.find((vote) => vote.source_url)?.source_url || null;
 }
 
 function confirmedDate(membersMeta) {

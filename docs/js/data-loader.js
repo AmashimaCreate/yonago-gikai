@@ -20,16 +20,22 @@ export async function loadCouncils() {
   return Array.isArray(data.councils) ? data.councils : [];
 }
 
-export async function loadCouncilBundle(councilId, { includeSpeeches = false } = {}) {
+export async function loadCouncilBundle(
+  councilId,
+  { includeSpeeches = false, includeVotes = false } = {},
+) {
   const councils = await loadCouncils();
   const council = councils.find((item) => item.id === councilId);
   if (!council) throw new Error(`議会が見つかりません: ${councilId}`);
 
-  const [membersMeta, profile, speechesMeta] = await Promise.all([
+  const [membersMeta, profile, speechesMeta, votesMeta] = await Promise.all([
     loadJson(`./data/${councilId}/members.json`),
     loadJson(`./data/${councilId}/profile.json`, { optional: true }),
     includeSpeeches
       ? loadJson(`./data/${councilId}/speeches.json`, { optional: true })
+      : Promise.resolve(null),
+    includeVotes
+      ? loadJson(`./data/${councilId}/votes.json`, { optional: true })
       : Promise.resolve(null),
   ]);
 
@@ -41,6 +47,10 @@ export async function loadCouncilBundle(councilId, { includeSpeeches = false } =
     speechesMeta,
     speeches: speechesMeta && Array.isArray(speechesMeta.speeches)
       ? speechesMeta.speeches
+      : [],
+    votesMeta,
+    votes: votesMeta && Array.isArray(votesMeta.votes)
+      ? votesMeta.votes
       : [],
   };
 }

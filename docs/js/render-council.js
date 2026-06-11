@@ -1,6 +1,7 @@
 import { dataQualityPanel } from "./data-quality.js";
 import { renderFactionCompositionChart } from "./render-faction-chart.js";
 import { renderProfileVisualization } from "./render-profile-viz.js";
+import { renderCouncilVoteSection } from "./render-votes.js";
 import {
   renderCommitteeView,
   renderKaihaView,
@@ -14,8 +15,20 @@ export function renderCouncilPage(root, state, filteredMembers) {
   root.appendChild(dataQualityPanel({
     membersMeta: state.membersMeta,
     speechesMeta: state.speechesMeta,
+    votesMeta: state.votesMeta,
     council: state.currentCouncil,
   }));
+
+  if (state.view === "votes") {
+    root.appendChild(renderCouncilVoteSection(
+      state.votes,
+      state.votesMeta,
+      state.currentCouncil,
+      state.members,
+      state.route,
+    ));
+    return;
+  }
 
   const factionChart = renderFactionCompositionChart(state.members, state.membersMeta);
   if (factionChart) root.appendChild(factionChart);

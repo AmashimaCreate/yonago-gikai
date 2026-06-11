@@ -84,6 +84,11 @@ function syncSearchInput() {
   if (clearBtn) clearBtn.hidden = state.query.length === 0;
 }
 
+function syncSearchVisibility() {
+  const row = document.querySelector(".search-row");
+  if (row) row.hidden = state.view === "votes";
+}
+
 function updateActiveTab() {
   const tabs = document.querySelectorAll(".view-tab");
   tabs.forEach((tab) => {
@@ -100,6 +105,7 @@ function renderCouncilRoute() {
   updateActiveTab();
   updateSearchPlaceholder();
   syncSearchInput();
+  syncSearchVisibility();
   renderProfile(
     document.getElementById("profile"),
     state.profile,
@@ -158,6 +164,8 @@ async function applyRoute() {
     state.councilSummaries = [];
     state.speeches = [];
     state.speechesMeta = null;
+    state.votes = [];
+    state.votesMeta = null;
     state.query = "";
     setHeader({
       title: "全国 議会見える化",
@@ -176,6 +184,8 @@ async function applyRoute() {
     state.councilSummaries = [];
     state.speeches = [];
     state.speechesMeta = null;
+    state.votes = [];
+    state.votesMeta = null;
     state.query = "";
     if (route.prefecture !== "tottori") {
       renderNotFound();
@@ -205,6 +215,7 @@ async function applyRoute() {
     }
     const bundle = await loadCouncilBundle(route.councilId, {
       includeSpeeches: true,
+      includeVotes: route.councilId === "kurayoshi-city",
     });
     state.currentCouncil = bundle.council;
     state.members = bundle.members;
@@ -215,6 +226,8 @@ async function applyRoute() {
     );
     state.speeches = bundle.speeches;
     state.speechesMeta = bundle.speechesMeta;
+    state.votes = bundle.votes;
+    state.votesMeta = bundle.votesMeta;
 
     if (route.name === "member") {
       renderMemberRoute(route.memberId);
@@ -249,6 +262,7 @@ function setupTabs() {
       const view = tab.dataset.view;
       if (!view || view === state.view) return;
       state.view = view;
+      if (view === "votes") state.query = "";
       renderCouncilRoute();
     });
   });

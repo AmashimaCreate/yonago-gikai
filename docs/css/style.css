@@ -126,6 +126,11 @@ a { color: #0969da; }
   margin-top: 8px;
   flex-wrap: wrap;
 }
+
+.search-row[hidden] {
+  display: none;
+}
+
 .search-input {
   flex: 1;
   min-width: 200px;
@@ -794,6 +799,134 @@ main { padding: 24px 0 48px; }
   color: var(--text-muted);
   font-size: 12px;
 }
+
+/* 賛否の記録 */
+.vote-section {
+  margin-bottom: 24px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+}
+.vote-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 8px 0 12px;
+  color: var(--text);
+  font-size: 14px;
+}
+.vote-list,
+.vote-detail-list {
+  display: grid;
+  gap: 10px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.vote-item,
+.vote-detail {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.vote-item {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 12px;
+  padding: 12px;
+}
+.vote-date,
+.vote-summary-date {
+  color: var(--text-muted);
+  font-size: 13px;
+  white-space: nowrap;
+}
+.vote-title,
+.vote-summary-title {
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+.vote-meta-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  align-items: center;
+  margin: 6px 0;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+.vote-badge,
+.vote-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 2px 8px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: #f6f8fa;
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 600;
+}
+.vote-badge.is-yes {
+  background: #eef2f6;
+}
+.vote-badge.is-no {
+  background: #f3f4f6;
+  border-color: #cbd5e1;
+}
+.vote-badge.is-chair,
+.vote-badge.is-recusal,
+.vote-badge.is-continued,
+.vote-badge.is-other {
+  background: #f8fafc;
+  color: var(--text-muted);
+}
+.vote-summary {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr) auto auto;
+  gap: 10px;
+  align-items: center;
+  padding: 12px;
+  cursor: pointer;
+}
+.vote-summary-counts,
+.vote-summary-result {
+  color: var(--text-muted);
+  font-size: 13px;
+  white-space: nowrap;
+}
+.vote-detail-body {
+  padding: 0 12px 12px;
+  border-top: 1px solid var(--border);
+}
+.vote-source {
+  margin: 10px 0;
+  font-size: 13px;
+}
+.vote-member-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 8px;
+}
+.vote-member-cell {
+  min-width: 0;
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #fbfcfd;
+}
+.vote-member-name {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.vote-former-note {
+  display: block;
+  margin-top: 4px;
+  color: var(--text-muted);
+  font-size: 11px;
+}
 .member-head {
   display: flex;
   gap: 12px;
@@ -938,6 +1071,15 @@ main { padding: 24px 0 48px; }
   }
   .comparison-bar-cell {
     margin-top: 2px;
+  }
+  .vote-item,
+  .vote-summary {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  .vote-summary-counts,
+  .vote-summary-result {
+    white-space: normal;
   }
   .prefecture-map-layout {
     grid-template-columns: 1fr;
