@@ -1,4 +1,4 @@
-name: Update members data
+name: Update council data
 
 on:
   schedule:
@@ -17,6 +17,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -28,24 +29,51 @@ jobs:
           cache: 'pip'
           cache-dependency-path: scripts/requirements.txt
 
+      - name: Install system tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ripgrep
+
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
 
-      - name: Scrape members
-        run: python scripts/councils/yonago.py
+      - name: Generate members data
+        run: |
+          python scripts/councils/tottori_pref.py
+          python scripts/councils/tottori_city.py
+          python scripts/councils/yonago.py
+          python scripts/councils/kurayoshi.py
+          # 境港市公式サイトにはアクセスせず、手動入力JSONから生成する。
+          python scripts/councils/sakaiminato.py
+
+      - name: Generate speeches data
+        run: |
+          python scripts/adapters/minutes_kensakusystem_legacy.py yonago-city
+          python scripts/adapters/minutes_kensakusystem_legacy.py kurayoshi-city
+          python scripts/adapters/minutes_kensakusystem_legacy.py sakaiminato-city
+
+      - name: Generate profile data
+        run: python scripts/profile_builder.py
 
       - name: Validate data
         run: python scripts/validate.py
+
+      - name: Check excluded personal/contact info
+        run: |
+          if rg -n "電話|メール|住所|生年月日|ファクシミリ|FAX|@[A-Za-z0-9]" docs/data --glob '*.json'; then
+            echo "::error::Excluded personal/contact information was found in generated JSON."
+            exit 1
+          fi
 
       - name: Commit changes (if any)
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data/yonago-city/members.json
+          git add docs/data
           if git diff --cached --quiet; then
             echo "No data changes; skipping commit."
           else
-            git commit -m "chore(data): update members data ($(date -u +%Y-%m-%d))"
+            git commit -m "chore(data): update council data ($(date -u +%Y-%m-%d))"
             git push
           fi
 
@@ -61,17 +89,20 @@ jobs:
               repo: context.repo.repo,
               title: `[auto] 議員データ自動更新が失敗 (${today})`,
               body: [
-                '自動更新ワークフローが失敗しました。',
+                '5議会データの自動更新ワークフローが失敗しました。',
                 '',
                 `- 実行URL: ${runUrl}`,
                 `- 日付(UTC): ${today}`,
                 '',
                 '考えられる原因:',
-                '- 米子市公式サイトの構造変更',
+                '- 議員名簿ページの構造変更',
+                '- kensakusystem legacy 会議録検索の構造変更',
+                '- 手動入力JSONの検証エラー',
+                '- 個人情報除外grepの検出',
                 '- ネットワーク障害',
-                '- パース結果の異常(議員数が10人未満)',
+                '- パース結果の異常(議員数が想定範囲外)',
                 '',
-                'ログを確認のうえ `scripts/councils/yonago.py` を修正してください。',
+                'ログを確認のうえ、該当する scraper / adapter / source JSON を修正してください。',
                 '',
                 '_このIssueはGitHub Actionsにより自動作成されました。_',
               ].join('\n'),
