@@ -1,6 +1,6 @@
 {
   "council_id": "yonago-city",
-  "updated_at": "2026-06-12T11:51:27.513562+00:00",
+  "updated_at": "2026-06-12T23:42:45.656438+00:00",
   "acquisition": "scraping",
   "granularity": "result_only",
   "source_url": "https://www.city.yonago.lg.jp/13764.htm",
@@ -136,7 +136,7 @@
       "session": "令和8年2月臨時会",
       "session_month": "2026-02-01",
       "source_url": "https://www.city.yonago.lg.jp/secure/16192/08.2.16giketsu.pdf",
-      "accepted": false,
+      "accepted": true,
       "is_text_pdf": true,
       "text_characters": 912,
       "summary_counts": {
@@ -148,7 +148,7 @@
         "陳情": 0
       },
       "section_counts": {
-        "市長提出議案": 0,
+        "市長提出議案": 8,
         "議員提出議案": 0,
         "諮問": 0,
         "報告": 0,
@@ -160,8 +160,8 @@
         "summary_report_count": 0,
         "summary_total_minus_reports": 8,
         "summary_result_only_expected": 8,
-        "section_result_only_expected": 0,
-        "parsed_count": 0,
+        "section_result_only_expected": 8,
+        "parsed_count": 8,
         "section_counts_match": {
           "市長提出議案": true,
           "議員提出議案": true,
@@ -169,8 +169,8 @@
           "請願": true,
           "陳情": true
         },
-        "result_only_count_match": false,
-        "summary_total_minus_reports_match": false
+        "result_only_count_match": true,
+        "summary_total_minus_reports_match": true
       }
     },
     {
@@ -584,30 +584,7 @@
       }
     }
   ],
-  "omitted_sessions": [
-    {
-      "session": "令和8年2月臨時会",
-      "source_url": "https://www.city.yonago.lg.jp/secure/16192/08.2.16giketsu.pdf",
-      "reason": "検算不一致またはテキスト抽出不可のため未収録",
-      "checks": {
-        "summary_total_count": 8,
-        "summary_report_count": 0,
-        "summary_total_minus_reports": 8,
-        "summary_result_only_expected": 8,
-        "section_result_only_expected": 0,
-        "parsed_count": 0,
-        "section_counts_match": {
-          "市長提出議案": true,
-          "議員提出議案": true,
-          "諮問": true,
-          "請願": true,
-          "陳情": true
-        },
-        "result_only_count_match": false,
-        "summary_total_minus_reports_match": false
-      }
-    }
-  ],
+  "omitted_sessions": [],
   "votes": [
     {
       "id": "yonago-city--令和6年6月定例会-議案第61号-1da65ca4ad",
@@ -4118,6 +4095,126 @@
       "votes_by_faction": null,
       "source_url": "https://www.city.yonago.lg.jp/secure/16192/8.1.19rinjikai.pdf",
       "source_row_index": 5
+    },
+    {
+      "id": "yonago-city--令和8年2月臨時会-議案第10号-4d7602683e",
+      "council_id": "yonago-city",
+      "session": "令和8年2月臨時会",
+      "category": "市長提出議案",
+      "bill_no": "議案第10号",
+      "bill_title": "米子市日吉津村中学校組合の解散に関する協議について",
+      "date": "2026-02-16",
+      "result": "原案可決",
+      "granularity": "result_only",
+      "votes_by_member": null,
+      "votes_by_faction": null,
+      "source_url": "https://www.city.yonago.lg.jp/secure/16192/08.2.16giketsu.pdf",
+      "source_row_index": 5
+    },
+    {
+      "id": "yonago-city--令和8年2月臨時会-議案第11号-2c9087c27d",
+      "council_id": "yonago-city",
+      "session": "令和8年2月臨時会",
+      "category": "市長提出議案",
+      "bill_no": "議案第11号",
+      "bill_title": "米子市日吉津村中学校組合の解散に伴う財産処分に関する協議について",
+      "date": "2026-02-16",
+      "result": "原案可決",
+      "granularity": "result_only",
+      "votes_by_member": null,
+      "votes_by_faction": null,
+      "source_url": "https://www.city.yonago.lg.jp/secure/16192/08.2.16giketsu.pdf",
+      "source_row_index": 6
+    },
+    {
+      "id": "yonago-city--令和8年2月臨時会-議案第12号-1c3bfeb6ce",
+      "council_id": "yonago-city",
+      "session": "令和8年2月臨時会",
+      "category": "市長提出議案",
+      "bill_no": "議案第12号",
+      "bill_title": "米子市と日吉津村との学齢生徒の教育事務の委託に関する規約を定める協議について",
+      "date": "2026-02-16",
+      "result": "原案可決",
+      "granularity": "result_only",
+      "votes_by_member": null,
+      "votes_by_faction": null,
+      "source_url": "https://www.city.yonago.lg.jp/secure/16192/08.2.16giketsu.pdf",
+      "source_row_index": 7
+    },
+    {
+      "id": "yonago-city--令和8年2月臨時会-議案第13号-a7dc69016a",
+      "council_id": "yonago-city",
+      "session": "令和8年2月臨時会",
+      "category": "市長提出議案",
+      "bill_no": "議案第13号",
+      "bill_title": "米子市日吉津村中学校組合と米子市との間の学校給食事務の委託の廃止に関する規約を定め",
+      "date": "2026-02-16",
+      "result": "原案可決",
+      "granularity": "result_only",
+      "votes_by_member": null,
+      "votes_by_faction": null,
+      "source_url": "https://www.city.yonago.lg.jp/secure/16192/08.2.16giketsu.pdf",
+      "source_row_index": 8
+    },
+    {
+      "id": "yonago-city--令和8年2月臨時会-議案第6号-aba4a4fb5f",
+      "council_id": "yonago-city",
+      "session": "令和8年2月臨時会",
+      "category": "市長提出議案",
+      "bill_no": "議案第6号",
+      "bill_title": "専決処分について（令和７年度米子市一般会計補正予算（補正第７回））",
+      "date": "2026-02-16",
+      "result": "原案承認",
+      "granularity": "result_only",
+      "votes_by_member": null,
+      "votes_by_faction": null,
+      "source_url": "https://www.city.yonago.lg.jp/secure/16192/08.2.16giketsu.pdf",
+      "source_row_index": 1
+    },
+    {
+      "id": "yonago-city--令和8年2月臨時会-議案第7号-57857ce6b7",
+      "council_id": "yonago-city",
+      "session": "令和8年2月臨時会",
+      "category": "市長提出議案",
+      "bill_no": "議案第7号",
+      "bill_title": "専決処分について（令和７年度米子市一般会計補正予算（補正第８回））",
+      "date": "2026-02-16",
+      "result": "原案承認",
+      "granularity": "result_only",
+      "votes_by_member": null,
+      "votes_by_faction": null,
+      "source_url": "https://www.city.yonago.lg.jp/secure/16192/08.2.16giketsu.pdf",
+      "source_row_index": 2
+    },
+    {
+      "id": "yonago-city--令和8年2月臨時会-議案第8号-5059cfdf30",
+      "council_id": "yonago-city",
+      "session": "令和8年2月臨時会",
+      "category": "市長提出議案",
+      "bill_no": "議案第8号",
+      "bill_title": "米子市立学校設置条例の一部を改正する条例の制定について",
+      "date": "2026-02-16",
+      "result": "原案可決",
+      "granularity": "result_only",
+      "votes_by_member": null,
+      "votes_by_faction": null,
+      "source_url": "https://www.city.yonago.lg.jp/secure/16192/08.2.16giketsu.pdf",
+      "source_row_index": 3
+    },
+    {
+      "id": "yonago-city--令和8年2月臨時会-議案第9号-e07a7384e5",
+      "council_id": "yonago-city",
+      "session": "令和8年2月臨時会",
+      "category": "市長提出議案",
+      "bill_no": "議案第9号",
+      "bill_title": "米子市日吉津村中学校組合規約を変更する協議について",
+      "date": "2026-02-16",
+      "result": "原案可決",
+      "granularity": "result_only",
+      "votes_by_member": null,
+      "votes_by_faction": null,
+      "source_url": "https://www.city.yonago.lg.jp/secure/16192/08.2.16giketsu.pdf",
+      "source_row_index": 4
     },
     {
       "id": "yonago-city--令和8年3月定例会-議案第14号-7423cb4367",

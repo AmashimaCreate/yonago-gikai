@@ -1005,10 +1005,21 @@ main { padding: 24px 0 48px; }
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+.timeseries-sparse-line {
+  fill: none;
+  stroke: var(--brand);
+  stroke-width: 2.5;
+  stroke-dasharray: 5 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 .timeseries-point {
   fill: var(--surface);
   stroke: var(--brand);
   stroke-width: 2;
+}
+.timeseries-point.is-sparse {
+  fill: var(--brand);
 }
 .timeseries-point:focus {
   outline: none;
@@ -1023,6 +1034,12 @@ main { padding: 24px 0 48px; }
 .timeseries-values {
   margin-top: 8px;
   font-size: 12px;
+}
+.timeseries-sparse-note {
+  margin: 2px 0 0;
+  color: var(--text-muted);
+  font-size: 11px;
+  line-height: 1.4;
 }
 .timeseries-values summary {
   cursor: pointer;

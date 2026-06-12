@@ -1,10 +1,10 @@
 {
   "council_id": "tottori-pref",
-  "updated_at": "2026-06-12T11:54:01+00:00",
+  "updated_at": "2026-06-12T23:43:28+00:00",
   "source": {
     "provider": "e-Stat 社会・人口統計体系（SSDS）",
     "api": "getStatsData",
-    "retrieved_at": "2026-06-12T11:54:01+00:00",
+    "retrieved_at": "2026-06-12T23:43:28+00:00",
     "area_code": "31000",
     "statsDataIds": {
       "population_total": "0000010101",
@@ -12,7 +12,9 @@
       "births": "0000010101",
       "social_change": "0000010101",
       "expenditure_total": "0000010104",
-      "fiscal_index": "0000010104"
+      "fiscal_index": "0000010104",
+      "pref_assembly_turnout": "0000010107",
+      "pref_governor_turnout": "0000010107"
     },
     "note": "SSDSは確定統計のため最新年が1〜3年遅れる。profileの最新公表値とは出典・年次が異なる。"
   },
@@ -336,6 +338,56 @@
         {
           "year": 2021,
           "value": 0.27259
+        }
+      ]
+    },
+    "pref_assembly_turnout": {
+      "label": "都道府県議会議員選挙投票率",
+      "unit": "percent",
+      "ssds_item": "G6305",
+      "year_start": 2007,
+      "year_end": 2019,
+      "values": [
+        {
+          "year": 2007,
+          "value": 62.03
+        },
+        {
+          "year": 2011,
+          "value": 60.55
+        },
+        {
+          "year": 2015,
+          "value": 57.46
+        },
+        {
+          "year": 2019,
+          "value": 52.7
+        }
+      ]
+    },
+    "pref_governor_turnout": {
+      "label": "都道府県知事選挙投票率",
+      "unit": "percent",
+      "ssds_item": "G6306",
+      "year_start": 2007,
+      "year_end": 2019,
+      "values": [
+        {
+          "year": 2007,
+          "value": 61.46
+        },
+        {
+          "year": 2011,
+          "value": 59.11
+        },
+        {
+          "year": 2015,
+          "value": 56.96
+        },
+        {
+          "year": 2019,
+          "value": 53.09
         }
       ]
     }

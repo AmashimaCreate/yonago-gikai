@@ -151,6 +151,7 @@ const TIMESERIES_CHARTS = [
   ["social_change", "社会増減", "社会増減"],
   ["expenditure_total", "歳出決算", "歳出決算総額"],
   ["fiscal_index", "財政力指数", "財政力指数"],
+  ["pref_assembly_turnout", "投票率(県議選)", "投票率(県議選)"],
 ];
 
 function renderTimeseriesSection(state) {
@@ -195,7 +196,12 @@ function renderTimeseriesCard(key, shortLabel, title, indicator) {
       el("h3", {}, title),
       el("p", {}, headline),
     ]),
-    renderLineChartSvg(key, title, values),
+    isSparseElectionSeries(key)
+      ? renderSparsePointChartSvg(key, title, values)
+      : renderLineChartSvg(key, title, values),
+    isSparseElectionSeries(key)
+      ? el("p", { class: "timeseries-sparse-note" }, "選挙年のみを点と破線で表示しています。")
+      : null,
     renderTimeseriesTable(key, title, values),
   ]);
 }
@@ -304,8 +310,105 @@ function renderLineChartSvg(key, title, values) {
   return svg;
 }
 
+function renderSparsePointChartSvg(key, title, values) {
+  const width = 320;
+  const height = 170;
+  const pad = { top: 18, right: 12, bottom: 30, left: 42 };
+  const innerWidth = width - pad.left - pad.right;
+  const innerHeight = height - pad.top - pad.bottom;
+  const years = values.map((item) => item.year);
+  const minYear = years[0];
+  const maxYear = years[years.length - 1];
+  const domain = chartYDomain(key, values);
+  const yearSpan = Math.max(1, maxYear - minYear);
+  const x = (year) => pad.left + (innerWidth * (year - minYear)) / yearSpan;
+  const y = (value) => pad.top + ((domain.max - value) / (domain.max - domain.min)) * innerHeight;
+  const points = values.map((item) => `${x(item.year).toFixed(1)},${y(item.value).toFixed(1)}`).join(" ");
+  const svg = svgEl("svg", {
+    class: "timeseries-chart",
+    viewBox: `0 0 ${width} ${height}`,
+    role: "img",
+    "aria-label": `${title}の${values[0].year}年から${values[values.length - 1].year}年までの選挙年ごとの推移`,
+  });
+
+  svg.appendChild(svgEl("line", {
+    class: "timeseries-axis",
+    x1: pad.left,
+    y1: pad.top + innerHeight,
+    x2: pad.left + innerWidth,
+    y2: pad.top + innerHeight,
+  }));
+  svg.appendChild(svgEl("line", {
+    class: "timeseries-axis",
+    x1: pad.left,
+    y1: pad.top,
+    x2: pad.left,
+    y2: pad.top + innerHeight,
+  }));
+  svg.appendChild(svgEl("line", {
+    class: "timeseries-grid-line",
+    x1: pad.left,
+    y1: pad.top,
+    x2: pad.left + innerWidth,
+    y2: pad.top,
+  }));
+  svg.appendChild(svgEl("line", {
+    class: "timeseries-grid-line",
+    x1: pad.left,
+    y1: pad.top + innerHeight / 2,
+    x2: pad.left + innerWidth,
+    y2: pad.top + innerHeight / 2,
+  }));
+  svg.appendChild(svgEl("polyline", {
+    class: "timeseries-sparse-line",
+    points,
+  }));
+  values.forEach((item) => {
+    const circle = svgEl("circle", {
+      class: "timeseries-point is-sparse",
+      cx: x(item.year),
+      cy: y(item.value),
+      r: 4.2,
+      tabindex: "0",
+    });
+    circle.appendChild(svgEl("title", {}, `${item.year}: ${formatTimeseriesValue(key, item.value)}`));
+    svg.appendChild(circle);
+  });
+  svg.appendChild(svgEl("text", {
+    class: "timeseries-y-label",
+    x: pad.left - 8,
+    y: pad.top + 4,
+    "text-anchor": "end",
+  }, formatAxisValue(key, domain.max)));
+  svg.appendChild(svgEl("text", {
+    class: "timeseries-y-label",
+    x: pad.left - 8,
+    y: pad.top + innerHeight,
+    "text-anchor": "end",
+  }, formatAxisValue(key, domain.min)));
+  svg.appendChild(svgEl("text", {
+    class: "timeseries-x-label",
+    x: pad.left,
+    y: height - 8,
+    "text-anchor": "start",
+  }, String(minYear)));
+  svg.appendChild(svgEl("text", {
+    class: "timeseries-x-label",
+    x: pad.left + innerWidth,
+    y: height - 8,
+    "text-anchor": "end",
+  }, String(maxYear)));
+
+  return svg;
+}
+
+function isSparseElectionSeries(key) {
+  return key === "pref_assembly_turnout";
+}
+
 function chartYDomain(key, values) {
   if (key === "fiscal_index") return { min: 0, max: 1 };
+  if (isTurnoutSeries(key)) return { min: 0, max: 100 };
   const numbers = values.map((item) => item.value);
   const min = Math.min(...numbers);
   const max = Math.max(...numbers);
@@ -369,7 +472,7 @@ function formatTimeseriesValue(key, value) {
   if (key === "fiscal_index") {
     return value.toLocaleString("ja-JP", { maximumFractionDigits: 3 });
   }
-  if (key === "aging_rate") {
+  if (key === "aging_rate" || isTurnoutSeries(key)) {
     return `${value.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}%`;
   }
   if (key === "expenditure_total") {
@@ -386,7 +489,7 @@ function formatTimeseriesDelta(key, value) {
   if (key === "fiscal_index") {
     return `${sign}${abs.toLocaleString("ja-JP", { maximumFractionDigits: 3 })}`;
   }
-  if (key === "aging_rate") {
+  if (key === "aging_rate" || isTurnoutSeries(key)) {
     return `${sign}${abs.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}ポイント`;
   }
   if (key === "expenditure_total") {
@@ -399,7 +502,7 @@ function formatAxisValue(key, value) {
   if (key === "fiscal_index") {
     return value.toLocaleString("ja-JP", { maximumFractionDigits: 1 });
   }
-  if (key === "aging_rate") {
+  if (key === "aging_rate" || isTurnoutSeries(key)) {
     return `${value.toLocaleString("ja-JP", { maximumFractionDigits: 0 })}%`;
   }
   if (key === "expenditure_total") {
@@ -414,6 +517,10 @@ function formatAxisValue(key, value) {
 function formatOkuYen(value) {
   if (typeof value !== "number") return "";
   return `${Math.round(value / 100000000).toLocaleString("ja-JP")}億円`;
+}
+
+function isTurnoutSeries(key) {
+  return key === "pref_assembly_turnout" || key === "pref_governor_turnout";
 }
 
 function svgEl(tag, attrs = {}, children = []) {

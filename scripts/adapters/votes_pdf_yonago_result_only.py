@@ -37,7 +37,7 @@ ALL_SECTIONS = PARSED_SECTIONS | {"報告"}
 SECTION_ORDER = ["市長提出議案", "議員提出議案", "諮問", "報告", "請願", "陳情"]
 
 SECTION_RE = re.compile(
-    r"^(市長提出議案|議員提出議案|諮問|報告|請願|陳情)\s*：\s*([0-9０-９]+)\s*件"
+    r"^(市長提出議案|議員提出議案|諮問|報告|請願|陳情)\s*：\s*([0-9０-９]*)\s*件"
 )
 SUMMARY_RE = re.compile(
     r"^\s*(市長提出議案|議員提出議案|諮問|報告|請願|陳情)\s+([0-9０-９]+)\s*件"
@@ -224,7 +224,12 @@ def parse_pdf_text(text: str, session: str, source_url: str) -> tuple[list[dict[
         if section_match:
             flush_buffer()
             current_section = section_match.group(1)
-            section_counts[current_section] = parse_count(section_match.group(2))
+            count_text = section_match.group(2)
+            section_counts[current_section] = (
+                parse_count(count_text)
+                if count_text
+                else summary_counts.get(current_section, 0)
+            )
             in_summary = False
             continue
 

@@ -114,6 +114,11 @@ TIMESERIES_INDICATORS = {
     "expenditure_total",
     "fiscal_index",
 }
+OPTIONAL_TIMESERIES_INDICATORS = {
+    "pref_assembly_turnout",
+    "pref_governor_turnout",
+}
+ALL_TIMESERIES_INDICATORS = TIMESERIES_INDICATORS | OPTIONAL_TIMESERIES_INDICATORS
 TIMESERIES_INDICATOR_KEYS = {
     "label",
     "unit",
@@ -492,7 +497,7 @@ def validate_timeseries_file(council_id: str, path: Path) -> list[str]:
             for key in missing:
                 errors.append(f"{path}: source.statsDataIds missing '{key}'")
             for key, value in stats_data_ids.items():
-                if key in TIMESERIES_INDICATORS and (
+                if key in ALL_TIMESERIES_INDICATORS and (
                     not isinstance(value, str) or not value.isdigit()
                 ):
                     errors.append(
@@ -508,7 +513,8 @@ def validate_timeseries_file(council_id: str, path: Path) -> list[str]:
     for key in missing_indicators:
         errors.append(f"{path}: indicators missing '{key}'")
 
-    for key in sorted(TIMESERIES_INDICATORS):
+    present_optional = OPTIONAL_TIMESERIES_INDICATORS & set(indicators)
+    for key in sorted(TIMESERIES_INDICATORS | present_optional):
         indicator = indicators.get(key)
         label = f"{path}: indicators.{key}"
         if not isinstance(indicator, dict):

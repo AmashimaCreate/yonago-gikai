@@ -181,6 +181,28 @@ SOURCE_INDICATORS: dict[str, dict[str, Any]] = {
             "municipality": "D2201",
         },
     },
+    "pref_assembly_turnout": {
+        "label": "都道府県議会議員選挙投票率",
+        "unit": "percent",
+        "value_type": "decimal",
+        "stats_data_id": {
+            "prefecture": "0000010107",
+        },
+        "ssds_item": {
+            "prefecture": "G6305",
+        },
+    },
+    "pref_governor_turnout": {
+        "label": "都道府県知事選挙投票率",
+        "unit": "percent",
+        "value_type": "decimal",
+        "stats_data_id": {
+            "prefecture": "0000010107",
+        },
+        "ssds_item": {
+            "prefecture": "G6306",
+        },
+    },
 }
 
 OUTPUT_INDICATORS: dict[str, dict[str, Any]] = {
@@ -218,7 +240,21 @@ OUTPUT_INDICATORS: dict[str, dict[str, Any]] = {
         "unit": "index",
         "source_keys": ["fiscal_index"],
     },
+    "pref_assembly_turnout": {
+        "label": "都道府県議会議員選挙投票率",
+        "unit": "percent",
+        "source_keys": ["pref_assembly_turnout"],
+        "area_levels": ["prefecture"],
+    },
+    "pref_governor_turnout": {
+        "label": "都道府県知事選挙投票率",
+        "unit": "percent",
+        "source_keys": ["pref_governor_turnout"],
+        "area_levels": ["prefecture"],
+    },
 }
+
+DEFAULT_AREA_LEVELS = ["prefecture", "municipality"]
 
 
 def load_app_id() -> str:
@@ -327,6 +363,8 @@ def fetch_all_series(app_id: str) -> dict[str, dict[str, dict[int, int | float]]
         fetched[indicator_key] = {}
         for area in AREAS:
             level = area["area_level"]
+            if level not in indicator["stats_data_id"]:
+                continue
             stats_data_id = indicator["stats_data_id"][level]
             item_code = indicator["ssds_item"][level]
             payload = request_stats(
@@ -352,7 +390,9 @@ def latest_common_years(
     years_by_indicator: dict[str, list[int]] = {}
     for indicator_key, indicator in OUTPUT_INDICATORS.items():
         common_years: set[int] | None = None
-        for area in AREAS:
+        allowed_levels = set(indicator.get("area_levels", DEFAULT_AREA_LEVELS))
+        target_areas = [area for area in AREAS if area["area_level"] in allowed_levels]
+        for area in target_areas:
             area_years: set[int] | None = None
             for source_key in indicator["source_keys"]:
                 years = set(fetched[source_key][area["council_id"]])
@@ -438,6 +478,8 @@ def build_council_payloads(
         stats_data_ids: dict[str, str] = {}
         for indicator_key, indicator in OUTPUT_INDICATORS.items():
             level = area["area_level"]
+            if level not in indicator.get("area_levels", DEFAULT_AREA_LEVELS):
+                continue
             source_key = indicator["source_keys"][0]
             stats_data_ids[indicator_key] = SOURCE_INDICATORS[source_key]["stats_data_id"][level]
             indicators[indicator_key] = indicator_payload(
