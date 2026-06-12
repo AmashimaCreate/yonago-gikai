@@ -92,6 +92,30 @@ VOTE_KEYS = {
 }
 VOTE_GRANULARITY_VALUES = {"member", "faction", "result_only"}
 VOTE_VALUES = {"賛成", "反対", "退席", "欠席", "議長", "除斥", "継続審査"}
+TIMESERIES_ROOT_KEYS = {
+    "council_id",
+    "updated_at",
+    "source",
+    "indicators",
+}
+TIMESERIES_SOURCE_KEYS = {
+    "provider",
+    "api",
+    "retrieved_at",
+    "area_code",
+    "statsDataIds",
+    "note",
+}
+TIMESERIES_INDICATORS = {"population_total", "births", "fiscal_index"}
+TIMESERIES_INDICATOR_KEYS = {
+    "label",
+    "unit",
+    "ssds_item",
+    "year_start",
+    "year_end",
+    "values",
+}
+TIMESERIES_VALUE_KEYS = {"year", "value"}
 
 
 def load_json(path: Path) -> Any:
@@ -416,6 +440,108 @@ def validate_votes_by_member(
     return errors
 
 
+def validate_timeseries_file(council_id: str, path: Path) -> list[str]:
+    errors: list[str] = []
+    if not path.exists():
+        return [f"{path}: file not found for active council '{council_id}'"]
+
+    data = load_json(path)
+    if not isinstance(data, dict):
+        return [f"{path}: root must be an object"]
+    add_missing_key_errors(errors, data, TIMESERIES_ROOT_KEYS, str(path))
+
+    if data.get("council_id") != council_id:
+        errors.append(
+            f"{path}: council_id '{data.get('council_id')}' "
+            f"does not match '{council_id}'"
+        )
+
+    source = data.get("source")
+    if not isinstance(source, dict):
+        errors.append(f"{path}: source must be an object")
+    else:
+        add_missing_key_errors(
+            errors, source, TIMESERIES_SOURCE_KEYS, f"{path}: source"
+        )
+        stats_data_ids = source.get("statsDataIds")
+        if not isinstance(stats_data_ids, dict):
+            errors.append(f"{path}: source.statsDataIds must be an object")
+        else:
+            missing = sorted(TIMESERIES_INDICATORS - set(stats_data_ids))
+            for key in missing:
+                errors.append(f"{path}: source.statsDataIds missing '{key}'")
+            for key, value in stats_data_ids.items():
+                if key in TIMESERIES_INDICATORS and (
+                    not isinstance(value, str) or not value.isdigit()
+                ):
+                    errors.append(
+                        f"{path}: source.statsDataIds.{key} must be a digit string"
+                    )
+
+    indicators = data.get("indicators")
+    if not isinstance(indicators, dict):
+        errors.append(f"{path}: indicators must be an object")
+        return errors
+
+    missing_indicators = sorted(TIMESERIES_INDICATORS - set(indicators))
+    for key in missing_indicators:
+        errors.append(f"{path}: indicators missing '{key}'")
+
+    for key in sorted(TIMESERIES_INDICATORS):
+        indicator = indicators.get(key)
+        label = f"{path}: indicators.{key}"
+        if not isinstance(indicator, dict):
+            errors.append(f"{label} must be an object")
+            continue
+        add_missing_key_errors(errors, indicator, TIMESERIES_INDICATOR_KEYS, label)
+
+        for str_key in ("label", "unit", "ssds_item"):
+            if not isinstance(indicator.get(str_key), str) or not indicator.get(str_key):
+                errors.append(f"{label}: {str_key} must be a non-empty string")
+
+        year_start = indicator.get("year_start")
+        year_end = indicator.get("year_end")
+        if not isinstance(year_start, int):
+            errors.append(f"{label}: year_start must be an integer")
+        if not isinstance(year_end, int):
+            errors.append(f"{label}: year_end must be an integer")
+
+        values = indicator.get("values")
+        if not isinstance(values, list):
+            errors.append(f"{label}: values must be a list")
+            continue
+        if len(values) != 10:
+            errors.append(f"{label}: values must contain exactly 10 points")
+            continue
+
+        years: list[int] = []
+        for i, item in enumerate(values):
+            item_label = f"{label}.values[{i}]"
+            if not isinstance(item, dict):
+                errors.append(f"{item_label}: must be an object")
+                continue
+            add_missing_key_errors(errors, item, TIMESERIES_VALUE_KEYS, item_label)
+            year = item.get("year")
+            value = item.get("value")
+            if not isinstance(year, int):
+                errors.append(f"{item_label}: year must be an integer")
+            else:
+                years.append(year)
+            if not isinstance(value, (int, float)) or isinstance(value, bool):
+                errors.append(f"{item_label}: value must be numeric")
+
+        if len(years) == 10:
+            expected_years = list(range(years[0], years[0] + 10))
+            if years != expected_years:
+                errors.append(f"{label}: years must be continuous ascending years")
+            if isinstance(year_start, int) and years[0] != year_start:
+                errors.append(f"{label}: year_start does not match first value year")
+            if isinstance(year_end, int) and years[-1] != year_end:
+                errors.append(f"{label}: year_end does not match last value year")
+
+    return errors
+
+
 def load_member_ids(council_id: str) -> set[str]:
     path = DATA_DIR / council_id / "members.json"
     if not path.exists():
@@ -464,6 +590,8 @@ def main() -> int:
             )
         votes_path = DATA_DIR / council_id / "votes.json"
         errors.extend(validate_votes_file(council_id, votes_path))
+        timeseries_path = DATA_DIR / council_id / "timeseries.json"
+        errors.extend(validate_timeseries_file(council_id, timeseries_path))
 
     if errors:
         print("Validation failed:", file=sys.stderr)
