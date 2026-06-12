@@ -9,6 +9,13 @@
       "lg_code": "310000",
       "minutes_system": "dbsr",
       "vote_granularity": "member",
+      "official_links": [
+        {"label": "議会の公式サイト", "url": "https://www.pref.tottori.lg.jp/gikai/"},
+        {"label": "政務活動費", "url": "https://www.pref.tottori.lg.jp/75931.htm"},
+        {"label": "議会日程", "url": "https://www.pref.tottori.lg.jp/328133.htm"},
+        {"label": "傍聴案内", "url": "https://www.pref.tottori.lg.jp/75935.htm"},
+        {"label": "会議録・議事録", "url": "https://www.pref.tottori.lg.jp/88112.htm"}
+      ],
       "status": "active"
     },
     {
@@ -21,6 +28,13 @@
       "minutes_system": "dbsr",
       "vote_granularity": "unknown",
       "votes_official_url": "https://www.city.tottori.lg.jp/site/shigikai/6332.html",
+      "official_links": [
+        {"label": "議会の公式サイト", "url": "https://www.city.tottori.lg.jp/site/shigikai/"},
+        {"label": "政務活動費", "url": "https://www.city.tottori.lg.jp/site/shigikai/6344.html"},
+        {"label": "議会日程", "url": "https://www.city.tottori.lg.jp/site/shigikai/list19-166.html"},
+        {"label": "議決結果", "url": "https://www.city.tottori.lg.jp/site/shigikai/list20-168.html"},
+        {"label": "会議録検索", "url": "https://www.city.tottori.tottori.dbsr.jp/index.php/"}
+      ],
       "status": "active"
     },
     {
@@ -34,6 +48,13 @@
       "minutes_base_url": "https://www.kensakusystem.jp/yonago-s/",
       "vote_granularity": "result_only",
       "votes_official_url": "https://www.city.yonago.lg.jp/13764.htm",
+      "official_links": [
+        {"label": "議会の公式サイト", "url": "https://www.city.yonago.lg.jp/gikai/"},
+        {"label": "政務活動費", "url": "https://www.city.yonago.lg.jp/13228.htm"},
+        {"label": "議会日程", "url": "https://www.city.yonago.lg.jp/2921.htm"},
+        {"label": "傍聴案内", "url": "https://www.city.yonago.lg.jp/2918.htm"},
+        {"label": "会議録検索", "url": "https://www.kensakusystem.jp/yonago-s/"}
+      ],
       "status": "active"
     },
     {
@@ -46,6 +67,13 @@
       "minutes_system": "kensakusystem_legacy",
       "minutes_base_url": "https://www.kensakusystem.jp/kurayoshi/",
       "vote_granularity": "member",
+      "official_links": [
+        {"label": "議会の公式サイト", "url": "https://www.city.kurayoshi.lg.jp/gyousei/div/gikai/"},
+        {"label": "政務活動費", "url": "https://www.city.kurayoshi.lg.jp/6579.htm"},
+        {"label": "議会日程", "url": "https://www.city.kurayoshi.lg.jp/6586.htm"},
+        {"label": "傍聴案内", "url": "https://www.city.kurayoshi.lg.jp/6585.htm"},
+        {"label": "会議録検索", "url": "https://www.kensakusystem.jp/kurayoshi/"}
+      ],
       "status": "active"
     },
     {
@@ -58,6 +86,13 @@
       "minutes_system": "kensakusystem_legacy",
       "minutes_base_url": "https://www.kensakusystem.jp/sakaiminato/",
       "vote_granularity": "member",
+      "official_links": [
+        {"label": "市議会のご案内", "url": "https://www.city.sakaiminato.lg.jp/index.php?view=105242"},
+        {"label": "政務活動費", "url": "https://www.city.sakaiminato.lg.jp/index.php?view=107710"},
+        {"label": "議会日程", "url": "https://www.city.sakaiminato.lg.jp/index.php?view=1708"},
+        {"label": "傍聴案内", "url": "https://www.city.sakaiminato.lg.jp/index.php?view=109003"},
+        {"label": "会議録検索", "url": "https://www.kensakusystem.jp/sakaiminato/"}
+      ],
       "status": "active",
       "notes": "公式議会ページが2026-06-11確認時点でHTTP 500のため、公式リンク再確認待ち。"
     }

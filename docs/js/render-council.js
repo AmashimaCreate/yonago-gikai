@@ -87,6 +87,9 @@ function renderStageOneCouncilPage(root, state, filteredMembers) {
   const pastRecords = renderPastRecordsDetails(state);
   if (pastRecords) root.appendChild(pastRecords);
 
+  const officialLinks = renderOfficialLinksSection(state.currentCouncil);
+  if (officialLinks) root.appendChild(officialLinks);
+
   root.appendChild(renderStageTabPanel(state));
   if (state.view !== "kaiha") {
     root.appendChild(renderStageTabContent(state, filteredMembers));
@@ -143,7 +146,10 @@ function heroMetric(label, value, note) {
 
 const TIMESERIES_CHARTS = [
   ["population_total", "人口", "人口総数"],
+  ["aging_rate", "高齢化率", "高齢化率"],
   ["births", "出生数", "出生数"],
+  ["social_change", "社会増減", "社会増減"],
+  ["expenditure_total", "歳出決算", "歳出決算総額"],
   ["fiscal_index", "財政力指数", "財政力指数"],
 ];
 
@@ -166,7 +172,7 @@ function renderTimeseriesSection(state) {
     el("div", { class: "section-heading-row" }, [
       el("div", {}, [
         el("p", { class: "eyebrow" }, eyebrow),
-        el("h2", { class: "section-title" }, `${areaName}の10年`),
+        el("h2", { class: "section-title" }, `${areaName}の変化`),
       ]),
     ]),
     el("p", { class: "timeseries-note" }, "今=自治体の最新公表値 / 変化=国の確定統計。年次が異なるため、同じ値にはなりません。"),
@@ -181,7 +187,8 @@ function renderTimeseriesCard(key, shortLabel, title, indicator) {
   const first = values[0];
   const last = values[values.length - 1];
   const delta = last.value - first.value;
-  const headline = `${shortLabel} ${formatTimeseriesValue(key, last.value)}(${last.year}) / 10年で ${formatTimeseriesDelta(key, delta)}`;
+  const periodLabel = `${first.year}〜${last.year}年`;
+  const headline = `${shortLabel} ${formatTimeseriesValue(key, last.value)}(${last.year}) / ${periodLabel}で ${formatTimeseriesDelta(key, delta)}`;
 
   return el("article", { class: "timeseries-chart-card" }, [
     el("div", { class: "timeseries-chart-head" }, [
@@ -306,7 +313,11 @@ function chartYDomain(key, values) {
   const last = numbers[numbers.length - 1];
   const spread = Math.max(1, max - min);
   const change = Math.abs(last - first);
-  const pad = Math.max(spread * 0.3, change * 0.5, Math.abs(first) * 0.03, 1);
+  const pad = Math.max(spread * 0.3, change * 0.5, Math.abs(first) * 0.03, key === "aging_rate" ? 0.5 : 1);
+  if (key === "social_change") {
+    const edge = Math.max(Math.abs(min), Math.abs(max), 1) * 1.2;
+    return { min: Math.floor(-edge), max: Math.ceil(edge) };
+  }
   return {
     min: Math.max(0, Math.floor(min - pad)),
     max: Math.ceil(max + pad),
@@ -314,27 +325,55 @@ function chartYDomain(key, values) {
 }
 
 function renderTimeseriesTable(key, title, values) {
+  const columns = timeseriesTableColumns(key);
   return el("details", { class: "timeseries-values" }, [
     el("summary", {}, `${title}の値を見る`),
     el("table", {}, [
       el("thead", {}, el("tr", {}, [
-        el("th", { scope: "col" }, "年"),
-        el("th", { scope: "col" }, "値"),
+        ...columns.map((column) => el("th", { scope: "col" }, column.label)),
       ])),
       el("tbody", {}, values.map((item) =>
-        el("tr", {}, [
-          el("td", {}, String(item.year)),
-          el("td", {}, formatTimeseriesValue(key, item.value)),
-        ]),
+        el("tr", {}, columns.map((column) =>
+          el("td", {}, column.value(item)),
+        )),
       )),
     ]),
   ]);
+}
+
+function timeseriesTableColumns(key) {
+  const base = [
+    { label: "年", value: (item) => String(item.year) },
+    { label: "値", value: (item) => formatTimeseriesValue(key, item.value) },
+  ];
+  if (key === "aging_rate") {
+    return [
+      ...base,
+      { label: "年少", value: (item) => formatPeople(item.young_population) || "" },
+      { label: "生産年齢", value: (item) => formatPeople(item.working_age_population) || "" },
+      { label: "老年", value: (item) => formatPeople(item.elderly_population) || "" },
+    ];
+  }
+  if (key === "social_change") {
+    return [
+      ...base,
+      { label: "転入", value: (item) => formatPeople(item.in_migration) || "" },
+      { label: "転出", value: (item) => formatPeople(item.out_migration) || "" },
+    ];
+  }
+  return base;
 }
 
 function formatTimeseriesValue(key, value) {
   if (typeof value !== "number") return "";
   if (key === "fiscal_index") {
     return value.toLocaleString("ja-JP", { maximumFractionDigits: 3 });
+  }
+  if (key === "aging_rate") {
+    return `${value.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}%`;
+  }
+  if (key === "expenditure_total") {
+    return formatOkuYen(value);
   }
   return `${value.toLocaleString("ja-JP")}人`;
 }
@@ -347,6 +386,12 @@ function formatTimeseriesDelta(key, value) {
   if (key === "fiscal_index") {
     return `${sign}${abs.toLocaleString("ja-JP", { maximumFractionDigits: 3 })}`;
   }
+  if (key === "aging_rate") {
+    return `${sign}${abs.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}ポイント`;
+  }
+  if (key === "expenditure_total") {
+    return `${sign}${formatOkuYen(abs)}`;
+  }
   return `${sign}${Math.round(abs).toLocaleString("ja-JP")}人`;
 }
 
@@ -354,10 +399,21 @@ function formatAxisValue(key, value) {
   if (key === "fiscal_index") {
     return value.toLocaleString("ja-JP", { maximumFractionDigits: 1 });
   }
+  if (key === "aging_rate") {
+    return `${value.toLocaleString("ja-JP", { maximumFractionDigits: 0 })}%`;
+  }
+  if (key === "expenditure_total") {
+    return `${Math.round(value / 100000000).toLocaleString("ja-JP")}億`;
+  }
   if (Math.abs(value) >= 10000) {
     return `${Math.round(value / 10000).toLocaleString("ja-JP")}万`;
   }
   return Math.round(value).toLocaleString("ja-JP");
+}
+
+function formatOkuYen(value) {
+  if (typeof value !== "number") return "";
+  return `${Math.round(value / 100000000).toLocaleString("ja-JP")}億円`;
 }
 
 function svgEl(tag, attrs = {}, children = []) {
@@ -399,6 +455,7 @@ function renderFaceLineupSection(members, state) {
     ? [el("p", { class: "empty-message" }, "該当する議員はいません。")]
     : [
         renderCompactFactionChart(state.members),
+        renderTenureComposition(state.members),
         el("div", { class: "face-lineup-groups" }, groups.map(([faction, list]) =>
           renderFactionFaceGroup(faction, list, state),
         )),
@@ -417,6 +474,46 @@ function renderFaceLineupSection(members, state) {
         ? { label: state.membersMeta.source_name || "公式名簿", url: state.membersMeta.source_url }
         : null,
     ]),
+  ]);
+}
+
+function renderTenureComposition(members) {
+  const known = (members || []).filter((member) => typeof member.elected_count === "number");
+  if (!known.length || known.length !== (members || []).length) return null;
+  const buckets = [
+    { key: "first", label: "1回", count: 0 },
+    { key: "middle", label: "2〜3回", count: 0 },
+    { key: "senior", label: "4回以上", count: 0 },
+  ];
+  for (const member of known) {
+    if (member.elected_count <= 1) buckets[0].count += 1;
+    else if (member.elected_count <= 3) buckets[1].count += 1;
+    else buckets[2].count += 1;
+  }
+  const total = known.length;
+  return el("div", { class: "tenure-composition" }, [
+    el("div", { class: "tenure-composition-head" }, [
+      el("h3", {}, "当選回数の構成"),
+      el("p", {}, "色は会派とは関係のない濃淡です。"),
+    ]),
+    el("div", {
+      class: "tenure-bar",
+      role: "img",
+      "aria-label": `当選回数の構成。${buckets.map((bucket) => `${bucket.label} ${bucket.count}人`).join("、")}。`,
+    }, buckets.map((bucket) =>
+      bucket.count
+        ? el("span", {
+            class: `tenure-segment is-${bucket.key}`,
+            style: `--segment-width: ${(bucket.count / total) * 100}%;`,
+          }, `${bucket.count}人`)
+        : null,
+    )),
+    el("div", { class: "tenure-legend" }, buckets.map((bucket) =>
+      el("span", { class: `tenure-legend-item is-${bucket.key}` }, [
+        el("span", { class: "tenure-swatch", "aria-hidden": "true" }),
+        `${bucket.label} ${bucket.count}人`,
+      ]),
+    )),
   ]);
 }
 
@@ -599,6 +696,32 @@ function renderVotesTabButton(label) {
     );
   });
   return tabButton;
+}
+
+function renderOfficialLinksSection(council) {
+  const links = Array.isArray(council?.official_links)
+    ? council.official_links.filter((link) => link?.label && link?.url)
+    : [];
+  if (!links.length) return null;
+  return el("section", { class: "official-links-section page-card" }, [
+    el("div", { class: "section-heading-row" }, [
+      el("div", {}, [
+        el("p", { class: "eyebrow" }, "公式情報"),
+        el("h2", { class: "section-title" }, "公式情報へのリンク"),
+      ]),
+    ]),
+    el("div", { class: "official-link-grid" }, links.map((link) =>
+      el("a", {
+        class: "official-link-card",
+        href: link.url,
+        target: "_blank",
+        rel: "noopener",
+      }, [
+        el("span", {}, link.label),
+        el("small", {}, "公式サイトで確認"),
+      ]),
+    )),
+  ]);
 }
 
 function renderStageTabPanel(state) {

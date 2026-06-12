@@ -15,7 +15,7 @@ export function renderMemberPage(root, state, memberId) {
     .filter((speech) => speech.member_id === member.id)
     .sort((a, b) => (b.date || "").localeCompare(a.date || ""));
 
-  root.appendChild(renderMemberProfile(member, state.membersMeta));
+  root.appendChild(renderMemberProfile(member, state.membersMeta, state.currentCouncil));
   const voteSection = renderMemberVoteSection(
     state.votes,
     state.votesMeta,
@@ -27,7 +27,7 @@ export function renderMemberPage(root, state, memberId) {
   root.appendChild(renderSpeechSection(speeches, state.speechesMeta, state.currentCouncil));
 }
 
-function renderMemberProfile(member, membersMeta) {
+function renderMemberProfile(member, membersMeta, council) {
   return el("section", { class: "member-detail" }, [
     el("div", { class: "member-detail-main" }, [
       renderPhoto(member),
@@ -43,10 +43,23 @@ function renderMemberProfile(member, membersMeta) {
               sourceLink(member.official_profile_url, "公式プロフィールを見る"),
             ])
           : null,
+        renderMemberSearchLink(member, council),
         el("p", { class: "quality-inline", title: membersMeta?.acquisition || "" }, acquisitionText(membersMeta)),
         sourceLink(membersMeta?.source_url, "議員名簿の出典"),
       ]),
     ]),
+  ]);
+}
+
+function renderMemberSearchLink(member, council) {
+  const areaName = (council?.name || "")
+    .replace(/議会$/, "")
+    .trim();
+  const query = [member.name, areaName, "議員"].filter(Boolean).join(" ");
+  const url = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+  return el("p", { class: "member-search-link" }, [
+    el("a", { href: url, target: "_blank", rel: "noopener" }, "この議員について検索"),
+    el("small", {}, "外部の検索結果に移動します"),
   ]);
 }
 
