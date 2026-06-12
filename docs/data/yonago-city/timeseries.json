@@ -1,0 +1,165 @@
+{
+  "council_id": "yonago-city",
+  "updated_at": "2026-06-12T02:47:32+00:00",
+  "source": {
+    "provider": "e-Stat 社会・人口統計体系（SSDS）",
+    "api": "getStatsData",
+    "retrieved_at": "2026-06-12T02:47:32+00:00",
+    "area_code": "31202",
+    "statsDataIds": {
+      "population_total": "0000020101",
+      "births": "0000020101",
+      "fiscal_index": "0000020104"
+    },
+    "note": "SSDSは確定統計のため最新年が1〜3年遅れる。profileの最新公表値とは出典・年次が異なる。"
+  },
+  "indicators": {
+    "population_total": {
+      "label": "住民基本台帳人口（総数）",
+      "unit": "persons",
+      "ssds_item": "A2301",
+      "year_start": 2014,
+      "year_end": 2023,
+      "values": [
+        {
+          "year": 2014,
+          "value": 149857
+        },
+        {
+          "year": 2015,
+          "value": 149731
+        },
+        {
+          "year": 2016,
+          "value": 149407
+        },
+        {
+          "year": 2017,
+          "value": 148910
+        },
+        {
+          "year": 2018,
+          "value": 148524
+        },
+        {
+          "year": 2019,
+          "value": 147857
+        },
+        {
+          "year": 2020,
+          "value": 147536
+        },
+        {
+          "year": 2021,
+          "value": 146899
+        },
+        {
+          "year": 2022,
+          "value": 146139
+        },
+        {
+          "year": 2023,
+          "value": 145163
+        }
+      ]
+    },
+    "births": {
+      "label": "出生数",
+      "unit": "persons",
+      "ssds_item": "A4101",
+      "year_start": 2013,
+      "year_end": 2022,
+      "values": [
+        {
+          "year": 2013,
+          "value": 1441
+        },
+        {
+          "year": 2014,
+          "value": 1323
+        },
+        {
+          "year": 2015,
+          "value": 1442
+        },
+        {
+          "year": 2016,
+          "value": 1372
+        },
+        {
+          "year": 2017,
+          "value": 1357
+        },
+        {
+          "year": 2018,
+          "value": 1301
+        },
+        {
+          "year": 2019,
+          "value": 1253
+        },
+        {
+          "year": 2020,
+          "value": 1150
+        },
+        {
+          "year": 2021,
+          "value": 1176
+        },
+        {
+          "year": 2022,
+          "value": 1178
+        }
+      ]
+    },
+    "fiscal_index": {
+      "label": "財政力指数",
+      "unit": "index",
+      "ssds_item": "D2201",
+      "year_start": 2012,
+      "year_end": 2021,
+      "values": [
+        {
+          "year": 2012,
+          "value": 0.65
+        },
+        {
+          "year": 2013,
+          "value": 0.65
+        },
+        {
+          "year": 2014,
+          "value": 0.65
+        },
+        {
+          "year": 2015,
+          "value": 0.66
+        },
+        {
+          "year": 2016,
+          "value": 0.67
+        },
+        {
+          "year": 2017,
+          "value": 0.67
+        },
+        {
+          "year": 2018,
+          "value": 0.67
+        },
+        {
+          "year": 2019,
+          "value": 0.68
+        },
+        {
+          "year": 2020,
+          "value": 0.68
+        },
+        {
+          "year": 2021,
+          "value": 0.67
+        }
+      ]
+    }
+  }
+}

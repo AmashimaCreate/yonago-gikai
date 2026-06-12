@@ -1,0 +1,165 @@
+{
+  "council_id": "tottori-pref",
+  "updated_at": "2026-06-12T02:47:32+00:00",
+  "source": {
+    "provider": "e-Stat 社会・人口統計体系（SSDS）",
+    "api": "getStatsData",
+    "retrieved_at": "2026-06-12T02:47:32+00:00",
+    "area_code": "31000",
+    "statsDataIds": {
+      "population_total": "0000010101",
+      "births": "0000010101",
+      "fiscal_index": "0000010104"
+    },
+    "note": "SSDSは確定統計のため最新年が1〜3年遅れる。profileの最新公表値とは出典・年次が異なる。"
+  },
+  "indicators": {
+    "population_total": {
+      "label": "住民基本台帳人口（総数）",
+      "unit": "persons",
+      "ssds_item": "A2301",
+      "year_start": 2014,
+      "year_end": 2023,
+      "values": [
+        {
+          "year": 2014,
+          "value": 583351
+        },
+        {
+          "year": 2015,
+          "value": 579309
+        },
+        {
+          "year": 2016,
+          "value": 575264
+        },
+        {
+          "year": 2017,
+          "value": 570824
+        },
+        {
+          "year": 2018,
+          "value": 566052
+        },
+        {
+          "year": 2019,
+          "value": 561175
+        },
+        {
+          "year": 2020,
+          "value": 556959
+        },
+        {
+          "year": 2021,
+          "value": 551806
+        },
+        {
+          "year": 2022,
+          "value": 546558
+        },
+        {
+          "year": 2023,
+          "value": 540207
+        }
+      ]
+    },
+    "births": {
+      "label": "出生数",
+      "unit": "persons",
+      "ssds_item": "A4101",
+      "year_start": 2013,
+      "year_end": 2022,
+      "values": [
+        {
+          "year": 2013,
+          "value": 4759
+        },
+        {
+          "year": 2014,
+          "value": 4527
+        },
+        {
+          "year": 2015,
+          "value": 4624
+        },
+        {
+          "year": 2016,
+          "value": 4436
+        },
+        {
+          "year": 2017,
+          "value": 4310
+        },
+        {
+          "year": 2018,
+          "value": 4190
+        },
+        {
+          "year": 2019,
+          "value": 3988
+        },
+        {
+          "year": 2020,
+          "value": 3783
+        },
+        {
+          "year": 2021,
+          "value": 3708
+        },
+        {
+          "year": 2022,
+          "value": 3752
+        }
+      ]
+    },
+    "fiscal_index": {
+      "label": "財政力指数",
+      "unit": "index",
+      "ssds_item": "D2101",
+      "year_start": 2012,
+      "year_end": 2021,
+      "values": [
+        {
+          "year": 2012,
+          "value": 0.244
+        },
+        {
+          "year": 2013,
+          "value": 0.24074
+        },
+        {
+          "year": 2014,
+          "value": 0.24297
+        },
+        {
+          "year": 2015,
+          "value": 0.25486
+        },
+        {
+          "year": 2016,
+          "value": 0.26553
+        },
+        {
+          "year": 2017,
+          "value": 0.27262
+        },
+        {
+          "year": 2018,
+          "value": 0.27719
+        },
+        {
+          "year": 2019,
+          "value": 0.28162
+        },
+        {
+          "year": 2020,
+          "value": 0.28689
+        },
+        {
+          "year": 2021,
+          "value": 0.27259
+        }
+      ]
+    }
+  }
+}
