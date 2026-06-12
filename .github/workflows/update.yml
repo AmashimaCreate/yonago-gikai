@@ -63,8 +63,21 @@ jobs:
       - name: Generate profile data
         run: python scripts/profile_builder.py
 
+      - name: Generate timeseries data
+        env:
+          ESTAT_APP_ID: ${{ secrets.ESTAT_APP_ID }}
+        run: |
+          if [ -z "$ESTAT_APP_ID" ]; then
+            echo "::error::ESTAT_APP_ID secret is not set."
+            exit 1
+          fi
+          python scripts/timeseries_builder.py
+
       - name: Validate data
         run: python scripts/validate.py
+
+      - name: Check official links
+        run: python scripts/check_links.py
 
       - name: Check excluded personal/contact info
         run: |
@@ -107,6 +120,7 @@ jobs:
                 '- kensakusystem legacy 会議録検索の構造変更',
                 '- 手動入力JSONの検証エラー',
                 '- 個人情報除外grepの検出',
+                '- 公式リンクの4xx/5xxまたは接続失敗',
                 '- ネットワーク障害',
                 '- パース結果の異常(議員数が想定範囲外)',
                 '',
