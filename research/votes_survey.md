@@ -274,3 +274,37 @@ OCR対象:
 - 中: 鳥取市議会のテキストPDF分
 - 低〜中: 鳥取市議会の抽出不可PDF分。OCR精度検証が必要
 - 不明: 境港市議会
+
+## 4. 2026-06-12 米子市議決結果PDF 軽量パース検証
+
+対象:
+
+- 公式一覧: `https://www.city.yonago.lg.jp/13764.htm`
+- 直近2定例会:
+  - `令和8年3月定例会`: `https://www.city.yonago.lg.jp/secure/16192/giketsu8.03.pdf`
+  - `令和7年12月定例会`: `https://www.city.yonago.lg.jp/secure/16192/giketsu7.12.23.pdf`
+
+判定:
+
+- どちらも `pdftotext -layout` で `議案番号`、`件名`、`議決年月日`、`議決結果` が抽出できるテキストPDF。
+- 公式PDFの総括表には `報告` も含まれるが、報告欄は `報告年月日` のみで `議決結果` がない。そのため `votes.json` の `granularity: result_only` 対象は `報告` を除く。
+- 議員別賛否はPDF内に存在しないため、`votes_by_member: null`、`votes_by_faction: null` で扱う。
+
+試作:
+
+- スクリプト: `scripts/experimental/parse_yonago_votes_result_only.py`
+- 生成サンプル: `research/yonago_votes_result_only_sample.json`
+- 取得方法: 公式一覧から定例会PDFリンクを発見し、直近2定例会をダウンロード。`pdftotext -layout` のテキストをセクション単位で読み、`令和...日 + 議決結果` をレコード終端として `議案番号/諮問番号/請願番号/陳情番号`、件名、議決日、結果を抽出。
+
+検算:
+
+| 会期 | PDF総括表合計 | 報告 | result_only期待件数 | 抽出件数 | 判定 |
+| --- | ---: | ---: | ---: | ---: | --- |
+| 令和8年3月定例会 | 49 | 1 | 48 | 48 | 一致 |
+| 令和7年12月定例会 | 49 | 4 | 45 | 45 | 一致 |
+
+結論:
+
+- 米子市議会は、直近2定例会について `votes.json` を `granularity: result_only` で生成可能。
+- 本サイトの有効な可視化粒度は「議案等ごとの結果」まで。議員別賛否の生成は不可。
+- 長い件名が番号行の前後に回り込むため、行頭固定の正規表現ではなく、セクション内のレコード終端を日付+結果で判定する方式が安定する。
