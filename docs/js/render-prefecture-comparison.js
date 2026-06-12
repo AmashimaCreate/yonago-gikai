@@ -1,8 +1,7 @@
-import { councilPath } from "./router.js";
+import { prefPath } from "./router.js";
 import {
   formatDecimal,
   formatPeople,
-  formatYen,
   sourceLink,
 } from "./render-profile.js";
 import { el } from "./utils.js";
@@ -96,24 +95,28 @@ function sourceNodes(summary, metric) {
   return [sourceLink(summary.profile?.[metric.profileKey]?.source_url)].filter(Boolean);
 }
 
-function renderComparisonRow(summary, metric, domain, prefecture) {
+function metricSourceNode(summaries, metric) {
+  for (const summary of summaries) {
+    const source = sourceNodes(summary, metric)[0];
+    if (source) return sourceLink(source.href, "出典");
+  }
+  return null;
+}
+
+function renderComparisonRow(summary, metric, domain) {
   const value = valueFrom(summary, metric);
   const formatted = typeof value === "number" ? metric.format(value) : null;
   const percent = clampPercent(value, domain);
-  const sources = sourceNodes(summary, metric);
 
   return el("div", { class: "comparison-row" }, [
     el("div", { class: "comparison-council" }, [
-      el("a", {
-        href: councilPath(prefecture, summary.council.id),
-      }, summary.council.name),
+      el("span", {}, summary.council.name),
       el("span", { class: "comparison-type" }, summary.council.type === "prefecture" ? "県議会" : "市議会"),
     ]),
     el("div", { class: "comparison-value" }, [
       formatted
         ? el("strong", {}, formatted)
         : el("span", { class: "missing-value" }, "データ未入力"),
-      sources.length ? el("span", { class: "comparison-sources" }, sources) : null,
     ]),
     el("div", { class: "comparison-bar-cell" }, [
       typeof value === "number"
@@ -176,9 +179,23 @@ export function renderPrefectureComparison(summaries, prefecture = "tottori") {
           el("span", { class: "comparison-note" }, metric.note),
         ]),
         el("div", { class: "comparison-rows" },
-          ordered.map((summary) => renderComparisonRow(summary, metric, domain, prefecture)),
+          ordered.map((summary) => renderComparisonRow(summary, metric, domain)),
         ),
+        el("p", { class: "comparison-source-link" }, metricSourceNode(ordered, metric)),
       ]);
     })),
   ]);
+}
+
+export function renderPrefectureComparisonPage(root, summaries, prefecture = "tottori") {
+  root.innerHTML = "";
+  root.appendChild(
+    el("p", { class: "back-link-row" }, [
+      el("a", { href: prefPath(prefecture) }, "← 鳥取県ページへ戻る"),
+    ]),
+  );
+  root.appendChild(
+    renderPrefectureComparison(summaries, prefecture)
+      || el("p", { class: "empty-message" }, "比較に使うデータを読み込めませんでした。"),
+  );
 }

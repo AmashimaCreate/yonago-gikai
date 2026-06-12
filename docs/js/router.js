@@ -18,6 +18,9 @@ export function parseRoute(hash = window.location.hash) {
   if (parts[0] !== "pref" || !parts[1]) return { name: "not-found" };
   const prefecture = parts[1];
   if (parts.length === 2) return { name: "prefecture", prefecture };
+  if (parts.length === 3 && parts[2] === "compare") {
+    return { name: "prefecture-compare", prefecture };
+  }
   if (parts[2] !== "councils" || !parts[3]) return { name: "not-found" };
   if (parts.length === 4) {
     return { name: "council", prefecture, councilId: parts[3] };
@@ -39,6 +42,10 @@ export function topPath() {
 
 export function prefPath(prefecture) {
   return `#/pref/${encodeURIComponent(prefecture)}`;
+}
+
+export function prefComparePath(prefecture) {
+  return `${prefPath(prefecture)}/compare`;
 }
 
 export function aboutPath() {

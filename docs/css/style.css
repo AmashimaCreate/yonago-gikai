@@ -429,6 +429,22 @@ a:hover { color: var(--brand-dark); }
 .prefecture-assembly-wrap .council-card {
   margin: 0;
 }
+.prefecture-compare-link {
+  margin: 6px 0 0;
+  text-align: right;
+  font-weight: 800;
+}
+.prefecture-compare-link a,
+.back-link-row a {
+  color: var(--brand);
+  text-decoration: none;
+}
+.prefecture-compare-link a:hover,
+.prefecture-compare-link a:focus-visible,
+.back-link-row a:hover,
+.back-link-row a:focus-visible {
+  text-decoration: underline;
+}
 .map-caption {
   margin: 0 0 6px;
   font-size: 12px;
@@ -706,7 +722,7 @@ a:hover { color: var(--brand-dark); }
 .comparison-bar-cell {
   min-width: 0;
 }
-.comparison-council a {
+.comparison-council > span:first-child {
   font-weight: 700;
 }
 .comparison-type {
@@ -727,6 +743,11 @@ a:hover { color: var(--brand-dark); }
   display: inline-flex;
   gap: 4px;
   flex-wrap: wrap;
+}
+.comparison-source-link {
+  margin: 10px 0 0;
+  font-size: 12px;
+  text-align: right;
 }
 .missing-value {
   color: var(--text-muted);
@@ -1199,6 +1220,10 @@ main { padding: 24px 0 48px; }
 
 .back-link-wrap {
   margin: 0 0 16px;
+}
+.back-link-row {
+  margin: 0 0 16px;
+  font-weight: 800;
 }
 .member-detail-main {
   display: grid;

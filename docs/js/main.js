@@ -3,6 +3,7 @@ import { renderAbout } from "./render-about.js";
 import { renderCouncilPage } from "./render-council.js";
 import { renderMemberPage } from "./render-member.js";
 import { renderPrefecturePage } from "./render-prefecture.js";
+import { renderPrefectureComparisonPage } from "./render-prefecture-comparison.js";
 import { renderProfile } from "./render-profile.js";
 import { renderTop } from "./render-top.js";
 import { parseRoute } from "./router.js";
@@ -219,7 +220,7 @@ async function applyRoute() {
     return;
   }
 
-  if (route.name === "prefecture") {
+  if (route.name === "prefecture" || route.name === "prefecture-compare") {
     state.currentCouncil = null;
     state.members = [];
     state.membersMeta = null;
@@ -235,20 +236,29 @@ async function applyRoute() {
       renderNotFound();
       return;
     }
-    setHeader({
-      title: "鳥取県 議会見える化",
-      lead: "鳥取県内5議会の公開データを同じ形で確認できます。",
-    });
+    setHeader(route.name === "prefecture-compare"
+      ? {
+          title: "鳥取県 5議会くらべ",
+          lead: "鳥取県内5議会の基本データを同じ尺度で見ます。",
+        }
+      : {
+          title: "鳥取県 議会見える化",
+          lead: "鳥取県内5議会の公開データを同じ形で確認できます。",
+        });
     showCouncilNav(false);
     state.councilSummaries = await loadCouncilSummaries(
       state.councils.filter((council) => council.prefecture === route.prefecture),
     );
-    renderPrefecturePage(
-      mainNode(),
-      state.councils,
-      route.prefecture,
-      state.councilSummaries,
-    );
+    if (route.name === "prefecture-compare") {
+      renderPrefectureComparisonPage(mainNode(), state.councilSummaries, route.prefecture);
+    } else {
+      renderPrefecturePage(
+        mainNode(),
+        state.councils,
+        route.prefecture,
+        state.councilSummaries,
+      );
+    }
     return;
   }
 
