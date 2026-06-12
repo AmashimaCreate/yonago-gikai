@@ -449,6 +449,10 @@ async function applyRoute() {
 
 function renderWithErrorBoundary() {
   applyRoute().catch((err) => {
+    if (err instanceof Error && err.message.includes("議会が見つかりません")) {
+      renderNotFound();
+      return;
+    }
     console.error(err);
     showCouncilNav(false);
     setHeader({
@@ -457,7 +461,10 @@ function renderWithErrorBoundary() {
     });
     mainNode().innerHTML = "";
     mainNode().appendChild(
-      el("p", { class: "empty-message" }, `読み込みに失敗しました: ${err.message}`),
+      el("p", { class: "empty-message" }, [
+        `読み込みに失敗しました: ${err.message} `,
+        el("a", { href: "#/" }, "トップへ戻る"),
+      ]),
     );
   });
 }
