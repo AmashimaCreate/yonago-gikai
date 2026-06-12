@@ -354,6 +354,10 @@ def validate_votes_file(council_id: str, path: Path) -> list[str]:
             )
 
         granularity = vote.get("granularity")
+        if granularity == "result_only":
+            bill_no = vote.get("bill_no")
+            if not isinstance(bill_no, str) or not bill_no:
+                errors.append(f"{label}: bill_no must be a non-empty string for result_only")
         votes_by_member = vote.get("votes_by_member")
         if granularity == "member":
             errors.extend(
@@ -365,6 +369,8 @@ def validate_votes_file(council_id: str, path: Path) -> list[str]:
             errors.append(f"{label}: votes_by_member must be null unless member")
 
         votes_by_faction = vote.get("votes_by_faction")
+        if granularity == "result_only" and votes_by_faction is not None:
+            errors.append(f"{label}: votes_by_faction must be null for result_only")
         if votes_by_faction is not None and not isinstance(votes_by_faction, list):
             errors.append(f"{label}: votes_by_faction must be a list or null")
 
