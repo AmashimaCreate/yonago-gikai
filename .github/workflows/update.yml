@@ -128,6 +128,8 @@ jobs:
             });
 
       - name: Commit changes (if any)
+        env:
+          CF_DEPLOY_HOOK_URL: ${{ secrets.CF_DEPLOY_HOOK_URL }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -137,6 +139,12 @@ jobs:
           else
             git commit -m "chore(data): update council data ($(date -u +%Y-%m-%d))"
             git push
+            if [ -z "$CF_DEPLOY_HOOK_URL" ]; then
+              echo "::error::CF_DEPLOY_HOOK_URL secret is not set."
+              exit 1
+            fi
+            curl -fsS -X POST "$CF_DEPLOY_HOOK_URL" > /dev/null
+            echo "Cloudflare rebuild triggered for seiji-mieru /tottori/."
           fi
 
       - name: Create issue on failure
