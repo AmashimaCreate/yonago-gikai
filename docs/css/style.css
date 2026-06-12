@@ -1665,9 +1665,37 @@ main { padding: 24px 0 48px; }
   color: var(--text-muted);
   font-size: 13px;
 }
+.ai-prompt-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 8px 0 10px;
+}
+.ai-prompt-tab {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text-muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 6px 12px;
+}
+.ai-prompt-tab:hover,
+.ai-prompt-tab:focus-visible {
+  border-color: var(--key-color);
+  color: var(--key-color);
+}
+.ai-prompt-tab.is-active {
+  border-color: var(--key-color);
+  background: var(--key-color);
+  color: #fff;
+}
 .ai-prompt-text {
   width: 100%;
   min-height: 96px;
+  margin: 0 0 10px;
   padding: 10px;
   border: 1px solid var(--border);
   border-radius: 10px;
@@ -1683,36 +1711,45 @@ main { padding: 24px 0 48px; }
   font-size: 12px;
 }
 .copy-button {
-  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   border: 1px solid color-mix(in srgb, var(--key-color) 30%, var(--border));
-  border-radius: 999px;
+  border-radius: 10px;
   background: var(--key-color);
   color: #fff;
   cursor: pointer;
+  font: inherit;
+  font-size: 15px;
   font-weight: 800;
-  padding: 7px 13px;
+  padding: 11px 14px;
 }
 .copy-button:disabled {
   cursor: default;
   opacity: 0.72;
 }
 .ai-service-links {
-  margin: 0 0 10px;
+  margin: 10px 0 0;
 }
 .ai-service-button-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 7px;
+  gap: 8px;
 }
 .ai-service-link {
   display: inline-flex;
+  gap: 6px;
   align-items: center;
+  justify-content: center;
   min-height: 30px;
-  padding: 5px 10px;
+  padding: 6px 11px;
   border: 1px solid color-mix(in srgb, var(--key-color) 22%, var(--border));
   border-radius: 999px;
   background: var(--surface);
   color: var(--key-color);
+  cursor: pointer;
+  font: inherit;
   font-size: 12px;
   font-weight: 800;
   text-decoration: none;
@@ -1721,6 +1758,17 @@ main { padding: 24px 0 48px; }
 .ai-service-link:focus-visible {
   border-color: var(--key-color);
   background: color-mix(in srgb, var(--key-color) 9%, var(--surface));
+}
+.ai-service-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--key-color) 12%, var(--surface));
+  color: var(--key-color);
+  font-size: 11px;
+  font-weight: 900;
 }
 .ai-link-note {
   margin: 6px 0 0;

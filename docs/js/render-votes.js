@@ -270,17 +270,49 @@ function renderCouncilVoteDetail(vote, council, route, memberMap) {
 function renderVoteResearchPrompt(vote, council) {
   return renderAiPromptCard({
     title: "この議決をAIで調べる",
-    lead: "背景・内容・論点を調べるための下書きです。",
-    prompt: voteResearchPrompt(vote, council),
+    lead: "知りたいことに合わせて質問を切り替えられます。",
+    prompts: votePromptItems(vote, council),
     compact: true,
   });
 }
 
-function voteResearchPrompt(vote, council) {
-  const areaName = councilAreaName(council) || council?.name || "この自治体";
-  const date = vote.date || "日付不明";
-  const title = vote.bill_title || "議案名不明";
-  return `${areaName}議会で${date}に議決された「${title}」について、背景・内容・論点を公的な情報源を優先して整理してください。`;
+function votePromptItems(vote, council) {
+  const prompts = [
+    {
+      key: "summary",
+      label: "要約して",
+      text: structuredVotePrompt(vote, council, "この議案が何のためのものか、政治にくわしくない人にも分かるように3〜4行で説明してください"),
+    },
+  ];
+  if (hasSplitVote(vote)) {
+    prompts.push({
+      key: "pros-cons",
+      label: "賛成と反対",
+      text: structuredVotePrompt(vote, council, "この議決について、賛成側と反対側でどんな立場の違いがあり得るか、公的情報を優先して整理してください"),
+    });
+  }
+  prompts.push({
+    key: "background",
+    label: "経緯・背景",
+    text: structuredVotePrompt(vote, council, "この議案が出てきた背景や、関連する制度を整理してください"),
+  });
+  return prompts;
+}
+
+function structuredVotePrompt(vote, council, instruction) {
+  return [
+    `対象: ${vote.bill_title || "議案名不明"}(${council?.name || "議会"})`,
+    "# お願い",
+    `- ${councilAreaName(council) || council?.name || "この自治体"}議会で${vote.date || "日付不明"}に議決されたこの議案について、${instruction}`,
+    "- 専門用語にはひとこと説明を添えてください",
+    "- 確実でない点や古い可能性のある点は「分からない」と述べ、できれば出典を示してください",
+    "- 評価や良し悪しの断定ではなく、事実の整理をお願いします",
+  ].join("\n");
+}
+
+function hasSplitVote(vote) {
+  const counts = voteCounts(vote);
+  return (counts["賛成"] || 0) > 0 && (counts["反対"] || 0) > 0;
 }
 
 function renderVoteMemberCell(entry, council, route, memberMap) {
