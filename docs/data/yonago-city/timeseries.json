@@ -1,14 +1,17 @@
 {
   "council_id": "yonago-city",
-  "updated_at": "2026-06-12T02:47:32+00:00",
+  "updated_at": "2026-06-12T04:34:50+00:00",
   "source": {
     "provider": "e-Stat 社会・人口統計体系（SSDS）",
     "api": "getStatsData",
-    "retrieved_at": "2026-06-12T02:47:32+00:00",
+    "retrieved_at": "2026-06-12T04:34:50+00:00",
     "area_code": "31202",
     "statsDataIds": {
       "population_total": "0000020101",
+      "aging_rate": "0000020101",
       "births": "0000020101",
+      "social_change": "0000020101",
+      "expenditure_total": "0000020104",
       "fiscal_index": "0000020104"
     },
     "note": "SSDSは確定統計のため最新年が1〜3年遅れる。profileの最新公表値とは出典・年次が異なる。"
@@ -63,6 +66,87 @@
         }
       ]
     },
+    "aging_rate": {
+      "label": "高齢化率",
+      "unit": "percent",
+      "ssds_item": "A1301/A1302/A1303",
+      "year_start": 1980,
+      "year_end": 2020,
+      "values": [
+        {
+          "year": 1980,
+          "value": 10.2,
+          "population_total": 127299,
+          "young_population": 29353,
+          "working_age_population": 84928,
+          "elderly_population": 13018
+        },
+        {
+          "year": 1985,
+          "value": 11.6,
+          "population_total": 131774,
+          "young_population": 28787,
+          "working_age_population": 87737,
+          "elderly_population": 15250
+        },
+        {
+          "year": 1990,
+          "value": 14.0,
+          "population_total": 131352,
+          "young_population": 24768,
+          "working_age_population": 88174,
+          "elderly_population": 18410
+        },
+        {
+          "year": 1995,
+          "value": 16.7,
+          "population_total": 134728,
+          "young_population": 22816,
+          "working_age_population": 89435,
+          "elderly_population": 22477
+        },
+        {
+          "year": 2000,
+          "value": 19.1,
+          "population_total": 138321,
+          "young_population": 21693,
+          "working_age_population": 90237,
+          "elderly_population": 26391
+        },
+        {
+          "year": 2005,
+          "value": 21.5,
+          "population_total": 149403,
+          "young_population": 22067,
+          "working_age_population": 95197,
+          "elderly_population": 32139
+        },
+        {
+          "year": 2010,
+          "value": 24.4,
+          "population_total": 144967,
+          "young_population": 20678,
+          "working_age_population": 88910,
+          "elderly_population": 35379
+        },
+        {
+          "year": 2015,
+          "value": 27.6,
+          "population_total": 147205,
+          "young_population": 20163,
+          "working_age_population": 86473,
+          "elderly_population": 40569
+        },
+        {
+          "year": 2020,
+          "value": 29.5,
+          "population_total": 143602,
+          "young_population": 19171,
+          "working_age_population": 82094,
+          "elderly_population": 42337
+        }
+      ]
+    },
     "births": {
       "label": "出生数",
       "unit": "persons",
@@ -109,6 +193,100 @@
         {
           "year": 2022,
           "value": 1178
+        }
+      ]
+    },
+    "social_change": {
+      "label": "社会増減",
+      "unit": "persons",
+      "ssds_item": "A5103/A5104",
+      "year_start": 2018,
+      "year_end": 2023,
+      "values": [
+        {
+          "year": 2018,
+          "value": -77,
+          "in_migration": 4844,
+          "out_migration": 4921
+        },
+        {
+          "year": 2019,
+          "value": -252,
+          "in_migration": 4752,
+          "out_migration": 5004
+        },
+        {
+          "year": 2020,
+          "value": 221,
+          "in_migration": 4741,
+          "out_migration": 4520
+        },
+        {
+          "year": 2021,
+          "value": 6,
+          "in_migration": 4825,
+          "out_migration": 4819
+        },
+        {
+          "year": 2022,
+          "value": -91,
+          "in_migration": 4620,
+          "out_migration": 4711
+        },
+        {
+          "year": 2023,
+          "value": -231,
+          "in_migration": 4594,
+          "out_migration": 4825
+        }
+      ]
+    },
+    "expenditure_total": {
+      "label": "歳出決算総額",
+      "unit": "yen",
+      "ssds_item": "D3203",
+      "year_start": 2012,
+      "year_end": 2021,
+      "values": [
+        {
+          "year": 2012,
+          "value": 56785187000
+        },
+        {
+          "year": 2013,
+          "value": 63384346000
+        },
+        {
+          "year": 2014,
+          "value": 61596625000
+        },
+        {
+          "year": 2015,
+          "value": 64516626000
+        },
+        {
+          "year": 2016,
+          "value": 62236046000
+        },
+        {
+          "year": 2017,
+          "value": 63840251000
+        },
+        {
+          "year": 2018,
+          "value": 66313504000
+        },
+        {
+          "year": 2019,
+          "value": 67616958000
+        },
+        {
+          "year": 2020,
+          "value": 86970779000
+        },
+        {
+          "year": 2021,
+          "value": 80495732000
         }
       ]
     },

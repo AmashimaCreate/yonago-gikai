@@ -106,7 +106,14 @@ TIMESERIES_SOURCE_KEYS = {
     "statsDataIds",
     "note",
 }
-TIMESERIES_INDICATORS = {"population_total", "births", "fiscal_index"}
+TIMESERIES_INDICATORS = {
+    "population_total",
+    "aging_rate",
+    "births",
+    "social_change",
+    "expenditure_total",
+    "fiscal_index",
+}
 TIMESERIES_INDICATOR_KEYS = {
     "label",
     "unit",
@@ -188,6 +195,20 @@ def validate_councils() -> tuple[list[dict[str, Any]], list[str]]:
             errors.append(
                 f"{label}: votes_official_url must start with 'https://' or be null"
             )
+        official_links = council.get("official_links", [])
+        if official_links is not None:
+            if not isinstance(official_links, list):
+                errors.append(f"{label}: official_links must be a list or null")
+            else:
+                for j, link in enumerate(official_links):
+                    link_label = f"{label}: official_links[{j}]"
+                    if not isinstance(link, dict):
+                        errors.append(f"{link_label}: must be an object")
+                        continue
+                    if not isinstance(link.get("label"), str) or not link.get("label"):
+                        errors.append(f"{link_label}: label must be a non-empty string")
+                    if not isinstance(link.get("url"), str) or not link.get("url", "").startswith("https://"):
+                        errors.append(f"{link_label}: url must start with 'https://'")
         if council.get("status") not in STATUSES:
             errors.append(f"{label}: invalid status '{council.get('status')}'")
 
@@ -510,8 +531,8 @@ def validate_timeseries_file(council_id: str, path: Path) -> list[str]:
         if not isinstance(values, list):
             errors.append(f"{label}: values must be a list")
             continue
-        if len(values) != 10:
-            errors.append(f"{label}: values must contain exactly 10 points")
+        if not 2 <= len(values) <= 10:
+            errors.append(f"{label}: values must contain 2 to 10 points")
             continue
 
         years: list[int] = []
@@ -530,10 +551,9 @@ def validate_timeseries_file(council_id: str, path: Path) -> list[str]:
             if not isinstance(value, (int, float)) or isinstance(value, bool):
                 errors.append(f"{item_label}: value must be numeric")
 
-        if len(years) == 10:
-            expected_years = list(range(years[0], years[0] + 10))
-            if years != expected_years:
-                errors.append(f"{label}: years must be continuous ascending years")
+        if len(years) == len(values):
+            if years != sorted(years):
+                errors.append(f"{label}: years must be ascending")
             if isinstance(year_start, int) and years[0] != year_start:
                 errors.append(f"{label}: year_start does not match first value year")
             if isinstance(year_end, int) and years[-1] != year_end:

@@ -61,7 +61,7 @@ AREAS = [
     },
 ]
 
-INDICATORS: dict[str, dict[str, Any]] = {
+SOURCE_INDICATORS: dict[str, dict[str, Any]] = {
     "population_total": {
         "label": "住民基本台帳人口（総数）",
         "unit": "persons",
@@ -73,6 +73,45 @@ INDICATORS: dict[str, dict[str, Any]] = {
         "ssds_item": {
             "prefecture": "A2301",
             "municipality": "A2301",
+        },
+    },
+    "young_population": {
+        "label": "15歳未満人口",
+        "unit": "persons",
+        "value_type": "integer",
+        "stats_data_id": {
+            "prefecture": "0000010101",
+            "municipality": "0000020101",
+        },
+        "ssds_item": {
+            "prefecture": "A1301",
+            "municipality": "A1301",
+        },
+    },
+    "working_age_population": {
+        "label": "15〜64歳人口",
+        "unit": "persons",
+        "value_type": "integer",
+        "stats_data_id": {
+            "prefecture": "0000010101",
+            "municipality": "0000020101",
+        },
+        "ssds_item": {
+            "prefecture": "A1302",
+            "municipality": "A1302",
+        },
+    },
+    "elderly_population": {
+        "label": "65歳以上人口",
+        "unit": "persons",
+        "value_type": "integer",
+        "stats_data_id": {
+            "prefecture": "0000010101",
+            "municipality": "0000020101",
+        },
+        "ssds_item": {
+            "prefecture": "A1303",
+            "municipality": "A1303",
         },
     },
     "births": {
@@ -88,6 +127,47 @@ INDICATORS: dict[str, dict[str, Any]] = {
             "municipality": "A4101",
         },
     },
+    "in_migration": {
+        "label": "転入者数",
+        "unit": "persons",
+        "value_type": "integer",
+        "stats_data_id": {
+            "prefecture": "0000010101",
+            "municipality": "0000020101",
+        },
+        "ssds_item": {
+            "prefecture": "A5103",
+            "municipality": "A5103",
+        },
+    },
+    "out_migration": {
+        "label": "転出者数",
+        "unit": "persons",
+        "value_type": "integer",
+        "stats_data_id": {
+            "prefecture": "0000010101",
+            "municipality": "0000020101",
+        },
+        "ssds_item": {
+            "prefecture": "A5104",
+            "municipality": "A5104",
+        },
+    },
+    "expenditure_total": {
+        "label": "歳出決算総額",
+        "unit": "yen",
+        "source_unit": "thousand_yen",
+        "value_type": "integer",
+        "value_multiplier": 1000,
+        "stats_data_id": {
+            "prefecture": "0000010104",
+            "municipality": "0000020104",
+        },
+        "ssds_item": {
+            "prefecture": "D3103",
+            "municipality": "D3203",
+        },
+    },
     "fiscal_index": {
         "label": "財政力指数",
         "unit": "index",
@@ -100,6 +180,43 @@ INDICATORS: dict[str, dict[str, Any]] = {
             "prefecture": "D2101",
             "municipality": "D2201",
         },
+    },
+}
+
+OUTPUT_INDICATORS: dict[str, dict[str, Any]] = {
+    "population_total": {
+        "label": "住民基本台帳人口（総数）",
+        "unit": "persons",
+        "source_keys": ["population_total"],
+    },
+    "aging_rate": {
+        "label": "高齢化率",
+        "unit": "percent",
+        "source_keys": [
+            "young_population",
+            "working_age_population",
+            "elderly_population",
+        ],
+    },
+    "births": {
+        "label": "出生数",
+        "unit": "persons",
+        "source_keys": ["births"],
+    },
+    "social_change": {
+        "label": "社会増減",
+        "unit": "persons",
+        "source_keys": ["in_migration", "out_migration"],
+    },
+    "expenditure_total": {
+        "label": "歳出決算総額",
+        "unit": "yen",
+        "source_keys": ["expenditure_total"],
+    },
+    "fiscal_index": {
+        "label": "財政力指数",
+        "unit": "index",
+        "source_keys": ["fiscal_index"],
     },
 }
 
@@ -206,7 +323,7 @@ def extract_series(
 
 def fetch_all_series(app_id: str) -> dict[str, dict[str, dict[int, int | float]]]:
     fetched: dict[str, dict[str, dict[int, int | float]]] = {}
-    for indicator_key, indicator in INDICATORS.items():
+    for indicator_key, indicator in SOURCE_INDICATORS.items():
         fetched[indicator_key] = {}
         for area in AREAS:
             level = area["area_level"]
@@ -215,13 +332,17 @@ def fetch_all_series(app_id: str) -> dict[str, dict[str, dict[int, int | float]]
             payload = request_stats(
                 app_id, stats_data_id, area["estat_area_code"], item_code
             )
-            fetched[indicator_key][area["council_id"]] = extract_series(
+            series = extract_series(
                 payload,
                 indicator["value_type"],
                 stats_data_id,
                 area["estat_area_code"],
                 item_code,
             )
+            multiplier = indicator.get("value_multiplier")
+            if isinstance(multiplier, (int, float)) and multiplier != 1:
+                series = {year: int(value * multiplier) for year, value in series.items()}
+            fetched[indicator_key][area["council_id"]] = series
     return fetched
 
 
@@ -229,32 +350,77 @@ def latest_common_years(
     fetched: dict[str, dict[str, dict[int, int | float]]]
 ) -> dict[str, list[int]]:
     years_by_indicator: dict[str, list[int]] = {}
-    for indicator_key, area_series in fetched.items():
+    for indicator_key, indicator in OUTPUT_INDICATORS.items():
         common_years: set[int] | None = None
         for area in AREAS:
-            years = set(area_series[area["council_id"]])
-            common_years = years if common_years is None else common_years & years
-        if common_years is None or len(common_years) < INDICATOR_COUNT:
+            area_years: set[int] | None = None
+            for source_key in indicator["source_keys"]:
+                years = set(fetched[source_key][area["council_id"]])
+                area_years = years if area_years is None else area_years & years
+            common_years = area_years if common_years is None else common_years & area_years
+        if common_years is None or len(common_years) < 2:
             raise RuntimeError(
-                f"{indicator_key}: fewer than {INDICATOR_COUNT} common years are available"
+                f"{indicator_key}: fewer than 2 common years are available"
             )
         years_by_indicator[indicator_key] = sorted(common_years)[-INDICATOR_COUNT:]
     return years_by_indicator
 
 
+def source_item_label(indicator_key: str, area: dict[str, str]) -> str:
+    level = area["area_level"]
+    return "/".join(
+        SOURCE_INDICATORS[source_key]["ssds_item"][level]
+        for source_key in OUTPUT_INDICATORS[indicator_key]["source_keys"]
+    )
+
+
+def timeseries_value(
+    indicator_key: str,
+    council_id: str,
+    fetched: dict[str, dict[str, dict[int, int | float]]],
+    year: int,
+) -> dict[str, Any]:
+    if indicator_key == "aging_rate":
+        young = fetched["young_population"][council_id][year]
+        working = fetched["working_age_population"][council_id][year]
+        elderly = fetched["elderly_population"][council_id][year]
+        total = young + working + elderly
+        return {
+            "year": year,
+            "value": round((elderly / total) * 100, 1),
+            "population_total": total,
+            "young_population": young,
+            "working_age_population": working,
+            "elderly_population": elderly,
+        }
+    if indicator_key == "social_change":
+        incoming = fetched["in_migration"][council_id][year]
+        outgoing = fetched["out_migration"][council_id][year]
+        return {
+            "year": year,
+            "value": incoming - outgoing,
+            "in_migration": incoming,
+            "out_migration": outgoing,
+        }
+    source_key = OUTPUT_INDICATORS[indicator_key]["source_keys"][0]
+    return {"year": year, "value": fetched[source_key][council_id][year]}
+
+
 def indicator_payload(
     indicator_key: str,
     area: dict[str, str],
-    series: dict[int, int | float],
+    fetched: dict[str, dict[str, dict[int, int | float]]],
     years: list[int],
 ) -> dict[str, Any]:
-    indicator = INDICATORS[indicator_key]
-    level = area["area_level"]
-    values = [{"year": year, "value": series[year]} for year in years]
+    indicator = OUTPUT_INDICATORS[indicator_key]
+    values = [
+        timeseries_value(indicator_key, area["council_id"], fetched, year)
+        for year in years
+    ]
     return {
         "label": indicator["label"],
         "unit": indicator["unit"],
-        "ssds_item": indicator["ssds_item"][level],
+        "ssds_item": source_item_label(indicator_key, area),
         "year_start": years[0],
         "year_end": years[-1],
         "values": values,
@@ -270,13 +436,14 @@ def build_council_payloads(
     for area in AREAS:
         indicators: dict[str, Any] = {}
         stats_data_ids: dict[str, str] = {}
-        for indicator_key, indicator in INDICATORS.items():
+        for indicator_key, indicator in OUTPUT_INDICATORS.items():
             level = area["area_level"]
-            stats_data_ids[indicator_key] = indicator["stats_data_id"][level]
+            source_key = indicator["source_keys"][0]
+            stats_data_ids[indicator_key] = SOURCE_INDICATORS[source_key]["stats_data_id"][level]
             indicators[indicator_key] = indicator_payload(
                 indicator_key,
                 area,
-                fetched[indicator_key][area["council_id"]],
+                fetched,
                 years_by_indicator[indicator_key],
             )
 

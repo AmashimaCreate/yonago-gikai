@@ -22,6 +22,7 @@
 
 - `minutes_base_url`: 会議録検索システムの議会別トップURL。
 - `votes_official_url`: 議決結果または議員別賛否を確認できる公式ページURL。`vote_granularity` が `result_only` または `unknown` の議会では、フロントの縮退表示から公式確認へ誘導する。
+- `official_links`: 公式情報への導線。`{"label": "...", "url": "https://..."}` の配列。議会公式サイト、政務活動費、議会日程、傍聴案内、会議録検索など、公式HTMLまたは調査済みのURLのみを載せる。不明な項目は推測で補わない。
 - `notes`: 自動取得や公式導線に関する補足。
 
 ルール:
@@ -241,72 +242,32 @@ robots.txt 等により自動取得しない議会の、人間転記用入力フ
 
 SSDS（e-Stat 社会・人口統計体系）から生成する、自治体ごとの過去時系列データ。profileは最新公表値のスナップショット、timeseriesは確定統計に基づく履歴系列として分けて扱う。
 
-```json
-{
-  "council_id": "yonago-city",
-  "updated_at": "2026-06-12T00:00:00+00:00",
-  "source": {
-    "provider": "e-Stat 社会・人口統計体系（SSDS）",
-    "api": "getStatsData",
-    "retrieved_at": "2026-06-12T00:00:00+00:00",
-    "area_code": "31202",
-    "statsDataIds": {
-      "population_total": "0000020101",
-      "births": "0000020101",
-      "fiscal_index": "0000020104"
-    },
-    "note": "SSDSは確定統計のため最新年が1〜3年遅れる。profileの最新公表値とは出典・年次が異なる。"
-  },
-  "indicators": {
-    "population_total": {
-      "label": "住民基本台帳人口（総数）",
-      "unit": "persons",
-      "ssds_item": "A2301",
-      "year_start": 2014,
-      "year_end": 2023,
-      "values": [
-        {"year": 2014, "value": 149313}
-      ]
-    },
-    "births": {
-      "label": "出生数",
-      "unit": "persons",
-      "ssds_item": "A4101",
-      "year_start": 2013,
-      "year_end": 2022,
-      "values": [
-        {"year": 2013, "value": 1252}
-      ]
-    },
-    "fiscal_index": {
-      "label": "財政力指数",
-      "unit": "index",
-      "ssds_item": "D2201",
-      "year_start": 2012,
-      "year_end": 2021,
-      "values": [
-        {"year": 2012, "value": 0.62}
-      ]
-    }
-  }
-}
-```
-
 必須キー:
 
 - ルート: `council_id`, `updated_at`, `source`, `indicators`
 - `source`: `provider`, `api`, `retrieved_at`, `area_code`, `statsDataIds`, `note`
-- `indicators`: `population_total`, `births`, `fiscal_index`
 - 各指標: `label`, `unit`, `ssds_item`, `year_start`, `year_end`, `values`
 - `values[]`: `year`, `value`
+
+指標:
+
+- `population_total`: 住民基本台帳人口（総数）
+- `aging_rate`: 高齢化率。`elderly_population / population_total * 100`。表用に `young_population`, `working_age_population`, `elderly_population` も保持する。
+- `births`: 出生数
+- `social_change`: 社会増減。`in_migration - out_migration`。表用に `in_migration`, `out_migration` も保持する。
+- `expenditure_total`: 歳出決算総額。SSDSの千円単位値を円に換算して保持する。
+- `fiscal_index`: 財政力指数
 
 ルール:
 
 - `population_total` は SSDS `A2301_住民基本台帳人口（総数）`。
+- `aging_rate` は SSDS `A1301_年少人口`, `A1302_生産年齢人口`, `A1303_老年人口` から算出する。国勢調査年のみの系列は補間しない。
 - `births` は SSDS `A4101_出生数`。
+- `social_change` は SSDS `A5103_転入者数` と `A5104_転出者数` から算出する。
+- `expenditure_total` は都道府県が `D3103_歳出決算総額（都道府県財政）`、市区町村が `D3203_歳出決算総額（市町村財政）`。SSDSの千円単位値を円に換算して保持する。
 - `fiscal_index` は都道府県が `D2101_財政力指数（都道府県財政）`、市区町村が `D2201_財政力指数（市町村財政）`。
-- 各指標は5議会で揃う最新10年を採用する。SSDSの収録最新年は指標ごとに異なるため、指標間で `year_start` / `year_end` が異なってよい。
-- `values` は10点ちょうど、年は1年刻みで連続、`year_start` と `year_end` に一致する。
+- 各指標は5議会で揃う直近最大10点を採用する。SSDSの収録最新年は指標ごとに異なるため、指標間で `year_start` / `year_end` が異なってよい。
+- `values` は2〜10点。年齢3区分のように毎年値がない系列は、取得できた年のみを保持する。
 - `value` は数値型。人口総数と出生数は整数、財政力指数は小数を許容する。
 - `source.statsDataIds` には、各指標で実際に問い合わせたSSDS表IDを保持する。
 - appIdは実行環境の `.env` または環境変数でのみ扱い、`timeseries.json` には保存しない。
