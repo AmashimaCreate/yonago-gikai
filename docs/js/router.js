@@ -8,6 +8,10 @@ export function parseRoute(hash = window.location.hash) {
     return { name: "about" };
   }
 
+  if (parts[0] === "guide" && parts.length === 1) {
+    return { name: "guide" };
+  }
+
   if (parts[0] === "councils" && parts[1]) {
     const to = parts[2] === "members" && parts[3]
       ? memberPath("tottori", parts[1], parts[3])
@@ -50,6 +54,10 @@ export function prefComparePath(prefecture) {
 
 export function aboutPath() {
   return "#/about";
+}
+
+export function guidePath() {
+  return "#/guide";
 }
 
 export function councilPath(prefecture, councilId) {

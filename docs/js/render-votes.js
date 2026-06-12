@@ -1,4 +1,5 @@
 import { sourceLink } from "./data-quality.js";
+import { councilAreaName, renderAiPromptCard } from "./render-ai-prompt.js";
 import { memberPath } from "./router.js";
 import { el } from "./utils.js";
 
@@ -85,7 +86,7 @@ export function sortedVotesByDate(votes) {
 
 export function renderCouncilVoteSection(votes, votesMeta, council, members, route) {
   if (hasResultOnlyVoteLayer(council, votesMeta, votes)) {
-    return renderResultOnlyVoteSection(votes);
+    return renderResultOnlyVoteSection(votes, council);
   }
 
   if (!hasMemberVoteLayer(council, votesMeta, votes)) {
@@ -107,19 +108,19 @@ export function renderCouncilVoteSection(votes, votesMeta, council, members, rou
   ]);
 }
 
-function renderResultOnlyVoteSection(votes) {
+function renderResultOnlyVoteSection(votes, council) {
   const sortedVotes = sortedVotesByDate(votes);
   return el("section", { class: "vote-section" }, [
     el("h2", { class: "section-title" }, `議決一覧（${sortedVotes.length}件）`),
     el("p", { class: "muted" }, "議員ごとの賛否ではなく、公式PDFに掲載された議案ごとの議決結果を表示します。"),
     el("div", { class: "result-only-vote-list" },
-      sortedVotes.map(renderResultOnlyVoteCard),
+      sortedVotes.map((vote) => renderResultOnlyVoteCard(vote, council)),
     ),
     renderResultOnlyVoteSourceSummary(sortedVotes),
   ]);
 }
 
-export function renderResultOnlyVoteCard(vote) {
+export function renderResultOnlyVoteCard(vote, council = null) {
   return el("article", { class: "result-only-vote-card" }, [
     el("div", { class: "result-only-vote-head" }, [
       el("span", { class: "vote-date" }, vote.date || "日付なし"),
@@ -127,6 +128,7 @@ export function renderResultOnlyVoteCard(vote) {
     ]),
     el("h3", {}, vote.bill_title || "議案名なし"),
     el("p", { class: "vote-result" }, `結果: ${vote.result || "結果なし"}`),
+    council ? renderVoteResearchPrompt(vote, council) : null,
   ]);
 }
 
@@ -254,6 +256,7 @@ function renderCouncilVoteDetail(vote, council, route, memberMap) {
     ]),
     el("div", { class: "vote-detail-body" }, [
       el("p", { class: "vote-source" }, sourceLink(vote.source_url, "公式PDFで確認")),
+      renderVoteResearchPrompt(vote, council),
       el("div", { class: "vote-member-grid" },
         (vote.votes_by_member || []).map((entry) =>
           renderVoteMemberCell(entry, council, route, memberMap),
@@ -262,6 +265,22 @@ function renderCouncilVoteDetail(vote, council, route, memberMap) {
     ]),
   ]);
   return details;
+}
+
+function renderVoteResearchPrompt(vote, council) {
+  return renderAiPromptCard({
+    title: "この議決をAIで調べる",
+    lead: "背景・内容・論点を調べるための下書きです。",
+    prompt: voteResearchPrompt(vote, council),
+    compact: true,
+  });
+}
+
+function voteResearchPrompt(vote, council) {
+  const areaName = councilAreaName(council) || council?.name || "この自治体";
+  const date = vote.date || "日付不明";
+  const title = vote.bill_title || "議案名不明";
+  return `${areaName}議会で${date}に議決された「${title}」について、背景・内容・論点を公的な情報源を優先して整理してください。`;
 }
 
 function renderVoteMemberCell(entry, council, route, memberMap) {

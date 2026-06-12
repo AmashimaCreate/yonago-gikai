@@ -1,6 +1,7 @@
 import { loadCouncilBundle, loadCouncils, loadCouncilSummaries } from "./data-loader.js";
 import { renderAbout } from "./render-about.js";
 import { renderCouncilPage } from "./render-council.js";
+import { renderGuide } from "./render-guide.js";
 import { renderMemberPage } from "./render-member.js";
 import { renderPrefecturePage } from "./render-prefecture.js";
 import { renderPrefectureComparisonPage } from "./render-prefecture-comparison.js";
@@ -289,6 +290,35 @@ async function applyRoute() {
     });
     showCouncilNav(false);
     renderAbout(mainNode());
+    return;
+  }
+
+  if (route.name === "guide") {
+    state.currentCouncil = null;
+    state.members = [];
+    state.membersMeta = null;
+    state.profile = null;
+    state.timeseries = null;
+    state.councilSummaries = [];
+    state.speeches = [];
+    state.speechesMeta = null;
+    state.votes = [];
+    state.votesMeta = null;
+    state.view = "kaiha";
+    state.query = "";
+    setHeader({
+      title: "調べ方ガイド",
+      lead: "このサイトを入口に、一次ソースへたどるための簡単な案内です。",
+    });
+    setRouteNav({
+      back: { label: "全国トップ", href: topPath() },
+      crumbs: [
+        { label: "全国トップ", href: topPath() },
+        { label: "調べ方ガイド" },
+      ],
+    });
+    showCouncilNav(false);
+    renderGuide(mainNode());
     return;
   }
 

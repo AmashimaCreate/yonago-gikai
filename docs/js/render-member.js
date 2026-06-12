@@ -1,4 +1,5 @@
 import { acquisitionText, cautionNote, coverageText, sourceLink } from "./data-quality.js";
+import { councilAreaName, officialCouncilUrl, renderAiPromptCard } from "./render-ai-prompt.js";
 import { renderMemberVoteSection } from "./render-votes.js";
 import { el } from "./utils.js";
 
@@ -24,6 +25,7 @@ export function renderMemberPage(root, state, memberId) {
     state.route,
   );
   if (voteSection) root.appendChild(voteSection);
+  root.appendChild(renderMemberResearchSection(member, state.currentCouncil));
   root.appendChild(renderSpeechSection(speeches, state.speechesMeta, state.currentCouncil));
 }
 
@@ -52,15 +54,36 @@ function renderMemberProfile(member, membersMeta, council) {
 }
 
 function renderMemberSearchLink(member, council) {
-  const areaName = (council?.name || "")
-    .replace(/議会$/, "")
-    .trim();
+  const areaName = councilAreaName(council);
   const query = [member.name, areaName, "議員"].filter(Boolean).join(" ");
   const url = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
   return el("p", { class: "member-search-link" }, [
     el("a", { href: url, target: "_blank", rel: "noopener" }, "この議員について検索"),
     el("small", {}, "外部の検索結果に移動します"),
   ]);
+}
+
+function renderMemberResearchSection(member, council) {
+  return el("section", { class: "research-section page-card" }, [
+    el("p", { class: "eyebrow" }, "もっと調べる"),
+    el("h2", { class: "section-title" }, "AIに聞いてみる"),
+    renderAiPromptCard({
+      title: "この議員の活動テーマを整理する",
+      lead: "コピーして、普段使っているAIに貼り付けてください。",
+      prompt: memberResearchPrompt(member, council),
+    }),
+  ]);
+}
+
+function memberResearchPrompt(member, council) {
+  const prefectureName = council?.prefecture_name || "鳥取県";
+  const councilName = council?.name || "議会";
+  const minutesUrl = council?.minutes_base_url;
+  if (minutesUrl) {
+    return `${prefectureName}の${councilName}議員・${member.name}さんについて調べています。\n${councilName}の会議録検索システム(${minutesUrl})で最近の発言を検索し、どんなテーマについて発言しているか、事実ベースで整理してください。評価や良し悪しの判断ではなく、活動内容の整理をお願いします。`;
+  }
+  const officialUrl = officialCouncilUrl(council);
+  return `${prefectureName}の${councilName}議員・${member.name}さんについて調べています。\n${councilName}の公式サイト(${officialUrl})で公開情報を確認し、最近どんなテーマに関わっているか、事実ベースで整理してください。評価や良し悪しの判断ではなく、活動内容の整理をお願いします。`;
 }
 
 function renderSpeechSection(speeches, speechesMeta, council) {
