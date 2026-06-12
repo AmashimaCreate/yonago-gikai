@@ -23,7 +23,7 @@ ESTAT_ENDPOINT = "https://api.e-stat.go.jp/rest/3.0/app/json/getStatsData"
 DEFAULT_YEARS_BY_METRIC = {
     "population_total": list(range(2014, 2024)),
     "births": list(range(2013, 2023)),
-    "fiscal_index": list(range(2014, 2024)),
+    "fiscal_index": list(range(2012, 2022)),
 }
 
 AREAS = [
