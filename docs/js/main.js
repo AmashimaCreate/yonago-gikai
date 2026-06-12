@@ -268,6 +268,7 @@ async function applyRoute() {
     state.members = [];
     state.membersMeta = null;
     state.profile = null;
+    state.timeseries = null;
     state.councilSummaries = [];
     state.speeches = [];
     state.speechesMeta = null;
@@ -296,6 +297,7 @@ async function applyRoute() {
     state.members = [];
     state.membersMeta = null;
     state.profile = null;
+    state.timeseries = null;
     state.councilSummaries = [];
     state.speeches = [];
     state.speechesMeta = null;
@@ -318,6 +320,7 @@ async function applyRoute() {
     state.members = [];
     state.membersMeta = null;
     state.profile = null;
+    state.timeseries = null;
     state.councilSummaries = [];
     state.speeches = [];
     state.speechesMeta = null;
@@ -394,6 +397,7 @@ async function applyRoute() {
     state.members = bundle.members;
     state.membersMeta = bundle.membersMeta;
     state.profile = bundle.profile;
+    state.timeseries = bundle.timeseries;
     state.councilSummaries = await loadCouncilSummaries(
       state.councils.filter((council) => council.prefecture === route.prefecture),
     );

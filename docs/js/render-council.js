@@ -79,6 +79,8 @@ function isStageOneCouncil(state) {
 
 function renderStageOneCouncilPage(root, state, filteredMembers) {
   root.appendChild(renderCouncilHero(state));
+  const timeseriesSection = renderTimeseriesSection(state);
+  if (timeseriesSection) root.appendChild(timeseriesSection);
   root.appendChild(renderRecentVoteHighlights(state));
   root.appendChild(renderFaceLineupSection(filteredMembers, state));
 
@@ -137,6 +139,238 @@ function heroMetric(label, value, note) {
     el("strong", { class: "hero-metric-value" }, value),
     el("span", { class: "hero-metric-note" }, note),
   ]);
+}
+
+const TIMESERIES_CHARTS = [
+  ["population_total", "人口", "人口総数"],
+  ["births", "出生数", "出生数"],
+  ["fiscal_index", "財政力指数", "財政力指数"],
+];
+
+function renderTimeseriesSection(state) {
+  const timeseries = state.timeseries;
+  if (!timeseries?.indicators) return null;
+  const areaName = areaNameForCouncil(state.currentCouncil);
+  const cards = TIMESERIES_CHARTS
+    .map(([key, shortLabel, title]) =>
+      renderTimeseriesCard(key, shortLabel, title, timeseries.indicators[key]),
+    )
+    .filter(Boolean);
+  if (!cards.length) return null;
+
+  const eyebrow = state.currentCouncil?.type === "prefecture"
+    ? "この県の変化"
+    : "この街の変化";
+
+  return el("section", { class: "timeseries-section page-card" }, [
+    el("div", { class: "section-heading-row" }, [
+      el("div", {}, [
+        el("p", { class: "eyebrow" }, eyebrow),
+        el("h2", { class: "section-title" }, `${areaName}の10年`),
+      ]),
+    ]),
+    el("p", { class: "timeseries-note" }, "今=自治体の最新公表値 / 変化=国の確定統計。年次が異なるため、同じ値にはなりません。"),
+    el("div", { class: "timeseries-grid" }, cards),
+    el("p", { class: "section-source timeseries-source" }, "出典: 政府統計の総合窓口(e-Stat)社会・人口統計体系。確定統計のため最新年は1〜3年前です。"),
+  ]);
+}
+
+function renderTimeseriesCard(key, shortLabel, title, indicator) {
+  const values = cleanTimeseriesValues(indicator?.values);
+  if (values.length < 2) return null;
+  const first = values[0];
+  const last = values[values.length - 1];
+  const delta = last.value - first.value;
+  const headline = `${shortLabel} ${formatTimeseriesValue(key, last.value)}(${last.year}) / 10年で ${formatTimeseriesDelta(key, delta)}`;
+
+  return el("article", { class: "timeseries-chart-card" }, [
+    el("div", { class: "timeseries-chart-head" }, [
+      el("h3", {}, title),
+      el("p", {}, headline),
+    ]),
+    renderLineChartSvg(key, title, values),
+    renderTimeseriesTable(key, title, values),
+  ]);
+}
+
+function cleanTimeseriesValues(values) {
+  if (!Array.isArray(values)) return [];
+  return values
+    .filter((item) => Number.isInteger(item?.year) && typeof item?.value === "number")
+    .sort((a, b) => a.year - b.year);
+}
+
+function renderLineChartSvg(key, title, values) {
+  const width = 320;
+  const height = 170;
+  const pad = { top: 18, right: 12, bottom: 30, left: 42 };
+  const innerWidth = width - pad.left - pad.right;
+  const innerHeight = height - pad.top - pad.bottom;
+  const years = values.map((item) => item.year);
+  const domain = chartYDomain(key, values);
+  const x = (index) => pad.left + (innerWidth * index) / Math.max(1, values.length - 1);
+  const y = (value) => pad.top + ((domain.max - value) / (domain.max - domain.min)) * innerHeight;
+  const points = values.map((item, index) => `${x(index).toFixed(1)},${y(item.value).toFixed(1)}`).join(" ");
+  const svg = svgEl("svg", {
+    class: "timeseries-chart",
+    viewBox: `0 0 ${width} ${height}`,
+    role: "img",
+    "aria-label": `${title}の${values[0].year}年から${values[values.length - 1].year}年までの推移`,
+  });
+
+  svg.appendChild(svgEl("line", {
+    class: "timeseries-axis",
+    x1: pad.left,
+    y1: pad.top + innerHeight,
+    x2: pad.left + innerWidth,
+    y2: pad.top + innerHeight,
+  }));
+  svg.appendChild(svgEl("line", {
+    class: "timeseries-axis",
+    x1: pad.left,
+    y1: pad.top,
+    x2: pad.left,
+    y2: pad.top + innerHeight,
+  }));
+  svg.appendChild(svgEl("line", {
+    class: "timeseries-grid-line",
+    x1: pad.left,
+    y1: pad.top,
+    x2: pad.left + innerWidth,
+    y2: pad.top,
+  }));
+  if (key === "fiscal_index") {
+    svg.appendChild(svgEl("line", {
+      class: "timeseries-basis-line",
+      x1: pad.left,
+      y1: y(1),
+      x2: pad.left + innerWidth,
+      y2: y(1),
+    }));
+    svg.appendChild(svgEl("text", {
+      class: "timeseries-basis-label",
+      x: pad.left + innerWidth - 2,
+      y: Math.max(12, y(1) - 4),
+      "text-anchor": "end",
+    }, "1.0"));
+  }
+  svg.appendChild(svgEl("text", {
+    class: "timeseries-y-label",
+    x: pad.left - 8,
+    y: pad.top + 4,
+    "text-anchor": "end",
+  }, formatAxisValue(key, domain.max)));
+  svg.appendChild(svgEl("text", {
+    class: "timeseries-y-label",
+    x: pad.left - 8,
+    y: pad.top + innerHeight,
+    "text-anchor": "end",
+  }, formatAxisValue(key, domain.min)));
+  svg.appendChild(svgEl("polyline", {
+    class: "timeseries-line",
+    points,
+  }));
+  values.forEach((item, index) => {
+    const circle = svgEl("circle", {
+      class: "timeseries-point",
+      cx: x(index),
+      cy: y(item.value),
+      r: 3.5,
+      tabindex: "0",
+    });
+    circle.appendChild(svgEl("title", {}, `${item.year}: ${formatTimeseriesValue(key, item.value)}`));
+    svg.appendChild(circle);
+  });
+  svg.appendChild(svgEl("text", {
+    class: "timeseries-x-label",
+    x: pad.left,
+    y: height - 8,
+    "text-anchor": "start",
+  }, String(years[0])));
+  svg.appendChild(svgEl("text", {
+    class: "timeseries-x-label",
+    x: pad.left + innerWidth,
+    y: height - 8,
+    "text-anchor": "end",
+  }, String(years[years.length - 1])));
+
+  return svg;
+}
+
+function chartYDomain(key, values) {
+  if (key === "fiscal_index") return { min: 0, max: 1 };
+  const numbers = values.map((item) => item.value);
+  const min = Math.min(...numbers);
+  const max = Math.max(...numbers);
+  const first = numbers[0];
+  const last = numbers[numbers.length - 1];
+  const spread = Math.max(1, max - min);
+  const change = Math.abs(last - first);
+  const pad = Math.max(spread * 0.3, change * 0.5, Math.abs(first) * 0.03, 1);
+  return {
+    min: Math.max(0, Math.floor(min - pad)),
+    max: Math.ceil(max + pad),
+  };
+}
+
+function renderTimeseriesTable(key, title, values) {
+  return el("details", { class: "timeseries-values" }, [
+    el("summary", {}, `${title}の値を見る`),
+    el("table", {}, [
+      el("thead", {}, el("tr", {}, [
+        el("th", { scope: "col" }, "年"),
+        el("th", { scope: "col" }, "値"),
+      ])),
+      el("tbody", {}, values.map((item) =>
+        el("tr", {}, [
+          el("td", {}, String(item.year)),
+          el("td", {}, formatTimeseriesValue(key, item.value)),
+        ]),
+      )),
+    ]),
+  ]);
+}
+
+function formatTimeseriesValue(key, value) {
+  if (typeof value !== "number") return "";
+  if (key === "fiscal_index") {
+    return value.toLocaleString("ja-JP", { maximumFractionDigits: 3 });
+  }
+  return `${value.toLocaleString("ja-JP")}人`;
+}
+
+function formatTimeseriesDelta(key, value) {
+  if (typeof value !== "number") return "";
+  if (value === 0) return key === "fiscal_index" ? "0" : "0人";
+  const sign = value < 0 ? "−" : "+";
+  const abs = Math.abs(value);
+  if (key === "fiscal_index") {
+    return `${sign}${abs.toLocaleString("ja-JP", { maximumFractionDigits: 3 })}`;
+  }
+  return `${sign}${Math.round(abs).toLocaleString("ja-JP")}人`;
+}
+
+function formatAxisValue(key, value) {
+  if (key === "fiscal_index") {
+    return value.toLocaleString("ja-JP", { maximumFractionDigits: 1 });
+  }
+  if (Math.abs(value) >= 10000) {
+    return `${Math.round(value / 10000).toLocaleString("ja-JP")}万`;
+  }
+  return Math.round(value).toLocaleString("ja-JP");
+}
+
+function svgEl(tag, attrs = {}, children = []) {
+  const node = document.createElementNS("http://www.w3.org/2000/svg", tag);
+  for (const [key, value] of Object.entries(attrs)) {
+    if (key === "class") node.setAttribute("class", value);
+    else if (value !== undefined && value !== null) node.setAttribute(key, value);
+  }
+  for (const child of [].concat(children)) {
+    if (child == null || child === false) continue;
+    node.appendChild(typeof child === "string" ? document.createTextNode(child) : child);
+  }
+  return node;
 }
 
 function detailPair(label, value, note = null) {

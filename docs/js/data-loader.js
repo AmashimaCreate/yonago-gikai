@@ -28,9 +28,10 @@ export async function loadCouncilBundle(
   const council = councils.find((item) => item.id === councilId);
   if (!council) throw new Error(`議会が見つかりません: ${councilId}`);
 
-  const [membersMeta, profile, speechesMeta, votesMeta] = await Promise.all([
+  const [membersMeta, profile, timeseries, speechesMeta, votesMeta] = await Promise.all([
     loadJson(`./data/${councilId}/members.json`),
     loadJson(`./data/${councilId}/profile.json`, { optional: true }),
+    loadJson(`./data/${councilId}/timeseries.json`, { optional: true }),
     includeSpeeches
       ? loadJson(`./data/${councilId}/speeches.json`, { optional: true })
       : Promise.resolve(null),
@@ -44,6 +45,7 @@ export async function loadCouncilBundle(
     membersMeta,
     members: Array.isArray(membersMeta.members) ? membersMeta.members : [],
     profile,
+    timeseries,
     speechesMeta,
     speeches: speechesMeta && Array.isArray(speechesMeta.speeches)
       ? speechesMeta.speeches

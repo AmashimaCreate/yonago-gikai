@@ -940,6 +940,113 @@ main { padding: 24px 0 48px; }
   color: var(--text-muted);
   font-weight: 400;
 }
+.timeseries-section {
+  padding-bottom: 18px;
+}
+.timeseries-note {
+  margin: -4px 0 14px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+.timeseries-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.timeseries-chart-card {
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface-soft);
+  overflow: hidden;
+}
+.timeseries-chart-head h3,
+.timeseries-chart-head p {
+  margin: 0;
+}
+.timeseries-chart-head h3 {
+  font-size: 15px;
+  line-height: 1.35;
+}
+.timeseries-chart-head p {
+  margin-top: 4px;
+  min-height: 2.8em;
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+.timeseries-chart {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-top: 8px;
+  overflow: hidden;
+}
+.timeseries-axis {
+  stroke: var(--border-strong);
+  stroke-width: 1;
+}
+.timeseries-grid-line {
+  stroke: var(--border);
+  stroke-width: 1;
+}
+.timeseries-basis-line {
+  stroke: var(--border-strong);
+  stroke-width: 1;
+  stroke-dasharray: 4 4;
+}
+.timeseries-line {
+  fill: none;
+  stroke: var(--brand);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.timeseries-point {
+  fill: var(--surface);
+  stroke: var(--brand);
+  stroke-width: 2;
+}
+.timeseries-point:focus {
+  outline: none;
+  stroke-width: 4;
+}
+.timeseries-x-label,
+.timeseries-y-label,
+.timeseries-basis-label {
+  fill: var(--text-muted);
+  font-size: 11px;
+}
+.timeseries-values {
+  margin-top: 8px;
+  font-size: 12px;
+}
+.timeseries-values summary {
+  cursor: pointer;
+  color: var(--brand-dark);
+  font-weight: 800;
+}
+.timeseries-values table {
+  width: 100%;
+  margin-top: 6px;
+  border-collapse: collapse;
+}
+.timeseries-values th,
+.timeseries-values td {
+  padding: 4px 0;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+.timeseries-values th:last-child,
+.timeseries-values td:last-child {
+  text-align: right;
+}
+.timeseries-source {
+  padding-top: 2px;
+}
 .face-lineup-section,
 .recent-votes,
 .past-records {
@@ -1896,6 +2003,15 @@ main { padding: 24px 0 48px; }
   }
   .hero-metrics {
     grid-template-columns: 1fr;
+  }
+  .timeseries-grid {
+    grid-template-columns: 1fr;
+  }
+  .timeseries-chart-card {
+    padding: 10px;
+  }
+  .timeseries-chart-head p {
+    min-height: 0;
   }
   .national-hero {
     grid-template-columns: 1fr;

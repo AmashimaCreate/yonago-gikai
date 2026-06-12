@@ -8,6 +8,7 @@ export const state = {
   members: [],
   membersMeta: null,
   profile: null,
+  timeseries: null,
   councilSummaries: [],
   speeches: [],
   speechesMeta: null,
