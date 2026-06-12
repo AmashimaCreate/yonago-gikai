@@ -20,6 +20,7 @@ const COUNCILS_WITH_VOTES = new Set([
   "kurayoshi-city",
   "tottori-pref",
   "sakaiminato-city",
+  "yonago-city",
 ]);
 const COUNCILS_WITH_SPEECHES = new Set([
   "yonago-city",

@@ -4,8 +4,11 @@ import { formatDecimal, formatPeople, formatYen } from "./render-profile.js";
 import { renderProfileVisualization } from "./render-profile-viz.js";
 import {
   hasMemberVoteLayer,
+  hasResultOnlyVoteLayer,
   renderCouncilVoteSection,
+  renderResultOnlyVoteCard,
   renderVoteAvailabilityNotice,
+  sortedVotesByDate,
 } from "./render-votes.js";
 import {
   renderCommitteeView,
@@ -287,6 +290,29 @@ function renderFaceCard(member, state) {
 }
 
 function renderRecentVoteHighlights(state) {
+  if (hasResultOnlyVoteLayer(state.currentCouncil, state.votesMeta, state.votes)) {
+    const highlighted = sortedVotesByDate(state.votes).slice(0, 3);
+    const tabButton = renderVotesTabButton("議決一覧へ");
+    return el("section", { class: "recent-votes page-card" }, [
+      el("div", { class: "section-heading-row" }, [
+        el("div", {}, [
+          el("p", { class: "eyebrow" }, "最近決まったこと"),
+          el("h2", { class: "section-title" }, "直近の議決結果"),
+        ]),
+        el("span", { class: "stage-link-wrap" }, [tabButton]),
+      ]),
+      el("p", { class: "muted" }, "議員ごとの賛否ではなく、議案ごとの議決結果を表示しています。"),
+      el("div", { class: "vote-highlight-grid result-only-highlight-grid" },
+        highlighted.map(renderResultOnlyVoteCard),
+      ),
+      sourceLine("議決", [
+        highlighted.find((vote) => vote.source_url)
+          ? { label: "議決結果PDF", url: highlighted.find((vote) => vote.source_url).source_url }
+          : null,
+      ]),
+    ]);
+  }
+
   if (!hasMemberVoteLayer(state.currentCouncil, state.votesMeta, state.votes)) {
     return el("section", { class: "recent-votes page-card is-compact" }, [
       el("div", { class: "section-heading-row" }, [
@@ -309,12 +335,7 @@ function renderRecentVoteHighlights(state) {
   const divided = latestVotes.filter(isDividedVote);
   const highlighted = (divided.length ? divided : latestVotes).slice(0, 3);
 
-  const tabButton = el("button", { type: "button", class: "text-button" }, "議決一覧へ");
-  tabButton.addEventListener("click", () => {
-    window.dispatchEvent(
-      new CustomEvent("council:view-change", { detail: { view: "votes" } }),
-    );
-  });
+  const tabButton = renderVotesTabButton("議決一覧へ");
 
   return el("section", { class: "recent-votes page-card" }, [
     el("div", { class: "section-heading-row" }, [
@@ -334,6 +355,16 @@ function renderRecentVoteHighlights(state) {
         : null,
     ]),
   ]);
+}
+
+function renderVotesTabButton(label) {
+  const tabButton = el("button", { type: "button", class: "text-button" }, label);
+  tabButton.addEventListener("click", () => {
+    window.dispatchEvent(
+      new CustomEvent("council:view-change", { detail: { view: "votes" } }),
+    );
+  });
+  return tabButton;
 }
 
 function renderStageTabPanel(state) {

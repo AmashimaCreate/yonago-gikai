@@ -16,6 +16,13 @@ export function hasMemberVoteLayer(council, votesMeta, votes) {
   return votesEnabledForCouncil(council) && votesMeta && Array.isArray(votes) && votes.length > 0;
 }
 
+export function hasResultOnlyVoteLayer(council, votesMeta, votes) {
+  return council?.vote_granularity === "result_only"
+    && votesMeta
+    && Array.isArray(votes)
+    && votes.length > 0;
+}
+
 export function renderMemberVoteSection(votes, votesMeta, member, council, route) {
   if (!hasMemberVoteLayer(council, votesMeta, votes)) {
     return renderMemberVoteMissingSection(council);
@@ -68,7 +75,19 @@ function renderMemberVoteMissingSection(council) {
   ]);
 }
 
+export function sortedVotesByDate(votes) {
+  return [...(votes || [])].sort((a, b) => {
+    const dateCompare = (b.date || "").localeCompare(a.date || "");
+    if (dateCompare) return dateCompare;
+    return (a.bill_title || "").localeCompare(b.bill_title || "", "ja");
+  });
+}
+
 export function renderCouncilVoteSection(votes, votesMeta, council, members, route) {
+  if (hasResultOnlyVoteLayer(council, votesMeta, votes)) {
+    return renderResultOnlyVoteSection(votes);
+  }
+
   if (!hasMemberVoteLayer(council, votesMeta, votes)) {
     return el("section", { class: "vote-section" }, [
       el("h2", { class: "section-title" }, "議決一覧"),
@@ -77,11 +96,7 @@ export function renderCouncilVoteSection(votes, votesMeta, council, members, rou
   }
 
   const memberMap = new Map((members || []).map((member) => [member.id, member]));
-  const sortedVotes = [...(votes || [])].sort((a, b) => {
-    const dateCompare = (b.date || "").localeCompare(a.date || "");
-    if (dateCompare) return dateCompare;
-    return (a.bill_title || "").localeCompare(b.bill_title || "", "ja");
-  });
+  const sortedVotes = sortedVotesByDate(votes);
 
   return el("section", { class: "vote-section" }, [
     el("h2", { class: "section-title" }, `議決一覧（${sortedVotes.length}件）`),
@@ -89,6 +104,45 @@ export function renderCouncilVoteSection(votes, votesMeta, council, members, rou
     el("div", { class: "vote-detail-list" },
       sortedVotes.map((vote) => renderCouncilVoteDetail(vote, council, route, memberMap)),
     ),
+  ]);
+}
+
+function renderResultOnlyVoteSection(votes) {
+  const sortedVotes = sortedVotesByDate(votes);
+  return el("section", { class: "vote-section" }, [
+    el("h2", { class: "section-title" }, `議決一覧（${sortedVotes.length}件）`),
+    el("p", { class: "muted" }, "議員ごとの賛否ではなく、公式PDFに掲載された議案ごとの議決結果を表示します。"),
+    el("div", { class: "result-only-vote-list" },
+      sortedVotes.map(renderResultOnlyVoteCard),
+    ),
+    renderResultOnlyVoteSourceSummary(sortedVotes),
+  ]);
+}
+
+export function renderResultOnlyVoteCard(vote) {
+  return el("article", { class: "result-only-vote-card" }, [
+    el("div", { class: "result-only-vote-head" }, [
+      el("span", { class: "vote-date" }, vote.date || "日付なし"),
+      vote.bill_no ? el("span", { class: "bill-no" }, vote.bill_no) : null,
+    ]),
+    el("h3", {}, vote.bill_title || "議案名なし"),
+    el("p", { class: "vote-result" }, `結果: ${vote.result || "結果なし"}`),
+  ]);
+}
+
+function renderResultOnlyVoteSourceSummary(votes) {
+  const sources = [];
+  const seen = new Set();
+  for (const vote of votes || []) {
+    if (!vote.source_url || seen.has(vote.source_url)) continue;
+    seen.add(vote.source_url);
+    sources.push(vote.source_url);
+  }
+  if (!sources.length) return null;
+  return el("p", { class: "section-source" }, [
+    "出典: ",
+    sourceLink(sources[0], "議決結果PDF"),
+    sources.length > 1 ? `（ほか${sources.length - 1}件）` : "",
   ]);
 }
 
