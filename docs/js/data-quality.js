@@ -26,13 +26,13 @@ export function voteCoverageText(votesMeta, council = null) {
   if (votesMeta) {
     return "議員別賛否PDFから取得。議案名・票・議決結果は公式PDFを確認できます。";
   }
+  if (council?.vote_granularity === "result_only") {
+    return "議員ごとの賛否は公開されていません。議決結果のみ公式ページで確認できます。";
+  }
   if (council?.id === "tottori-city") {
-    return "賛否PDFが機械可読でない形式のため未収録（対応検討中）。";
+    return "議決結果は機械可読でない形式のため未収録です。";
   }
-  if (council?.id === "yonago-city") {
-    return "議員別の賛否は公式に公開されていません（議決結果のみ）。";
-  }
-  return "議員別賛否データはまだ表示していません。";
+  return "議決データはまだ収録していません。";
 }
 
 export function sourceLink(url, label = "公式情報を確認") {

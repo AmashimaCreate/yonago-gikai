@@ -156,6 +156,14 @@ def validate_councils() -> tuple[list[dict[str, Any]], list[str]]:
                 f"{label}: invalid vote_granularity "
                 f"'{council.get('vote_granularity')}'"
             )
+        votes_official_url = council.get("votes_official_url")
+        if votes_official_url is not None and (
+            not isinstance(votes_official_url, str)
+            or not votes_official_url.startswith("https://")
+        ):
+            errors.append(
+                f"{label}: votes_official_url must start with 'https://' or be null"
+            )
         if council.get("status") not in STATUSES:
             errors.append(f"{label}: invalid status '{council.get('status')}'")
 

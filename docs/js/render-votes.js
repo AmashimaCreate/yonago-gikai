@@ -2,11 +2,6 @@ import { sourceLink } from "./data-quality.js";
 import { memberPath } from "./router.js";
 import { el } from "./utils.js";
 
-const ENABLED_COUNCILS = new Set([
-  "kurayoshi-city",
-  "tottori-pref",
-  "sakaiminato-city",
-]);
 const VOTE_ORDER = ["賛成", "反対", "退席", "欠席", "議長", "除斥", "継続審査"];
 const SPLIT_VOTE_THRESHOLD = 0.3;
 // 県議会は1人あたり368件規模になるため、初期表示のカードは最新12件に絞る。
@@ -14,14 +9,15 @@ const SPLIT_VOTE_THRESHOLD = 0.3;
 const HIGHLIGHT_CARD_LIMIT = 12;
 
 export function votesEnabledForCouncil(council) {
-  return ENABLED_COUNCILS.has(council?.id);
+  return council?.vote_granularity === "member";
 }
 
-export function renderMemberVoteSection(votes, member, council, route) {
-  if (!votesEnabledForCouncil(council)) {
-    return renderMemberVoteMissingSection(council);
-  }
-  if (!Array.isArray(votes) || votes.length === 0) {
+export function hasMemberVoteLayer(council, votesMeta, votes) {
+  return votesEnabledForCouncil(council) && votesMeta && Array.isArray(votes) && votes.length > 0;
+}
+
+export function renderMemberVoteSection(votes, votesMeta, member, council, route) {
+  if (!hasMemberVoteLayer(council, votesMeta, votes)) {
     return renderMemberVoteMissingSection(council);
   }
 
@@ -65,24 +61,18 @@ function renderMemberVoteMissingSection(council) {
     el("div", { class: "section-heading-row" }, [
       el("div", {}, [
         el("p", { class: "eyebrow" }, "議案への賛否"),
-        el("h2", { class: "section-title" }, "賛否の記録は未収録です"),
+        el("h2", { class: "section-title" }, "賛否の記録"),
       ]),
     ]),
-    el("p", { class: "empty-message is-compact" }, voteMissingMessage(council)),
+    renderVoteAvailabilityNotice(council),
   ]);
 }
 
 export function renderCouncilVoteSection(votes, votesMeta, council, members, route) {
-  if (!votesEnabledForCouncil(council)) {
+  if (!hasMemberVoteLayer(council, votesMeta, votes)) {
     return el("section", { class: "vote-section" }, [
       el("h2", { class: "section-title" }, "議決一覧"),
-      el("p", { class: "empty-message" }, voteMissingMessage(council)),
-    ]);
-  }
-  if (!votesMeta) {
-    return el("section", { class: "vote-section" }, [
-      el("h2", { class: "section-title" }, "議決一覧"),
-      el("p", { class: "empty-message" }, "議員別賛否データはまだ取得していません。"),
+      renderVoteAvailabilityNotice(council),
     ]);
   }
 
@@ -388,12 +378,47 @@ function voteClass(value) {
   return "is-other";
 }
 
-function voteMissingMessage(council) {
+export function renderVoteAvailabilityNotice(council) {
+  const availability = voteAvailability(council);
+  const children = [availability.text];
+  if (availability.url) {
+    children.push(
+      " ",
+      el("a", {
+        href: availability.url,
+        target: "_blank",
+        rel: "noopener",
+      }, availability.linkText),
+    );
+  }
+  return el("p", { class: "vote-availability-note" }, children);
+}
+
+function voteAvailability(council) {
+  if (council?.vote_granularity === "result_only") {
+    return {
+      text: `${council.name}は議員ごとの賛否を公開していません。`,
+      linkText: "議決結果は公式ページへ →",
+      url: council.votes_official_url || null,
+    };
+  }
   if (council?.id === "tottori-city") {
-    return "賛否PDFが機械可読でない形式のため未収録です（対応検討中）。";
+    return {
+      text: "鳥取市議会の議決結果は機械可読でない形式のため未収録です。",
+      linkText: "公式ページへ →",
+      url: council.votes_official_url || null,
+    };
   }
-  if (council?.id === "yonago-city") {
-    return "議員別の賛否は公式に公開されていません（議決結果のみ）。";
+  if (council?.votes_official_url) {
+    return {
+      text: `${council.name}の議決結果は未収録です。`,
+      linkText: "公式ページへ →",
+      url: council.votes_official_url,
+    };
   }
-  return "議員別賛否データはまだ取得していません。";
+  return {
+    text: `${council?.name || "この議会"}の議決結果は未収録です。`,
+    linkText: "公式ページへ →",
+    url: null,
+  };
 }

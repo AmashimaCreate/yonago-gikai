@@ -19,7 +19,8 @@
       "prefecture_name": "鳥取県",
       "lg_code": "312011",
       "minutes_system": "dbsr",
-      "vote_granularity": "member",
+      "vote_granularity": "unknown",
+      "votes_official_url": "https://www.city.tottori.lg.jp/site/shigikai/6332.html",
       "status": "active"
     },
     {
@@ -32,6 +33,7 @@
       "minutes_system": "kensakusystem_legacy",
       "minutes_base_url": "https://www.kensakusystem.jp/yonago-s/",
       "vote_granularity": "result_only",
+      "votes_official_url": "https://www.city.yonago.lg.jp/13764.htm",
       "status": "active"
     },
     {
@@ -43,7 +45,7 @@
       "lg_code": "312037",
       "minutes_system": "kensakusystem_legacy",
       "minutes_base_url": "https://www.kensakusystem.jp/kurayoshi/",
-      "vote_granularity": "unknown",
+      "vote_granularity": "member",
       "status": "active"
     },
     {

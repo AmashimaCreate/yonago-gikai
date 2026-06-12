@@ -2,7 +2,11 @@ import { dataQualityPanel } from "./data-quality.js";
 import { renderFactionCompositionChart } from "./render-faction-chart.js";
 import { formatDecimal, formatPeople, formatYen } from "./render-profile.js";
 import { renderProfileVisualization } from "./render-profile-viz.js";
-import { renderCouncilVoteSection } from "./render-votes.js";
+import {
+  hasMemberVoteLayer,
+  renderCouncilVoteSection,
+  renderVoteAvailabilityNotice,
+} from "./render-votes.js";
 import {
   renderCommitteeView,
   renderKaihaView,
@@ -283,23 +287,23 @@ function renderFaceCard(member, state) {
 }
 
 function renderRecentVoteHighlights(state) {
+  if (!hasMemberVoteLayer(state.currentCouncil, state.votesMeta, state.votes)) {
+    return el("section", { class: "recent-votes page-card is-compact" }, [
+      el("div", { class: "section-heading-row" }, [
+        el("div", {}, [
+          el("p", { class: "eyebrow" }, "最近決まったこと"),
+          el("h2", { class: "section-title" }, "議決結果"),
+        ]),
+      ]),
+      renderVoteAvailabilityNotice(state.currentCouncil),
+    ]);
+  }
+
   const votes = [...(state.votes || [])].sort((a, b) => {
     const dateCompare = (b.date || "").localeCompare(a.date || "");
     if (dateCompare) return dateCompare;
     return (a.bill_title || "").localeCompare(b.bill_title || "", "ja");
   });
-  if (!votes.length) {
-    return el("section", { class: "recent-votes page-card" }, [
-      el("div", { class: "section-heading-row" }, [
-        el("div", {}, [
-          el("p", { class: "eyebrow" }, "最近決まったこと"),
-          el("h2", { class: "section-title" }, "議決データは未収録です"),
-        ]),
-      ]),
-      el("p", { class: "empty-message" }, voteMissingMessage(state.currentCouncil)),
-    ]);
-  }
-
   const latestDate = votes[0].date;
   const latestVotes = votes.filter((vote) => vote.date === latestDate);
   const divided = latestVotes.filter(isDividedVote);
@@ -548,16 +552,6 @@ function areaTypeLabel(council) {
   if (name.includes("町議会")) return "町";
   if (name.includes("村議会")) return "村";
   return "市";
-}
-
-function voteMissingMessage(council) {
-  if (council?.id === "tottori-city") {
-    return "賛否PDFが機械可読でない形式のため未収録です（対応検討中）。";
-  }
-  if (council?.id === "yonago-city") {
-    return "議員別の賛否は公式に公開されていません（議決結果のみ）。";
-  }
-  return "議員別賛否データはまだ取得していません。";
 }
 
 function renderFormerSpeeches(groups) {

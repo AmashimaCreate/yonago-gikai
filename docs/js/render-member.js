@@ -18,6 +18,7 @@ export function renderMemberPage(root, state, memberId) {
   root.appendChild(renderMemberProfile(member, state.membersMeta));
   const voteSection = renderMemberVoteSection(
     state.votes,
+    state.votesMeta,
     member,
     state.currentCouncil,
     state.route,

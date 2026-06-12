@@ -21,6 +21,7 @@
 任意キー:
 
 - `minutes_base_url`: 会議録検索システムの議会別トップURL。
+- `votes_official_url`: 議決結果または議員別賛否を確認できる公式ページURL。`vote_granularity` が `result_only` または `unknown` の議会では、フロントの縮退表示から公式確認へ誘導する。
 - `notes`: 自動取得や公式導線に関する補足。
 
 ルール:

@@ -283,6 +283,19 @@ a:hover { color: var(--brand-dark); }
   text-align: center;
   color: var(--text-muted);
 }
+.vote-availability-note {
+  margin: 8px 0 0;
+  padding: 10px 12px;
+  border-left: 4px solid var(--brand);
+  border-radius: 8px;
+  background: var(--brand-soft);
+  color: var(--text);
+  font-size: 14px;
+}
+.vote-availability-note a {
+  font-weight: 800;
+  white-space: nowrap;
+}
 .muted {
   color: var(--text-muted);
 }
@@ -931,6 +944,12 @@ main { padding: 24px 0 48px; }
 .recent-votes,
 .past-records {
   margin-bottom: 24px;
+}
+.recent-votes.is-compact {
+  padding: 16px 18px;
+}
+.recent-votes.is-compact .section-heading-row {
+  margin-bottom: 4px;
 }
 .stage-overview-grid {
   display: grid;
