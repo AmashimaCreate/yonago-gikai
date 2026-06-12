@@ -1696,6 +1696,37 @@ main { padding: 24px 0 48px; }
   cursor: default;
   opacity: 0.72;
 }
+.ai-service-links {
+  margin: 0 0 10px;
+}
+.ai-service-button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.ai-service-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 5px 10px;
+  border: 1px solid color-mix(in srgb, var(--key-color) 22%, var(--border));
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--key-color);
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+}
+.ai-service-link:hover,
+.ai-service-link:focus-visible {
+  border-color: var(--key-color);
+  background: color-mix(in srgb, var(--key-color) 9%, var(--surface));
+}
+.ai-link-note {
+  margin: 6px 0 0;
+  color: var(--text-muted);
+  font-size: 12px;
+}
 .copy-status {
   display: block;
   min-height: 1.4em;
