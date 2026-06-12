@@ -1,5 +1,4 @@
 import { acquisitionText, cautionNote, coverageText, sourceLink } from "./data-quality.js";
-import { councilPath } from "./router.js";
 import { renderMemberVoteSection } from "./render-votes.js";
 import { el } from "./utils.js";
 
@@ -15,21 +14,6 @@ export function renderMemberPage(root, state, memberId) {
   const speeches = (state.speeches || [])
     .filter((speech) => speech.member_id === member.id)
     .sort((a, b) => (b.date || "").localeCompare(a.date || ""));
-
-  root.appendChild(
-    el("p", { class: "back-link-wrap" }, [
-      el(
-        "a",
-        {
-          href: councilPath(
-            state.currentCouncil.prefecture || state.route.prefecture || "tottori",
-            state.currentCouncil.id,
-          ),
-        },
-        `← ${state.currentCouncil.name}へ戻る`,
-      ),
-    ]),
-  );
 
   root.appendChild(renderMemberProfile(member, state.membersMeta));
   const voteSection = renderMemberVoteSection(

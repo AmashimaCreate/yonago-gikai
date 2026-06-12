@@ -6,7 +6,12 @@ import { renderPrefecturePage } from "./render-prefecture.js";
 import { renderPrefectureComparisonPage } from "./render-prefecture-comparison.js";
 import { renderProfile } from "./render-profile.js";
 import { renderTop } from "./render-top.js";
-import { parseRoute } from "./router.js";
+import {
+  councilPath,
+  parseRoute,
+  prefPath,
+  topPath,
+} from "./router.js";
 import { filteredMembers } from "./search.js";
 import { state } from "./state.js";
 import { el } from "./utils.js";
@@ -34,6 +39,10 @@ function metaNode() {
   return document.getElementById("meta");
 }
 
+function routeNavNode() {
+  return document.getElementById("route-nav");
+}
+
 function mainNode() {
   return document.getElementById("main");
 }
@@ -45,6 +54,47 @@ function setHeader({ title, lead, meta = "" }) {
   titleNode().textContent = title;
   leadNode().textContent = lead;
   metaNode().textContent = meta;
+}
+
+function setRouteNav({ back = null, crumbs = [] } = {}) {
+  const node = routeNavNode();
+  if (!node) return;
+  node.innerHTML = "";
+  if (!back && !crumbs.length) {
+    node.hidden = true;
+    return;
+  }
+
+  if (back) {
+    node.appendChild(
+      el("a", { class: "route-back", href: back.href, "aria-label": `${back.label}へ戻る` }, [
+        el("span", { class: "route-back-icon", "aria-hidden": "true" }, "←"),
+        el("span", {}, back.label),
+      ]),
+    );
+  }
+
+  if (crumbs.length) {
+    node.appendChild(
+      el("ol", { class: "breadcrumbs" }, crumbs.map((crumb, index) =>
+        el("li", {}, [
+          crumb.href
+            ? el("a", { href: crumb.href }, crumb.label)
+            : el("span", { "aria-current": index === crumbs.length - 1 ? "page" : undefined }, crumb.label),
+        ]),
+      )),
+    );
+  }
+  node.hidden = false;
+}
+
+function resetRouteNav() {
+  setRouteNav();
+}
+
+function prefectureLabel(prefecture) {
+  if (prefecture === "tottori") return "鳥取県";
+  return prefecture;
 }
 
 function showCouncilNav(show) {
@@ -111,6 +161,16 @@ function updateActiveTab() {
 
 function renderCouncilRoute() {
   const isRedesignedCouncil = state.currentCouncil?.prefecture === "tottori";
+  const prefecture = state.currentCouncil?.prefecture || "tottori";
+  const prefectureName = prefectureLabel(prefecture);
+  setRouteNav({
+    back: { label: `${prefectureName}ページ`, href: prefPath(prefecture) },
+    crumbs: [
+      { label: "全国トップ", href: topPath() },
+      { label: prefectureName, href: prefPath(prefecture) },
+      { label: state.currentCouncil.name },
+    ],
+  });
   setHeader({
     title: state.currentCouncil.name,
     lead: isRedesignedCouncil
@@ -143,6 +203,23 @@ function renderCouncilRoute() {
 
 function renderMemberRoute(memberId) {
   const member = state.members.find((item) => item.id === memberId);
+  const prefecture = state.currentCouncil?.prefecture || "tottori";
+  const prefectureName = prefectureLabel(prefecture);
+  setRouteNav({
+    back: {
+      label: state.currentCouncil.name,
+      href: councilPath(prefecture, state.currentCouncil.id),
+    },
+    crumbs: [
+      { label: "全国トップ", href: topPath() },
+      { label: prefectureName, href: prefPath(prefecture) },
+      {
+        label: state.currentCouncil.name,
+        href: councilPath(prefecture, state.currentCouncil.id),
+      },
+      { label: member ? member.name : "議員ページ" },
+    ],
+  });
   setHeader({
     title: member ? member.name : "議員ページ",
     lead: state.currentCouncil.name,
@@ -153,6 +230,13 @@ function renderMemberRoute(memberId) {
 }
 
 function renderNotFound() {
+  setRouteNav({
+    back: { label: "全国トップ", href: topPath() },
+    crumbs: [
+      { label: "全国トップ", href: topPath() },
+      { label: "ページが見つかりません" },
+    ],
+  });
   setHeader({
     title: "ページが見つかりません",
     lead: "URLを確認してください。",
@@ -194,6 +278,13 @@ async function applyRoute() {
       title: "このサイトについて",
       lead: "目的、出典、更新方法、地図クレジットをまとめています。",
     });
+    setRouteNav({
+      back: { label: "全国トップ", href: topPath() },
+      crumbs: [
+        { label: "全国トップ", href: topPath() },
+        { label: "このサイトについて" },
+      ],
+    });
     showCouncilNav(false);
     renderAbout(mainNode());
     return;
@@ -215,6 +306,7 @@ async function applyRoute() {
       title: "全国 議会見える化",
       lead: "対応地域を地図と一覧から選び、議会ごとの公開データを確認できます。",
     });
+    resetRouteNav();
     showCouncilNav(false);
     renderTop(mainNode());
     return;
@@ -236,6 +328,7 @@ async function applyRoute() {
       renderNotFound();
       return;
     }
+    const prefectureName = prefectureLabel(route.prefecture);
     setHeader(route.name === "prefecture-compare"
       ? {
           title: "鳥取県 5議会くらべ",
@@ -244,6 +337,22 @@ async function applyRoute() {
       : {
           title: "鳥取県 議会見える化",
           lead: "鳥取県内5議会の公開データを同じ形で確認できます。",
+        });
+    setRouteNav(route.name === "prefecture-compare"
+      ? {
+          back: { label: `${prefectureName}ページ`, href: prefPath(route.prefecture) },
+          crumbs: [
+            { label: "全国トップ", href: topPath() },
+            { label: prefectureName, href: prefPath(route.prefecture) },
+            { label: "5議会くらべ" },
+          ],
+        }
+      : {
+          back: { label: "全国トップ", href: topPath() },
+          crumbs: [
+            { label: "全国トップ", href: topPath() },
+            { label: prefectureName },
+          ],
         });
     showCouncilNav(false);
     state.councilSummaries = await loadCouncilSummaries(

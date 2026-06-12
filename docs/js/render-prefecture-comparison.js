@@ -1,4 +1,3 @@
-import { prefPath } from "./router.js";
 import {
   formatDecimal,
   formatPeople,
@@ -189,11 +188,6 @@ export function renderPrefectureComparison(summaries, prefecture = "tottori") {
 
 export function renderPrefectureComparisonPage(root, summaries, prefecture = "tottori") {
   root.innerHTML = "";
-  root.appendChild(
-    el("p", { class: "back-link-row" }, [
-      el("a", { href: prefPath(prefecture) }, "← 鳥取県ページへ戻る"),
-    ]),
-  );
   root.appendChild(
     renderPrefectureComparison(summaries, prefecture)
       || el("p", { class: "empty-message" }, "比較に使うデータを読み込めませんでした。"),
