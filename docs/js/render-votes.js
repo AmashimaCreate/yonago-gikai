@@ -269,8 +269,8 @@ function renderCouncilVoteDetail(vote, council, route, memberMap) {
 
 function renderVoteResearchPrompt(vote, council) {
   return renderAiPromptCard({
-    title: "この議決をAIで調べる",
-    lead: "知りたいことに合わせて質問を切り替えられます。",
+    title: "AIに聞いてみる",
+    lead: "目的に合わせた質問の雛形を用意しました",
     prompts: votePromptItems(vote, council),
     compact: true,
   });
@@ -289,6 +289,14 @@ function votePromptItems(vote, council) {
       key: "pros-cons",
       label: "賛成と反対",
       text: structuredVotePrompt(vote, council, "この議決について、賛成側と反対側でどんな立場の違いがあり得るか、公的情報を優先して整理してください"),
+    }, {
+      key: "pro-detail",
+      label: "賛成側を詳しく",
+      text: structuredVotePrompt(vote, council, "この議決について、賛成側が重視している可能性のある理由や根拠を、公的情報を優先して整理してください"),
+    }, {
+      key: "con-detail",
+      label: "反対側を詳しく",
+      text: structuredVotePrompt(vote, council, "この議決について、反対側が重視している可能性のある理由や懸念を、公的情報を優先して整理してください"),
     });
   }
   prompts.push({
