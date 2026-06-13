@@ -14,6 +14,7 @@ export const state = {
   speechesMeta: null,
   votes: [],
   votesMeta: null,
+  councilSection: "area",
   view: "kaiha",
   query: "",
 };

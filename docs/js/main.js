@@ -412,10 +412,12 @@ async function applyRoute() {
     }
     const previousCouncilId = state.currentCouncil?.id;
     if (previousCouncilId && previousCouncilId !== route.councilId) {
+      state.councilSection = "area";
       state.view = "kaiha";
       state.query = "";
     }
     if (!previousCouncilId && route.name === "council") {
+      state.councilSection = "area";
       state.view = "kaiha";
     }
 
@@ -448,7 +450,9 @@ async function applyRoute() {
 }
 
 function renderWithErrorBoundary() {
-  applyRoute().catch((err) => {
+  applyRoute().then(() => {
+    window.scrollTo({ top: 0, left: 0 });
+  }).catch((err) => {
     if (err instanceof Error && err.message.includes("議会が見つかりません")) {
       renderNotFound();
       return;
@@ -483,6 +487,17 @@ function setupTabs() {
 }
 
 function setupStageControls() {
+  window.addEventListener("council:section-change", (event) => {
+    const section = event.detail?.section;
+    if (!section || section === state.councilSection) return;
+    state.councilSection = section;
+    if (section === "area") {
+      state.query = "";
+    }
+    renderCouncilRoute();
+    window.scrollTo({ top: 0, left: 0 });
+  });
+
   window.addEventListener("council:view-change", (event) => {
     const view = event.detail?.view;
     if (!view || view === state.view) return;

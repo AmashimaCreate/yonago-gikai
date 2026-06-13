@@ -65,15 +65,71 @@ a:hover { color: var(--brand-dark); }
   border-bottom: 1px solid var(--border);
   padding: 24px 0 22px;
 }
-.home-link {
-  display: inline-block;
-  margin-bottom: 8px;
-  font-size: 13px;
-  color: var(--brand);
-  font-weight: 700;
+.hub-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+.hub-breadcrumb,
+.hub-social-links {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+}
+.hub-breadcrumb {
+  color: var(--text-muted);
+  font-size: 15px;
+  font-weight: 900;
+}
+.hub-home-link,
+.hub-current-link,
+.hub-social-links a {
+  color: var(--text);
   text-decoration: none;
 }
-.home-link:hover { text-decoration: underline; }
+.hub-home-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+.hub-home-link::before {
+  content: "◉";
+  display: inline-grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--brand-soft);
+  color: var(--brand);
+  font-size: 10px;
+  line-height: 1;
+}
+.hub-current-link {
+  color: var(--brand-dark);
+}
+.hub-social-links {
+  flex: 0 0 auto;
+  font-size: 14px;
+  font-weight: 900;
+}
+.hub-social-links a {
+  color: var(--text-muted);
+}
+.hub-home-link:hover,
+.hub-home-link:focus-visible,
+.hub-current-link:hover,
+.hub-current-link:focus-visible,
+.hub-social-links a:hover,
+.hub-social-links a:focus-visible {
+  color: var(--brand);
+  outline: none;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
 .route-nav {
   display: flex;
   align-items: center;
@@ -464,12 +520,46 @@ a:hover { color: var(--brand-dark); }
   margin-top: 16px;
 }
 .supported-region-list h3 {
-  margin: 0 0 6px;
+  margin: 0 0 10px;
   font-size: 15px;
 }
-.supported-region-list ul {
-  margin: 0;
-  padding-left: 20px;
+.supported-region-grid {
+  display: grid;
+  gap: 10px;
+}
+.supported-region-card {
+  display: grid;
+  gap: 4px;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+  box-shadow: var(--shadow-soft);
+}
+.supported-region-card:hover,
+.supported-region-card:focus-visible {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 3px var(--brand-soft);
+  outline: none;
+}
+.supported-region-card strong {
+  color: var(--brand-dark);
+  font-size: 20px;
+}
+.supported-region-card span:not(.region-card-status),
+.supported-region-card small {
+  color: var(--text-muted);
+}
+.region-card-status {
+  width: fit-content;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--brand-soft);
+  color: var(--brand-dark);
+  font-size: 12px;
+  font-weight: 800;
 }
 .prefecture-hero {
   margin-bottom: 18px;
@@ -865,6 +955,42 @@ main { padding: 24px 0 48px; }
 #status { color: var(--text-muted); }
 
 /* Stage 1: 議会ページ再設計 */
+.council-section-tabs {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.council-section-tab-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+.council-section-tab {
+  min-height: 48px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+.council-section-tab:hover,
+.council-section-tab:focus-visible {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 3px var(--brand-soft);
+  outline: none;
+}
+.council-section-tab.is-active {
+  border-color: var(--brand);
+  background: var(--brand);
+  color: #ffffff;
+}
+.council-section-help {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 14px;
+}
 .council-hero {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(360px, 0.9fr);
@@ -2342,6 +2468,19 @@ main { padding: 24px 0 48px; }
   .site-header {
     padding: 18px 0;
   }
+  .hub-nav {
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .hub-breadcrumb {
+    flex-wrap: wrap;
+    gap: 6px;
+    font-size: 14px;
+  }
+  .hub-social-links {
+    gap: 8px;
+    font-size: 13px;
+  }
   .route-nav {
     display: block;
     margin-bottom: 12px;
@@ -2403,6 +2542,13 @@ main { padding: 24px 0 48px; }
   }
   .hero-metrics {
     grid-template-columns: 1fr;
+  }
+  .council-section-tab-list {
+    gap: 6px;
+  }
+  .council-section-tab {
+    min-height: 42px;
+    font-size: 14px;
   }
   .timeseries-grid {
     grid-template-columns: 1fr;

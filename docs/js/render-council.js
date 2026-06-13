@@ -78,22 +78,56 @@ function isStageOneCouncil(state) {
 }
 
 function renderStageOneCouncilPage(root, state, filteredMembers) {
+  root.appendChild(renderCouncilSectionTabs(state));
+
+  if (state.councilSection === "members") {
+    root.appendChild(renderRecentVoteHighlights(state));
+    root.appendChild(renderFaceLineupSection(filteredMembers, state));
+
+    const pastRecords = renderPastRecordsDetails(state);
+    if (pastRecords) root.appendChild(pastRecords);
+
+    root.appendChild(renderStageTabPanel(state));
+    if (state.view !== "kaiha") {
+      root.appendChild(renderStageTabContent(state, filteredMembers));
+    }
+    return;
+  }
+
   root.appendChild(renderCouncilHero(state));
   const timeseriesSection = renderTimeseriesSection(state);
   if (timeseriesSection) root.appendChild(timeseriesSection);
-  root.appendChild(renderRecentVoteHighlights(state));
-  root.appendChild(renderFaceLineupSection(filteredMembers, state));
-
-  const pastRecords = renderPastRecordsDetails(state);
-  if (pastRecords) root.appendChild(pastRecords);
 
   const officialLinks = renderOfficialLinksSection(state.currentCouncil);
   if (officialLinks) root.appendChild(officialLinks);
+}
 
-  root.appendChild(renderStageTabPanel(state));
-  if (state.view !== "kaiha") {
-    root.appendChild(renderStageTabContent(state, filteredMembers));
-  }
+function renderCouncilSectionTabs(state) {
+  const tabs = [
+    ["area", state.currentCouncil?.type === "prefecture" ? "県のデータ" : "地域データ"],
+    ["members", "議員データ"],
+  ];
+  const current = state.councilSection || "area";
+  return el("nav", { class: "council-section-tabs page-card", "aria-label": "議会ページの大きな切り替え" }, [
+    el("div", { class: "council-section-tab-list", role: "tablist" }, tabs.map(([section, label]) =>
+      el("button", {
+        type: "button",
+        class: `council-section-tab ${current === section ? "is-active" : ""}`,
+        role: "tab",
+        "aria-selected": current === section ? "true" : "false",
+        onclick: () => {
+          window.dispatchEvent(
+            new CustomEvent("council:section-change", { detail: { section } }),
+          );
+        },
+      }, label),
+    )),
+    el("p", { class: "council-section-help" },
+      current === "members"
+        ? "議員の顔ぶれ、会派、議決、発言の記録を見ます。"
+        : "人口・予算・統計の変化など、この地域の基本データを見ます。",
+    ),
+  ]);
 }
 
 function renderCouncilHero(state) {

@@ -15,19 +15,20 @@ export function renderTop(root) {
         el(
           "p",
           {},
-          "現在は鳥取県のみ対応しています。順次拡大予定です。",
+          "現在は鳥取県のみ対応しています。地図または地域カードから進めます。",
         ),
-        el("a", { class: "button-link", href: prefPath("tottori") }, "鳥取県を見る"),
       ]),
       el("div", { class: "national-map-wrap" }, [
         mapFrame,
         el("section", { class: "supported-region-list", "aria-labelledby": "supported-regions-title" }, [
-          el("h3", { id: "supported-regions-title" }, "対応地域一覧"),
-          el("ul", {}, [
-            el("li", {}, [
-              el("a", { href: prefPath("tottori") }, "鳥取県"),
-              el("span", { class: "muted" }, " 5議会の基本情報を掲載"),
-            ]),
+          el("h3", { id: "supported-regions-title" }, "対応地域"),
+          el("div", { class: "supported-region-grid" }, [
+            renderSupportedRegionCard({
+              name: "鳥取県",
+              href: prefPath("tottori"),
+              summary: "県と4市、計5議会の基本情報・議決・発言を掲載",
+              status: "対応中",
+            }),
           ]),
         ]),
       ]),
@@ -35,6 +36,15 @@ export function renderTop(root) {
   );
 
   hydrateJapanMap(mapFrame);
+}
+
+function renderSupportedRegionCard(region) {
+  return el("a", { class: "supported-region-card", href: region.href }, [
+    el("span", { class: "region-card-status" }, region.status),
+    el("strong", {}, region.name),
+    el("span", {}, region.summary),
+    el("small", {}, "地域ページへ"),
+  ]);
 }
 
 async function hydrateJapanMap(container) {
