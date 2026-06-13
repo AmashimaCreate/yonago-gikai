@@ -2,8 +2,8 @@ import {
   formatDecimal,
   formatPeople,
   sourceLink,
-} from "./render-profile.js";
-import { el } from "./utils.js";
+} from "./render-profile.js?v=20260614-ui2";
+import { el } from "./utils.js?v=20260614-ui2";
 
 const SVG_NS = "http://www.w3.org/2000/svg";
 const COUNCIL_ORDER = [

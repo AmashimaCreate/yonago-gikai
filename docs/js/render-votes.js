@@ -1,7 +1,7 @@
-import { sourceLink } from "./data-quality.js";
-import { councilAreaName, renderAiPromptCard } from "./render-ai-prompt.js";
-import { memberPath } from "./router.js";
-import { el } from "./utils.js";
+import { sourceLink } from "./data-quality.js?v=20260614-ui2";
+import { councilAreaName, renderAiPromptCard } from "./render-ai-prompt.js?v=20260614-ui2";
+import { memberPath } from "./router.js?v=20260614-ui2";
+import { el } from "./utils.js?v=20260614-ui2";
 
 const VOTE_ORDER = ["賛成", "反対", "退席", "欠席", "議長", "除斥", "継続審査"];
 const SPLIT_VOTE_THRESHOLD = 0.3;

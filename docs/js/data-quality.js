@@ -1,4 +1,4 @@
-import { el } from "./utils.js";
+import { el } from "./utils.js?v=20260614-ui2";
 
 export function acquisitionText(membersMeta) {
   const acquisition = membersMeta?.acquisition;

@@ -1,7 +1,7 @@
-import { acquisitionText, cautionNote, coverageText, sourceLink } from "./data-quality.js";
-import { councilAreaName, officialCouncilUrl, renderAiPromptCard } from "./render-ai-prompt.js";
-import { hasMemberVoteLayer, renderMemberVoteSection } from "./render-votes.js";
-import { el } from "./utils.js";
+import { acquisitionText, cautionNote, coverageText, sourceLink } from "./data-quality.js?v=20260614-ui2";
+import { councilAreaName, officialCouncilUrl, renderAiPromptCard } from "./render-ai-prompt.js?v=20260614-ui2";
+import { hasMemberVoteLayer, renderMemberVoteSection } from "./render-votes.js?v=20260614-ui2";
+import { el } from "./utils.js?v=20260614-ui2";
 
 export function renderMemberPage(root, state, memberId) {
   const member = state.members.find((item) => item.id === memberId);

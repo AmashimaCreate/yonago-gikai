@@ -1,21 +1,21 @@
-import { loadCouncilBundle, loadCouncils, loadCouncilSummaries } from "./data-loader.js";
-import { renderAbout } from "./render-about.js";
-import { renderCouncilPage } from "./render-council.js";
-import { renderGuide } from "./render-guide.js";
-import { renderMemberPage } from "./render-member.js";
-import { renderPrefecturePage } from "./render-prefecture.js";
-import { renderPrefectureComparisonPage } from "./render-prefecture-comparison.js";
-import { renderProfile } from "./render-profile.js";
-import { renderTop } from "./render-top.js";
+import { loadCouncilBundle, loadCouncils, loadCouncilSummaries } from "./data-loader.js?v=20260614-ui2";
+import { renderAbout } from "./render-about.js?v=20260614-ui2";
+import { renderCouncilPage } from "./render-council.js?v=20260614-ui2";
+import { renderGuide } from "./render-guide.js?v=20260614-ui2";
+import { renderMemberPage } from "./render-member.js?v=20260614-ui2";
+import { renderPrefecturePage } from "./render-prefecture.js?v=20260614-ui2";
+import { renderPrefectureComparisonPage } from "./render-prefecture-comparison.js?v=20260614-ui2";
+import { renderProfile } from "./render-profile.js?v=20260614-ui2";
+import { renderTop } from "./render-top.js?v=20260614-ui2";
 import {
   councilPath,
   parseRoute,
   prefPath,
   topPath,
-} from "./router.js";
-import { filteredMembers } from "./search.js";
-import { state } from "./state.js";
-import { el } from "./utils.js";
+} from "./router.js?v=20260614-ui2";
+import { filteredMembers } from "./search.js?v=20260614-ui2";
+import { state } from "./state.js?v=20260614-ui2";
+import { el } from "./utils.js?v=20260614-ui2";
 
 const COUNCILS_WITH_VOTES = new Set([
   "kurayoshi-city",
