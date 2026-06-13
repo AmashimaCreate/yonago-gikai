@@ -1,4 +1,4 @@
-import { el } from "./utils.js?v=20260614-ui2";
+import { el } from "./utils.js?v=20260614-finance";
 
 const AI_LINK_URL_LIMIT = 2000;
 const AI_SERVICES = [

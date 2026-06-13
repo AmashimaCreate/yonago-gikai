@@ -289,6 +289,84 @@ SSDS（e-Stat 社会・人口統計体系）から生成する、自治体ごと
 - `profile.json` は自治体公式ページや決算カード等の最新公表値を優先するため、`timeseries.json` と出典・年次が異なる。
 - フロントで両者を併用する場合、`profile.json` は現在値、`timeseries.json` は履歴推移として表示する。
 
+## finance.json
+
+配置: `docs/data/{council_id}/finance.json`
+
+デジタル庁/総務省の地方財政データから生成する、市区町村の決算歳出内訳データ。鳥取県議会は都道府県版データ未公開のため、このフェーズでは4市のみ保持する。
+
+```json
+{
+  "council_id": "yonago-city",
+  "updated_at": "2026-04-24T00:00:00+09:00",
+  "fiscal_year": 2024,
+  "municipal_code": "31202",
+  "lg_code": "312029",
+  "municipality_name": "米子市",
+  "similar_group": "一般市Ⅲ－３",
+  "population": {"value": 144056, "source": "finance_data_table_master.csv 人口数_人"},
+  "source": {
+    "name": "総務省「地方財政状況調査」/ デジタル庁 地方財政データ",
+    "dataset": "20260424_resources_municipal-finance",
+    "fiscal_year": 2024,
+    "license": "CC BY 4.0相当",
+    "note": "手元の配布ZIPから生成。金額の生値は千円。"
+  },
+  "expenditure": {
+    "purpose": {
+      "classification": "歳出 (目的)",
+      "total_thousand_yen": 87579776,
+      "total_yen": 87579776000,
+      "items": [
+        {
+          "label": "民生費",
+          "amount_thousand_yen": 32057600,
+          "amount_yen": 32057600000,
+          "amount_oku_yen": 320.576,
+          "share_pct": 36.604,
+          "per_capita_yen": 222536,
+          "similar_group_average_per_capita_yen": 215096,
+          "similar_group_average_n": 62
+        }
+      ]
+    },
+    "nature": {
+      "classification": "歳出 (性質)",
+      "total_thousand_yen": 71209232,
+      "total_yen": 71209232000,
+      "items": []
+    }
+  }
+}
+```
+
+必須キー:
+
+- ルート: `council_id`, `updated_at`, `fiscal_year`, `municipal_code`, `lg_code`, `municipality_name`, `similar_group`, `population`, `source`, `checks`, `similar_group_indicators`, `expenditure`
+- `source`: `name`, `dataset`, `fiscal_year`, `license`, `note`, `files`
+- `expenditure`: `purpose`, `nature`
+- `expenditure.{purpose,nature}`: `classification`, `total_thousand_yen`, `total_yen`, `items`
+- `items[]`: `label`, `amount_thousand_yen`, `amount_yen`, `amount_oku_yen`, `share_pct`, `per_capita_yen`, `similar_group_average_per_capita_yen`, `similar_group_average_n`
+
+ルール:
+
+- `municipal_code` は地方財政データ側の5桁市区町村コード。例: 鳥取市 `31201`。
+- `lg_code` は `councils.json` の6桁全国地方公共団体コード。例: 鳥取市 `312011`。
+- ビルダーは `lg_code` の先頭5桁が `municipal_code` と一致することを検証する。6桁目はチェックディジットのため、地方財政データ側の5桁コードとは桁数が異なる。
+- CSVの生値は `値_千円`。`amount_yen` と `total_yen` は `千円 * 1000`、`amount_oku_yen` は `千円 / 100000` で算出する。
+- `purpose` は `分類: 歳出 (目的)` を `大項目` ごとに合算する。表示の主役として使う。
+- `nature` は `分類: 歳出 (性質)` を `大項目` ごとに合算する。補助情報として折りたたみ表示に使う。
+- `share_pct` は各分類内の構成比。丸め後の合計は概ね100%。
+- `per_capita_yen` は `amount_yen / finance.population.value`。市民の負担額ではなく、歳出を人口で割った参考値。
+- `similar_group_average_per_capita_yen` は同一配布データ内の `master` で同じ `similar_group` に属する自治体について、同一費目の1人あたり歳出を平均した参考値。配布 `groups.csv` に費目別平均がないため、費目別比較は `flow + master` から算出する。
+- `similar_group_average_n` はその費目の類似団体平均の算出に使った自治体数。表示では「N市平均」として併記し、母集団の大きさを利用者に示す。
+- `source.license` は配布元の表記に従い、フロントでは出典とともに表示する。
+
+注記:
+
+- `profile.json` の `budget_general_yen` は予算（計画）、`finance.json` は決算（実際に使われたお金）であり、同じ金額にはならない。
+- `timeseries.json` の `expenditure_total` はSSDSの過去年次系列であり、`finance.json` の2024年度決算とは年次が異なる場合がある。
+
 ## speeches.json
 
 配置: `docs/data/{council_id}/speeches.json`

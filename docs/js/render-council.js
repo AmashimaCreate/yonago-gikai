@@ -1,7 +1,8 @@
-import { dataQualityPanel } from "./data-quality.js?v=20260614-ui2";
-import { renderFactionCompositionChart } from "./render-faction-chart.js?v=20260614-ui2";
-import { formatDecimal, formatPeople, formatYen } from "./render-profile.js?v=20260614-ui2";
-import { renderProfileVisualization } from "./render-profile-viz.js?v=20260614-ui2";
+import { dataQualityPanel } from "./data-quality.js?v=20260614-finance";
+import { renderFinanceSection } from "./render-finance.js?v=20260614-finance";
+import { renderFactionCompositionChart } from "./render-faction-chart.js?v=20260614-finance";
+import { formatDecimal, formatPeople, formatYen } from "./render-profile.js?v=20260614-finance";
+import { renderProfileVisualization } from "./render-profile-viz.js?v=20260614-finance";
 import {
   hasMemberVoteLayer,
   hasResultOnlyVoteLayer,
@@ -9,7 +10,7 @@ import {
   renderResultOnlyVoteCard,
   renderVoteAvailabilityNotice,
   sortedVotesByDate,
-} from "./render-votes.js?v=20260614-ui2";
+} from "./render-votes.js?v=20260614-finance";
 import {
   renderCommitteeView,
   renderKaihaView,
@@ -17,9 +18,9 @@ import {
   memberFaction,
   renderRoleView,
   renderTermView,
-} from "./render-members.js?v=20260614-ui2";
-import { memberPath } from "./router.js?v=20260614-ui2";
-import { el } from "./utils.js?v=20260614-ui2";
+} from "./render-members.js?v=20260614-finance";
+import { memberPath } from "./router.js?v=20260614-finance";
+import { el } from "./utils.js?v=20260614-finance";
 
 export function renderCouncilPage(root, state, filteredMembers) {
   root.innerHTML = "";
@@ -82,19 +83,22 @@ function renderStageOneCouncilPage(root, state, filteredMembers) {
 
   if (state.councilSection === "members") {
     root.appendChild(renderRecentVoteHighlights(state));
+    if (state.view === "votes") {
+      root.appendChild(renderStageTabContent(state, filteredMembers));
+      return;
+    }
+
     root.appendChild(renderFaceLineupSection(filteredMembers, state));
 
     const pastRecords = renderPastRecordsDetails(state);
     if (pastRecords) root.appendChild(pastRecords);
-
-    root.appendChild(renderStageTabPanel(state));
-    if (state.view !== "kaiha") {
-      root.appendChild(renderStageTabContent(state, filteredMembers));
-    }
     return;
   }
 
   root.appendChild(renderCouncilHero(state));
+  const financeSection = renderFinanceSection(state.finance);
+  if (financeSection) root.appendChild(financeSection);
+
   const timeseriesSection = renderTimeseriesSection(state);
   if (timeseriesSection) root.appendChild(timeseriesSection);
 
@@ -591,15 +595,7 @@ function profileSource(item, fallbackLabel) {
 
 function renderFaceLineupSection(members, state) {
   const isFiltered = state.query.trim().length > 0;
-  const groups = groupMembersByFaction(members);
-  const body = isFiltered && members.length === 0
-    ? [el("p", { class: "empty-message" }, "該当する議員はいません。")]
-    : [
-        renderCompactFactionChart(state.members),
-        el("div", { class: "face-lineup-groups" }, groups.map(([faction, list]) =>
-          renderFactionFaceGroup(faction, list, state),
-        )),
-      ];
+  const body = renderMemberViewBody(members, state, isFiltered);
   return el("section", { class: "face-lineup-section" }, [
     el("div", { class: "section-heading-row" }, [
       el("div", {}, [
@@ -608,7 +604,9 @@ function renderFaceLineupSection(members, state) {
       ]),
       el("p", { class: "section-count" }, `${members.length}人`),
     ]),
-    ...body,
+    renderCompactFactionChart(state.members),
+    renderMemberViewSwitcher(state),
+    body,
     sourceLine("議員名簿", [
       state.membersMeta?.source_url
         ? { label: state.membersMeta.source_name || "公式名簿", url: state.membersMeta.source_url }
@@ -617,43 +615,85 @@ function renderFaceLineupSection(members, state) {
   ]);
 }
 
-function renderTenureComposition(members) {
-  const known = (members || []).filter((member) => typeof member.elected_count === "number");
-  if (!known.length || known.length !== (members || []).length) return null;
-  const buckets = [
-    { key: "first", label: "1回", count: 0 },
-    { key: "middle", label: "2〜3回", count: 0 },
-    { key: "senior", label: "4回以上", count: 0 },
-  ];
-  for (const member of known) {
-    if (member.elected_count <= 1) buckets[0].count += 1;
-    else if (member.elected_count <= 3) buckets[1].count += 1;
-    else buckets[2].count += 1;
+function renderMemberViewBody(members, state, isFiltered) {
+  if (isFiltered && members.length === 0) {
+    return el("p", { class: "empty-message" }, "該当する議員はいません。");
   }
-  const total = known.length;
-  return el("div", { class: "tenure-composition" }, [
-    el("div", { class: "tenure-composition-head" }, [
-      el("h3", {}, "当選回数の構成"),
-      el("p", {}, "色は会派とは関係のない濃淡です。"),
-    ]),
-    el("div", {
-      class: "tenure-bar",
-      role: "img",
-      "aria-label": `当選回数の構成。${buckets.map((bucket) => `${bucket.label} ${bucket.count}人`).join("、")}。`,
-    }, buckets.map((bucket) =>
-      bucket.count
-        ? el("span", {
-            class: `tenure-segment is-${bucket.key}`,
-            style: `--segment-width: ${(bucket.count / total) * 100}%;`,
-          }, `${bucket.count}人`)
-        : null,
-    )),
-    el("div", { class: "tenure-legend" }, buckets.map((bucket) =>
-      el("span", { class: `tenure-legend-item is-${bucket.key}` }, [
-        el("span", { class: "tenure-swatch", "aria-hidden": "true" }),
-        `${bucket.label} ${bucket.count}人`,
-      ]),
-    )),
+
+  if (state.view === "committee" || state.view === "role" || state.view === "term") {
+    const listRoot = el("div", { class: "member-list-root redesigned-tab-panel inline-member-tab-panel" });
+    if (state.view === "committee") renderCommitteeView(listRoot, members);
+    else if (state.view === "role") renderRoleView(listRoot, members);
+    else renderTermView(listRoot, members);
+    return listRoot;
+  }
+
+  const groups = groupMembersByFaction(members);
+  return el("div", { class: "face-lineup-groups" }, groups.map(([faction, list]) =>
+    renderFactionFaceGroup(faction, list, state),
+  ));
+}
+
+function renderMemberViewSwitcher(state) {
+  const tabs = [
+    ["kaiha", "会派"],
+    ["committee", "委員会"],
+    ["role", "役職"],
+    ["term", "当選回数"],
+  ];
+  return el("div", { class: "member-view-switcher" }, [
+    el("div", { class: "stage-tabs member-view-tabs", role: "tablist", "aria-label": "議員データの表示切り替え" },
+      tabs.map(([view, label]) =>
+        el("button", {
+          type: "button",
+          class: `view-tab ${state.view === view ? "is-active" : ""}`,
+          "data-view": view,
+          role: "tab",
+          "aria-selected": state.view === view ? "true" : "false",
+          onclick: () => {
+            window.dispatchEvent(
+              new CustomEvent("council:view-change", { detail: { view } }),
+            );
+          },
+        }, label),
+      ),
+    ),
+    renderInlineMemberSearch(state),
+  ]);
+}
+
+function renderInlineMemberSearch(state) {
+  const clearButton = el("button", {
+    type: "button",
+    class: "search-clear",
+    hidden: state.query.length === 0 ? "" : null,
+    "aria-label": "検索をクリア",
+    onclick: () => {
+      window.dispatchEvent(
+        new CustomEvent("council:query-change", { detail: { query: "" } }),
+      );
+    },
+  }, "×");
+
+  return el("div", { class: "search-row stage-search-row inline-member-search" }, [
+    el("input", {
+      type: "search",
+      class: "search-input",
+      placeholder: `${state.currentCouncil?.name || "議員"}を検索`,
+      autocomplete: "off",
+      value: state.query,
+      oninput: (event) => {
+        window.dispatchEvent(
+          new CustomEvent("council:query-change", {
+            detail: { query: event.target.value },
+          }),
+        );
+      },
+    }),
+    clearButton,
+    el("span", { class: "match-count" }, state.query.trim()
+      ? `${state.members.length}人中 ${filteredMemberCount(state)}人を表示`
+      : ""),
   ]);
 }
 
@@ -831,9 +871,7 @@ function renderRecentVoteHighlights(state) {
 function renderVotesTabButton(label) {
   const tabButton = el("button", { type: "button", class: "text-button" }, label);
   tabButton.addEventListener("click", () => {
-    window.dispatchEvent(
-      new CustomEvent("council:view-change", { detail: { view: "votes" } }),
-    );
+    window.dispatchEvent(new CustomEvent("council:show-votes"));
   });
   return tabButton;
 }
@@ -861,74 +899,6 @@ function renderOfficialLinksSection(council) {
         el("small", {}, "公式サイトで確認"),
       ]),
     )),
-  ]);
-}
-
-function renderStageTabPanel(state) {
-  const tabs = [
-    ["kaiha", "会派"],
-    ["committee", "委員会"],
-    ["role", "役職"],
-    ["term", "当選回数"],
-    ["votes", "議決一覧"],
-  ];
-  const searchId = "stage-council-search";
-  const clearButton = el("button", {
-    type: "button",
-    class: "search-clear",
-    hidden: state.query.length === 0 ? "" : null,
-    "aria-label": "検索をクリア",
-    onclick: () => {
-      window.dispatchEvent(
-        new CustomEvent("council:query-change", { detail: { query: "" } }),
-      );
-    },
-  }, "×");
-
-  return el("section", { class: "stage-tab-panel page-card" }, [
-    el("div", { class: "section-heading-row" }, [
-      el("div", {}, [
-        el("p", { class: "eyebrow" }, "もっと詳しく見る"),
-        el("h2", { class: "section-title" }, "議会の中身を見る"),
-      ]),
-    ]),
-    el("div", { class: "stage-tabs", role: "tablist", "aria-label": "議会ページの表示切り替え" },
-      tabs.map(([view, label]) =>
-        el("button", {
-          type: "button",
-          class: `view-tab ${state.view === view ? "is-active" : ""}`,
-          "data-view": view,
-          role: "tab",
-          "aria-selected": state.view === view ? "true" : "false",
-          onclick: () => {
-            window.dispatchEvent(
-              new CustomEvent("council:view-change", { detail: { view } }),
-            );
-          },
-        }, label),
-      ),
-    ),
-    el("div", { class: "search-row stage-search-row", hidden: state.view === "votes" ? "" : null }, [
-      el("input", {
-        id: searchId,
-        type: "search",
-        class: "search-input",
-        placeholder: `${state.currentCouncil?.name || "議員"}を検索`,
-        autocomplete: "off",
-        value: state.query,
-        oninput: (event) => {
-          window.dispatchEvent(
-            new CustomEvent("council:query-change", {
-              detail: { query: event.target.value },
-            }),
-          );
-        },
-      }),
-      clearButton,
-      el("span", { class: "match-count" }, state.query.trim()
-        ? `${state.members.length}人中 ${filteredMemberCount(state)}人を表示`
-        : ""),
-    ]),
   ]);
 }
 

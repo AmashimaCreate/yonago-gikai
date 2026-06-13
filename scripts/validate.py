@@ -128,6 +128,38 @@ TIMESERIES_INDICATOR_KEYS = {
     "values",
 }
 TIMESERIES_VALUE_KEYS = {"year", "value"}
+FINANCE_ROOT_KEYS = {
+    "council_id",
+    "updated_at",
+    "fiscal_year",
+    "municipal_code",
+    "lg_code",
+    "municipality_name",
+    "similar_group",
+    "population",
+    "source",
+    "checks",
+    "similar_group_indicators",
+    "expenditure",
+}
+FINANCE_SOURCE_KEYS = {"name", "dataset", "fiscal_year", "license", "note", "files"}
+FINANCE_EXPENDITURE_KEYS = {"purpose", "nature"}
+FINANCE_CLASSIFICATION_KEYS = {
+    "classification",
+    "total_thousand_yen",
+    "total_yen",
+    "items",
+}
+FINANCE_ITEM_KEYS = {
+    "label",
+    "amount_thousand_yen",
+    "amount_yen",
+    "amount_oku_yen",
+    "share_pct",
+    "per_capita_yen",
+    "similar_group_average_per_capita_yen",
+    "similar_group_average_n",
+}
 
 
 def load_json(path: Path) -> Any:
@@ -568,6 +600,127 @@ def validate_timeseries_file(council_id: str, path: Path) -> list[str]:
     return errors
 
 
+def validate_finance_file(council: dict[str, Any], path: Path) -> list[str]:
+    council_id = council.get("id")
+    errors: list[str] = []
+    if not path.exists():
+        if council.get("type") == "city":
+            return [f"{path}: file not found for city council '{council_id}'"]
+        return errors
+
+    data = load_json(path)
+    if not isinstance(data, dict):
+        return [f"{path}: root must be an object"]
+    add_missing_key_errors(errors, data, FINANCE_ROOT_KEYS, str(path))
+
+    if data.get("council_id") != council_id:
+        errors.append(
+            f"{path}: council_id '{data.get('council_id')}' "
+            f"does not match '{council_id}'"
+        )
+    municipal_code = data.get("municipal_code")
+    if (
+        not isinstance(municipal_code, str)
+        or len(municipal_code) != 5
+        or not municipal_code.isdigit()
+    ):
+        errors.append(f"{path}: municipal_code must be a 5-digit string")
+    lg_code = data.get("lg_code")
+    if lg_code != council.get("lg_code"):
+        errors.append(f"{path}: lg_code must match councils.json")
+    if isinstance(lg_code, str) and isinstance(municipal_code, str):
+        if len(lg_code) >= 5 and lg_code[:5] != municipal_code:
+            errors.append(f"{path}: lg_code first 5 digits must match municipal_code")
+    if data.get("fiscal_year") != 2024:
+        errors.append(f"{path}: fiscal_year must be 2024")
+
+    population = data.get("population")
+    if not isinstance(population, dict) or not isinstance(population.get("value"), int):
+        errors.append(f"{path}: population.value must be an integer")
+    elif population.get("value") <= 0:
+        errors.append(f"{path}: population.value must be > 0")
+
+    source = data.get("source")
+    if not isinstance(source, dict):
+        errors.append(f"{path}: source must be an object")
+    else:
+        add_missing_key_errors(errors, source, FINANCE_SOURCE_KEYS, f"{path}: source")
+
+    expenditure = data.get("expenditure")
+    if not isinstance(expenditure, dict):
+        errors.append(f"{path}: expenditure must be an object")
+        return errors
+    add_missing_key_errors(errors, expenditure, FINANCE_EXPENDITURE_KEYS, f"{path}: expenditure")
+    for key in ("purpose", "nature"):
+        errors.extend(validate_finance_classification(path, key, expenditure.get(key)))
+    return errors
+
+
+def validate_finance_classification(path: Path, key: str, value: Any) -> list[str]:
+    errors: list[str] = []
+    label = f"{path}: expenditure.{key}"
+    if not isinstance(value, dict):
+        return [f"{label}: must be an object"]
+    add_missing_key_errors(errors, value, FINANCE_CLASSIFICATION_KEYS, label)
+    total = value.get("total_thousand_yen")
+    if not isinstance(total, int) or total < 0:
+        errors.append(f"{label}: total_thousand_yen must be a non-negative integer")
+    total_yen = value.get("total_yen")
+    if not isinstance(total_yen, int) or total_yen != (total or 0) * 1000:
+        errors.append(f"{label}: total_yen must equal total_thousand_yen * 1000")
+
+    items = value.get("items")
+    if not isinstance(items, list) or not items:
+        errors.append(f"{label}: items must be a non-empty list")
+        return errors
+    sum_thousand_yen = 0
+    sum_share = 0.0
+    previous_amount: int | None = None
+    for i, item in enumerate(items):
+        item_label = f"{label}.items[{i}]"
+        if not isinstance(item, dict):
+            errors.append(f"{item_label}: must be an object")
+            continue
+        add_missing_key_errors(errors, item, FINANCE_ITEM_KEYS, item_label)
+        if not isinstance(item.get("label"), str) or not item.get("label"):
+            errors.append(f"{item_label}: label must be a non-empty string")
+        amount = item.get("amount_thousand_yen")
+        if not isinstance(amount, int) or amount < 0:
+            errors.append(f"{item_label}: amount_thousand_yen must be a non-negative integer")
+            amount = 0
+        if previous_amount is not None and amount > previous_amount:
+            errors.append(f"{item_label}: items must be sorted by amount descending")
+        previous_amount = amount
+        sum_thousand_yen += amount
+        if item.get("amount_yen") != amount * 1000:
+            errors.append(f"{item_label}: amount_yen must equal amount_thousand_yen * 1000")
+        share = item.get("share_pct")
+        if not isinstance(share, (int, float)) or isinstance(share, bool):
+            errors.append(f"{item_label}: share_pct must be numeric")
+        else:
+            sum_share += float(share)
+        per_capita = item.get("per_capita_yen")
+        if per_capita is not None and not isinstance(per_capita, int):
+            errors.append(f"{item_label}: per_capita_yen must be an integer or null")
+        peer = item.get("similar_group_average_per_capita_yen")
+        if peer is not None and not isinstance(peer, int):
+            errors.append(
+                f"{item_label}: similar_group_average_per_capita_yen "
+                "must be an integer or null"
+            )
+        peer_n = item.get("similar_group_average_n")
+        if peer_n is not None:
+            if not isinstance(peer_n, int) or peer_n <= 0:
+                errors.append(
+                    f"{item_label}: similar_group_average_n must be a positive integer or null"
+                )
+    if isinstance(total, int) and sum_thousand_yen != total:
+        errors.append(f"{label}: item amounts must sum to total_thousand_yen")
+    if not 99.99 <= sum_share <= 100.01:
+        errors.append(f"{label}: share_pct values must sum to 100")
+    return errors
+
+
 def load_member_ids(council_id: str) -> set[str]:
     path = DATA_DIR / council_id / "members.json"
     if not path.exists():
@@ -618,6 +771,8 @@ def main() -> int:
         errors.extend(validate_votes_file(council_id, votes_path))
         timeseries_path = DATA_DIR / council_id / "timeseries.json"
         errors.extend(validate_timeseries_file(council_id, timeseries_path))
+        finance_path = DATA_DIR / council_id / "finance.json"
+        errors.extend(validate_finance_file(council, finance_path))
 
     if errors:
         print("Validation failed:", file=sys.stderr)

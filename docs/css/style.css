@@ -1217,79 +1217,119 @@ main { padding: 24px 0 48px; }
 .timeseries-source {
   padding-top: 2px;
 }
-.tenure-composition {
-  margin: 12px 0 18px;
+.finance-section {
+  margin-bottom: 24px;
+}
+.finance-heading {
+  align-items: start;
+}
+.finance-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 5px 10px;
+  border: 1px solid var(--brand-soft-border);
+  border-radius: 999px;
+  background: var(--brand-soft);
+  color: var(--brand-strong);
+  font-size: 13px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.finance-lead,
+.finance-peer-note,
+.finance-note,
+.finance-source {
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+.finance-peer-note {
+  margin: -0.35rem 0 1rem;
+  font-size: 0.9rem;
+}
+.finance-total-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  align-items: baseline;
+  margin: 14px 0;
   padding: 12px;
   border: 1px solid var(--border);
   border-radius: 12px;
   background: var(--surface-soft);
 }
-.tenure-composition-head {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 10px;
-  align-items: baseline;
-  justify-content: space-between;
-  margin-bottom: 8px;
-}
-.tenure-composition-head h3,
-.tenure-composition-head p {
-  margin: 0;
-}
-.tenure-composition-head h3 {
-  font-size: 14px;
-}
-.tenure-composition-head p {
+.finance-total-row span {
   color: var(--text-muted);
-  font-size: 12px;
-}
-.tenure-bar {
-  display: flex;
-  min-height: 28px;
-  overflow: hidden;
-  border: 1px solid var(--border-strong);
-  border-radius: 999px;
-  background: var(--surface);
-}
-.tenure-segment {
-  display: inline-flex;
-  flex: 0 0 var(--segment-width);
-  align-items: center;
-  justify-content: center;
-  min-width: 34px;
-  color: #fff;
-  font-size: 12px;
   font-weight: 800;
 }
-.tenure-segment.is-first,
-.tenure-legend-item.is-first .tenure-swatch {
-  background: #94a3b8;
+.finance-total-row strong {
+  color: var(--text);
+  font-size: clamp(24px, 3.2vw, 34px);
+  font-weight: 900;
+  white-space: nowrap;
 }
-.tenure-segment.is-middle,
-.tenure-legend-item.is-middle .tenure-swatch {
-  background: #64748b;
-}
-.tenure-segment.is-senior,
-.tenure-legend-item.is-senior .tenure-swatch {
-  background: #334155;
-}
-.tenure-legend {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 12px;
-  margin-top: 8px;
+.finance-total-row small {
   color: var(--text-muted);
-  font-size: 12px;
 }
-.tenure-legend-item {
-  display: inline-flex;
-  gap: 5px;
+.finance-bars {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+.finance-bar-row {
+  display: grid;
+  grid-template-columns: minmax(120px, 0.9fr) minmax(120px, 1.2fr) minmax(180px, 1fr);
+  gap: 10px;
   align-items: center;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
 }
-.tenure-swatch {
-  width: 10px;
-  height: 10px;
+.finance-bar-label {
+  display: grid;
+  gap: 2px;
+}
+.finance-bar-label strong {
+  font-size: 15px;
+}
+.finance-bar-label span,
+.finance-bar-meta {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+.finance-bar-track {
+  position: relative;
+  height: 18px;
+  overflow: hidden;
   border-radius: 999px;
+  background: #e8eef2;
+}
+.finance-bar-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: var(--bar-width);
+  border-radius: inherit;
+  background: var(--bar-color);
+}
+.finance-bar-meta {
+  display: grid;
+  gap: 2px;
+  justify-items: end;
+  text-align: right;
+}
+.finance-nature-details {
+  margin-top: 16px;
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+}
+.finance-nature-details summary {
+  cursor: pointer;
+  color: var(--brand-strong);
+  font-weight: 800;
+}
+.finance-bars.is-secondary .finance-bar-row {
+  background: var(--surface-soft);
 }
 .official-links-section {
   margin-bottom: 24px;
@@ -1354,6 +1394,22 @@ main { padding: 24px 0 48px; }
 }
 .stage-tabs .view-tab {
   margin-right: 0;
+}
+.member-view-switcher {
+  display: grid;
+  gap: 12px;
+  margin: 12px 0 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+.member-view-tabs {
+  align-items: center;
+}
+.inline-member-search {
+  margin-top: 0;
+}
+.inline-member-tab-panel {
+  margin-top: 4px;
 }
 .stage-search-row {
   margin-top: 12px;
@@ -2636,6 +2692,21 @@ main { padding: 24px 0 48px; }
   }
   .timeseries-chart-head p {
     min-height: 0;
+  }
+  .finance-heading {
+    display: grid;
+  }
+  .finance-total-row {
+    display: grid;
+    gap: 4px;
+  }
+  .finance-bar-row {
+    grid-template-columns: 1fr;
+    gap: 7px;
+  }
+  .finance-bar-meta {
+    justify-items: start;
+    text-align: left;
   }
   .national-hero {
     grid-template-columns: 1fr;

@@ -1,21 +1,21 @@
-import { loadCouncilBundle, loadCouncils, loadCouncilSummaries } from "./data-loader.js?v=20260614-ui2";
-import { renderAbout } from "./render-about.js?v=20260614-ui2";
-import { renderCouncilPage } from "./render-council.js?v=20260614-ui2";
-import { renderGuide } from "./render-guide.js?v=20260614-ui2";
-import { renderMemberPage } from "./render-member.js?v=20260614-ui2";
-import { renderPrefecturePage } from "./render-prefecture.js?v=20260614-ui2";
-import { renderPrefectureComparisonPage } from "./render-prefecture-comparison.js?v=20260614-ui2";
-import { renderProfile } from "./render-profile.js?v=20260614-ui2";
-import { renderTop } from "./render-top.js?v=20260614-ui2";
+import { loadCouncilBundle, loadCouncils, loadCouncilSummaries } from "./data-loader.js?v=20260614-finance";
+import { renderAbout } from "./render-about.js?v=20260614-finance";
+import { renderCouncilPage } from "./render-council.js?v=20260614-finance";
+import { renderGuide } from "./render-guide.js?v=20260614-finance";
+import { renderMemberPage } from "./render-member.js?v=20260614-finance";
+import { renderPrefecturePage } from "./render-prefecture.js?v=20260614-finance";
+import { renderPrefectureComparisonPage } from "./render-prefecture-comparison.js?v=20260614-finance";
+import { renderProfile } from "./render-profile.js?v=20260614-finance";
+import { renderTop } from "./render-top.js?v=20260614-finance";
 import {
   councilPath,
   parseRoute,
   prefPath,
   topPath,
-} from "./router.js?v=20260614-ui2";
-import { filteredMembers } from "./search.js?v=20260614-ui2";
-import { state } from "./state.js?v=20260614-ui2";
-import { el } from "./utils.js?v=20260614-ui2";
+} from "./router.js?v=20260614-finance";
+import { filteredMembers } from "./search.js?v=20260614-finance";
+import { state } from "./state.js?v=20260614-finance";
+import { el } from "./utils.js?v=20260614-finance";
 
 const COUNCILS_WITH_VOTES = new Set([
   "kurayoshi-city",
@@ -431,6 +431,7 @@ async function applyRoute() {
     state.membersMeta = bundle.membersMeta;
     state.profile = bundle.profile;
     state.timeseries = bundle.timeseries;
+    state.finance = bundle.finance;
     state.councilSummaries = await loadCouncilSummaries(
       state.councils.filter((council) => council.prefecture === route.prefecture),
     );
@@ -505,6 +506,17 @@ function setupStageControls() {
     state.view = view;
     if (view === "votes") state.query = "";
     renderCouncilRoute();
+  });
+
+  window.addEventListener("council:show-votes", () => {
+    state.councilSection = "members";
+    state.view = "votes";
+    state.query = "";
+    renderCouncilRoute();
+    requestAnimationFrame(() => {
+      const target = document.querySelector(".stage-tab-content") || mainNode();
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
   });
 
   window.addEventListener("council:query-change", (event) => {

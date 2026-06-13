@@ -1,6 +1,6 @@
-import { state } from "./state.js?v=20260614-ui2";
-import { el } from "./utils.js?v=20260614-ui2";
-import { memberPath } from "./router.js?v=20260614-ui2";
+import { state } from "./state.js?v=20260614-finance";
+import { el } from "./utils.js?v=20260614-finance";
+import { memberPath } from "./router.js?v=20260614-finance";
 
 const IDENTIFICATION_COLORS = [
   "#0072b2", // blue

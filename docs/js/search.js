@@ -1,4 +1,4 @@
-import { state } from "./state.js?v=20260614-ui2";
+import { state } from "./state.js?v=20260614-finance";
 
 export function matchesQuery(member, query) {
   if (!query) return true;

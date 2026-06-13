@@ -1,0 +1,237 @@
+{
+  "council_id": "kurayoshi-city",
+  "updated_at": "2026-04-24T00:00:00+09:00",
+  "fiscal_year": 2024,
+  "municipal_code": "31203",
+  "lg_code": "312037",
+  "municipality_name": "倉吉市",
+  "similar_group": "一般市Ⅰ－１",
+  "population": {
+    "value": 43663,
+    "source": "finance_data_table_master.csv 人口数_人"
+  },
+  "source": {
+    "name": "総務省「地方財政状況調査」/ デジタル庁 地方財政データ",
+    "dataset": "20260424_resources_municipal-finance",
+    "fiscal_year": 2024,
+    "license": "CC BY 4.0相当",
+    "note": "手元の配布ZIPから生成。金額の生値は千円。",
+    "files": {
+      "flow": "20260424_resources_municipal-finance/finance_local_finance_data_table_flow.csv",
+      "master": "20260424_resources_municipal-finance/finance_data_table_master.csv",
+      "groups": "20260424_resources_municipal-finance/finance_data_table_groups.csv"
+    }
+  },
+  "checks": {
+    "lg_code_first_5_digits_match_municipal_code": true,
+    "purpose_total_thousand_yen": 35010171,
+    "nature_total_thousand_yen": 34056732,
+    "purpose_minus_nature_thousand_yen": 953439,
+    "purpose_share_sum_pct": 100.0,
+    "nature_share_sum_pct": 100.0
+  },
+  "similar_group_indicators": {
+    "財政力指数": {
+      "value": 0.38,
+      "unit": "'-"
+    },
+    "経常収支比率": {
+      "value": 0.9329999999999999,
+      "unit": "割合"
+    },
+    "実質公債費比率": {
+      "value": 0.08900000000000001,
+      "unit": "割合"
+    },
+    "将来負担比率": {
+      "value": 0.105214483,
+      "unit": "割合"
+    }
+  },
+  "expenditure": {
+    "purpose": {
+      "classification": "歳出 (目的)",
+      "total_thousand_yen": 35010171,
+      "total_yen": 35010171000,
+      "items": [
+        {
+          "label": "民生費",
+          "amount_thousand_yen": 11252903,
+          "amount_yen": 11252903000,
+          "amount_oku_yen": 112.529,
+          "share_pct": 32.142,
+          "per_capita_yen": 257722,
+          "similar_group_average_per_capita_yen": 240478,
+          "similar_group_average_n": 132
+        },
+        {
+          "label": "農林水産業費",
+          "amount_thousand_yen": 5892694,
+          "amount_yen": 5892694000,
+          "amount_oku_yen": 58.927,
+          "share_pct": 16.831,
+          "per_capita_yen": 134959,
+          "similar_group_average_per_capita_yen": 52519,
+          "similar_group_average_n": 132
+        },
+        {
+          "label": "教育費",
+          "amount_thousand_yen": 5323574,
+          "amount_yen": 5323574000,
+          "amount_oku_yen": 53.236,
+          "share_pct": 15.206,
+          "per_capita_yen": 121924,
+          "similar_group_average_per_capita_yen": 159288,
+          "similar_group_average_n": 132
+        },
+        {
+          "label": "総務費",
+          "amount_thousand_yen": 5185368,
+          "amount_yen": 5185368000,
+          "amount_oku_yen": 51.854,
+          "share_pct": 14.811,
+          "per_capita_yen": 118759,
+          "similar_group_average_per_capita_yen": 169428,
+          "similar_group_average_n": 132
+        },
+        {
+          "label": "公債費",
+          "amount_thousand_yen": 2805986,
+          "amount_yen": 2805986000,
+          "amount_oku_yen": 28.06,
+          "share_pct": 8.015,
+          "per_capita_yen": 64265,
+          "similar_group_average_per_capita_yen": 85266,
+          "similar_group_average_n": 132
+        },
+        {
+          "label": "土木費",
+          "amount_thousand_yen": 2531389,
+          "amount_yen": 2531389000,
+          "amount_oku_yen": 25.314,
+          "share_pct": 7.23,
+          "per_capita_yen": 57976,
+          "similar_group_average_per_capita_yen": 72725,
+          "similar_group_average_n": 132
+        },
+        {
+          "label": "衛生費",
+          "amount_thousand_yen": 1473822,
+          "amount_yen": 1473822000,
+          "amount_oku_yen": 14.738,
+          "share_pct": 4.21,
+          "per_capita_yen": 33754,
+          "similar_group_average_per_capita_yen": 132393,
+          "similar_group_average_n": 132
+        },
+        {
+          "label": "その他",
+          "amount_thousand_yen": 200425,
+          "amount_yen": 200425000,
+          "amount_oku_yen": 2.004,
+          "share_pct": 0.572,
+          "per_capita_yen": 4590,
+          "similar_group_average_per_capita_yen": 15062,
+          "similar_group_average_n": 132
+        },
+        {
+          "label": "議会費",
+          "amount_thousand_yen": 194010,
+          "amount_yen": 194010000,
+          "amount_oku_yen": 1.94,
+          "share_pct": 0.554,
+          "per_capita_yen": 4443,
+          "similar_group_average_per_capita_yen": 5857,
+          "similar_group_average_n": 132
+        },
+        {
+          "label": "労働費",
+          "amount_thousand_yen": 150000,
+          "amount_yen": 150000000,
+          "amount_oku_yen": 1.5,
+          "share_pct": 0.428,
+          "per_capita_yen": 3435,
+          "similar_group_average_per_capita_yen": 928,
+          "similar_group_average_n": 132
+        }
+      ]
+    },
+    "nature": {
+      "classification": "歳出 (性質)",
+      "total_thousand_yen": 34056732,
+      "total_yen": 34056732000,
+      "items": [
+        {
+          "label": "普通建設事業費",
+          "amount_thousand_yen": 9394225,
+          "amount_yen": 9394225000,
+          "amount_oku_yen": 93.942,
+          "share_pct": 27.584,
+          "per_capita_yen": 215153,
+          "similar_group_average_per_capita_yen": 233826,
+          "similar_group_average_n": 132
+        },
+        {
+          "label": "扶助費",
+          "amount_thousand_yen": 6962534,
+          "amount_yen": 6962534000,
+          "amount_oku_yen": 69.625,
+          "share_pct": 20.444,
+          "per_capita_yen": 159461,
+          "similar_group_average_per_capita_yen": 132304,
+          "similar_group_average_n": 132
+        },
+        {
+          "label": "その他",
+          "amount_thousand_yen": 5099896,
+          "amount_yen": 5099896000,
+          "amount_oku_yen": 50.999,
+          "share_pct": 14.975,
+          "per_capita_yen": 116801,
+          "similar_group_average_per_capita_yen": 82191,
+          "similar_group_average_n": 132
+        },
+        {
+          "label": "人件費",
+          "amount_thousand_yen": 4314008,
+          "amount_yen": 4314008000,
+          "amount_oku_yen": 43.14,
+          "share_pct": 12.667,
+          "per_capita_yen": 98802,
+          "similar_group_average_per_capita_yen": 123469,
+          "similar_group_average_n": 132
+        },
+        {
+          "label": "物件費",
+          "amount_thousand_yen": 4268967,
+          "amount_yen": 4268967000,
+          "amount_oku_yen": 42.69,
+          "share_pct": 12.535,
+          "per_capita_yen": 97771,
+          "similar_group_average_per_capita_yen": 175502,
+          "similar_group_average_n": 132
+        },
+        {
+          "label": "補助費等",
+          "amount_thousand_yen": 3816677,
+          "amount_yen": 3816677000,
+          "amount_oku_yen": 38.167,
+          "share_pct": 11.207,
+          "per_capita_yen": 87412,
+          "similar_group_average_per_capita_yen": 119249,
+          "similar_group_average_n": 132
+        },
+        {
+          "label": "公債費",
+          "amount_thousand_yen": 200425,
+          "amount_yen": 200425000,
+          "amount_oku_yen": 2.004,
+          "share_pct": 0.589,
+          "per_capita_yen": 4590,
+          "similar_group_average_per_capita_yen": 14821,
+          "similar_group_average_n": 132
+        }
+      ]
+    }
+  }
+}
