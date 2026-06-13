@@ -605,7 +605,7 @@ function renderFaceLineupSection(members, state) {
     el("div", { class: "section-heading-row" }, [
       el("div", {}, [
         el("p", { class: "eyebrow" }, "決めている人たち"),
-        el("h2", { class: "section-title" }, isFiltered ? "検索結果" : "写真で見る現在の議員"),
+        el("h2", { class: "section-title" }, isFiltered ? "検索結果" : "現在の議員"),
       ]),
       el("p", { class: "section-count" }, `${members.length}人`),
     ]),
