@@ -2,6 +2,12 @@
 
 このディレクトリ配下のデータは、鳥取県内5議会を同じ形で扱うための共通スキーマに従う。
 
+## 共通更新時刻
+
+- `updated_at` は、データの実体が最後に変化した日時を表す。取得・生成ジョブを実行した日時そのものではない。
+- 生成スクリプトは `updated_at` や `retrieved_at` などの時刻系フィールドを除いた実体を既存JSONと比較し、実体が同一ならファイルを書き換えない。
+- SSDS時系列の `source.retrieved_at` も、ファイル内の実体が最後に変化した取得日時として扱う。取得ジョブが成功してもSSDS値が変わらない場合は据え置く。
+
 ## councils.json
 
 リポジトリ直下の `councils.json` は、対応対象の議会レジストリである。
@@ -203,7 +209,7 @@ robots.txt 等により自動取得しない議会の、人間転記用入力フ
 
 配置: `docs/data/{council_id}/profile.json`
 
-`data_sources/profiles/{council_id}.json` から生成される公開用データ。入力ファイルの内容に `per_capita` と `updated_at` を加える。
+`data_sources/profiles/{council_id}.json` から生成される公開用データ。入力ファイルの内容に `per_capita` と `updated_at` を加える。`updated_at` は実体が変わった場合のみ更新する。
 
 ```json
 {

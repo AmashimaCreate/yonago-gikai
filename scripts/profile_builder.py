@@ -10,6 +10,11 @@ from pathlib import Path
 from typing import Any
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
+
+from scripts.lib.json_output import write_json_if_entity_changed  # noqa: E402
+
 COUNCILS_PATH = REPO_ROOT / "councils.json"
 INPUT_DIR = REPO_ROOT / "data_sources" / "profiles"
 OUTPUT_DIR = REPO_ROOT / "docs" / "data"
@@ -39,11 +44,8 @@ def load_json(path: Path) -> Any:
         return json.load(f)
 
 
-def write_json(path: Path, data: dict[str, Any]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-        f.write("\n")
+def write_json(path: Path, data: dict[str, Any]) -> bool:
+    return write_json_if_entity_changed(path, data)
 
 
 def is_int(value: Any) -> bool:
@@ -234,8 +236,8 @@ def main() -> int:
     for council_id, source in sources:
         profile = build_profile(council_id, source)
         output_path = OUTPUT_DIR / council_id / "profile.json"
-        write_json(output_path, profile)
-        print(f"wrote {output_path.relative_to(REPO_ROOT)}")
+        action = "wrote" if write_json(output_path, profile) else "unchanged"
+        print(f"{action} {output_path.relative_to(REPO_ROOT)}")
 
     return 0
 

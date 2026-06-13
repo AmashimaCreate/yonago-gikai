@@ -23,6 +23,8 @@ from urllib.request import Request, urlopen
 if __name__ == "__main__" and __package__ is None:
     sys.path.append(str(Path(__file__).resolve().parents[2]))
 
+from scripts.lib.json_output import write_json_if_entity_changed  # noqa: E402
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = REPO_ROOT / "docs" / "data"
 COUNCIL_ID = "tottori-pref"
@@ -465,10 +467,7 @@ class TottoriPrefVotesPdfAdapter:
     def save_votes(self, dry_run: bool = False) -> dict[str, Any]:
         data = self.scrape_votes()
         if not dry_run:
-            OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-            with OUT_PATH.open("w", encoding="utf-8") as f:
-                json.dump(data, f, ensure_ascii=False, indent=2)
-                f.write("\n")
+            write_json_if_entity_changed(OUT_PATH, data)
         return data
 
     def print_summary(self, vote_count: int) -> None:

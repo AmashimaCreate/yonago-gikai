@@ -19,6 +19,11 @@ from typing import Any
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
+
+from scripts.lib.json_output import write_json_if_entity_changed  # noqa: E402
+
 DATA_DIR = REPO_ROOT / "docs" / "data"
 ESTAT_ENDPOINT = "https://api.e-stat.go.jp/rest/3.0/app/json/getStatsData"
 INDICATOR_COUNT = 10
@@ -508,12 +513,8 @@ def build_council_payloads(
 def write_payloads(payloads: dict[str, dict[str, Any]], output_dir: Path) -> None:
     for council_id, payload in payloads.items():
         target_dir = output_dir / council_id
-        target_dir.mkdir(parents=True, exist_ok=True)
         target = target_dir / "timeseries.json"
-        target.write_text(
-            json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
-            encoding="utf-8",
-        )
+        write_json_if_entity_changed(target, payload)
 
 
 def load_json(path: Path) -> Any:

@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import json
 import sys
 import time
 from datetime import datetime, timezone
@@ -11,6 +10,8 @@ from typing import Any
 
 import requests
 from bs4 import BeautifulSoup
+
+from scripts.lib.json_output import write_json_if_entity_changed
 
 
 class CouncilScraperBase:
@@ -49,13 +50,12 @@ class CouncilScraperBase:
             raise SystemExit(1)
 
     def save_json(self, path: Path, data: dict[str, Any]) -> None:
-        """Write JSON with a UTC updated_at timestamp."""
-        path.parent.mkdir(parents=True, exist_ok=True)
+        """Write JSON with updated_at only when entity data changed."""
         payload = dict(data)
         payload["updated_at"] = datetime.now(timezone.utc).isoformat(
             timespec="seconds"
         )
-        with path.open("w", encoding="utf-8") as f:
-            json.dump(payload, f, ensure_ascii=False, indent=2)
-            f.write("\n")
-        print(f"wrote {path}")
+        if write_json_if_entity_changed(path, payload):
+            print(f"wrote {path}")
+        else:
+            print(f"unchanged {path}")

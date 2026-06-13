@@ -12,10 +12,10 @@ import argparse
 import datetime as dt
 import hashlib
 import html
-import json
 import re
 import shutil
 import subprocess
+import sys
 import tempfile
 import time
 import unicodedata
@@ -26,6 +26,11 @@ from typing import Any
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
+
+from scripts.lib.json_output import write_json_if_entity_changed  # noqa: E402
+
 DATA_DIR = REPO_ROOT / "docs" / "data"
 LISTING_URL = "https://www.city.yonago.lg.jp/13764.htm"
 COUNCIL_ID = "yonago-city"
@@ -344,11 +349,7 @@ def main() -> None:
 
     payload = build_payload(args.start, args.end)
     if not args.dry_run:
-        args.output.parent.mkdir(parents=True, exist_ok=True)
-        args.output.write_text(
-            json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
-            encoding="utf-8",
-        )
+        write_json_if_entity_changed(args.output, payload)
 
     for check in payload["source_checks"]:
         summary = check["checks"]
