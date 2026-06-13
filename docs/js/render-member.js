@@ -1,7 +1,7 @@
-import { acquisitionText, cautionNote, coverageText, sourceLink } from "./data-quality.js?v=20260614-finance-merged";
-import { councilAreaName, officialCouncilUrl, renderAiPromptCard } from "./render-ai-prompt.js?v=20260614-finance-merged";
-import { hasMemberVoteLayer, renderMemberVoteSection } from "./render-votes.js?v=20260614-finance-merged";
-import { el } from "./utils.js?v=20260614-finance-merged";
+import { acquisitionText, cautionNote, coverageText, sourceLink } from "./data-quality.js?v=20260614-finance-integrated";
+import { councilAreaName, officialCouncilUrl, renderAiPromptCard } from "./render-ai-prompt.js?v=20260614-finance-integrated";
+import { hasMemberVoteLayer, renderMemberVoteSection } from "./render-votes.js?v=20260614-finance-integrated";
+import { el } from "./utils.js?v=20260614-finance-integrated";
 
 export function renderMemberPage(root, state, memberId) {
   const member = state.members.find((item) => item.id === memberId);
