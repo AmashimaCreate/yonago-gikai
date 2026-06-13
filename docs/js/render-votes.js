@@ -120,7 +120,7 @@ function renderResultOnlyVoteSection(votes, council) {
   ]);
 }
 
-export function renderResultOnlyVoteCard(vote, council = null) {
+export function renderResultOnlyVoteCard(vote) {
   return el("article", { class: "result-only-vote-card" }, [
     el("div", { class: "result-only-vote-head" }, [
       el("span", { class: "vote-date" }, vote.date || "日付なし"),
@@ -128,7 +128,6 @@ export function renderResultOnlyVoteCard(vote, council = null) {
     ]),
     el("h3", {}, vote.bill_title || "議案名なし"),
     el("p", { class: "vote-result" }, `結果: ${vote.result || "結果なし"}`),
-    council ? renderVoteResearchPrompt(vote, council) : null,
   ]);
 }
 

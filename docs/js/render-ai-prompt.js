@@ -5,7 +5,7 @@ const AI_SERVICES = [
   {
     key: "chatgpt",
     label: "ChatGPT",
-    icon: "G",
+    icon: "GPT",
     baseUrl: "https://chatgpt.com/",
     url: (encoded) => `https://chatgpt.com/?q=${encoded}`,
     acceptsPrompt: true,

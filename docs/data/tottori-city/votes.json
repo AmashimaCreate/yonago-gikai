@@ -1,0 +1,106 @@
+{
+  "council_id": "tottori-city",
+  "updated_at": "2026-06-14T01:40:00+09:00",
+  "acquisition": "manual_transcription",
+  "granularity": "result_only",
+  "source_url": "https://www.city.tottori.lg.jp/site/shigikai/6332.html",
+  "coverage": {
+    "scope": "公式PDFから確認できた議案ごとの議決結果のみ",
+    "note": "議員別の賛否PDFは会期により抽出可否が異なるため、このファイルでは議案ごとの結果だけを収録する。令和8年2月定例会PDFは本文抽出不可のため未収録。"
+  },
+  "source_checks": [
+    {
+      "session": "令和8年第2回臨時会",
+      "session_month": "2026-05-01",
+      "source_url": "https://www.city.tottori.lg.jp/uploaded/attachment/47430.pdf",
+      "accepted": true,
+      "is_text_pdf": true,
+      "summary_counts": {
+        "議案": 5,
+        "報告": 1
+      },
+      "checks": {
+        "report_rows_excluded": 1,
+        "parsed_count": 5,
+        "manual_title_check": true
+      }
+    }
+  ],
+  "votes": [
+    {
+      "id": "tottori-city--r8-2-rinji-gian-70",
+      "council_id": "tottori-city",
+      "session": "令和8年第2回臨時会",
+      "category": "市長提出議案",
+      "bill_no": "議案第70号",
+      "bill_title": "令和8年度鳥取市一般会計補正予算（第1号）",
+      "date": "2026-05-08",
+      "result": "原案可決",
+      "granularity": "result_only",
+      "votes_by_member": null,
+      "votes_by_faction": null,
+      "source_url": "https://www.city.tottori.lg.jp/uploaded/attachment/47430.pdf",
+      "source_row_index": 1
+    },
+    {
+      "id": "tottori-city--r8-2-rinji-gian-71",
+      "council_id": "tottori-city",
+      "session": "令和8年第2回臨時会",
+      "category": "市長提出議案",
+      "bill_no": "議案第71号",
+      "bill_title": "令和8年度鳥取市下水道等事業会計補正予算（第1号）",
+      "date": "2026-05-08",
+      "result": "原案可決",
+      "granularity": "result_only",
+      "votes_by_member": null,
+      "votes_by_faction": null,
+      "source_url": "https://www.city.tottori.lg.jp/uploaded/attachment/47430.pdf",
+      "source_row_index": 2
+    },
+    {
+      "id": "tottori-city--r8-2-rinji-gian-72",
+      "council_id": "tottori-city",
+      "session": "令和8年第2回臨時会",
+      "category": "市長提出議案",
+      "bill_no": "議案第72号",
+      "bill_title": "財産の取得について",
+      "date": "2026-05-08",
+      "result": "原案可決",
+      "granularity": "result_only",
+      "votes_by_member": null,
+      "votes_by_faction": null,
+      "source_url": "https://www.city.tottori.lg.jp/uploaded/attachment/47430.pdf",
+      "source_row_index": 3
+    },
+    {
+      "id": "tottori-city--r8-2-rinji-gian-73",
+      "council_id": "tottori-city",
+      "session": "令和8年第2回臨時会",
+      "category": "市長提出議案",
+      "bill_no": "議案第73号",
+      "bill_title": "専決処分事項の報告及び承認について",
+      "date": "2026-05-08",
+      "result": "承認",
+      "granularity": "result_only",
+      "votes_by_member": null,
+      "votes_by_faction": null,
+      "source_url": "https://www.city.tottori.lg.jp/uploaded/attachment/47430.pdf",
+      "source_row_index": 4
+    },
+    {
+      "id": "tottori-city--r8-2-rinji-gian-74",
+      "council_id": "tottori-city",
+      "session": "令和8年第2回臨時会",
+      "category": "市長提出議案",
+      "bill_no": "議案第74号",
+      "bill_title": "専決処分事項の報告及び承認について",
+      "date": "2026-05-08",
+      "result": "承認",
+      "granularity": "result_only",
+      "votes_by_member": null,
+      "votes_by_faction": null,
+      "source_url": "https://www.city.tottori.lg.jp/uploaded/attachment/47430.pdf",
+      "source_row_index": 5
+    }
+  ]
+}

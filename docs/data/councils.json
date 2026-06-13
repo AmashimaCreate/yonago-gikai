@@ -26,7 +26,7 @@
       "prefecture_name": "鳥取県",
       "lg_code": "312011",
       "minutes_system": "dbsr",
-      "vote_granularity": "unknown",
+      "vote_granularity": "result_only",
       "votes_official_url": "https://www.city.tottori.lg.jp/site/shigikai/6332.html",
       "official_links": [
         {"label": "議会の公式サイト", "url": "https://www.city.tottori.lg.jp/site/shigikai/"},

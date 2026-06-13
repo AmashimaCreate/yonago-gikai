@@ -65,8 +65,12 @@ function renderMemberSearchLink(member, council) {
 
 function renderMemberResearchSection(member, state) {
   const council = state.currentCouncil;
-  return el("section", { class: "research-section page-card" }, [
-    el("p", { class: "eyebrow" }, "もっと調べる"),
+  return el("details", { class: "research-section member-research-details page-card" }, [
+    el("summary", {}, [
+      el("span", { class: "eyebrow" }, "もっと調べる"),
+      el("strong", {}, "AIに聞いてみる"),
+      el("small", {}, "質問の雛形を開く"),
+    ]),
     renderAiPromptCard({
       title: "AIに聞いてみる",
       lead: "目的に合わせた質問の雛形を用意しました",

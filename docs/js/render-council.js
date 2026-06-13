@@ -596,7 +596,6 @@ function renderFaceLineupSection(members, state) {
     ? [el("p", { class: "empty-message" }, "該当する議員はいません。")]
     : [
         renderCompactFactionChart(state.members),
-        renderTenureComposition(state.members),
         el("div", { class: "face-lineup-groups" }, groups.map(([faction, list]) =>
           renderFactionFaceGroup(faction, list, state),
         )),

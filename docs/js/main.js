@@ -20,6 +20,7 @@ import { el } from "./utils.js";
 const COUNCILS_WITH_VOTES = new Set([
   "kurayoshi-city",
   "tottori-pref",
+  "tottori-city",
   "sakaiminato-city",
   "yonago-city",
 ]);
