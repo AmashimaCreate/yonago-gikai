@@ -1,10 +1,10 @@
 {
   "council_id": "sakaiminato-city",
-  "updated_at": "2026-06-12T23:43:28+00:00",
+  "updated_at": "2026-06-13T00:47:15+00:00",
   "source": {
     "provider": "e-Stat 社会・人口統計体系（SSDS）",
     "api": "getStatsData",
-    "retrieved_at": "2026-06-12T23:43:28+00:00",
+    "retrieved_at": "2026-06-13T00:47:15+00:00",
     "area_code": "31204",
     "statsDataIds": {
       "population_total": "0000020101",
