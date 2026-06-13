@@ -1,8 +1,8 @@
-import { dataQualityPanel } from "./data-quality.js?v=20260614-finance-integrated";
-import { renderFinanceSection } from "./render-finance.js?v=20260614-finance-integrated";
-import { renderFactionCompositionChart } from "./render-faction-chart.js?v=20260614-finance-integrated";
-import { formatDecimal, formatPeople, formatYen } from "./render-profile.js?v=20260614-finance-integrated";
-import { renderProfileVisualization } from "./render-profile-viz.js?v=20260614-finance-integrated";
+import { dataQualityPanel } from "./data-quality.js?v=20260614-finance-purpose-folded";
+import { renderFinanceSection } from "./render-finance.js?v=20260614-finance-purpose-folded";
+import { renderFactionCompositionChart } from "./render-faction-chart.js?v=20260614-finance-purpose-folded";
+import { formatDecimal, formatPeople, formatYen } from "./render-profile.js?v=20260614-finance-purpose-folded";
+import { renderProfileVisualization } from "./render-profile-viz.js?v=20260614-finance-purpose-folded";
 import {
   hasMemberVoteLayer,
   hasResultOnlyVoteLayer,
@@ -10,7 +10,7 @@ import {
   renderResultOnlyVoteCard,
   renderVoteAvailabilityNotice,
   sortedVotesByDate,
-} from "./render-votes.js?v=20260614-finance-integrated";
+} from "./render-votes.js?v=20260614-finance-purpose-folded";
 import {
   renderCommitteeView,
   renderKaihaView,
@@ -18,9 +18,9 @@ import {
   memberFaction,
   renderRoleView,
   renderTermView,
-} from "./render-members.js?v=20260614-finance-integrated";
-import { memberPath } from "./router.js?v=20260614-finance-integrated";
-import { el } from "./utils.js?v=20260614-finance-integrated";
+} from "./render-members.js?v=20260614-finance-purpose-folded";
+import { memberPath } from "./router.js?v=20260614-finance-purpose-folded";
+import { el } from "./utils.js?v=20260614-finance-purpose-folded";
 
 export function renderCouncilPage(root, state, filteredMembers) {
   root.innerHTML = "";

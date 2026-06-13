@@ -1,4 +1,4 @@
-import { el } from "./utils.js?v=20260614-finance-integrated";
+import { el } from "./utils.js?v=20260614-finance-purpose-folded";
 
 const PURPOSE_COLORS = [
   "#0072b2",
@@ -39,8 +39,8 @@ export function renderFinanceSection(finance) {
       el("small", {}, `1人あたり ${formatYenPerPerson(totalPerCapita(purpose, finance.population?.value))}/人`),
     ]),
     renderFinanceOverview(purpose, "目的別歳出の構成"),
-    el("div", { class: "finance-detail-block finance-purpose-detail" }, [
-      el("h3", {}, "費目ごとの内訳"),
+    el("details", { class: "finance-detail-block finance-purpose-detail" }, [
+      el("summary", {}, "費目ごとの内訳を見る"),
       renderFinanceBarList(purpose),
     ]),
     el("p", { class: "finance-note" },

@@ -1,21 +1,21 @@
-import { loadCouncilBundle, loadCouncils, loadCouncilSummaries } from "./data-loader.js?v=20260614-finance-integrated";
-import { renderAbout } from "./render-about.js?v=20260614-finance-integrated";
-import { renderCouncilPage } from "./render-council.js?v=20260614-finance-integrated";
-import { renderGuide } from "./render-guide.js?v=20260614-finance-integrated";
-import { renderMemberPage } from "./render-member.js?v=20260614-finance-integrated";
-import { renderPrefecturePage } from "./render-prefecture.js?v=20260614-finance-integrated";
-import { renderPrefectureComparisonPage } from "./render-prefecture-comparison.js?v=20260614-finance-integrated";
-import { renderProfile } from "./render-profile.js?v=20260614-finance-integrated";
-import { renderTop } from "./render-top.js?v=20260614-finance-integrated";
+import { loadCouncilBundle, loadCouncils, loadCouncilSummaries } from "./data-loader.js?v=20260614-finance-purpose-folded";
+import { renderAbout } from "./render-about.js?v=20260614-finance-purpose-folded";
+import { renderCouncilPage } from "./render-council.js?v=20260614-finance-purpose-folded";
+import { renderGuide } from "./render-guide.js?v=20260614-finance-purpose-folded";
+import { renderMemberPage } from "./render-member.js?v=20260614-finance-purpose-folded";
+import { renderPrefecturePage } from "./render-prefecture.js?v=20260614-finance-purpose-folded";
+import { renderPrefectureComparisonPage } from "./render-prefecture-comparison.js?v=20260614-finance-purpose-folded";
+import { renderProfile } from "./render-profile.js?v=20260614-finance-purpose-folded";
+import { renderTop } from "./render-top.js?v=20260614-finance-purpose-folded";
 import {
   councilPath,
   parseRoute,
   prefPath,
   topPath,
-} from "./router.js?v=20260614-finance-integrated";
-import { filteredMembers } from "./search.js?v=20260614-finance-integrated";
-import { state } from "./state.js?v=20260614-finance-integrated";
-import { el } from "./utils.js?v=20260614-finance-integrated";
+} from "./router.js?v=20260614-finance-purpose-folded";
+import { filteredMembers } from "./search.js?v=20260614-finance-purpose-folded";
+import { state } from "./state.js?v=20260614-finance-purpose-folded";
+import { el } from "./utils.js?v=20260614-finance-purpose-folded";
 
 const COUNCILS_WITH_VOTES = new Set([
   "kurayoshi-city",

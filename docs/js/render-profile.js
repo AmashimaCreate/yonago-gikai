@@ -1,4 +1,4 @@
-import { el } from "./utils.js?v=20260614-finance-integrated";
+import { el } from "./utils.js?v=20260614-finance-purpose-folded";
 
 export function formatNumber(value) {
   if (typeof value !== "number") return null;

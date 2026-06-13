@@ -1,5 +1,5 @@
-import { kaihaColor, memberFaction } from "./render-members.js?v=20260614-finance-integrated";
-import { el } from "./utils.js?v=20260614-finance-integrated";
+import { kaihaColor, memberFaction } from "./render-members.js?v=20260614-finance-purpose-folded";
+import { el } from "./utils.js?v=20260614-finance-purpose-folded";
 
 const SVG_NS = "http://www.w3.org/2000/svg";
 const CHART_WIDTH = 1000;

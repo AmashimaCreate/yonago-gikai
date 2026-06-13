@@ -1,4 +1,4 @@
-import { state } from "./state.js?v=20260614-finance-integrated";
+import { state } from "./state.js?v=20260614-finance-purpose-folded";
 
 export function matchesQuery(member, query) {
   if (!query) return true;
