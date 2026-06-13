@@ -1,5 +1,5 @@
-import { councilPath, prefComparePath } from "./router.js?v=20260614-finance";
-import { el } from "./utils.js?v=20260614-finance";
+import { councilPath, prefComparePath } from "./router.js?v=20260614-finance-compact";
+import { el } from "./utils.js?v=20260614-finance-compact";
 
 export function renderPrefecturePage(root, councils, prefecture = "tottori", summaries = []) {
   root.innerHTML = "";

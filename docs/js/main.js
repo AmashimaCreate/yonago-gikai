@@ -1,21 +1,21 @@
-import { loadCouncilBundle, loadCouncils, loadCouncilSummaries } from "./data-loader.js?v=20260614-finance";
-import { renderAbout } from "./render-about.js?v=20260614-finance";
-import { renderCouncilPage } from "./render-council.js?v=20260614-finance";
-import { renderGuide } from "./render-guide.js?v=20260614-finance";
-import { renderMemberPage } from "./render-member.js?v=20260614-finance";
-import { renderPrefecturePage } from "./render-prefecture.js?v=20260614-finance";
-import { renderPrefectureComparisonPage } from "./render-prefecture-comparison.js?v=20260614-finance";
-import { renderProfile } from "./render-profile.js?v=20260614-finance";
-import { renderTop } from "./render-top.js?v=20260614-finance";
+import { loadCouncilBundle, loadCouncils, loadCouncilSummaries } from "./data-loader.js?v=20260614-finance-compact";
+import { renderAbout } from "./render-about.js?v=20260614-finance-compact";
+import { renderCouncilPage } from "./render-council.js?v=20260614-finance-compact";
+import { renderGuide } from "./render-guide.js?v=20260614-finance-compact";
+import { renderMemberPage } from "./render-member.js?v=20260614-finance-compact";
+import { renderPrefecturePage } from "./render-prefecture.js?v=20260614-finance-compact";
+import { renderPrefectureComparisonPage } from "./render-prefecture-comparison.js?v=20260614-finance-compact";
+import { renderProfile } from "./render-profile.js?v=20260614-finance-compact";
+import { renderTop } from "./render-top.js?v=20260614-finance-compact";
 import {
   councilPath,
   parseRoute,
   prefPath,
   topPath,
-} from "./router.js?v=20260614-finance";
-import { filteredMembers } from "./search.js?v=20260614-finance";
-import { state } from "./state.js?v=20260614-finance";
-import { el } from "./utils.js?v=20260614-finance";
+} from "./router.js?v=20260614-finance-compact";
+import { filteredMembers } from "./search.js?v=20260614-finance-compact";
+import { state } from "./state.js?v=20260614-finance-compact";
+import { el } from "./utils.js?v=20260614-finance-compact";
 
 const COUNCILS_WITH_VOTES = new Set([
   "kurayoshi-city",

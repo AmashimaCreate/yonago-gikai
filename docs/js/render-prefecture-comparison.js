@@ -2,8 +2,8 @@ import {
   formatDecimal,
   formatPeople,
   sourceLink,
-} from "./render-profile.js?v=20260614-finance";
-import { el } from "./utils.js?v=20260614-finance";
+} from "./render-profile.js?v=20260614-finance-compact";
+import { el } from "./utils.js?v=20260614-finance-compact";
 
 const SVG_NS = "http://www.w3.org/2000/svg";
 const COUNCIL_ORDER = [

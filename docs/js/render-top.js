@@ -1,5 +1,5 @@
-import { prefPath } from "./router.js?v=20260614-finance";
-import { el } from "./utils.js?v=20260614-finance";
+import { prefPath } from "./router.js?v=20260614-finance-compact";
+import { el } from "./utils.js?v=20260614-finance-compact";
 
 export function renderTop(root) {
   root.innerHTML = "";

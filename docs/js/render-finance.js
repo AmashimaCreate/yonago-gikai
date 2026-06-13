@@ -1,4 +1,4 @@
-import { el } from "./utils.js?v=20260614-finance";
+import { el } from "./utils.js?v=20260614-finance-compact";
 
 const PURPOSE_COLORS = [
   "#0072b2",
