@@ -1,21 +1,21 @@
-import { loadCouncilBundle, loadCouncils, loadCouncilSummaries } from "./data-loader.js?v=20260614-finance-compact";
-import { renderAbout } from "./render-about.js?v=20260614-finance-compact";
-import { renderCouncilPage } from "./render-council.js?v=20260614-finance-compact";
-import { renderGuide } from "./render-guide.js?v=20260614-finance-compact";
-import { renderMemberPage } from "./render-member.js?v=20260614-finance-compact";
-import { renderPrefecturePage } from "./render-prefecture.js?v=20260614-finance-compact";
-import { renderPrefectureComparisonPage } from "./render-prefecture-comparison.js?v=20260614-finance-compact";
-import { renderProfile } from "./render-profile.js?v=20260614-finance-compact";
-import { renderTop } from "./render-top.js?v=20260614-finance-compact";
+import { loadCouncilBundle, loadCouncils, loadCouncilSummaries } from "./data-loader.js?v=20260614-finance-merged";
+import { renderAbout } from "./render-about.js?v=20260614-finance-merged";
+import { renderCouncilPage } from "./render-council.js?v=20260614-finance-merged";
+import { renderGuide } from "./render-guide.js?v=20260614-finance-merged";
+import { renderMemberPage } from "./render-member.js?v=20260614-finance-merged";
+import { renderPrefecturePage } from "./render-prefecture.js?v=20260614-finance-merged";
+import { renderPrefectureComparisonPage } from "./render-prefecture-comparison.js?v=20260614-finance-merged";
+import { renderProfile } from "./render-profile.js?v=20260614-finance-merged";
+import { renderTop } from "./render-top.js?v=20260614-finance-merged";
 import {
   councilPath,
   parseRoute,
   prefPath,
   topPath,
-} from "./router.js?v=20260614-finance-compact";
-import { filteredMembers } from "./search.js?v=20260614-finance-compact";
-import { state } from "./state.js?v=20260614-finance-compact";
-import { el } from "./utils.js?v=20260614-finance-compact";
+} from "./router.js?v=20260614-finance-merged";
+import { filteredMembers } from "./search.js?v=20260614-finance-merged";
+import { state } from "./state.js?v=20260614-finance-merged";
+import { el } from "./utils.js?v=20260614-finance-merged";
 
 const COUNCILS_WITH_VOTES = new Set([
   "kurayoshi-city",

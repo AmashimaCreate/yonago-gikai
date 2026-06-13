@@ -1,8 +1,8 @@
-import { dataQualityPanel } from "./data-quality.js?v=20260614-finance-compact";
-import { renderFinanceSection } from "./render-finance.js?v=20260614-finance-compact";
-import { renderFactionCompositionChart } from "./render-faction-chart.js?v=20260614-finance-compact";
-import { formatDecimal, formatPeople, formatYen } from "./render-profile.js?v=20260614-finance-compact";
-import { renderProfileVisualization } from "./render-profile-viz.js?v=20260614-finance-compact";
+import { dataQualityPanel } from "./data-quality.js?v=20260614-finance-merged";
+import { renderFinanceSection } from "./render-finance.js?v=20260614-finance-merged";
+import { renderFactionCompositionChart } from "./render-faction-chart.js?v=20260614-finance-merged";
+import { formatDecimal, formatPeople, formatYen } from "./render-profile.js?v=20260614-finance-merged";
+import { renderProfileVisualization } from "./render-profile-viz.js?v=20260614-finance-merged";
 import {
   hasMemberVoteLayer,
   hasResultOnlyVoteLayer,
@@ -10,7 +10,7 @@ import {
   renderResultOnlyVoteCard,
   renderVoteAvailabilityNotice,
   sortedVotesByDate,
-} from "./render-votes.js?v=20260614-finance-compact";
+} from "./render-votes.js?v=20260614-finance-merged";
 import {
   renderCommitteeView,
   renderKaihaView,
@@ -18,9 +18,9 @@ import {
   memberFaction,
   renderRoleView,
   renderTermView,
-} from "./render-members.js?v=20260614-finance-compact";
-import { memberPath } from "./router.js?v=20260614-finance-compact";
-import { el } from "./utils.js?v=20260614-finance-compact";
+} from "./render-members.js?v=20260614-finance-merged";
+import { memberPath } from "./router.js?v=20260614-finance-merged";
+import { el } from "./utils.js?v=20260614-finance-merged";
 
 export function renderCouncilPage(root, state, filteredMembers) {
   root.innerHTML = "";
@@ -95,15 +95,20 @@ function renderStageOneCouncilPage(root, state, filteredMembers) {
     return;
   }
 
-  root.appendChild(renderCouncilHero(state));
-  const financeSection = renderFinanceSection(state.finance);
-  if (financeSection) root.appendChild(financeSection);
+  root.appendChild(renderAreaOverview(state));
 
   const timeseriesSection = renderTimeseriesSection(state);
   if (timeseriesSection) root.appendChild(timeseriesSection);
 
   const officialLinks = renderOfficialLinksSection(state.currentCouncil);
   if (officialLinks) root.appendChild(officialLinks);
+}
+
+function renderAreaOverview(state) {
+  const children = [renderCouncilHero(state)];
+  const financeSection = renderFinanceSection(state.finance);
+  if (financeSection) children.push(financeSection);
+  return el("section", { class: "area-overview-card page-card" }, children);
 }
 
 function renderCouncilSectionTabs(state) {
@@ -143,7 +148,7 @@ function renderCouncilHero(state) {
   const areaName = areaNameForCouncil(state.currentCouncil);
   const areaType = areaTypeLabel(state.currentCouncil);
 
-  return el("section", { class: "council-hero page-card" }, [
+  return el("div", { class: "council-hero" }, [
     el("div", { class: "hero-copy" }, [
       el("p", { class: "eyebrow" }, state.currentCouncil.type === "prefecture" ? "この県の今" : "この街の今"),
       el("h2", {}, `${areaName}の今`),

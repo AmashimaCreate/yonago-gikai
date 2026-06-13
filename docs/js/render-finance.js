@@ -1,4 +1,4 @@
-import { el } from "./utils.js?v=20260614-finance-compact";
+import { el } from "./utils.js?v=20260614-finance-merged";
 
 const PURPOSE_COLORS = [
   "#0072b2",
@@ -19,7 +19,7 @@ export function renderFinanceSection(finance) {
   const purpose = finance.expenditure.purpose;
   const nature = finance.expenditure.nature;
 
-  return el("section", { class: "finance-section page-card" }, [
+  return el("section", { class: "finance-section" }, [
     el("div", { class: "section-heading-row finance-heading" }, [
       el("div", {}, [
         el("p", { class: "eyebrow" }, "このまちのお金の使いみち"),
@@ -39,25 +39,48 @@ export function renderFinanceSection(finance) {
       el("small", {}, `1人あたり ${formatYenPerPerson(totalPerCapita(purpose, finance.population?.value))}/人`),
     ]),
     renderFinanceOverview(purpose, "目的別歳出の構成"),
-    el("details", { class: "finance-detail-block" }, [
-      el("summary", {}, "費目ごとの内訳を見る"),
+    el("div", { class: "finance-detail-block finance-purpose-detail" }, [
+      el("h3", {}, "費目ごとの内訳"),
       renderFinanceBarList(purpose),
     ]),
     el("p", { class: "finance-note" },
       "1人あたり額は歳出を人口で割った参考値です。国や県からのお金も含むため、市民の負担額ではありません。",
     ),
+    el("p", { class: "finance-source finance-source-minimal" },
+      `出典: ${finance.source?.name || "総務省「地方財政状況調査」/デジタル庁"}（${finance.fiscal_year}年度決算）`,
+    ),
     nature?.items?.length
       ? el("details", { class: "finance-detail-block finance-nature-details" }, [
           el("summary", {}, "性質別歳出（人件費・扶助費など）を見る"),
+          renderNatureExplanation(),
           renderFinanceOverview(nature, "性質別歳出の構成", true),
           renderFinanceBarList(nature, true),
+          renderFullSource(finance),
         ])
       : null,
-    el("p", { class: "finance-source" }, [
-      `出典: ${finance.source?.name || "地方財政データ"}（${finance.fiscal_year}年度決算）。`,
-      `ライセンス: ${finance.source?.license || "出典表記が必要なオープンデータ"}。`,
-      "予算は計画、決算は実績です。",
+  ]);
+}
+
+function renderNatureExplanation() {
+  return el("div", { class: "finance-nature-explain" }, [
+    el("h3", {}, "性質別歳出とは"),
+    el("p", {}, "目的別が「何のために」使ったか(福祉・教育など)を表すのに対し、性質別は「どんな形で」使ったかを表します。"),
+    el("ul", {}, [
+      el("li", {}, [el("strong", {}, "人件費: "), "職員の給料など、人に関わる費用"]),
+      el("li", {}, [el("strong", {}, "扶助費: "), "生活保護や児童手当など、暮らしを支えるために直接支払うお金"]),
+      el("li", {}, [el("strong", {}, "普通建設事業費: "), "道路や学校など、ものを作るための費用"]),
+      el("li", {}, [el("strong", {}, "物件費: "), "物の購入や委託、光熱費など、運営にかかる費用"]),
+      el("li", {}, [el("strong", {}, "補助費等: "), "団体や他の組織への補助・負担金"]),
+      el("li", {}, [el("strong", {}, "公債費: "), "借金(地方債)の返済"]),
     ]),
+  ]);
+}
+
+function renderFullSource(finance) {
+  return el("p", { class: "finance-source finance-source-full" }, [
+    `出典: ${finance.source?.name || "地方財政データ"}（${finance.fiscal_year}年度決算）。`,
+    `ライセンス: ${finance.source?.license || "出典表記が必要なオープンデータ"}。`,
+    "予算は計画、決算は実績です。",
   ]);
 }
 

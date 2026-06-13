@@ -1,4 +1,4 @@
-import { el } from "./utils.js?v=20260614-finance-compact";
+import { el } from "./utils.js?v=20260614-finance-merged";
 
 export function acquisitionText(membersMeta) {
   const acquisition = membersMeta?.acquisition;

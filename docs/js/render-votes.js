@@ -1,7 +1,7 @@
-import { sourceLink } from "./data-quality.js?v=20260614-finance-compact";
-import { councilAreaName, renderAiPromptCard } from "./render-ai-prompt.js?v=20260614-finance-compact";
-import { memberPath } from "./router.js?v=20260614-finance-compact";
-import { el } from "./utils.js?v=20260614-finance-compact";
+import { sourceLink } from "./data-quality.js?v=20260614-finance-merged";
+import { councilAreaName, renderAiPromptCard } from "./render-ai-prompt.js?v=20260614-finance-merged";
+import { memberPath } from "./router.js?v=20260614-finance-merged";
+import { el } from "./utils.js?v=20260614-finance-merged";
 
 const VOTE_ORDER = ["賛成", "反対", "退席", "欠席", "議長", "除斥", "継続審査"];
 const SPLIT_VOTE_THRESHOLD = 0.3;
