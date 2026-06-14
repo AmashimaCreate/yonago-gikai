@@ -1,6 +1,366 @@
 {
   "councils": [
     {
+      "id": "hokkaido-pref",
+      "name": "北海道議会",
+      "type": "prefecture",
+      "prefecture": "hokkaido",
+      "prefecture_name": "北海道",
+      "lg_code": "010006",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "aomori-pref",
+      "name": "青森県議会",
+      "type": "prefecture",
+      "prefecture": "aomori",
+      "prefecture_name": "青森県",
+      "lg_code": "020001",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "iwate-pref",
+      "name": "岩手県議会",
+      "type": "prefecture",
+      "prefecture": "iwate",
+      "prefecture_name": "岩手県",
+      "lg_code": "030007",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "miyagi-pref",
+      "name": "宮城県議会",
+      "type": "prefecture",
+      "prefecture": "miyagi",
+      "prefecture_name": "宮城県",
+      "lg_code": "040002",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "akita-pref",
+      "name": "秋田県議会",
+      "type": "prefecture",
+      "prefecture": "akita",
+      "prefecture_name": "秋田県",
+      "lg_code": "050008",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "yamagata-pref",
+      "name": "山形県議会",
+      "type": "prefecture",
+      "prefecture": "yamagata",
+      "prefecture_name": "山形県",
+      "lg_code": "060003",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "fukushima-pref",
+      "name": "福島県議会",
+      "type": "prefecture",
+      "prefecture": "fukushima",
+      "prefecture_name": "福島県",
+      "lg_code": "070009",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "ibaraki-pref",
+      "name": "茨城県議会",
+      "type": "prefecture",
+      "prefecture": "ibaraki",
+      "prefecture_name": "茨城県",
+      "lg_code": "080004",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "tochigi-pref",
+      "name": "栃木県議会",
+      "type": "prefecture",
+      "prefecture": "tochigi",
+      "prefecture_name": "栃木県",
+      "lg_code": "090000",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "gunma-pref",
+      "name": "群馬県議会",
+      "type": "prefecture",
+      "prefecture": "gunma",
+      "prefecture_name": "群馬県",
+      "lg_code": "100005",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "saitama-pref",
+      "name": "埼玉県議会",
+      "type": "prefecture",
+      "prefecture": "saitama",
+      "prefecture_name": "埼玉県",
+      "lg_code": "110001",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "chiba-pref",
+      "name": "千葉県議会",
+      "type": "prefecture",
+      "prefecture": "chiba",
+      "prefecture_name": "千葉県",
+      "lg_code": "120006",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "tokyo-pref",
+      "name": "東京都議会",
+      "type": "prefecture",
+      "prefecture": "tokyo",
+      "prefecture_name": "東京都",
+      "lg_code": "130001",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "kanagawa-pref",
+      "name": "神奈川県議会",
+      "type": "prefecture",
+      "prefecture": "kanagawa",
+      "prefecture_name": "神奈川県",
+      "lg_code": "140007",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "niigata-pref",
+      "name": "新潟県議会",
+      "type": "prefecture",
+      "prefecture": "niigata",
+      "prefecture_name": "新潟県",
+      "lg_code": "150002",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "toyama-pref",
+      "name": "富山県議会",
+      "type": "prefecture",
+      "prefecture": "toyama",
+      "prefecture_name": "富山県",
+      "lg_code": "160008",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "ishikawa-pref",
+      "name": "石川県議会",
+      "type": "prefecture",
+      "prefecture": "ishikawa",
+      "prefecture_name": "石川県",
+      "lg_code": "170003",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "fukui-pref",
+      "name": "福井県議会",
+      "type": "prefecture",
+      "prefecture": "fukui",
+      "prefecture_name": "福井県",
+      "lg_code": "180009",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "yamanashi-pref",
+      "name": "山梨県議会",
+      "type": "prefecture",
+      "prefecture": "yamanashi",
+      "prefecture_name": "山梨県",
+      "lg_code": "190004",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "nagano-pref",
+      "name": "長野県議会",
+      "type": "prefecture",
+      "prefecture": "nagano",
+      "prefecture_name": "長野県",
+      "lg_code": "200000",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "gifu-pref",
+      "name": "岐阜県議会",
+      "type": "prefecture",
+      "prefecture": "gifu",
+      "prefecture_name": "岐阜県",
+      "lg_code": "210005",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "shizuoka-pref",
+      "name": "静岡県議会",
+      "type": "prefecture",
+      "prefecture": "shizuoka",
+      "prefecture_name": "静岡県",
+      "lg_code": "220001",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "aichi-pref",
+      "name": "愛知県議会",
+      "type": "prefecture",
+      "prefecture": "aichi",
+      "prefecture_name": "愛知県",
+      "lg_code": "230006",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "mie-pref",
+      "name": "三重県議会",
+      "type": "prefecture",
+      "prefecture": "mie",
+      "prefecture_name": "三重県",
+      "lg_code": "240001",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "shiga-pref",
+      "name": "滋賀県議会",
+      "type": "prefecture",
+      "prefecture": "shiga",
+      "prefecture_name": "滋賀県",
+      "lg_code": "250007",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "kyoto-pref",
+      "name": "京都府議会",
+      "type": "prefecture",
+      "prefecture": "kyoto",
+      "prefecture_name": "京都府",
+      "lg_code": "260002",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "osaka-pref",
+      "name": "大阪府議会",
+      "type": "prefecture",
+      "prefecture": "osaka",
+      "prefecture_name": "大阪府",
+      "lg_code": "270008",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "hyogo-pref",
+      "name": "兵庫県議会",
+      "type": "prefecture",
+      "prefecture": "hyogo",
+      "prefecture_name": "兵庫県",
+      "lg_code": "280003",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "nara-pref",
+      "name": "奈良県議会",
+      "type": "prefecture",
+      "prefecture": "nara",
+      "prefecture_name": "奈良県",
+      "lg_code": "290009",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "wakayama-pref",
+      "name": "和歌山県議会",
+      "type": "prefecture",
+      "prefecture": "wakayama",
+      "prefecture_name": "和歌山県",
+      "lg_code": "300004",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
       "id": "tottori-pref",
       "name": "鳥取県議会",
       "type": "prefecture",
@@ -10,13 +370,242 @@
       "minutes_system": "dbsr",
       "vote_granularity": "member",
       "official_links": [
-        {"label": "議会の公式サイト", "url": "https://www.pref.tottori.lg.jp/gikai/"},
-        {"label": "政務活動費", "url": "https://www.pref.tottori.lg.jp/75931.htm"},
-        {"label": "議会日程", "url": "https://www.pref.tottori.lg.jp/328133.htm"},
-        {"label": "傍聴案内", "url": "https://www.pref.tottori.lg.jp/75935.htm"},
-        {"label": "会議録・議事録", "url": "https://www.pref.tottori.lg.jp/88112.htm"}
+        {
+          "label": "議会の公式サイト",
+          "url": "https://www.pref.tottori.lg.jp/gikai/"
+        },
+        {
+          "label": "政務活動費",
+          "url": "https://www.pref.tottori.lg.jp/75931.htm"
+        },
+        {
+          "label": "議会日程",
+          "url": "https://www.pref.tottori.lg.jp/328133.htm"
+        },
+        {
+          "label": "傍聴案内",
+          "url": "https://www.pref.tottori.lg.jp/75935.htm"
+        },
+        {
+          "label": "会議録・議事録",
+          "url": "https://www.pref.tottori.lg.jp/88112.htm"
+        }
       ],
       "status": "active"
+    },
+    {
+      "id": "shimane-pref",
+      "name": "島根県議会",
+      "type": "prefecture",
+      "prefecture": "shimane",
+      "prefecture_name": "島根県",
+      "lg_code": "320005",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "okayama-pref",
+      "name": "岡山県議会",
+      "type": "prefecture",
+      "prefecture": "okayama",
+      "prefecture_name": "岡山県",
+      "lg_code": "330001",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "hiroshima-pref",
+      "name": "広島県議会",
+      "type": "prefecture",
+      "prefecture": "hiroshima",
+      "prefecture_name": "広島県",
+      "lg_code": "340006",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "yamaguchi-pref",
+      "name": "山口県議会",
+      "type": "prefecture",
+      "prefecture": "yamaguchi",
+      "prefecture_name": "山口県",
+      "lg_code": "350001",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "tokushima-pref",
+      "name": "徳島県議会",
+      "type": "prefecture",
+      "prefecture": "tokushima",
+      "prefecture_name": "徳島県",
+      "lg_code": "360007",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "kagawa-pref",
+      "name": "香川県議会",
+      "type": "prefecture",
+      "prefecture": "kagawa",
+      "prefecture_name": "香川県",
+      "lg_code": "370002",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "ehime-pref",
+      "name": "愛媛県議会",
+      "type": "prefecture",
+      "prefecture": "ehime",
+      "prefecture_name": "愛媛県",
+      "lg_code": "380008",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "kochi-pref",
+      "name": "高知県議会",
+      "type": "prefecture",
+      "prefecture": "kochi",
+      "prefecture_name": "高知県",
+      "lg_code": "390003",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "fukuoka-pref",
+      "name": "福岡県議会",
+      "type": "prefecture",
+      "prefecture": "fukuoka",
+      "prefecture_name": "福岡県",
+      "lg_code": "400009",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "saga-pref",
+      "name": "佐賀県議会",
+      "type": "prefecture",
+      "prefecture": "saga",
+      "prefecture_name": "佐賀県",
+      "lg_code": "410004",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "nagasaki-pref",
+      "name": "長崎県議会",
+      "type": "prefecture",
+      "prefecture": "nagasaki",
+      "prefecture_name": "長崎県",
+      "lg_code": "420000",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "kumamoto-pref",
+      "name": "熊本県議会",
+      "type": "prefecture",
+      "prefecture": "kumamoto",
+      "prefecture_name": "熊本県",
+      "lg_code": "430005",
+      "minutes_system": "kensakusystem",
+      "minutes_base_url": "https://ssp.kaigiroku.net/tenant/prefkumamoto/pg/index.html",
+      "vote_granularity": "unknown",
+      "official_links": [
+        {
+          "label": "議会の公式サイト",
+          "url": "https://www.pref.kumamoto.jp/site/gikai/"
+        },
+        {
+          "label": "議員名簿",
+          "url": "https://www.pref.kumamoto.jp/site/gikai/51858.html"
+        },
+        {
+          "label": "会議録検索",
+          "url": "https://ssp.kaigiroku.net/tenant/prefkumamoto/pg/index.html"
+        },
+        {
+          "label": "インターネット中継",
+          "url": "https://kumamoto-pref.stream.jfit.co.jp/"
+        },
+        {
+          "label": "傍聴のご案内",
+          "url": "https://www.pref.kumamoto.jp/site/gikai/list7-32.html"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "oita-pref",
+      "name": "大分県議会",
+      "type": "prefecture",
+      "prefecture": "oita",
+      "prefecture_name": "大分県",
+      "lg_code": "440001",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "miyazaki-pref",
+      "name": "宮崎県議会",
+      "type": "prefecture",
+      "prefecture": "miyazaki",
+      "prefecture_name": "宮崎県",
+      "lg_code": "450006",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "kagoshima-pref",
+      "name": "鹿児島県議会",
+      "type": "prefecture",
+      "prefecture": "kagoshima",
+      "prefecture_name": "鹿児島県",
+      "lg_code": "460001",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
+    },
+    {
+      "id": "okinawa-pref",
+      "name": "沖縄県議会",
+      "type": "prefecture",
+      "prefecture": "okinawa",
+      "prefecture_name": "沖縄県",
+      "lg_code": "470007",
+      "minutes_system": "unknown",
+      "vote_granularity": "unknown",
+      "official_links": [],
+      "status": "planned"
     },
     {
       "id": "tottori-city",
@@ -29,11 +618,26 @@
       "vote_granularity": "result_only",
       "votes_official_url": "https://www.city.tottori.lg.jp/site/shigikai/6332.html",
       "official_links": [
-        {"label": "議会の公式サイト", "url": "https://www.city.tottori.lg.jp/site/shigikai/"},
-        {"label": "政務活動費", "url": "https://www.city.tottori.lg.jp/site/shigikai/6344.html"},
-        {"label": "議会日程", "url": "https://www.city.tottori.lg.jp/site/shigikai/list19-166.html"},
-        {"label": "議決結果", "url": "https://www.city.tottori.lg.jp/site/shigikai/list20-168.html"},
-        {"label": "会議録検索", "url": "https://www.city.tottori.tottori.dbsr.jp/index.php/"}
+        {
+          "label": "議会の公式サイト",
+          "url": "https://www.city.tottori.lg.jp/site/shigikai/"
+        },
+        {
+          "label": "政務活動費",
+          "url": "https://www.city.tottori.lg.jp/site/shigikai/6344.html"
+        },
+        {
+          "label": "議会日程",
+          "url": "https://www.city.tottori.lg.jp/site/shigikai/list19-166.html"
+        },
+        {
+          "label": "議決結果",
+          "url": "https://www.city.tottori.lg.jp/site/shigikai/list20-168.html"
+        },
+        {
+          "label": "会議録検索",
+          "url": "https://www.city.tottori.tottori.dbsr.jp/index.php/"
+        }
       ],
       "status": "active"
     },
@@ -49,11 +653,26 @@
       "vote_granularity": "result_only",
       "votes_official_url": "https://www.city.yonago.lg.jp/13764.htm",
       "official_links": [
-        {"label": "議会の公式サイト", "url": "https://www.city.yonago.lg.jp/gikai/"},
-        {"label": "政務活動費", "url": "https://www.city.yonago.lg.jp/13228.htm"},
-        {"label": "議会日程", "url": "https://www.city.yonago.lg.jp/2921.htm"},
-        {"label": "傍聴案内", "url": "https://www.city.yonago.lg.jp/2918.htm"},
-        {"label": "会議録検索", "url": "https://www.kensakusystem.jp/yonago-s/"}
+        {
+          "label": "議会の公式サイト",
+          "url": "https://www.city.yonago.lg.jp/gikai/"
+        },
+        {
+          "label": "政務活動費",
+          "url": "https://www.city.yonago.lg.jp/13228.htm"
+        },
+        {
+          "label": "議会日程",
+          "url": "https://www.city.yonago.lg.jp/2921.htm"
+        },
+        {
+          "label": "傍聴案内",
+          "url": "https://www.city.yonago.lg.jp/2918.htm"
+        },
+        {
+          "label": "会議録検索",
+          "url": "https://www.kensakusystem.jp/yonago-s/"
+        }
       ],
       "status": "active"
     },
@@ -68,11 +687,26 @@
       "minutes_base_url": "https://www.kensakusystem.jp/kurayoshi/",
       "vote_granularity": "member",
       "official_links": [
-        {"label": "議会の公式サイト", "url": "https://www.city.kurayoshi.lg.jp/gyousei/div/gikai/"},
-        {"label": "政務活動費", "url": "https://www.city.kurayoshi.lg.jp/6579.htm"},
-        {"label": "議会日程", "url": "https://www.city.kurayoshi.lg.jp/6586.htm"},
-        {"label": "傍聴案内", "url": "https://www.city.kurayoshi.lg.jp/6585.htm"},
-        {"label": "会議録検索", "url": "https://www.kensakusystem.jp/kurayoshi/"}
+        {
+          "label": "議会の公式サイト",
+          "url": "https://www.city.kurayoshi.lg.jp/gyousei/div/gikai/"
+        },
+        {
+          "label": "政務活動費",
+          "url": "https://www.city.kurayoshi.lg.jp/6579.htm"
+        },
+        {
+          "label": "議会日程",
+          "url": "https://www.city.kurayoshi.lg.jp/6586.htm"
+        },
+        {
+          "label": "傍聴案内",
+          "url": "https://www.city.kurayoshi.lg.jp/6585.htm"
+        },
+        {
+          "label": "会議録検索",
+          "url": "https://www.kensakusystem.jp/kurayoshi/"
+        }
       ],
       "status": "active"
     },
@@ -87,11 +721,26 @@
       "minutes_base_url": "https://www.kensakusystem.jp/sakaiminato/",
       "vote_granularity": "member",
       "official_links": [
-        {"label": "市議会のご案内", "url": "https://www.city.sakaiminato.lg.jp/index.php?view=105242"},
-        {"label": "政務活動費", "url": "https://www.city.sakaiminato.lg.jp/index.php?view=107710"},
-        {"label": "議会日程", "url": "https://www.city.sakaiminato.lg.jp/index.php?view=1708"},
-        {"label": "傍聴案内", "url": "https://www.city.sakaiminato.lg.jp/index.php?view=109003"},
-        {"label": "会議録検索", "url": "https://www.kensakusystem.jp/sakaiminato/"}
+        {
+          "label": "市議会のご案内",
+          "url": "https://www.city.sakaiminato.lg.jp/index.php?view=105242"
+        },
+        {
+          "label": "政務活動費",
+          "url": "https://www.city.sakaiminato.lg.jp/index.php?view=107710"
+        },
+        {
+          "label": "議会日程",
+          "url": "https://www.city.sakaiminato.lg.jp/index.php?view=1708"
+        },
+        {
+          "label": "傍聴案内",
+          "url": "https://www.city.sakaiminato.lg.jp/index.php?view=109003"
+        },
+        {
+          "label": "会議録検索",
+          "url": "https://www.kensakusystem.jp/sakaiminato/"
+        }
       ],
       "status": "active",
       "notes": "公式議会ページが2026-06-11確認時点でHTTP 500のため、公式リンク再確認待ち。"

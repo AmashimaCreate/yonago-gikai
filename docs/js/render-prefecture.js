@@ -1,10 +1,14 @@
-import { councilPath, prefComparePath } from "./router.js?v=20260614-member-core-v4";
-import { el } from "./utils.js?v=20260614-member-core-v4";
+import { councilPath, prefComparePath } from "./router.js?v=20260614-national-kumamoto-v1";
+import { el } from "./utils.js?v=20260614-national-kumamoto-v1";
 
 export function renderPrefecturePage(root, councils, prefecture = "tottori", summaries = []) {
   root.innerHTML = "";
   const prefectureCouncils = councils.filter((council) => council.prefecture === prefecture);
   const prefectureCouncil = prefectureCouncils.find((council) => council.type === "prefecture");
+  if (prefecture !== "tottori") {
+    renderGenericPrefecturePage(root, prefectureCouncils, prefectureCouncil, prefecture, summaries);
+    return;
+  }
   const summaryByCouncilId = new Map(
     summaries.map((summary) => [summary.council.id, summary]),
   );
@@ -74,6 +78,35 @@ export function renderPrefecturePage(root, councils, prefecture = "tottori", sum
   hydrateMunicipalityMap(mapFrame, prefecture);
 }
 
+function renderGenericPrefecturePage(root, prefectureCouncils, prefectureCouncil, prefecture, summaries) {
+  const summaryByCouncilId = new Map(
+    summaries.map((summary) => [summary.council.id, summary]),
+  );
+  const activeCouncils = prefectureCouncils.filter((council) => council.status === "active");
+  root.appendChild(
+    el("section", { class: "prefecture-map-panel" }, [
+      el("div", { class: "section-heading-row" }, [
+        el("div", {}, [
+          el("p", { class: "eyebrow" }, prefectureCouncil?.prefecture_name || "都道府県"),
+          el("h2", { class: "section-title" }, "掲載中の議会"),
+        ]),
+      ]),
+      el("p", { class: "muted" },
+        "このページは、現在このサイトに掲載している議会だけを表示しています。県内すべての市町村議会を網羅しているわけではありません。",
+      ),
+    ]),
+  );
+  root.appendChild(
+    el("section", { class: "council-card-section" }, [
+      el("div", { class: "council-grid" },
+        activeCouncils.map((council) =>
+          renderCouncilCard(council, prefecture, summaryByCouncilId.get(council.id)),
+        ),
+      ),
+    ]),
+  );
+}
+
 function renderCouncilCard(council, prefecture, summary = null, options = {}) {
   const memberText = typeof summary?.memberCount === "number"
     ? `議員${summary.memberCount}人`
@@ -88,7 +121,8 @@ function renderCouncilCard(council, prefecture, summary = null, options = {}) {
 }
 
 function councilTypeLabel(council) {
-  return council.type === "prefecture" ? "県議会" : "市議会";
+  if (council.type === "prefecture") return "県議会";
+  return "市議会";
 }
 
 async function hydrateMunicipalityMap(container, prefecture) {

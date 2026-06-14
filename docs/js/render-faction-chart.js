@@ -1,5 +1,5 @@
-import { kaihaColor, memberFaction } from "./render-members.js?v=20260614-member-core-v4";
-import { el } from "./utils.js?v=20260614-member-core-v4";
+import { kaihaColor, memberFaction } from "./render-members.js?v=20260614-national-kumamoto-v1";
+import { el } from "./utils.js?v=20260614-national-kumamoto-v1";
 
 const SVG_NS = "http://www.w3.org/2000/svg";
 const CHART_WIDTH = 1000;

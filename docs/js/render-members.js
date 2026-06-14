@@ -1,6 +1,6 @@
-import { state } from "./state.js?v=20260614-member-core-v4";
-import { el } from "./utils.js?v=20260614-member-core-v4";
-import { memberPath } from "./router.js?v=20260614-member-core-v4";
+import { state } from "./state.js?v=20260614-national-kumamoto-v1";
+import { el } from "./utils.js?v=20260614-national-kumamoto-v1";
+import { memberPath } from "./router.js?v=20260614-national-kumamoto-v1";
 
 const IDENTIFICATION_COLORS = [
   "#0072b2", // blue

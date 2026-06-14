@@ -323,6 +323,9 @@ def validate_members_file(council_id: str, path: Path) -> list[str]:
             errors.append(
                 f"{label}: official_profile_url must be https URL or null"
             )
+        district = member.get("district")
+        if "district" in member and district is not None and not isinstance(district, str):
+            errors.append(f"{label}: district must be a string or null")
 
     return errors
 

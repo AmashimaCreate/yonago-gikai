@@ -1,8 +1,8 @@
-import { dataQualityPanel } from "./data-quality.js?v=20260614-member-core-v4";
-import { renderFinanceSection } from "./render-finance.js?v=20260614-member-core-v4";
-import { renderFactionCompositionChart } from "./render-faction-chart.js?v=20260614-member-core-v4";
-import { formatDecimal, formatPeople, formatYen } from "./render-profile.js?v=20260614-member-core-v4";
-import { renderProfileVisualization } from "./render-profile-viz.js?v=20260614-member-core-v4";
+import { dataQualityPanel } from "./data-quality.js?v=20260614-national-kumamoto-v1";
+import { renderFinanceSection } from "./render-finance.js?v=20260614-national-kumamoto-v1";
+import { renderFactionCompositionChart } from "./render-faction-chart.js?v=20260614-national-kumamoto-v1";
+import { formatDecimal, formatPeople, formatYen } from "./render-profile.js?v=20260614-national-kumamoto-v1";
+import { renderProfileVisualization } from "./render-profile-viz.js?v=20260614-national-kumamoto-v1";
 import {
   hasMemberVoteLayer,
   hasResultOnlyVoteLayer,
@@ -10,7 +10,7 @@ import {
   renderResultOnlyVoteCard,
   renderVoteAvailabilityNotice,
   sortedVotesByDate,
-} from "./render-votes.js?v=20260614-member-core-v4";
+} from "./render-votes.js?v=20260614-national-kumamoto-v1";
 import {
   renderCommitteeView,
   renderKaihaView,
@@ -18,9 +18,9 @@ import {
   memberFaction,
   renderRoleView,
   renderTermView,
-} from "./render-members.js?v=20260614-member-core-v4";
-import { memberPath } from "./router.js?v=20260614-member-core-v4";
-import { el } from "./utils.js?v=20260614-member-core-v4";
+} from "./render-members.js?v=20260614-national-kumamoto-v1";
+import { memberPath } from "./router.js?v=20260614-national-kumamoto-v1";
+import { el } from "./utils.js?v=20260614-national-kumamoto-v1";
 
 export function renderCouncilPage(root, state, filteredMembers) {
   root.innerHTML = "";
@@ -75,7 +75,7 @@ export function renderCouncilPage(root, state, filteredMembers) {
 }
 
 function isStageOneCouncil(state) {
-  return state.currentCouncil?.prefecture === "tottori";
+  return state.currentCouncil?.status === "active";
 }
 
 function renderStageOneCouncilPage(root, state, filteredMembers) {
@@ -133,7 +133,7 @@ function renderCouncilSectionTabs(state) {
     )),
     el("p", { class: "council-section-help" },
       current === "members"
-        ? "議員の顔ぶれ、会派、議決、発言の記録を見ます。"
+        ? "議員の顔ぶれ、会派、議決の記録を見ます。"
         : "人口・予算・統計の変化など、この地域の基本データを見ます。",
     ),
   ]);

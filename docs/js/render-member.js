@@ -1,7 +1,7 @@
-import { acquisitionText, sourceLink } from "./data-quality.js?v=20260614-member-core-v4";
-import { councilAreaName, officialCouncilUrl, renderAiPromptCard } from "./render-ai-prompt.js?v=20260614-member-core-v4";
-import { renderMemberVoteSection } from "./render-votes.js?v=20260614-member-core-v4";
-import { el } from "./utils.js?v=20260614-member-core-v4";
+import { acquisitionText, sourceLink } from "./data-quality.js?v=20260614-national-kumamoto-v1";
+import { councilAreaName, officialCouncilUrl, renderAiPromptCard } from "./render-ai-prompt.js?v=20260614-national-kumamoto-v1";
+import { renderMemberVoteSection } from "./render-votes.js?v=20260614-national-kumamoto-v1";
+import { el } from "./utils.js?v=20260614-national-kumamoto-v1";
 
 export function renderMemberPage(root, state, memberId) {
   const member = state.members.find((item) => item.id === memberId);
@@ -36,6 +36,7 @@ function renderMemberProfile(member, membersMeta, council) {
         el("h3", { class: "member-profile-name" }, member.name),
         el("p", { class: "member-kana" }, member.name_kana || "ふりがな: データなし"),
         el("div", { class: "member-profile-facts" }, [
+          member.district ? detailRow("選挙区", member.district) : null,
           detailRow("会派", member.faction || "データなし"),
           detailRow("当選回数", typeof member.elected_count === "number" ? `${member.elected_count}回` : "データなし"),
           detailRow("役職", listText(member.positions)),

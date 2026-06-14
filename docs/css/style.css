@@ -528,6 +528,14 @@ a:hover { color: var(--brand-dark); }
   max-width: 420px;
   margin: 0 auto 12px;
 }
+.map-status-message {
+  min-height: 1.6em;
+  margin: 8px 0 0;
+  color: var(--brand-dark);
+  font-size: 14px;
+  font-weight: 800;
+  text-align: center;
+}
 .map-frame svg {
   display: block;
   width: 100%;

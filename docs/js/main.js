@@ -1,29 +1,22 @@
-import { loadCouncilBundle, loadCouncils, loadCouncilSummaries } from "./data-loader.js?v=20260614-member-core-v4";
-import { renderAbout } from "./render-about.js?v=20260614-member-core-v4";
-import { renderCouncilPage } from "./render-council.js?v=20260614-member-core-v4";
-import { renderGuide } from "./render-guide.js?v=20260614-member-core-v4";
-import { renderMemberPage } from "./render-member.js?v=20260614-member-core-v4";
-import { renderPrefecturePage } from "./render-prefecture.js?v=20260614-member-core-v4";
-import { renderPrefectureComparisonPage } from "./render-prefecture-comparison.js?v=20260614-member-core-v4";
-import { renderProfile } from "./render-profile.js?v=20260614-member-core-v4";
-import { renderTop } from "./render-top.js?v=20260614-member-core-v4";
+import { loadCouncilBundle, loadCouncils, loadCouncilSummaries } from "./data-loader.js?v=20260614-national-kumamoto-v1";
+import { renderAbout } from "./render-about.js?v=20260614-national-kumamoto-v1";
+import { renderCouncilPage } from "./render-council.js?v=20260614-national-kumamoto-v1";
+import { renderGuide } from "./render-guide.js?v=20260614-national-kumamoto-v1";
+import { renderMemberPage } from "./render-member.js?v=20260614-national-kumamoto-v1";
+import { renderPrefecturePage } from "./render-prefecture.js?v=20260614-national-kumamoto-v1";
+import { renderPrefectureComparisonPage } from "./render-prefecture-comparison.js?v=20260614-national-kumamoto-v1";
+import { renderProfile } from "./render-profile.js?v=20260614-national-kumamoto-v1";
+import { renderTop } from "./render-top.js?v=20260614-national-kumamoto-v1";
 import {
   councilPath,
   parseRoute,
   prefPath,
   topPath,
-} from "./router.js?v=20260614-member-core-v4";
-import { filteredMembers } from "./search.js?v=20260614-member-core-v4";
-import { state } from "./state.js?v=20260614-member-core-v4";
-import { el } from "./utils.js?v=20260614-member-core-v4";
+} from "./router.js?v=20260614-national-kumamoto-v1";
+import { filteredMembers } from "./search.js?v=20260614-national-kumamoto-v1";
+import { state } from "./state.js?v=20260614-national-kumamoto-v1";
+import { el } from "./utils.js?v=20260614-national-kumamoto-v1";
 
-const COUNCILS_WITH_VOTES = new Set([
-  "kurayoshi-city",
-  "tottori-pref",
-  "tottori-city",
-  "sakaiminato-city",
-  "yonago-city",
-]);
 const COUNCILS_WITH_SPEECHES = new Set([
   "yonago-city",
   "kurayoshi-city",
@@ -96,8 +89,10 @@ function resetRouteNav() {
 }
 
 function prefectureLabel(prefecture) {
-  if (prefecture === "tottori") return "鳥取県";
-  return prefecture;
+  const council = state.councils.find((item) =>
+    item.type === "prefecture" && item.prefecture === prefecture
+  );
+  return council?.prefecture_name || prefecture;
 }
 
 function showCouncilNav(show) {
@@ -123,6 +118,22 @@ function renderMeta() {
     : "?";
   const type = councilTypeLabel(state.currentCouncil);
   node.textContent = `${type} / 現在 ${members.length}人 / 最終更新 ${fetched}`;
+}
+
+function activePrefectureSlugs() {
+  return new Set(
+    state.councils
+      .filter((council) => council.type === "prefecture" && council.status === "active")
+      .map((council) => council.prefecture),
+  );
+}
+
+function councilsWithVotes() {
+  return new Set(
+    state.councils
+      .filter((council) => council.vote_granularity === "member" || council.vote_granularity === "result_only")
+      .map((council) => council.id),
+  );
 }
 
 function updateMatchCount(filteredCount) {
@@ -163,7 +174,7 @@ function updateActiveTab() {
 }
 
 function renderCouncilRoute() {
-  const isRedesignedCouncil = state.currentCouncil?.prefecture === "tottori";
+  const isRedesignedCouncil = state.currentCouncil?.status === "active";
   const prefecture = state.currentCouncil?.prefecture || "tottori";
   const prefectureName = prefectureLabel(prefecture);
   setRouteNav({
@@ -342,7 +353,7 @@ async function applyRoute() {
     });
     resetRouteNav();
     showCouncilNav(false);
-    renderTop(mainNode());
+    renderTop(mainNode(), state.councils);
     return;
   }
 
@@ -359,19 +370,19 @@ async function applyRoute() {
     state.votesMeta = null;
     state.view = "kaiha";
     state.query = "";
-    if (route.prefecture !== "tottori") {
+    if (!activePrefectureSlugs().has(route.prefecture)) {
       renderNotFound();
       return;
     }
     const prefectureName = prefectureLabel(route.prefecture);
     setHeader(route.name === "prefecture-compare"
       ? {
-          title: "鳥取県 5議会くらべ",
-          lead: "鳥取県内5議会の基本データを同じ尺度で見ます。",
+          title: `${prefectureName} 掲載議会くらべ`,
+          lead: `${prefectureName}内の掲載議会の基本データを同じ尺度で見ます。`,
         }
       : {
-          title: "鳥取県 議会見える化",
-          lead: "鳥取県内5議会の公開データを同じ形で確認できます。",
+          title: `${prefectureName} 議会見える化`,
+          lead: `${prefectureName}内の掲載議会の公開データを同じ形で確認できます。`,
         });
     setRouteNav(route.name === "prefecture-compare"
       ? {
@@ -407,7 +418,7 @@ async function applyRoute() {
   }
 
   if (route.name === "council" || route.name === "member") {
-    if (route.prefecture !== "tottori") {
+    if (!activePrefectureSlugs().has(route.prefecture)) {
       renderNotFound();
       return;
     }
@@ -424,7 +435,7 @@ async function applyRoute() {
 
     const bundle = await loadCouncilBundle(route.councilId, {
       includeSpeeches: COUNCILS_WITH_SPEECHES.has(route.councilId),
-      includeVotes: COUNCILS_WITH_VOTES.has(route.councilId),
+      includeVotes: councilsWithVotes().has(route.councilId),
     });
     state.currentCouncil = bundle.council;
     state.members = bundle.members;
