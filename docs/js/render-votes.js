@@ -1,7 +1,7 @@
-import { sourceLink } from "./data-quality.js?v=20260614-neutrality-colors";
-import { councilAreaName, renderAiPromptCard } from "./render-ai-prompt.js?v=20260614-neutrality-colors";
-import { memberPath } from "./router.js?v=20260614-neutrality-colors";
-import { el } from "./utils.js?v=20260614-neutrality-colors";
+import { sourceLink } from "./data-quality.js?v=20260614-member-redesign-v2";
+import { councilAreaName, renderAiPromptCard } from "./render-ai-prompt.js?v=20260614-member-redesign-v2";
+import { memberPath } from "./router.js?v=20260614-member-redesign-v2";
+import { el } from "./utils.js?v=20260614-member-redesign-v2";
 
 const VOTE_ORDER = ["賛成", "反対", "退席", "欠席", "議長", "除斥", "継続審査"];
 const SPLIT_VOTE_THRESHOLD = 0.3;
@@ -44,10 +44,11 @@ export function renderMemberVoteSection(votes, votesMeta, member, council, route
   return el("section", { class: "vote-section member-vote-section" }, [
     el("div", { class: "section-heading-row" }, [
       el("div", {}, [
-        el("p", { class: "eyebrow" }, "議案への賛否"),
-        el("h2", { class: "section-title" }, "賛否の記録"),
+        el("p", { class: "eyebrow" }, "この議員の判断"),
+        el("h2", { class: "section-title" }, "どう判断したか"),
       ]),
     ]),
+    renderMemberVoteIntro(),
     renderMemberVoteSummary(memberVotes),
     renderVoteHighlightBlock(
       "本人の票が多数派と異なった議決",
@@ -68,12 +69,18 @@ function renderMemberVoteMissingSection(council) {
   return el("section", { class: "vote-section member-vote-section" }, [
     el("div", { class: "section-heading-row" }, [
       el("div", {}, [
-        el("p", { class: "eyebrow" }, "議案への賛否"),
+        el("p", { class: "eyebrow" }, "この議員の判断"),
         el("h2", { class: "section-title" }, "賛否の記録"),
       ]),
     ]),
     renderVoteAvailabilityNotice(council),
   ]);
+}
+
+function renderMemberVoteIntro() {
+  return el("p", { class: "member-vote-intro" },
+    "議決では多くが全会一致で決まります。ここでは、この議員が多数派と異なる判断をした議決を取り上げています。賛否のどちらが正しいということではなく、その議員がどんな場面で独自の判断をしたかを見るためのものです。",
+  );
 }
 
 export function sortedVotesByDate(votes) {
@@ -507,17 +514,17 @@ export function renderVoteAvailabilityNotice(council) {
 }
 
 function voteAvailability(council) {
-  if (council?.vote_granularity === "result_only") {
-    return {
-      text: `${council.name}は議員ごとの賛否を公開していません。`,
-      linkText: "議決結果は公式ページへ →",
-      url: council.votes_official_url || null,
-    };
-  }
   if (council?.id === "tottori-city") {
     return {
       text: "鳥取市議会の議決結果は機械可読でない形式のため未収録です。",
       linkText: "公式ページへ →",
+      url: council.votes_official_url || null,
+    };
+  }
+  if (council?.vote_granularity === "result_only") {
+    return {
+      text: `${council.name}は議員ごとの賛否を公開していません。`,
+      linkText: "議決結果は公式ページへ →",
       url: council.votes_official_url || null,
     };
   }

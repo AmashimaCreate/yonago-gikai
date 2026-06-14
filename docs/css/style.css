@@ -2027,11 +2027,50 @@ main { padding: 24px 0 48px; }
 .member-detail-main h2 {
   margin: 0 0 4px;
 }
+.member-profile-hero {
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.member-profile-heading {
+  margin-bottom: 14px;
+}
+.member-profile-heading .section-title {
+  margin-bottom: 0;
+}
+.member-profile-body {
+  display: grid;
+  gap: 10px;
+}
+.member-profile-name {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+.member-profile-facts {
+  display: grid;
+  gap: 4px;
+  padding: 12px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.member-profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  align-items: center;
+}
+.member-link-line {
+  margin: 0;
+}
 .member-detail-photo,
 .member-photo-placeholder {
-  width: 120px;
-  height: 150px;
-  border-radius: 6px;
+  width: clamp(132px, 18vw, 180px);
+  height: clamp(168px, 24vw, 228px);
+  border-radius: 14px;
   object-fit: cover;
   background: #eef1f4;
 }
@@ -2071,6 +2110,41 @@ main { padding: 24px 0 48px; }
 }
 .member-search-link small {
   color: var(--text-muted);
+}
+.member-activity-section {
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.speech-unavailable-note {
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface-soft);
+}
+.speech-unavailable-note p {
+  margin: 0;
+}
+.speech-unavailable-note p + p {
+  margin-top: 10px;
+}
+.speech-official-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+}
+.speech-official-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 5px 12px;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  font-weight: 800;
+  text-decoration: none;
 }
 .research-section {
   max-width: 820px;
@@ -2548,6 +2622,15 @@ main { padding: 24px 0 48px; }
   border-radius: 14px;
   background: var(--surface);
   box-shadow: var(--shadow);
+}
+.member-vote-intro {
+  margin: 0 0 14px;
+  padding: 12px 14px;
+  border-left: 4px solid var(--brand);
+  border-radius: 10px;
+  background: var(--brand-soft);
+  color: var(--text);
+  font-size: 14px;
 }
 .member-vote-overview,
 .member-speech-summary {

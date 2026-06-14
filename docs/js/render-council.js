@@ -1,8 +1,8 @@
-import { dataQualityPanel } from "./data-quality.js?v=20260614-neutrality-colors";
-import { renderFinanceSection } from "./render-finance.js?v=20260614-neutrality-colors";
-import { renderFactionCompositionChart } from "./render-faction-chart.js?v=20260614-neutrality-colors";
-import { formatDecimal, formatPeople, formatYen } from "./render-profile.js?v=20260614-neutrality-colors";
-import { renderProfileVisualization } from "./render-profile-viz.js?v=20260614-neutrality-colors";
+import { dataQualityPanel } from "./data-quality.js?v=20260614-member-redesign-v2";
+import { renderFinanceSection } from "./render-finance.js?v=20260614-member-redesign-v2";
+import { renderFactionCompositionChart } from "./render-faction-chart.js?v=20260614-member-redesign-v2";
+import { formatDecimal, formatPeople, formatYen } from "./render-profile.js?v=20260614-member-redesign-v2";
+import { renderProfileVisualization } from "./render-profile-viz.js?v=20260614-member-redesign-v2";
 import {
   hasMemberVoteLayer,
   hasResultOnlyVoteLayer,
@@ -10,7 +10,7 @@ import {
   renderResultOnlyVoteCard,
   renderVoteAvailabilityNotice,
   sortedVotesByDate,
-} from "./render-votes.js?v=20260614-neutrality-colors";
+} from "./render-votes.js?v=20260614-member-redesign-v2";
 import {
   renderCommitteeView,
   renderKaihaView,
@@ -18,9 +18,9 @@ import {
   memberFaction,
   renderRoleView,
   renderTermView,
-} from "./render-members.js?v=20260614-neutrality-colors";
-import { memberPath } from "./router.js?v=20260614-neutrality-colors";
-import { el } from "./utils.js?v=20260614-neutrality-colors";
+} from "./render-members.js?v=20260614-member-redesign-v2";
+import { memberPath } from "./router.js?v=20260614-member-redesign-v2";
+import { el } from "./utils.js?v=20260614-member-redesign-v2";
 
 export function renderCouncilPage(root, state, filteredMembers) {
   root.innerHTML = "";
