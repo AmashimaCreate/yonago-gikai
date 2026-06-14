@@ -1,0 +1,814 @@
+{
+  "council_id": "kumamoto-pref",
+  "source_url": "https://www.pref.kumamoto.jp/site/gikai/51858.html",
+  "acquisition": "scraping",
+  "members": [
+    {
+      "id": "kumamoto-pref--arakawa-tomoaki",
+      "council_id": "kumamoto-pref",
+      "name": "荒川知章",
+      "name_kana": "アラカワ トモアキ",
+      "district": "葦北郡",
+      "faction": "自由民主党",
+      "elected_count": 2,
+      "positions": [
+        "農林水産常任委員会委員長"
+      ],
+      "committees": [
+        "農林水産常任委員会委員長",
+        "海の再生及び環境対策特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70039.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8023.html"
+    },
+    {
+      "id": "kumamoto-pref--ikeda-kazuki",
+      "council_id": "kumamoto-pref",
+      "name": "池田和貴",
+      "name_kana": "イケダ カズキ",
+      "district": "天草市・天草郡",
+      "faction": "自由民主党",
+      "elected_count": 6,
+      "positions": [],
+      "committees": [
+        "経済環境常任委員会",
+        "議会運営委員会",
+        "地域活力創生特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70065.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8012.html"
+    },
+    {
+      "id": "kumamoto-pref--ikenaga-yukio",
+      "council_id": "kumamoto-pref",
+      "name": "池永幸生",
+      "name_kana": "イケナガ ユキオ",
+      "district": "合志市",
+      "faction": "自由民主党",
+      "elected_count": 2,
+      "positions": [
+        "厚生常任委員会委員長"
+      ],
+      "committees": [
+        "厚生常任委員会委員長",
+        "地域活力創生特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70034.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8043.html"
+    },
+    {
+      "id": "kumamoto-pref--iwashita-eiichi",
+      "council_id": "kumamoto-pref",
+      "name": "岩下栄一",
+      "name_kana": "イワシタ エイイチ",
+      "district": "熊本市第一",
+      "faction": "自由民主党",
+      "elected_count": 8,
+      "positions": [],
+      "committees": [
+        "総務常任委員会",
+        "地域活力創生特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70044.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8014.html"
+    },
+    {
+      "id": "kumamoto-pref--iwata-tomoko",
+      "council_id": "kumamoto-pref",
+      "name": "岩田智子",
+      "name_kana": "イワタ トモコ",
+      "district": "熊本市第一",
+      "faction": "立憲民主連合",
+      "elected_count": 3,
+      "positions": [],
+      "committees": [
+        "教育警察常任委員会",
+        "地域活力創生特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70045.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8051.html"
+    },
+    {
+      "id": "kumamoto-pref--iwanaka-shinji",
+      "council_id": "kumamoto-pref",
+      "name": "岩中伸司",
+      "name_kana": "イワナカ シンジ",
+      "district": "荒尾市",
+      "faction": "新社会党",
+      "elected_count": 7,
+      "positions": [],
+      "committees": [
+        "厚生環境常任委員会",
+        "海の再生及び環境対策特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/69353.jpg",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/172070.html"
+    },
+    {
+      "id": "kumamoto-pref--iwamoto-kouji",
+      "council_id": "kumamoto-pref",
+      "name": "岩本浩治",
+      "name_kana": "イワモト コウジ",
+      "district": "阿蘇市",
+      "faction": "自由民主党",
+      "elected_count": 3,
+      "positions": [
+        "地域活力創生特別委員会委員長"
+      ],
+      "committees": [
+        "厚生常任委員会",
+        "地域活力創生特別委員会委員長"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70033.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8053.html"
+    },
+    {
+      "id": "kumamoto-pref--uchino-kouki",
+      "council_id": "kumamoto-pref",
+      "name": "内野幸喜",
+      "name_kana": "ウチノ コウキ",
+      "district": "玉名郡",
+      "faction": "自由民主党",
+      "elected_count": 5,
+      "positions": [],
+      "committees": [
+        "議長"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/88111.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8033.html"
+    },
+    {
+      "id": "kumamoto-pref--ogata-yuuji",
+      "council_id": "kumamoto-pref",
+      "name": "緒方勇二",
+      "name_kana": "オガタ ユウジ",
+      "district": "球磨郡",
+      "faction": "自由民主党",
+      "elected_count": 4,
+      "positions": [
+        "議会運営委員会委員長"
+      ],
+      "committees": [
+        "農林水産常任委員会",
+        "議会運営委員会委員長",
+        "海の再生及び環境対策特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70040.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8030.html"
+    },
+    {
+      "id": "kumamoto-pref--kameda-hideo",
+      "council_id": "kumamoto-pref",
+      "name": "亀田英雄",
+      "name_kana": "カメダ ヒデオ",
+      "district": "八代市・八代郡",
+      "faction": "無所属",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "経済環境常任委員会",
+        "高速交通ネットワーク整備推進特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/69349.jpg",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/172068.html"
+    },
+    {
+      "id": "kumamoto-pref--kawazu-shiyuuji",
+      "council_id": "kumamoto-pref",
+      "name": "河津修司",
+      "name_kana": "カワヅ シュウジ",
+      "district": "阿蘇郡",
+      "faction": "自由民主党",
+      "elected_count": 3,
+      "positions": [
+        "議会運営委員会副委員長"
+      ],
+      "committees": [
+        "建設常任委員会",
+        "議会運営委員会副委員長",
+        "高速交通ネットワーク整備推進特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70037.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8050.html"
+    },
+    {
+      "id": "kumamoto-pref--kido-atsushi",
+      "council_id": "kumamoto-pref",
+      "name": "城戸 淳",
+      "name_kana": "キド アツシ",
+      "district": "玉名市",
+      "faction": "自由民主党",
+      "elected_count": 2,
+      "positions": [
+        "農林水産常任委員会副委員長"
+      ],
+      "committees": [
+        "農林水産常任委員会副委員長",
+        "高速交通ネットワーク整備推進特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70063.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8036.html"
+    },
+    {
+      "id": "kumamoto-pref--kusumoto-chiaki",
+      "council_id": "kumamoto-pref",
+      "name": "楠本千秋",
+      "name_kana": "クスモト チアキ",
+      "district": "天草市・天草郡",
+      "faction": "自由民主党",
+      "elected_count": 3,
+      "positions": [
+        "高速交通ネットワーク整備推進特別委員会副委員長"
+      ],
+      "committees": [
+        "建設常任委員会",
+        "高速交通ネットワーク整備推進特別委員会副委員長",
+        "監査委員"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70066.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8046.html"
+    },
+    {
+      "id": "kumamoto-pref--saitou-youko",
+      "council_id": "kumamoto-pref",
+      "name": "斎藤陽子",
+      "name_kana": "サイトウ ヨウコ",
+      "district": "菊池郡",
+      "faction": "自由民主党",
+      "elected_count": 1,
+      "positions": [
+        "厚生常任委員会副委員長"
+      ],
+      "committees": [
+        "厚生常任委員会副委員長",
+        "高速交通ネットワーク整備推進特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/69355.jpg",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/172077.html"
+    },
+    {
+      "id": "kumamoto-pref--sakata-takashi",
+      "council_id": "kumamoto-pref",
+      "name": "坂田孝志",
+      "name_kana": "サカタ タカシ",
+      "district": "八代市・八代郡",
+      "faction": "自由民主党",
+      "elected_count": 6,
+      "positions": [],
+      "committees": [
+        "建設常任委員会",
+        "議会運営委員会",
+        "海の再生及び環境対策特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70058.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8019.html"
+    },
+    {
+      "id": "kumamoto-pref--sakanashi-yoshiaki",
+      "council_id": "kumamoto-pref",
+      "name": "坂梨剛昭",
+      "name_kana": "サカナシ ヨシアキ",
+      "district": "玉名市",
+      "faction": "自由民主党",
+      "elected_count": 2,
+      "positions": [
+        "経済環境常任委員会委員長"
+      ],
+      "committees": [
+        "経済環境常任委員会委員長",
+        "地域活力創生特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70064.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8059.html"
+    },
+    {
+      "id": "kumamoto-pref--shiroshita-kousaku",
+      "council_id": "kumamoto-pref",
+      "name": "城下広作",
+      "name_kana": "シロシタ コウサク",
+      "district": "熊本市第一",
+      "faction": "公明党",
+      "elected_count": 7,
+      "positions": [],
+      "committees": [
+        "建設常任委員会",
+        "議会運営委員会",
+        "海の再生及び環境対策特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70046.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8047.html"
+    },
+    {
+      "id": "kumamoto-pref--sugishima-mika",
+      "council_id": "kumamoto-pref",
+      "name": "杉嶌ミカ",
+      "name_kana": "スギシマ ミカ",
+      "district": "熊本市第一",
+      "faction": "自由民主党",
+      "elected_count": 1,
+      "positions": [
+        "教育警察常任委員会副委員長"
+      ],
+      "committees": [
+        "教育警察常任委員会副委員長",
+        "海の再生及び環境対策特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/69344.jpg",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/172060.html"
+    },
+    {
+      "id": "kumamoto-pref--suminaga-eiichirou",
+      "council_id": "kumamoto-pref",
+      "name": "住永栄一郎",
+      "name_kana": "スミナガ エイイチロウ",
+      "district": "上益城郡",
+      "faction": "無所属",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "農林水産常任委員会",
+        "地域活力創生特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/69356.jpg",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/172081.html"
+    },
+    {
+      "id": "kumamoto-pref--takai-chitose",
+      "council_id": "kumamoto-pref",
+      "name": "高井千歳",
+      "name_kana": "タカイ チトセ",
+      "district": "熊本市第一",
+      "faction": "参政党",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "厚生常任委員会",
+        "海の再生及び環境対策特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/69345.jpg",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/172062.html"
+    },
+    {
+      "id": "kumamoto-pref--takaki-kenji",
+      "council_id": "kumamoto-pref",
+      "name": "高木健次",
+      "name_kana": "タカキ ケンジ",
+      "district": "合志市",
+      "faction": "自由民主党",
+      "elected_count": 5,
+      "positions": [],
+      "committees": [
+        "総務常任委員会",
+        "高速交通ネットワーク整備推進特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70035.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8045.html"
+    },
+    {
+      "id": "kumamoto-pref--takashima-kazuo",
+      "council_id": "kumamoto-pref",
+      "name": "高島和男",
+      "name_kana": "タカシマ カズオ",
+      "district": "熊本市第二",
+      "faction": "自由民主党",
+      "elected_count": 3,
+      "positions": [
+        "海の再生及び環境対策特別委員会副委員長"
+      ],
+      "committees": [
+        "経済環境常任委員会",
+        "海の再生及び環境対策特別委員会副委員長"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70055.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8022.html"
+    },
+    {
+      "id": "kumamoto-pref--takano-yousuke",
+      "council_id": "kumamoto-pref",
+      "name": "高野洋介",
+      "name_kana": "タカノ ヨウスケ",
+      "district": "八代市・八代郡",
+      "faction": "自由民主党",
+      "elected_count": 5,
+      "positions": [],
+      "committees": [
+        "総務常任委員会",
+        "議会運営委員会",
+        "地域活力創生特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70059.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8055.html"
+    },
+    {
+      "id": "kumamoto-pref--takezaki-kazutora",
+      "council_id": "kumamoto-pref",
+      "name": "竹崎和虎",
+      "name_kana": "タケザキ カズトラ",
+      "district": "熊本市第二",
+      "faction": "自由民主党",
+      "elected_count": 3,
+      "positions": [
+        "地域活力創生特別委員会副委員長"
+      ],
+      "committees": [
+        "農林水産常任委員会",
+        "地域活力創生特別委員会副委員長"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70056.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8027.html"
+    },
+    {
+      "id": "kumamoto-pref--tateyama-daijirou",
+      "council_id": "kumamoto-pref",
+      "name": "立山大二朗",
+      "name_kana": "タテヤマ ダイジロウ",
+      "district": "山鹿市",
+      "faction": "自由民主党",
+      "elected_count": 1,
+      "positions": [
+        "総務常任委員会副委員長"
+      ],
+      "committees": [
+        "総務常任委員会副委員長",
+        "高速交通ネットワーク整備推進特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/69354.jpg",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/172072.html"
+    },
+    {
+      "id": "kumamoto-pref--tsutsumi-yasuyuki",
+      "council_id": "kumamoto-pref",
+      "name": "堤 泰之",
+      "name_kana": "ツツミ ヤスユキ",
+      "district": "熊本市第一",
+      "faction": "自由民主党",
+      "elected_count": 2,
+      "positions": [
+        "経済環境常任委員会副委員長"
+      ],
+      "committees": [
+        "経済環境常任委員会副委員長",
+        "地域活力創生特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70047.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/138138.html"
+    },
+    {
+      "id": "kumamoto-pref--nakamura-akihiko",
+      "council_id": "kumamoto-pref",
+      "name": "中村亮彦",
+      "name_kana": "ナカムラ アキヒコ",
+      "district": "菊池郡",
+      "faction": "自由民主党",
+      "elected_count": 3,
+      "positions": [
+        "高速交通ネットワーク整備推進特別委員会委員長"
+      ],
+      "committees": [
+        "経済環境常任委員会",
+        "高速交通ネットワーク整備推進特別委員会委員長"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70036.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8024.html"
+    },
+    {
+      "id": "kumamoto-pref--nanbu-shiyunpei",
+      "council_id": "kumamoto-pref",
+      "name": "南部隼平",
+      "name_kana": "ナンブ シュンペイ",
+      "district": "熊本市第一",
+      "faction": "自由民主党",
+      "elected_count": 2,
+      "positions": [
+        "建設常任委員会委員長"
+      ],
+      "committees": [
+        "建設常任委員会委員長",
+        "高速交通ネットワーク整備推進特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70048.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8044.html"
+    },
+    {
+      "id": "kumamoto-pref--nishi-shiyouichi",
+      "council_id": "kumamoto-pref",
+      "name": "西 聖一",
+      "name_kana": "ニシ ショウイチ",
+      "district": "熊本市第一",
+      "faction": "立憲民主連合",
+      "elected_count": 5,
+      "positions": [],
+      "committees": [
+        "総務常任委員会",
+        "議会運営委員会",
+        "高速交通ネットワーク整備推進特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70049.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8020.html"
+    },
+    {
+      "id": "kumamoto-pref--nishimura-naotake",
+      "council_id": "kumamoto-pref",
+      "name": "西村尚武",
+      "name_kana": "ニシムラ ナオタケ",
+      "district": "天草市・天草郡",
+      "faction": "自由民主党",
+      "elected_count": 2,
+      "positions": [],
+      "committees": [
+        "教育警察常任委員会",
+        "海の再生及び環境対策特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70067.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8028.html"
+    },
+    {
+      "id": "kumamoto-pref--nishiyama-munetaka",
+      "council_id": "kumamoto-pref",
+      "name": "西山宗孝",
+      "name_kana": "ニシヤマ ムネタカ",
+      "district": "宇土市",
+      "faction": "自由民主党",
+      "elected_count": 3,
+      "positions": [
+        "教育警察常任委員会委員長"
+      ],
+      "committees": [
+        "教育警察常任委員会委員長",
+        "海の再生及び環境対策特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70029.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8056.html"
+    },
+    {
+      "id": "kumamoto-pref--hashiguchi-kaihei",
+      "council_id": "kumamoto-pref",
+      "name": "橋口海平",
+      "name_kana": "ハシグチ カイヘイ",
+      "district": "熊本市第一",
+      "faction": "自由民主党",
+      "elected_count": 4,
+      "positions": [],
+      "committees": [
+        "副議長",
+        "教育警察常任委員会",
+        "高速交通ネットワーク整備推進特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/88104.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8052.html"
+    },
+    {
+      "id": "kumamoto-pref--fujikawa-takao",
+      "council_id": "kumamoto-pref",
+      "name": "藤川隆夫",
+      "name_kana": "フジカワ タカオ",
+      "district": "熊本市第一",
+      "faction": "自由民主党",
+      "elected_count": 7,
+      "positions": [],
+      "committees": [
+        "厚生常任委員会",
+        "議会運営委員会",
+        "高速交通ネットワーク整備推進特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70051.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8025.html"
+    },
+    {
+      "id": "kumamoto-pref--fuchigami-youichi",
+      "council_id": "kumamoto-pref",
+      "name": "渕上陽一",
+      "name_kana": "フチガミ ヨウイチ",
+      "district": "山鹿市",
+      "faction": "自由民主党",
+      "elected_count": 5,
+      "positions": [],
+      "committees": [
+        "教育警察常任委員会",
+        "地域活力創生特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70042.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8013.html"
+    },
+    {
+      "id": "kumamoto-pref--hoshino-manato",
+      "council_id": "kumamoto-pref",
+      "name": "星野愛斗",
+      "name_kana": "ホシノ マナト",
+      "district": "熊本市第二",
+      "faction": "熊本維新の会",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "経済環境常任委員会",
+        "高速交通ネットワーク整備推進特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/69347.jpg",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/172067.html"
+    },
+    {
+      "id": "kumamoto-pref--honda-yuuzou",
+      "council_id": "kumamoto-pref",
+      "name": "本田雄三",
+      "name_kana": "ホンダ ユウゾウ",
+      "district": "熊本市第一",
+      "faction": "公明党",
+      "elected_count": 2,
+      "positions": [],
+      "committees": [
+        "教育警察常任委員会",
+        "地域活力創生特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70052.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8058.html"
+    },
+    {
+      "id": "kumamoto-pref--maekawa-osamu",
+      "council_id": "kumamoto-pref",
+      "name": "前川 收",
+      "name_kana": "マエカワ オサム",
+      "district": "菊池市",
+      "faction": "自由民主党",
+      "elected_count": 9,
+      "positions": [],
+      "committees": [
+        "農林水産常任委員会",
+        "議会運営委員会",
+        "高速交通ネットワーク整備推進特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70028.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8039.html"
+    },
+    {
+      "id": "kumamoto-pref--maeda-keisuke",
+      "council_id": "kumamoto-pref",
+      "name": "前田敬介",
+      "name_kana": "マエダ ケイスケ",
+      "district": "荒尾市",
+      "faction": "自由民主党",
+      "elected_count": 2,
+      "positions": [
+        "建設常任委員会副委員長"
+      ],
+      "committees": [
+        "建設常任委員会副委員長",
+        "海の再生及び環境対策特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70061.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8029.html"
+    },
+    {
+      "id": "kumamoto-pref--maeda-noriyoshi",
+      "council_id": "kumamoto-pref",
+      "name": "前田憲秀",
+      "name_kana": "マエダ ノリヨシ",
+      "district": "熊本市第二",
+      "faction": "公明党",
+      "elected_count": 4,
+      "positions": [],
+      "committees": [
+        "経済環境常任委員会",
+        "高速交通ネットワーク整備推進特別委員会",
+        "監査委員"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70057.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8034.html"
+    },
+    {
+      "id": "kumamoto-pref--masunaga-shinichirou",
+      "council_id": "kumamoto-pref",
+      "name": "増永慎一郎",
+      "name_kana": "マスナガ シンイチロウ",
+      "district": "上益城郡",
+      "faction": "無所属",
+      "elected_count": 5,
+      "positions": [],
+      "committees": [
+        "総務常任委員会",
+        "地域活力創生特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70038.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8016.html"
+    },
+    {
+      "id": "kumamoto-pref--matsuda-saburou",
+      "council_id": "kumamoto-pref",
+      "name": "松田三郎",
+      "name_kana": "マツダ サブロウ",
+      "district": "球磨郡",
+      "faction": "自由民主党",
+      "elected_count": 7,
+      "positions": [],
+      "committees": [
+        "総務常任委員会",
+        "議会運営委員会",
+        "地域活力創生特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70041.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8048.html"
+    },
+    {
+      "id": "kumamoto-pref--matsumura-shiyuuitsu",
+      "council_id": "kumamoto-pref",
+      "name": "松村秀逸",
+      "name_kana": "マツムラ シュウイツ",
+      "district": "熊本市第一",
+      "faction": "自由民主党",
+      "elected_count": 3,
+      "positions": [
+        "総務常任委員会委員長"
+      ],
+      "committees": [
+        "総務常任委員会委員長",
+        "高速交通ネットワーク整備推進特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70053.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8017.html"
+    },
+    {
+      "id": "kumamoto-pref--mizoguchi-kouji",
+      "council_id": "kumamoto-pref",
+      "name": "溝口幸治",
+      "name_kana": "ミゾグチ コウジ",
+      "district": "人吉市",
+      "faction": "自由民主党",
+      "elected_count": 6,
+      "positions": [],
+      "committees": [
+        "教育警察常任委員会",
+        "議会運営委員会",
+        "地域活力創生特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70060.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8054.html"
+    },
+    {
+      "id": "kumamoto-pref--yamaguchi-yutaka",
+      "council_id": "kumamoto-pref",
+      "name": "山口 裕",
+      "name_kana": "ヤマグチ ユタカ",
+      "district": "上天草市",
+      "faction": "自由民主党",
+      "elected_count": 5,
+      "positions": [],
+      "committees": [
+        "建設常任委員会",
+        "海の再生及び環境対策特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70030.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8015.html"
+    },
+    {
+      "id": "kumamoto-pref--yukimura-kayoko",
+      "council_id": "kumamoto-pref",
+      "name": "幸村香代子",
+      "name_kana": "ユキムラ カヨコ",
+      "district": "八代市・八代郡",
+      "faction": "立憲民主連合",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "農林水産常任委員会",
+        "海の再生及び環境対策特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/69352.jpg",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/172069.html"
+    },
+    {
+      "id": "kumamoto-pref--yoshida-kouhei",
+      "council_id": "kumamoto-pref",
+      "name": "吉田孝平",
+      "name_kana": "ヨシダ コウヘイ",
+      "district": "宇城市・下益城郡",
+      "faction": "自由民主党",
+      "elected_count": 3,
+      "positions": [
+        "海の再生及び環境対策特別委員会委員長"
+      ],
+      "committees": [
+        "厚生常任委員会",
+        "海の再生及び環境対策特別委員会委員長"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70032.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8038.html"
+    },
+    {
+      "id": "kumamoto-pref--yoshinaga-kazuyo",
+      "council_id": "kumamoto-pref",
+      "name": "吉永和世",
+      "name_kana": "ヨシナガ カズヨ",
+      "district": "水俣市",
+      "faction": "自由民主党",
+      "elected_count": 7,
+      "positions": [],
+      "committees": [
+        "農林水産常任委員会",
+        "議会運営委員会",
+        "海の再生及び環境対策特別委員会"
+      ],
+      "photo_url": "https://www.pref.kumamoto.jp/uploaded/image/70062.JPG",
+      "official_profile_url": "https://www.pref.kumamoto.jp/site/gikai/8018.html"
+    }
+  ],
+  "updated_at": "2026-06-14T13:42:43+00:00"
+}

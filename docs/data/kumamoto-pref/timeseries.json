@@ -1,11 +1,11 @@
 {
-  "council_id": "tottori-pref",
+  "council_id": "kumamoto-pref",
   "updated_at": "2026-06-14T14:08:23+00:00",
   "source": {
     "provider": "e-Stat 社会・人口統計体系（SSDS）",
     "api": "getStatsData",
     "retrieved_at": "2026-06-14T14:08:23+00:00",
-    "area_code": "31000",
+    "area_code": "43000",
     "statsDataIds": {
       "population_total": "0000010101",
       "aging_rate": "0000010101",
@@ -13,8 +13,7 @@
       "social_change": "0000010101",
       "expenditure_total": "0000010104",
       "fiscal_index": "0000010104",
-      "pref_assembly_turnout": "0000010107",
-      "pref_governor_turnout": "0000010107"
+      "pref_assembly_turnout": "0000010107"
     },
     "note": "SSDSは確定統計のため最新年が1〜3年遅れる。profileの最新公表値とは出典・年次が異なる。"
   },
@@ -27,54 +26,54 @@
       "year_end": 2023,
       "first": {
         "year": 2014,
-        "value": 583351
+        "value": 1818314
       },
       "latest": {
         "year": 2023,
-        "value": 540207
+        "value": 1728098
       },
-      "delta": -43144,
-      "delta_pct": -7.4,
+      "delta": -90216,
+      "delta_pct": -4.96,
       "values": [
         {
           "year": 2014,
-          "value": 583351
+          "value": 1818314
         },
         {
           "year": 2015,
-          "value": 579309
+          "value": 1810343
         },
         {
           "year": 2016,
-          "value": 575264
+          "value": 1798149
         },
         {
           "year": 2017,
-          "value": 570824
+          "value": 1789184
         },
         {
           "year": 2018,
-          "value": 566052
+          "value": 1780079
         },
         {
           "year": 2019,
-          "value": 561175
+          "value": 1769880
         },
         {
           "year": 2020,
-          "value": 556959
+          "value": 1758815
         },
         {
           "year": 2021,
-          "value": 551806
+          "value": 1747513
         },
         {
           "year": 2022,
-          "value": 546558
+          "value": 1737946
         },
         {
           "year": 2023,
-          "value": 540207
+          "value": 1728098
         }
       ]
     },
@@ -86,86 +85,86 @@
       "year_end": 2020,
       "first": {
         "year": 1980,
-        "value": 12.3
+        "value": 11.7
       },
       "latest": {
         "year": 2020,
-        "value": 32.5
+        "value": 31.6
       },
-      "delta": 20.2,
-      "delta_pct": 164.23,
+      "delta": 19.900000000000002,
+      "delta_pct": 170.09,
       "values": [
         {
           "year": 1980,
-          "value": 12.3,
-          "population_total": 604049,
-          "young_population": 130631,
-          "working_age_population": 398944,
-          "elderly_population": 74474
+          "value": 11.7,
+          "population_total": 1790156,
+          "young_population": 395027,
+          "working_age_population": 1185078,
+          "elderly_population": 210051
         },
         {
           "year": 1985,
-          "value": 13.7,
-          "population_total": 615994,
-          "young_population": 130668,
-          "working_age_population": 400717,
-          "elderly_population": 84609
+          "value": 13.2,
+          "population_total": 1837586,
+          "young_population": 389073,
+          "working_age_population": 1206658,
+          "elderly_population": 241855
         },
         {
           "year": 1990,
-          "value": 16.2,
-          "population_total": 615147,
-          "young_population": 118201,
-          "working_age_population": 397218,
-          "elderly_population": 99728
+          "value": 15.5,
+          "population_total": 1837970,
+          "young_population": 355634,
+          "working_age_population": 1198319,
+          "elderly_population": 284017
         },
         {
           "year": 1995,
-          "value": 19.3,
-          "population_total": 614800,
-          "young_population": 105456,
-          "working_age_population": 390964,
-          "elderly_population": 118380
+          "value": 18.3,
+          "population_total": 1858865,
+          "young_population": 321462,
+          "working_age_population": 1196479,
+          "elderly_population": 340924
         },
         {
           "year": 2000,
-          "value": 22.0,
-          "population_total": 612489,
-          "young_population": 93584,
-          "working_age_population": 383921,
-          "elderly_population": 134984
+          "value": 21.3,
+          "population_total": 1858464,
+          "young_population": 288654,
+          "working_age_population": 1173790,
+          "elderly_population": 396020
         },
         {
           "year": 2005,
-          "value": 24.1,
-          "population_total": 606475,
-          "young_population": 84823,
-          "working_age_population": 375539,
-          "elderly_population": 146113
+          "value": 23.8,
+          "population_total": 1840382,
+          "young_population": 264013,
+          "working_age_population": 1139125,
+          "elderly_population": 437244
         },
         {
           "year": 2010,
-          "value": 26.3,
-          "population_total": 583663,
-          "young_population": 77951,
-          "working_age_population": 352098,
-          "elderly_population": 153614
+          "value": 25.6,
+          "population_total": 1806312,
+          "young_population": 249606,
+          "working_age_population": 1093440,
+          "elderly_population": 463266
         },
         {
           "year": 2015,
-          "value": 29.7,
-          "population_total": 569078,
-          "young_population": 73685,
-          "working_age_population": 326301,
-          "elderly_population": 169092
+          "value": 28.8,
+          "population_total": 1777051,
+          "young_population": 241167,
+          "working_age_population": 1024400,
+          "elderly_population": 511484
         },
         {
           "year": 2020,
-          "value": 32.5,
-          "population_total": 545378,
-          "young_population": 68330,
-          "working_age_population": 300002,
-          "elderly_population": 177046
+          "value": 31.6,
+          "population_total": 1713102,
+          "young_population": 228366,
+          "working_age_population": 944198,
+          "elderly_population": 540538
         }
       ]
     },
@@ -177,54 +176,54 @@
       "year_end": 2022,
       "first": {
         "year": 2013,
-        "value": 4759
+        "value": 15954
       },
       "latest": {
         "year": 2022,
-        "value": 3752
+        "value": 11875
       },
-      "delta": -1007,
-      "delta_pct": -21.16,
+      "delta": -4079,
+      "delta_pct": -25.57,
       "values": [
         {
           "year": 2013,
-          "value": 4759
+          "value": 15954
         },
         {
           "year": 2014,
-          "value": 4527
+          "value": 15558
         },
         {
           "year": 2015,
-          "value": 4624
+          "value": 15577
         },
         {
           "year": 2016,
-          "value": 4436
+          "value": 14896
         },
         {
           "year": 2017,
-          "value": 4310
+          "value": 14657
         },
         {
           "year": 2018,
-          "value": 4190
+          "value": 14301
         },
         {
           "year": 2019,
-          "value": 3988
+          "value": 13305
         },
         {
           "year": 2020,
-          "value": 3783
+          "value": 13011
         },
         {
           "year": 2021,
-          "value": 3708
+          "value": 12670
         },
         {
           "year": 2022,
-          "value": 3752
+          "value": 11875
         }
       ]
     },
@@ -236,50 +235,50 @@
       "year_end": 2023,
       "first": {
         "year": 2018,
-        "value": -1795
+        "value": -3575
       },
       "latest": {
         "year": 2023,
-        "value": -1756
+        "value": -1624
       },
-      "delta": 39,
-      "delta_pct": -2.17,
+      "delta": 1951,
+      "delta_pct": -54.57,
       "values": [
         {
           "year": 2018,
-          "value": -1795,
-          "in_migration": 8732,
-          "out_migration": 10527
+          "value": -3575,
+          "in_migration": 28688,
+          "out_migration": 32263
         },
         {
           "year": 2019,
-          "value": -1516,
-          "in_migration": 8725,
-          "out_migration": 10241
+          "value": -3900,
+          "in_migration": 28907,
+          "out_migration": 32807
         },
         {
           "year": 2020,
-          "value": -1000,
-          "in_migration": 8582,
-          "out_migration": 9582
+          "value": -3393,
+          "in_migration": 27553,
+          "out_migration": 30946
         },
         {
           "year": 2021,
-          "value": -1036,
-          "in_migration": 8895,
-          "out_migration": 9931
+          "value": -650,
+          "in_migration": 29204,
+          "out_migration": 29854
         },
         {
           "year": 2022,
-          "value": -1323,
-          "in_migration": 8652,
-          "out_migration": 9975
+          "value": -377,
+          "in_migration": 31277,
+          "out_migration": 31654
         },
         {
           "year": 2023,
-          "value": -1756,
-          "in_migration": 8482,
-          "out_migration": 10238
+          "value": -1624,
+          "in_migration": 30375,
+          "out_migration": 31999
         }
       ]
     },
@@ -291,54 +290,54 @@
       "year_end": 2021,
       "first": {
         "year": 2012,
-        "value": 330096834000
+        "value": 740574653000
       },
       "latest": {
         "year": 2021,
-        "value": 390934664000
+        "value": 1002835476000
       },
-      "delta": 60837830000,
-      "delta_pct": 18.43,
+      "delta": 262260823000,
+      "delta_pct": 35.41,
       "values": [
         {
           "year": 2012,
-          "value": 330096834000
+          "value": 740574653000
         },
         {
           "year": 2013,
-          "value": 341992427000
+          "value": 780443083000
         },
         {
           "year": 2014,
-          "value": 341531739000
+          "value": 754693148000
         },
         {
           "year": 2015,
-          "value": 340954473000
+          "value": 737124406000
         },
         {
           "year": 2016,
-          "value": 348286362000
+          "value": 984425154000
         },
         {
           "year": 2017,
-          "value": 359247009000
+          "value": 942850999000
         },
         {
           "year": 2018,
-          "value": 336031398000
+          "value": 891259360000
         },
         {
           "year": 2019,
-          "value": 346276373000
+          "value": 797595012000
         },
         {
           "year": 2020,
-          "value": 374788937000
+          "value": 901784321000
         },
         {
           "year": 2021,
-          "value": 390934664000
+          "value": 1002835476000
         }
       ]
     },
@@ -350,54 +349,54 @@
       "year_end": 2021,
       "first": {
         "year": 2012,
-        "value": 0.244
+        "value": 0.35207
       },
       "latest": {
         "year": 2021,
-        "value": 0.27259
+        "value": 0.40305
       },
-      "delta": 0.028590000000000004,
-      "delta_pct": 11.72,
+      "delta": 0.050980000000000025,
+      "delta_pct": 14.48,
       "values": [
         {
           "year": 2012,
-          "value": 0.244
+          "value": 0.35207
         },
         {
           "year": 2013,
-          "value": 0.24074
+          "value": 0.36218
         },
         {
           "year": 2014,
-          "value": 0.24297
+          "value": 0.369
         },
         {
           "year": 2015,
-          "value": 0.25486
+          "value": 0.38688
         },
         {
           "year": 2016,
-          "value": 0.26553
+          "value": 0.39854
         },
         {
           "year": 2017,
-          "value": 0.27262
+          "value": 0.40699
         },
         {
           "year": 2018,
-          "value": 0.27719
+          "value": 0.41148
         },
         {
           "year": 2019,
-          "value": 0.28162
+          "value": 0.4199
         },
         {
           "year": 2020,
-          "value": 0.28689
+          "value": 0.42692
         },
         {
           "year": 2021,
-          "value": 0.27259
+          "value": 0.40305
         }
       ]
     },
@@ -409,65 +408,30 @@
       "year_end": 2019,
       "first": {
         "year": 2007,
-        "value": 62.03
+        "value": 61.92
       },
       "latest": {
         "year": 2019,
-        "value": 52.7
+        "value": 46.53
       },
-      "delta": -9.329999999999998,
-      "delta_pct": -15.04,
+      "delta": -15.39,
+      "delta_pct": -24.85,
       "values": [
         {
           "year": 2007,
-          "value": 62.03
+          "value": 61.92
         },
         {
           "year": 2011,
-          "value": 60.55
+          "value": 52.42
         },
         {
           "year": 2015,
-          "value": 57.46
+          "value": 50.24
         },
         {
           "year": 2019,
-          "value": 52.7
-        }
-      ]
-    },
-    "pref_governor_turnout": {
-      "label": "都道府県知事選挙投票率",
-      "unit": "percent",
-      "ssds_item": "G6306",
-      "year_start": 2007,
-      "year_end": 2019,
-      "first": {
-        "year": 2007,
-        "value": 61.46
-      },
-      "latest": {
-        "year": 2019,
-        "value": 53.09
-      },
-      "delta": -8.369999999999997,
-      "delta_pct": -13.62,
-      "values": [
-        {
-          "year": 2007,
-          "value": 61.46
-        },
-        {
-          "year": 2011,
-          "value": 59.11
-        },
-        {
-          "year": 2015,
-          "value": 56.96
-        },
-        {
-          "year": 2019,
-          "value": 53.09
+          "value": 46.53
         }
       ]
     }

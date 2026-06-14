@@ -37,6 +37,13 @@ AREAS = [
         "area_level": "prefecture",
     },
     {
+        "council_id": "kumamoto-pref",
+        "name": "熊本県",
+        "lg_code": "430005",
+        "estat_area_code": "43000",
+        "area_level": "prefecture",
+    },
+    {
         "council_id": "tottori-city",
         "name": "鳥取市",
         "lg_code": "312011",
@@ -260,6 +267,10 @@ OUTPUT_INDICATORS: dict[str, dict[str, Any]] = {
 }
 
 DEFAULT_AREA_LEVELS = ["prefecture", "municipality"]
+OPTIONAL_TIMESERIES_INDICATORS = {
+    "pref_assembly_turnout",
+    "pref_governor_turnout",
+}
 
 
 def load_app_id() -> str:
@@ -389,26 +400,43 @@ def fetch_all_series(app_id: str) -> dict[str, dict[str, dict[int, int | float]]
     return fetched
 
 
-def latest_common_years(
+def latest_years_by_area_indicator(
     fetched: dict[str, dict[str, dict[int, int | float]]]
-) -> dict[str, list[int]]:
-    years_by_indicator: dict[str, list[int]] = {}
+) -> dict[str, dict[str, list[int]]]:
+    years_by_area: dict[str, dict[str, list[int]]] = {
+        area["council_id"]: {} for area in AREAS
+    }
     for indicator_key, indicator in OUTPUT_INDICATORS.items():
-        common_years: set[int] | None = None
         allowed_levels = set(indicator.get("area_levels", DEFAULT_AREA_LEVELS))
         target_areas = [area for area in AREAS if area["area_level"] in allowed_levels]
+        if indicator_key in OPTIONAL_TIMESERIES_INDICATORS:
+            for area in target_areas:
+                council_id = area["council_id"]
+                area_years: set[int] | None = None
+                for source_key in indicator["source_keys"]:
+                    years = set(fetched[source_key].get(council_id, {}))
+                    area_years = years if area_years is None else area_years & years
+                if area_years is None or len(area_years) < 2:
+                    continue
+                years_by_area[council_id][indicator_key] = sorted(area_years)[-INDICATOR_COUNT:]
+            continue
+
+        common_years: set[int] | None = None
         for area in target_areas:
+            council_id = area["council_id"]
             area_years: set[int] | None = None
             for source_key in indicator["source_keys"]:
-                years = set(fetched[source_key][area["council_id"]])
+                years = set(fetched[source_key].get(council_id, {}))
                 area_years = years if area_years is None else area_years & years
             common_years = area_years if common_years is None else common_years & area_years
         if common_years is None or len(common_years) < 2:
             raise RuntimeError(
                 f"{indicator_key}: fewer than 2 common years are available"
             )
-        years_by_indicator[indicator_key] = sorted(common_years)[-INDICATOR_COUNT:]
-    return years_by_indicator
+        years = sorted(common_years)[-INDICATOR_COUNT:]
+        for area in target_areas:
+            years_by_area[area["council_id"]][indicator_key] = years
+    return years_by_area
 
 
 def source_item_label(indicator_key: str, area: dict[str, str]) -> str:
@@ -469,8 +497,8 @@ def indicator_payload(
         "ssds_item": source_item_label(indicator_key, area),
         "year_start": years[0],
         "year_end": years[-1],
-        **summary,
         "values": values,
+        **summary,
     }
 
 
@@ -498,7 +526,7 @@ def timeseries_summary(values: list[dict[str, Any]]) -> dict[str, Any]:
 
 def build_council_payloads(
     fetched: dict[str, dict[str, dict[int, int | float]]],
-    years_by_indicator: dict[str, list[int]],
+    years_by_area_indicator: dict[str, dict[str, list[int]]],
 ) -> dict[str, dict[str, Any]]:
     retrieved_at = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
     payloads: dict[str, dict[str, Any]] = {}
@@ -509,13 +537,16 @@ def build_council_payloads(
             level = area["area_level"]
             if level not in indicator.get("area_levels", DEFAULT_AREA_LEVELS):
                 continue
+            years = years_by_area_indicator.get(area["council_id"], {}).get(indicator_key)
+            if not years:
+                continue
             source_key = indicator["source_keys"][0]
             stats_data_ids[indicator_key] = SOURCE_INDICATORS[source_key]["stats_data_id"][level]
             indicators[indicator_key] = indicator_payload(
                 indicator_key,
                 area,
                 fetched,
-                years_by_indicator[indicator_key],
+                years,
             )
 
         payloads[area["council_id"]] = {
@@ -594,13 +625,14 @@ def main() -> int:
 
     app_id = load_app_id()
     fetched = fetch_all_series(app_id)
-    years_by_indicator = latest_common_years(fetched)
-    payloads = build_council_payloads(fetched, years_by_indicator)
+    years_by_area_indicator = latest_years_by_area_indicator(fetched)
+    payloads = build_council_payloads(fetched, years_by_area_indicator)
     write_payloads(payloads, args.output_dir)
 
     print("generated {}".format(", ".join(sorted(payloads))))
-    for indicator_key, years in years_by_indicator.items():
-        print(f"{indicator_key}: {years[0]}-{years[-1]} ({len(years)} points)")
+    for council_id, indicators in sorted(years_by_area_indicator.items()):
+        for indicator_key, years in sorted(indicators.items()):
+            print(f"{council_id}/{indicator_key}: {years[0]}-{years[-1]} ({len(years)} points)")
     for check in spot_checks(args.output_dir):
         print(check)
     return 0
