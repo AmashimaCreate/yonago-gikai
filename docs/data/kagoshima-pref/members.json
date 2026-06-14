@@ -1,0 +1,758 @@
+{
+  "council_id": "kagoshima-pref",
+  "source_url": "https://www.pref.kagoshima.jp/aa02/gikai/giin/profile/index.html",
+  "acquisition": "scraping",
+  "members": [
+    {
+      "id": "kagoshima-pref--hisai-masataka",
+      "council_id": "kagoshima-pref",
+      "name": "久井 まさたか",
+      "name_kana": "ひさい まさたか",
+      "district": "志布志市・曽於郡区",
+      "faction": "自由民主党県議団",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "文教観光委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/124878_20251208113020-1.jpeg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/hisai.html"
+    },
+    {
+      "id": "kagoshima-pref--inubushi-hiroyuki",
+      "council_id": "kagoshima-pref",
+      "name": "いぬぶし 浩幸",
+      "name_kana": "いぬぶし ひろゆき",
+      "district": "姶良市区",
+      "faction": "無所属",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "総合政策建設委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/114642_20240717154325-1.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/inubushi.html"
+    },
+    {
+      "id": "kagoshima-pref--uto-keiko",
+      "council_id": "kagoshima-pref",
+      "name": "宇都 恵子",
+      "name_kana": "うと けいこ",
+      "district": "鹿児島市・鹿児島郡区",
+      "faction": "県民連合",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "環境厚生委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/106039_20230516194419-1.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/utokeiko.html"
+    },
+    {
+      "id": "kagoshima-pref--honda-shizuka",
+      "council_id": "kagoshima-pref",
+      "name": "本田 しずか",
+      "name_kana": "ほんだ しずか",
+      "district": "鹿児島市・鹿児島郡区",
+      "faction": "自由民主党県議団",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "文教観光委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/106040_20230516204847-1.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/hondashizuka.html"
+    },
+    {
+      "id": "kagoshima-pref--uchida-kazuki",
+      "council_id": "kagoshima-pref",
+      "name": "内田 一樹",
+      "name_kana": "うちだ かずき",
+      "district": "薩摩川内市区",
+      "faction": "自由民主党県議団",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "総務警察委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/106040_20230516205028-1.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/utidakazuki.html"
+    },
+    {
+      "id": "kagoshima-pref--murano-shiyunsaku",
+      "council_id": "kagoshima-pref",
+      "name": "村野 俊作",
+      "name_kana": "むらの しゅんさく",
+      "district": "鹿児島市・鹿児島郡区",
+      "faction": "公明党県議団",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "総合政策建設委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/106040_20230516205028-2.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/muranosyunsaku.html"
+    },
+    {
+      "id": "kagoshima-pref--motoyama-hisaya",
+      "council_id": "kagoshima-pref",
+      "name": "元山 ひさや",
+      "name_kana": "もとやま ひさや",
+      "district": "日置市区",
+      "faction": "自由民主党県議団",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "総合政策建設委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/106040_20230516205028-3.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/motoyamahisaya.html"
+    },
+    {
+      "id": "kagoshima-pref--akimaru-kenichirou",
+      "council_id": "kagoshima-pref",
+      "name": "秋丸 健一郎",
+      "name_kana": "あきまる けんいちろう",
+      "district": "霧島市・姶良郡区",
+      "faction": "県民連合",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "総務警察委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/106040_20230516205028-4.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/akimarukenitirou.html"
+    },
+    {
+      "id": "kagoshima-pref--hirahara-shiho",
+      "council_id": "kagoshima-pref",
+      "name": "平原 志保",
+      "name_kana": "ひらはら しほ",
+      "district": "霧島市・姶良郡区",
+      "faction": "無所属",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "産業経済委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/106040_20230516205028-5.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/hiraharasiho.html"
+    },
+    {
+      "id": "kagoshima-pref--yuasa-shintarou",
+      "council_id": "kagoshima-pref",
+      "name": "湯浅 慎太郎",
+      "name_kana": "ゆあさ しんたろう",
+      "district": "姶良市区",
+      "faction": "県民連合",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "総合政策建設委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/106046_20230516210820-1.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/yuasasintarou.html"
+    },
+    {
+      "id": "kagoshima-pref--matsuyama-saori",
+      "council_id": "kagoshima-pref",
+      "name": "松山 さおり",
+      "name_kana": "まつやま さおり",
+      "district": "奄美市区",
+      "faction": "自由民主党県議団",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "産業経済委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/106046_20230516210820-2.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/matuyamasaori.html"
+    },
+    {
+      "id": "kagoshima-pref--hashiguchi-suma",
+      "council_id": "kagoshima-pref",
+      "name": "橋口 住眞",
+      "name_kana": "はしぐち すま",
+      "district": "出水市区",
+      "faction": "無所属",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "環境厚生委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/106046_20230516210820-3.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/hasigutisuma.html"
+    },
+    {
+      "id": "kagoshima-pref--sumino-takeshi",
+      "council_id": "kagoshima-pref",
+      "name": "角野 毅",
+      "name_kana": "すみの たけし",
+      "district": "鹿屋市・垂水市区",
+      "faction": "自由民主党県議団",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "環境厚生委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/106046_20230516210820-4.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/suminotakesi.html"
+    },
+    {
+      "id": "kagoshima-pref--ogawa-misako",
+      "council_id": "kagoshima-pref",
+      "name": "小川 みさ子",
+      "name_kana": "おがわ みさこ",
+      "district": "鹿児島市・鹿児島郡区",
+      "faction": "無所属",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "総務警察委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/106046_20230516210820-5.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/ogawamisako.html"
+    },
+    {
+      "id": "kagoshima-pref--iwashige-aya",
+      "council_id": "kagoshima-pref",
+      "name": "岩重 あや",
+      "name_kana": "いわしげ あや",
+      "district": "鹿児島市・鹿児島郡区",
+      "faction": "自由民主党県議団",
+      "elected_count": 2,
+      "positions": [],
+      "committees": [
+        "環境厚生委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/99965_20230516211531-1.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/iwashigeaya.html"
+    },
+    {
+      "id": "kagoshima-pref--ikehata-tomoyuki",
+      "council_id": "kagoshima-pref",
+      "name": "池畑 知行",
+      "name_kana": "いけはた ともゆき",
+      "district": "伊佐市区",
+      "faction": "自由民主党県議団",
+      "elected_count": 2,
+      "positions": [],
+      "committees": [
+        "総務警察委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/99965_20230516211531-2.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/ikehatatomoyuki.html"
+    },
+    {
+      "id": "kagoshima-pref--shibatate-tetsupei",
+      "council_id": "kagoshima-pref",
+      "name": "柴立 鉄平",
+      "name_kana": "しばたて てっぺい",
+      "district": "鹿児島市・鹿児島郡区",
+      "faction": "自由民主党県議団",
+      "elected_count": 2,
+      "positions": [],
+      "committees": [
+        "産業経済委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/99965_20230516211531-3.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/sibatateteppei.html"
+    },
+    {
+      "id": "kagoshima-pref--shiraishi-makoto",
+      "council_id": "kagoshima-pref",
+      "name": "しらいし 誠",
+      "name_kana": "しらいし まこと",
+      "district": "薩摩郡区",
+      "faction": "自由民主党県議団",
+      "elected_count": 2,
+      "positions": [],
+      "committees": [
+        "総合政策建設委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/99965_20230516211531-4.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/shiraishimakoto.html"
+    },
+    {
+      "id": "kagoshima-pref--kotobuki-hajime",
+      "council_id": "kagoshima-pref",
+      "name": "寿 はじめ",
+      "name_kana": "ことぶき はじめ",
+      "district": "大島郡区",
+      "faction": "自由民主党県議団",
+      "elected_count": 2,
+      "positions": [],
+      "committees": [
+        "文教観光委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/72431_20230516212330-1.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/kotobukihajime.html"
+    },
+    {
+      "id": "kagoshima-pref--mori-akio",
+      "council_id": "kagoshima-pref",
+      "name": "森 昭男",
+      "name_kana": "もり あきお",
+      "district": "鹿児島市・鹿児島郡区",
+      "faction": "公明党県議団",
+      "elected_count": 2,
+      "positions": [],
+      "committees": [
+        "産業経済委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/72431_20230516212330-2.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/moriakio.html"
+    },
+    {
+      "id": "kagoshima-pref--taira-yukio",
+      "council_id": "kagoshima-pref",
+      "name": "たいら 行雄",
+      "name_kana": "たいら ゆきお",
+      "district": "鹿児島市・鹿児島郡区",
+      "faction": "共産党県議団",
+      "elected_count": 2,
+      "positions": [],
+      "committees": [
+        "文教観光委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/72431_20230516212330-3.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/tairayukio.html"
+    },
+    {
+      "id": "kagoshima-pref--tabata-kouichirou",
+      "council_id": "kagoshima-pref",
+      "name": "田畑 浩一郎",
+      "name_kana": "たばた こういちろう",
+      "district": "南九州市区",
+      "faction": "自由民主党県議団",
+      "elected_count": 3,
+      "positions": [],
+      "committees": [
+        "文教観光委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/72431_20230516212330-5.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/tabatak.html"
+    },
+    {
+      "id": "kagoshima-pref--iwashige-satoko",
+      "council_id": "kagoshima-pref",
+      "name": "いわしげ 仁子",
+      "name_kana": "いわしげ さとこ",
+      "district": "鹿児島市・鹿児島郡区",
+      "faction": "無所属",
+      "elected_count": 3,
+      "positions": [],
+      "committees": [
+        "文教観光委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/45590_20230516212937-1.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/iwasige.html"
+    },
+    {
+      "id": "kagoshima-pref--nakamura-motoko",
+      "council_id": "kagoshima-pref",
+      "name": "中村 素子",
+      "name_kana": "なかむら もとこ",
+      "district": "阿久根市・出水郡区",
+      "faction": "自由民主党県議団",
+      "elected_count": 3,
+      "positions": [],
+      "committees": [
+        "総合政策建設委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/45590_20230516212937-2.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/nakamuram.html"
+    },
+    {
+      "id": "kagoshima-pref--hourai-yoshiharu",
+      "council_id": "kagoshima-pref",
+      "name": "宝来 良治",
+      "name_kana": "ほうらい よしはる",
+      "district": "鹿児島市・鹿児島郡区",
+      "faction": "自由民主党県議団",
+      "elected_count": 3,
+      "positions": [],
+      "committees": [
+        "総務警察委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/45590_20230516212937-3.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/hourai.html"
+    },
+    {
+      "id": "kagoshima-pref--itou-kouki",
+      "council_id": "kagoshima-pref",
+      "name": "伊藤 浩樹",
+      "name_kana": "いとう こうき",
+      "district": "出水市区",
+      "faction": "自由民主党県議団",
+      "elected_count": 3,
+      "positions": [],
+      "committees": [
+        "環境厚生委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/45590_20230516212937-4.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/itoukouki.html"
+    },
+    {
+      "id": "kagoshima-pref--ueyama-sadashige",
+      "council_id": "kagoshima-pref",
+      "name": "上山 貞茂",
+      "name_kana": "うえやま さだしげ",
+      "district": "鹿児島市・鹿児島郡区",
+      "faction": "県民連合",
+      "elected_count": 3,
+      "positions": [],
+      "committees": [
+        "産業経済委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/45590_20230516212937-5.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/ueyamas.html"
+    },
+    {
+      "id": "kagoshima-pref--higashi-kiyotake",
+      "council_id": "kagoshima-pref",
+      "name": "東 清剛",
+      "name_kana": "ひがし きよたけ",
+      "district": "日置市区",
+      "faction": "無所属",
+      "elected_count": 3,
+      "positions": [],
+      "committees": [
+        "環境厚生委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/45597_20230516213559-1.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/higashik.html"
+    },
+    {
+      "id": "kagoshima-pref--nishimura-kiyou",
+      "council_id": "kagoshima-pref",
+      "name": "西村 協",
+      "name_kana": "にしむら きょう",
+      "district": "枕崎市区",
+      "faction": "自由民主党県議団",
+      "elected_count": 3,
+      "positions": [],
+      "committees": [
+        "産業経済委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/45597_20230516213559-2.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/nishimurak.html"
+    },
+    {
+      "id": "kagoshima-pref--osada-yasuhide",
+      "council_id": "kagoshima-pref",
+      "name": "おさだ 康秀",
+      "name_kana": "おさだ やすひで",
+      "district": "鹿児島市・鹿児島郡区",
+      "faction": "自由民主党県議団",
+      "elected_count": 4,
+      "positions": [],
+      "committees": [
+        "総合政策建設委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/45597_20230516213559-3.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/osaday.html"
+    },
+    {
+      "id": "kagoshima-pref--ookubo-hirofumi",
+      "council_id": "kagoshima-pref",
+      "name": "大久保 博文",
+      "name_kana": "おおくぼ ひろふみ",
+      "district": "鹿屋市・垂水市区",
+      "faction": "自由民主党県議団",
+      "elected_count": 4,
+      "positions": [],
+      "committees": [
+        "総務警察委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/45597_20230516213559-4.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/ookubo.html"
+    },
+    {
+      "id": "kagoshima-pref--fukushiyama-nobusuke",
+      "council_id": "kagoshima-pref",
+      "name": "ふくし山 ノブスケ",
+      "name_kana": "ふくしやま のぶすけ",
+      "district": "鹿児島市・鹿児島郡区",
+      "faction": "県民連合",
+      "elected_count": 4,
+      "positions": [],
+      "committees": [
+        "産業経済委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/45597_20230516213726-1.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/fukushiyama.html"
+    },
+    {
+      "id": "kagoshima-pref--maeno-yoshiharu",
+      "council_id": "kagoshima-pref",
+      "name": "前野 義春",
+      "name_kana": "まえの よしはる",
+      "district": "鹿屋市・垂水市区",
+      "faction": "県民連合",
+      "elected_count": 4,
+      "positions": [],
+      "committees": [
+        "環境厚生委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/45597_20230516213726-2.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/maeno.html"
+    },
+    {
+      "id": "kagoshima-pref--setoguchi-saburou",
+      "council_id": "kagoshima-pref",
+      "name": "瀬戸口 三郎",
+      "name_kana": "せとぐち さぶろう",
+      "district": "曽於市区",
+      "faction": "自由民主党県議団",
+      "elected_count": 4,
+      "positions": [],
+      "committees": [
+        "産業経済委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/45597_20230516213726-3.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/setoguti.html"
+    },
+    {
+      "id": "kagoshima-pref--sonoda-yutaka",
+      "council_id": "kagoshima-pref",
+      "name": "園田 豊",
+      "name_kana": "そのだ ゆたか",
+      "district": "南さつま市区",
+      "faction": "自由民主党県議団",
+      "elected_count": 5,
+      "positions": [],
+      "committees": [
+        "環境厚生委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/45597_20230516213726-4.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/sonoda.html"
+    },
+    {
+      "id": "kagoshima-pref--yanagi-seiko",
+      "council_id": "kagoshima-pref",
+      "name": "柳 誠子",
+      "name_kana": "やなぎ せいこ",
+      "district": "鹿児島市・鹿児島郡区",
+      "faction": "県民連合",
+      "elected_count": 5,
+      "positions": [],
+      "committees": [
+        "文教観光委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/45597_20230516213726-5.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/yanagiseiko.html"
+    },
+    {
+      "id": "kagoshima-pref--fujisaki-takeshi",
+      "council_id": "kagoshima-pref",
+      "name": "藤崎 剛",
+      "name_kana": "ふじさき たけし",
+      "district": "鹿児島市・鹿児島郡区",
+      "faction": "自由民主党県議団",
+      "elected_count": 5,
+      "positions": [],
+      "committees": [
+        "総合政策建設委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/18282_20230516214539-1.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/fujisaki.html"
+    },
+    {
+      "id": "kagoshima-pref--matsuda-hirotaka",
+      "council_id": "kagoshima-pref",
+      "name": "松田 浩孝",
+      "name_kana": "まつだ ひろたか",
+      "district": "鹿児島市・鹿児島郡区",
+      "faction": "公明党県議団",
+      "elected_count": 5,
+      "positions": [],
+      "committees": [
+        "総務警察委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/18282_20230516214539-2.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/matuda.html"
+    },
+    {
+      "id": "kagoshima-pref--kiku-shinichirou",
+      "council_id": "kagoshima-pref",
+      "name": "禧久 伸一郎",
+      "name_kana": "きく しんいちろう",
+      "district": "大島郡区",
+      "faction": "自由民主党県議団",
+      "elected_count": 5,
+      "positions": [],
+      "committees": [
+        "文教観光委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/18282_20230516214539-3.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/kiku.html"
+    },
+    {
+      "id": "kagoshima-pref--terada-youichi",
+      "council_id": "kagoshima-pref",
+      "name": "寺田 洋一",
+      "name_kana": "てらだ よういち",
+      "district": "鹿児島市・鹿児島郡区",
+      "faction": "自由民主党県議団",
+      "elected_count": 5,
+      "positions": [],
+      "committees": [
+        "総務警察委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/18282_20230516214539-4.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/teraday.html"
+    },
+    {
+      "id": "kagoshima-pref--kozono-shigeyoshi",
+      "council_id": "kagoshima-pref",
+      "name": "小園 しげよし",
+      "name_kana": "こぞの しげよし",
+      "district": "指宿市区",
+      "faction": "自由民主党県議団",
+      "elected_count": 6,
+      "positions": [],
+      "committees": [
+        "文教観光委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/18282_20230516214539-5.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/kozono.html"
+    },
+    {
+      "id": "kagoshima-pref--nagai-akiyoshi",
+      "council_id": "kagoshima-pref",
+      "name": "永井 章義",
+      "name_kana": "ながい あきよし",
+      "district": "奄美市区",
+      "faction": "自由民主党県議団",
+      "elected_count": 6,
+      "positions": [],
+      "committees": [
+        "総合政策建設委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/106055_20230516215045-1.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/nagaiakiyosi.html"
+    },
+    {
+      "id": "kagoshima-pref--yoshidome-atsuhiro",
+      "council_id": "kagoshima-pref",
+      "name": "吉留 厚宏",
+      "name_kana": "よしどめ あつひろ",
+      "district": "いちき串木野市区",
+      "faction": "自由民主党県議団",
+      "elected_count": 6,
+      "positions": [],
+      "committees": [
+        "環境厚生委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/106055_20230516215045-2.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/yosidome.html"
+    },
+    {
+      "id": "kagoshima-pref--tsuruzono-masahiko",
+      "council_id": "kagoshima-pref",
+      "name": "鶴薗 真佐彦",
+      "name_kana": "つるぞの まさひこ",
+      "district": "薩摩川内市区",
+      "faction": "自由民主党県議団",
+      "elected_count": 7,
+      "positions": [],
+      "committees": [
+        "総合政策建設委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/106055_20230516215045-3.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/tsuruzonom.html"
+    },
+    {
+      "id": "kagoshima-pref--tsuruta-shirou",
+      "council_id": "kagoshima-pref",
+      "name": "鶴田 志郎",
+      "name_kana": "つるた しろう",
+      "district": "肝属郡区",
+      "faction": "自由民主党県議団",
+      "elected_count": 7,
+      "positions": [],
+      "committees": [
+        "環境厚生委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/106055_20230516215045-4.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/turuta.html"
+    },
+    {
+      "id": "kagoshima-pref--hidaka-shigeru",
+      "council_id": "kagoshima-pref",
+      "name": "日高 滋",
+      "name_kana": "ひだか しげる",
+      "district": "西之表市・熊毛郡区",
+      "faction": "自由民主党県議団",
+      "elected_count": 7,
+      "positions": [],
+      "committees": [
+        "文教観光委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/106055_20230516215045-5.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/hidaka.html"
+    },
+    {
+      "id": "kagoshima-pref--hokazono-katsuzou",
+      "council_id": "kagoshima-pref",
+      "name": "外薗 勝蔵",
+      "name_kana": "ほかぞの かつぞう",
+      "district": "薩摩川内市区",
+      "faction": "自由民主党県議団",
+      "elected_count": 7,
+      "positions": [],
+      "committees": [
+        "産業経済委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/106055_20230516215156-1.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/hokazono.html"
+    },
+    {
+      "id": "kagoshima-pref--matsuzato-yasuhiro",
+      "council_id": "kagoshima-pref",
+      "name": "松里 保廣",
+      "name_kana": "まつざと やすひろ",
+      "district": "西之表市・熊毛郡区",
+      "faction": "自由民主党県議団",
+      "elected_count": 8,
+      "positions": [],
+      "committees": [
+        "総務警察委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/106055_20230516215156-2.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/matuzato.html"
+    },
+    {
+      "id": "kagoshima-pref--yamada-kuniharu",
+      "council_id": "kagoshima-pref",
+      "name": "山田 国治",
+      "name_kana": "やまだ くにはる",
+      "district": "霧島市・姶良郡区",
+      "faction": "自由民主党県議団",
+      "elected_count": 10,
+      "positions": [],
+      "committees": [
+        "産業経済委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/106055_20230516215156-3.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/yamadakuni.html"
+    },
+    {
+      "id": "kagoshima-pref--tanoue-kouzou",
+      "council_id": "kagoshima-pref",
+      "name": "田之上 耕三",
+      "name_kana": "たのうえ こうぞう",
+      "district": "霧島市・姶良郡区",
+      "faction": "自由民主党県議団",
+      "elected_count": 10,
+      "positions": [],
+      "committees": [
+        "総務警察委員会"
+      ],
+      "photo_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/images/106055_20230516215156-4.jpg",
+      "official_profile_url": "https://www.pref.kagoshima.jp/ha01/gikai/giin/profile/tanoue.html"
+    }
+  ],
+  "updated_at": "2026-06-14T16:33:46+00:00"
+}

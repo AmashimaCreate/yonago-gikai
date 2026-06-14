@@ -498,8 +498,17 @@
       "lg_code": "400009",
       "minutes_system": "unknown",
       "vote_granularity": "unknown",
-      "official_links": [],
-      "status": "planned"
+      "official_links": [
+        {
+          "label": "議会の公式サイト",
+          "url": "https://www.gikai.pref.fukuoka.lg.jp/"
+        },
+        {
+          "label": "議員名簿",
+          "url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/all.html"
+        }
+      ],
+      "status": "active"
     },
     {
       "id": "saga-pref",
@@ -580,8 +589,17 @@
       "lg_code": "450006",
       "minutes_system": "unknown",
       "vote_granularity": "unknown",
-      "official_links": [],
-      "status": "planned"
+      "official_links": [
+        {
+          "label": "議会の公式サイト",
+          "url": "https://www.pref.miyazaki.lg.jp/gikai/"
+        },
+        {
+          "label": "議員名簿",
+          "url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/index.html"
+        }
+      ],
+      "status": "active"
     },
     {
       "id": "kagoshima-pref",
@@ -592,8 +610,17 @@
       "lg_code": "460001",
       "minutes_system": "unknown",
       "vote_granularity": "unknown",
-      "official_links": [],
-      "status": "planned"
+      "official_links": [
+        {
+          "label": "議会の公式サイト",
+          "url": "https://www.pref.kagoshima.jp/gikai/"
+        },
+        {
+          "label": "議員名簿",
+          "url": "https://www.pref.kagoshima.jp/aa02/gikai/giin/profile/index.html"
+        }
+      ],
+      "status": "active"
     },
     {
       "id": "okinawa-pref",
@@ -604,8 +631,17 @@
       "lg_code": "470007",
       "minutes_system": "unknown",
       "vote_granularity": "unknown",
-      "official_links": [],
-      "status": "planned"
+      "official_links": [
+        {
+          "label": "議会の公式サイト",
+          "url": "https://www.pref.okinawa.jp/kensei/gikai/index.html"
+        },
+        {
+          "label": "議員名簿",
+          "url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029769.html"
+        }
+      ],
+      "status": "active"
     },
     {
       "id": "tottori-city",

@@ -1,0 +1,1489 @@
+{
+  "council_id": "fukuoka-pref",
+  "source_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/all.html",
+  "acquisition": "scraping",
+  "members": [
+    {
+      "id": "fukuoka-pref--akita-shiyouji",
+      "council_id": "fukuoka-pref",
+      "name": "秋田 章二",
+      "name_kana": "あきた しょうじ",
+      "district": "大川市・三潴郡",
+      "faction": "自民党県議団",
+      "elected_count": 5,
+      "positions": [],
+      "committees": [
+        "厚生環境委員会",
+        "ワンヘルス・地方分権等調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/akita-syouji.html"
+    },
+    {
+      "id": "fukuoka-pref--arai-fumiko",
+      "council_id": "fukuoka-pref",
+      "name": "新井 富美子",
+      "name_kana": "あらい ふみこ",
+      "district": "久留米市・うきは市",
+      "faction": "民主県政県議団",
+      "elected_count": 2,
+      "positions": [
+        "国際化・多文化共生社会調査特別委員会（委員長）"
+      ],
+      "committees": [
+        "議会運営委員会（理事）",
+        "文教委員会",
+        "国際化・多文化共生社会調査特別委員会（委員長）"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/arai-humiko.html"
+    },
+    {
+      "id": "fukuoka-pref--iki-yoshirou",
+      "council_id": "fukuoka-pref",
+      "name": "壹岐 和郎",
+      "name_kana": "いき よしろう",
+      "district": "北九州市小倉北区",
+      "faction": "公明党",
+      "elected_count": 5,
+      "positions": [
+        "子育て支援・人財育成調査特別委員会（委員長）"
+      ],
+      "committees": [
+        "議会運営委員会（理事）",
+        "総務企画地域振興委員会",
+        "子育て支援・人財育成調査特別委員会（委員長）"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/iki-yoshirou.html"
+    },
+    {
+      "id": "fukuoka-pref--itahashi-satoshi",
+      "council_id": "fukuoka-pref",
+      "name": "板橋 聡",
+      "name_kana": "いたはし さとし",
+      "district": "みやま市",
+      "faction": "自民党県議団",
+      "elected_count": 4,
+      "positions": [
+        "議会運営委員会（委員長）"
+      ],
+      "committees": [
+        "議会運営委員会（委員長）",
+        "総務企画地域振興委員会",
+        "ワンヘルス・地方分権等調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/itahashi-satoshi.html"
+    },
+    {
+      "id": "fukuoka-pref--inamata-shinichi",
+      "council_id": "fukuoka-pref",
+      "name": "稲又 進一",
+      "name_kana": "いなまた しんいち",
+      "district": "北九州市門司区",
+      "faction": "公明党",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "県土整備委員会",
+        "ワンヘルス・地方分権等調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/inamata-shinichi.html"
+    },
+    {
+      "id": "fukuoka-pref--inoue-kan",
+      "council_id": "fukuoka-pref",
+      "name": "井上 寛",
+      "name_kana": "いのうえ かん",
+      "district": "久留米市・うきは市",
+      "faction": "公明党",
+      "elected_count": 1,
+      "positions": [
+        "農林水産委員会（副委員長）"
+      ],
+      "committees": [
+        "議会運営委員会",
+        "農林水産委員会（副委員長）",
+        "空港・交通インフラ調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/inoue-kan.html"
+    },
+    {
+      "id": "fukuoka-pref--inoue-jiyungo",
+      "council_id": "fukuoka-pref",
+      "name": "井上 順吾",
+      "name_kana": "いのうえ じゅんご",
+      "district": "大野城市",
+      "faction": "自民党県議団",
+      "elected_count": 6,
+      "positions": [],
+      "committees": [
+        "議会運営委員会",
+        "総務企画地域振興委員会",
+        "スポーツ立県調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/inoue-jungo.html"
+    },
+    {
+      "id": "fukuoka-pref--inoue-tadatoshi",
+      "council_id": "fukuoka-pref",
+      "name": "井上 忠敏",
+      "name_kana": "いのうえ ただとし",
+      "district": "小郡市・三井郡",
+      "faction": "自民党県議団",
+      "elected_count": 7,
+      "positions": [],
+      "committees": [
+        "建築都市委員会",
+        "国際化・多文化共生社会調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/inoue-tadatoshi.html"
+    },
+    {
+      "id": "fukuoka-pref--inoue-hirotaka",
+      "council_id": "fukuoka-pref",
+      "name": "井上 博隆",
+      "name_kana": "いのうえ ひろたか",
+      "district": "大野城市",
+      "faction": "民主県政県議団",
+      "elected_count": 4,
+      "positions": [],
+      "committees": [
+        "県土整備委員会",
+        "空港・交通インフラ調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/inoue-hirotaka.html"
+    },
+    {
+      "id": "fukuoka-pref--inoue-hiroyuki",
+      "council_id": "fukuoka-pref",
+      "name": "井上 博行",
+      "name_kana": "いのうえ ひろゆき",
+      "district": "福岡市博多区",
+      "faction": "自民党県議団",
+      "elected_count": 3,
+      "positions": [
+        "空港・交通インフラ調査特別委員会（委員長）"
+      ],
+      "committees": [
+        "総務企画地域振興委員会",
+        "空港・交通インフラ調査特別委員会（委員長）"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/inoue-hiroyuki.html"
+    },
+    {
+      "id": "fukuoka-pref--inoue-masafumi",
+      "council_id": "fukuoka-pref",
+      "name": "井上 正文",
+      "name_kana": "いのうえ まさふみ",
+      "district": "宗像市",
+      "faction": "自民党県議団",
+      "elected_count": 2,
+      "positions": [
+        "ワンヘルス・地方分権等調査特別委員会（副委員長）"
+      ],
+      "committees": [
+        "商工労働委員会",
+        "ワンヘルス・地方分権等調査特別委員会（副委員長）"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/inoue-masahumi.html"
+    },
+    {
+      "id": "fukuoka-pref--imahayashi-kiyuu",
+      "council_id": "fukuoka-pref",
+      "name": "今林 久",
+      "name_kana": "いまはやし きゅう",
+      "district": "福岡市東区",
+      "faction": "自民党県議団",
+      "elected_count": 8,
+      "positions": [],
+      "committees": [
+        "文教委員会",
+        "子育て支援・人財育成調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/imahayashi-kyuu.html"
+    },
+    {
+      "id": "fukuoka-pref--iwamoto-kazuyoshi",
+      "council_id": "fukuoka-pref",
+      "name": "岩元 一儀",
+      "name_kana": "いわもと かずよし",
+      "district": "北九州市八幡西区",
+      "faction": "民主県政県議団",
+      "elected_count": 6,
+      "positions": [],
+      "committees": [
+        "警察委員会",
+        "ワンヘルス・地方分権等調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/iwamoto-kazuyoshi.html"
+    },
+    {
+      "id": "fukuoka-pref--ura-isao",
+      "council_id": "fukuoka-pref",
+      "name": "浦 伊三夫",
+      "name_kana": "うら いさお",
+      "district": "糸島市",
+      "faction": "自民党県議団",
+      "elected_count": 3,
+      "positions": [
+        "再生可能エネルギー等調査特別委員会（委員長）"
+      ],
+      "committees": [
+        "農林水産委員会",
+        "再生可能エネルギー等調査特別委員会（委員長）"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/ura-isao.html"
+    },
+    {
+      "id": "fukuoka-pref--urata-daiji",
+      "council_id": "fukuoka-pref",
+      "name": "浦田 大治",
+      "name_kana": "うらた だいじ",
+      "district": "田川市",
+      "faction": "新政会",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "商工労働委員会",
+        "再生可能エネルギー等調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/urata-daiji.html"
+    },
+    {
+      "id": "fukuoka-pref--egashira-shiyouichi",
+      "council_id": "fukuoka-pref",
+      "name": "江頭 祥一",
+      "name_kana": "えがしら しょういち",
+      "district": "嘉麻市",
+      "faction": "自民党県議団",
+      "elected_count": 3,
+      "positions": [],
+      "committees": [
+        "議会運営委員会（理事）",
+        "厚生環境委員会",
+        "スポーツ立県調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/egashira-shouichi.html"
+    },
+    {
+      "id": "fukuoka-pref--egawa-toshihiko",
+      "council_id": "fukuoka-pref",
+      "name": "永川 俊彦",
+      "name_kana": "えがわ としひこ",
+      "district": "大牟田市",
+      "faction": "自民党県議団",
+      "elected_count": 2,
+      "positions": [
+        "警察委員会（委員長）"
+      ],
+      "committees": [
+        "警察委員会（委員長）",
+        "空港・交通インフラ調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/egawa-toshihiko.html"
+    },
+    {
+      "id": "fukuoka-pref--eguchi-yoshiaki",
+      "council_id": "fukuoka-pref",
+      "name": "江口 善明",
+      "name_kana": "えぐち よしあき",
+      "district": "久留米市・うきは市",
+      "faction": "自民党県議団",
+      "elected_count": 4,
+      "positions": [],
+      "committees": [
+        "議会運営委員会",
+        "建築都市委員会",
+        "子育て支援・人財育成調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/eguchi-yoshiaki.html"
+    },
+    {
+      "id": "fukuoka-pref--etou-hideyuki",
+      "council_id": "fukuoka-pref",
+      "name": "江藤 秀之",
+      "name_kana": "えとう ひでゆき",
+      "district": "飯塚市・嘉穂郡",
+      "faction": "自民党県議団",
+      "elected_count": 6,
+      "positions": [],
+      "committees": [
+        "建築都市委員会",
+        "再生可能エネルギー等調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/etou-hideyuki.html"
+    },
+    {
+      "id": "fukuoka-pref--ooshima-michihito",
+      "council_id": "fukuoka-pref",
+      "name": "大島 道人",
+      "name_kana": "おおしま みちひと",
+      "district": "田川郡",
+      "faction": "自民党県議団",
+      "elected_count": 4,
+      "positions": [],
+      "committees": [
+        "総務企画地域振興委員会",
+        "再生可能エネルギー等調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/ooshima-michihito.html"
+    },
+    {
+      "id": "fukuoka-pref--oota-kiyouko",
+      "council_id": "fukuoka-pref",
+      "name": "大田 京子",
+      "name_kana": "おおた きょうこ",
+      "district": "福岡市南区",
+      "faction": "民主県政県議団",
+      "elected_count": 3,
+      "positions": [
+        "議会運営委員会（副委員長）"
+      ],
+      "committees": [
+        "議会運営委員会（副委員長）",
+        "警察委員会",
+        "子育て支援・人財育成調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/ota-kyouko.html"
+    },
+    {
+      "id": "fukuoka-pref--oota-mitsuru",
+      "council_id": "fukuoka-pref",
+      "name": "大田 満",
+      "name_kana": "おおた みつる",
+      "district": "福岡市早良区",
+      "faction": "自民党県議団",
+      "elected_count": 2,
+      "positions": [
+        "子育て支援・人財育成調査特別委員会（副委員長）"
+      ],
+      "committees": [
+        "建築都市委員会",
+        "子育て支援・人財育成調査特別委員会（副委員長）"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/ota-mitsuru.html"
+    },
+    {
+      "id": "fukuoka-pref--ootsuka-katsutoshi",
+      "council_id": "fukuoka-pref",
+      "name": "大塚 勝利",
+      "name_kana": "おおつか かつとし",
+      "district": "福岡市東区",
+      "faction": "公明党",
+      "elected_count": 5,
+      "positions": [],
+      "committees": [
+        "厚生環境委員会",
+        "国際化・多文化共生社会調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/ootsuka-katsutoshi.html"
+    },
+    {
+      "id": "fukuoka-pref--ootsuka-kinuko",
+      "council_id": "fukuoka-pref",
+      "name": "大塚 絹子",
+      "name_kana": "おおつか きぬこ",
+      "district": "北九州市八幡東区",
+      "faction": "新政会",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "議会運営委員会（理事）",
+        "総務企画地域振興委員会",
+        "ワンヘルス・地方分権等調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/otsuka-kinuko.html"
+    },
+    {
+      "id": "fukuoka-pref--oohashi-katsumi",
+      "council_id": "fukuoka-pref",
+      "name": "大橋 克己",
+      "name_kana": "おおはし かつみ",
+      "district": "大牟田市",
+      "faction": "民主県政県議団",
+      "elected_count": 4,
+      "positions": [],
+      "committees": [
+        "厚生環境委員会",
+        "スポーツ立県調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/oohashi-katsumi.html"
+    },
+    {
+      "id": "fukuoka-pref--kaji-kunio",
+      "council_id": "fukuoka-pref",
+      "name": "加地 邦雄",
+      "name_kana": "かぢ くにお",
+      "district": "福岡市南区",
+      "faction": "自民党県議団",
+      "elected_count": 7,
+      "positions": [],
+      "committees": [
+        "商工労働委員会",
+        "ワンヘルス・地方分権等調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/kadi-kunio.html"
+    },
+    {
+      "id": "fukuoka-pref--kabashima-tokuhiro",
+      "council_id": "fukuoka-pref",
+      "name": "椛島 徳博",
+      "name_kana": "かばしま とくひろ",
+      "district": "柳川市",
+      "faction": "新政会",
+      "elected_count": 4,
+      "positions": [],
+      "committees": [
+        "新政会福岡県議団会長",
+        "警察委員会",
+        "子育て支援・人財育成調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/kabashima-tokuhiro.html"
+    },
+    {
+      "id": "fukuoka-pref--kamura-kaoru",
+      "council_id": "fukuoka-pref",
+      "name": "嘉村 薫",
+      "name_kana": "かむら かおる",
+      "district": "糸島市",
+      "faction": "民主県政県議団",
+      "elected_count": 1,
+      "positions": [
+        "文教委員会（副委員長）"
+      ],
+      "committees": [
+        "文教委員会（副委員長）",
+        "ワンヘルス・地方分権等調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/kamura-kaoru.html"
+    },
+    {
+      "id": "fukuoka-pref--kamezaki-daisuke",
+      "council_id": "fukuoka-pref",
+      "name": "亀崎 大介",
+      "name_kana": "かめざき だいすけ",
+      "district": "糟屋郡",
+      "faction": "民主県政県議団",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "県土整備委員会",
+        "ワンヘルス・地方分権等調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/kamezaki-daisuke.html"
+    },
+    {
+      "id": "fukuoka-pref--kawakami-tae",
+      "council_id": "fukuoka-pref",
+      "name": "川上 多恵",
+      "name_kana": "かわかみ たえ",
+      "district": "福岡市博多区",
+      "faction": "公明党",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "建築都市委員会",
+        "子育て支援・人財育成調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/kawakami-tae.html"
+    },
+    {
+      "id": "fukuoka-pref--kawabata-kouichi",
+      "council_id": "fukuoka-pref",
+      "name": "川端 耕一",
+      "name_kana": "かわばた こういち",
+      "district": "北九州市門司区",
+      "faction": "自民党県議団",
+      "elected_count": 4,
+      "positions": [],
+      "committees": [
+        "文教委員会",
+        "子育て支援・人財育成調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/kawabata-kouichi.html"
+    },
+    {
+      "id": "fukuoka-pref--kiriake-kazuhisa",
+      "council_id": "fukuoka-pref",
+      "name": "桐明 和久",
+      "name_kana": "きりあけ かずひさ",
+      "district": "八女市・八女郡",
+      "faction": "自民党県議団",
+      "elected_count": 4,
+      "positions": [],
+      "committees": [
+        "農林水産委員会",
+        "スポーツ立県調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/kiriake-kazuhisa.html"
+    },
+    {
+      "id": "fukuoka-pref--kurauchi-isao",
+      "council_id": "fukuoka-pref",
+      "name": "藏内 勇夫",
+      "name_kana": "くらうち いさお",
+      "district": "筑後市",
+      "faction": "自民党県議団",
+      "elected_count": 10,
+      "positions": [],
+      "committees": [
+        "第74代福岡県議会議長",
+        "警察委員会",
+        "ワンヘルス・地方分権等調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/kurauchi-isao.html"
+    },
+    {
+      "id": "fukuoka-pref--kurihara-yuuji",
+      "council_id": "fukuoka-pref",
+      "name": "栗原 悠次",
+      "name_kana": "くりはら ゆうじ",
+      "district": "八女市・八女郡",
+      "faction": "緑友会",
+      "elected_count": 2,
+      "positions": [],
+      "committees": [
+        "緑友会会長",
+        "厚生環境委員会",
+        "スポーツ立県調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/kurihara-yuuji.html"
+    },
+    {
+      "id": "fukuoka-pref--kouzaki-satoshi",
+      "council_id": "fukuoka-pref",
+      "name": "神崎 聡",
+      "name_kana": "こうざき さとし",
+      "district": "田川郡",
+      "faction": "自民党県議団",
+      "elected_count": 4,
+      "positions": [
+        "国際化・多文化共生社会調査特別委員会（副委員長）"
+      ],
+      "committees": [
+        "商工労働委員会",
+        "国際化・多文化共生社会調査特別委員会（副委員長）"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/kouzaki-satoshi.html"
+    },
+    {
+      "id": "fukuoka-pref--kouhara-katsuji",
+      "council_id": "fukuoka-pref",
+      "name": "香原 勝司",
+      "name_kana": "こうはら かつじ",
+      "district": "直方市",
+      "faction": "自民党県議団",
+      "elected_count": 4,
+      "positions": [],
+      "committees": [
+        "県土整備委員会",
+        "再生可能エネルギー等調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/kouhara-katsuji.html"
+    },
+    {
+      "id": "fukuoka-pref--gotou-kaori",
+      "council_id": "fukuoka-pref",
+      "name": "後藤 香織",
+      "name_kana": "ごとう かおり",
+      "district": "福岡市早良区",
+      "faction": "ふくおか政策の会",
+      "elected_count": 2,
+      "positions": [],
+      "committees": [
+        "ふくおか政策の会代表",
+        "総務企画地域振興委員会",
+        "子育て支援・人財育成調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/gotou-kaori.html"
+    },
+    {
+      "id": "fukuoka-pref--komidori-takashi",
+      "council_id": "fukuoka-pref",
+      "name": "小緑 貴吏",
+      "name_kana": "こみどり たかし",
+      "district": "北九州市戸畑区",
+      "faction": "自民党県議団",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "文教委員会",
+        "空港・交通インフラ調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/komidori-takashi.html"
+    },
+    {
+      "id": "fukuoka-pref--sasaki-tooru",
+      "council_id": "fukuoka-pref",
+      "name": "佐々木 徹",
+      "name_kana": "ささき とおる",
+      "district": "福岡市東区",
+      "faction": "民主県政県議団",
+      "elected_count": 6,
+      "positions": [],
+      "committees": [
+        "建築都市委員会",
+        "空港・交通インフラ調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/sasaki-tooru.html"
+    },
+    {
+      "id": "fukuoka-pref--satou-kaede",
+      "council_id": "fukuoka-pref",
+      "name": "佐藤 楓",
+      "name_kana": "さとう かえで",
+      "district": "北九州市小倉南区",
+      "faction": "自民党県議団",
+      "elected_count": 1,
+      "positions": [
+        "厚生環境委員会（副委員長）"
+      ],
+      "committees": [
+        "厚生環境委員会（副委員長）",
+        "子育て支援・人財育成調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/satou-kaede.html"
+    },
+    {
+      "id": "fukuoka-pref--shiode-mariko",
+      "council_id": "fukuoka-pref",
+      "name": "塩出 麻里子",
+      "name_kana": "しおで まりこ",
+      "district": "北九州市小倉南区",
+      "faction": "公明党",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "商工労働委員会",
+        "空港・交通インフラ調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/shiode-mariko.html"
+    },
+    {
+      "id": "fukuoka-pref--shioniyuu-kouki",
+      "council_id": "fukuoka-pref",
+      "name": "塩生 好紀",
+      "name_kana": "しおにゅう こうき",
+      "district": "福岡市西区",
+      "faction": "日本維新の会福岡",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "日本維新の会福岡会長",
+        "農林水産委員会",
+        "再生可能エネルギー等調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/shionyu-kouki.html"
+    },
+    {
+      "id": "fukuoka-pref--shinkai-takashi",
+      "council_id": "fukuoka-pref",
+      "name": "新開 崇司",
+      "name_kana": "しんかい たかし",
+      "district": "福岡市東区",
+      "faction": "無所属の会",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "厚生環境委員会",
+        "国際化・多文化共生社会調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/shinkai-takashi.html"
+    },
+    {
+      "id": "fukuoka-pref--shinkai-takamasa",
+      "council_id": "fukuoka-pref",
+      "name": "新開 嵩将",
+      "name_kana": "しんかい たかまさ",
+      "district": "福岡市中央区",
+      "faction": "無所属の会",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "無所属の会代表",
+        "県土整備委員会",
+        "ワンヘルス・地方分権等調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/shinkai-takamasa.html"
+    },
+    {
+      "id": "fukuoka-pref--shinkai-masahiko",
+      "council_id": "fukuoka-pref",
+      "name": "新開 昌彦",
+      "name_kana": "しんかい まさひこ",
+      "district": "福岡市早良区",
+      "faction": "公明党",
+      "elected_count": 7,
+      "positions": [],
+      "committees": [
+        "公明党福岡県議団団長",
+        "警察委員会",
+        "ワンヘルス・地方分権等調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/shinkai-masahiko.html"
+    },
+    {
+      "id": "fukuoka-pref--takahashi-yoshihiko",
+      "council_id": "fukuoka-pref",
+      "name": "高橋 義彦",
+      "name_kana": "たかはし よしひこ",
+      "district": "飯塚市・嘉穂郡",
+      "faction": "自民党県議団",
+      "elected_count": 2,
+      "positions": [
+        "文教委員会（委員長）"
+      ],
+      "committees": [
+        "議会運営委員会",
+        "文教委員会（委員長）",
+        "ワンヘルス・地方分権等調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/takahashi-yoshihiko.html"
+    },
+    {
+      "id": "fukuoka-pref--tanaka-masaomi",
+      "council_id": "fukuoka-pref",
+      "name": "田中 雅臣",
+      "name_kana": "たなか まさおみ",
+      "district": "北九州市小倉南区",
+      "faction": "民主県政県議団",
+      "elected_count": 1,
+      "positions": [
+        "スポーツ立県調査特別委員会（副委員長）"
+      ],
+      "committees": [
+        "議会運営委員会",
+        "建築都市委員会",
+        "スポーツ立県調査特別委員会（副委員長）"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/tanaka-masaomi.html"
+    },
+    {
+      "id": "fukuoka-pref--chiyou-hiroumi",
+      "council_id": "fukuoka-pref",
+      "name": "長 裕海",
+      "name_kana": "ちょう ひろうみ",
+      "district": "福岡市東区",
+      "faction": "自民党県議団",
+      "elected_count": 7,
+      "positions": [],
+      "committees": [
+        "厚生環境委員会",
+        "空港・交通インフラ調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/chou-hiroumi.html"
+    },
+    {
+      "id": "fukuoka-pref--tsubota-susumu",
+      "council_id": "fukuoka-pref",
+      "name": "坪田 晋",
+      "name_kana": "つぼた すすむ",
+      "district": "福岡市博多区",
+      "faction": "民主県政県議団",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "商工労働委員会",
+        "国際化・多文化共生社会調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/tsubota-susumu.html"
+    },
+    {
+      "id": "fukuoka-pref--tsurubayashi-taiga",
+      "council_id": "fukuoka-pref",
+      "name": "鶴林 大我",
+      "name_kana": "つるばやし たいが",
+      "district": "中間市",
+      "faction": "新政会",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "県土整備委員会",
+        "スポーツ立県調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/tsurubayashi-taiga.html"
+    },
+    {
+      "id": "fukuoka-pref--tonari-shiyouhei",
+      "council_id": "fukuoka-pref",
+      "name": "戸成 祥平",
+      "name_kana": "となり しょうへい",
+      "district": "築上郡・豊前市",
+      "faction": "豊築会",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "豊築会会長",
+        "農林水産委員会",
+        "スポーツ立県調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/tonari-shohei.html"
+    },
+    {
+      "id": "fukuoka-pref--tomiyasu-masanao",
+      "council_id": "fukuoka-pref",
+      "name": "冨安 正直",
+      "name_kana": "とみやす まさなお",
+      "district": "京都郡",
+      "faction": "至誠会",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "至誠会会長",
+        "建築都市委員会",
+        "空港・交通インフラ調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/tomiyasu-masanao.html"
+    },
+    {
+      "id": "fukuoka-pref--toyofuku-rumiko",
+      "council_id": "fukuoka-pref",
+      "name": "豊福 るみ子",
+      "name_kana": "とよふく るみこ",
+      "district": "遠賀郡",
+      "faction": "民主県政県議団",
+      "elected_count": 1,
+      "positions": [
+        "総務企画地域振興委員会（副委員長）"
+      ],
+      "committees": [
+        "議会運営委員会",
+        "総務企画地域振興委員会（副委員長）",
+        "国際化・多文化共生社会調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/toyofuku-rumiko.html"
+    },
+    {
+      "id": "fukuoka-pref--nakao-masayuki",
+      "council_id": "fukuoka-pref",
+      "name": "中尾 正幸",
+      "name_kana": "なかお まさゆき",
+      "district": "北九州市若松区",
+      "faction": "自民党県議団",
+      "elected_count": 6,
+      "positions": [],
+      "committees": [
+        "第88代福岡県議会副議長",
+        "文教委員会",
+        "再生可能エネルギー等調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/nakao-masayuki.html"
+    },
+    {
+      "id": "fukuoka-pref--nagashima-hiromichi",
+      "council_id": "fukuoka-pref",
+      "name": "永島 弘通",
+      "name_kana": "ながしま ひろみち",
+      "district": "福岡市南区",
+      "faction": "公明党",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "農林水産委員会",
+        "再生可能エネルギー等調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/nagashima-hiromichi.html"
+    },
+    {
+      "id": "fukuoka-pref--nakashima-reiko",
+      "council_id": "fukuoka-pref",
+      "name": "中嶋 玲子",
+      "name_kana": "なかしま れいこ",
+      "district": "朝倉市・朝倉郡",
+      "faction": "民主県政県議団",
+      "elected_count": 2,
+      "positions": [
+        "商工労働委員会（委員長）"
+      ],
+      "committees": [
+        "商工労働委員会（委員長）",
+        "空港・交通インフラ調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/nakashima-reiko.html"
+    },
+    {
+      "id": "fukuoka-pref--nakamuta-shinji",
+      "council_id": "fukuoka-pref",
+      "name": "中牟田 伸二",
+      "name_kana": "なかむた しんじ",
+      "district": "春日市",
+      "faction": "自民党県議団",
+      "elected_count": 4,
+      "positions": [
+        "スポーツ立県調査特別委員会（委員長）"
+      ],
+      "committees": [
+        "県土整備委員会",
+        "スポーツ立県調査特別委員会（委員長）"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/nakamuta-shinji.html"
+    },
+    {
+      "id": "fukuoka-pref--nakamura-akihiko",
+      "council_id": "fukuoka-pref",
+      "name": "中村 明彦",
+      "name_kana": "なかむら あきひこ",
+      "district": "北九州市小倉北区",
+      "faction": "自由と繁栄の会",
+      "elected_count": 11,
+      "positions": [],
+      "committees": [
+        "総務企画地域振興委員会",
+        "スポーツ立県調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/nakamura-akihiko.html"
+    },
+    {
+      "id": "fukuoka-pref--nakamura-katsuki",
+      "council_id": "fukuoka-pref",
+      "name": "中村 香月",
+      "name_kana": "なかむら かつき",
+      "district": "久留米市・うきは市",
+      "faction": "新政会",
+      "elected_count": 2,
+      "positions": [],
+      "committees": [
+        "文教委員会",
+        "国際化・多文化共生社会調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/nakamura-katsuki.html"
+    },
+    {
+      "id": "fukuoka-pref--nishio-kouji",
+      "council_id": "fukuoka-pref",
+      "name": "西尾 耕治",
+      "name_kana": "にしお こうじ",
+      "district": "糟屋郡",
+      "faction": "公明党",
+      "elected_count": 3,
+      "positions": [
+        "建築都市委員会（委員長）"
+      ],
+      "committees": [
+        "建築都市委員会（委員長）",
+        "スポーツ立県調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/nishio-kouji.html"
+    },
+    {
+      "id": "fukuoka-pref--nohara-takashi",
+      "council_id": "fukuoka-pref",
+      "name": "野原 隆士",
+      "name_kana": "のはら たかし",
+      "district": "福岡市西区",
+      "faction": "自民党県議団",
+      "elected_count": 4,
+      "positions": [
+        "ワンヘルス・地方分権等調査特別委員会（委員長）"
+      ],
+      "committees": [
+        "商工労働委員会",
+        "ワンヘルス・地方分権等調査特別委員会（委員長）"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/nohara-takashi.html"
+    },
+    {
+      "id": "fukuoka-pref--hatae-yuusuke",
+      "council_id": "fukuoka-pref",
+      "name": "波多江 祐介",
+      "name_kana": "はたえ ゆうすけ",
+      "district": "筑紫野市",
+      "faction": "自民党県議団",
+      "elected_count": 1,
+      "positions": [
+        "県土整備委員会（副委員長）"
+      ],
+      "committees": [
+        "県土整備委員会（副委員長）",
+        "国際化・多文化共生社会調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/hatae-yusuke.html"
+    },
+    {
+      "id": "fukuoka-pref--hanada-naohiko",
+      "council_id": "fukuoka-pref",
+      "name": "花田 尚彦",
+      "name_kana": "はなだ なおひこ",
+      "district": "宮若市・鞍手郡",
+      "faction": "自民党県議団",
+      "elected_count": 2,
+      "positions": [
+        "県土整備委員会（委員長）"
+      ],
+      "committees": [
+        "議会運営委員会",
+        "県土整備委員会（委員長）",
+        "国際化・多文化共生社会調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/hanada-naohiko.html"
+    },
+    {
+      "id": "fukuoka-pref--hayashi-taisuke",
+      "council_id": "fukuoka-pref",
+      "name": "林 泰輔",
+      "name_kana": "はやし たいすけ",
+      "district": "朝倉市・朝倉郡",
+      "faction": "自民党県議団",
+      "elected_count": 1,
+      "positions": [
+        "警察委員会（副委員長）"
+      ],
+      "committees": [
+        "議会運営委員会",
+        "警察委員会（副委員長）",
+        "ワンヘルス・地方分権等調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/hayashi-taisuke.html"
+    },
+    {
+      "id": "fukuoka-pref--haraguchi-kensei",
+      "council_id": "fukuoka-pref",
+      "name": "原口 剣生",
+      "name_kana": "はらぐち けんせい",
+      "district": "久留米市・うきは市",
+      "faction": "自民党県議団",
+      "elected_count": 7,
+      "positions": [],
+      "committees": [
+        "県土整備委員会",
+        "スポーツ立県調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/haraguchi-kensei.html"
+    },
+    {
+      "id": "fukuoka-pref--harada-hiroshi",
+      "council_id": "fukuoka-pref",
+      "name": "原田 博史",
+      "name_kana": "はらだ ひろし",
+      "district": "北九州市小倉北区",
+      "faction": "民主県政県議団",
+      "elected_count": 5,
+      "positions": [],
+      "committees": [
+        "商工労働委員会",
+        "空港・交通インフラ調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/harada-hiroshi.html"
+    },
+    {
+      "id": "fukuoka-pref--haratake-iwami",
+      "council_id": "fukuoka-pref",
+      "name": "原竹 岩海",
+      "name_kana": "はらたけ いわみ",
+      "district": "筑紫野市",
+      "faction": "民主県政県議団",
+      "elected_count": 6,
+      "positions": [],
+      "committees": [
+        "農林水産委員会",
+        "国際化・多文化共生社会調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/haratake-iwami.html"
+    },
+    {
+      "id": "fukuoka-pref--haranaka-masashi",
+      "council_id": "fukuoka-pref",
+      "name": "原中 誠志",
+      "name_kana": "はらなか まさし",
+      "district": "福岡市中央区",
+      "faction": "民主県政県議団",
+      "elected_count": 4,
+      "positions": [],
+      "committees": [
+        "民主県政クラブ県議団会長",
+        "総務企画地域振興委員会",
+        "再生可能エネルギー等調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/haranaka-masashi.html"
+    },
+    {
+      "id": "fukuoka-pref--higuchi-akira",
+      "council_id": "fukuoka-pref",
+      "name": "樋口 明",
+      "name_kana": "ひぐち あきら",
+      "district": "福岡市南区",
+      "faction": "自民党県議団",
+      "elected_count": 6,
+      "positions": [],
+      "committees": [
+        "警察委員会",
+        "国際化・多文化共生社会調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/higuchi-akira.html"
+    },
+    {
+      "id": "fukuoka-pref--fukuchi-sachiko",
+      "council_id": "fukuoka-pref",
+      "name": "福地 幸子",
+      "name_kana": "ふくち さちこ",
+      "district": "宗像市",
+      "faction": "桜和会",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "桜和会代表",
+        "建築都市委員会",
+        "国際化・多文化共生社会調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/fukuchi-sachiko.html"
+    },
+    {
+      "id": "fukuoka-pref--hori-daisuke",
+      "council_id": "fukuoka-pref",
+      "name": "堀 大助",
+      "name_kana": "ほり だいすけ",
+      "district": "行橋市",
+      "faction": "新政会",
+      "elected_count": 4,
+      "positions": [],
+      "committees": [
+        "商工労働委員会",
+        "空港・交通インフラ調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/hori-daisuke.html"
+    },
+    {
+      "id": "fukuoka-pref--matsuo-toushiyou",
+      "council_id": "fukuoka-pref",
+      "name": "松尾 統章",
+      "name_kana": "まつお とうしょう",
+      "district": "北九州市八幡西区",
+      "faction": "自民党県議団",
+      "elected_count": 7,
+      "positions": [],
+      "committees": [
+        "自由民主党福岡県議団会長",
+        "警察委員会",
+        "空港・交通インフラ調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/matsuo-tousyou.html"
+    },
+    {
+      "id": "fukuoka-pref--matsushita-masaharu",
+      "council_id": "fukuoka-pref",
+      "name": "松下 正治",
+      "name_kana": "まつした まさはる",
+      "district": "北九州市八幡西区",
+      "faction": "公明党",
+      "elected_count": 4,
+      "positions": [],
+      "committees": [
+        "文教委員会",
+        "再生可能エネルギー等調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/matsushita-masaharu.html"
+    },
+    {
+      "id": "fukuoka-pref--matsumoto-kunihiro",
+      "council_id": "fukuoka-pref",
+      "name": "松本 國寛",
+      "name_kana": "まつもと くにひろ",
+      "district": "遠賀郡",
+      "faction": "自民党県議団",
+      "elected_count": 7,
+      "positions": [],
+      "committees": [
+        "農林水産委員会",
+        "子育て支援・人財育成調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/matsumoto-kunihiro.html"
+    },
+    {
+      "id": "fukuoka-pref--miyagawa-souichirou",
+      "council_id": "fukuoka-pref",
+      "name": "宮川 宗一郎",
+      "name_kana": "みやがわ そういちろう",
+      "district": "福岡市城南区",
+      "faction": "自民党県議団",
+      "elected_count": 1,
+      "positions": [
+        "建築都市委員会（副委員長）"
+      ],
+      "committees": [
+        "議会運営委員会",
+        "建築都市委員会（副委員長）",
+        "子育て支援・人財育成調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/miyagawa-souichiro.html"
+    },
+    {
+      "id": "fukuoka-pref--miyahara-shinichi",
+      "council_id": "fukuoka-pref",
+      "name": "宮原 伸一",
+      "name_kana": "みやはら しんいち",
+      "district": "太宰府市",
+      "faction": "自民党県議団",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "農林水産委員会",
+        "国際化・多文化共生社会調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/miyahara-shinichi.html"
+    },
+    {
+      "id": "fukuoka-pref--muroya-mika",
+      "council_id": "fukuoka-pref",
+      "name": "室屋 美香",
+      "name_kana": "むろや みか",
+      "district": "春日市",
+      "faction": "民主県政県議団",
+      "elected_count": 1,
+      "positions": [
+        "再生可能エネルギー等調査特別委員会（副委員長）"
+      ],
+      "committees": [
+        "文教委員会",
+        "再生可能エネルギー等調査特別委員会（副委員長）"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/muroya-mika.html"
+    },
+    {
+      "id": "fukuoka-pref--moriya-masato",
+      "council_id": "fukuoka-pref",
+      "name": "守谷 正人",
+      "name_kana": "もりや まさと",
+      "district": "福岡市城南区",
+      "faction": "民主県政県議団",
+      "elected_count": 5,
+      "positions": [],
+      "committees": [
+        "警察委員会",
+        "スポーツ立県調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/moriya-masato.html"
+    },
+    {
+      "id": "fukuoka-pref--yamamoto-kouichi",
+      "council_id": "fukuoka-pref",
+      "name": "山本 耕一",
+      "name_kana": "やまもと こういち",
+      "district": "北九州市若松区",
+      "faction": "民主県政県議団",
+      "elected_count": 2,
+      "positions": [
+        "厚生環境委員会（委員長）"
+      ],
+      "committees": [
+        "厚生環境委員会（委員長）",
+        "子育て支援・人財育成調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/yamamoto-kouichi.html"
+    },
+    {
+      "id": "fukuoka-pref--yokoo-masanori",
+      "council_id": "fukuoka-pref",
+      "name": "横尾 政則",
+      "name_kana": "よこお まさのり",
+      "district": "小郡市・三井郡",
+      "faction": "自民党県議団",
+      "elected_count": 1,
+      "positions": [
+        "商工労働委員会（副委員長）"
+      ],
+      "committees": [
+        "商工労働委員会（副委員長）",
+        "再生可能エネルギー等調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/yokoo-masanori.html"
+    },
+    {
+      "id": "fukuoka-pref--yoshioka-reiko",
+      "council_id": "fukuoka-pref",
+      "name": "吉岡 玲子",
+      "name_kana": "よしおか れいこ",
+      "district": "福岡市西区",
+      "faction": "民主県政県議団",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "厚生環境委員会",
+        "子育て支援・人財育成調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/yoshioka-reiko.html"
+    },
+    {
+      "id": "fukuoka-pref--yoshida-kenichirou",
+      "council_id": "fukuoka-pref",
+      "name": "吉田 健一朗",
+      "name_kana": "よしだ けんいちろう",
+      "district": "古賀市",
+      "faction": "自民党県議団",
+      "elected_count": 2,
+      "positions": [
+        "総務企画地域振興委員会（委員長）"
+      ],
+      "committees": [
+        "総務企画地域振興委員会（委員長）",
+        "再生可能エネルギー等調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/yoshida-kenichirou.html"
+    },
+    {
+      "id": "fukuoka-pref--yoshida-kouichi",
+      "council_id": "fukuoka-pref",
+      "name": "吉田 浩一",
+      "name_kana": "よしだ こういち",
+      "district": "福津市",
+      "faction": "自民党県議団",
+      "elected_count": 2,
+      "positions": [
+        "農林水産委員会（委員長）"
+      ],
+      "committees": [
+        "農林水産委員会（委員長）",
+        "再生可能エネルギー等調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/yoshida-kouichi.html"
+    },
+    {
+      "id": "fukuoka-pref--yoshimatsu-motoaki",
+      "council_id": "fukuoka-pref",
+      "name": "吉松 源昭",
+      "name_kana": "よしまつ もとあき",
+      "district": "糟屋郡",
+      "faction": "自由と繁栄の会",
+      "elected_count": 7,
+      "positions": [],
+      "committees": [
+        "自由と繁栄の会会長",
+        "県土整備委員会",
+        "子育て支援・人財育成調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/yoshimatsu-motoaki.html"
+    },
+    {
+      "id": "fukuoka-pref--riyuu-kazuhiko",
+      "council_id": "fukuoka-pref",
+      "name": "笠 和彦",
+      "name_kana": "りゅう かずひこ",
+      "district": "福岡市中央区",
+      "faction": "自民党県議団",
+      "elected_count": 2,
+      "positions": [
+        "空港・交通インフラ調査特別委員会（副委員長）"
+      ],
+      "committees": [
+        "厚生環境委員会",
+        "空港・交通インフラ調査特別委員会（副委員長）"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/ryuu-kazuhiko.html"
+    },
+    {
+      "id": "fukuoka-pref--watanabe-katsumasa",
+      "council_id": "fukuoka-pref",
+      "name": "渡辺 勝将",
+      "name_kana": "わたなべ かつまさ",
+      "district": "那珂川市",
+      "faction": "自民党県議団",
+      "elected_count": 3,
+      "positions": [],
+      "committees": [
+        "文教委員会",
+        "スポーツ立県調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/watanabe-katsumasa.html"
+    },
+    {
+      "id": "fukuoka-pref--watanabe-miho",
+      "council_id": "fukuoka-pref",
+      "name": "渡辺 美穂",
+      "name_kana": "わたなべ みほ",
+      "district": "太宰府市",
+      "faction": "民主県政県議団",
+      "elected_count": 3,
+      "positions": [],
+      "committees": [
+        "農林水産委員会",
+        "再生可能エネルギー等調査特別委員会"
+      ],
+      "photo_url": null,
+      "official_profile_url": "https://www.gikai.pref.fukuoka.lg.jp/site/giin/watanabe-miho.html"
+    }
+  ],
+  "updated_at": "2026-06-14T16:30:19+00:00"
+}

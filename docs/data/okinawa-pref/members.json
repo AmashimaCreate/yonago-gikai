@@ -1,0 +1,771 @@
+{
+  "council_id": "okinawa-pref",
+  "source_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029769.html",
+  "acquisition": "scraping",
+  "members": [
+    {
+      "id": "okinawa-pref--arakaki-kouei",
+      "council_id": "okinawa-pref",
+      "name": "新垣 光栄",
+      "name_kana": "あらかき こうえい",
+      "district": "中頭郡",
+      "faction": "立憲・無所属の会",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "土木環境",
+        "ワシントン駐在問題調査特別（百条）"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/819/arakakikoei.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029819.html"
+    },
+    {
+      "id": "okinawa-pref--arakaki-yoshitoyo",
+      "council_id": "okinawa-pref",
+      "name": "新垣 淑豊",
+      "name_kana": "あらかき よしとよ",
+      "district": "那覇市・南部離島",
+      "faction": "沖縄自民党・無所属の会",
+      "elected_count": null,
+      "positions": [
+        "・経済労働（委員長） ・議会運営"
+      ],
+      "committees": [
+        "・経済労働（委員長） ・議会運営",
+        "・沖縄振興・公共交通ネットワーク特別",
+        "・ワシントン駐在問題調査特別（百条）"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/844/arakakiyoshitoyo.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029844.html"
+    },
+    {
+      "id": "okinawa-pref--arakaki-yoshiyuki",
+      "council_id": "okinawa-pref",
+      "name": "新垣 善之",
+      "name_kana": "あらかき よしゆき",
+      "district": "島尻・南城市",
+      "faction": "沖縄自民党・無所属の会",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "・文教厚生"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/856/arakakiyoshiyuki.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029856.html"
+    },
+    {
+      "id": "okinawa-pref--itokazu-masahiro",
+      "council_id": "okinawa-pref",
+      "name": "糸数 昌洋",
+      "name_kana": "いとかず まさひろ",
+      "district": "那覇市・南部離島",
+      "faction": "公明党",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "土木環境 議会運営",
+        "沖縄振興・公共交通ネットワーク特別"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/845/itokazumasahiro.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029845.html"
+    },
+    {
+      "id": "okinawa-pref--uehara-akira",
+      "council_id": "okinawa-pref",
+      "name": "上原 章",
+      "name_kana": "うえはら あきら",
+      "district": "那覇市・南部離島",
+      "faction": "公明党（会派代表者）",
+      "elected_count": null,
+      "positions": [
+        "議長",
+        "副議長"
+      ],
+      "committees": [
+        "経済労働"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/841/ueharaakira.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029841.html"
+    },
+    {
+      "id": "okinawa-pref--uehara-kaiza",
+      "council_id": "okinawa-pref",
+      "name": "上原 快佐",
+      "name_kana": "うえはら かいざ",
+      "district": "那覇市・南部離島",
+      "faction": "てぃーだ平和ネット",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "・経済労働 ・議会運営",
+        "・ワシントン駐在問題調査特別（百条）"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/850/ueharakaiza.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029850.html"
+    },
+    {
+      "id": "okinawa-pref--oota-mamoru",
+      "council_id": "okinawa-pref",
+      "name": "大田 守",
+      "name_kana": "おおた まもる",
+      "district": "糸満市",
+      "faction": "立憲・無所属の会",
+      "elected_count": null,
+      "positions": [
+        "総務企画 議会運営（副委員長）"
+      ],
+      "committees": [
+        "総務企画 議会運営（副委員長）",
+        "米軍基地関係特別"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/854/otamamoru2.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029854.html"
+    },
+    {
+      "id": "okinawa-pref--oohama-ichirou",
+      "council_id": "okinawa-pref",
+      "name": "大浜 一郎",
+      "name_kana": "おおはま いちろう",
+      "district": "石垣市",
+      "faction": "沖縄自民党・無所属の会",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "・経済労働 ・議会運営",
+        "・沖縄振興・公共交通ネットワーク特別",
+        "・ワシントン駐在問題調査特別（百条）"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/797/ohamaichiro.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029797.html"
+    },
+    {
+      "id": "okinawa-pref--ooya-seizen",
+      "council_id": "okinawa-pref",
+      "name": "大屋 政善",
+      "name_kana": "おおや せいぜん",
+      "district": "うるま市",
+      "faction": "沖縄自民党・無所属の会",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "・経済労働",
+        "・米軍基地関係特別"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/820/ooyaseizen.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029820.html"
+    },
+    {
+      "id": "okinawa-pref--odo-riyoutarou",
+      "council_id": "okinawa-pref",
+      "name": "小渡 良太郎",
+      "name_kana": "おど りょうたろう",
+      "district": "沖縄市",
+      "faction": "沖縄自民党・無所属の会",
+      "elected_count": null,
+      "positions": [
+        "・米軍基地関係特別（委員長）"
+      ],
+      "committees": [
+        "・文教厚生",
+        "・米軍基地関係特別（委員長）"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/828/odoryotaro.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029828.html"
+    },
+    {
+      "id": "okinawa-pref--kiyan-riki",
+      "council_id": "okinawa-pref",
+      "name": "喜屋武 力",
+      "name_kana": "きゃん りき",
+      "district": "うるま市",
+      "faction": "沖縄自民党・無所属の会",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "・土木環境",
+        "・米軍基地関係特別"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/823/kyanriki.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029823.html"
+    },
+    {
+      "id": "okinawa-pref--kiyuna-tomoko",
+      "council_id": "okinawa-pref",
+      "name": "喜友名 智子",
+      "name_kana": "きゆな ともこ",
+      "district": "那覇市・南部離島",
+      "faction": "立憲・無所属の会",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "文教厚生",
+        "沖縄振興・公共交通ネットワーク特別"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/851/kiyunatomoko.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029851.html"
+    },
+    {
+      "id": "okinawa-pref--gibo-yui",
+      "council_id": "okinawa-pref",
+      "name": "儀保 唯",
+      "name_kana": "ぎぼ ゆい",
+      "district": "国頭郡",
+      "faction": "てぃーだ平和ネット",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "・経済労働"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/030/546/giboyui.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1030546.html"
+    },
+    {
+      "id": "okinawa-pref--kouki-kanashi",
+      "council_id": "okinawa-pref",
+      "name": "幸喜 愛",
+      "name_kana": "こうき かなし",
+      "district": "沖縄市",
+      "faction": "てぃーだ平和ネット",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "・総務企画",
+        "・沖縄振興・公共交通ネットワーク特別"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/826/koukikanasi.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029826.html"
+    },
+    {
+      "id": "okinawa-pref--komesu-seiichirou",
+      "council_id": "okinawa-pref",
+      "name": "米須 清一郎",
+      "name_kana": "こめす せいいちろう",
+      "district": "中頭郡",
+      "faction": "てぃーだ平和ネット",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "・文教厚生",
+        "・米軍基地関係特別"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/829/komesuseiichiro.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029829.html"
+    },
+    {
+      "id": "okinawa-pref--goya-hiroshi",
+      "council_id": "okinawa-pref",
+      "name": "呉屋 宏",
+      "name_kana": "ごや ひろし",
+      "district": "宜野湾市",
+      "faction": "沖縄自民党・無所属の会",
+      "elected_count": null,
+      "positions": [
+        "・総務企画 ・議会運営（委員長）"
+      ],
+      "committees": [
+        "・総務企画 ・議会運営（委員長）",
+        "・沖縄振興・公共交通ネットワーク特別"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/834/goyahiroshi.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029834.html"
+    },
+    {
+      "id": "okinawa-pref--shimajiri-tadaaki",
+      "council_id": "okinawa-pref",
+      "name": "島尻 忠明",
+      "name_kana": "しまじり ただあき",
+      "district": "浦添市",
+      "faction": "沖縄自民党・無所属の会",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "・総務企画 ・議会運営"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/837/shimajiritadaaki.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029837.html"
+    },
+    {
+      "id": "okinawa-pref--shimabukuro-dai",
+      "council_id": "okinawa-pref",
+      "name": "島袋 大",
+      "name_kana": "しまぶくろ だい",
+      "district": "豊見城市",
+      "faction": "沖縄自民党・無所属の会",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "・総務企画"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/853/shimabukurodai.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029853.html"
+    },
+    {
+      "id": "okinawa-pref--shimoji-yasunori",
+      "council_id": "okinawa-pref",
+      "name": "下地 康教",
+      "name_kana": "しもじ やすのり",
+      "district": "宮古島市",
+      "faction": "沖縄自民党・無所属の会",
+      "elected_count": null,
+      "positions": [
+        "・沖縄振興・公共交通ネットワーク特別（副委員長）"
+      ],
+      "committees": [
+        "・土木環境",
+        "・沖縄振興・公共交通ネットワーク特別（副委員長）",
+        "・ワシントン駐在問題調査特別（百条）"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/860/shimojiyasunori.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029860.html"
+    },
+    {
+      "id": "okinawa-pref--shingaki-arata",
+      "council_id": "okinawa-pref",
+      "name": "新垣 新",
+      "name_kana": "しんがき あらた",
+      "district": "糸満市",
+      "faction": "沖縄自民党・無所属の会",
+      "elected_count": null,
+      "positions": [
+        "・文教厚生（委員長）"
+      ],
+      "committees": [
+        "・文教厚生（委員長）"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/855/shingakiarata.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029855.html"
+    },
+    {
+      "id": "okinawa-pref--shinzato-takumi",
+      "council_id": "okinawa-pref",
+      "name": "新里 匠",
+      "name_kana": "しんざと たくみ",
+      "district": "宮古島市",
+      "faction": "沖縄自民党・無所属の会",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "・文教厚生",
+        "・沖縄振興・公共交通ネットワーク特別"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/861/shinzatotakumi.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029861.html"
+    },
+    {
+      "id": "okinawa-pref--shinzato-harutoshi",
+      "council_id": "okinawa-pref",
+      "name": "新里 治利",
+      "name_kana": "しんざと はるとし",
+      "district": "沖縄市",
+      "faction": "沖縄自民党・無所属の会",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "・経済労働"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/033/954/shinzatoharutoshi.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1033954.html"
+    },
+    {
+      "id": "okinawa-pref--jiroku-masataka",
+      "council_id": "okinawa-pref",
+      "name": "次呂久 成崇",
+      "name_kana": "じろく まさたか",
+      "district": "石垣市",
+      "faction": "立憲・無所属の会",
+      "elected_count": null,
+      "positions": [
+        "経済労働（副委員長） 議会運営"
+      ],
+      "committees": [
+        "経済労働（副委員長） 議会運営"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/798/jirokumasataka.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029798.html"
+    },
+    {
+      "id": "okinawa-pref--zukeran-chiyoufuu",
+      "council_id": "okinawa-pref",
+      "name": "瑞慶覧 長風",
+      "name_kana": "ずけらん ちょうふう",
+      "district": "島尻・南城市",
+      "faction": "沖縄社会大衆党",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "・土木環境",
+        "・沖縄振興・公共交通ネットワーク特別"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/857/zukeranchofu.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029857.html"
+    },
+    {
+      "id": "okinawa-pref--senaga-misao",
+      "council_id": "okinawa-pref",
+      "name": "瀬長 美佐雄",
+      "name_kana": "せなが みさお",
+      "district": "豊見城市",
+      "faction": "日本共産党沖縄県議会議員団",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "・経済労働",
+        "・沖縄振興・公共交通ネットワーク特別",
+        "・ワシントン駐在問題調査特別（百条）"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/852/senagamisao.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029852.html"
+    },
+    {
+      "id": "okinawa-pref--taira-satoko",
+      "council_id": "okinawa-pref",
+      "name": "平良 識子",
+      "name_kana": "たいら さとこ",
+      "district": "那覇市・南部離島",
+      "faction": "沖縄社会大衆党",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "・文教厚生"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/848/tairasatoko.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029848.html"
+    },
+    {
+      "id": "okinawa-pref--takahashi-makoto",
+      "council_id": "okinawa-pref",
+      "name": "高橋 真",
+      "name_kana": "たかはし まこと",
+      "district": "沖縄市",
+      "faction": "公明党",
+      "elected_count": null,
+      "positions": [
+        "総務企画（副委員長）",
+        "米軍基地関係特別（副委員長）"
+      ],
+      "committees": [
+        "総務企画（副委員長）",
+        "米軍基地関係特別（副委員長）",
+        "ワシントン駐在問題調査特別（百条）"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/827/takahasimokoto.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029827.html"
+    },
+    {
+      "id": "okinawa-pref--tamaki-kenichirou",
+      "council_id": "okinawa-pref",
+      "name": "玉城 健一郎",
+      "name_kana": "たまき けんいちろう",
+      "district": "宜野湾市",
+      "faction": "てぃーだ平和ネット",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "・総務企画 ・議会運営",
+        "・米軍基地関係特別",
+        "・ワシントン駐在問題調査特別（百条）"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/836/tamakikenichiro.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029836.html"
+    },
+    {
+      "id": "okinawa-pref--touma-morio",
+      "council_id": "okinawa-pref",
+      "name": "當間 盛夫",
+      "name_kana": "とうま もりお",
+      "district": "那覇市・南部離島",
+      "faction": "立憲・無所属の会",
+      "elected_count": null,
+      "positions": [
+        "沖縄振興・公共交通ネットワーク特別（委員長）"
+      ],
+      "committees": [
+        "土木環境",
+        "沖縄振興・公共交通ネットワーク特別（委員長）"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/846/tomamorio.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029846.html"
+    },
+    {
+      "id": "okinawa-pref--touyama-katsutoshi",
+      "council_id": "okinawa-pref",
+      "name": "当山 勝利",
+      "name_kana": "とうやま かつとし",
+      "district": "浦添市",
+      "faction": "沖縄社会大衆党（会派代表者）",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "・総務企画 ・議会運営",
+        "・米軍基地関係特別",
+        "・ワシントン駐在問題調査特別（百条）"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/838/toyamakatsutoshi.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029838.html"
+    },
+    {
+      "id": "okinawa-pref--tokuda-masahito",
+      "council_id": "okinawa-pref",
+      "name": "徳田 将仁",
+      "name_kana": "とくだ まさひと",
+      "district": "島尻・南城市",
+      "faction": "沖縄自民党・無所属の会",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "・総務企画",
+        "・ワシントン駐在問題調査特別（百条）"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/858/tokudamasahito.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029858.html"
+    },
+    {
+      "id": "okinawa-pref--toguchi-osamu",
+      "council_id": "okinawa-pref",
+      "name": "渡久地 修",
+      "name_kana": "とぐち おさむ",
+      "district": "那覇市・南部離島",
+      "faction": "日本共産党沖縄県議会議員団（会派代表者）",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "・総務企画"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/843/toguchiosamu.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029843.html"
+    },
+    {
+      "id": "okinawa-pref--nakagawa-kiyouki",
+      "council_id": "okinawa-pref",
+      "name": "中川 京貴",
+      "name_kana": "なかがわ きょうき",
+      "district": "中頭郡",
+      "faction": "沖縄自民党・無所属の会",
+      "elected_count": null,
+      "positions": [
+        "議長"
+      ],
+      "committees": [
+        "・土木環境"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/831/nakagawakyoki.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029831.html"
+    },
+    {
+      "id": "okinawa-pref--nakazato-zenkou",
+      "council_id": "okinawa-pref",
+      "name": "仲里 全孝",
+      "name_kana": "なかざと ぜんこう",
+      "district": "国頭郡",
+      "faction": "沖縄自民党・無所属の会",
+      "elected_count": null,
+      "positions": [
+        "・土木環境（委員長）",
+        "・ワシントン駐在問題調査特別（百条）（副委員長）"
+      ],
+      "committees": [
+        "・土木環境（委員長）",
+        "・米軍基地関係特別",
+        "・ワシントン駐在問題調査特別（百条）（副委員長）"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/815/nakazatozenkou.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029815.html"
+    },
+    {
+      "id": "okinawa-pref--nakasone-satoru",
+      "council_id": "okinawa-pref",
+      "name": "仲宗根 悟",
+      "name_kana": "なかそね さとる",
+      "district": "中頭郡",
+      "faction": "立憲・無所属の会（会派代表者）",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "総務企画",
+        "米軍基地関係特別",
+        "ワシントン駐在問題調査特別（百条）"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/818/naksonesatoru.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029818.html"
+    },
+    {
+      "id": "okinawa-pref--nakamura-ieharu",
+      "council_id": "okinawa-pref",
+      "name": "仲村 家治",
+      "name_kana": "なかむら いえはる",
+      "district": "那覇市・南部離島",
+      "faction": "沖縄自民党・無所属の会",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "・経済労働 ・議会運営",
+        "・沖縄振興・公共交通ネットワーク特別"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/842/nakamuraieharu.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029842.html"
+    },
+    {
+      "id": "okinawa-pref--nakamura-mio",
+      "council_id": "okinawa-pref",
+      "name": "仲村 未央",
+      "name_kana": "なかむら みお",
+      "district": "沖縄市",
+      "faction": "立憲・無所属の会",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "経済労働"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/825/nakamuramio.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029825.html"
+    },
+    {
+      "id": "okinawa-pref--nishime-keishirou",
+      "council_id": "okinawa-pref",
+      "name": "西銘 啓史郎",
+      "name_kana": "にしめ けいしろう",
+      "district": "那覇市・南部離島",
+      "faction": "沖縄自民党・無所属の会",
+      "elected_count": null,
+      "positions": [
+        "・総務企画（委員長） ・議会運営",
+        "・ワシントン駐在問題調査特別（百条）(委員長)"
+      ],
+      "committees": [
+        "・総務企画（委員長） ・議会運営",
+        "・ワシントン駐在問題調査特別（百条）(委員長)"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/847/nishimekeishiro.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029847.html"
+    },
+    {
+      "id": "okinawa-pref--nishime-sumie",
+      "council_id": "okinawa-pref",
+      "name": "西銘 純恵",
+      "name_kana": "にしめ すみえ",
+      "district": "浦添市",
+      "faction": "日本共産党沖縄県議会議員団",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "・文教厚生"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/839/nishimesumie.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029839.html"
+    },
+    {
+      "id": "okinawa-pref--higa-shinobu",
+      "council_id": "okinawa-pref",
+      "name": "比嘉 忍",
+      "name_kana": "ひが しのぶ",
+      "district": "名護市",
+      "faction": "沖縄自民党・無所属の会",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "・文教厚生",
+        "・米軍基地関係特別"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/817/higasinobu.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029817.html"
+    },
+    {
+      "id": "okinawa-pref--higa-mizuki",
+      "council_id": "okinawa-pref",
+      "name": "比嘉 瑞己",
+      "name_kana": "ひが みずき",
+      "district": "那覇市・南部離島",
+      "faction": "日本共産党沖縄県議会議員団",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "・土木環境 ・議会運営",
+        "・米軍基地関係特別",
+        "・ワシントン駐在問題調査特別（百条）"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/849/higamizuki.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029849.html"
+    },
+    {
+      "id": "okinawa-pref--matayoshi-seigi",
+      "council_id": "okinawa-pref",
+      "name": "又吉 清義",
+      "name_kana": "またよし せいぎ",
+      "district": "宜野湾市",
+      "faction": "沖縄自民党・無所属の会",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "・土木環境",
+        "・米軍基地関係特別"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/835/matayoshiseigi.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029835.html"
+    },
+    {
+      "id": "okinawa-pref--matsushita-michiko",
+      "council_id": "okinawa-pref",
+      "name": "松下 美智子",
+      "name_kana": "まつした みちこ",
+      "district": "浦添市",
+      "faction": "公明党",
+      "elected_count": null,
+      "positions": [
+        "文教厚生（副委員長）"
+      ],
+      "committees": [
+        "文教厚生（副委員長）"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/840/matsushitamichiko.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029840.html"
+    },
+    {
+      "id": "okinawa-pref--miyazato-hirofumi",
+      "council_id": "okinawa-pref",
+      "name": "宮里 洋史",
+      "name_kana": "みやざと ひろふみ",
+      "district": "中頭郡",
+      "faction": "沖縄自民党・無所属の会",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "・総務企画",
+        "・ワシントン駐在問題調査特別（百条）"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/830/miyazatohirofumi.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029830.html"
+    },
+    {
+      "id": "okinawa-pref--yamauchi-sueko",
+      "council_id": "okinawa-pref",
+      "name": "山内 末子",
+      "name_kana": "やまうち すえこ",
+      "district": "うるま市",
+      "faction": "てぃーだ平和ネット（会派代表者）",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "・土木環境"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/822/yamautisueko.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029822.html"
+    },
+    {
+      "id": "okinawa-pref--yamazato-masao",
+      "council_id": "okinawa-pref",
+      "name": "山里 将雄",
+      "name_kana": "やまざと まさお",
+      "district": "名護市",
+      "faction": "てぃーだ平和ネット",
+      "elected_count": null,
+      "positions": [],
+      "committees": [
+        "・文教厚生",
+        "・沖縄振興・公共交通ネットワーク特別"
+      ],
+      "photo_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/029/816/yamazatomasao.jpg",
+      "official_profile_url": "https://www.pref.okinawa.jp/kensei/gikai/1017039/1029763/1029780/1029816.html"
+    }
+  ],
+  "updated_at": "2026-06-14T16:35:37+00:00"
+}

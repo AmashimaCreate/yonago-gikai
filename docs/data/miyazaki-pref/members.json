@@ -1,0 +1,592 @@
+{
+  "council_id": "miyazaki-pref",
+  "source_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/index.html",
+  "acquisition": "scraping",
+  "members": [
+    {
+      "id": "miyazaki-pref--aragami-minoru",
+      "council_id": "miyazaki-pref",
+      "name": "荒神 稔",
+      "name_kana": "あらがみ みのる",
+      "district": "都城市",
+      "faction": "宮崎県議会自由民主党",
+      "elected_count": 1,
+      "positions": [
+        "地域交通対策特別委員会（委員長）"
+      ],
+      "committees": [
+        "総務政策常任委員会",
+        "地域交通対策特別委員会（委員長）"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82724/aragami_minoru_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/aragami_minoru.html"
+    },
+    {
+      "id": "miyazaki-pref--imamura-mitsuo",
+      "council_id": "miyazaki-pref",
+      "name": "今村 光雄",
+      "name_kana": "いまむら みつお",
+      "district": "都城市",
+      "faction": "公明党宮崎県議団",
+      "elected_count": 1,
+      "positions": [
+        "ＡＩ活用推進対策特別委員会（副委員長）"
+      ],
+      "committees": [
+        "文教警察企業常任委員会",
+        "ＡＩ活用推進対策特別委員会（副委員長）",
+        "議会運営委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82733/imamura_mitsuo_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/imamura_mitsuo.html"
+    },
+    {
+      "id": "miyazaki-pref--imoto-hideo",
+      "council_id": "miyazaki-pref",
+      "name": "井本 英雄",
+      "name_kana": "いもと ひでお",
+      "district": "延岡市",
+      "faction": "自民党同志会",
+      "elected_count": 8,
+      "positions": [],
+      "committees": [
+        "文教警察企業常任委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82734/imoto_hideo_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/imoto_hideo.html"
+    },
+    {
+      "id": "miyazaki-pref--iwakiri-tatsuya",
+      "council_id": "miyazaki-pref",
+      "name": "岩切 達哉",
+      "name_kana": "いわきり たつや",
+      "district": "宮崎市",
+      "faction": "県民連合立憲",
+      "elected_count": 3,
+      "positions": [
+        "文教警察企業常任委員会（委員長）"
+      ],
+      "committees": [
+        "文教警察企業常任委員会（委員長）",
+        "地域交通対策特別委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82735/iwakiri_tatsuya_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/iwakiri_tatsuya.html"
+    },
+    {
+      "id": "miyazaki-pref--uchida-risa",
+      "council_id": "miyazaki-pref",
+      "name": "内田 理佐",
+      "name_kana": "うちだ りさ",
+      "district": "延岡市",
+      "faction": "宮崎県議会自由民主党",
+      "elected_count": 2,
+      "positions": [
+        "総務政策常任委員会（委員長）"
+      ],
+      "committees": [
+        "総務政策常任委員会（委員長）",
+        "ＡＩ活用推進対策特別委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82754/uchida_risa_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/uchida_risa.html"
+    },
+    {
+      "id": "miyazaki-pref--kawasoe-hiroshi",
+      "council_id": "miyazaki-pref",
+      "name": "川添 博",
+      "name_kana": "かわそえ ひろし",
+      "district": "宮崎市",
+      "faction": "宮崎県議会自由民主党",
+      "elected_count": 2,
+      "positions": [
+        "議会運営委員会（委員長）"
+      ],
+      "committees": [
+        "厚生常任委員会",
+        "地域交通対策特別委員会",
+        "議会運営委員会（委員長）"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82736/kawasoe_hiroshi_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/kawasoe_hiroshi.html"
+    },
+    {
+      "id": "miyazaki-pref--kawano-michihiro",
+      "council_id": "miyazaki-pref",
+      "name": "河野 通博",
+      "name_kana": "かわの みちひろ",
+      "district": "串間市",
+      "faction": "宮崎県議会自由民主党",
+      "elected_count": 1,
+      "positions": [
+        "商工建設常任委員会（副委員長）"
+      ],
+      "committees": [
+        "商工建設常任委員会（副委員長）",
+        "ＡＩ活用推進対策特別委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/102825/102825_20251003090606-1.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/kawano_michihiro.html"
+    },
+    {
+      "id": "miyazaki-pref--kudou-takahisa",
+      "council_id": "miyazaki-pref",
+      "name": "工藤 隆久",
+      "name_kana": "くどう たかひさ",
+      "district": "延岡市",
+      "faction": "公明党宮崎県議団",
+      "elected_count": 1,
+      "positions": [
+        "厚生常任委員会（副委員長）"
+      ],
+      "committees": [
+        "厚生常任委員会（副委員長）",
+        "地域交通対策特別委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82737/kudo_takahisa_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/kudo_takahisa.html"
+    },
+    {
+      "id": "miyazaki-pref--kuroiwa-yasuo",
+      "council_id": "miyazaki-pref",
+      "name": "黒岩 保雄",
+      "name_kana": "くろいわ やすお",
+      "district": "日南市",
+      "faction": "宮崎県議会自由民主党",
+      "elected_count": 1,
+      "positions": [
+        "文教警察企業常任委員会（副委員長）"
+      ],
+      "committees": [
+        "文教警察企業常任委員会（副委員長）",
+        "地域交通対策特別委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82738/kuroiwa_yasuo_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/kuroiwa_yasuo.html"
+    },
+    {
+      "id": "miyazaki-pref--saitou-riyousuke",
+      "council_id": "miyazaki-pref",
+      "name": "斉藤 了介",
+      "name_kana": "さいとう りょうすけ",
+      "district": "宮崎市",
+      "faction": "宮崎県議会自由民主党",
+      "elected_count": 1,
+      "positions": [
+        "環境農林水産常任委員会（副委員長）",
+        "議会運営委員会（副委員長）"
+      ],
+      "committees": [
+        "環境農林水産常任委員会（副委員長）",
+        "ＡＩ活用推進対策特別委員会",
+        "議会運営委員会（副委員長）"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82746/saito_ryosuke_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/saito_ryosuke.html"
+    },
+    {
+      "id": "miyazaki-pref--sakaguchi-hiromi",
+      "council_id": "miyazaki-pref",
+      "name": "坂口 博美",
+      "name_kana": "さかぐち ひろみ",
+      "district": "児湯郡",
+      "faction": "宮崎県議会自由民主党",
+      "elected_count": 9,
+      "positions": [],
+      "committees": [
+        "文教警察企業常任委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82747/sakaguchi_hiromi_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/sakaguchi_hiromi.html"
+    },
+    {
+      "id": "miyazaki-pref--sakamoto-yasurou",
+      "council_id": "miyazaki-pref",
+      "name": "坂本 康郎",
+      "name_kana": "さかもと やすろう",
+      "district": "宮崎市",
+      "faction": "公明党宮崎県議団",
+      "elected_count": 2,
+      "positions": [],
+      "committees": [
+        "商工建設常任委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82748/sakamoto_yasuro_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/sakamoto_yasuro.html"
+    },
+    {
+      "id": "miyazaki-pref--satou-masahiro",
+      "council_id": "miyazaki-pref",
+      "name": "佐藤 雅洋",
+      "name_kana": "さとう まさひろ",
+      "district": "西臼杵郡",
+      "faction": "宮崎県議会自由民主党",
+      "elected_count": 2,
+      "positions": [],
+      "committees": [
+        "文教警察企業常任委員会",
+        "議会運営委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82749/sato_masahiro_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/sato_masahiro.html"
+    },
+    {
+      "id": "miyazaki-pref--shigematsu-koujirou",
+      "council_id": "miyazaki-pref",
+      "name": "重松 幸次郎",
+      "name_kana": "しげまつ こうじろう",
+      "district": "宮崎市",
+      "faction": "公明党宮崎県議団",
+      "elected_count": 4,
+      "positions": [],
+      "committees": [
+        "総務政策常任委員会",
+        "地域交通対策特別委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82750/shigematsu_kojiro_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/shigematsu_kojiro.html"
+    },
+    {
+      "id": "miyazaki-pref--shimooki-atsushi",
+      "council_id": "miyazaki-pref",
+      "name": "下沖 篤史",
+      "name_kana": "しもおき あつし",
+      "district": "小林市・西諸県郡",
+      "faction": "宮崎県議会自由民主党",
+      "elected_count": 1,
+      "positions": [
+        "地域交通対策特別委員会（副委員長）"
+      ],
+      "committees": [
+        "商工建設常任委員会",
+        "地域交通対策特別委員会（副委員長）",
+        "議会運営委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82751/shimooki_atsushi_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/shimooki_atsushi.html"
+    },
+    {
+      "id": "miyazaki-pref--zushi-hiroki",
+      "council_id": "miyazaki-pref",
+      "name": "図師 博規",
+      "name_kana": "ずし ひろき",
+      "district": "児湯郡",
+      "faction": "無所属の会 チームひむか",
+      "elected_count": 5,
+      "positions": [],
+      "committees": [
+        "環境農林水産常任委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82762/zushi_hiroki_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/zushi_hiroki.html"
+    },
+    {
+      "id": "miyazaki-pref--toyama-mamoru",
+      "council_id": "miyazaki-pref",
+      "name": "外山 衛",
+      "name_kana": "とやま まもる",
+      "district": "日南市",
+      "faction": "宮崎県議会自由民主党",
+      "elected_count": 6,
+      "positions": [],
+      "committees": [
+        "総務政策常任委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82753/toyama_mamoru_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/toyama_mamoru.html"
+    },
+    {
+      "id": "miyazaki-pref--nakano-kazunori",
+      "council_id": "miyazaki-pref",
+      "name": "中野 一則",
+      "name_kana": "なかの かずのり",
+      "district": "えびの市",
+      "faction": "宮崎県議会自由民主党",
+      "elected_count": 7,
+      "positions": [],
+      "committees": [
+        "総務政策常任委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82743/nakano_kazunori_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/nakano_kazunori.html"
+    },
+    {
+      "id": "miyazaki-pref--nagayama-toshirou",
+      "council_id": "miyazaki-pref",
+      "name": "永山 敏郎",
+      "name_kana": "ながやま としろう",
+      "district": "都城市",
+      "faction": "県民連合立憲",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "総務政策常任委員会",
+        "ＡＩ活用推進対策特別委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82742/nagayama_toshiro_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/nagayama_toshiro.html"
+    },
+    {
+      "id": "miyazaki-pref--nozaki-koushi",
+      "council_id": "miyazaki-pref",
+      "name": "野崎 幸士",
+      "name_kana": "のざき こうし",
+      "district": "宮崎市",
+      "faction": "宮崎県議会自由民主党",
+      "elected_count": 3,
+      "positions": [],
+      "committees": [
+        "環境農林水産常任委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82745/nozaki_koshi_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/nozaki_koshi.html"
+    },
+    {
+      "id": "miyazaki-pref--hamasuna-mamoru",
+      "council_id": "miyazaki-pref",
+      "name": "浜砂 守",
+      "name_kana": "はますな まもる",
+      "district": "西都市・西米良村",
+      "faction": "宮崎県議会自由民主党",
+      "elected_count": 6,
+      "positions": [],
+      "committees": [
+        "厚生常任委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82728/hamasuna_mamoru_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/hamasuna_mamoru.html"
+    },
+    {
+      "id": "miyazaki-pref--hidaka-hiroyuki",
+      "council_id": "miyazaki-pref",
+      "name": "日高 博之",
+      "name_kana": "ひだか ひろゆき",
+      "district": "日向市",
+      "faction": "宮崎県議会自由民主党",
+      "elected_count": 3,
+      "positions": [],
+      "committees": [
+        "商工建設常任委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82729/hidaka_hiroyuki_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/hidaka_hiroyuki.html"
+    },
+    {
+      "id": "miyazaki-pref--hidaka-youichi",
+      "council_id": "miyazaki-pref",
+      "name": "日高 陽一",
+      "name_kana": "ひだか よういち",
+      "district": "宮崎市",
+      "faction": "宮崎県議会自由民主党",
+      "elected_count": 3,
+      "positions": [],
+      "committees": [
+        "厚生常任委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82731/hidaka_yoichi_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/hidaka_yoichi.html"
+    },
+    {
+      "id": "miyazaki-pref--fukuda-shinichi",
+      "council_id": "miyazaki-pref",
+      "name": "福田 新一",
+      "name_kana": "ふくだ しんいち",
+      "district": "北諸県郡",
+      "faction": "宮崎県議会自由民主党",
+      "elected_count": 1,
+      "positions": [
+        "厚生常任委員会（委員長）"
+      ],
+      "committees": [
+        "厚生常任委員会（委員長）",
+        "ＡＩ活用推進対策特別委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82725/fukuda_shinichi_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/fukuda_shinichi.html"
+    },
+    {
+      "id": "miyazaki-pref--futami-yasuyuki",
+      "council_id": "miyazaki-pref",
+      "name": "二見 康之",
+      "name_kana": "ふたみ やすゆき",
+      "district": "都城市",
+      "faction": "宮崎県議会自由民主党",
+      "elected_count": 4,
+      "positions": [],
+      "committees": [
+        "環境農林水産常任委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82726/futami_yasuyuki_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/futami_yasuyuki.html"
+    },
+    {
+      "id": "miyazaki-pref--honda-toshihiro",
+      "council_id": "miyazaki-pref",
+      "name": "本田 利弘",
+      "name_kana": "ほんだ としひろ",
+      "district": "宮崎市",
+      "faction": "宮崎県議会自由民主党",
+      "elected_count": 1,
+      "positions": [
+        "商工建設常任委員会（委員長）"
+      ],
+      "committees": [
+        "商工建設常任委員会（委員長）",
+        "地域交通対策特別委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82732/honda_toshihiro_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/honda_toshihiro.html"
+    },
+    {
+      "id": "miyazaki-pref--maeyashiki-emi",
+      "council_id": "miyazaki-pref",
+      "name": "前屋敷 恵美",
+      "name_kana": "まえやしき えみ",
+      "district": "宮崎市",
+      "faction": "日本共産党宮崎県議会議員団",
+      "elected_count": 7,
+      "positions": [],
+      "committees": [
+        "環境農林水産常任委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82739/maeyashiki_emi_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/maeyashiki_emi.html"
+    },
+    {
+      "id": "miyazaki-pref--matsumoto-tetsuya",
+      "council_id": "miyazaki-pref",
+      "name": "松本 哲也",
+      "name_kana": "まつもと てつや",
+      "district": "延岡市",
+      "faction": "県民連合立憲",
+      "elected_count": 1,
+      "positions": [],
+      "committees": [
+        "厚生常任委員会",
+        "議会運営委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82741/matsumoto_tetsuya_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/matsumoto_tetsuya.html"
+    },
+    {
+      "id": "miyazaki-pref--yasuda-kousei",
+      "council_id": "miyazaki-pref",
+      "name": "安田 厚生",
+      "name_kana": "やすだ こうせい",
+      "district": "東臼杵郡",
+      "faction": "宮崎県議会自由民主党",
+      "elected_count": 2,
+      "positions": [],
+      "committees": [
+        "厚生常任委員会",
+        "ＡＩ活用推進対策特別委員会",
+        "議会運営委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82761/yasuda_kosei_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/yasuda_kosei.html"
+    },
+    {
+      "id": "miyazaki-pref--yamauchi-itsutoku",
+      "council_id": "miyazaki-pref",
+      "name": "山内 いっとく",
+      "name_kana": "やまうち いっとく",
+      "district": "都城市",
+      "faction": "宮崎県議会自由民主党",
+      "elected_count": 1,
+      "positions": [
+        "ＡＩ活用推進対策特別委員会（委員長）"
+      ],
+      "committees": [
+        "商工建設常任委員会",
+        "ＡＩ活用推進対策特別委員会（委員長）"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82759/yamauchi_ittoku_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/yamauchi_ittoku.html"
+    },
+    {
+      "id": "miyazaki-pref--yamaguchi-toshiki",
+      "council_id": "miyazaki-pref",
+      "name": "山口 俊樹",
+      "name_kana": "やまぐち としき",
+      "district": "宮崎市",
+      "faction": "宮崎県議会自由民主党",
+      "elected_count": 1,
+      "positions": [
+        "環境農林水産常任委員会（委員長）"
+      ],
+      "committees": [
+        "環境農林水産常任委員会（委員長）",
+        "ＡＩ活用推進対策特別委員会",
+        "議会運営委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82756/yamaguchi_toshiki_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/yamaguchi_toshiki.html"
+    },
+    {
+      "id": "miyazaki-pref--yamashita-kotobuki",
+      "council_id": "miyazaki-pref",
+      "name": "山下 寿",
+      "name_kana": "やました ことぶき",
+      "district": "児湯郡",
+      "faction": "宮崎県議会自由民主党",
+      "elected_count": 2,
+      "positions": [],
+      "committees": [
+        "文教警察企業常任委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82758/yamashita_kotobuki_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/yamashita_kotobuki.html"
+    },
+    {
+      "id": "miyazaki-pref--yamashita-hiromi",
+      "council_id": "miyazaki-pref",
+      "name": "山下 博三",
+      "name_kana": "やました ひろみ",
+      "district": "都城市",
+      "faction": "宮崎県議会自由民主党",
+      "elected_count": 5,
+      "positions": [],
+      "committees": [
+        "環境農林水産常任委員会",
+        "地域交通対策特別委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82757/yamashita_hiromi_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/yamashita_hiromi.html"
+    },
+    {
+      "id": "miyazaki-pref--wakitani-noriko",
+      "council_id": "miyazaki-pref",
+      "name": "脇谷 のりこ",
+      "name_kana": "わきたに のりこ",
+      "district": "宮崎市",
+      "faction": "未来への風",
+      "elected_count": 2,
+      "positions": [],
+      "committees": [
+        "商工建設常任委員会",
+        "ＡＩ活用推進対策特別委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/82755/wakitani_noriko_l.jpg",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/wakitani_noriko.html"
+    },
+    {
+      "id": "miyazaki-pref--watanabe-masatake",
+      "council_id": "miyazaki-pref",
+      "name": "渡辺 正剛",
+      "name_kana": "わたなべ まさたけ",
+      "district": "東諸県郡",
+      "faction": "宮崎県議会自由民主党",
+      "elected_count": 1,
+      "positions": [
+        "総務政策常任委員会（副委員長）"
+      ],
+      "committees": [
+        "総務政策常任委員会（副委員長）",
+        "地域交通対策特別委員会"
+      ],
+      "photo_url": "https://www.pref.miyazaki.lg.jp/images/91699/91699_20241125150450-1.png",
+      "official_profile_url": "https://www.pref.miyazaki.lg.jp/gikai/about/members/50on/20240903105821.html"
+    }
+  ],
+  "updated_at": "2026-06-14T16:31:47+00:00"
+}
