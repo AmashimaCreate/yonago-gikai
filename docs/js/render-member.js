@@ -1,7 +1,7 @@
-import { acquisitionText, cautionNote, coverageText, sourceLink } from "./data-quality.js?v=20260614-member-redesign-v2";
-import { councilAreaName, officialCouncilUrl, renderAiPromptCard } from "./render-ai-prompt.js?v=20260614-member-redesign-v2";
-import { hasMemberVoteLayer, renderMemberVoteSection } from "./render-votes.js?v=20260614-member-redesign-v2";
-import { el } from "./utils.js?v=20260614-member-redesign-v2";
+import { acquisitionText, cautionNote, coverageText, sourceLink } from "./data-quality.js?v=20260614-member-simple-v3";
+import { councilAreaName, officialCouncilUrl, renderAiPromptCard } from "./render-ai-prompt.js?v=20260614-member-simple-v3";
+import { renderMemberVoteSection } from "./render-votes.js?v=20260614-member-simple-v3";
+import { el } from "./utils.js?v=20260614-member-simple-v3";
 
 export function renderMemberPage(root, state, memberId) {
   const member = state.members.find((item) => item.id === memberId);
@@ -96,13 +96,6 @@ function memberPromptItems(member, state) {
       text: structuredPrompt(member.name, council, activityInstruction(member, council)),
     },
   ];
-  if (hasMemberVoteLayer(council, state.votesMeta, state.votes)) {
-    prompts.push({
-      key: "votes",
-      label: "賛否の傾向",
-      text: structuredPrompt(member.name, council, voteTendencyInstruction(member, state)),
-    });
-  }
   prompts.push({
     key: "profile",
     label: "経歴・基本情報",
@@ -133,12 +126,6 @@ function activityInstruction(member, council) {
   return `${prefectureName}の${councilName}議員・${member.name}さんについて、${councilName}の公式サイト(${officialUrl})で公開情報を確認し、最近どんなテーマに関わっているか事実ベースで整理してください`;
 }
 
-function voteTendencyInstruction(member, state) {
-  const council = state.currentCouncil;
-  const sourceUrl = council?.votes_official_url || firstVoteSourceUrl(state.votes) || officialCouncilUrl(council);
-  return `${council?.name || "議会"}の議決結果(議員別賛否PDF: ${sourceUrl})をもとに、${member.name}議員が少数派に回った議決にどんな傾向があるか、事実ベースで整理してください`;
-}
-
 function profileInstruction(member, council) {
   const faction = member.faction || "会派データなし";
   const committees = Array.isArray(member.committees) && member.committees.length
@@ -146,10 +133,6 @@ function profileInstruction(member, council) {
     : "";
   const profileUrl = member.official_profile_url || officialCouncilUrl(council);
   return `${member.name}議員(${council?.name || "議会"}、${faction})の経歴や担当委員会など公開されている基本情報を、出典(${profileUrl})を示しながら整理してください。${committees}`;
-}
-
-function firstVoteSourceUrl(votes) {
-  return (votes || []).find((vote) => vote.source_url)?.source_url || "";
 }
 
 function renderSpeechSection(speeches, speechesMeta, council, member) {
@@ -162,8 +145,8 @@ function renderSpeechSection(speeches, speechesMeta, council, member) {
         ]),
       ]),
       el("div", { class: "speech-unavailable-note" }, [
-        el("p", {}, `${council?.name || "この議会"}の会議録は、現在このサイトでは取得できていません。公式の会議録検索システムで、この議員の発言を確認できます。`),
-        renderOfficialMinutesLink(council, member),
+        el("p", {}, `${council?.name || "この議会"}の会議録はこのサイトでは未取得です。公式の会議録検索で確認できます。`),
+        renderOfficialMinutesLink(council),
       ]),
     ]);
   }
@@ -192,7 +175,7 @@ function renderSpeechSection(speeches, speechesMeta, council, member) {
   ]);
 }
 
-function renderOfficialMinutesLink(council, member) {
+function renderOfficialMinutesLink(council) {
   const minutesUrl = council?.minutes_base_url || officialMinutesUrl(council);
   const officialUrl = officialCouncilUrl(council);
   const links = [];

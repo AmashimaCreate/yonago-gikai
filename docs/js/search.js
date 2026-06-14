@@ -1,4 +1,4 @@
-import { state } from "./state.js?v=20260614-member-redesign-v2";
+import { state } from "./state.js?v=20260614-member-simple-v3";
 
 export function matchesQuery(member, query) {
   if (!query) return true;

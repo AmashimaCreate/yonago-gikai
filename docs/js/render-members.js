@@ -1,6 +1,6 @@
-import { state } from "./state.js?v=20260614-member-redesign-v2";
-import { el } from "./utils.js?v=20260614-member-redesign-v2";
-import { memberPath } from "./router.js?v=20260614-member-redesign-v2";
+import { state } from "./state.js?v=20260614-member-simple-v3";
+import { el } from "./utils.js?v=20260614-member-simple-v3";
+import { memberPath } from "./router.js?v=20260614-member-simple-v3";
 
 const IDENTIFICATION_COLORS = [
   "#0072b2", // blue

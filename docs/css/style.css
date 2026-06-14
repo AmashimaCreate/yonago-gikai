@@ -2623,16 +2623,6 @@ main { padding: 24px 0 48px; }
   background: var(--surface);
   box-shadow: var(--shadow);
 }
-.member-vote-intro {
-  margin: 0 0 14px;
-  padding: 12px 14px;
-  border-left: 4px solid var(--brand);
-  border-radius: 10px;
-  background: var(--brand-soft);
-  color: var(--text);
-  font-size: 14px;
-}
-.member-vote-overview,
 .member-speech-summary {
   margin: 0 0 14px;
   padding: 12px 14px;
@@ -2642,108 +2632,44 @@ main { padding: 24px 0 48px; }
   color: var(--text);
   font-size: 15px;
 }
-.member-vote-overview strong,
 .member-speech-summary strong {
   color: var(--brand-dark);
   font-size: 22px;
 }
-.member-vote-counts {
-  color: var(--text-muted);
-}
-.divided-vote-block,
+.split-vote-records,
 .all-vote-records {
-  margin-top: 18px;
+  margin-top: 14px;
 }
-.divided-vote-block h3,
+.split-vote-records h3,
 .all-vote-records h3 {
   margin: 0 0 10px;
-  font-size: 18px;
+  font-size: 17px;
   overflow-wrap: anywhere;
 }
-.member-divided-vote-grid {
+.member-simple-vote-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 12px;
-}
-.member-divided-vote-card {
-  min-width: 0;
-  padding: 14px;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  background: var(--surface-soft);
-}
-.member-divided-vote-card h4 {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.45;
-  overflow-wrap: anywhere;
-}
-.member-vote-card-head {
-  display: grid;
-  grid-template-columns: 88px minmax(0, 1fr) auto;
-  gap: 10px;
-  align-items: start;
-}
-.member-vote-large {
-  display: grid;
-  place-items: center;
-  min-width: 64px;
-  min-height: 64px;
-  padding: 6px 8px;
+  gap: 0;
+  overflow: hidden;
   border: 1px solid var(--border);
   border-radius: 12px;
   background: var(--surface);
-  text-align: center;
 }
-.member-vote-large.is-yes {
-  border-color: var(--vote-yes-border);
-  background: var(--vote-yes-bg);
-  color: var(--brand-dark);
+.member-simple-vote-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 96px auto auto;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 12px;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
 }
-.member-vote-large.is-no {
-  border-color: var(--vote-no-border);
-  background: var(--vote-no-bg);
-  color: #7a4a00;
-}
-.member-vote-symbol {
-  display: block;
-  font-size: 30px;
-  font-weight: 900;
-  line-height: 1;
-}
-.member-vote-large-label {
-  display: block;
-  margin-top: 2px;
-  font-size: 12px;
-  font-weight: 800;
-}
-.vote-card-meta p {
-  margin: 4px 0;
-  font-size: 13px;
-}
-.vote-card-meta {
-  margin-top: 10px;
-  padding-left: 98px;
+.member-simple-vote-row:first-child {
+  border-top: 0;
 }
 .member-vote-session-list {
   display: grid;
   gap: 8px;
   margin-top: 10px;
-}
-.highlight-vote-overflow {
-  margin-top: 10px;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  background: var(--surface);
-}
-.highlight-vote-overflow > summary {
-  padding: 10px 12px;
-  cursor: pointer;
-  color: var(--brand-dark);
-  font-weight: 800;
-}
-.highlight-vote-overflow .member-vote-session-list {
-  padding: 0 10px 10px;
 }
 .member-vote-session {
   border: 1px solid var(--border);
@@ -3085,52 +3011,15 @@ main { padding: 24px 0 48px; }
     gap: 4px;
   }
   .member-vote-row,
+  .member-simple-vote-row,
   .speech-item {
     grid-template-columns: 1fr;
     gap: 4px;
   }
-  .member-vote-card-head {
-    grid-template-columns: 5.4em minmax(0, 1fr) auto;
-    gap: 7px;
-    align-items: center;
-  }
-  .member-vote-card-head .vote-date {
-    white-space: nowrap;
-    font-size: 12px;
-  }
-  .member-vote-large {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 30px;
-    min-height: 28px;
-    padding: 2px 7px;
-    border-radius: 999px;
-  }
-  .member-vote-symbol {
-    font-size: 18px;
-  }
-  .member-vote-large-label {
-    display: none;
-  }
-  .member-divided-vote-card {
-    padding: 12px;
-  }
-  .divided-vote-block h3,
+  .split-vote-records h3,
   .all-vote-records h3 {
     font-size: 16px;
     word-break: break-all;
-  }
-  .member-divided-vote-card h4 {
-    font-size: 14px;
-    line-height: 1.35;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  .vote-card-meta {
-    margin-top: 8px;
-    padding-left: 0;
   }
   .vote-summary-counts,
   .vote-summary-result {

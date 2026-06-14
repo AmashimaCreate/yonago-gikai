@@ -1,5 +1,5 @@
-import { councilPath, prefComparePath } from "./router.js?v=20260614-member-redesign-v2";
-import { el } from "./utils.js?v=20260614-member-redesign-v2";
+import { councilPath, prefComparePath } from "./router.js?v=20260614-member-simple-v3";
+import { el } from "./utils.js?v=20260614-member-simple-v3";
 
 export function renderPrefecturePage(root, councils, prefecture = "tottori", summaries = []) {
   root.innerHTML = "";

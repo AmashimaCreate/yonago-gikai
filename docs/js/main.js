@@ -1,21 +1,21 @@
-import { loadCouncilBundle, loadCouncils, loadCouncilSummaries } from "./data-loader.js?v=20260614-member-redesign-v2";
-import { renderAbout } from "./render-about.js?v=20260614-member-redesign-v2";
-import { renderCouncilPage } from "./render-council.js?v=20260614-member-redesign-v2";
-import { renderGuide } from "./render-guide.js?v=20260614-member-redesign-v2";
-import { renderMemberPage } from "./render-member.js?v=20260614-member-redesign-v2";
-import { renderPrefecturePage } from "./render-prefecture.js?v=20260614-member-redesign-v2";
-import { renderPrefectureComparisonPage } from "./render-prefecture-comparison.js?v=20260614-member-redesign-v2";
-import { renderProfile } from "./render-profile.js?v=20260614-member-redesign-v2";
-import { renderTop } from "./render-top.js?v=20260614-member-redesign-v2";
+import { loadCouncilBundle, loadCouncils, loadCouncilSummaries } from "./data-loader.js?v=20260614-member-simple-v3";
+import { renderAbout } from "./render-about.js?v=20260614-member-simple-v3";
+import { renderCouncilPage } from "./render-council.js?v=20260614-member-simple-v3";
+import { renderGuide } from "./render-guide.js?v=20260614-member-simple-v3";
+import { renderMemberPage } from "./render-member.js?v=20260614-member-simple-v3";
+import { renderPrefecturePage } from "./render-prefecture.js?v=20260614-member-simple-v3";
+import { renderPrefectureComparisonPage } from "./render-prefecture-comparison.js?v=20260614-member-simple-v3";
+import { renderProfile } from "./render-profile.js?v=20260614-member-simple-v3";
+import { renderTop } from "./render-top.js?v=20260614-member-simple-v3";
 import {
   councilPath,
   parseRoute,
   prefPath,
   topPath,
-} from "./router.js?v=20260614-member-redesign-v2";
-import { filteredMembers } from "./search.js?v=20260614-member-redesign-v2";
-import { state } from "./state.js?v=20260614-member-redesign-v2";
-import { el } from "./utils.js?v=20260614-member-redesign-v2";
+} from "./router.js?v=20260614-member-simple-v3";
+import { filteredMembers } from "./search.js?v=20260614-member-simple-v3";
+import { state } from "./state.js?v=20260614-member-simple-v3";
+import { el } from "./utils.js?v=20260614-member-simple-v3";
 
 const COUNCILS_WITH_VOTES = new Set([
   "kurayoshi-city",

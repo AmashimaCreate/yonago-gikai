@@ -1,4 +1,4 @@
-import { el } from "./utils.js?v=20260614-member-redesign-v2";
+import { el } from "./utils.js?v=20260614-member-simple-v3";
 
 const AI_LINK_URL_LIMIT = 2000;
 const AI_SERVICES = [

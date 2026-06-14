@@ -1,13 +1,10 @@
-import { sourceLink } from "./data-quality.js?v=20260614-member-redesign-v2";
-import { councilAreaName, renderAiPromptCard } from "./render-ai-prompt.js?v=20260614-member-redesign-v2";
-import { memberPath } from "./router.js?v=20260614-member-redesign-v2";
-import { el } from "./utils.js?v=20260614-member-redesign-v2";
+import { sourceLink } from "./data-quality.js?v=20260614-member-simple-v3";
+import { councilAreaName, renderAiPromptCard } from "./render-ai-prompt.js?v=20260614-member-simple-v3";
+import { memberPath } from "./router.js?v=20260614-member-simple-v3";
+import { el } from "./utils.js?v=20260614-member-simple-v3";
 
 const VOTE_ORDER = ["賛成", "反対", "退席", "欠席", "議長", "除斥", "継続審査"];
 const SPLIT_VOTE_THRESHOLD = 0.3;
-// 県議会は1人あたり368件規模になるため、初期表示のカードは最新12件に絞る。
-// 残りは同じ分類内の定例会折りたたみに残し、記録自体は隠さない。
-const HIGHLIGHT_CARD_LIMIT = 12;
 
 export function votesEnabledForCouncil(council) {
   return council?.vote_granularity === "member";
@@ -38,29 +35,18 @@ export function renderMemberVoteSection(votes, votesMeta, member, council, route
     .filter(Boolean)
     .sort((a, b) => (b.vote.date || "").localeCompare(a.vote.date || ""));
 
-  const categorized = categorizeMemberVotes(memberVotes);
-  const groups = groupVotesBySession(categorized.otherVotes);
+  const splitVotes = memberVotes.filter(isVisibleSplitVote);
+  const groups = groupVotesBySession(memberVotes);
 
   return el("section", { class: "vote-section member-vote-section" }, [
     el("div", { class: "section-heading-row" }, [
       el("div", {}, [
         el("p", { class: "eyebrow" }, "この議員の判断"),
-        el("h2", { class: "section-title" }, "どう判断したか"),
+        el("h2", { class: "section-title" }, "賛成・反対の記録"),
       ]),
     ]),
-    renderMemberVoteIntro(),
-    renderMemberVoteSummary(memberVotes),
-    renderVoteHighlightBlock(
-      "本人の票が多数派と異なった議決",
-      categorized.minorityVotes,
-      "この取得範囲では、本人の票が多数派と異なった議決はありません。",
-    ),
-    renderVoteHighlightBlock(
-      "議会全体で賛否が大きく分かれた議決",
-      categorized.broadSplitVotes,
-      "少数側がおおむね3割以上だった議決はありません。",
-    ),
-    renderAllVoteGroups(groups, categorized.otherVotes.length),
+    renderSplitVoteRecords(splitVotes),
+    renderAllVoteGroups(groups, memberVotes.length),
     renderVoteSourceSummary(memberVotes),
   ]);
 }
@@ -75,12 +61,6 @@ function renderMemberVoteMissingSection(council) {
     ]),
     renderVoteAvailabilityNotice(council),
   ]);
-}
-
-function renderMemberVoteIntro() {
-  return el("p", { class: "member-vote-intro" },
-    "議決では多くが全会一致で決まります。ここでは、この議員が多数派と異なる判断をした議決を取り上げています。賛否のどちらが正しいということではなく、その議員がどんな場面で独自の判断をしたかを見るためのものです。",
-  );
 }
 
 export function sortedVotesByDate(votes) {
@@ -154,69 +134,31 @@ function renderResultOnlyVoteSourceSummary(votes) {
   ]);
 }
 
-function renderMemberVoteSummary(memberVotes) {
-  const counts = memberVoteCounts(memberVotes);
-  return el("div", { class: "member-vote-overview" }, [
-    el("strong", {}, `${memberVotes.length}件`),
-    el("span", {}, " — "),
-    el("span", { class: "member-vote-counts" }, formatVoteCounts(counts)),
+function renderSplitVoteRecords(votes) {
+  return el("section", { class: "split-vote-records" }, [
+    el("h3", {}, "賛否が分かれた議決"),
+    votes.length
+      ? el("div", { class: "member-simple-vote-list" }, votes.map(renderSimpleMemberVoteRow))
+      : el("p", { class: "empty-message is-compact" }, "賛否が大きく分かれた議決はありません。"),
   ]);
 }
 
-function renderVoteHighlightBlock(title, votes, emptyText) {
-  const cardVotes = votes.slice(0, HIGHLIGHT_CARD_LIMIT);
-  const overflowVotes = votes.slice(HIGHLIGHT_CARD_LIMIT);
-
-  return el("section", { class: "divided-vote-block" }, [
-    el("h3", {}, `${title}（${votes.length}件）`),
-    overflowVotes.length
-      ? el("p", { class: "muted" }, `最新${cardVotes.length}件をカードで表示しています。ほか${overflowVotes.length}件は定例会ごとに開いて確認できます。`)
-      : null,
-    cardVotes.length
-      ? el("div", { class: "member-divided-vote-grid" },
-          cardVotes.map(renderDividedVoteCard),
-        )
-      : el("p", { class: "empty-message is-compact" }, emptyText),
-    renderHighlightOverflow(overflowVotes),
-  ]);
-}
-
-function renderDividedVoteCard({ vote, item }) {
-  const counts = voteCounts(vote);
-  return el("article", { class: "member-divided-vote-card" }, [
-    el("div", { class: "member-vote-card-head" }, [
-      el("div", { class: "vote-date" }, vote.date || "日付なし"),
-      el("h4", {}, vote.bill_title || "議案名なし"),
-      renderLargeVoteBadge(item.vote),
-    ]),
-    el("div", { class: "vote-card-meta" }, [
-      el("p", {}, [
-        el("span", { class: "detail-label" }, "全体"),
-        el("span", {}, formatVoteCounts(counts)),
-      ]),
-      el("p", {}, [
-        el("span", { class: "detail-label" }, "結果"),
-        el("span", {}, vote.result || "結果なし"),
-      ]),
-    ]),
+function renderSimpleMemberVoteRow({ vote, item }) {
+  return el("div", { class: "member-simple-vote-row" }, [
+    el("span", { class: "vote-title" }, vote.bill_title || "議案名なし"),
+    el("span", { class: "vote-date" }, vote.date || "日付なし"),
+    renderVoteBadge(item.vote),
+    el("span", { class: "vote-summary-result" }, vote.result || "結果なし"),
   ]);
 }
 
 function renderAllVoteGroups(groups, total) {
-  return el("section", { class: "all-vote-records" }, [
-    el("h3", {}, `その他の記録（${total}件）`),
-    el("p", { class: "muted" }, "全会一致や少数側が小さい議決は、定例会ごとに畳んで残しています。"),
+  if (!total) {
+    return el("p", { class: "empty-message is-compact" }, "この議員に紐付いた賛否記録はありません。");
+  }
+  return el("details", { class: "all-vote-records" }, [
+    el("summary", {}, `全議案を見る（${total}件）`),
     el("div", { class: "member-vote-session-list" }, groups.map(renderVoteSessionGroup)),
-  ]);
-}
-
-function renderHighlightOverflow(votes) {
-  if (!votes.length) return null;
-  return el("details", { class: "highlight-vote-overflow" }, [
-    el("summary", {}, `残り${votes.length}件を定例会ごとに見る`),
-    el("div", { class: "member-vote-session-list" },
-      groupVotesBySession(votes).map(renderVoteSessionGroup),
-    ),
   ]);
 }
 
@@ -355,25 +297,6 @@ function renderVoteBadge(value) {
   }, voteDisplayText(value));
 }
 
-function renderLargeVoteBadge(value) {
-  return el("div", {
-    class: `member-vote-large ${voteClass(value)}`,
-    title: voteHelpText(value),
-  }, [
-    el("span", { class: "member-vote-symbol" }, voteSymbol(value)),
-    el("span", { class: "member-vote-large-label" }, voteDisplayText(value)),
-  ]);
-}
-
-function memberVoteCounts(memberVotes) {
-  const counts = {};
-  for (const { item } of memberVotes || []) {
-    const value = item.vote || "不明";
-    counts[value] = (counts[value] || 0) + 1;
-  }
-  return counts;
-}
-
 function voteCounts(vote) {
   const counts = {};
   for (const entry of vote.votes_by_member || []) {
@@ -383,34 +306,9 @@ function voteCounts(vote) {
   return counts;
 }
 
-function categorizeMemberVotes(memberVotes) {
-  const minorityVotes = [];
-  const broadSplitVotes = [];
-  const otherVotes = [];
-  for (const entry of memberVotes || []) {
-    if (isMemberMinorityVote(entry)) {
-      minorityVotes.push(entry);
-      continue;
-    }
-    if (isBroadlySplitVote(entry.vote)) {
-      broadSplitVotes.push(entry);
-      continue;
-    }
-    otherVotes.push(entry);
-  }
-  return { minorityVotes, broadSplitVotes, otherVotes };
-}
-
-function isMemberMinorityVote({ vote, item }) {
+function isVisibleSplitVote({ vote, item }) {
   if (item.vote !== "賛成" && item.vote !== "反対") return false;
-  const counts = voteCounts(vote);
-  const ownCount = counts[item.vote] || 0;
-  const otherCount = item.vote === "賛成"
-    ? counts["反対"] || 0
-    : counts["賛成"] || 0;
-  // 本人の賛成/反対が、もう一方の票数より少ない場合だけ「少数派側」と扱う。
-  // 同数や議長・除斥などは解釈を足さず、定例会ごとの記録に残す。
-  return ownCount > 0 && ownCount < otherCount;
+  return isBroadlySplitVote(vote);
 }
 
 function isBroadlySplitVote(vote) {
@@ -472,14 +370,6 @@ function voteDisplayText(value) {
   if (value === "議長") return "議長（採決に加わらず）";
   if (value === "除斥") return "除斥";
   return value || "不明";
-}
-
-function voteSymbol(value) {
-  if (value === "賛成") return "○";
-  if (value === "反対") return "×";
-  if (value === "議長") return "議";
-  if (value === "除斥") return "除";
-  return "・";
 }
 
 function voteHelpText(value) {
