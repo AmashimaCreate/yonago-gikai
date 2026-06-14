@@ -23,7 +23,7 @@
 
 | 県 | 名簿URL | 様式分類 | 取得可能項目 | robots / 写真制約 | 熊本アダプタ流用 |
 | --- | --- | --- | --- | --- | --- |
-| 福岡 | https://www.gikai.pref.fukuoka.lg.jp/site/giin/all.html | 静的HTML一覧 + 個別プロフィール | 氏名、ふりがな、会派、選挙区、当選回数、写真URL、公式プロフィールURL、委員会 | `Disallow: /giin/` あり。ただし現行名簿は `/site/giin/` 配下で明示禁止外。写真も同配下で禁止は確認されず。 | そのままは不可。個別プロフィール追跡型の新アダプタ向き。 |
+| 福岡 | https://www.gikai.pref.fukuoka.lg.jp/site/giin/all.html | 静的HTML一覧 + 個別プロフィール | 氏名、ふりがな、会派、選挙区、当選回数、公式プロフィールURL、委員会。写真はページ上にあるがrobots制約により参照しない。 | `Disallow: /giin/` あり。現行名簿HTMLは `/site/giin/` 配下で明示禁止外だが、顔写真実体は `/giin/img/` 配下のため参照不可。 | そのままは不可。個別プロフィール追跡型の新アダプタ向き。 |
 | 佐賀 | https://www.pref.saga.lg.jp/gikai/kiji00366725/index.html | 1ページWYSIWYG表型 / 地区別ブロック | 氏名、ふりがな、会派、選挙区、当選回数、写真URL | robots.txt は404で明示禁止なし。写真は同ページ相対画像で禁止確認なし。 | 不可。WYSIWYG表の専用パースが必要。 |
 | 長崎 | https://www.pref.nagasaki.jp/gikai/2010.html | 50音一覧 + 選挙区別集約ページ | 氏名、会派、選挙区、当選回数、写真URL、委員会。公式プロフィールURLは議員単位でなく選挙区ページ単位。 | `/kana/`, `/mobile/`, `/translate/` のみDisallow。`/gikai/` と画像は明示禁止なし。 | 不可。選挙区集約ページ型の新アダプタが必要。 |
 | 大分 | https://www.pref.oita.jp/site/gikai/giin-gisekijun.html | 議席順HTML表 + 選挙区別集約ページ | 氏名、ふりがな、会派、選挙区、当選回数。写真URLは選挙区ページで取得可。公式プロフィールURLは選挙区ページ単位。 | robots.txt は404で明示禁止なし。写真は明示禁止確認なし。 | 一覧表部分は近いが、写真が選挙区ページ側なのでそのままは不可。 |
@@ -35,7 +35,7 @@
 
 | 県 | robots.txt | 名簿・個別ページ | 写真パス | 写真URL参照 |
 | --- | --- | --- | --- | --- |
-| 福岡 | `User-agent: *`、`Disallow: /giin/`、`Allow: /`、`Disallow: /m/giin/` | 現行名簿は `/site/giin/` 配下で、`/giin/` ではないため明示禁止外 | 例: `/site/giin/...` 配下の個別ページ内画像。`/site/giin/` の写真ディレクトリ禁止は確認されず | OK |
+| 福岡 | `User-agent: *`、`Disallow: /giin/`、`Allow: /`、`Disallow: /m/giin/` | 現行名簿HTMLは `/site/giin/` 配下で、`/giin/` ではないため明示禁止外 | 顔写真の実体は例: `/giin/img/akita-syouji.jpg`。`/giin/` Disallow配下 | NG（写真URLは記録しない） |
 | 宮崎 | `Disallow: /documents/109074/` など一部文書・告示系のみ | `/gikai/about/members/...` は明示禁止外 | 例: `/gikai/about/members/50on/...` の個別ページ画像。写真ディレクトリ禁止は確認されず | OK |
 | 鹿児島 | `Disallow: /kojisotatsu/` のみ | `/aa02/gikai/giin/profile/`、`/ha01/gikai/giin/profile/` は明示禁止外 | 例: `/aa02/gikai/giin/profile/images/...`、`/ha01/gikai/giin/profile/images/...`。写真ディレクトリ禁止は確認されず | OK |
 | 沖縄 | robots.txt は404 | `/kensei/gikai/1017039/1029763/...` は明示禁止なし扱い。低頻度取得前提 | 例: `/_res/projects/default_project/_page_/001/029/819/arakakikoei.jpg`。写真ディレクトリ禁止は確認されず | OK |
@@ -57,7 +57,7 @@
   - 個別: 写真URL、選挙区、当選回数、委員会。
 - 注意:
   - 個別ページには生年月日、住所、電話、FAXも掲載されているため、実装時は許可リスト方式で必要項目だけ読む。
-  - robots.txt は `/giin/` と `/m/giin/` をDisallowしているが、現行名簿は `/site/giin/` 配下。
+  - robots.txt は `/giin/` と `/m/giin/` をDisallowしている。現行名簿HTMLは `/site/giin/` 配下だが、顔写真の実体は `/giin/img/` 配下のため、写真URLは収集しない。
 - アダプタ見立て:
   - 熊本のCMS表型では不足。`static_member_profile` 型の有力候補。
 
