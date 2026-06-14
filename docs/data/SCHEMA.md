@@ -252,7 +252,7 @@ SSDS（e-Stat 社会・人口統計体系）から生成する、自治体ごと
 
 - ルート: `council_id`, `updated_at`, `source`, `indicators`
 - `source`: `provider`, `api`, `retrieved_at`, `area_code`, `statsDataIds`, `note`
-- 各指標: `label`, `unit`, `ssds_item`, `year_start`, `year_end`, `values`
+- 各指標: `label`, `unit`, `ssds_item`, `year_start`, `year_end`, `first`, `latest`, `delta`, `delta_pct`, `values`
 - `values[]`: `year`, `value`
 
 指標:
@@ -279,6 +279,9 @@ SSDS（e-Stat 社会・人口統計体系）から生成する、自治体ごと
 - 各指標は5議会で揃う直近最大10点を採用する。SSDSの収録最新年は指標ごとに異なるため、指標間で `year_start` / `year_end` が異なってよい。
 - 県限定の任意指標は、対象範囲内で取得できる直近最大10点を採用する。選挙年のみ値があるため、年が連続しなくてよい。
 - `values` は2〜10点。年齢3区分のように毎年値がない系列は、取得できた年のみを保持する。
+- `first` / `latest` は表示対象期間の先頭・末尾の `year` と `value` を保持する。
+- `delta` は `latest.value - first.value`。増減の事実表示に使う派生値で、良し悪しの評価ではない。
+- `delta_pct` は `delta / first.value * 100` を小数第2位で丸めた値。先頭値が0の場合は `null`。
 - `value` は数値型。人口総数と出生数は整数、財政力指数は小数を許容する。
 - `source.statsDataIds` には、各指標で実際に問い合わせたSSDS表IDを保持する。
 - appIdは実行環境の `.env` または環境変数でのみ扱い、`timeseries.json` には保存しない。

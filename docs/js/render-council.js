@@ -1,8 +1,8 @@
-import { dataQualityPanel } from "./data-quality.js?v=20260614-finance-purpose-folded";
-import { renderFinanceSection } from "./render-finance.js?v=20260614-finance-purpose-folded";
-import { renderFactionCompositionChart } from "./render-faction-chart.js?v=20260614-finance-purpose-folded";
-import { formatDecimal, formatPeople, formatYen } from "./render-profile.js?v=20260614-finance-purpose-folded";
-import { renderProfileVisualization } from "./render-profile-viz.js?v=20260614-finance-purpose-folded";
+import { dataQualityPanel } from "./data-quality.js?v=20260614-neutrality-colors";
+import { renderFinanceSection } from "./render-finance.js?v=20260614-neutrality-colors";
+import { renderFactionCompositionChart } from "./render-faction-chart.js?v=20260614-neutrality-colors";
+import { formatDecimal, formatPeople, formatYen } from "./render-profile.js?v=20260614-neutrality-colors";
+import { renderProfileVisualization } from "./render-profile-viz.js?v=20260614-neutrality-colors";
 import {
   hasMemberVoteLayer,
   hasResultOnlyVoteLayer,
@@ -10,7 +10,7 @@ import {
   renderResultOnlyVoteCard,
   renderVoteAvailabilityNotice,
   sortedVotesByDate,
-} from "./render-votes.js?v=20260614-finance-purpose-folded";
+} from "./render-votes.js?v=20260614-neutrality-colors";
 import {
   renderCommitteeView,
   renderKaihaView,
@@ -18,9 +18,9 @@ import {
   memberFaction,
   renderRoleView,
   renderTermView,
-} from "./render-members.js?v=20260614-finance-purpose-folded";
-import { memberPath } from "./router.js?v=20260614-finance-purpose-folded";
-import { el } from "./utils.js?v=20260614-finance-purpose-folded";
+} from "./render-members.js?v=20260614-neutrality-colors";
+import { memberPath } from "./router.js?v=20260614-neutrality-colors";
+import { el } from "./utils.js?v=20260614-neutrality-colors";
 
 export function renderCouncilPage(root, state, filteredMembers) {
   root.innerHTML = "";
@@ -228,25 +228,53 @@ function renderTimeseriesSection(state) {
 function renderTimeseriesCard(key, shortLabel, title, indicator) {
   const values = cleanTimeseriesValues(indicator?.values);
   if (values.length < 2) return null;
-  const first = values[0];
-  const last = values[values.length - 1];
-  const delta = last.value - first.value;
-  const periodLabel = `${first.year}〜${last.year}年`;
-  const headline = `${shortLabel} ${formatTimeseriesValue(key, last.value)}(${last.year}) / ${periodLabel}で ${formatTimeseriesDelta(key, delta)}`;
+  const summary = timeseriesSummary(indicator, values);
+  const trend = trendClass(summary.delta);
+  const periodLabel = `${summary.first.year}〜${summary.latest.year}年`;
+  const headline = `${shortLabel} ${formatTimeseriesValue(key, summary.latest.value)}(${summary.latest.year})`;
 
   return el("article", { class: "timeseries-chart-card" }, [
     el("div", { class: "timeseries-chart-head" }, [
       el("h3", {}, title),
       el("p", {}, headline),
+      el("span", { class: `timeseries-delta-chip ${trend}` }, `${periodLabel}で ${formatTimeseriesDelta(key, summary.delta)}`),
     ]),
     isSparseElectionSeries(key)
-      ? renderSparsePointChartSvg(key, title, values)
-      : renderLineChartSvg(key, title, values),
+      ? renderSparsePointChartSvg(key, title, values, trend)
+      : renderLineChartSvg(key, title, values, trend),
     isSparseElectionSeries(key)
       ? el("p", { class: "timeseries-sparse-note" }, "選挙年のみを点と破線で表示しています。")
       : null,
     renderTimeseriesTable(key, title, values),
   ]);
+}
+
+function timeseriesSummary(indicator, values) {
+  const fallbackFirst = values[0];
+  const fallbackLatest = values[values.length - 1];
+  const first = validSummaryPoint(indicator?.first) || {
+    year: fallbackFirst.year,
+    value: fallbackFirst.value,
+  };
+  const latest = validSummaryPoint(indicator?.latest) || {
+    year: fallbackLatest.year,
+    value: fallbackLatest.value,
+  };
+  const delta = typeof indicator?.delta === "number"
+    ? indicator.delta
+    : latest.value - first.value;
+  const deltaPct = typeof indicator?.delta_pct === "number" ? indicator.delta_pct : null;
+  return { first, latest, delta, deltaPct };
+}
+
+function validSummaryPoint(point) {
+  if (!point || !Number.isInteger(point.year) || typeof point.value !== "number") return null;
+  return { year: point.year, value: point.value };
+}
+
+function trendClass(delta) {
+  if (typeof delta !== "number" || delta === 0) return "is-flat";
+  return delta > 0 ? "is-increase" : "is-decrease";
 }
 
 function cleanTimeseriesValues(values) {
@@ -256,7 +284,7 @@ function cleanTimeseriesValues(values) {
     .sort((a, b) => a.year - b.year);
 }
 
-function renderLineChartSvg(key, title, values) {
+function renderLineChartSvg(key, title, values, trend = "is-flat") {
   const width = 320;
   const height = 170;
   const pad = { top: 18, right: 12, bottom: 30, left: 42 };
@@ -323,12 +351,12 @@ function renderLineChartSvg(key, title, values) {
     "text-anchor": "end",
   }, formatAxisValue(key, domain.min)));
   svg.appendChild(svgEl("polyline", {
-    class: "timeseries-line",
+    class: `timeseries-line ${trend}`,
     points,
   }));
   values.forEach((item, index) => {
     const circle = svgEl("circle", {
-      class: "timeseries-point",
+      class: `timeseries-point ${trend}`,
       cx: x(index),
       cy: y(item.value),
       r: 3.5,
@@ -353,7 +381,7 @@ function renderLineChartSvg(key, title, values) {
   return svg;
 }
 
-function renderSparsePointChartSvg(key, title, values) {
+function renderSparsePointChartSvg(key, title, values, trend = "is-flat") {
   const width = 320;
   const height = 170;
   const pad = { top: 18, right: 12, bottom: 30, left: 42 };
@@ -403,12 +431,12 @@ function renderSparsePointChartSvg(key, title, values) {
     y2: pad.top + innerHeight / 2,
   }));
   svg.appendChild(svgEl("polyline", {
-    class: "timeseries-sparse-line",
+    class: `timeseries-sparse-line ${trend}`,
     points,
   }));
   values.forEach((item) => {
     const circle = svgEl("circle", {
-      class: "timeseries-point is-sparse",
+      class: `timeseries-point is-sparse ${trend}`,
       cx: x(item.year),
       cy: y(item.value),
       r: 4.2,
@@ -526,7 +554,12 @@ function formatTimeseriesValue(key, value) {
 
 function formatTimeseriesDelta(key, value) {
   if (typeof value !== "number") return "";
-  if (value === 0) return key === "fiscal_index" ? "0" : "0人";
+  if (value === 0) {
+    if (key === "fiscal_index") return "0";
+    if (key === "aging_rate" || isTurnoutSeries(key)) return "0ポイント";
+    if (key === "expenditure_total") return "0億円";
+    return "0人";
+  }
   const sign = value < 0 ? "−" : "+";
   const abs = Math.abs(value);
   if (key === "fiscal_index") {

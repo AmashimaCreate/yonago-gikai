@@ -1,4 +1,4 @@
-import { el } from "./utils.js?v=20260614-finance-purpose-folded";
+import { el } from "./utils.js?v=20260614-neutrality-colors";
 
 export function renderAbout(root) {
   root.innerHTML = "";
@@ -9,6 +9,15 @@ export function renderAbout(root) {
         el("p", {}, "自治体や議会が公開している情報を、市民が見つけやすい形に並べ直す非公式サイトです。"),
         el("p", {}, "議員名簿、発言インデックス、議決結果、街の基礎データを、自治体をまたいで同じ形で見られるようにします。"),
         el("p", {}, "評価や順位づけではなく、一次ソースへたどる入口を増やすことを目的にしています。"),
+      ]),
+    ]),
+    el("section", { class: "about-page page-card" }, [
+      el("h2", { class: "section-title" }, "中立性の考え方"),
+      el("ul", { class: "about-list" }, [
+        el("li", {}, "議員個人を点数化・ランキング化しません。発言数や賛否の件数は、取得範囲内の事実として表示します。"),
+        el("li", {}, "会派や指標の色は区別のために使います。特定政党のイメージカラーを再現する意図はありません。"),
+        el("li", {}, "賛成・反対は記号とティール/オレンジ系で表示し、緑/赤の善悪を連想しやすい配色は使いません。"),
+        el("li", {}, "平均・比較・増減は、地域の状況を知るための事実として表示します。良し悪しの断定はしません。"),
       ]),
     ]),
     el("section", { class: "about-page page-card" }, [

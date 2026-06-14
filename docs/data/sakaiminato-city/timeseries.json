@@ -64,7 +64,17 @@
           "year": 2023,
           "value": 32696
         }
-      ]
+      ],
+      "first": {
+        "year": 2014,
+        "value": 35699
+      },
+      "latest": {
+        "year": 2023,
+        "value": 32696
+      },
+      "delta": -3003,
+      "delta_pct": -8.41
     },
     "aging_rate": {
       "label": "高齢化率",
@@ -145,7 +155,17 @@
           "working_age_population": 17948,
           "elderly_population": 10736
         }
-      ]
+      ],
+      "first": {
+        "year": 1980,
+        "value": 10.9
+      },
+      "latest": {
+        "year": 2020,
+        "value": 32.9
+      },
+      "delta": 22.0,
+      "delta_pct": 201.83
     },
     "births": {
       "label": "出生数",
@@ -194,7 +214,17 @@
           "year": 2022,
           "value": 196
         }
-      ]
+      ],
+      "first": {
+        "year": 2013,
+        "value": 270
+      },
+      "latest": {
+        "year": 2022,
+        "value": 196
+      },
+      "delta": -74,
+      "delta_pct": -27.41
     },
     "social_change": {
       "label": "社会増減",
@@ -239,7 +269,17 @@
           "in_migration": 1174,
           "out_migration": 1114
         }
-      ]
+      ],
+      "first": {
+        "year": 2018,
+        "value": -22
+      },
+      "latest": {
+        "year": 2023,
+        "value": 60
+      },
+      "delta": 82,
+      "delta_pct": -372.73
     },
     "expenditure_total": {
       "label": "歳出決算総額",
@@ -288,7 +328,17 @@
           "year": 2021,
           "value": 20852589000
         }
-      ]
+      ],
+      "first": {
+        "year": 2012,
+        "value": 14570901000
+      },
+      "latest": {
+        "year": 2021,
+        "value": 20852589000
+      },
+      "delta": 6281688000,
+      "delta_pct": 43.11
     },
     "fiscal_index": {
       "label": "財政力指数",
@@ -337,7 +387,17 @@
           "year": 2021,
           "value": 0.55
         }
-      ]
+      ],
+      "first": {
+        "year": 2012,
+        "value": 0.49
+      },
+      "latest": {
+        "year": 2021,
+        "value": 0.55
+      },
+      "delta": 0.06000000000000005,
+      "delta_pct": 12.24
     }
   }
 }

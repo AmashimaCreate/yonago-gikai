@@ -462,13 +462,37 @@ def indicator_payload(
         timeseries_value(indicator_key, area["council_id"], fetched, year)
         for year in years
     ]
+    summary = timeseries_summary(values)
     return {
         "label": indicator["label"],
         "unit": indicator["unit"],
         "ssds_item": source_item_label(indicator_key, area),
         "year_start": years[0],
         "year_end": years[-1],
+        **summary,
         "values": values,
+    }
+
+
+def timeseries_summary(values: list[dict[str, Any]]) -> dict[str, Any]:
+    first = values[0]
+    latest = values[-1]
+    delta = latest["value"] - first["value"]
+    first_value = first["value"]
+    delta_pct = None
+    if isinstance(first_value, (int, float)) and first_value != 0:
+        delta_pct = round((delta / first_value) * 100, 2)
+    return {
+        "first": {
+            "year": first["year"],
+            "value": first["value"],
+        },
+        "latest": {
+            "year": latest["year"],
+            "value": latest["value"],
+        },
+        "delta": delta,
+        "delta_pct": delta_pct,
     }
 
 

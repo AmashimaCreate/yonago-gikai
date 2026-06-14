@@ -36,6 +36,14 @@
   --vote-yes-border: #67c7bb;
   --vote-no-bg: #fff3db;
   --vote-no-border: #e9b85d;
+
+  --compare-member-count: var(--palette-purple);
+  --compare-population: var(--palette-blue);
+  --compare-population-per-member: var(--palette-orange);
+  --compare-fiscal-index: var(--brand);
+  --trend-increase: var(--palette-blue);
+  --trend-decrease: var(--palette-orange);
+  --trend-flat: var(--brand);
 }
 
 * { box-sizing: border-box; }
@@ -886,6 +894,18 @@ a:hover { color: var(--brand-dark); }
 .comparison-bar-fill {
   fill: var(--brand);
 }
+.comparison-bar-member_count .comparison-bar-fill {
+  fill: var(--compare-member-count);
+}
+.comparison-bar-population .comparison-bar-fill {
+  fill: var(--compare-population);
+}
+.comparison-bar-population_per_member .comparison-bar-fill {
+  fill: var(--compare-population-per-member);
+}
+.comparison-bar-fiscal_index .comparison-bar-fill {
+  fill: var(--compare-fiscal-index);
+}
 .comparison-panel {
   padding-bottom: 24px;
 }
@@ -950,6 +970,11 @@ a:hover { color: var(--brand-dark); }
   flex-wrap: wrap;
 }
 .comparison-value strong {
+  white-space: nowrap;
+}
+.comparison-diff {
+  color: var(--text-muted);
+  font-size: 12px;
   white-space: nowrap;
 }
 .comparison-sources {
@@ -1128,11 +1153,35 @@ main { padding: 24px 0 48px; }
 }
 .timeseries-chart-head p {
   margin-top: 4px;
-  min-height: 2.8em;
   color: var(--text);
   font-size: 12px;
   font-weight: 800;
   line-height: 1.4;
+}
+.timeseries-delta-chip {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: 8px;
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.timeseries-delta-chip.is-increase {
+  border-color: rgba(0, 114, 178, 0.35);
+  color: var(--trend-increase);
+}
+.timeseries-delta-chip.is-decrease {
+  border-color: rgba(230, 159, 0, 0.45);
+  color: #a85f00;
+}
+.timeseries-delta-chip.is-flat {
+  color: var(--trend-flat);
 }
 .timeseries-chart {
   display: block;
@@ -1162,6 +1211,18 @@ main { padding: 24px 0 48px; }
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+.timeseries-line.is-increase,
+.timeseries-sparse-line.is-increase {
+  stroke: var(--trend-increase);
+}
+.timeseries-line.is-decrease,
+.timeseries-sparse-line.is-decrease {
+  stroke: var(--trend-decrease);
+}
+.timeseries-line.is-flat,
+.timeseries-sparse-line.is-flat {
+  stroke: var(--trend-flat);
+}
 .timeseries-sparse-line {
   fill: none;
   stroke: var(--brand);
@@ -1175,8 +1236,26 @@ main { padding: 24px 0 48px; }
   stroke: var(--brand);
   stroke-width: 2;
 }
+.timeseries-point.is-increase {
+  stroke: var(--trend-increase);
+}
+.timeseries-point.is-decrease {
+  stroke: var(--trend-decrease);
+}
+.timeseries-point.is-flat {
+  stroke: var(--trend-flat);
+}
 .timeseries-point.is-sparse {
   fill: var(--brand);
+}
+.timeseries-point.is-sparse.is-increase {
+  fill: var(--trend-increase);
+}
+.timeseries-point.is-sparse.is-decrease {
+  fill: var(--trend-decrease);
+}
+.timeseries-point.is-sparse.is-flat {
+  fill: var(--trend-flat);
 }
 .timeseries-point:focus {
   outline: none;

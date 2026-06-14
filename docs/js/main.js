@@ -1,21 +1,21 @@
-import { loadCouncilBundle, loadCouncils, loadCouncilSummaries } from "./data-loader.js?v=20260614-finance-purpose-folded";
-import { renderAbout } from "./render-about.js?v=20260614-finance-purpose-folded";
-import { renderCouncilPage } from "./render-council.js?v=20260614-finance-purpose-folded";
-import { renderGuide } from "./render-guide.js?v=20260614-finance-purpose-folded";
-import { renderMemberPage } from "./render-member.js?v=20260614-finance-purpose-folded";
-import { renderPrefecturePage } from "./render-prefecture.js?v=20260614-finance-purpose-folded";
-import { renderPrefectureComparisonPage } from "./render-prefecture-comparison.js?v=20260614-finance-purpose-folded";
-import { renderProfile } from "./render-profile.js?v=20260614-finance-purpose-folded";
-import { renderTop } from "./render-top.js?v=20260614-finance-purpose-folded";
+import { loadCouncilBundle, loadCouncils, loadCouncilSummaries } from "./data-loader.js?v=20260614-neutrality-colors";
+import { renderAbout } from "./render-about.js?v=20260614-neutrality-colors";
+import { renderCouncilPage } from "./render-council.js?v=20260614-neutrality-colors";
+import { renderGuide } from "./render-guide.js?v=20260614-neutrality-colors";
+import { renderMemberPage } from "./render-member.js?v=20260614-neutrality-colors";
+import { renderPrefecturePage } from "./render-prefecture.js?v=20260614-neutrality-colors";
+import { renderPrefectureComparisonPage } from "./render-prefecture-comparison.js?v=20260614-neutrality-colors";
+import { renderProfile } from "./render-profile.js?v=20260614-neutrality-colors";
+import { renderTop } from "./render-top.js?v=20260614-neutrality-colors";
 import {
   councilPath,
   parseRoute,
   prefPath,
   topPath,
-} from "./router.js?v=20260614-finance-purpose-folded";
-import { filteredMembers } from "./search.js?v=20260614-finance-purpose-folded";
-import { state } from "./state.js?v=20260614-finance-purpose-folded";
-import { el } from "./utils.js?v=20260614-finance-purpose-folded";
+} from "./router.js?v=20260614-neutrality-colors";
+import { filteredMembers } from "./search.js?v=20260614-neutrality-colors";
+import { state } from "./state.js?v=20260614-neutrality-colors";
+import { el } from "./utils.js?v=20260614-neutrality-colors";
 
 const COUNCILS_WITH_VOTES = new Set([
   "kurayoshi-city",

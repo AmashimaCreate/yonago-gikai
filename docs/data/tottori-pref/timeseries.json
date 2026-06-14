@@ -66,7 +66,17 @@
           "year": 2023,
           "value": 540207
         }
-      ]
+      ],
+      "first": {
+        "year": 2014,
+        "value": 583351
+      },
+      "latest": {
+        "year": 2023,
+        "value": 540207
+      },
+      "delta": -43144,
+      "delta_pct": -7.4
     },
     "aging_rate": {
       "label": "高齢化率",
@@ -147,7 +157,17 @@
           "working_age_population": 300002,
           "elderly_population": 177046
         }
-      ]
+      ],
+      "first": {
+        "year": 1980,
+        "value": 12.3
+      },
+      "latest": {
+        "year": 2020,
+        "value": 32.5
+      },
+      "delta": 20.2,
+      "delta_pct": 164.23
     },
     "births": {
       "label": "出生数",
@@ -196,7 +216,17 @@
           "year": 2022,
           "value": 3752
         }
-      ]
+      ],
+      "first": {
+        "year": 2013,
+        "value": 4759
+      },
+      "latest": {
+        "year": 2022,
+        "value": 3752
+      },
+      "delta": -1007,
+      "delta_pct": -21.16
     },
     "social_change": {
       "label": "社会増減",
@@ -241,7 +271,17 @@
           "in_migration": 8482,
           "out_migration": 10238
         }
-      ]
+      ],
+      "first": {
+        "year": 2018,
+        "value": -1795
+      },
+      "latest": {
+        "year": 2023,
+        "value": -1756
+      },
+      "delta": 39,
+      "delta_pct": -2.17
     },
     "expenditure_total": {
       "label": "歳出決算総額",
@@ -290,7 +330,17 @@
           "year": 2021,
           "value": 390934664000
         }
-      ]
+      ],
+      "first": {
+        "year": 2012,
+        "value": 330096834000
+      },
+      "latest": {
+        "year": 2021,
+        "value": 390934664000
+      },
+      "delta": 60837830000,
+      "delta_pct": 18.43
     },
     "fiscal_index": {
       "label": "財政力指数",
@@ -339,7 +389,17 @@
           "year": 2021,
           "value": 0.27259
         }
-      ]
+      ],
+      "first": {
+        "year": 2012,
+        "value": 0.244
+      },
+      "latest": {
+        "year": 2021,
+        "value": 0.27259
+      },
+      "delta": 0.028590000000000004,
+      "delta_pct": 11.72
     },
     "pref_assembly_turnout": {
       "label": "都道府県議会議員選挙投票率",
@@ -364,7 +424,17 @@
           "year": 2019,
           "value": 52.7
         }
-      ]
+      ],
+      "first": {
+        "year": 2007,
+        "value": 62.03
+      },
+      "latest": {
+        "year": 2019,
+        "value": 52.7
+      },
+      "delta": -9.329999999999998,
+      "delta_pct": -15.04
     },
     "pref_governor_turnout": {
       "label": "都道府県知事選挙投票率",
@@ -389,7 +459,17 @@
           "year": 2019,
           "value": 53.09
         }
-      ]
+      ],
+      "first": {
+        "year": 2007,
+        "value": 61.46
+      },
+      "latest": {
+        "year": 2019,
+        "value": 53.09
+      },
+      "delta": -8.369999999999997,
+      "delta_pct": -13.62
     }
   }
 }

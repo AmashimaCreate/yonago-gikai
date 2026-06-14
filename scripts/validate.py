@@ -125,6 +125,10 @@ TIMESERIES_INDICATOR_KEYS = {
     "ssds_item",
     "year_start",
     "year_end",
+    "first",
+    "latest",
+    "delta",
+    "delta_pct",
     "values",
 }
 TIMESERIES_VALUE_KEYS = {"year", "value"}
@@ -564,6 +568,23 @@ def validate_timeseries_file(council_id: str, path: Path) -> list[str]:
             errors.append(f"{label}: year_start must be an integer")
         if not isinstance(year_end, int):
             errors.append(f"{label}: year_end must be an integer")
+        for point_key in ("first", "latest"):
+            point = indicator.get(point_key)
+            if not isinstance(point, dict):
+                errors.append(f"{label}: {point_key} must be an object")
+                continue
+            if not isinstance(point.get("year"), int):
+                errors.append(f"{label}: {point_key}.year must be an integer")
+            if not isinstance(point.get("value"), (int, float)) or isinstance(point.get("value"), bool):
+                errors.append(f"{label}: {point_key}.value must be numeric")
+        delta = indicator.get("delta")
+        if not isinstance(delta, (int, float)) or isinstance(delta, bool):
+            errors.append(f"{label}: delta must be numeric")
+        delta_pct = indicator.get("delta_pct")
+        if delta_pct is not None and (
+            not isinstance(delta_pct, (int, float)) or isinstance(delta_pct, bool)
+        ):
+            errors.append(f"{label}: delta_pct must be numeric or null")
 
         values = indicator.get("values")
         if not isinstance(values, list):
@@ -596,6 +617,18 @@ def validate_timeseries_file(council_id: str, path: Path) -> list[str]:
                 errors.append(f"{label}: year_start does not match first value year")
             if isinstance(year_end, int) and years[-1] != year_end:
                 errors.append(f"{label}: year_end does not match last value year")
+            first = indicator.get("first")
+            latest = indicator.get("latest")
+            if isinstance(first, dict):
+                if first.get("year") != values[0].get("year") or first.get("value") != values[0].get("value"):
+                    errors.append(f"{label}: first does not match first value")
+            if isinstance(latest, dict):
+                if latest.get("year") != values[-1].get("year") or latest.get("value") != values[-1].get("value"):
+                    errors.append(f"{label}: latest does not match last value")
+            if isinstance(delta, (int, float)) and not isinstance(delta, bool):
+                expected_delta = values[-1].get("value") - values[0].get("value")
+                if abs(delta - expected_delta) > 0.000001:
+                    errors.append(f"{label}: delta does not match latest - first")
 
     return errors
 

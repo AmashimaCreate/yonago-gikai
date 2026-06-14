@@ -1,4 +1,4 @@
-import { el } from "./utils.js?v=20260614-finance-purpose-folded";
+import { el } from "./utils.js?v=20260614-neutrality-colors";
 
 export function formatNumber(value) {
   if (typeof value !== "number") return null;

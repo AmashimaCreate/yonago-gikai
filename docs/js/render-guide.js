@@ -1,4 +1,4 @@
-import { el } from "./utils.js?v=20260614-finance-purpose-folded";
+import { el } from "./utils.js?v=20260614-neutrality-colors";
 
 export function renderGuide(root) {
   root.innerHTML = "";
@@ -9,7 +9,7 @@ export function renderGuide(root) {
       el("div", { class: "guide-lead" }, [
         el("p", {}, "議員名簿、議決結果、発言インデックス、自治体の基礎データを同じ形で見られます。"),
         el("p", {}, "気になった議員や議案から、公式情報や会議録検索へ進めます。"),
-        el("p", {}, "数字や件数は評価ではなく、一次ソースへたどる入口として見てください。"),
+        el("p", {}, "数字や件数から、気になる一次ソースへ進めます。"),
       ]),
     ]),
     el("section", { class: "guide-page page-card" }, [
@@ -36,7 +36,7 @@ export function renderGuide(root) {
     el("section", { class: "guide-page page-card" }, [
       el("p", { class: "eyebrow" }, "深掘りする"),
       el("h2", { class: "section-title" }, "AIで調べるときのコツ"),
-      el("p", {}, "AIに聞くときは、議会名・議員名・議案名・日付・公式URLを入れ、「評価ではなく事実ベースで整理して」と指定すると、一次ソースを確認しやすい形で返ってきます。"),
+      el("p", {}, "AIに聞くときは、議会名・議員名・議案名・日付・公式URLを入れ、出典を示しながら事実を整理するよう指定すると、一次ソースを確認しやすい形で返ってきます。"),
       el("p", { class: "ai-caution" }, "AIの回答には誤りが含まれることがあります。重要な判断は一次ソースで確認してください。"),
     ]),
   );

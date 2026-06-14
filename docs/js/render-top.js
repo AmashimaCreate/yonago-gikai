@@ -1,5 +1,5 @@
-import { prefPath } from "./router.js?v=20260614-finance-purpose-folded";
-import { el } from "./utils.js?v=20260614-finance-purpose-folded";
+import { prefPath } from "./router.js?v=20260614-neutrality-colors";
+import { el } from "./utils.js?v=20260614-neutrality-colors";
 
 export function renderTop(root) {
   root.innerHTML = "";

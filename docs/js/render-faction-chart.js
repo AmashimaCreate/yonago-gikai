@@ -1,5 +1,5 @@
-import { kaihaColor, memberFaction } from "./render-members.js?v=20260614-finance-purpose-folded";
-import { el } from "./utils.js?v=20260614-finance-purpose-folded";
+import { kaihaColor, memberFaction } from "./render-members.js?v=20260614-neutrality-colors";
+import { el } from "./utils.js?v=20260614-neutrality-colors";
 
 const SVG_NS = "http://www.w3.org/2000/svg";
 const CHART_WIDTH = 1000;
@@ -155,7 +155,7 @@ export function renderFactionCompositionChart(members, membersMeta) {
     el(
       "p",
       { class: "viz-note" },
-      "色は識別のための中立色です。政党や会派のイメージカラーを表すものではありません。",
+      "色は会派の区別用です。",
     ),
   ]);
 }

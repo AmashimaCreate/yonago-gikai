@@ -1,4 +1,4 @@
-import { el } from "./utils.js?v=20260614-finance-purpose-folded";
+import { el } from "./utils.js?v=20260614-neutrality-colors";
 
 export function acquisitionText(membersMeta) {
   const acquisition = membersMeta?.acquisition;
@@ -78,7 +78,7 @@ export function dataQualityPanel({ membersMeta, speechesMeta, votesMeta, council
 
 export function cautionNote() {
   return el("p", { class: "caution-note" },
-    "発言数は役職（議長等）・当選時期・取得範囲により異なります。少ないことが活動の少なさを意味するものではありません。",
+    "発言数は取得範囲内の件数です。役職（議長等）や当選時期により差があります。",
   );
 }
 

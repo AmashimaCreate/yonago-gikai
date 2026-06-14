@@ -3,8 +3,8 @@ import {
   formatPeople,
   formatYen,
   sourceLink,
-} from "./render-profile.js?v=20260614-finance-purpose-folded";
-import { el } from "./utils.js?v=20260614-finance-purpose-folded";
+} from "./render-profile.js?v=20260614-neutrality-colors";
+import { el } from "./utils.js?v=20260614-neutrality-colors";
 
 const SVG_NS = "http://www.w3.org/2000/svg";
 

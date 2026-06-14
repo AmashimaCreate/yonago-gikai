@@ -2,8 +2,8 @@ import {
   formatDecimal,
   formatPeople,
   sourceLink,
-} from "./render-profile.js?v=20260614-finance-purpose-folded";
-import { el } from "./utils.js?v=20260614-finance-purpose-folded";
+} from "./render-profile.js?v=20260614-neutrality-colors";
+import { el } from "./utils.js?v=20260614-neutrality-colors";
 
 const SVG_NS = "http://www.w3.org/2000/svg";
 const COUNCIL_ORDER = [
@@ -54,9 +54,9 @@ function clampPercent(value, domain) {
   return Math.max(0, Math.min(100, (value / domain) * 100));
 }
 
-function barSvg(percent, label) {
+function barSvg(percent, label, metricKey) {
   return svgEl("svg", {
-    class: "comparison-bar-svg",
+    class: `comparison-bar-svg comparison-bar-${metricKey}`,
     viewBox: "0 0 100 12",
     preserveAspectRatio: "none",
     role: "img",
@@ -102,10 +102,36 @@ function metricSourceNode(summaries, metric) {
   return null;
 }
 
-function renderComparisonRow(summary, metric, domain) {
+function cityAverage(summaries, metric) {
+  const values = summaries
+    .filter((summary) => summary.council.type === "city")
+    .map((summary) => valueFrom(summary, metric))
+    .filter((value) => typeof value === "number");
+  if (!values.length) return null;
+  return values.reduce((sum, value) => sum + value, 0) / values.length;
+}
+
+function formatMetricDiff(metric, diff) {
+  if (typeof diff !== "number") return null;
+  if (Math.abs(diff) < 0.000001) {
+    if (metric.key === "fiscal_index") return "±0";
+    return metric.format(0).replace(/^0/, "±0");
+  }
+  const sign = diff < 0 ? "−" : "+";
+  const abs = Math.abs(diff);
+  if (metric.key === "fiscal_index") {
+    return `${sign}${abs.toLocaleString("ja-JP", { maximumFractionDigits: 3 })}`;
+  }
+  return `${sign}${metric.format(Math.round(abs))}`;
+}
+
+function renderComparisonRow(summary, metric, domain, average) {
   const value = valueFrom(summary, metric);
   const formatted = typeof value === "number" ? metric.format(value) : null;
   const percent = clampPercent(value, domain);
+  const diff = summary.council.type === "city" && typeof value === "number" && typeof average === "number"
+    ? formatMetricDiff(metric, value - average)
+    : null;
 
   return el("div", { class: "comparison-row" }, [
     el("div", { class: "comparison-council" }, [
@@ -116,10 +142,11 @@ function renderComparisonRow(summary, metric, domain) {
       formatted
         ? el("strong", {}, formatted)
         : el("span", { class: "missing-value" }, "データ未入力"),
+      diff ? el("span", { class: "comparison-diff" }, `市平均との差 ${diff}`) : null,
     ]),
     el("div", { class: "comparison-bar-cell" }, [
       typeof value === "number"
-        ? barSvg(percent, `${summary.council.name} ${metric.label}: ${formatted}`)
+        ? barSvg(percent, `${summary.council.name} ${metric.label}: ${formatted}`, metric.key)
         : el("span", { class: "comparison-missing-bar" }),
     ]),
   ]);
@@ -166,19 +193,20 @@ export function renderPrefectureComparison(summaries, prefecture = "tottori") {
         el(
           "p",
           { class: "viz-lead" },
-          "並び順は固定です。棒の長さは大小の目安で、良し悪しや順位を示すものではありません。",
+          "棒は各指標の大きさを見比べるための目安です。並び順は県→市の固定順です。",
         ),
       ]),
     ]),
     el("div", { class: "comparison-metrics" }, metrics.map((metric) => {
       const domain = maxMetricValue(ordered, metric);
+      const average = cityAverage(ordered, metric);
       return el("section", { class: "comparison-metric" }, [
         el("div", { class: "comparison-metric-head" }, [
           el("h3", {}, metric.label),
           el("span", { class: "comparison-note" }, metric.note),
         ]),
         el("div", { class: "comparison-rows" },
-          ordered.map((summary) => renderComparisonRow(summary, metric, domain)),
+          ordered.map((summary) => renderComparisonRow(summary, metric, domain, average)),
         ),
         el("p", { class: "comparison-source-link" }, metricSourceNode(ordered, metric)),
       ]);
