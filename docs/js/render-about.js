@@ -1,4 +1,4 @@
-import { el } from "./utils.js?v=20260614-national-kumamoto-v1";
+import { el } from "./utils.js?v=20260614-optional-json-v1";
 
 export function renderAbout(root) {
   root.innerHTML = "";

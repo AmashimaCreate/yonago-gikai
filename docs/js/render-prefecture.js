@@ -1,5 +1,5 @@
-import { councilPath, prefComparePath } from "./router.js?v=20260614-national-kumamoto-v1";
-import { el } from "./utils.js?v=20260614-national-kumamoto-v1";
+import { councilPath, prefComparePath } from "./router.js?v=20260614-optional-json-v1";
+import { el } from "./utils.js?v=20260614-optional-json-v1";
 
 export function renderPrefecturePage(root, councils, prefecture = "tottori", summaries = []) {
   root.innerHTML = "";

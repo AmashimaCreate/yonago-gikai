@@ -4,13 +4,23 @@ async function loadJson(path, { optional = false } = {}) {
   if (cache.has(path)) return cache.get(path);
   const res = await fetch(path, { cache: "no-cache" });
   if (!res.ok) {
-    if (optional && res.status === 404) {
+    if (optional) {
       cache.set(path, null);
       return null;
     }
     throw new Error(`${path}: ${res.status}`);
   }
-  const data = await res.json();
+  const text = await res.text();
+  let data;
+  try {
+    data = JSON.parse(text);
+  } catch (error) {
+    if (optional) {
+      cache.set(path, null);
+      return null;
+    }
+    throw new Error(`${path}: invalid JSON response`);
+  }
   cache.set(path, data);
   return data;
 }

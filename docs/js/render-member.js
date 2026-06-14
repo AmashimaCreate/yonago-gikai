@@ -1,7 +1,7 @@
-import { acquisitionText, sourceLink } from "./data-quality.js?v=20260614-national-kumamoto-v1";
-import { councilAreaName, officialCouncilUrl, renderAiPromptCard } from "./render-ai-prompt.js?v=20260614-national-kumamoto-v1";
-import { renderMemberVoteSection } from "./render-votes.js?v=20260614-national-kumamoto-v1";
-import { el } from "./utils.js?v=20260614-national-kumamoto-v1";
+import { acquisitionText, sourceLink } from "./data-quality.js?v=20260614-optional-json-v1";
+import { councilAreaName, officialCouncilUrl, renderAiPromptCard } from "./render-ai-prompt.js?v=20260614-optional-json-v1";
+import { renderMemberVoteSection } from "./render-votes.js?v=20260614-optional-json-v1";
+import { el } from "./utils.js?v=20260614-optional-json-v1";
 
 export function renderMemberPage(root, state, memberId) {
   const member = state.members.find((item) => item.id === memberId);

@@ -1,4 +1,4 @@
-import { el } from "./utils.js?v=20260614-national-kumamoto-v1";
+import { el } from "./utils.js?v=20260614-optional-json-v1";
 
 const PURPOSE_COLORS = [
   "#0072b2",
