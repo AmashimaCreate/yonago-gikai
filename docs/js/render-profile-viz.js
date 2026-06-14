@@ -3,8 +3,8 @@ import {
   formatPeople,
   formatYen,
   sourceLink,
-} from "./render-profile.js?v=20260614-member-simple-v3";
-import { el } from "./utils.js?v=20260614-member-simple-v3";
+} from "./render-profile.js?v=20260614-member-core-v4";
+import { el } from "./utils.js?v=20260614-member-core-v4";
 
 const SVG_NS = "http://www.w3.org/2000/svg";
 

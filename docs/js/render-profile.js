@@ -1,4 +1,4 @@
-import { el } from "./utils.js?v=20260614-member-simple-v3";
+import { el } from "./utils.js?v=20260614-member-core-v4";
 
 export function formatNumber(value) {
   if (typeof value !== "number") return null;

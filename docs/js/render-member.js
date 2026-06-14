@@ -1,7 +1,7 @@
-import { acquisitionText, cautionNote, coverageText, sourceLink } from "./data-quality.js?v=20260614-member-simple-v3";
-import { councilAreaName, officialCouncilUrl, renderAiPromptCard } from "./render-ai-prompt.js?v=20260614-member-simple-v3";
-import { renderMemberVoteSection } from "./render-votes.js?v=20260614-member-simple-v3";
-import { el } from "./utils.js?v=20260614-member-simple-v3";
+import { acquisitionText, sourceLink } from "./data-quality.js?v=20260614-member-core-v4";
+import { councilAreaName, officialCouncilUrl, renderAiPromptCard } from "./render-ai-prompt.js?v=20260614-member-core-v4";
+import { renderMemberVoteSection } from "./render-votes.js?v=20260614-member-core-v4";
+import { el } from "./utils.js?v=20260614-member-core-v4";
 
 export function renderMemberPage(root, state, memberId) {
   const member = state.members.find((item) => item.id === memberId);
@@ -12,12 +12,7 @@ export function renderMemberPage(root, state, memberId) {
     return;
   }
 
-  const speeches = (state.speeches || [])
-    .filter((speech) => speech.member_id === member.id)
-    .sort((a, b) => (b.date || "").localeCompare(a.date || ""));
-
   root.appendChild(renderMemberProfile(member, state.membersMeta, state.currentCouncil));
-  root.appendChild(renderSpeechSection(speeches, state.speechesMeta, state.currentCouncil, member));
   const voteSection = renderMemberVoteSection(
     state.votes,
     state.votesMeta,
@@ -133,95 +128,6 @@ function profileInstruction(member, council) {
     : "";
   const profileUrl = member.official_profile_url || officialCouncilUrl(council);
   return `${member.name}議員(${council?.name || "議会"}、${faction})の経歴や担当委員会など公開されている基本情報を、出典(${profileUrl})を示しながら整理してください。${committees}`;
-}
-
-function renderSpeechSection(speeches, speechesMeta, council, member) {
-  if (!speechesMeta) {
-    return el("section", { class: "speech-section member-activity-section" }, [
-      el("div", { class: "section-heading-row" }, [
-        el("div", {}, [
-          el("p", { class: "eyebrow" }, "この議員の活動"),
-          el("h2", { class: "section-title" }, "発言を確認する"),
-        ]),
-      ]),
-      el("div", { class: "speech-unavailable-note" }, [
-        el("p", {}, `${council?.name || "この議会"}の会議録はこのサイトでは未取得です。公式の会議録検索で確認できます。`),
-        renderOfficialMinutesLink(council),
-      ]),
-    ]);
-  }
-
-  return el("section", { class: "speech-section member-activity-section" }, [
-    el("div", { class: "section-heading-row" }, [
-      el("div", {}, [
-        el("p", { class: "eyebrow" }, "この議員の活動"),
-        el("h2", { class: "section-title" }, "何を話したか"),
-      ]),
-      el("p", { class: "section-count" }, `${speeches.length}件`),
-    ]),
-    el("p", { class: "member-speech-summary" }, [
-      el("strong", {}, `${speeches.length}件`),
-      el("span", {}, " — 本会議での議員発言者として取得した記録"),
-    ]),
-    el("details", { class: "speech-coverage-note" }, [
-      el("summary", {}, "取得範囲と注意を見る"),
-      cautionNote(),
-      el("p", { class: "muted" }, coverageText(speechesMeta, council)),
-    ]),
-    speeches.length
-      ? el("ul", { class: "speech-list" }, speeches.map(renderSpeechItem))
-      : el("p", { class: "empty-message" }, "この取得範囲では、この議員に紐付いた発言インデックスはありません。"),
-    renderSpeechSourceSummary(speeches),
-  ]);
-}
-
-function renderOfficialMinutesLink(council) {
-  const minutesUrl = council?.minutes_base_url || officialMinutesUrl(council);
-  const officialUrl = officialCouncilUrl(council);
-  const links = [];
-  if (minutesUrl) {
-    links.push(el("a", {
-      href: minutesUrl,
-      target: "_blank",
-      rel: "noopener",
-    }, "会議録検索システムを開く"));
-  }
-  if (officialUrl && officialUrl !== minutesUrl) {
-    links.push(el("a", {
-      href: officialUrl,
-      target: "_blank",
-      rel: "noopener",
-    }, "議会公式サイトを開く"));
-  }
-  if (!links.length) return null;
-  return el("p", { class: "speech-official-links" }, links.map((link, index) =>
-    index === 0 ? link : [" ", link],
-  ).flat());
-}
-
-function officialMinutesUrl(council) {
-  const links = Array.isArray(council?.official_links) ? council.official_links : [];
-  const minutes = links.find((link) => /会議録|議事録/.test(link.label || ""));
-  return minutes?.url || null;
-}
-
-function renderSpeechItem(speech) {
-  return el("li", { class: "speech-item" }, [
-    el("div", { class: "speech-date" }, speech.date || "日付なし"),
-    el("div", { class: "speech-main" }, [
-      el("div", { class: "speech-meeting" }, speech.meeting_name || "会議名なし"),
-      el("div", { class: "speech-speaker" }, `発言者表記: ${speech.speaker_label || "データなし"}`),
-    ]),
-  ]);
-}
-
-function renderSpeechSourceSummary(speeches) {
-  const first = (speeches || []).find((speech) => speech.source_url)?.source_url;
-  if (!first) return null;
-  return el("p", { class: "section-source" }, [
-    "出典: ",
-    el("a", { href: first, target: "_blank", rel: "noopener" }, "会議録検索入口"),
-  ]);
 }
 
 function renderPhoto(member) {

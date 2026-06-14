@@ -1,5 +1,5 @@
-import { prefPath } from "./router.js?v=20260614-member-simple-v3";
-import { el } from "./utils.js?v=20260614-member-simple-v3";
+import { prefPath } from "./router.js?v=20260614-member-core-v4";
+import { el } from "./utils.js?v=20260614-member-core-v4";
 
 export function renderTop(root) {
   root.innerHTML = "";

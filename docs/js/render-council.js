@@ -1,8 +1,8 @@
-import { dataQualityPanel } from "./data-quality.js?v=20260614-member-simple-v3";
-import { renderFinanceSection } from "./render-finance.js?v=20260614-member-simple-v3";
-import { renderFactionCompositionChart } from "./render-faction-chart.js?v=20260614-member-simple-v3";
-import { formatDecimal, formatPeople, formatYen } from "./render-profile.js?v=20260614-member-simple-v3";
-import { renderProfileVisualization } from "./render-profile-viz.js?v=20260614-member-simple-v3";
+import { dataQualityPanel } from "./data-quality.js?v=20260614-member-core-v4";
+import { renderFinanceSection } from "./render-finance.js?v=20260614-member-core-v4";
+import { renderFactionCompositionChart } from "./render-faction-chart.js?v=20260614-member-core-v4";
+import { formatDecimal, formatPeople, formatYen } from "./render-profile.js?v=20260614-member-core-v4";
+import { renderProfileVisualization } from "./render-profile-viz.js?v=20260614-member-core-v4";
 import {
   hasMemberVoteLayer,
   hasResultOnlyVoteLayer,
@@ -10,7 +10,7 @@ import {
   renderResultOnlyVoteCard,
   renderVoteAvailabilityNotice,
   sortedVotesByDate,
-} from "./render-votes.js?v=20260614-member-simple-v3";
+} from "./render-votes.js?v=20260614-member-core-v4";
 import {
   renderCommitteeView,
   renderKaihaView,
@@ -18,9 +18,9 @@ import {
   memberFaction,
   renderRoleView,
   renderTermView,
-} from "./render-members.js?v=20260614-member-simple-v3";
-import { memberPath } from "./router.js?v=20260614-member-simple-v3";
-import { el } from "./utils.js?v=20260614-member-simple-v3";
+} from "./render-members.js?v=20260614-member-core-v4";
+import { memberPath } from "./router.js?v=20260614-member-core-v4";
+import { el } from "./utils.js?v=20260614-member-core-v4";
 
 export function renderCouncilPage(root, state, filteredMembers) {
   root.innerHTML = "";

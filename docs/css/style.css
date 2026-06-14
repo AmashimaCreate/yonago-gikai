@@ -471,8 +471,7 @@ a:hover { color: var(--brand-dark); }
 .disclaimer-panel,
 .quality-panel,
 .former-speeches,
-.member-detail,
-.speech-section {
+.member-detail {
   margin-bottom: 24px;
   padding: 16px 0;
   border-bottom: 1px solid var(--border);
@@ -2111,41 +2110,6 @@ main { padding: 24px 0 48px; }
 .member-search-link small {
   color: var(--text-muted);
 }
-.member-activity-section {
-  padding: 18px;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  background: var(--surface);
-  box-shadow: var(--shadow);
-}
-.speech-unavailable-note {
-  padding: 14px;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  background: var(--surface-soft);
-}
-.speech-unavailable-note p {
-  margin: 0;
-}
-.speech-unavailable-note p + p {
-  margin-top: 10px;
-}
-.speech-official-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 14px;
-}
-.speech-official-links a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 34px;
-  padding: 5px 12px;
-  border: 1px solid var(--border-strong);
-  border-radius: 999px;
-  background: var(--surface);
-  font-weight: 800;
-  text-decoration: none;
-}
 .research-section {
   max-width: 820px;
 }
@@ -2451,41 +2415,6 @@ main { padding: 24px 0 48px; }
   color: var(--text-muted);
   font-size: 13px;
 }
-.speech-list {
-  margin: 12px 0 0;
-  padding: 0;
-  list-style: none;
-}
-.speech-coverage-note {
-  margin: 10px 0 12px;
-  padding: 10px 12px;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  background: var(--surface-soft);
-}
-.speech-coverage-note summary {
-  cursor: pointer;
-  font-weight: 800;
-}
-.speech-item {
-  display: grid;
-  grid-template-columns: 96px 1fr;
-  gap: 12px;
-  padding: 10px 0;
-  border-top: 1px solid var(--border);
-}
-.speech-date {
-  color: var(--text-muted);
-  font-size: 13px;
-}
-.speech-meeting {
-  font-weight: 600;
-}
-.speech-speaker {
-  color: var(--text-muted);
-  font-size: 12px;
-}
-
 /* 賛否の記録 */
 .vote-section {
   margin-bottom: 24px;
@@ -2623,48 +2552,13 @@ main { padding: 24px 0 48px; }
   background: var(--surface);
   box-shadow: var(--shadow);
 }
-.member-speech-summary {
-  margin: 0 0 14px;
-  padding: 12px 14px;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  background: var(--surface-soft);
-  color: var(--text);
-  font-size: 15px;
-}
-.member-speech-summary strong {
-  color: var(--brand-dark);
-  font-size: 22px;
-}
-.split-vote-records,
 .all-vote-records {
   margin-top: 14px;
 }
-.split-vote-records h3,
 .all-vote-records h3 {
   margin: 0 0 10px;
   font-size: 17px;
   overflow-wrap: anywhere;
-}
-.member-simple-vote-list {
-  display: grid;
-  gap: 0;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  background: var(--surface);
-}
-.member-simple-vote-row {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 96px auto auto;
-  gap: 10px;
-  align-items: center;
-  padding: 10px 12px;
-  border-top: 1px solid var(--border);
-  background: var(--surface);
-}
-.member-simple-vote-row:first-child {
-  border-top: 0;
 }
 .member-vote-session-list {
   display: grid;
@@ -3010,13 +2904,10 @@ main { padding: 24px 0 48px; }
     grid-template-columns: 1fr;
     gap: 4px;
   }
-  .member-vote-row,
-  .member-simple-vote-row,
-  .speech-item {
+  .member-vote-row {
     grid-template-columns: 1fr;
     gap: 4px;
   }
-  .split-vote-records h3,
   .all-vote-records h3 {
     font-size: 16px;
     word-break: break-all;

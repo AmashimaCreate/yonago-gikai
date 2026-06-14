@@ -1,10 +1,9 @@
-import { sourceLink } from "./data-quality.js?v=20260614-member-simple-v3";
-import { councilAreaName, renderAiPromptCard } from "./render-ai-prompt.js?v=20260614-member-simple-v3";
-import { memberPath } from "./router.js?v=20260614-member-simple-v3";
-import { el } from "./utils.js?v=20260614-member-simple-v3";
+import { sourceLink } from "./data-quality.js?v=20260614-member-core-v4";
+import { councilAreaName, renderAiPromptCard } from "./render-ai-prompt.js?v=20260614-member-core-v4";
+import { memberPath } from "./router.js?v=20260614-member-core-v4";
+import { el } from "./utils.js?v=20260614-member-core-v4";
 
 const VOTE_ORDER = ["賛成", "反対", "退席", "欠席", "議長", "除斥", "継続審査"];
-const SPLIT_VOTE_THRESHOLD = 0.3;
 
 export function votesEnabledForCouncil(council) {
   return council?.vote_granularity === "member";
@@ -35,7 +34,6 @@ export function renderMemberVoteSection(votes, votesMeta, member, council, route
     .filter(Boolean)
     .sort((a, b) => (b.vote.date || "").localeCompare(a.vote.date || ""));
 
-  const splitVotes = memberVotes.filter(isVisibleSplitVote);
   const groups = groupVotesBySession(memberVotes);
 
   return el("section", { class: "vote-section member-vote-section" }, [
@@ -45,7 +43,6 @@ export function renderMemberVoteSection(votes, votesMeta, member, council, route
         el("h2", { class: "section-title" }, "賛成・反対の記録"),
       ]),
     ]),
-    renderSplitVoteRecords(splitVotes),
     renderAllVoteGroups(groups, memberVotes.length),
     renderVoteSourceSummary(memberVotes),
   ]);
@@ -134,36 +131,20 @@ function renderResultOnlyVoteSourceSummary(votes) {
   ]);
 }
 
-function renderSplitVoteRecords(votes) {
-  return el("section", { class: "split-vote-records" }, [
-    el("h3", {}, "賛否が分かれた議決"),
-    votes.length
-      ? el("div", { class: "member-simple-vote-list" }, votes.map(renderSimpleMemberVoteRow))
-      : el("p", { class: "empty-message is-compact" }, "賛否が大きく分かれた議決はありません。"),
-  ]);
-}
-
-function renderSimpleMemberVoteRow({ vote, item }) {
-  return el("div", { class: "member-simple-vote-row" }, [
-    el("span", { class: "vote-title" }, vote.bill_title || "議案名なし"),
-    el("span", { class: "vote-date" }, vote.date || "日付なし"),
-    renderVoteBadge(item.vote),
-    el("span", { class: "vote-summary-result" }, vote.result || "結果なし"),
-  ]);
-}
-
 function renderAllVoteGroups(groups, total) {
   if (!total) {
     return el("p", { class: "empty-message is-compact" }, "この議員に紐付いた賛否記録はありません。");
   }
-  return el("details", { class: "all-vote-records" }, [
-    el("summary", {}, `全議案を見る（${total}件）`),
-    el("div", { class: "member-vote-session-list" }, groups.map(renderVoteSessionGroup)),
+  return el("section", { class: "all-vote-records" }, [
+    el("h3", {}, `全議案（${total}件）`),
+    el("div", { class: "member-vote-session-list" },
+      groups.map((group, index) => renderVoteSessionGroup(group, index === 0)),
+    ),
   ]);
 }
 
-function renderVoteSessionGroup(group) {
-  return el("details", { class: "member-vote-session" }, [
+function renderVoteSessionGroup(group, isOpen = false) {
+  return el("details", { class: "member-vote-session", open: isOpen ? "" : null }, [
     el("summary", {}, `${group.label}（${group.items.length}件）`),
     el("div", { class: "member-vote-table" },
       group.items.map(renderCompactMemberVoteRow),
@@ -304,22 +285,6 @@ function voteCounts(vote) {
     counts[value] = (counts[value] || 0) + 1;
   }
   return counts;
-}
-
-function isVisibleSplitVote({ vote, item }) {
-  if (item.vote !== "賛成" && item.vote !== "反対") return false;
-  return isBroadlySplitVote(vote);
-}
-
-function isBroadlySplitVote(vote) {
-  const counts = voteCounts(vote);
-  const yes = counts["賛成"] || 0;
-  const no = counts["反対"] || 0;
-  const presentVotes = yes + no;
-  if (!yes || !no || !presentVotes) return false;
-
-  // 「大きく分かれた」は、少数側が賛成/反対投票者のおおむね3割以上を占める議決とする。
-  return Math.min(yes, no) / presentVotes >= SPLIT_VOTE_THRESHOLD;
 }
 
 function formatVoteCounts(counts) {
